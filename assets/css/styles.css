@@ -2906,6 +2906,12 @@ div.swiper-button-prev:after {
 .blog-detail-wrapper .feature-page.two {
   margin: 0 250px;
 }
+.blog-detail-wrapper .entry-content h1 {
+  margin-top: 24px;
+  margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: 700;
+}
 .blog-detail-wrapper .entry-content h3 {
   font-size: 28px;
   font-weight: 700;
@@ -2935,6 +2941,12 @@ div.swiper-button-prev:after {
 }
 .blog-detail-wrapper .blog-post-thumb.two {
   margin: 0 30px 0 0;
+}
+.blog-detail-wrapper .blog-post-thumb.two h2 {
+  margin-top: 22px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 700;
 }
 .blog-detail-wrapper .blog-post-thumb.two ul li {
   padding-bottom: 8px;
