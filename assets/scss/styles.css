@@ -105,7 +105,8 @@ body {
   height: 80px;
 }
 .lds-roller div {
-  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  -webkit-animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   transform-origin: 40px 40px;
 }
 .lds-roller div:after {
@@ -119,60 +120,77 @@ body {
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {
-  animation-delay: -0.036s;
+  -webkit-animation-delay: -0.036s;
+          animation-delay: -0.036s;
 }
 .lds-roller div:nth-child(1):after {
   top: 63px;
   left: 63px;
 }
 .lds-roller div:nth-child(2) {
-  animation-delay: -0.072s;
+  -webkit-animation-delay: -0.072s;
+          animation-delay: -0.072s;
 }
 .lds-roller div:nth-child(2):after {
   top: 68px;
   left: 56px;
 }
 .lds-roller div:nth-child(3) {
-  animation-delay: -0.108s;
+  -webkit-animation-delay: -0.108s;
+          animation-delay: -0.108s;
 }
 .lds-roller div:nth-child(3):after {
   top: 71px;
   left: 48px;
 }
 .lds-roller div:nth-child(4) {
-  animation-delay: -0.144s;
+  -webkit-animation-delay: -0.144s;
+          animation-delay: -0.144s;
 }
 .lds-roller div:nth-child(4):after {
   top: 72px;
   left: 40px;
 }
 .lds-roller div:nth-child(5) {
-  animation-delay: -0.18s;
+  -webkit-animation-delay: -0.18s;
+          animation-delay: -0.18s;
 }
 .lds-roller div:nth-child(5):after {
   top: 71px;
   left: 32px;
 }
 .lds-roller div:nth-child(6) {
-  animation-delay: -0.216s;
+  -webkit-animation-delay: -0.216s;
+          animation-delay: -0.216s;
 }
 .lds-roller div:nth-child(6):after {
   top: 68px;
   left: 24px;
 }
 .lds-roller div:nth-child(7) {
-  animation-delay: -0.252s;
+  -webkit-animation-delay: -0.252s;
+          animation-delay: -0.252s;
 }
 .lds-roller div:nth-child(7):after {
   top: 63px;
   left: 17px;
 }
 .lds-roller div:nth-child(8) {
-  animation-delay: -0.288s;
+  -webkit-animation-delay: -0.288s;
+          animation-delay: -0.288s;
 }
 .lds-roller div:nth-child(8):after {
   top: 56px;
   left: 12px;
+}
+
+@-webkit-keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes lds-roller {
@@ -250,13 +268,7 @@ span.buttonText {
 .swiper-slide {
   text-align: center;
   /* Center slide text vertically */
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -264,7 +276,8 @@ span.buttonText {
   display: block;
   width: 100%;
   height: 80%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   border: 1px solid #ccc;
   margin-top: 10px;
@@ -299,7 +312,8 @@ div.swiper-button-prev:after {
 .swiper.swiper-bachelor .swiper-slide .img-wrapper img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0;
 }
 .swiper.swiper-bachelor .swiper-slide.slide_add > div {
@@ -360,11 +374,7 @@ div.swiper-button-prev:after {
 }
 
 .header-top-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   justify-content: space-between;
 }
@@ -399,6 +409,12 @@ div.swiper-button-prev:after {
   padding-left: 20px;
   height: 40px;
   color: #fff;
+}
+.header-course-search input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.header-course-search input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
 }
 .header-course-search input::placeholder {
   color: rgba(255, 255, 255, 0.8);
@@ -476,11 +492,12 @@ div.swiper-button-prev:after {
   position: absolute;
   background: #fff;
   text-align: left;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   border-top: 2px solid #ff630e;
   transition: 0.3s;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   min-width: 200px;
   padding: 20px 0px;
@@ -507,7 +524,6 @@ div.swiper-button-prev:after {
   z-index: 1;
   min-width: 450px;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   border-top: 2px solid #ff630e;
   border-radius: 5px;
@@ -538,7 +554,6 @@ div.swiper-button-prev:after {
   z-index: 1;
   background-color: #fff;
   text-align: left;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   border-top: 2px solid #ff630e;
@@ -587,7 +602,8 @@ div.swiper-button-prev:after {
 .site-logo .logo {
   border-radius: 50%;
   max-width: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header-cart {
@@ -735,7 +751,8 @@ div.swiper-button-prev:after {
   background-image: url(../images/banner-3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
   padding: 220px 0;
   position: relative;
   overflow: hidden;
@@ -776,7 +793,8 @@ div.swiper-button-prev:after {
   background-image: url(../images/banner-4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
   padding: 220px 0;
   position: relative;
   cursor: pointer;
@@ -944,7 +962,8 @@ div.swiper-button-prev:after {
 .testimonial-content .card-body .card-img-top-custom {
   height: 260px;
   max-height: 300px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .testimonial-content .card-body .title {
   font-size: 20px;
@@ -1260,7 +1279,6 @@ div.swiper-button-prev:after {
   margin: 0 auto;
   padding: 10px 0;
   border-radius: 5px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   visibility: hidden;
   opacity: 0;
@@ -1511,7 +1529,8 @@ div.swiper-button-prev:after {
 }
 .courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom img {
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom .card-title {
   min-height: 40px;
@@ -1745,7 +1764,6 @@ div.swiper-button-prev:after {
   float: left;
   width: 70%;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   font-size: 14px;
   margin-top: 10px;
@@ -1834,7 +1852,8 @@ div.swiper-button-prev:after {
   width: 100%;
   height: 220px;
   border-radius: 10px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .course-detail-wrapper .course-single-area .course-sidebar .course-price {
   font-weight: 700;
@@ -2211,7 +2230,6 @@ div.swiper-button-prev:after {
   padding: 30px 40px 40px;
   margin-bottom: 30px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .blog-wrapper .blog-area .blog-sidebar .latest-post h4 {
@@ -2531,7 +2549,6 @@ div.swiper-button-prev:after {
 .annotation-wrapper .section2-annotation .box-annottation {
   border-radius: 8px;
   padding: 20px 20px;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .annotation-wrapper .section2-annotation .box-annottation button {
@@ -2556,7 +2573,6 @@ div.swiper-button-prev:after {
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation {
   margin-top: 10px;
   margin-bottom: 5px;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   border-radius: 8px;
 }
@@ -2676,14 +2692,11 @@ div.swiper-button-prev:after {
   padding: 90px 0 100px;
 }
 .blog-detail-wrapper .blog-post-single {
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .blog-detail-wrapper .blog-post-single:hover {
-  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 .blog-detail-wrapper .blog-post-content {
@@ -2732,7 +2745,6 @@ div.swiper-button-prev:after {
   padding: 30px 40px 40px;
   margin-bottom: 30px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .blog-detail-wrapper .search-form {
@@ -3024,7 +3036,8 @@ div.swiper-button-prev:after {
 .member-detail-wrapper .mentor-profile-edit-content .avatar_img {
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .member-detail-wrapper .mentor-profile-edit-content .id-card-warpper .card-id-custom img {
   height: 220px;
@@ -3077,7 +3090,6 @@ div.swiper-button-prev:after {
 .withdraw-wrapper .section2 .from-withdraw {
   border-radius: 8px;
   padding: 20px 20px;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .withdraw-wrapper .section2 .from-withdraw h3 {
@@ -3123,7 +3135,6 @@ div.swiper-button-prev:after {
   margin-top: 70px;
   border-radius: 8px;
   padding: 20px 20px;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .withdraw-wrapper .section2 .from-note h4 {
@@ -3351,7 +3362,6 @@ div.swiper-button-prev:after {
   padding: 20px 20px 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .wallet-history-wrapper .widget h4 {
@@ -3374,7 +3384,6 @@ div.swiper-button-prev:after {
   padding: 30px 40px 40px;
   margin-bottom: 30px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .wallet-history-wrapper .blog-pagination li {
@@ -3449,7 +3458,6 @@ div.swiper-button-prev:after {
 .feedback-wrapper .section-feedback .from-feedback {
   border-radius: 8px;
   padding: 20px 20px;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .feedback-wrapper .section-feedback .from-feedback .box-title {
@@ -3471,7 +3479,6 @@ div.swiper-button-prev:after {
 .feedback-wrapper .section-feedback .from-feedback .from-content {
   border-radius: 8px;
   padding: 20px 20px;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .feedback-wrapper .section-feedback .from-feedback .from-content label {
@@ -3499,7 +3506,6 @@ div.swiper-button-prev:after {
   text-align: center;
   border-radius: 8px;
   border: 0px solid darkgrey;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .feedback-wrapper .section-feedback .from-feedback .btn-showmore {
@@ -3619,7 +3625,6 @@ div.swiper-button-prev:after {
   padding: 20px 20px;
   border-radius: 8px;
   text-align: center;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .lms-wrapper .section4 .box-bStudent h3 {
@@ -3680,7 +3685,6 @@ div.swiper-button-prev:after {
   padding: 20px 20px;
   border-radius: 8px;
   text-align: center;
-  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
 }
 .lms-wrapper .section5 .box-bStudent h3 {
@@ -4110,7 +4114,8 @@ div.swiper-button-prev:after {
   }
   /* ------------------------ */
   .learning-path .left-section {
-    clip-path: none;
+    -webkit-clip-path: none;
+            clip-path: none;
     margin-bottom: 10px;
   }
   .learning-path .left-section h2 {
@@ -4120,7 +4125,8 @@ div.swiper-button-prev:after {
     font-size: 20px;
   }
   .learning-path .right-section {
-    clip-path: none;
+    -webkit-clip-path: none;
+            clip-path: none;
     margin-bottom: 10px;
   }
   .learning-path .right-section h2 {
@@ -4439,11 +4445,13 @@ div.swiper-button-prev:after {
     text-align: center !important;
   }
   .home-wrapper .learning-path .left-section {
-    clip-path: none;
+    -webkit-clip-path: none;
+            clip-path: none;
     margin-bottom: 10px;
   }
   .home-wrapper .learning-path .right-section {
-    clip-path: none;
+    -webkit-clip-path: none;
+            clip-path: none;
     margin-bottom: 10px;
   }
   .home-wrapper .courses-section .courses-content .item {
