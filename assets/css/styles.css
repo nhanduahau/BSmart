@@ -3156,9 +3156,6 @@ div.swiper-button-prev:after {
   font-weight: 700;
 }
 
-.create-course-wrapper .mentor-add-course {
-  padding: 35px 20px 0;
-}
 .create-course-wrapper .mentor-add-course .add-course-form {
   color: #0e0a38;
 }
@@ -3166,7 +3163,7 @@ div.swiper-button-prev:after {
   position: relative;
 }
 .create-course-wrapper .mentor-add-course .add-course-form .image-container #frameImageCourse {
-  max-height: 450px;
+  max-height: 260px;
   border-radius: 10px;
 }
 .create-course-wrapper .mentor-add-course .add-course-form .image-container .loading {
@@ -3180,6 +3177,40 @@ div.swiper-button-prev:after {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.7);
+}
+
+.course-route-title-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.course-route-title-number {
+  font-size: 16px;
+  font-weight: 450;
+}
+
+.course-route-show-lecture a {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  line-height: 26px;
+  color: #333;
+}
+.course-route-show-lecture a:hover {
+  color: #ff630e;
+  opacity: 0.8;
+  transition: 0.3s all;
+}
+
+.btn-create-class {
+  color: #fff;
+  background-color: #ff630e;
+}
+.btn-create-class:hover {
+  color: #fff;
+  background-color: #ff630e;
+  opacity: 0.8;
+  transition: 0.3s all;
 }
 
 .buy-course-wrapper .banner__buy-course {
