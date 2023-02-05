@@ -504,6 +504,39 @@
                   <div id="collapseOne" class="collapse show p-4" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="mentor-add-course">
                       <form action="#" method="post" class="add-course-form">
+                        <!-- Tên khóa học -->
+                        <div class="mb-3">
+                          <label class="form-label">Tên khoá học: </label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="Front End Basic"
+                          />
+                        </div>
+                        <!-- Trình độ -->
+                        <div class="mb-3">
+                          <label class="form-label me-2">Trình độ: </label>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio"  name="optradio" checked> Beginner
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" name="optradio"> Intermediate
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" name="optradio"> Advanced
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" name="optradio"> Expert
+                            </label>
+                          </div>
+                        </div>
                         <!-- Upload ảnh -->
                         <div class="mb-3">
                           <div class="card card-image-custom">
@@ -548,39 +581,6 @@
                             </div>
                           </div>
                         </div>
-                        <!-- Tên khóa học -->
-                        <div class="mb-3">
-                          <label class="form-label">Tên khoá học: </label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="Front End Basic"
-                          />
-                        </div>
-                        <!-- Trình độ -->
-                        <div class="mb-3">
-                          <label class="form-label me-2">Trình độ: </label>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio" checked> Beginner
-                            </label>
-                          </div>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio"> Intermediate
-                            </label>
-                          </div>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio"> Advanced
-                            </label>
-                          </div>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio"> Expert
-                            </label>
-                          </div>
-                        </div>
                         <!-- Hình thức khóa học -->
                         <div class="mb-3">
                           <label class="form-label">Hình thức khoá học: </label>
@@ -598,11 +598,11 @@
                           <label class="form-label">Số lượng học viên: </label>
                           <div class="col-lg-4 col-md-6 d-flex align-items-center">
                             <!-- Min -->
-                            <label class="form-label me-2">Min </label>
+                            <label class="form-label me-2 mt-2">Min: </label>
                             <input type="number" class="form-control" value="1" />
                             
                             <!-- Max -->
-                            <label class="form-label me-2 ms-4">Max </label>
+                            <label class="form-label me-2 mt-2 ms-4">Max: </label>
                             <input type="number" class="form-control" value="15" />
                           </div>
                         </div>
@@ -690,17 +690,11 @@
                           <div class="form-floating">
                             <textarea
                               class="form-control"
-                              style="height: 200px"
+                              style="height: 100px"
                               maxlength="200"
                             ></textarea>
                           </div>
                           <p class="text-end mt-2 small" style="color: red;">tối đa 200 kí tự</ơ>
-                        </div>
-                        <!-- Button tạo khóa học -->
-                        <div class="mb-3">
-                          <button type="submit" class="btn btn-primary-custom w-100">
-                            Tạo khoá học
-                          </button>
                         </div>
                       </form>
                     </div>
@@ -721,67 +715,63 @@
                     <!-- Title course -->
                     <div class="d-flex align-items-center justify-content-between">
                       <h1 class="course-route-title-name">Front-end basic</h1>
-                      <p class="course-route-title-number">Gồm 6 buổi (16h)</p>
+                      <button class="btn btn-primary" id="btnCreateModule" onclick="handleCreateModule();">Tạo module</button>
                     </div>
-                    <!-- Detail course (Module 1) -->
+                    <!-- Detail course (Create module) -->
                     <div class="mt-2 ms-4">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" id="courseRouteBtn">
-                          I. MODULE 1: XÂY DỰNG WEBSITE VỚI HTML VÀ CSS
+                      <!-- Create title module -->
+                      <div class="d-flex align-items-center justify-content-center">
+                        <form class="d-flex align-items-center justify-content-center" autocomplete="off" onsubmit="handleAddTitleLecture()">
+                          <input type="text" class="form-control w-100 me-2" name="inputCreateModule" id="inputCreateModule" style="display: none;" placeholder="Tên tiêu đề bài học...">
+                          <!-- Button icon create module -->
+                          <button style="background-color: transparent; border: none; display: none;" id="buttonCreateModule">
+                            <i style="font-size:24px;" class="fa">&#xf067;</i>
+                          </button>
+                        </form>
+                        <!-- Button icon hide input create module -->
+                        <button style="background-color: transparent; border: none; display: none;" id="buttonClearCreateModule">
+                          <i style="font-size:24px" class="fa">&#xf00d;</i>
                         </button>
-                      </h5>
-                      <!-- Show lecture -->
+                      </div>
+
+                      <!-- <button class="btn btn-link" id="courseRouteBtn">
+                        I. MODULE 1: XÂY DỰNG WEBSITE VỚI HTML VÀ CSS
+                      </button> -->
+
+                      <!-- Show title module -->
                       <div class="ms-4 course-route-show-lecture" id="courseRouteLectureDetail">
-                        <a href="#">1. Tổng quan</a>
-                        <a href="#">2. Cấu trúc thẻ cơ bản</a>
-                        <a href="#">3. CSS cơ bản</a>
-                        <a href="#">4. CSS nâng cao</a>
-                        <a href="#">5. Công cụ hỗ trợ</a>
+                        <table id="storeList" class="mt-2">
+                          <tbody>
+                            <!-- render data -->
+                          </tbody>
+                        </table>
                       </div>
                     </div>
-                    <!-- Detail course (Module 2) -->
-                    <div class="mt-2 ms-4">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" id="courseRouteBtnModule2">
-                          II. MODULE 2: NỀN TẢNG LẬP TRÌNH - JAVASCRIPT
+
+                    <!-- Create content module -->
+                    <div class="d-flex align-items-center justify-content-center">
+                      <form class="d-flex align-items-center justify-content-center" autocomplete="off" onsubmit="handleAddContentModuleLecture();">
+                        <input style="display: none;" type="text" class="form-control w-100 me-2 mt-3" name="inputCreateContentModule" id="inputCreateContentModule"  placeholder="Nội dung bài học...">
+                        <!-- Button icon create content module -->
+                        <button class="mt-3" style="background-color: transparent; border: none; display: none;" id="buttonCreateContentModuleIcon">
+                          <i style="font-size:24px;" class="fa">&#xf067;</i>
                         </button>
-                      </h5>
-                      <!-- Show lecture -->
-                      <div class="ms-4 course-route-show-lecture" id="courseRouteLectureDetailModule2">
-                        <a href="#">1. Tổng quan về lập trình</a>
-                        <a href="#">2. Cấu trúc cơ bản</a>
-                        <a href="#">3. Hàm và Đối tượng</a>
-                        <a href="#">4. Dự án cuối khóa</a>
-                      </div>
+                      </form>
+                      <!-- Button icon hide input create content module -->
+                      <button class="mt-3" style="background-color: transparent; border: none; display: none;" id="buttonClearCreateContentModule">
+                        <i style="font-size:24px" class="fa">&#xf00d;</i>
+                      </button>
                     </div>
-                    <!-- Detail course (Module 3) -->
-                    <div class="mt-2 ms-4">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" id="courseRouteBtnModule3">
-                          III. MODULE 3: XÂY DỰNG ỨNG DỤNG WEB VỚI REACTJS
-                        </button>
-                      </h5>
-                      <!-- Show lecture -->
-                      <div class="ms-4 course-route-show-lecture" id="courseRouteLectureDetailModule3">
-                        <a href="#">1. Xây dựng ứng dụng web với JS thuần</a>
-                        <a href="#">2. ReactJS cơ bản</a>
-                        <a href="#">3. ReactJS nâng cao</a>
-                        <a href="#">4. Các chủ đề bổ sung</a>
-                      </div>
+
+                    <!-- Show content module -->
+                    <div class="ms-5 course-route-show-lecture">
+                      <table id="storeListContentModule" class="mt-1">
+                        <tbody>
+                          <!-- render data -->
+                        </tbody>
+                      </table>
                     </div>
-                    <!-- Detail course (Module 4) -->
-                    <div class="mt-2 ms-4">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" id="courseRouteBtnModule4">
-                          IV. MODULE 4: MODULE 4: ĐỒ ÁN VÀ VIỆC LÀM 
-                        </button>
-                      </h5>
-                      <!-- Show lecture -->
-                      <div class="ms-4 course-route-show-lecture" id="courseRouteLectureDetailModule4">
-                        <a href="#">1. Đồ án Web Front-end</a>
-                        <a href="#">2. Chuẩn bị phỏng vấn</a>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
 
@@ -801,15 +791,15 @@
                         <!-- Start time -->
                         <div class="col-lg-4 col-md-12">
                           <div class="form-group mt-3">
-                            <label for="startTime">Ngày bắt đầu: </label>
-                            <input type="datetime-local" class="form-control w-75 mt-1" name="startTime" id="startTime">
+                            <label for="startTime">Giờ bắt đầu: </label>
+                            <input type="time" class="form-control w-75 mt-1" name="startTime" id="startTime">
                           </div>
                         </div>
                         <!-- End time -->
                         <div class="col-lg-4 col-md-12">
                           <div class="form-group mt-3">
-                            <label for="endTime">Ngày kết thúc: </label>
-                            <input type="datetime-local" class="form-control w-75 mt-1" name="endTime" id="endTime">
+                            <label for="endTime">Giờ kết thúc: </label>
+                            <input type="time" class="form-control w-75 mt-1" name="endTime" id="endTime">
                           </div>
                         </div>
                         <!-- Chọn các thứ trong tuần -->
@@ -894,8 +884,8 @@
                         <thead>
                           <tr>
                             <th scope="col" style="font-weight: bold;">#</th>
-                            <th scope="col" style="font-weight: bold;">Ngày bắt đầu</th>
-                            <th scope="col" style="font-weight: bold;">Ngày kết thúc</th>
+                            <th scope="col" style="font-weight: bold;">Giờ bắt đầu</th>
+                            <th scope="col" style="font-weight: bold;">Giờ kết thúc</th>
                             <th scope="col" style="font-weight: bold;">Thứ</th>
                             <th scope="col" style="font-weight: bold;">Số chỗ</th>
                             <th scope="col" style="font-weight: bold;">Ngày dự kiến mở lớp</th>
@@ -906,8 +896,8 @@
                         <tbody>
                           <tr>
                             <th scope="row">1</th>
-                            <td>1/1/2022</td>
-                            <td>1/2/2022</td>
+                            <td>15:00</td>
+                            <td>18:30</td>
                             <td>T2, T4, T6</td>
                             <td>14</td>
                             <td>1/1/2022</td>
@@ -922,6 +912,15 @@
                   </div>
                 </div>
               </div>
+
+              <div class="col-lg-12 col-md-12 mt-4">
+                <!-- Button tạo khóa học -->
+                <div class="mb-3">
+                 <button type="submit" class="btn btn-primary-custom w-100">
+                   Tạo khoá học
+                 </button>
+               </div>
+             </div>
             </div>
           </div>
         </div>
@@ -1078,25 +1077,222 @@
           }
         });
 
+        // Button create module
+        document
+          .getElementById('btnCreateModule')
+          .addEventListener('click', function () {
+            document.getElementById('inputCreateModule').style.display = 'block'
+            document.getElementById('buttonCreateModule').style.display = 'block'
+            document.getElementById('buttonClearCreateModule').style.display = 'block'
+          })
+
+        // Hide input create module
+        document
+          .getElementById('buttonClearCreateModule')
+          .addEventListener('click', function() {
+            document.getElementById('inputCreateModule').style.display = 'none'
+            document.getElementById('buttonCreateModule').style.display = 'none'
+            document.getElementById('buttonClearCreateModule').style.display = 'none'
+          })
+
+        // Create module
+        var selectedRow = null;
+        function handleAddTitleLecture() {
+          event.preventDefault();
+
+          var formData = readFormData();
+
+          // check
+          if(selectedRow === null) {
+            insertNewRecord(formData)
+          } else  {
+            updateRecord(formData);
+          }
+
+          resetDataForm();
+        }
+
+        // read data
+        function readFormData() {
+          var formData = {};
+
+          // check empt
+          if(document.getElementById("inputCreateModule").value === '') {
+            alert('Bạn cần nhập tên tiêu đề bài học!');
+            return;
+          }
+
+          formData["inputCreateModule"] = document.getElementById("inputCreateModule").value;
+
+          return formData;
+        }
+        // insert data
+        function insertNewRecord(data) {
+          var table = document.getElementById('storeList').getElementsByTagName('tbody')[0];
+          var newRow = table.insertRow(table.length);
+
+          var cellInputCreateModule = newRow.insertCell(0);
+          cellInputCreateModule.innerHTML = `<button class="btn btn-link me-2" style="font-weight: 800; font-size: 18px;">
+                                              ${data.inputCreateModule}
+                                            </button>`;
+
+          var cellFuncModule = newRow.insertCell(1);
+          cellFuncModule.innerHTML = `
+                                      <div class="d-flex align-items-center mt-2 ms-4">
+                                        <button onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
+                                          Tạo nội dung
+                                        </button>
+                                        <button onclick='editRecord(this)' class="btn btn-secondary mt-3 me-2" id="editButton">
+                                          Sửa
+                                        </button>
+                                        <button onclick='deleteRecord(this)' class="btn btn-danger mt-3 me-2">
+                                          Xóa
+                                        </button>
+
+                                      </div>`;
+          // Show content module
+          document
+          .getElementById('buttonCreateContentModule')
+          .addEventListener('click', function() {
+            document.getElementById('inputCreateContentModule').style.display = 'block'
+            document.getElementById('buttonCreateContentModuleIcon').style.display = 'block'
+            document.getElementById('buttonClearCreateContentModule').style.display = 'block'
+          })
+          // Hide create content module
+          document
+            .getElementById('buttonClearCreateContentModule')
+            .addEventListener('click', function() {
+              document.getElementById('inputCreateContentModule').style.display = 'none'
+              document.getElementById('buttonCreateContentModuleIcon').style.display = 'none'
+              document.getElementById('buttonClearCreateContentModule').style.display = 'none'
+          })
+        }
+        let currRow=null;
+        // show input add content module
+        function addContentModule(getRow) {
+          row = getRow.parentElement.parentElement;
+          currRow = row;
+          console.log('currRow', currRow)
+          if(row) {
+            document.getElementById('inputCreateContentModule').style.display = 'block'
+            document.getElementById('buttonCreateContentModuleIcon').style.display = 'block'
+            document.getElementById('buttonClearCreateContentModule').style.display = 'block'
+          }
+        }
+        // edit data
+        function editRecord(td) {
+          selectedRow = td.parentElement.parentElement;
+          document.getElementById('inputCreateModule').value = selectedRow.cells[0].innerText;
+          document.getElementById('buttonCreateModule').innerHTML = '<i style="font-size:24px" class="fa">&#xf00c;</i>';
+        }
+        // reset icon updated
+        document
+          .getElementById('buttonCreateModule')
+          .addEventListener('click', function() {
+            document.getElementById('buttonCreateModule').innerHTML = '<i style="font-size:24px" class="fa">&#xf067;</i>';
+          })
+        // update data
+        function updateRecord(formData) {
+          selectedRow.cells[0].innerHTML = `<button class="btn btn-link mt-4">
+                                              ${formData.inputCreateModule}
+                                            </button>`
+        }
+        // delete data
+        function deleteRecord(delData) {
+          if(confirm('Bạn có muốn xóa tiêu đề này không?')) {
+            row = delData.parentElement.parentElement;
+            document.getElementById('storeList').deleteRow(row.rowIndex);
+          }
+          resetDataForm();
+        }
+        // reset data
+        function resetDataForm() {
+          document.getElementById('inputCreateModule').value = '';
+        }
+
+        // Create content module
+        var selectedRowContentModule = null;
+        function handleAddContentModuleLecture() {
+            event.preventDefault();
+
+            var formData = readFormDataContentModule();
+            
+            // check
+            if(selectedRowContentModule === null) {
+              if(currRow) {
+                insertNewRecordContentModule(formData)
+              }
+            } else  {
+              updateRecordContentModule(formData);
+            }
+            resetDataFormContentModule();
+        }
+        // read data 
+        function readFormDataContentModule() {
+            var formData = {};
+
+            // check empt
+            if(document.getElementById("inputCreateContentModule").value === '') {
+              alert('Bạn cần nhập nội dung bài học!');
+              return;
+            }
+
+            formData["inputCreateContentModule"] = document.getElementById("inputCreateContentModule").value;
+
+            return formData;
+        }
+        // insert data
+        function insertNewRecordContentModule(data) {
+            var table = document.getElementById('storeListContentModule').getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow(table.length);
+
+            var cellInputContentModule = newRow.insertCell(0);
+            cellInputContentModule.innerHTML = `<a href="#" class="btn btn-link mt-1 text-decoration-none">
+                                                ${data.inputCreateContentModule}
+                                              </a>`;
+
+            var cellFuncContentModule = newRow.insertCell(1);
+            cellFuncContentModule.innerHTML = `<button onclick='editRecordContentModule(this)' class="btn btn-secondary mt-1 ms-4 me-2">
+                                                Sửa
+                                              </button>
+                                              <button onclick='deleteRecordContentModule(this)' class="btn btn-danger mt-1 me-2">
+                                                Xóa
+                                              </button>`;
+        }
+        // edit data 
+        function editRecordContentModule(td) {
+          selectedRowContentModule = td.parentElement.parentElement;
+          document.getElementById('inputCreateContentModule').value = selectedRowContentModule.cells[0].innerText;
+          document.getElementById('buttonCreateContentModuleIcon').innerHTML = '<i style="font-size:24px" class="fa">&#xf00c;</i>';
+        }
+        // document
+        //   .getElementById('buttonCreateContentModuleIcon')
+        //   .addEventListener('click', function() {
+        //     document.getElementById('buttonCreateContentModuleIcon').innerHTML = '<i style="font-size:24px" class="fa">&#xf067;</i>';
+        //   })
+        // update data
+        function updateRecordContentModule(formData) {
+          selectedRowContentModule.cells[0].innerHTML = `<a href="#" class="btn btn-link mt-1 text-decoration-none">
+                                                          ${formData.inputCreateContentModule}
+                                                        </a>`
+        }
+        // delete data
+        function deleteRecordContentModule(delData) {
+          if(confirm('Bạn có muốn xóa nội dung này không?')) {
+            row = delData.parentElement.parentElement;
+            document.getElementById('storeListContentModule').deleteRow(row.rowIndex);
+          }
+          resetDataFormContentModule();
+        }
+        // reset data
+        function resetDataFormContentModule() {
+          document.getElementById('inputCreateContentModule').value = '';
+        }
+
         // Collapse #2: Lộ trình khóa học
         $(document).ready(function(){
           $("#courseRouteBtn").click(function(){
             $("#courseRouteLectureDetail").toggle();
-          });
-        });
-        $(document).ready(function(){
-          $("#courseRouteBtnModule2").click(function(){
-            $("#courseRouteLectureDetailModule2").toggle();
-          });
-        });
-        $(document).ready(function(){
-          $("#courseRouteBtnModule3").click(function(){
-            $("#courseRouteLectureDetailModule3").toggle();
-          });
-        });
-        $(document).ready(function(){
-          $("#courseRouteBtnModule4").click(function(){
-            $("#courseRouteLectureDetailModule4").toggle();
           });
         });
 

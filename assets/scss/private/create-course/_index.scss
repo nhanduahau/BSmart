@@ -32,16 +32,10 @@
   font-weight: bold;
 }
 
-.course-route-title-number {
-  font-size: 16px;
-  font-weight: 450;
-}
-
 .course-route-show-lecture {
   a {
     display: flex;
     flex-direction: column;
-    margin-left: 12px;
     line-height: 26px;
     color: #333;
 
@@ -64,4 +58,10 @@
     opacity: 0.8;
     transition: 0.3s all;
   }
+}
+
+.fa:hover {
+  color: #ff630e;
+  opacity: 0.8;
+  transition: 0.3s all;
 }
