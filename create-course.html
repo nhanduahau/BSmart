@@ -751,7 +751,7 @@
                     <!-- Create content module -->
                     <div class="d-flex align-items-center justify-content-center">
                       <form class="d-flex align-items-center justify-content-center" autocomplete="off" onsubmit="handleAddContentModuleLecture();">
-                        <input style="display: none;" type="text" class="form-control w-100 me-2 mt-3" name="inputCreateContentModule" id="inputCreateContentModule"  placeholder="Nội dung bài học...">
+                        <input style="display: none;" type="text" class="form-control w-100 ms-4 me-2 mt-3" name="inputCreateContentModule" id="inputCreateContentModule"  placeholder="Nội dung bài học...">
                         <!-- Button icon create content module -->
                         <button class="mt-3" style="background-color: transparent; border: none; display: none;" id="buttonCreateContentModuleIcon">
                           <i style="font-size:24px;" class="fa">&#xf067;</i>
@@ -1132,24 +1132,20 @@
           var newRow = table.insertRow(table.length);
 
           var cellInputCreateModule = newRow.insertCell(0);
-          cellInputCreateModule.innerHTML = `<button class="btn btn-link me-2" style="font-weight: 800; font-size: 18px;">
+          cellInputCreateModule.innerHTML = `<button class="btn btn-link mt-4 me-2" style="font-weight: 800; font-size: 18px;">
                                               ${data.inputCreateModule}
                                             </button>`;
 
           var cellFuncModule = newRow.insertCell(1);
-          cellFuncModule.innerHTML = `
-                                      <div class="d-flex align-items-center mt-2 ms-4">
-                                        <button onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
+          cellFuncModule.innerHTML = ` <button onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
                                           Tạo nội dung
                                         </button>
-                                        <button onclick='editRecord(this)' class="btn btn-secondary mt-3 me-2" id="editButton">
+                                        <button onclick="editRecord(this)" class="btn btn-secondary mt-3 me-2">
                                           Sửa
                                         </button>
                                         <button onclick='deleteRecord(this)' class="btn btn-danger mt-3 me-2">
                                           Xóa
-                                        </button>
-
-                                      </div>`;
+                                        </button>`;
           // Show content module
           document
           .getElementById('buttonCreateContentModule')
@@ -1167,21 +1163,10 @@
               document.getElementById('buttonClearCreateContentModule').style.display = 'none'
           })
         }
-        let currRow=null;
-        // show input add content module
-        function addContentModule(getRow) {
-          row = getRow.parentElement.parentElement;
-          currRow = row;
-          console.log('currRow', currRow)
-          if(row) {
-            document.getElementById('inputCreateContentModule').style.display = 'block'
-            document.getElementById('buttonCreateContentModuleIcon').style.display = 'block'
-            document.getElementById('buttonClearCreateContentModule').style.display = 'block'
-          }
-        }
         // edit data
-        function editRecord(td) {
-          selectedRow = td.parentElement.parentElement;
+        function editRecord(tds) {
+          selectedRow = tds.parentElement.parentElement;
+          console.log('selectedRow', selectedRow)
           document.getElementById('inputCreateModule').value = selectedRow.cells[0].innerText;
           document.getElementById('buttonCreateModule').innerHTML = '<i style="font-size:24px" class="fa">&#xf00c;</i>';
         }
@@ -1193,7 +1178,7 @@
           })
         // update data
         function updateRecord(formData) {
-          selectedRow.cells[0].innerHTML = `<button class="btn btn-link mt-4">
+          selectedRow.cells[0].innerHTML = `<button class="btn btn-link mt-4" style="font-weight: 800; font-size: 18px;">
                                               ${formData.inputCreateModule}
                                             </button>`
         }
@@ -1208,6 +1193,19 @@
         // reset data
         function resetDataForm() {
           document.getElementById('inputCreateModule').value = '';
+        }
+
+        var currRow=null;
+        // show input add content module
+        function addContentModule(getRow) {
+          row = getRow.parentElement.parentElement;
+          currRow = row;
+          console.log('currRow', currRow)
+          if(row) {
+            document.getElementById('inputCreateContentModule').style.display = 'block'
+            document.getElementById('buttonCreateContentModuleIcon').style.display = 'block'
+            document.getElementById('buttonClearCreateContentModule').style.display = 'block'
+          }
         }
 
         // Create content module
@@ -1262,14 +1260,15 @@
         // edit data 
         function editRecordContentModule(td) {
           selectedRowContentModule = td.parentElement.parentElement;
+          console.log('selectedRowContentModule', selectedRowContentModule)
           document.getElementById('inputCreateContentModule').value = selectedRowContentModule.cells[0].innerText;
           document.getElementById('buttonCreateContentModuleIcon').innerHTML = '<i style="font-size:24px" class="fa">&#xf00c;</i>';
         }
-        // document
-        //   .getElementById('buttonCreateContentModuleIcon')
-        //   .addEventListener('click', function() {
-        //     document.getElementById('buttonCreateContentModuleIcon').innerHTML = '<i style="font-size:24px" class="fa">&#xf067;</i>';
-        //   })
+        document
+          .getElementById('buttonCreateContentModuleIcon')
+          .addEventListener('click', function() {
+            document.getElementById('buttonCreateContentModuleIcon').innerHTML = '<i style="font-size:24px" class="fa">&#xf067;</i>';
+          })
         // update data
         function updateRecordContentModule(formData) {
           selectedRowContentModule.cells[0].innerHTML = `<a href="#" class="btn btn-link mt-1 text-decoration-none">
