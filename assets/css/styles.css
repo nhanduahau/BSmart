@@ -3184,13 +3184,14 @@ div.swiper-button-prev:after {
   font-weight: bold;
 }
 
-.course-route-show-lecture a {
+.course-route-show-lecture p {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   line-height: 26px;
   color: #333;
 }
-.course-route-show-lecture a:hover {
+.course-route-show-lecture p:hover {
   color: #ff630e;
   opacity: 0.8;
   transition: 0.3s all;

@@ -739,7 +739,7 @@
                       </button> -->
 
                       <!-- Show title module -->
-                      <div class="ms-4 course-route-show-lecture" id="courseRouteLectureDetail">
+                      <div class="course-route-show-lecture" id="courseRouteLectureDetail">
                         <table id="storeList" class="mt-2">
                           <tbody>
                             <!-- render data -->
@@ -786,7 +786,7 @@
                   </div>
 
                   <div id="collapseFour" class="collapse show p-4" aria-labelledby="headingFour" data-parent="#accordion">
-                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <form autocomplete="off" onsubmit="onFormSubmitTimeClass()">
                       <div class="row">
                         <!-- Start time -->
                         <div class="col-lg-4 col-md-12">
@@ -806,37 +806,37 @@
                         <div class="col-lg-4 col-md-12 d-flex align-items-center mt-3">
                           <div class="d-flex flex-column me-3">
                             <label class="form-check-label">T2</label>
-                            <input type="checkbox" class="form-check-input" value="T2" id="monday">
+                            <input type="checkbox" class="form-check-input" value="T2," name="chkT2" id="chkT2">
                           </div>
 
                           <div class="d-flex flex-column me-3">
                             <label class="form-check-label">T3</label>
-                            <input type="checkbox" class="form-check-input" value="T3" id="tuesday">
+                            <input type="checkbox" class="form-check-input" value="T3," name="chkT3" id="chkT3">
                           </div>
 
                           <div class="d-flex flex-column me-3">
                             <label class="form-check-label">T4</label>
-                            <input type="checkbox" class="form-check-input" value="T4" id="wednesday">
+                            <input type="checkbox" class="form-check-input" value="T4," name="chkT4" id="chkT4">
                           </div>
 
                           <div class="d-flex flex-column me-3">
                             <label class="form-check-label">T5</label>
-                            <input type="checkbox" class="form-check-input" value="T5" id="thursday">
+                            <input type="checkbox" class="form-check-input" value="T5," name="chkT5" id="chkT5">
                           </div>
 
                           <div class="d-flex flex-column me-3">
                             <label class="form-check-label">T6</label>
-                            <input type="checkbox" class="form-check-input" value="T6" id="friday">
+                            <input type="checkbox" class="form-check-input" value="T6," name="chkT6" id="chkT6">
                           </div>
 
                           <div class="d-flex flex-column me-3">
                             <label class="form-check-label">T7</label>
-                            <input type="checkbox" class="form-check-input" value="T7" id="saturday">
+                            <input type="checkbox" class="form-check-input" value="T7," name="chkT7" id="chkT7">
                           </div>
 
                           <div class="d-flex flex-column">
                             <label class="form-check-label">CN</label>
-                            <input type="checkbox" class="form-check-input" value="CN" id="sunday">
+                            <input type="checkbox" class="form-check-input" value="CN," name="chkCN" id="chkCN">
                           </div>
                         </div>
                       </div>
@@ -873,14 +873,14 @@
                         </div>
                         <!-- Button create class -->
                         <div class="col-lg-4 col-md-12 mt-4">
-                          <button class="btn btn-create-class">Tạo lớp học</button>
+                          <button class="btn btn-create-class" id="createClassBtn">Tạo lớp học</button>
                         </div>
                       </div>
                     </form>
 
                     <!-- Table list course schedule -->
                     <div class="col-lg-12 col-md-12 mt-4">
-                      <table class="table table-striped table-hover" id="storeList">
+                      <table class="table table-striped table-hover" id="storeListTimeClass">
                         <thead>
                           <tr>
                             <th scope="col" style="font-weight: bold;">#</th>
@@ -894,18 +894,7 @@
                         </thead>
                         <!-- Data -->
                         <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>15:00</td>
-                            <td>18:30</td>
-                            <td>T2, T4, T6</td>
-                            <td>14</td>
-                            <td>1/1/2022</td>
-                            <td>
-                              <button class="btn btn-danger me-2">Xóa</button>
-                              <button class="btn btn-primary">Cập nhật</button>
-                            </td>
-                          </tr>
+                          <!-- render data -->
                         </tbody>
                       </table>
                     </div>
@@ -1132,12 +1121,12 @@
           var newRow = table.insertRow(table.length);
 
           var cellInputCreateModule = newRow.insertCell(0);
-          cellInputCreateModule.innerHTML = `<button class="btn btn-link mt-4 me-2" style="font-weight: 800; font-size: 18px;">
+          cellInputCreateModule.innerHTML = `<button class="btn btn-link mt-4 me-2" style="font-weight: 800">
                                               ${data.inputCreateModule}
                                             </button>`;
 
           var cellFuncModule = newRow.insertCell(1);
-          cellFuncModule.innerHTML = ` <button onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
+          cellFuncModule.innerHTML = `<button disabled onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
                                           Tạo nội dung
                                         </button>
                                         <button onclick="editRecord(this)" class="btn btn-secondary mt-3 me-2">
@@ -1145,7 +1134,7 @@
                                         </button>
                                         <button onclick='deleteRecord(this)' class="btn btn-danger mt-3 me-2">
                                           Xóa
-                                        </button>`;
+                                      </button>`;
           // Show content module
           document
           .getElementById('buttonCreateContentModule')
@@ -1183,9 +1172,9 @@
                                             </button>`
         }
         // delete data
-        function deleteRecord(delData) {
+        function deleteRecord(td) {
           if(confirm('Bạn có muốn xóa tiêu đề này không?')) {
-            row = delData.parentElement.parentElement;
+            row = td.parentElement.parentElement;
             document.getElementById('storeList').deleteRow(row.rowIndex);
           }
           resetDataForm();
@@ -1245,9 +1234,9 @@
             var newRow = table.insertRow(table.length);
 
             var cellInputContentModule = newRow.insertCell(0);
-            cellInputContentModule.innerHTML = `<a href="#" class="btn btn-link mt-1 text-decoration-none">
+            cellInputContentModule.innerHTML = `<p class="mt-1 text-decoration-none">
                                                 ${data.inputCreateContentModule}
-                                              </a>`;
+                                              </p>`;
 
             var cellFuncContentModule = newRow.insertCell(1);
             cellFuncContentModule.innerHTML = `<button onclick='editRecordContentModule(this)' class="btn btn-secondary mt-1 ms-4 me-2">
@@ -1295,66 +1284,197 @@
           });
         });
 
-        // Table list
-        // var selectedRow = null;
-        // function onFormSubmit(e) {
-        //   event.preventDefault();
+        // Thời gian lớp học
+        var selectedTimeClassRow = null;
+        function onFormSubmitTimeClass() {
+          event.preventDefault();
 
-        //   var formData = readFormData();
+          var formData = readFormDataTimeClass();
 
-        //   if(selectedRow === null) {
-        //     insertNewRecord(formData)
-        //   } else {
-        //     alert('Lỗi!')
-        //   }
-        // }
+          if(selectedTimeClassRow === null) {
+            insertNewRecordTimeClass(formData)
+          } else {
+            updateRecordTimeClass(formData)
+          }
+          resetDataFormClass()
+        }
 
+        let saveInfo;
         // read data
-        // function readFormData() {
-        //   var formData = {};
+        function readFormDataTimeClass() {
+          var formData = {};
 
-        //   formData["startTime"] = document.getElementById("startTime").value;
-        //   formData["endTime"] = document.getElementById("endTime").value;
-        //   formData["monday"] = document.getElementById("monday").value;
-        //   formData["tuesday"] = document.getElementById("tuesday").value;
-        //   formData["wednesday"] = document.getElementById("wednesday").value;
-        //   formData["thursday"] = document.getElementById("thursday").value;
-        //   formData["friday"] = document.getElementById("friday").value;
-        //   formData["saturday"] = document.getElementById("saturday").value;
-        //   formData["sunday"] = document.getElementById("sunday").value;
-        //   formData["slot"] = document.getElementById("slot").value;
-        //   formData["startTimeExpected"] = document.getElementById("startTimeExpected").value;
+          formData["startTime"] = document.getElementById("startTime").value;
+          formData["endTime"] = document.getElementById("endTime").value;
+          formData["chkT2"] = document.getElementById("chkT2").value;
+          formData["chkT3"] = document.getElementById("chkT3").value;
+          formData["chkT4"] = document.getElementById("chkT4").value;
+          formData["chkT5"] = document.getElementById("chkT5").value;
+          formData["chkT6"] = document.getElementById("chkT6").value;
+          formData["chkT7"] = document.getElementById("chkT7").value;
+          formData["chkCN"] = document.getElementById("chkCN").value;
+          formData["slot"] = document.getElementById("slot").value;
+          formData["startTimeExpected"] = document.getElementById("startTimeExpected").value;
           
-        //   return formData;
-        // }
-
+          return formData;
+        }
         // Insert data
-        // function insertNewRecord(data) {
-        //   var i = 1;
-        //   var table = document.getElementById("storeList").getElementsByTagName('tbody')[0];
-        //   var newRow = table.insertRow(table.length);
+        function insertNewRecordTimeClass(data) {
+          var index= 1;
+          var table = document.getElementById("storeListTimeClass").getElementsByTagName('tbody')[0];
+          var newRow = table.insertRow(table.length);
 
-        //   var cell1 = newRow.insertCell(0);
-        //   cell1.innerHTML = i+1;
+          var cell1 = newRow.insertCell(0);
+          cell1.innerHTML = index+1;
 
-        //   var cellStartTime = newRow.insertCell(1);
-        //   cellStartTime.innerHTML = data.startTime;
+          var cellStartTime = newRow.insertCell(1);
+          cellStartTime.innerHTML = data.startTime;
 
-        //   var cell2 = newRow.insertCell(2);
-        //   cell2.innerHTML = data.endTime;
+          var cell2 = newRow.insertCell(2);
+          cell2.innerHTML = data.endTime;
 
-        //   var cell3 = newRow.insertCell(3);
-        //   cell3.innerHTML = data.monday;
+          var cell3 = newRow.insertCell(3);
+          var arrs=[];
+          var chk2 = document.getElementById('chkT2');
+          var chk3 = document.getElementById('chkT3');
+          var chk4 = document.getElementById('chkT4');
+          var chk5 = document.getElementById('chkT5');
+          var chk6 = document.getElementById('chkT6');
+          var chk7 = document.getElementById('chkT7');
+          var chk8 = document.getElementById('chkCN');
+          if(chk2.checked) {
+            arrs.push(data.chkT2)
+          }
+          if(chk3.checked) {
+            arrs.push(data.chkT3)
+          }
+          if(chk4.checked) {
+            arrs.push(data.chkT4)
+          }
+          if(chk5.checked) {
+            arrs.push(data.chkT5)
+          }
+          if(chk6.checked) {
+            arrs.push(data.chkT6)
+          }
+          if(chk7.checked) {
+            arrs.push(data.chkT7)
+          }
+          if(chk8.checked) {
+            arrs.push(data.chkCN)
+          }
+          var val = arrs.join('');
+          var lastChar = val.slice(-1);
+          if (lastChar == ',') {
+              val= val.slice(0, -1);
+          }
+          cell3.innerHTML = val;
+          saveInfo = val;
 
-        //   var cell4 = newRow.insertCell(4);
-        //   cell4.innerHTML = data.slot;
+          var cell4 = newRow.insertCell(4);
+          cell4.innerHTML = data.slot;
 
-        //   var cell5 = newRow.insertCell(5);
-        //   cell5.innerHTML = data.startTimeExpected;
+          var cell5 = newRow.insertCell(5);
+          cell5.innerHTML = data.startTimeExpected;
 
-        //   var cell6 = newRow.insertCell(6);
-        //   cell6.innerHTML = `<button class="btn btn-danger me-2">Xóa</button> <button class="btn btn-primary">Cập nhật</button>`
-        // }
+          var cell6 = newRow.insertCell(6);
+          cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn btn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`
+        }
+        // edit data
+        function editRecordClass(tds) {
+          selectedTimeClassRow = tds.parentElement.parentElement;
+
+          console.log(selectedTimeClassRow.cells[3].innerText)
+          console.log('saveInfo', saveInfo)
+
+          document.getElementById('startTime').value = selectedTimeClassRow.cells[1].innerText;
+          document.getElementById('endTime').value = selectedTimeClassRow.cells[2].innerText;
+          // 3
+          document.getElementById('chkT2').checked = false;
+          document.getElementById('chkT3').checked = false;
+          document.getElementById('chkT4').checked = false;
+          document.getElementById('chkT5').checked = false;
+          document.getElementById('chkT6').checked = false;
+          document.getElementById('chkT7').checked = false;
+          document.getElementById('chkCN').checked = false;
+          // 3
+          document.getElementById('slot').value = selectedTimeClassRow.cells[4].innerText;
+          document.getElementById('startTimeExpected').value = selectedTimeClassRow.cells[5].innerText;
+        
+          // change button to save
+          document.getElementById('createClassBtn').innerHTML = `<button class="btn btn-create-class p-0 m-0" id="createClassBtn">Lưu thay đổi</button>`;
+        }
+        // reset icon create class
+        document
+          .getElementById('createClassBtn')
+          .addEventListener('click', function() {
+            document.getElementById('createClassBtn').innerHTML = '<button class="btn btn-create-class p-0 m-0" id="createClassBtn">Tạo lớp học</button>';
+          })
+         // update data
+         function updateRecordTimeClass(formData) {
+          selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
+          selectedTimeClassRow.cells[2].innerHTML = formData.endTime;
+          var arrs=[];
+          var chk2 = document.getElementById('chkT2');
+          var chk3 = document.getElementById('chkT3');
+          var chk4 = document.getElementById('chkT4');
+          var chk5 = document.getElementById('chkT5');
+          var chk6 = document.getElementById('chkT6');
+          var chk7 = document.getElementById('chkT7');
+          var chk8 = document.getElementById('chkCN');
+          if(chk2.checked) {
+            arrs.push(formData.chkT2)
+          }
+          if(chk3.checked) {
+            arrs.push(formData.chkT3)
+          }
+          if(chk4.checked) {
+            arrs.push(formData.chkT4)
+          }
+          if(chk5.checked) {
+            arrs.push(formData.chkT5)
+          }
+          if(chk6.checked) {
+            arrs.push(formData.chkT6)
+          }
+          if(chk7.checked) {
+            arrs.push(formData.chkT7)
+          }
+          if(chk8.checked) {
+            arrs.push(formData.chkCN)
+          }
+          var val = arrs.join('');
+          var lastChar = val.slice(-1);
+          if (lastChar == ',') {
+              val= val.slice(0, -1);
+          }
+          selectedTimeClassRow.cells[3].innerHTML = val;
+          selectedTimeClassRow.cells[4].innerHTML = formData.slot;
+          selectedTimeClassRow.cells[4].innerHTML = formData.startTimeExpected;
+        }
+        // delete data
+        function handleDelClass(delData) {
+          if(confirm('Bạn có muốn xóa lớp học này không?')) {
+            row = delData.parentElement.parentElement;
+            document.getElementById('storeListTimeClass').deleteRow(row.rowIndex);
+          }
+          resetDataFormClass()
+        }
+        // reset data
+        function resetDataFormClass() {
+          document.getElementById('startTime').value = '';
+          document.getElementById('endTime').value = '';
+          document.getElementById('chkT2').checked = false;
+          document.getElementById('chkT3').checked = false;
+          document.getElementById('chkT4').checked = false;
+          document.getElementById('chkT5').checked = false;
+          document.getElementById('chkT6').checked = false;
+          document.getElementById('chkT7').checked = false;
+          document.getElementById('chkCN').checked = false;
+          document.getElementById('slot').selectedIndex = 0;
+          document.getElementById('startTimeExpected').value = '';
+        }
+
     </script>
     <script type="text/javascript">
       var country_arr = new Array(

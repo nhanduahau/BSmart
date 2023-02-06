@@ -33,9 +33,10 @@
 }
 
 .course-route-show-lecture {
-  a {
+  p {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     line-height: 26px;
     color: #333;
 
