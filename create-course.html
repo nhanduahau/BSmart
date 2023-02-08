@@ -15,7 +15,6 @@
       crossorigin="anonymous"
     />
 
-
     <!-- Import js (bootstrap 4) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -497,12 +496,12 @@
                 <div class="card">
                   <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
-                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#multiCollapseOne" aria-expanded="false" aria-controls="multiCollapseOne">
                         Thông tin khóa học
                       </button>
                     </h5>
                   </div>
-                  <div id="collapseOne" class="collapse show p-4" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div id="multiCollapseOne" class="collapse multi-collapse show p-4">
                     <div class="mentor-add-course">
                       <form action="#" method="post" class="add-course-form">
                         <!-- Tên khóa học -->
@@ -565,6 +564,7 @@
                                     <input
                                       class="form-control w-100 mb-2"
                                       type="file"
+                                      accept=".jpg, jpeg, .png"
                                       id="formFileImageCourse"
                                       onchange="previewImageCourse()"
                                     />
@@ -591,7 +591,7 @@
                             aria-label="Default select example"
                           >
                             <option selected value="Online">Online</option>
-                            <option value="Offline">Offline</option>
+                            <option value="Offline" disabled>Offline</option>
                           </select>
                         </div>
                         <!-- Số lượng học viên -->
@@ -600,11 +600,11 @@
                           <div class="col-lg-4 col-md-6 d-flex align-items-center">
                             <!-- Min -->
                             <label class="form-label me-2 mt-2">Min: </label>
-                            <input type="number" class="form-control" value="1" />
+                            <input type="number" id="min-quatity" class="form-control" value="1" />
                             
                             <!-- Max -->
                             <label class="form-label me-2 mt-2 ms-4">Max: </label>
-                            <input type="number" class="form-control" value="15" />
+                            <input type="number" id="max-quatity" class="form-control" value="15" />
                           </div>
                         </div>
                         <!-- Tag khóa học -->
@@ -690,7 +690,7 @@
                           <label class="form-label">Mô tả khoá học: </label>
                           <div class="form-floating">
                             <div class="box_luuy" style="background: #f3efef; box-shadow: rgba(0, 0, 0, 0.1) 3px 4px 4px; clear: both; line-height: 1.7; color: white; font-family: Roboto; letter-spacing: -0.75px; margin: 5px 0px; padding: 20px 25px; transition: 0.5s;">
-                              <textarea id="input_luuy" rows="5" style="width: 100%;" oninput="countChar(this)"></textarea>
+                              <textarea id="input_luuy" rows="5" style="width: 100%;" oninput="countChar(this)" maxlength="200"></textarea>
                             </div>
                             <span id="charNum" aria-label="Đã dùng 0/200 ký tự" role="img" class="ZTPlmc" style="float: right;">0 / 200</span>
 
@@ -705,8 +705,6 @@
                               }
                             }
                           </script>
-                          
-                        </div>
                       </form>
                     </div>
                   </div>
@@ -716,13 +714,13 @@
                 <div class="card mt-4">
                   <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#multiCollapseTwo" aria-expanded="false" aria-controls="multiCollapseTwo">
                         Lộ trình khóa học
                       </button>
                     </h5>
                   </div>
 
-                  <div id="collapseTwo" class="collapse show p-4" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div id="multiCollapseTwo" class="collapse multi-collapse show p-4">
                     <!-- Title course -->
                     <div class="d-flex align-items-center justify-content-between">
                       <h1 class="course-route-title-name">Front-end basic</h1>
@@ -790,13 +788,13 @@
                 <div class="card mt-4">
                   <div class="card-header" id="headingFour">
                     <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#multiCollapseFour" aria-expanded="false" aria-controls="multiCollapseFour">
                         Thời gian lớp học
                       </button>
                     </h5>
                   </div>
 
-                  <div id="collapseFour" class="collapse show p-4" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div id="multiCollapseFour" class="collapse multi-collapse show p-4">
                     <form autocomplete="off" onsubmit="onFormSubmitTimeClass()">
                       <div class="row">
                         <!-- Start time -->
@@ -806,6 +804,7 @@
                             <input type="time" class="form-control w-75 mt-1" name="startTime" id="startTime">
                           </div>
                         </div>
+                        
                         <!-- End time -->
                         <div class="col-lg-4 col-md-12">
                           <div class="form-group mt-3">
@@ -1051,20 +1050,30 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Script -->
     <script>
-      function previewImageCourse() {
-        // console.log(frame1);
-        // console.log(URL.createObjectURL(event.target.files[0]));
 
-        frameImageCourse.src = "";
-        frameImageCourse.src = window.URL.createObjectURL(
-          event.target.files[0]
-        );
+      // preview image
+      function previewImageCourse() {
+        var optFile = document.getElementById('formFileImageCourse');
+        var pathFile = optFile.value;
+        var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
+        
+        if(!allowedExtensions.exec(pathFile)){
+          alert('Vui lòng chọn file ảnh có đuôi là: .jpeg/.jpg/.png');
+          optFile.value = '';
+          return false;
+        } else {
+          frameImageCourse.src = "";
+          frameImageCourse.src = window.URL.createObjectURL(
+            event.target.files[0]
+          );
+        }
       }
+      // reset upload image
       function clearImageCourse() {
         event.preventDefault();
-        loading();
+        // loading();
         document.getElementById("formFileImageCourse").value = null;
-        frameImageCourse.src = "./assets/images/upload-img.jpg";
+        document.getElementById("frameImageCourse").src = "./assets/images/upload-img.jpg";
       }
 
       document
@@ -1619,10 +1628,16 @@
           );
         }
       }
-    </script>
-    <script language="javascript">
-      print_country("country");
-    </script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
-  </body>
+     
+      document.getElementById('startTime').addEventListener('click', function () {
+      console.log('change time')
+      this.value = '07:01'
+    })
+  </script>
+  <script language="javascript">
+    print_country("country");
+  </script>
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
 </html>
