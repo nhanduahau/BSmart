@@ -1,12 +1,12 @@
 .create-course-wrapper {
   .mentor-add-course {
-    padding: 35px 20px 0;
+    // padding: 35px 20px 0;
     .add-course-form {
       color: $primary-color;
       .image-container {
         position: relative;
         #frameImageCourse {
-          max-height: 450px;
+          max-height: 260px;
           border-radius: 10px;
         }
         .loading {
@@ -24,4 +24,45 @@
       }
     }
   }
+}
+
+// Lộ trình khóa học
+.course-route-title-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.course-route-show-lecture {
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 26px;
+    color: #333;
+
+    &:hover {
+      color: #ff630e;
+      opacity: 0.8;
+      transition: 0.3s all;
+    }
+  }
+}
+
+// Thời gian lớp học
+.btn-create-class {
+  color: #fff;
+  background-color: #ff630e;
+
+  &:hover {
+    color: #fff;
+    background-color: #ff630e;
+    opacity: 0.8;
+    transition: 0.3s all;
+  }
+}
+
+.fa:hover {
+  color: #ff630e;
+  opacity: 0.8;
+  transition: 0.3s all;
 }
