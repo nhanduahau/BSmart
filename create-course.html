@@ -507,11 +507,16 @@
                         <!-- Tên khóa học -->
                         <div class="mb-3">
                           <label class="form-label">Tên khoá học: </label>
-                          <input
+                          <div class="sup-autocom">
+                            <input
+                            id="courseName"
                             type="text"
                             class="form-control"
-                            value="Front End Basic"
-                          />
+                            />
+                            <div class="autocom-box">
+                              <!-- render list course name -->
+                            </div>
+                          </div>
                         </div>
                         <!-- Trình độ -->
                         <div class="mb-3">
@@ -611,11 +616,49 @@
                         <div class="mb-3">
                           <label for="tags-input" class="form-label">Tags: </label>
                           <div class="col-lg-12 col-md-2 d-flex align-items-center">
-                            <input type="text" class="form-control me-4" value="Front-end" />
-                            <input type="text" class="form-control me-4" value="Front-end basic" />
-                            <input type="text" class="form-control me-4" value="Front-end intermediate" />
-                            <input type="text" class="form-control me-4" value="Front-end advanced" />
-                            <input type="text" class="form-control" value="Front-end pro" />
+
+                            <!-- Tag 1 -->
+                            <div class="tag1-sup-autocom me-1">
+                              <input type="text" id="tag1CourseName" class="form-control me-4" />
+                              <div class="tag1-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
+                            <!-- Tag 2 -->
+                            <div class="tag2-sup-autocom me-1">
+                              <input type="text" id="tag2CourseName" class="form-control me-4"  />
+                              <div class="tag2-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
+                            <!-- Tag 3 -->
+                            <div class="tag3-sup-autocom me-1">
+                              <input type="text" id="tag3CourseName" class="form-control me-4"  />
+                              <div class="tag3-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
+                            <!-- Tag 4 -->
+                            <div class="tag4-sup-autocom me-1">
+                              <input type="text" id="tag4CourseName" class="form-control me-4" />
+                              <div class="tag4-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
+                            <!-- Tag 5 -->
+                            <div class="tag5-sup-autocom me-1">
+                              <input type="text" id="tag5CourseName" class="form-control me-4"/>
+                              <div class="tag5-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
+                            <!-- Tag 6 -->
+                            <div class="tag6-sup-autocom">
+                              <input type="text" id="tag6CourseName" class="form-control" />
+                              <div class="tag6-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
                           </div>
                         </div>
 
@@ -1041,6 +1084,350 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Script -->
     <script>
+
+      // autocomplete course name
+      let liContainer = document.querySelector('.autocom-box');
+      let courseNameInput = document.getElementById('courseName');
+      let searchInput = document.querySelector('.sup-autocom');
+      
+      // tag 1
+      let tag1LiContainer = document.querySelector('.tag1-autocom-box');
+      let tag1CourseNameInput = document.getElementById('tag1CourseName');
+      let tag1SearchInput = document.querySelector('.tag1-sup-autocom');
+      // tag 2
+      let tag2LiContainer = document.querySelector('.tag2-autocom-box');
+      let tag2CourseNameInput = document.getElementById('tag2CourseName');
+      let tag2SearchInput = document.querySelector('.tag2-sup-autocom');
+      // tag 3
+      let tag3LiContainer = document.querySelector('.tag3-autocom-box');
+      let tag3CourseNameInput = document.getElementById('tag3CourseName');
+      let tag3SearchInput = document.querySelector('.tag3-sup-autocom');
+      // tag 4
+      let tag4LiContainer = document.querySelector('.tag4-autocom-box');
+      let tag4CourseNameInput = document.getElementById('tag4CourseName');
+      let tag4SearchInput = document.querySelector('.tag4-sup-autocom');
+      // tag 5
+      let tag5LiContainer = document.querySelector('.tag5-autocom-box');
+      let tag5CourseNameInput = document.getElementById('tag5CourseName');
+      let tag5SearchInput = document.querySelector('.tag5-sup-autocom');
+      // tag 6
+      let tag6LiContainer = document.querySelector('.tag6-autocom-box');
+      let tag6CourseNameInput = document.getElementById('tag6CourseName');
+      let tag6SearchInput = document.querySelector('.tag6-sup-autocom');
+
+      // data
+      let datas = [
+        "TypeScript",
+        "Swift",
+        "Scala",
+        "Objective-C",
+        "Shell",
+        "C",
+        "C#",
+        "CSS",
+        "C++",
+        "PHP",
+        "Ruby",
+        "Python",
+        "Java",
+        "JavaScript",
+        "Developer",
+        "Web Designer",
+        "Web Developer",
+        "Front-end Web Developer",
+        "Back-end Web Developer",
+        "Login Form in HTML & CSS",
+        "How to learn HTML & CSS",
+        "How to learn JavaScript",
+      ];
+      // evt
+      courseNameInput.addEventListener('keyup', function() {
+        let inpValue = courseNameInput.value;
+
+        if(inpValue) {
+          // add searchInp
+          searchInput.classList.add("active");
+          let filterKeyWord = datas.filter(function(keyWord) {
+            return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+          })
+
+          dataSuggestionWordsGenerator(filterKeyWord);
+        } else {
+          // remove searchInp
+          searchInput.classList.remove("active");
+        }
+      });
+      // generate key word
+      let customListItem;
+      function dataSuggestionWordsGenerator(arrsKeyWord) {
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
+
+        if(keyWord) {
+          liContainer.innerHTML = keyWord;
+        } else {
+          liContainer.innerHTML = "<li>" + courseNameInput.value + "</li>";
+        }
+        Select();
+      }
+      // select
+      function Select() {
+        let allListItems = liContainer.querySelectorAll("li");
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
+            courseNameInput.value = e.target.textContent;
+            // remove search inp
+            searchInput.classList.remove("active");
+          })
+        })
+      }
+
+      // Tags 1
+      tag1CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag1CourseNameInput.value;
+
+      if(inpValue) {
+        // add searchInp
+        tag1SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
+
+        dataTag1SuggestionWordsGenerator(filterKeyWord);
+        } else {
+          // remove searchInp
+          tag1SearchInput.classList.remove("active");
+        }
+      });
+      // generate key word
+      function dataTag1SuggestionWordsGenerator(arrsKeyWord) {
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
+
+        if(keyWord) {
+          tag1LiContainer.innerHTML = keyWord;
+        } else {
+          tag1LiContainer.innerHTML = "<li>" + tag1CourseNameInput.value + "</li>";
+        }
+        SelectTag1();
+      }
+      function SelectTag1() {
+        let allListItems = tag1LiContainer.querySelectorAll("li");
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
+            tag1CourseNameInput.value = e.target.textContent;
+            // remove search inp
+            tag1SearchInput.classList.remove("active");
+          })
+        })
+      }
+      
+      // Tags 2
+      tag2CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag2CourseNameInput.value;
+
+      if(inpValue) {
+        // add searchInp
+        tag2SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
+
+        dataTag2SuggestionWordsGenerator(filterKeyWord);
+        } else {
+          // remove searchInp
+          tag2SearchInput.classList.remove("active");
+        }
+      });
+      // generate key word
+      function dataTag2SuggestionWordsGenerator(arrsKeyWord) {
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
+
+        if(keyWord) {
+          tag2LiContainer.innerHTML = keyWord;
+        } else {
+          tag2LiContainer.innerHTML = "<li>" + tag2CourseNameInput.value + "</li>";
+        }
+        SelectTag2();
+      }
+      function SelectTag2() {
+        let allListItems = tag2LiContainer.querySelectorAll("li");
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
+            tag2CourseNameInput.value = e.target.textContent;
+            // remove search inp
+            tag2SearchInput.classList.remove("active");
+          })
+        })
+      }
+
+      // Tags 3
+      tag3CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag3CourseNameInput.value;
+
+      if(inpValue) {
+        // add searchInp
+        tag3SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
+
+        dataTag3SuggestionWordsGenerator(filterKeyWord);
+        } else {
+          // remove searchInp
+          tag3SearchInput.classList.remove("active");
+        }
+      });
+      // generate key word
+      function dataTag3SuggestionWordsGenerator(arrsKeyWord) {
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
+
+        if(keyWord) {
+          tag3LiContainer.innerHTML = keyWord;
+        } else {
+          tag3LiContainer.innerHTML = "<li>" + tag3CourseNameInput.value + "</li>";
+        }
+        SelectTag3();
+      }
+      function SelectTag3() {
+        let allListItems = tag3LiContainer.querySelectorAll("li");
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
+            tag3CourseNameInput.value = e.target.textContent;
+            // remove search inp
+            tag3SearchInput.classList.remove("active");
+          })
+        })
+      }
+
+      // Tags 4
+      tag4CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag4CourseNameInput.value;
+
+      if(inpValue) {
+        // add searchInp
+        tag4SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
+
+        dataTag4SuggestionWordsGenerator(filterKeyWord);
+        } else {
+          // remove searchInp
+          tag4SearchInput.classList.remove("active");
+        }
+      });
+      // generate key word
+      function dataTag4SuggestionWordsGenerator(arrsKeyWord) {
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
+
+        if(keyWord) {
+          tag4LiContainer.innerHTML = keyWord;
+        } else {
+          tag4LiContainer.innerHTML = "<li>" + tag4CourseNameInput.value + "</li>";
+        }
+        SelectTag4();
+      }
+      function SelectTag4() {
+        let allListItems = tag4LiContainer.querySelectorAll("li");
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
+            tag4CourseNameInput.value = e.target.textContent;
+            // remove search inp
+            tag4SearchInput.classList.remove("active");
+          })
+        })
+      }
+
+      // Tags 5
+      tag5CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag5CourseNameInput.value;
+
+      if(inpValue) {
+        // add searchInp
+        tag5SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
+
+        dataTag5SuggestionWordsGenerator(filterKeyWord);
+        } else {
+          // remove searchInp
+          tag5SearchInput.classList.remove("active");
+        }
+      });
+      // generate key word
+      function dataTag5SuggestionWordsGenerator(arrsKeyWord) {
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
+
+        if(keyWord) {
+          tag5LiContainer.innerHTML = keyWord;
+        } else {
+          tag5LiContainer.innerHTML = "<li>" + tag5CourseNameInput.value + "</li>";
+        }
+        SelectTag5();
+      }
+      function SelectTag5() {
+        let allListItems = tag5LiContainer.querySelectorAll("li");
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
+            tag5CourseNameInput.value = e.target.textContent;
+            // remove search inp
+            tag5SearchInput.classList.remove("active");
+          })
+        })
+      }
+
+      // Tags 6
+      tag6CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag6CourseNameInput.value;
+
+      if(inpValue) {
+        // add searchInp
+        tag6SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
+
+        dataTag6SuggestionWordsGenerator(filterKeyWord);
+        } else {
+          // remove searchInp
+          tag6SearchInput.classList.remove("active");
+        }
+      });
+      // generate key word
+      function dataTag6SuggestionWordsGenerator(arrsKeyWord) {
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
+
+        if(keyWord) {
+          tag6LiContainer.innerHTML = keyWord;
+        } else {
+          tag6LiContainer.innerHTML = "<li>" + tag6CourseNameInput.value + "</li>";
+        }
+        SelectTag6();
+      }
+      function SelectTag6() {
+        let allListItems = tag6LiContainer.querySelectorAll("li");
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
+            tag6CourseNameInput.value = e.target.textContent;
+            // remove search inp
+            tag6SearchInput.classList.remove("active");
+          })
+        })
+      }
 
       // preview image
       function previewImageCourse() {
