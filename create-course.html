@@ -507,11 +507,16 @@
                         <!-- Tên khóa học -->
                         <div class="mb-3">
                           <label class="form-label">Tên khoá học: </label>
-                          <input
+                          <div class="sup-autocom">
+                            <input
+                            id="courseName"
                             type="text"
                             class="form-control"
-                            value="Front End Basic"
-                          />
+                            />
+                            <div class="autocom-box">
+                              <!-- render list course name -->
+                            </div>
+                          </div>
                         </div>
                         <!-- Trình độ -->
                         <div class="mb-3">
@@ -582,6 +587,20 @@
                             </div>
                           </div>
                         </div>
+                        <!-- Lĩnh vực -->
+                        <div class="mb-3">
+                          <label class="form-label">Lĩnh vực: </label>
+                          <select
+                            id=""
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected value="lv1">Lĩnh vực 1</option>
+                            <option value="lv2">Lĩnh vực 2</option>
+                            <option value="lv3">Lĩnh vực 3</option>
+                            <option value="lv4">Lĩnh vực 4</option>
+                          </select>
+                        </div>
                         <!-- Hình thức khóa học -->
                         <div class="mb-3">
                           <label class="form-label">Hình thức khoá học: </label>
@@ -597,25 +616,63 @@
                         <!-- Số lượng học viên -->
                         <div class="mb-3">
                           <label class="form-label">Số lượng học viên: </label>
-                          <div class="col-lg-4 col-md-6 d-flex align-items-center">
+                          <div class="col-lg-4 col-md-6 d-flex align-items-center" id="quantity">
                             <!-- Min -->
                             <label class="form-label me-2 mt-2">Min: </label>
-                            <input type="number" id="min-quatity" class="form-control" value="1" />
+                            <input type="number" class="form-control" value="1" />
                             
                             <!-- Max -->
                             <label class="form-label me-2 mt-2 ms-4">Max: </label>
-                            <input type="number" id="max-quatity" class="form-control" value="15" />
+                            <input type="number" class="form-control" value="15" />
                           </div>
                         </div>
                         <!-- Tag khóa học -->
-                        <div class="mb-3">
+                        <div class="mb-4">
                           <label for="tags-input" class="form-label">Tags: </label>
                           <div class="col-lg-12 col-md-2 d-flex align-items-center">
-                            <input type="text" class="form-control me-4" value="Front-end" />
-                            <input type="text" class="form-control me-4" value="Front-end basic" />
-                            <input type="text" class="form-control me-4" value="Front-end intermediate" />
-                            <input type="text" class="form-control me-4" value="Front-end advanced" />
-                            <input type="text" class="form-control" value="Front-end pro" />
+
+                            <!-- Tag 1 -->
+                            <div class="tag1-sup-autocom me-1">
+                              <input type="text" id="tag1CourseName" class="form-control me-4" />
+                              <div class="tag1-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
+                            <!-- Tag 2 -->
+                            <div class="tag2-sup-autocom me-1">
+                              <input type="text" id="tag2CourseName" class="form-control me-4"  />
+                              <div class="tag2-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
+                            <!-- Tag 3 -->
+                            <div class="tag3-sup-autocom me-1">
+                              <input type="text" id="tag3CourseName" class="form-control me-4"  />
+                              <div class="tag3-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
+                            <!-- Tag 4 -->
+                            <div class="tag4-sup-autocom me-1">
+                              <input type="text" id="tag4CourseName" class="form-control me-4" />
+                              <div class="tag4-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
+                            <!-- Tag 5 -->
+                            <div class="tag5-sup-autocom me-1">
+                              <input type="text" id="tag5CourseName" class="form-control me-4"/>
+                              <div class="tag5-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
+                            <!-- Tag 6 -->
+                            <div class="tag6-sup-autocom">
+                              <input type="text" id="tag6CourseName" class="form-control" />
+                              <div class="tag6-autocom-box">
+                                <!-- render list course name -->
+                              </div>
+                            </div>
                           </div>
                         </div>
 
@@ -723,7 +780,7 @@
                   <div id="multiCollapseTwo" class="collapse multi-collapse show p-4">
                     <!-- Title course -->
                     <div class="d-flex align-items-center justify-content-between">
-                      <h1 class="course-route-title-name">Front-end basic</h1>
+                      <h1 class="course-route-title-name" id="routeCourseTitleName"></h1>
                       <button class="btn btn-primary" id="btnCreateModule" onclick="handleCreateModule();">Tạo module</button>
                     </div>
                     <!-- Detail course (Create module) -->
@@ -1059,8 +1116,6 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Script -->
     <script>
-
-      // preview image
       function previewImageCourse() {
         var optFile = document.getElementById('formFileImageCourse');
         var pathFile = optFile.value;
