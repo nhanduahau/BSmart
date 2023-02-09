@@ -758,7 +758,7 @@
                   <div id="multiCollapseTwo" class="collapse multi-collapse show p-4">
                     <!-- Title course -->
                     <div class="d-flex align-items-center justify-content-between">
-                      <h1 class="course-route-title-name">Front-end basic</h1>
+                      <h1 class="course-route-title-name" id="routeCourseTitleName">Front-end basic</h1>
                       <button class="btn btn-primary" id="btnCreateModule" onclick="handleCreateModule();">Tạo module</button>
                     </div>
                     <!-- Detail course (Create module) -->
@@ -1137,6 +1137,9 @@
       let tag6CourseNameInput = document.getElementById('tag6CourseName');
       let tag6SearchInput = document.querySelector('.tag6-sup-autocom');
 
+      // route course title name
+      let routeCourseTitleName = document.getElementById('routeCourseTitleName');
+
       // data
       let datas = [
         "TypeScript",
@@ -1163,6 +1166,10 @@
         "How to learn JavaScript",
       ];
       // evt
+      courseNameInput.addEventListener('change', function () {
+        // change theo input ở thông tin khóa học
+        routeCourseTitleName.innerText = courseNameInput.value
+      })
       courseNameInput.addEventListener('keyup', function() {
         let inpValue = courseNameInput.value;
 
@@ -1199,6 +1206,7 @@
         allListItems.forEach(function(word) {
           word.addEventListener('click', function(e) {
             courseNameInput.value = e.target.textContent;
+            routeCourseTitleName.innerText = e.target.textContent
             // remove search inp
             searchInput.classList.remove("active");
           })
