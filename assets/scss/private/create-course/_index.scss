@@ -26,6 +26,231 @@
   }
 }
 
+// Thông tin khóa học
+.sup-autocom {
+  background-color: #fff;
+  width: 100%;
+}
+
+.sup-autocom.active input {
+  border-radius: 5px 5px 0 0;
+}
+
+.sup-autocom.active .autocom-box{
+  padding: 10px 8px;
+}
+
+.autocom-box {
+  padding: 10px 8px;
+  max-height: 280px;
+  overflow-y: auto;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.sup-autocom.active .autocom-box li {
+  display: block;
+}
+
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+
+  &:hover {
+    background: #efefef;
+  }
+}
+
+// Tag 1
+.tag1-sup-autocom {
+  position: relative;
+}
+.tag1-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
+  padding: 10px 8px;
+  max-height: 280px;
+  overflow-y: auto;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.tag1-sup-autocom.active .tag1-autocom-box li {
+  display: block;
+} 
+.tag1-autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+
+  &:hover {
+    background: #efefef;
+  }
+}
+
+// Tag 2
+.tag2-sup-autocom {
+  position: relative;
+}
+.tag2-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
+  padding: 10px 8px;
+  max-height: 280px;
+  overflow-y: auto;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.tag2-sup-autocom.active .tag2-autocom-box li {
+  display: block;
+} 
+.tag2-autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+
+  &:hover {
+    background: #efefef;
+  }
+}
+
+// Tag 3
+.tag3-sup-autocom {
+  position: relative;
+}
+.tag3-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
+  padding: 10px 8px;
+  max-height: 280px;
+  overflow-y: auto;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.tag3-sup-autocom.active .tag3-autocom-box li {
+  display: block;
+} 
+.tag3-autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+
+  &:hover {
+    background: #efefef;
+  }
+}
+
+// Tag 4
+.tag4-sup-autocom {
+  position: relative;
+}
+.tag4-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
+  padding: 10px 8px;
+  max-height: 280px;
+  overflow-y: auto;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.tag4-sup-autocom.active .tag4-autocom-box li {
+  display: block;
+} 
+.tag4-autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+
+  &:hover {
+    background: #efefef;
+  }
+}
+
+// Tag 5
+.tag5-sup-autocom {
+  position: relative;
+}
+.tag5-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
+  padding: 10px 8px;
+  max-height: 280px;
+  overflow-y: auto;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.tag5-sup-autocom.active .tag5-autocom-box li {
+  display: block;
+} 
+.tag5-autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+
+  &:hover {
+    background: #efefef;
+  }
+}
+
+// Tag 6
+.tag6-sup-autocom {
+  position: relative;
+}
+.tag6-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
+  padding: 10px 8px;
+  max-height: 280px;
+  overflow-y: auto;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.tag6-sup-autocom.active .tag6-autocom-box li {
+  display: block;
+} 
+.tag6-autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+
+  &:hover {
+    background: #efefef;
+  }
+}
+
 // Lộ trình khóa học
 .course-route-title-name {
   font-size: 18px;
