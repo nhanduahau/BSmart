@@ -812,6 +812,15 @@
                             <input type="time" class="form-control w-75 mt-1" name="endTime" id="endTime">
                           </div>
                         </div>
+                        
+                        <script>
+                          document.getElementById("endTime").addEventListener("click", function() {
+                            console.log("change time");
+                            this.value = "12:01";
+                          });
+                        </script>
+                        
+                                                
                         <!-- Chọn các thứ trong tuần -->
                         <div class="col-lg-4 col-md-12 d-flex align-items-center mt-3">
                           <div class="d-flex flex-column me-3">
