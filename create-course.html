@@ -602,18 +602,18 @@
                         <!-- Số lượng học viên -->
                         <div class="mb-3">
                           <label class="form-label">Số lượng học viên: </label>
-                          <div class="col-lg-4 col-md-6 d-flex align-items-center">
+                          <div class="col-lg-4 col-md-6 d-flex align-items-center" id="quantity">
                             <!-- Min -->
                             <label class="form-label me-2 mt-2">Min: </label>
-                            <input type="number" id="min-quatity" class="form-control" value="1" />
+                            <input type="number" id="minQuantity" onchange="handleChangeMinQuantity()" class="form-control" value="1" />
                             
                             <!-- Max -->
                             <label class="form-label me-2 mt-2 ms-4">Max: </label>
-                            <input type="number" id="max-quatity" class="form-control" value="15" />
+                            <input type="number" id="maxQuantity" onchange="handleChangeMaxQuantity()" class="form-control" value="15" />
                           </div>
                         </div>
                         <!-- Tag khóa học -->
-                        <div class="mb-3">
+                        <div class="mb-4">
                           <label for="tags-input" class="form-label">Tags: </label>
                           <div class="col-lg-12 col-md-2 d-flex align-items-center">
 
@@ -1084,6 +1084,28 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Script -->
     <script>
+
+      // validate số lượng học viên
+      function handleChangeMinQuantity() {
+        let min = document.getElementById('minQuantity').value;
+        let max = document.getElementById('maxQuantity').value;
+
+        if(+min < 1) {
+          alert('Vui lòng chọn min lớn hơn hoặc bằng 1!');
+        }
+
+        if(+min >= +max) {
+          alert('Vui lòng chọn min phải mé hơn max!')
+        }
+      }
+      function handleChangeMaxQuantity() {
+        let min = document.getElementById('minQuantity').value;
+        let max = document.getElementById('maxQuantity').value;
+
+        if(+min >= +max) {
+          alert('Vui lòng chọn max phải lớn hơn min!')
+        }
+      }
 
       // autocomplete course name
       let liContainer = document.querySelector('.autocom-box');

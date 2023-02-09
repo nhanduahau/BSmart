@@ -3216,7 +3216,15 @@ div.swiper-button-prev:after {
   background: #efefef;
 }
 
+.tag1-sup-autocom {
+  position: relative;
+}
+
 .tag1-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
   padding: 10px 8px;
   max-height: 280px;
   overflow-y: auto;
@@ -3240,7 +3248,15 @@ div.swiper-button-prev:after {
   background: #efefef;
 }
 
+.tag2-sup-autocom {
+  position: relative;
+}
+
 .tag2-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
   padding: 10px 8px;
   max-height: 280px;
   overflow-y: auto;
@@ -3264,7 +3280,15 @@ div.swiper-button-prev:after {
   background: #efefef;
 }
 
+.tag3-sup-autocom {
+  position: relative;
+}
+
 .tag3-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
   padding: 10px 8px;
   max-height: 280px;
   overflow-y: auto;
@@ -3288,7 +3312,15 @@ div.swiper-button-prev:after {
   background: #efefef;
 }
 
+.tag4-sup-autocom {
+  position: relative;
+}
+
 .tag4-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
   padding: 10px 8px;
   max-height: 280px;
   overflow-y: auto;
@@ -3312,7 +3344,15 @@ div.swiper-button-prev:after {
   background: #efefef;
 }
 
+.tag5-sup-autocom {
+  position: relative;
+}
+
 .tag5-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
   padding: 10px 8px;
   max-height: 280px;
   overflow-y: auto;
@@ -3336,7 +3376,15 @@ div.swiper-button-prev:after {
   background: #efefef;
 }
 
+.tag6-sup-autocom {
+  position: relative;
+}
+
 .tag6-autocom-box {
+  position: absolute;
+  top: 42px;
+  background-color: #fff;
+  z-index: 10;
   padding: 10px 8px;
   max-height: 280px;
   overflow-y: auto;
