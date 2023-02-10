@@ -610,7 +610,7 @@
                                 aria-label="Default select example"
                           >
                                 <option selected value="Online">Online</option>
-                                <option value="Offline">Offline</option>
+                                <option value="Offline" disabled>Offline</option>
                           </select>
                         </div>
                         
@@ -620,11 +620,11 @@
                           <div class="col-lg-4 col-md-6 d-flex align-items-center" id="quantity">
                             <!-- Min -->
                             <label class="form-label me-2 mt-2">Min: </label>
-                            <input type="number" class="form-control" value="1" />
+                            <input type="number" id="minQuantity" onchange="handleChangeMinQuantity()" class="form-control" value="1" />
                             
                             <!-- Max -->
                             <label class="form-label me-2 mt-2 ms-4">Max: </label>
-                            <input type="number" class="form-control" value="15" />
+                            <input type="number" id="maxQuantity" onchange="handleChangeMaxQuantity()" class="form-control" value="15" />
                           </div>
                         </div>
                         <!-- Tag khóa học -->
@@ -1587,7 +1587,7 @@
                                             </button>`;
 
           var cellFuncModule = newRow.insertCell(1);
-          cellFuncModule.innerHTML = `<button  onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
+          cellFuncModule.innerHTML = `<button onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
                                           Tạo nội dung
                                         </button>
                                         <button onclick="editRecord(this)" class="btn btn-secondary mt-3 me-2">
