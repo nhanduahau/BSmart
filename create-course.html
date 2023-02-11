@@ -609,14 +609,15 @@
                         <div class="mb-3">
                           <label class="form-label">Hình thức khoá học: </label>
                           <select
-                            id="formsOfTraining"
-                            class="form-select"
-                            aria-label="Default select example"
+                                id="formsOfTraining"
+                                class="form-select"
+                                aria-label="Default select example"
                           >
-                            <option selected value="Online">Online</option>
-                            <option value="Offline" disabled>Offline</option>
+                                <option selected value="Online">Online</option>
+                                <option value="Offline" disabled>Offline</option>
                           </select>
                         </div>
+                        
                         <!-- Số lượng học viên -->
                         <div class="mb-3">
                           <label class="form-label">Số lượng học viên: </label>
@@ -750,14 +751,22 @@
                         <div class="mb-3">
                           <label class="form-label">Mô tả khoá học: </label>
                           <div class="form-floating">
-                            <textarea
-                              class="form-control"
-                              style="height: 100px"
-                              maxlength="200"
-                            ></textarea>
+                            <div class="box_luuy" style="background: #f3efef; box-shadow: rgba(0, 0, 0, 0.1) 3px 4px 4px; clear: both; line-height: 1.7; color: white; font-family: Roboto; letter-spacing: -0.75px; margin: 5px 0px; padding: 20px 25px; transition: 0.5s;">
+                              <textarea id="input_luuy" rows="5" style="width: 100%;" oninput="countChar(this)" maxlength="200"></textarea>
+                            </div>
+                            <span id="charNum" aria-label="Đã dùng 0/200 ký tự" role="img" class="ZTPlmc" style="float: right;">0 / 200</span>
+
                           </div>
-                          <p class="text-end mt-2 small" style="color: red;">tối đa 200 kí tự</ơ>
-                        </div>
+                          
+                          <script>
+                            function countChar(textarea) {
+                              var count = textarea.value.length;
+                              document.getElementById("charNum").innerHTML = count + " / 200";
+                              if (count > 200) {
+                                textarea.value = textarea.value.substring(0, 200);
+                              }
+                            }
+                          </script>
                       </form>
                     </div>
                   </div>
@@ -857,6 +866,7 @@
                             <input type="time" class="form-control w-75 mt-1" name="startTime" id="startTime">
                           </div>
                         </div>
+                        
                         <!-- End time -->
                         <div class="col-lg-4 col-md-12">
                           <div class="form-group mt-3">
@@ -864,6 +874,15 @@
                             <input type="time" class="form-control w-75 mt-1" name="endTime" id="endTime">
                           </div>
                         </div>
+                        
+                        <script>
+                          document.getElementById("endTime").addEventListener("click", function() {
+                            console.log("change time");
+                            this.value = "12:01";
+                          });
+                        </script>
+                        
+                                                
                         <!-- Chọn các thứ trong tuần -->
                         <div class="col-lg-4 col-md-12 d-flex align-items-center mt-3">
                           <div class="d-flex flex-column me-3">
@@ -925,7 +944,7 @@
                                 <option value="15">15</option>
                               </select>
                           </div>
-                        </div>
+                        </div>  
                         <!-- Ngày dự kiến mở lớp -->
                         <div class="col-lg-4 col-md-12">
                           <div class="form-group mt-3">
@@ -1476,7 +1495,6 @@
         })
       }
 
-      // preview image
       function previewImageCourse() {
         var optFile = document.getElementById('formFileImageCourse');
         var pathFile = optFile.value;
@@ -1571,7 +1589,7 @@
                                             </button>`;
 
           var cellFuncModule = newRow.insertCell(1);
-          cellFuncModule.innerHTML = `<button disabled onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
+          cellFuncModule.innerHTML = `<button onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
                                           Tạo nội dung
                                         </button>
                                         <button onclick="editRecord(this)" class="btn btn-secondary mt-3 me-2">
@@ -1596,6 +1614,7 @@
               document.getElementById('buttonCreateContentModuleIcon').style.display = 'none'
               document.getElementById('buttonClearCreateContentModule').style.display = 'none'
           })
+          
         }
         // edit data
         function editRecord(tds) {
@@ -1838,8 +1857,8 @@
           var cell5 = newRow.insertCell(5);
           cell5.innerHTML = data.startTimeExpected;
 
-          var cell6 = newRow.insertCell(6);
-          cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn btn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`
+          var cell6 = newRow.insertCell(6); 
+          cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn b  tn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`
         }
         // edit data
         function editRecordClass(tds) {
@@ -2064,10 +2083,16 @@
           );
         }
       }
-    </script>
-    <script language="javascript">
-      print_country("country");
-    </script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
-  </body>
+     
+      document.getElementById('startTime').addEventListener('click', function () {
+      console.log('change time')
+      this.value = '07:01'
+    })
+  </script>
+  <script language="javascript">
+    print_country("country");
+  </script>
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
 </html>
