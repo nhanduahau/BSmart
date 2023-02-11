@@ -510,6 +510,7 @@
                             </div>
                             <div class="col-md-7">
                               <input
+                                accept=".jpg,.png"
                                 class="form-control w-100 mb-2"
                                 type="file"
                                 id="formFileImageCourse"
@@ -529,14 +530,48 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="mb-3">
-                    <label class="form-label">Tên khoá học</label>
+                    <label class="form-label">Tên khóa học</label>
+                    <select
+                      id="slectNameCourse"
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected value="ReactJs">React js</option>
+                      <option value="Redux">Redux</option>
+                      <option value="Lập trình web">Lập trình web</option>
+                      <option value="Phương pháp lập trình">
+                        Phương pháp lập trình
+                      </option>
+                      <option value="Toán cao cấp">Toán cao cấp</option>
+                      <option value="Phân tích thiết kế theo yêu cầu">
+                        Phân tích thiết kế theo yêu cầu
+                      </option>
+                      <option value="otherName">Khác...</option>
+                    </select>
+                  </div>
+
+                  <div id="showEnterCourse" class="mb-3" style="display: none">
+                    <label class="form-label">Nhập tên khóa học</label>
                     <input
                       type="text"
                       class="form-control"
-                      value="Front End Nâng cao"
+                      placeholder="Nhập tên khóa học"
                     />
                   </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Trình độ</label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected value="Cơ bản">Cơ bản</option>
+                      <option value="Nâng cao">Nàng cao</option>
+                    </select>
+                  </div>
+
                   <div class="mb-3">
                     <label class="form-label">Hình thức khoá học</label>
                     <select
@@ -544,25 +579,20 @@
                       class="form-select"
                       aria-label="Default select example"
                     >
-                      <option selected>Open this select menu</option>
-                      <option value="Online">Online</option>
+                      <option selected value="Online">Online</option>
                       <option value="Offline">Offline</option>
                     </select>
                   </div>
+
                   <div class="mb-3">
                     <label class="form-label">Số lượng học viên</label>
-                    <input type="number" class="form-control" value="20" />
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Phân loại khoá học</label>
                     <select
                       class="form-select"
                       aria-label="Default select example"
                     >
-                      <option selected>Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      <option selected value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
                     </select>
                   </div>
                   <!-- Test   -->
@@ -575,7 +605,7 @@
                     />
                   </div>
 
-                  <div id="showLocation">
+                  <div id="showLocation" style="display: none">
                     <div class="mb-3">
                       <label class="form-label">Tỉnh Thành</label>
                       <select
@@ -774,11 +804,21 @@
       }
       function clearImageCourse() {
         event.preventDefault();
-        loading();
+
         document.getElementById("formFileImageCourse").value = null;
         frameImageCourse.src = "./assets/images/upload-img.jpg";
       }
-
+      //Cho phép giảng viên tự nhập tên môn học
+      document
+        .getElementById("slectNameCourse")
+        .addEventListener("change", function () {
+          if (this.value === "otherName") {
+            document.getElementById("showEnterCourse").style.display = "block";
+          } else {
+            document.getElementById("showEnterCourse").style.display = "none";
+          }
+        });
+      //Show địa chỉ khi học offline
       document
         .getElementById("formsOfTraining")
         .addEventListener("change", function () {
