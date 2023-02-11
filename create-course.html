@@ -657,6 +657,7 @@
                                 <!-- render list course name -->
                               </div>
                             </div>
+
                             <!-- Tag 4 -->
                             <div class="tag4-sup-autocom me-1">
                               <input type="text" id="tag4CourseName" class="form-control me-4" />
@@ -670,6 +671,7 @@
                               <div class="tag5-autocom-box">
                                 <!-- render list course name -->
                               </div>
+
                             </div>
                             <!-- Tag 6 -->
                             <div class="tag6-sup-autocom">
@@ -770,6 +772,7 @@
                       </form>
                     </div>
                   </div>
+
                 </div>
 
                 <!-- Collapse #2: Lộ trình khóa học -->
@@ -787,6 +790,7 @@
                     <div class="d-flex align-items-center justify-content-between">
                       <h1 class="course-route-title-name" id="routeCourseTitleName"></h1>
                       <button class="btn btn-primary" id="btnCreateModule" onclick="handleCreateModule();">Tạo module</button>
+
                     </div>
                     <!-- Detail course (Create module) -->
                     <div class="mt-2 ms-4">
@@ -1514,11 +1518,23 @@
       // reset upload image
       function clearImageCourse() {
         event.preventDefault();
+
         // loading();
+
         document.getElementById("formFileImageCourse").value = null;
         document.getElementById("frameImageCourse").src = "./assets/images/upload-img.jpg";
       }
-
+      //Cho phép giảng viên tự nhập tên môn học
+      document
+        .getElementById("slectNameCourse")
+        .addEventListener("change", function () {
+          if (this.value === "otherName") {
+            document.getElementById("showEnterCourse").style.display = "block";
+          } else {
+            document.getElementById("showEnterCourse").style.display = "none";
+          }
+        });
+      //Show địa chỉ khi học offline
       document
         .getElementById("formsOfTraining")
         .addEventListener("change", function () {
