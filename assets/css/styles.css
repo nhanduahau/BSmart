@@ -3443,6 +3443,13 @@ div.swiper-button-prev:after {
   transition: 0.3s all;
 }
 
+.startTime {
+  padding: 5px 0;
+  font-size: 1.5em;
+  font-family: inherit;
+  width: 100px;
+}
+
 .buy-course-wrapper .banner__buy-course {
   background-image: url(../images/banner-2.jpg);
   background-position: center;
