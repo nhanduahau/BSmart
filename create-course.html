@@ -746,23 +746,31 @@
                             <input type="text" class="form-control" value="" />
                           </div>
                         </div>
+                       
                         <!-- Mô tả khóa học -->
                         <div class="mb-3">
                           <label class="form-label">Mô tả khoá học: </label>
                           <div class="form-floating">
-                            <textarea
-                              class="form-control"
-                              style="height: 100px"
-                              maxlength="200"
-                            ></textarea>
+                            <div class="box_luuy" style="background: #f3efef; box-shadow: rgba(0, 0, 0, 0.1) 3px 4px 4px; clear: both; line-height: 1.7; color: white; font-family: Roboto; letter-spacing: -0.75px; margin: 5px 0px; padding: 20px 25px; transition: 0.5s;">
+                              <textarea id="input_luuy" rows="5" style="width: 100%;" oninput="countChar(this)" maxlength="200"></textarea>
+                            </div>
+                            <span id="charNum" aria-label="Đã dùng 0/200 ký tự" role="img" class="ZTPlmc" style="float: right;">0 / 200</span>
+
                           </div>
-                          <p class="text-end mt-2 small" style="color: red;">tối đa 200 kí tự</ơ>
-                        </div>
+                          
+                          <script>
+                            function countChar(textarea) {
+                              var count = textarea.value.length;
+                              document.getElementById("charNum").innerHTML = count + " / 200";
+                              if (count > 200) {
+                                textarea.value = textarea.value.substring(0, 200);
+                              }
+                            }
+                          </script>
                       </form>
                     </div>
                   </div>
                 </div>
-
                 <!-- Collapse #2: Lộ trình khóa học -->
                 <div class="card mt-4">
                   <div class="card-header" id="headingTwo">
@@ -857,6 +865,12 @@
                             <input type="time" class="form-control w-75 mt-1" name="startTime" id="startTime">
                           </div>
                         </div>
+                        <script>  
+                        document.getElementById('startTime').addEventListener('click', function () {
+                          console.log('change time')
+                          this.value = '07:01'
+                        })
+                        </script>
                         <!-- End time -->
                         <div class="col-lg-4 col-md-12">
                           <div class="form-group mt-3">
@@ -864,6 +878,12 @@
                             <input type="time" class="form-control w-75 mt-1" name="endTime" id="endTime">
                           </div>
                         </div>
+                        <script>
+                          document.getElementById("endTime").addEventListener("click", function() {
+                            console.log("change time");
+                            this.value = "07:01";
+                          });
+                        </script>
                         <!-- Chọn các thứ trong tuần -->
                         <div class="col-lg-4 col-md-12 d-flex align-items-center mt-3">
                           <div class="d-flex flex-column me-3">
@@ -1501,7 +1521,18 @@
         document.getElementById("frameImageCourse").src = "./assets/images/upload-img.jpg";
       }
 
+      //Cho phép giảng viên tự nhập tên môn học
       document
+        .getElementById("slectNameCourse")
+        .addEventListener("change", function () {
+          if (this.value === "otherName") {
+            document.getElementById("showEnterCourse").style.display = "block";
+          } else {
+            document.getElementById("showEnterCourse").style.display = "none";
+          }
+        });
+
+        document
         .getElementById("formsOfTraining")
         .addEventListener("change", function () {
           if (this.value == "Online") {
@@ -1510,7 +1541,6 @@
             document.getElementById("showLocation").style.display = "block";
           }
         });
-
         // Button create module
         document
           .getElementById('btnCreateModule')
@@ -1571,7 +1601,7 @@
                                             </button>`;
 
           var cellFuncModule = newRow.insertCell(1);
-          cellFuncModule.innerHTML = `<button disabled onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
+          cellFuncModule.innerHTML = `<button onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
                                           Tạo nội dung
                                         </button>
                                         <button onclick="editRecord(this)" class="btn btn-secondary mt-3 me-2">
