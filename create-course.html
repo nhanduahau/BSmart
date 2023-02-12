@@ -498,351 +498,382 @@
               <div id="accordion">
                 <!-- Collapse #1: Thông tin khóa học -->
                 <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link" data-toggle="collapse" data-target="#multiCollapseOne" aria-expanded="false" aria-controls="multiCollapseOne">
-                        Thông tin khóa học
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="multiCollapseOne" class="collapse multi-collapse show p-4">
-                    <div class="mentor-add-course">
-                      <form action="#" method="post" class="add-course-form">
-                        <!-- Tên khóa học -->
-                        <div class="mb-3">
-                          <label class="form-label">Tên khoá học: </label>
-                          <div class="sup-autocom">
-                            <input
-                            id="courseName"
-                            type="text"
-                            class="form-control"
-                            />
-                            <div class="autocom-box">
-                              <!-- render list course name -->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Trình độ -->
-                        <div class="mb-3">
-                          <label class="form-label me-2">Trình độ: </label>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio"  name="optradio" checked> Beginner
-                            </label>
-                          </div>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" name="optradio"> Intermediate
-                            </label>
-                          </div>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" name="optradio"> Advanced
-                            </label>
-                          </div>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" name="optradio"> Expert
-                            </label>
-                          </div>
-                        </div>
-                        <!-- Upload ảnh -->
-                        <div class="mb-3">
-                          <div class="card card-image-custom">
-                            <div class="p-2">
-                              <div class="rounded border my-border-color p-1">
-                                <div class="image-container">
-                                  <img
-                                    id="frameImageCourse"
-                                    src="./assets/images/upload-img.jpg"
-                                    class="img-fluid w-100 rounded"
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <span>Thông tin khóa học</span>
+                        <a href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                          <i class="fa fa-chevron-down chevron"></i>
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordion">
+                      <div class="card-body">
+                        <div id="multiCollapseOne" class="collapse multi-collapse show p-4">
+                          <div class="mentor-add-course">
+                            <form action="#" method="post" class="add-course-form">
+                              <!-- Tên khóa học -->
+                              <div class="mb-3">
+                                <label class="form-label">Tên khoá học: </label>
+                                <div class="sup-autocom">
+                                  <input
+                                  id="courseName"
+                                  type="text"
+                                  class="form-control"
                                   />
-                                  <div class="loading" id="loading-upload-img">
-                                    <div class="spinner-border" role="status">
-                                      <span class="sr-only">Loading...</span>
+                                  <div class="autocom-box">
+                                    <!-- render list course name -->
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Trình độ -->
+                              <div class="mb-3">
+                                <label class="form-label me-2">Trình độ: </label>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="radio"  name="optradio" checked> Beginner
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="radio" name="optradio"> Intermediate
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="radio" name="optradio"> Advanced
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="radio" name="optradio"> Expert
+                                  </label>
+                                </div>
+                              </div>
+                              <!-- Upload ảnh -->
+                              <div class="mb-3">
+                                <div class="card card-image-custom">
+                                  <div class="p-2">
+                                    <div class="rounded border my-border-color p-1">
+                                      <div class="image-container">
+                                        <img
+                                          id="frameImageCourse"
+                                          src="./assets/images/upload-img.jpg"
+                                          class="img-fluid w-100 rounded"
+                                        />
+                                        <div class="loading" id="loading-upload-img">
+                                          <div class="spinner-border" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="row align-items-center group-title">
+                                        <div class="col-md-2 col-sm-2">
+                                          <label class="text-center mb-2">Hình ảnh: </label>
+                                        </div>
+                                        <div class="col-md-7">
+                                          <input
+                                            class="form-control w-100 mb-2"
+                                            type="file"
+                                            accept=".jpg, jpeg, .png"
+                                            id="formFileImageCourse"
+                                            onchange="previewImageCourse()"
+                                          />
+                                        </div>
+                                        <div class="col-md-3">
+                                          <button
+                                            onclick="clearImageCourse()"
+                                            class="btn btn-outline-secondary-custom p-2 w-100"
+                                          >
+                                            Xoá ảnh
+                                          </button>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="card-body">
-                                <div class="row align-items-center group-title">
-                                  <div class="col-md-2 col-sm-2">
-                                    <label class="text-center mb-2">Hình ảnh: </label>
+                              <!-- Lĩnh vực -->
+                              <div class="mb-3">
+                                <label class="form-label">Lĩnh vực: </label>
+                                <select
+                                  id=""
+                                  class="form-select"
+                                  aria-label="Default select example"
+                                >
+                                  <option selected value="lv1">Lĩnh vực 1</option>
+                                  <option value="lv2">Lĩnh vực 2</option>
+                                  <option value="lv3">Lĩnh vực 3</option>
+                                  <option value="lv4">Lĩnh vực 4</option>
+                                </select>
+                              </div>
+                              <!-- Hình thức khóa học -->
+                              <div class="mb-3">
+                                <label class="form-label">Hình thức khoá học: </label>
+                                <select
+                                      id="formsOfTraining"
+                                      class="form-select"
+                                      aria-label="Default select example"
+                                >
+                                      <option selected value="Online">Online</option>
+                                      <option value="Offline" disabled>Offline</option>
+                                </select>
+                              </div>
+                              
+                              <!-- Số lượng học viên -->
+                              <div class="mb-3">
+                                <label class="form-label">Số lượng học viên: </label>
+                                <div class="col-lg-4 col-md-6 d-flex align-items-center" id="quantity">
+                                  <!-- Min -->
+                                  <label class="form-label me-2 mt-2">Min: </label>
+                                  <input type="number" id="minQuantity" onchange="handleChangeMinQuantity()" class="form-control" value="1" />
+                                  
+                                  <!-- Max -->
+                                  <label class="form-label me-2 mt-2 ms-4">Max: </label>
+                                  <input type="number" id="maxQuantity" onchange="handleChangeMaxQuantity()" class="form-control" value="15" />
+                                </div>
+                              </div>
+                              <!-- Tag khóa học -->
+                              <div class="mb-4">
+                                <label for="tags-input" class="form-label">Tags: </label>
+                                <div class="col-lg-12 col-md-2 d-flex align-items-center">
+      
+                                  <!-- Tag 1 -->
+                                  <div class="tag1-sup-autocom me-1">
+                                    <input type="text" id="tag1CourseName" class="form-control me-4" />
+                                    <div class="tag1-autocom-box">
+                                      <!-- render list course name -->
+                                    </div>
                                   </div>
-                                  <div class="col-md-7">
-                                    <input
-                                      class="form-control w-100 mb-2"
-                                      type="file"
-                                      accept=".jpg, jpeg, .png"
-                                      id="formFileImageCourse"
-                                      onchange="previewImageCourse()"
-                                    />
+                                  <!-- Tag 2 -->
+                                  <div class="tag2-sup-autocom me-1">
+                                    <input type="text" id="tag2CourseName" class="form-control me-4"  />
+                                    <div class="tag2-autocom-box">
+                                      <!-- render list course name -->
+                                    </div>
                                   </div>
-                                  <div class="col-md-3">
-                                    <button
-                                      onclick="clearImageCourse()"
-                                      class="btn btn-outline-secondary-custom p-2 w-100"
-                                    >
-                                      Xoá ảnh
-                                    </button>
+                                  <!-- Tag 3 -->
+                                  <div class="tag3-sup-autocom me-1">
+                                    <input type="text" id="tag3CourseName" class="form-control me-4"  />
+                                    <div class="tag3-autocom-box">
+                                      <!-- render list course name -->
+                                    </div>
+                                  </div>
+                                  <!-- Tag 4 -->
+                                  <div class="tag4-sup-autocom me-1">
+                                    <input type="text" id="tag4CourseName" class="form-control me-4" />
+                                    <div class="tag4-autocom-box">
+                                      <!-- render list course name -->
+                                    </div>
+                                  </div>
+                                  <!-- Tag 5 -->
+                                  <div class="tag5-sup-autocom me-1">
+                                    <input type="text" id="tag5CourseName" class="form-control me-4"/>
+                                    <div class="tag5-autocom-box">
+                                      <!-- render list course name -->
+                                    </div>
+                                  </div>
+                                  <!-- Tag 6 -->
+                                  <div class="tag6-sup-autocom">
+                                    <input type="text" id="tag6CourseName" class="form-control" />
+                                    <div class="tag6-autocom-box">
+                                      <!-- render list course name -->
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
+      
+                              <!-- Bỏ -->
+                              <!-- <div class="mb-3">
+                                <label class="form-label">Phân loại khoá học</label>
+                                <select
+                                  class="form-select"
+                                  aria-label="Default select example"
+                                >
+                                  <option selected>Open this select menu</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div> -->
+                              <!-- <div class="mb-3">
+                                <label class="form-label">Ngày mở khoá học</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="20/01/2023"
+                                />
+                              </div> -->
+                              <!-- Bỏ -->
+      
+                              <!-- Địa chỉ -->
+                              <div id="showLocation" style="display: none;">
+                                <div class="mb-3">
+                                  <label class="form-label">Tỉnh Thành: </label>
+                                  <select
+                                    onchange="print_state('state',this.selectedIndex);"
+                                    id="country"
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                  >
+                                    <!-- <option selected>Chọn thành phố</option>
+                                    <option value="1">Online</option>
+                                    <option value="2">Offline</option> -->
+                                  </select>
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label">Quận | Huyện: </label>
+                                  <select
+                                    onchange="print_district('district',this.selectedIndex);"
+                                    name="state"
+                                    id="state"
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                  >
+                                    <option selected>Vui lòng chọn tỉnh thành trước</option>
+                                  </select>
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label">Đường: </label>
+                                  <select
+                                    name="district"
+                                    id="district"
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                  >
+                                    <option selected>Vui lòng chọn quận huyện trước</option>
+                                  </select>
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label">Địa chỉ chi tiết: </label>
+                                  <input type="text" class="form-control" value="" />
+                                </div>
+                              </div>
+                              <!-- Mô tả khóa học -->
+                              <div class="mb-3">
+                                <label class="form-label">Mô tả khoá học: </label>
+                                <div class="form-floating">
+                                  <div class="box_luuy" style="background: #f3efef; box-shadow: rgba(0, 0, 0, 0.1) 3px 4px 4px; clear: both; line-height: 1.7; color: white; font-family: Roboto; letter-spacing: -0.75px; margin: 5px 0px; padding: 20px 25px; transition: 0.5s;">
+                                    <textarea id="input_luuy" rows="5" style="width: 100%;" oninput="countChar(this)" maxlength="200"></textarea>
+                                  </div>
+                                  <span id="charNum" aria-label="Đã dùng 0/200 ký tự" role="img" class="ZTPlmc" style="float: right;">0 / 200</span>
+      
+                                </div>
+                                
+                                <script>
+                                  function countChar(textarea) {
+                                    var count = textarea.value.length;
+                                    document.getElementById("charNum").innerHTML = count + " / 200";
+                                    if (count > 200) {
+                                      textarea.value = textarea.value.substring(0, 200);
+                                    }
+                                  }
+                                </script>
+                            </form>
                           </div>
                         </div>
-                        <!-- Lĩnh vực -->
-                        <div class="mb-3">
-                          <label class="form-label">Lĩnh vực: </label>
-                          <select
-                            id=""
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option selected value="lv1">Lĩnh vực 1</option>
-                            <option value="lv2">Lĩnh vực 2</option>
-                            <option value="lv3">Lĩnh vực 3</option>
-                            <option value="lv4">Lĩnh vực 4</option>
-                          </select>
-                        </div>
-                        <!-- Hình thức khóa học -->
-                        <div class="mb-3">
-                          <label class="form-label">Hình thức khoá học: </label>
-                          <select
-                            id="formsOfTraining"
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option selected value="Online">Online</option>
-                            <option value="Offline" disabled>Offline</option>
-                          </select>
-                        </div>
-                        <!-- Số lượng học viên -->
-                        <div class="mb-3">
-                          <label class="form-label">Số lượng học viên: </label>
-                          <div class="col-lg-4 col-md-6 d-flex align-items-center" id="quantity">
-                            <!-- Min -->
-                            <label class="form-label me-2 mt-2">Min: </label>
-                            <input type="number" id="minQuantity" onchange="handleChangeMinQuantity()" class="form-control" value="1" />
-                            
-                            <!-- Max -->
-                            <label class="form-label me-2 mt-2 ms-4">Max: </label>
-                            <input type="number" id="maxQuantity" onchange="handleChangeMaxQuantity()" class="form-control" value="15" />
-                          </div>
-                        </div>
-                        <!-- Tag khóa học -->
-                        <div class="mb-4">
-                          <label for="tags-input" class="form-label">Tags: </label>
-                          <div class="col-lg-12 col-md-2 d-flex align-items-center">
-
-                            <!-- Tag 1 -->
-                            <div class="tag1-sup-autocom me-1">
-                              <input type="text" id="tag1CourseName" class="form-control me-4" />
-                              <div class="tag1-autocom-box">
-                                <!-- render list course name -->
-                              </div>
-                            </div>
-                            <!-- Tag 2 -->
-                            <div class="tag2-sup-autocom me-1">
-                              <input type="text" id="tag2CourseName" class="form-control me-4"  />
-                              <div class="tag2-autocom-box">
-                                <!-- render list course name -->
-                              </div>
-                            </div>
-                            <!-- Tag 3 -->
-                            <div class="tag3-sup-autocom me-1">
-                              <input type="text" id="tag3CourseName" class="form-control me-4"  />
-                              <div class="tag3-autocom-box">
-                                <!-- render list course name -->
-                              </div>
-                            </div>
-                            <!-- Tag 4 -->
-                            <div class="tag4-sup-autocom me-1">
-                              <input type="text" id="tag4CourseName" class="form-control me-4" />
-                              <div class="tag4-autocom-box">
-                                <!-- render list course name -->
-                              </div>
-                            </div>
-                            <!-- Tag 5 -->
-                            <div class="tag5-sup-autocom me-1">
-                              <input type="text" id="tag5CourseName" class="form-control me-4"/>
-                              <div class="tag5-autocom-box">
-                                <!-- render list course name -->
-                              </div>
-                            </div>
-                            <!-- Tag 6 -->
-                            <div class="tag6-sup-autocom">
-                              <input type="text" id="tag6CourseName" class="form-control" />
-                              <div class="tag6-autocom-box">
-                                <!-- render list course name -->
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Bỏ -->
-                        <!-- <div class="mb-3">
-                          <label class="form-label">Phân loại khoá học</label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div> -->
-                        <!-- <div class="mb-3">
-                          <label class="form-label">Ngày mở khoá học</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="20/01/2023"
-                          />
-                        </div> -->
-                        <!-- Bỏ -->
-
-                        <!-- Địa chỉ -->
-                        <div id="showLocation" style="display: none;">
-                          <div class="mb-3">
-                            <label class="form-label">Tỉnh Thành: </label>
-                            <select
-                              onchange="print_state('state',this.selectedIndex);"
-                              id="country"
-                              class="form-select"
-                              aria-label="Default select example"
-                            >
-                              <!-- <option selected>Chọn thành phố</option>
-                              <option value="1">Online</option>
-                              <option value="2">Offline</option> -->
-                            </select>
-                          </div>
-                          <div class="mb-3">
-                            <label class="form-label">Quận | Huyện: </label>
-                            <select
-                              onchange="print_district('district',this.selectedIndex);"
-                              name="state"
-                              id="state"
-                              class="form-select"
-                              aria-label="Default select example"
-                            >
-                              <option selected>Vui lòng chọn tỉnh thành trước</option>
-                            </select>
-                          </div>
-                          <div class="mb-3">
-                            <label class="form-label">Đường: </label>
-                            <select
-                              name="district"
-                              id="district"
-                              class="form-select"
-                              aria-label="Default select example"
-                            >
-                              <option selected>Vui lòng chọn quận huyện trước</option>
-                            </select>
-                          </div>
-                          <div class="mb-3">
-                            <label class="form-label">Địa chỉ chi tiết: </label>
-                            <input type="text" class="form-control" value="" />
-                          </div>
-                        </div>
-                       
-                        <!-- Mô tả khóa học -->
-                        <div class="mb-3">
-                          <label class="form-label">Mô tả khoá học: </label>
-                          <div class="form-floating">
-                            <div class="box_luuy" style="background: #f3efef; box-shadow: rgba(0, 0, 0, 0.1) 3px 4px 4px; clear: both; line-height: 1.7; color: white; font-family: Roboto; letter-spacing: -0.75px; margin: 5px 0px; padding: 20px 25px; transition: 0.5s;">
-                              <textarea id="input_luuy" rows="5" style="width: 100%;" oninput="countChar(this)" maxlength="200"></textarea>
-                            </div>
-                            <span id="charNum" aria-label="Đã dùng 0/200 ký tự" role="img" class="ZTPlmc" style="float: right;">0 / 200</span>
-
-                          </div>
-                          
-                          <script>
-                            function countChar(textarea) {
-                              var count = textarea.value.length;
-                              document.getElementById("charNum").innerHTML = count + " / 200";
-                              if (count > 200) {
-                                textarea.value = textarea.value.substring(0, 200);
-                              }
-                            }
-                          </script>
-                      </form>
+                      </div>
                     </div>
                   </div>
+                  
+                  
                 </div>
+
                 <!-- Collapse #2: Lộ trình khóa học -->
                 <div class="card mt-4">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#multiCollapseTwo" aria-expanded="false" aria-controls="multiCollapseTwo">
-                        Lộ trình khóa học
-                      </button>
-                    </h5>
-                  </div>
-
-                  <div id="multiCollapseTwo" class="collapse multi-collapse show p-4">
-                    <!-- Title course -->
-                    <div class="d-flex align-items-center justify-content-between">
-                      <h1 class="course-route-title-name" id="routeCourseTitleName"></h1>
-                      <button class="btn btn-primary" id="btnCreateModule" onclick="handleCreateModule();">Tạo module</button>
+                  <style>
+                    .card-header {
+                      font-size: 17px;
+                      padding: 20px;
+                    }
+                    .card-header i {
+                      margin-right: 10px;
+                    }
+                    .card-header .chevron {
+                      float: right;
+                    }
+                  </style>
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <span>Lộ trình khóa học</span>
+                        <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          <i class="fa fa-chevron-down chevron"></i>
+                        </a>
+                      </h5>
                     </div>
-                    <!-- Detail course (Create module) -->
-                    <div class="mt-2 ms-4">
-                      <!-- Create title module -->
-                      <div class="d-flex align-items-center justify-content-center">
-                        <form class="d-flex align-items-center justify-content-center" autocomplete="off" onsubmit="handleAddTitleLecture()">
-                          <input type="text" class="form-control w-100 me-2" name="inputCreateModule" id="inputCreateModule" style="display: none;" placeholder="Tên tiêu đề bài học...">
-                          <!-- Button icon create module -->
-                          <button style="background-color: transparent; border: none; display: none;" id="buttonCreateModule">
-                            <i style="font-size:24px;" class="fa">&#xf067;</i>
-                          </button>
-                        </form>
-                        <!-- Button icon hide input create module -->
-                        <button style="background-color: transparent; border: none; display: none;" id="buttonClearCreateModule">
-                          <i style="font-size:24px" class="fa">&#xf00d;</i>
-                        </button>
+                    <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                      <div class="card-body">
+                        <div id="multiCollapseTwo" class="collapse multi-collapse show p-4">
+                          <!-- Title course -->
+                          <div class="d-flex align-items-center justify-content-between">
+                            <h1 class="course-route-title-name" id="routeCourseTitleName"></h1>
+                            <button class="btn btn-primary" id="btnCreateModule" onclick="handleCreateModule();">Tạo module</button>
+                          </div>
+                          <!-- Detail course (Create module) -->
+                          <div class="mt-2 ms-4">
+                            <!-- Create title module -->
+                            <div class="d-flex align-items-center justify-content-center">
+                              <form class="d-flex align-items-center justify-content-center" autocomplete="off" onsubmit="handleAddTitleLecture()">
+                                <input type="text" class="form-control w-100 me-2" name="inputCreateModule" id="inputCreateModule" style="display: none;" placeholder="Tên tiêu đề bài học...">
+                                <!-- Button icon create module -->
+                                <button style="background-color: transparent; border: none; display: none;" id="buttonCreateModule">
+                                  <i style="font-size:24px;" class="fa">&#xf067;</i>
+                                </button>
+                              </form>
+                              <!-- Button icon hide input create module -->
+                              <button style="background-color: transparent; border: none; display: none;" id="buttonClearCreateModule">
+                                <i style="font-size:24px" class="fa">&#xf00d;</i>
+                              </button>
+                            </div>
+      
+                            <!-- <button class="btn btn-link" id="courseRouteBtn">
+                              I. MODULE 1: XÂY DỰNG WEBSITE VỚI HTML VÀ CSS
+                            </button> -->
+      
+                            <!-- Show title module -->
+                            <div class="course-route-show-lecture" id="courseRouteLectureDetail">
+                              <table id="storeList" class="mt-2">
+                                <tbody>
+                                  <!-- render data -->
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+      
+                          <!-- Create content module -->
+                          <div class="d-flex align-items-center justify-content-center">
+                            <form class="d-flex align-items-center justify-content-center" autocomplete="off" onsubmit="handleAddContentModuleLecture();">
+                              <input style="display: none;" type="text" class="form-control w-100 ms-4 me-2 mt-3" name="inputCreateContentModule" id="inputCreateContentModule"  placeholder="Nội dung bài học...">
+                              <!-- Button icon create content module -->
+                              <button class="mt-3" style="background-color: transparent; border: none; display: none;" id="buttonCreateContentModuleIcon">
+                                <i style="font-size:24px;" class="fa">&#xf067;</i>
+                              </button>
+                            </form>
+                            <!-- Button icon hide input create content module -->
+                            <button class="mt-3" style="background-color: transparent; border: none; display: none;" id="buttonClearCreateContentModule">
+                              <i style="font-size:24px" class="fa">&#xf00d;</i>
+                            </button>
+                          </div>
+      
+                          <!-- Show content module -->
+                          <div class="ms-5 course-route-show-lecture">
+                            <table id="storeListContentModule" class="mt-1">
+                              <tbody>
+                                <!-- render data -->
+                              </tbody>
+                            </table>
+                          </div>
+      
+                        </div>
                       </div>
-
-                      <!-- <button class="btn btn-link" id="courseRouteBtn">
-                        I. MODULE 1: XÂY DỰNG WEBSITE VỚI HTML VÀ CSS
-                      </button> -->
-
-                      <!-- Show title module -->
-                      <div class="course-route-show-lecture" id="courseRouteLectureDetail">
-                        <table id="storeList" class="mt-2">
-                          <tbody>
-                            <!-- render data -->
-                          </tbody>
-                        </table>
-                      </div>
                     </div>
-
-                    <!-- Create content module -->
-                    <div class="d-flex align-items-center justify-content-center">
-                      <form class="d-flex align-items-center justify-content-center" autocomplete="off" onsubmit="handleAddContentModuleLecture();">
-                        <input style="display: none;" type="text" class="form-control w-100 ms-4 me-2 mt-3" name="inputCreateContentModule" id="inputCreateContentModule"  placeholder="Nội dung bài học...">
-                        <!-- Button icon create content module -->
-                        <button class="mt-3" style="background-color: transparent; border: none; display: none;" id="buttonCreateContentModuleIcon">
-                          <i style="font-size:24px;" class="fa">&#xf067;</i>
-                        </button>
-                      </form>
-                      <!-- Button icon hide input create content module -->
-                      <button class="mt-3" style="background-color: transparent; border: none; display: none;" id="buttonClearCreateContentModule">
-                        <i style="font-size:24px" class="fa">&#xf00d;</i>
-                      </button>
-                    </div>
-
-                    <!-- Show content module -->
-                    <div class="ms-5 course-route-show-lecture">
-                      <table id="storeListContentModule" class="mt-1">
-                        <tbody>
-                          <!-- render data -->
-                        </tbody>
-                      </table>
-                    </div>
-
                   </div>
+                  
+
+                  
                 </div>
 
                 <!-- Collapse #3: Thời gian lớp học -->
@@ -865,12 +896,7 @@
                             <input type="time" class="form-control w-75 mt-1" name="startTime" id="startTime">
                           </div>
                         </div>
-                        <script>  
-                        document.getElementById('startTime').addEventListener('click', function () {
-                          console.log('change time')
-                          this.value = '07:01'
-                        })
-                        </script>
+                        
                         <!-- End time -->
                         <div class="col-lg-4 col-md-12">
                           <div class="form-group mt-3">
@@ -878,12 +904,15 @@
                             <input type="time" class="form-control w-75 mt-1" name="endTime" id="endTime">
                           </div>
                         </div>
+                        
                         <script>
                           document.getElementById("endTime").addEventListener("click", function() {
                             console.log("change time");
-                            this.value = "07:01";
+                            this.value = "12:01";
                           });
                         </script>
+                        
+                                                
                         <!-- Chọn các thứ trong tuần -->
                         <div class="col-lg-4 col-md-12 d-flex align-items-center mt-3">
                           <div class="d-flex flex-column me-3">
@@ -945,7 +974,7 @@
                                 <option value="15">15</option>
                               </select>
                           </div>
-                        </div>
+                        </div>  
                         <!-- Ngày dự kiến mở lớp -->
                         <div class="col-lg-4 col-md-12">
                           <div class="form-group mt-3">
