@@ -890,8 +890,9 @@
                       float: right;
                     }
                   </style>
+                  
                   <div class="card">
-                    <div class="card-header" id="headingFour">
+                    <div class="card-header" id="headingFive">
                       <h5 class="mb-0">
                         <span>Thời gian lớp học</span>
                         <a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
@@ -901,7 +902,7 @@
                     </div>
                     <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
                       <div class="card-body">
-                        <div id="multiCollapseFive" class="collapse multi-collapse show p-4">
+                        <div id="multi#collapseFive" class="collapse multi-collapse show p-4">
                           <form autocomplete="off" onsubmit="onFormSubmitTimeClass()">
                             <div class="row">
                               <!-- Start time -->
@@ -923,7 +924,7 @@
                               <script>
                                 document.getElementById("endTime").addEventListener("click", function() {
                                   console.log("change time");
-                                  this.value = "12:01";
+                                  this.value = "07:01";
                                 });
                               </script>
                               
@@ -1028,6 +1029,10 @@
                       </div>
                     </div>
                   </div>
+                  
+                  
+                  
+                  
                   
 
                   
@@ -1546,7 +1551,6 @@
         })
       }
 
-      // preview image
       function previewImageCourse() {
         var optFile = document.getElementById('formFileImageCourse');
         var pathFile = optFile.value;
@@ -1571,18 +1575,7 @@
         document.getElementById("frameImageCourse").src = "./assets/images/upload-img.jpg";
       }
 
-      //Cho phép giảng viên tự nhập tên môn học
       document
-        .getElementById("slectNameCourse")
-        .addEventListener("change", function () {
-          if (this.value === "otherName") {
-            document.getElementById("showEnterCourse").style.display = "block";
-          } else {
-            document.getElementById("showEnterCourse").style.display = "none";
-          }
-        });
-
-        document
         .getElementById("formsOfTraining")
         .addEventListener("change", function () {
           if (this.value == "Online") {
@@ -1591,6 +1584,7 @@
             document.getElementById("showLocation").style.display = "block";
           }
         });
+
         // Button create module
         document
           .getElementById('btnCreateModule')
@@ -1676,6 +1670,7 @@
               document.getElementById('buttonCreateContentModuleIcon').style.display = 'none'
               document.getElementById('buttonClearCreateContentModule').style.display = 'none'
           })
+          
         }
         // edit data
         function editRecord(tds) {
@@ -1918,8 +1913,8 @@
           var cell5 = newRow.insertCell(5);
           cell5.innerHTML = data.startTimeExpected;
 
-          var cell6 = newRow.insertCell(6);
-          cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn btn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`
+          var cell6 = newRow.insertCell(6); 
+          cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn b  tn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`
         }
         // edit data
         function editRecordClass(tds) {
@@ -2144,10 +2139,16 @@
           );
         }
       }
-    </script>
-    <script language="javascript">
-      print_country("country");
-    </script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
-  </body>
+     
+      document.getElementById('startTime').addEventListener('click', function () {
+      console.log('change time')
+      this.value = '07:01'
+    })
+  </script>
+  <script language="javascript">
+    print_country("country");
+  </script>
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
 </html>
