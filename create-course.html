@@ -878,164 +878,138 @@
 
                 <!-- Collapse #3: Thời gian lớp học -->
                 <div class="card mt-4">
-                  <style>
-                    .card-header {
-                      font-size: 17px;
-                      padding: 20px;
-                    }
-                    .card-header i {
-                      margin-right: 10px;
-                    }
-                    .card-header .chevron {
-                      float: right;
-                    }
-                  </style>
-                  
-                  <div class="card">
-                    <div class="card-header" id="headingFive">
-                      <h5 class="mb-0">
-                        <span>Thời gian lớp học</span>
-                        <a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                          <i class="fa fa-chevron-down chevron"></i>
-                        </a>
-                      </h5>
-                    </div>
-                    <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
-                      <div class="card-body">
-                        <div id="multi#collapseFive" class="collapse multi-collapse show p-4">
-                          <form autocomplete="off" onsubmit="onFormSubmitTimeClass()">
-                            <div class="row">
-                              <!-- Start time -->
-                              <div class="col-lg-4 col-md-12 position-relative">
-                                <div class="form-group mt-3">
-                                  <label for="startTime">Giờ bắt đầu: </label>
-                                  <input type="time" class="form-control w-75 mt-1" name="startTime" id="startTime">
-                                </div>
-                              </div>
-                              
-                              <!-- End time -->
-                              <div class="col-lg-4 col-md-12">
-                                <div class="form-group mt-3">
-                                  <label for="endTime">Giờ kết thúc: </label>
-                                  <input type="time" class="form-control w-75 mt-1" name="endTime" id="endTime">
-                                </div>
-                              </div>
-                              
-                              <script>
-                                document.getElementById("endTime").addEventListener("click", function() {
-                                  console.log("change time");
-                                  this.value = "07:01";
-                                });
-                              </script>
-                              
-                                                      
-                              <!-- Chọn các thứ trong tuần -->
-                              <div class="col-lg-4 col-md-12 d-flex align-items-center mt-3">
-                                <div class="d-flex flex-column me-3">
-                                  <label class="form-check-label">T2</label>
-                                  <input type="checkbox" class="form-check-input" value="T2," name="chkT2" id="chkT2">
-                                </div>
-      
-                                <div class="d-flex flex-column me-3">
-                                  <label class="form-check-label">T3</label>
-                                  <input type="checkbox" class="form-check-input" value="T3," name="chkT3" id="chkT3">
-                                </div>
-      
-                                <div class="d-flex flex-column me-3">
-                                  <label class="form-check-label">T4</label>
-                                  <input type="checkbox" class="form-check-input" value="T4," name="chkT4" id="chkT4">
-                                </div>
-      
-                                <div class="d-flex flex-column me-3">
-                                  <label class="form-check-label">T5</label>
-                                  <input type="checkbox" class="form-check-input" value="T5," name="chkT5" id="chkT5">
-                                </div>
-      
-                                <div class="d-flex flex-column me-3">
-                                  <label class="form-check-label">T6</label>
-                                  <input type="checkbox" class="form-check-input" value="T6," name="chkT6" id="chkT6">
-                                </div>
-      
-                                <div class="d-flex flex-column me-3">
-                                  <label class="form-check-label">T7</label>
-                                  <input type="checkbox" class="form-check-input" value="T7," name="chkT7" id="chkT7">
-                                </div>
-      
-                                <div class="d-flex flex-column">
-                                  <label class="form-check-label">CN</label>
-                                  <input type="checkbox" class="form-check-input" value="CN," name="chkCN" id="chkCN">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <!-- Slot -->
-                              <div class="col-lg-4 col-md-12">
-                                <div class="form-group mt-3">
-                                  <label for="slot">Slot: </label>
-                                    <select class="form-select w-75 mt-1" id="slot">
-                                      <option selected value="1">1</option>
-                                      <option value="2">2</option>
-                                      <option value="3">3</option>
-                                      <option value="4">4</option>
-                                      <option value="5">5</option>
-                                      <option value="6">6</option>
-                                      <option value="7">7</option>
-                                      <option value="8">8</option>
-                                      <option value="9">9</option>
-                                      <option value="10">10</option>
-                                      <option value="11">11</option>
-                                      <option value="12">12</option>
-                                      <option value="13">13</option>
-                                      <option value="14">14</option>
-                                      <option value="15">15</option>
-                                    </select>
-                                </div>
-                              </div>  
-                              <!-- Ngày dự kiến mở lớp -->
-                              <div class="col-lg-4 col-md-12">
-                                <div class="form-group mt-3">
-                                  <label for="startTimeExpected">Ngày dự kiến mở lớp: </label>
-                                  <input type="date" class="form-control w-75 mt-1" name="startTimeExpected" id="startTimeExpected">
-                                </div>
-                              </div>
-                              <!-- Button create class -->
-                              <div class="col-lg-4 col-md-12 mt-4">
-                                <button class="btn btn-create-class" id="createClassBtn">Tạo lớp học</button>
-                              </div>
-                            </div>
-                          </form>
-      
-                          <!-- Table list course schedule -->
-                          <div class="col-lg-12 col-md-12 mt-4">
-                            <table class="table table-striped table-hover" id="storeListTimeClass">
-                              <thead>
-                                <tr>
-                                  <th scope="col" style="font-weight: bold;">#</th>
-                                  <th scope="col" style="font-weight: bold;">Giờ bắt đầu</th>
-                                  <th scope="col" style="font-weight: bold;">Giờ kết thúc</th>
-                                  <th scope="col" style="font-weight: bold;">Thứ</th>
-                                  <th scope="col" style="font-weight: bold;">Slot</th>
-                                  <th scope="col" style="font-weight: bold;">Ngày dự kiến mở lớp</th>
-                                  <th scope="col" style="font-weight: bold;">Hành động</th>
-                                </tr>
-                              </thead>
-                              <!-- Data -->
-                              <tbody>
-                                <!-- render data -->
-                              </tbody>
-                            </table>
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#multiCollapseFour" aria-expanded="false" aria-controls="multiCollapseFour">
+                        Thời gian lớp học
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="multiCollapseFour" class="collapse multi-collapse show p-4">
+                    <form autocomplete="off" onsubmit="onFormSubmitTimeClass()">
+                      <div class="row">
+                        <!-- Start time -->
+                        <div class="col-lg-4 col-md-12 position-relative">
+                          <div class="form-group mt-3">
+                            <label for="startTime">Giờ bắt đầu: </label>
+                            <input type="time" class="form-control w-75 mt-1" name="startTime" id="startTime">
+                          </div>
+                        </div>
+                        
+                        <!-- End time -->
+                        <div class="col-lg-4 col-md-12">
+                          <div class="form-group mt-3">
+                            <label for="endTime">Giờ kết thúc: </label>
+                            <input type="time" class="form-control w-75 mt-1" name="endTime" id="endTime">
+                          </div>
+                        </div>
+                        
+                        <script>
+                          document.getElementById("endTime").addEventListener("click", function() {
+                            console.log("change time");
+                            this.value = "12:01";
+                          });
+                        </script>
+                        
+                                                
+                        <!-- Chọn các thứ trong tuần -->
+                        <div class="col-lg-4 col-md-12 d-flex align-items-center mt-3">
+                          <div class="d-flex flex-column me-3">
+                            <label class="form-check-label">T2</label>
+                            <input type="checkbox" class="form-check-input" value="T2," name="chkT2" id="chkT2">
+                          </div>
+
+                          <div class="d-flex flex-column me-3">
+                            <label class="form-check-label">T3</label>
+                            <input type="checkbox" class="form-check-input" value="T3," name="chkT3" id="chkT3">
+                          </div>
+
+                          <div class="d-flex flex-column me-3">
+                            <label class="form-check-label">T4</label>
+                            <input type="checkbox" class="form-check-input" value="T4," name="chkT4" id="chkT4">
+                          </div>
+
+                          <div class="d-flex flex-column me-3">
+                            <label class="form-check-label">T5</label>
+                            <input type="checkbox" class="form-check-input" value="T5," name="chkT5" id="chkT5">
+                          </div>
+
+                          <div class="d-flex flex-column me-3">
+                            <label class="form-check-label">T6</label>
+                            <input type="checkbox" class="form-check-input" value="T6," name="chkT6" id="chkT6">
+                          </div>
+
+                          <div class="d-flex flex-column me-3">
+                            <label class="form-check-label">T7</label>
+                            <input type="checkbox" class="form-check-input" value="T7," name="chkT7" id="chkT7">
+                          </div>
+
+                          <div class="d-flex flex-column">
+                            <label class="form-check-label">CN</label>
+                            <input type="checkbox" class="form-check-input" value="CN," name="chkCN" id="chkCN">
                           </div>
                         </div>
                       </div>
+                      <div class="row">
+                        <!-- Slot -->
+                        <div class="col-lg-4 col-md-12">
+                          <div class="form-group mt-3">
+                            <label for="slot">Slot: </label>
+                              <select class="form-select w-75 mt-1" id="slot">
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                              </select>
+                          </div>
+                        </div>  
+                        <!-- Ngày dự kiến mở lớp -->
+                        <div class="col-lg-4 col-md-12">
+                          <div class="form-group mt-3">
+                            <label for="startTimeExpected">Ngày dự kiến mở lớp: </label>
+                            <input type="date" class="form-control w-75 mt-1" name="startTimeExpected" id="startTimeExpected">
+                          </div>
+                        </div>
+                        <!-- Button create class -->
+                        <div class="col-lg-4 col-md-12 mt-4">
+                          <button class="btn btn-create-class" id="createClassBtn">Tạo lớp học</button>
+                        </div>
+                      </div>
+                    </form>
+
+                    <!-- Table list course schedule -->
+                    <div class="col-lg-12 col-md-12 mt-4">
+                      <table class="table table-striped table-hover" id="storeListTimeClass">
+                        <thead>
+                          <tr>
+                            <th scope="col" style="font-weight: bold;">#</th>
+                            <th scope="col" style="font-weight: bold;">Giờ bắt đầu</th>
+                            <th scope="col" style="font-weight: bold;">Giờ kết thúc</th>
+                            <th scope="col" style="font-weight: bold;">Thứ</th>
+                            <th scope="col" style="font-weight: bold;">Slot</th>
+                            <th scope="col" style="font-weight: bold;">Ngày dự kiến mở lớp</th>
+                            <th scope="col" style="font-weight: bold;">Hành động</th>
+                          </tr>
+                        </thead>
+                        <!-- Data -->
+                        <tbody>
+                          <!-- render data -->
+                        </tbody>
+                      </table>
                     </div>
                   </div>
-                  
-                  
-                  
-                  
-                  
-
-                  
                 </div>
               </div>
 
@@ -1551,6 +1525,7 @@
         })
       }
 
+      // preview image
       function previewImageCourse() {
         var optFile = document.getElementById('formFileImageCourse');
         var pathFile = optFile.value;
@@ -1575,7 +1550,18 @@
         document.getElementById("frameImageCourse").src = "./assets/images/upload-img.jpg";
       }
 
+      //Cho phép giảng viên tự nhập tên môn học
       document
+        .getElementById("slectNameCourse")
+        .addEventListener("change", function () {
+          if (this.value === "otherName") {
+            document.getElementById("showEnterCourse").style.display = "block";
+          } else {
+            document.getElementById("showEnterCourse").style.display = "none";
+          }
+        });
+
+        document
         .getElementById("formsOfTraining")
         .addEventListener("change", function () {
           if (this.value == "Online") {
@@ -1584,7 +1570,6 @@
             document.getElementById("showLocation").style.display = "block";
           }
         });
-
         // Button create module
         document
           .getElementById('btnCreateModule')
@@ -1670,7 +1655,6 @@
               document.getElementById('buttonCreateContentModuleIcon').style.display = 'none'
               document.getElementById('buttonClearCreateContentModule').style.display = 'none'
           })
-          
         }
         // edit data
         function editRecord(tds) {
@@ -1913,8 +1897,8 @@
           var cell5 = newRow.insertCell(5);
           cell5.innerHTML = data.startTimeExpected;
 
-          var cell6 = newRow.insertCell(6); 
-          cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn b  tn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`
+          var cell6 = newRow.insertCell(6);
+          cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn btn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`
         }
         // edit data
         function editRecordClass(tds) {
@@ -2139,16 +2123,10 @@
           );
         }
       }
-     
-      document.getElementById('startTime').addEventListener('click', function () {
-      console.log('change time')
-      this.value = '07:01'
-    })
-  </script>
-  <script language="javascript">
-    print_country("country");
-  </script>
-  <script type="text/javascript" src="./assets/js/main.js"></script>
-</body>
-
+    </script>
+    <script language="javascript">
+      print_country("country");
+    </script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
 </html>
