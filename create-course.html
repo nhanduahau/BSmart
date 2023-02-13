@@ -828,22 +828,7 @@
                                 <i style="font-size:24px" class="fa">&#xf00d;</i>
                               </button>
                             </div>
-      
-                            <!-- <button class="btn btn-link" id="courseRouteBtn">
-                              I. MODULE 1: XÂY DỰNG WEBSITE VỚI HTML VÀ CSS
-                            </button> -->
-      
-                            <!-- Show title module -->
-                            <div class="course-route-show-lecture" id="courseRouteLectureDetail">
-                              <table id="storeList" class="mt-2">
-                                <tbody>
-                                  <!-- render data -->
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-      
-                          <!-- Create content module -->
+                            <!-- Create content module(chức năng tạo nội dung bài học) -->
                           <div class="d-flex align-items-center justify-content-center">
                             <form class="d-flex align-items-center justify-content-center" autocomplete="off" onsubmit="handleAddContentModuleLecture();">
                               <input style="display: none;" type="text" class="form-control w-100 ms-4 me-2 mt-3" name="inputCreateContentModule" id="inputCreateContentModule"  placeholder="Nội dung bài học...">
@@ -858,7 +843,20 @@
                             </button>
                           </div>
       
-                          <!-- Show content module -->
+                            <!-- <button class="btn btn-link" id="courseRouteBtn">
+                              I. MODULE 1: XÂY DỰNG WEBSITE VỚI HTML VÀ CSS
+                            </button> -->
+                            
+                            <!-- Show title module(kết quả hiện th5 sau khi nhập tiêu đề bài hoc) -->
+                            <div class="course-route-show-lecture" id="courseRouteLectureDetail">
+                              <table id="storeList" class="mt-2">
+                                <tbody>
+                                  <!-- render data -->
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <!-- Show content module(kết quả hiển thị sau khi nhập tạo nội dung bài học) -->
                           <div class="ms-5 course-route-show-lecture">
                             <table id="storeListContentModule" class="mt-1">
                               <tbody>
@@ -866,14 +864,10 @@
                               </tbody>
                             </table>
                           </div>
-      
                         </div>
                       </div>
                     </div>
-                  </div>
-                  
-
-                  
+                  </div>              
                 </div>
 
                 <!-- Collapse #3: Thời gian lớp học -->
