@@ -1574,9 +1574,9 @@
       let tag5CourseNameInput = document.getElementById("tag5CourseName");
       let tag5SearchInput = document.querySelector(".tag5-sup-autocom");
       // tag 6
-      let tag6LiContainer = document.querySelector(".tag6-autocom-box");
-      let tag6CourseNameInput = document.getElementById("tag6CourseName");
-      let tag6SearchInput = document.querySelector(".tag6-sup-autocom");
+      // let tag6LiContainer = document.querySelector(".tag6-autocom-box");
+      //let tag6CourseNameInput = document.getElementById("tag6CourseName");
+      //let tag6SearchInput = document.querySelector(".tag6-sup-autocom");
 
       // route course title name
       let routeCourseTitleName = document.getElementById(
@@ -1879,22 +1879,7 @@
       }
 
       // Tags 6
-      tag6CourseNameInput.addEventListener("keyup", function () {
-        let inpValue = tag6CourseNameInput.value;
-
-        if (inpValue) {
-          // add searchInp
-          tag6SearchInput.classList.add("active");
-          let filterKeyWord = datas.filter(function (keyWord) {
-            return keyWord.toLowerCase().includes(inpValue.toLowerCase());
-          });
-
-          dataTag6SuggestionWordsGenerator(filterKeyWord);
-        } else {
-          // remove searchInp
-          tag6SearchInput.classList.remove("active");
-        }
-      });
+     
       // generate key word
       function dataTag6SuggestionWordsGenerator(arrsKeyWord) {
         let keyWord = arrsKeyWord
