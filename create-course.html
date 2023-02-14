@@ -1881,7 +1881,7 @@
       }
 
       // Tags 6
-     
+
       // generate key word
       function dataTag6SuggestionWordsGenerator(arrsKeyWord) {
         let keyWord = arrsKeyWord
@@ -2250,13 +2250,47 @@
           .getElementsByTagName("tbody")[0];
         var newRow = table.insertRow(table.length);
 
+        //Khai báo biến thời gian bắt đầu và kết thúc
+        var hoursStart = document.getElementById("startTime").value;
+        var hS = hoursStart.split(":");
+        var hoursEnd = document.getElementById("endTime").value;
+        var hE = hoursEnd.split(":");
+        // Lấy thời gian hôm nay
+        var toDay = new Date();
+        var dateToDay =
+          toDay.getFullYear() +
+          "-" +
+          (toDay.getMonth() + 1) +
+          "-" +
+          toDay.getDate();
+        var dateNow = dateToDay.split("-");
+        //Khai báo biến cho ngày tháng năm
+        var startDate = document.getElementById("startTimeExpected").value;
+        var date1 = new Date(dateToDay);
+        var date2 = new Date(startDate);
+        console.log("ss");
         if (
           document.getElementById("startTime").value === "" ||
           document.getElementById("endTime").value === "" ||
           document.getElementById("slot").value === "" ||
           document.getElementById("startTimeExpected").value === ""
+          //Kiểm tra thời gian bắt đầu so với thời gian kết thúc
         ) {
           alert("Bạn cần phải nhập đầy đủ các thông tin!");
+          return;
+        }
+        if (
+          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) <= 119 ||
+          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) >= 181
+        ) {
+          alert(
+            "Thời gian cho lớp học tối thiểu là 2 giờ và tối đa là 3 giờ! "
+          );
+          
+          return;
+        }
+        if (date1.getTime() >= date2.getTime()) {
+          alert("Ngày dự kiến mở lớp học không hợp lệ! ");
           return;
         }
 
