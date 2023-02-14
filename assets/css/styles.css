@@ -3413,17 +3413,99 @@ div.swiper-button-prev:after {
   font-weight: bold;
 }
 
-.course-route-show-lecture p {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  line-height: 26px;
-  color: #333;
+#titleModule {
+  color: #0d6efd;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 6px;
+  margin: 6px;
+  margin-top: 22px;
+  font-weight: bold;
 }
-.course-route-show-lecture p:hover {
+#titleModule:focus {
+  outline: none;
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+#contentModule {
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+#contentModule:focus {
+  outline: none;
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.createChild {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.createChild:hover {
   color: #ff630e;
-  opacity: 0.8;
-  transition: 0.3s all;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.closeIT {
+  border: none;
+  outline: none;
+  margin: 10px;
+  font-weight: 450;
+  background-color: transparent;
+}
+.closeIT:hover {
+  color: #ff630e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.fa {
+  pointer-events: none;
+}
+
+input {
+  overflow: visible;
+  border: none;
+}
+
+#treeContainerBe ul {
+  list-style: none;
+  border-left: 1px solid black;
+  padding: 0;
+  margin: 0;
+  padding-left: 35px;
+}
+
+#treeContainerBe ul li {
+  position: relative;
+  text-transform: capitalize;
+}
+
+#treeContainerBe ul li:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -35px;
+  background: black;
+  height: 1px;
+  width: 32px;
 }
 
 .btn-create-class {
