@@ -15,31 +15,14 @@
       crossorigin="anonymous"
     />
 
-
     <!-- Import js (bootstrap 4) -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- import type time picker -->
     <script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
-    <link
-      href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css"
-      rel="stylesheet"
-    />
-
+    <link href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
 
     <!-- Import font-awesome -->
     <link
@@ -407,7 +390,9 @@
       <section class="banner-member-detail">
         <div class="banner-content">
           <h1>Tạo khóa học</h1>
-          <p><a href="index.html">Trang chủ</a><span> > </span> Tạo khóa học</p>
+          <p>
+            <a href="index.html">Trang chủ</a><span> > </span> Tạo khóa học
+          </p>
         </div>
       </section>
       <section class="content-info-mentor">
@@ -517,42 +502,24 @@
                     <div class="card-header" id="headingFour">
                       <h5 class="mb-0">
                         <span>Thông tin khóa học</span>
-                        <a
-                          href="#"
-                          data-toggle="collapse"
-                          data-target="#collapseSix"
-                          aria-expanded="true"
-                          aria-controls="collapseSix"
-                        >
+                        <a href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
                           <i class="fa fa-chevron-down chevron"></i>
                         </a>
                       </h5>
                     </div>
-                    <div
-                      id="collapseSix"
-                      class="collapse show"
-                      aria-labelledby="headingSix"
-                      data-parent="#accordion"
-                    >
+                    <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordion">
                       <div class="card-body">
-                        <div
-                          id="multiCollapseOne"
-                          class="collapse multi-collapse show p-4"
-                        >
+                        <div id="multiCollapseOne" class="collapse multi-collapse show p-4">
                           <div class="mentor-add-course">
-                            <form
-                              action="#"
-                              method="post"
-                              class="add-course-form"
-                            >
+                            <form action="#" method="post" class="add-course-form">
                               <!-- Tên khóa học -->
                               <div class="mb-3">
                                 <label class="form-label">Tên khoá học: </label>
                                 <div class="sup-autocom">
                                   <input
-                                    id="courseName"
-                                    type="text"
-                                    class="form-control"
+                                  id="courseName"
+                                  type="text"
+                                  class="form-control"
                                   />
                                   <div class="autocom-box">
                                     <!-- render list course name -->
@@ -561,35 +528,25 @@
                               </div>
                               <!-- Trình độ -->
                               <div class="mb-3">
-                                <label class="form-label me-2"
-                                  >Trình độ:
-                                </label>
+                                <label class="form-label me-2">Trình độ: </label>
                                 <div class="form-check-inline">
                                   <label class="form-check-label">
-                                    <input
-                                      type="radio"
-                                      name="optradio"
-                                      checked
-                                    />
-                                    Beginner
+                                    <input type="radio"  name="optradio" checked> Beginner
                                   </label>
                                 </div>
                                 <div class="form-check-inline">
                                   <label class="form-check-label">
-                                    <input type="radio" name="optradio" />
-                                    Intermediate
+                                    <input type="radio" name="optradio"> Intermediate
                                   </label>
                                 </div>
                                 <div class="form-check-inline">
                                   <label class="form-check-label">
-                                    <input type="radio" name="optradio" />
-                                    Advanced
+                                    <input type="radio" name="optradio"> Advanced
                                   </label>
                                 </div>
                                 <div class="form-check-inline">
                                   <label class="form-check-label">
-                                    <input type="radio" name="optradio" />
-                                    Expert
+                                    <input type="radio" name="optradio"> Expert
                                   </label>
                                 </div>
                               </div>
@@ -597,38 +554,24 @@
                               <div class="mb-3">
                                 <div class="card card-image-custom">
                                   <div class="p-2">
-                                    <div
-                                      class="rounded border my-border-color p-1"
-                                    >
+                                    <div class="rounded border my-border-color p-1">
                                       <div class="image-container">
                                         <img
                                           id="frameImageCourse"
                                           src="./assets/images/upload-img.jpg"
                                           class="img-fluid w-100 rounded"
                                         />
-                                        <div
-                                          class="loading"
-                                          id="loading-upload-img"
-                                        >
-                                          <div
-                                            class="spinner-border"
-                                            role="status"
-                                          >
-                                            <span class="sr-only"
-                                              >Loading...</span
-                                            >
+                                        <div class="loading" id="loading-upload-img">
+                                          <div class="spinner-border" role="status">
+                                            <span class="sr-only">Loading...</span>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
                                     <div class="card-body">
-                                      <div
-                                        class="row align-items-center group-title"
-                                      >
+                                      <div class="row align-items-center group-title">
                                         <div class="col-md-2 col-sm-2">
-                                          <label class="text-center mb-2"
-                                            >Hình ảnh:
-                                          </label>
+                                          <label class="text-center mb-2">Hình ảnh: </label>
                                         </div>
                                         <div class="col-md-7">
                                           <input
@@ -654,162 +597,94 @@
                               </div>
                               <!-- Lĩnh vực -->
                               <div class="mb-3">
-                                <label class="me-2 mb-2">Lĩnh vực: </label>
+                                <label class="form-label">Lĩnh vực: </label>
                                 <select
                                   id=""
                                   class="form-select"
                                   aria-label="Default select example"
                                 >
-                                  <option selected value="frontend">
-                                    Front End
-                                  </option>
-                                  <option value="backend">Back end</option>
-                                  <option value="devops">Devops</option>
-                                  <option value="database">Database</option>
-                                  <option value="other">Khác</option>
-                                </select>
-                              </div>
-                              <!-- Ngôn ngữ lập trình -->
-                              <div class="mb-3">
-                                <label class="form-label"
-                                  >Ngôn ngữ lập trình:
-                                </label>
-                                <select
-                                  id=""
-                                  class="form-select"
-                                  aria-label="Default select example"
-                                >
-                                  <option selected value="javaScript">
-                                    JavaScript
-                                  </option>
-                                  <option value="c">C/ C++</option>
-                                  <option value="c#">C#</option>
-                                  <option value="databaseSql">
-                                    Database SQL
-                                  </option>
-                                  <option value="other">Khác</option>
+                                  <option selected value="lv1">Lĩnh vực 1</option>
+                                  <option value="lv2">Lĩnh vực 2</option>
+                                  <option value="lv3">Lĩnh vực 3</option>
+                                  <option value="lv4">Lĩnh vực 4</option>
                                 </select>
                               </div>
                               <!-- Hình thức khóa học -->
                               <div class="mb-3">
-                                <label class="form-label"
-                                  >Hình thức khoá học:
-                                </label>
+                                <label class="form-label">Hình thức khoá học: </label>
                                 <select
-                                  id="formsOfTraining"
-                                  class="form-select"
-                                  aria-label="Default select example"
+                                      id="formsOfTraining"
+                                      class="form-select"
+                                      aria-label="Default select example"
                                 >
-                                  <option selected value="Online">
-                                    Online
-                                  </option>
-                                  <option value="Offline" disabled>
-                                    Offline
-                                  </option>
+                                      <option selected value="Online">Online</option>
+                                      <option value="Offline" disabled>Offline</option>
                                 </select>
                               </div>
-
+                              
                               <!-- Số lượng học viên -->
                               <div class="mb-3">
-                                <label class="form-label"
-                                  >Số lượng học viên:
-                                </label>
-                                <div
-                                  class="col-lg-4 col-md-6 d-flex align-items-center"
-                                  id="quantity"
-                                >
+                                <label class="form-label">Số lượng học viên: </label>
+                                <div class="col-lg-4 col-md-6 d-flex align-items-center" id="quantity">
                                   <!-- Min -->
-                                  <label class="form-label me-2 mt-2"
-                                    >Min:
-                                  </label>
-                                  <input
-                                    type="number"
-                                    id="minQuantity"
-                                    onchange="handleChangeMinQuantity()"
-                                    class="form-control"
-                                    value="1"
-                                  />
-
+                                  <label class="form-label me-2 mt-2">Min: </label>
+                                  <input type="number" id="minQuantity" onchange="handleChangeMinQuantity()" class="form-control" value="1" />
+                                  
                                   <!-- Max -->
-                                  <label class="form-label me-2 mt-2 ms-4"
-                                    >Max:
-                                  </label>
-                                  <input
-                                    type="number"
-                                    id="maxQuantity"
-                                    onchange="handleChangeMaxQuantity()"
-                                    class="form-control"
-                                    value="15"
-                                  />
+                                  <label class="form-label me-2 mt-2 ms-4">Max: </label>
+                                  <input type="number" id="maxQuantity" onchange="handleChangeMaxQuantity()" class="form-control" value="15" />
                                 </div>
                               </div>
                               <!-- Tag khóa học -->
                               <div class="mb-4">
-                                <label for="tags-input" class="form-label"
-                                  >Tags:
-                                </label>
-                                <div
-                                  class="col-lg-12 col-md-2 d-flex align-items-center"
-                                >
+                                <label for="tags-input" class="form-label">Tags: </label>
+                                <div class="col-lg-12 col-md-2 d-flex align-items-center">
+      
                                   <!-- Tag 1 -->
                                   <div class="tag1-sup-autocom me-1">
-                                    <input
-                                      type="text"
-                                      id="tag1CourseName"
-                                      class="form-control me-4"
-                                    />
+                                    <input type="text" id="tag1CourseName" class="form-control me-4" />
                                     <div class="tag1-autocom-box">
                                       <!-- render list course name -->
                                     </div>
                                   </div>
                                   <!-- Tag 2 -->
                                   <div class="tag2-sup-autocom me-1">
-                                    <input
-                                      type="text"
-                                      id="tag2CourseName"
-                                      class="form-control me-4"
-                                    />
+                                    <input type="text" id="tag2CourseName" class="form-control me-4"  />
                                     <div class="tag2-autocom-box">
                                       <!-- render list course name -->
                                     </div>
                                   </div>
                                   <!-- Tag 3 -->
                                   <div class="tag3-sup-autocom me-1">
-                                    <input
-                                      type="text"
-                                      id="tag3CourseName"
-                                      class="form-control me-4"
-                                    />
+                                    <input type="text" id="tag3CourseName" class="form-control me-4"  />
                                     <div class="tag3-autocom-box">
                                       <!-- render list course name -->
                                     </div>
                                   </div>
                                   <!-- Tag 4 -->
                                   <div class="tag4-sup-autocom me-1">
-                                    <input
-                                      type="text"
-                                      id="tag4CourseName"
-                                      class="form-control me-4"
-                                    />
+                                    <input type="text" id="tag4CourseName" class="form-control me-4" />
                                     <div class="tag4-autocom-box">
                                       <!-- render list course name -->
                                     </div>
                                   </div>
                                   <!-- Tag 5 -->
                                   <div class="tag5-sup-autocom me-1">
-                                    <input
-                                      type="text"
-                                      id="tag5CourseName"
-                                      class="form-control me-4"
-                                    />
+                                    <input type="text" id="tag5CourseName" class="form-control me-4"/>
                                     <div class="tag5-autocom-box">
                                       <!-- render list course name -->
                                     </div>
                                   </div>
                                   <!-- Tag 6 -->
+                                  <div class="tag6-sup-autocom">
+                                    <input type="text" id="tag6CourseName" class="form-control" />
+                                    <div class="tag6-autocom-box">
+                                      <!-- render list course name -->
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-
+      
                               <!-- Bỏ -->
                               <!-- <div class="mb-3">
                                 <label class="form-label">Phân loại khoá học</label>
@@ -832,9 +707,9 @@
                                 />
                               </div> -->
                               <!-- Bỏ -->
-
+      
                               <!-- Địa chỉ -->
-                              <div id="showLocation" style="display: none">
+                              <div id="showLocation" style="display: none;">
                                 <div class="mb-3">
                                   <label class="form-label">Tỉnh Thành: </label>
                                   <select
@@ -849,9 +724,7 @@
                                   </select>
                                 </div>
                                 <div class="mb-3">
-                                  <label class="form-label"
-                                    >Quận | Huyện:
-                                  </label>
+                                  <label class="form-label">Quận | Huyện: </label>
                                   <select
                                     onchange="print_district('district',this.selectedIndex);"
                                     name="state"
@@ -859,9 +732,7 @@
                                     class="form-select"
                                     aria-label="Default select example"
                                   >
-                                    <option selected>
-                                      Vui lòng chọn tỉnh thành trước
-                                    </option>
+                                    <option selected>Vui lòng chọn tỉnh thành trước</option>
                                   </select>
                                 </div>
                                 <div class="mb-3">
@@ -872,82 +743,42 @@
                                     class="form-select"
                                     aria-label="Default select example"
                                   >
-                                    <option selected>
-                                      Vui lòng chọn quận huyện trước
-                                    </option>
+                                    <option selected>Vui lòng chọn quận huyện trước</option>
                                   </select>
                                 </div>
                                 <div class="mb-3">
-                                  <label class="form-label"
-                                    >Địa chỉ chi tiết:
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value=""
-                                  />
+                                  <label class="form-label">Địa chỉ chi tiết: </label>
+                                  <input type="text" class="form-control" value="" />
                                 </div>
                               </div>
                               <!-- Mô tả khóa học -->
                               <div class="mb-3">
-                                <label class="form-label"
-                                  >Mô tả khoá học:
-                                </label>
+                                <label class="form-label">Mô tả khoá học: </label>
                                 <div class="form-floating">
-                                  <div
-                                    class="box_luuy"
-                                    style="
-                                      background: #f3efef;
-                                      box-shadow: rgba(0, 0, 0, 0.1) 3px 4px 4px;
-                                      clear: both;
-                                      line-height: 1.7;
-                                      color: white;
-                                      font-family: Roboto;
-                                      letter-spacing: -0.75px;
-                                      margin: 5px 0px;
-                                      padding: 20px 25px;
-                                      transition: 0.5s;
-                                    "
-                                  >
-                                    <textarea
-                                      id="input_luuy"
-                                      rows="5"
-                                      style="width: 100%"
-                                      oninput="countChar(this)"
-                                      maxlength="200"
-                                    ></textarea>
+                                  <div class="box_luuy" style="background: #f3efef; box-shadow: rgba(0, 0, 0, 0.1) 3px 4px 4px; clear: both; line-height: 1.7; color: white; font-family: Roboto; letter-spacing: -0.75px; margin: 5px 0px; padding: 20px 25px; transition: 0.5s;">
+                                    <textarea id="input_luuy" rows="5" style="width: 100%;" oninput="countChar(this)" maxlength="200"></textarea>
                                   </div>
-                                  <span
-                                    id="charNum"
-                                    aria-label="Đã dùng 0/200 ký tự"
-                                    role="img"
-                                    class="ZTPlmc"
-                                    style="float: right"
-                                    >0 / 200</span
-                                  >
+                                  <span id="charNum" aria-label="Đã dùng 0/200 ký tự" role="img" class="ZTPlmc" style="float: right;">0 / 200</span>
+      
                                 </div>
-
+                                
                                 <script>
                                   function countChar(textarea) {
                                     var count = textarea.value.length;
-                                    document.getElementById(
-                                      "charNum"
-                                    ).innerHTML = count + " / 200";
+                                    document.getElementById("charNum").innerHTML = count + " / 200";
                                     if (count > 200) {
-                                      textarea.value = textarea.value.substring(
-                                        0,
-                                        200
-                                      );
+                                      textarea.value = textarea.value.substring(0, 200);
                                     }
                                   }
                                 </script>
-                              </div>
                             </form>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  
+                  
                 </div>
 
                 <!-- Collapse #2: Lộ trình khóa học -->
@@ -968,74 +799,75 @@
                     <div class="card-header" id="headingFour">
                       <h5 class="mb-0">
                         <span>Lộ trình khóa học</span>
-                        <a
-                          href="#"
-                          data-toggle="collapse"
-                          data-target="#collapseFour"
-                          aria-expanded="true"
-                          aria-controls="collapseFour"
-                        >
+                        <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                           <i class="fa fa-chevron-down chevron"></i>
                         </a>
                       </h5>
                     </div>
-                    <div
-                      id="collapseFour"
-                      class="collapse show"
-                      aria-labelledby="headingFour"
-                      data-parent="#accordion"
-                    >
+                    <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
                       <div class="card-body">
-                        <div
-                          id="multiCollapseTwo"
-                          class="collapse multi-collapse show p-4"
-                        >
+                        <div id="multiCollapseTwo" class="collapse multi-collapse show p-4">
                           <!-- Title course -->
-                          <div
-                            class="d-flex align-items-center justify-content-between"
-                          >
-                            <h1
-                              class="course-route-title-name"
-                              id="routeCourseTitleName"
-                            ></h1>
-                            <button
-                              class="btn btn-primary"
-                              id="btnCreateModule"
-                            >
-                              Tạo module
+                          <div class="d-flex align-items-center justify-content-between">
+                            <h1 class="course-route-title-name" id="routeCourseTitleName"></h1>
+                            <button class="btn btn-primary" id="btnCreateModule" onclick="handleCreateModule();">Tạo module</button>
+                          </div>
+                          <!-- Detail course (Create module) -->
+                          <div class="mt-2 ms-4">
+                            <!-- Create title module -->
+                            <div class="d-flex align-items-center justify-content-center">
+                              <form class="d-flex align-items-center justify-content-center" autocomplete="off" onsubmit="handleAddTitleLecture()">
+                                <input type="text" class="form-control w-100 me-2" name="inputCreateModule" id="inputCreateModule" style="display: none;" placeholder="Tên tiêu đề bài học...">
+                                <!-- Button icon create module -->
+                                <button style="background-color: transparent; border: none; display: none;" id="buttonCreateModule">
+                                  <i style="font-size:24px;" class="fa">&#xf067;</i>
+                                </button>
+                              </form>
+                              <!-- Button icon hide input create module -->
+                              <button style="background-color: transparent; border: none; display: none;" id="buttonClearCreateModule">
+                                <i style="font-size:24px" class="fa">&#xf00d;</i>
+                              </button>
+                            </div>
+                            <!-- Create content module(chức năng tạo nội dung bài học) -->
+                          <div class="d-flex align-items-center justify-content-center">
+                            <form class="d-flex align-items-center justify-content-center" autocomplete="off" onsubmit="handleAddContentModuleLecture();">
+                              <input style="display: none;" type="text" class="form-control w-100 ms-4 me-2 mt-3" name="inputCreateContentModule" id="inputCreateContentModule"  placeholder="Nội dung bài học...">
+                              <!-- Button icon create content module -->
+                              <button class="mt-3" style="background-color: transparent; border: none; display: none;" id="buttonCreateContentModuleIcon">
+                                <i style="font-size:24px;" class="fa">&#xf067;</i>
+                              </button>
+                            </form>
+                            <!-- Button icon hide input create content module -->
+                            <button class="mt-3" style="background-color: transparent; border: none; display: none;" id="buttonClearCreateContentModule">
+                              <i style="font-size:24px" class="fa">&#xf00d;</i>
                             </button>
                           </div>
-
-                          <!-- Show tree view (route course) -->
-                          <div class="">
-                            <ul id="tree-container">
-                              <li>
-                                <span class="caret"></span>
-
-                                <ul class="nested">
-                                  <li></li>
-                                  <li>
-                                    <span class="caret"></span>
-
-                                    <ul class="nested">
-                                      <li></li>
-                                      <li></li>
-                                    </ul>
-                                  </li>
-                                </ul>
-
-                              </li>
-                              <li></li>
-                            </ul>
-
+      
+                            <!-- <button class="btn btn-link" id="courseRouteBtn">
+                              I. MODULE 1: XÂY DỰNG WEBSITE VỚI HTML VÀ CSS
+                            </button> -->
+                            
+                            <!-- Show title module(kết quả hiện th5 sau khi nhập tiêu đề bài hoc) -->
+                            <div class="course-route-show-lecture" id="courseRouteLectureDetail">
+                              <table id="storeList" class="mt-2">
+                                <tbody>
+                                  <!-- render data -->
+                                </tbody>
+                              </table>
+                            </div>
                           </div>
-
-                          <!-- render data -->
-                          <ul id="treeContainerBe"></ul>
+                          <!-- Show content module(kết quả hiển thị sau khi nhập tạo nội dung bài học) -->
+                          <div class="ms-5 course-route-show-lecture">
+                            <table id="storeListContentModule" class="mt-1">
+                              <tbody>
+                                <!-- render data -->
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div>              
                 </div>
 
                 <!-- Collapse #3: Thời gian lớp học -->
@@ -1052,152 +884,80 @@
                       float: right;
                     }
                   </style>
-
+                  
                   <div class="card">
                     <div class="card-header" id="headingFive">
                       <h5 class="mb-0">
                         <span>Thời gian lớp học</span>
-                        <a
-                          href="#"
-                          data-toggle="collapse"
-                          data-target="#collapseFive"
-                          aria-expanded="true"
-                          aria-controls="collapseFive"
-                        >
+                        <a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                           <i class="fa fa-chevron-down chevron"></i>
                         </a>
                       </h5>
                     </div>
-                    <div
-                      id="collapseFive"
-                      class="collapse show"
-                      aria-labelledby="headingFive"
-                      data-parent="#accordion"
-                    >
+                    <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
                       <div class="card-body">
-                        <div
-                          id="multi#collapseFive"
-                          class="collapse multi-collapse show p-4"
-                        >
-                          <form
-                            autocomplete="off"
-                            onsubmit="onFormSubmitTimeClass()"
-                          >
+                        <div id="multi#collapseFive" class="collapse multi-collapse show p-4">
+                          <form autocomplete="off" onsubmit="onFormSubmitTimeClass()">
                             <div class="row">
                               <!-- Start time -->
                               <div class="col-lg-4 col-md-12 position-relative">
                                 <div class="form-group mt-3">
                                   <label for="startTime">Giờ bắt đầu: </label>
-                                  <input
-                                    type="time"
-                                    class="form-control w-75 mt-1"
-                                    name="startTime"
-                                    id="startTime"
-                                  />
+                                  <input type="time" class="form-control w-75 mt-1" name="startTime" id="startTime">
                                 </div>
                               </div>
-
+                              
                               <!-- End time -->
                               <div class="col-lg-4 col-md-12">
                                 <div class="form-group mt-3">
                                   <label for="endTime">Giờ kết thúc: </label>
-                                  <input
-                                    type="time"
-                                    class="form-control w-75 mt-1"
-                                    name="endTime"
-                                    id="endTime"
-                                  />
+                                  <input type="time" class="form-control w-75 mt-1" name="endTime" id="endTime">
                                 </div>
                               </div>
-
+                              
                               <script>
-                                document
-                                  .getElementById("endTime")
-                                  .addEventListener("click", function () {
-                                    console.log("change time");
-                                    this.value = "07:01";
-                                  });
+                                document.getElementById("endTime").addEventListener("click", function() {
+                                  console.log("change time");
+                                  this.value = "07:01";
+                                });
                               </script>
-
+                              
+                                                      
                               <!-- Chọn các thứ trong tuần -->
-                              <div
-                                class="col-lg-4 col-md-12 d-flex align-items-center mt-3"
-                              >
+                              <div class="col-lg-4 col-md-12 d-flex align-items-center mt-3">
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T2</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T2,"
-                                    name="chkT2"
-                                    id="chkT2"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T2," name="chkT2" id="chkT2">
                                 </div>
-
+      
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T3</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T3,"
-                                    name="chkT3"
-                                    id="chkT3"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T3," name="chkT3" id="chkT3">
                                 </div>
-
+      
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T4</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T4,"
-                                    name="chkT4"
-                                    id="chkT4"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T4," name="chkT4" id="chkT4">
                                 </div>
-
+      
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T5</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T5,"
-                                    name="chkT5"
-                                    id="chkT5"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T5," name="chkT5" id="chkT5">
                                 </div>
-
+      
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T6</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T6,"
-                                    name="chkT6"
-                                    id="chkT6"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T6," name="chkT6" id="chkT6">
                                 </div>
-
+      
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T7</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T7,"
-                                    name="chkT7"
-                                    id="chkT7"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T7," name="chkT7" id="chkT7">
                                 </div>
-
+      
                                 <div class="d-flex flex-column">
                                   <label class="form-check-label">CN</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="CN,"
-                                    name="chkCN"
-                                    id="chkCN"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="CN," name="chkCN" id="chkCN">
                                 </div>
                               </div>
                             </div>
@@ -1206,83 +966,51 @@
                               <div class="col-lg-4 col-md-12">
                                 <div class="form-group mt-3">
                                   <label for="slot">Slot: </label>
-                                  <select
-                                    class="form-select w-75 mt-1"
-                                    id="slot"
-                                  >
-                                    <option selected value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                  </select>
+                                    <select class="form-select w-75 mt-1" id="slot">
+                                      <option selected value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6">6</option>
+                                      <option value="7">7</option>
+                                      <option value="8">8</option>
+                                      <option value="9">9</option>
+                                      <option value="10">10</option>
+                                      <option value="11">11</option>
+                                      <option value="12">12</option>
+                                      <option value="13">13</option>
+                                      <option value="14">14</option>
+                                      <option value="15">15</option>
+                                    </select>
                                 </div>
-                              </div>
+                              </div>  
                               <!-- Ngày dự kiến mở lớp -->
                               <div class="col-lg-4 col-md-12">
                                 <div class="form-group mt-3">
-                                  <label for="startTimeExpected"
-                                    >Ngày dự kiến mở lớp:
-                                  </label>
-                                  <input
-                                    type="date"
-                                    class="form-control w-75 mt-1"
-                                    name="startTimeExpected"
-                                    id="startTimeExpected"
-                                  />
+                                  <label for="startTimeExpected">Ngày dự kiến mở lớp: </label>
+                                  <input type="date" class="form-control w-75 mt-1" name="startTimeExpected" id="startTimeExpected">
                                 </div>
                               </div>
                               <!-- Button create class -->
                               <div class="col-lg-4 col-md-12 mt-4">
-                                <button
-                                  class="btn btn-create-class"
-                                  id="createClassBtn"
-                                >
-                                  Tạo lớp học
-                                </button>
+                                <button class="btn btn-create-class" id="createClassBtn">Tạo lớp học</button>
                               </div>
                             </div>
                           </form>
-
+      
                           <!-- Table list course schedule -->
                           <div class="col-lg-12 col-md-12 mt-4">
-                            <table
-                              class="table table-striped table-hover"
-                              id="storeListTimeClass"
-                            >
+                            <table class="table table-striped table-hover" id="storeListTimeClass">
                               <thead>
                                 <tr>
-                                  <th scope="col" style="font-weight: bold">
-                                    #
-                                  </th>
-                                  <th scope="col" style="font-weight: bold">
-                                    Giờ bắt đầu
-                                  </th>
-                                  <th scope="col" style="font-weight: bold">
-                                    Giờ kết thúc
-                                  </th>
-                                  <th scope="col" style="font-weight: bold">
-                                    Thứ
-                                  </th>
-                                  <th scope="col" style="font-weight: bold">
-                                    Slot
-                                  </th>
-                                  <th scope="col" style="font-weight: bold">
-                                    Ngày dự kiến mở lớp
-                                  </th>
-                                  <th scope="col" style="font-weight: bold">
-                                    Hành động
-                                  </th>
+                                  <th scope="col" style="font-weight: bold;">#</th>
+                                  <th scope="col" style="font-weight: bold;">Giờ bắt đầu</th>
+                                  <th scope="col" style="font-weight: bold;">Giờ kết thúc</th>
+                                  <th scope="col" style="font-weight: bold;">Thứ</th>
+                                  <th scope="col" style="font-weight: bold;">Slot</th>
+                                  <th scope="col" style="font-weight: bold;">Ngày dự kiến mở lớp</th>
+                                  <th scope="col" style="font-weight: bold;">Hành động</th>
                                 </tr>
                               </thead>
                               <!-- Data -->
@@ -1295,17 +1023,24 @@
                       </div>
                     </div>
                   </div>
+                  
+                  
+                  
+                  
+                  
+
+                  
                 </div>
               </div>
 
               <div class="col-lg-12 col-md-12 mt-4">
                 <!-- Button tạo khóa học -->
                 <div class="mb-3">
-                  <button type="submit" class="btn btn-primary-custom w-100">
-                    Tạo khoá học
-                  </button>
-                </div>
-              </div>
+                 <button type="submit" class="btn btn-primary-custom w-100">
+                   Tạo khoá học
+                 </button>
+               </div>
+             </div>
             </div>
           </div>
         </div>
@@ -1438,63 +1173,58 @@
     <script>
       // validate số lượng học viên
       function handleChangeMinQuantity() {
-        let min = document.getElementById("minQuantity").value;
-        let max = document.getElementById("maxQuantity").value;
+        let min = document.getElementById('minQuantity').value;
+        let max = document.getElementById('maxQuantity').value;
 
-        if (+min < 1) {
-          alert("Vui lòng chọn min lớn hơn hoặc bằng 1!");
-          document.getElementById("minQuantity").value = 1;
+        if(+min < 1) {
+          alert('Vui lòng chọn min lớn hơn hoặc bằng 1!');
         }
-        
-        if (+min >= +max) {
-          alert("Vui lòng chọn min phải bé hơn max!");
-          document.getElementById("minQuantity").value = +document.getElementById("minQuantity").value - 1;
+
+        if(+min >= +max) {
+          alert('Vui lòng chọn min phải bé hơn max!')
         }
       }
       function handleChangeMaxQuantity() {
-        let min = document.getElementById("minQuantity").value;
-        let max = document.getElementById("maxQuantity").value;
-        
-        if (+min >= +max) {
-          alert("Vui lòng chọn max phải lớn hơn min!");
-          document.getElementById("maxQuantity").value = +document.getElementById("maxQuantity").value + 1;
+        let min = document.getElementById('minQuantity').value;
+        let max = document.getElementById('maxQuantity').value;
+
+        if(+min >= +max) {
+          alert('Vui lòng chọn max phải lớn hơn min!')
         }
       }
 
       // autocomplete course name
-      let liContainer = document.querySelector(".autocom-box");
-      let courseNameInput = document.getElementById("courseName");
-      let searchInput = document.querySelector(".sup-autocom");
-
+      let liContainer = document.querySelector('.autocom-box');
+      let courseNameInput = document.getElementById('courseName');
+      let searchInput = document.querySelector('.sup-autocom');
+      
       // tag 1
-      let tag1LiContainer = document.querySelector(".tag1-autocom-box");
-      let tag1CourseNameInput = document.getElementById("tag1CourseName");
-      let tag1SearchInput = document.querySelector(".tag1-sup-autocom");
+      let tag1LiContainer = document.querySelector('.tag1-autocom-box');
+      let tag1CourseNameInput = document.getElementById('tag1CourseName');
+      let tag1SearchInput = document.querySelector('.tag1-sup-autocom');
       // tag 2
-      let tag2LiContainer = document.querySelector(".tag2-autocom-box");
-      let tag2CourseNameInput = document.getElementById("tag2CourseName");
-      let tag2SearchInput = document.querySelector(".tag2-sup-autocom");
+      let tag2LiContainer = document.querySelector('.tag2-autocom-box');
+      let tag2CourseNameInput = document.getElementById('tag2CourseName');
+      let tag2SearchInput = document.querySelector('.tag2-sup-autocom');
       // tag 3
-      let tag3LiContainer = document.querySelector(".tag3-autocom-box");
-      let tag3CourseNameInput = document.getElementById("tag3CourseName");
-      let tag3SearchInput = document.querySelector(".tag3-sup-autocom");
+      let tag3LiContainer = document.querySelector('.tag3-autocom-box');
+      let tag3CourseNameInput = document.getElementById('tag3CourseName');
+      let tag3SearchInput = document.querySelector('.tag3-sup-autocom');
       // tag 4
-      let tag4LiContainer = document.querySelector(".tag4-autocom-box");
-      let tag4CourseNameInput = document.getElementById("tag4CourseName");
-      let tag4SearchInput = document.querySelector(".tag4-sup-autocom");
+      let tag4LiContainer = document.querySelector('.tag4-autocom-box');
+      let tag4CourseNameInput = document.getElementById('tag4CourseName');
+      let tag4SearchInput = document.querySelector('.tag4-sup-autocom');
       // tag 5
-      let tag5LiContainer = document.querySelector(".tag5-autocom-box");
-      let tag5CourseNameInput = document.getElementById("tag5CourseName");
-      let tag5SearchInput = document.querySelector(".tag5-sup-autocom");
+      let tag5LiContainer = document.querySelector('.tag5-autocom-box');
+      let tag5CourseNameInput = document.getElementById('tag5CourseName');
+      let tag5SearchInput = document.querySelector('.tag5-sup-autocom');
       // tag 6
-      // let tag6LiContainer = document.querySelector(".tag6-autocom-box");
-      //let tag6CourseNameInput = document.getElementById("tag6CourseName");
-      //let tag6SearchInput = document.querySelector(".tag6-sup-autocom");
+      let tag6LiContainer = document.querySelector('.tag6-autocom-box');
+      let tag6CourseNameInput = document.getElementById('tag6CourseName');
+      let tag6SearchInput = document.querySelector('.tag6-sup-autocom');
 
       // route course title name
-      let routeCourseTitleName = document.getElementById(
-        "routeCourseTitleName"
-      );
+      let routeCourseTitleName = document.getElementById('routeCourseTitleName');
 
       // data
       let datas = [
@@ -1522,19 +1252,19 @@
         "How to learn JavaScript",
       ];
       // evt
-      courseNameInput.addEventListener("change", function () {
+      courseNameInput.addEventListener('change', function () {
         // change theo input ở thông tin khóa học
-        routeCourseTitleName.innerText = courseNameInput.value;
-      });
-      courseNameInput.addEventListener("keyup", function () {
+        routeCourseTitleName.innerText = courseNameInput.value
+      })
+      courseNameInput.addEventListener('keyup', function() {
         let inpValue = courseNameInput.value;
 
-        if (inpValue) {
+        if(inpValue) {
           // add searchInp
           searchInput.classList.add("active");
-          let filterKeyWord = datas.filter(function (keyWord) {
+          let filterKeyWord = datas.filter(function(keyWord) {
             return keyWord.toLowerCase().includes(inpValue.toLowerCase());
-          });
+          })
 
           dataSuggestionWordsGenerator(filterKeyWord);
         } else {
@@ -1545,13 +1275,11 @@
       // generate key word
       let customListItem;
       function dataSuggestionWordsGenerator(arrsKeyWord) {
-        let keyWord = arrsKeyWord
-          .map(function (word) {
-            return "<li>" + word + "</li>";
-          })
-          .join("");
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
 
-        if (keyWord) {
+        if(keyWord) {
           liContainer.innerHTML = keyWord;
         } else {
           liContainer.innerHTML = "<li>" + courseNameInput.value + "</li>";
@@ -1561,28 +1289,28 @@
       // select
       function Select() {
         let allListItems = liContainer.querySelectorAll("li");
-        allListItems.forEach(function (word) {
-          word.addEventListener("click", function (e) {
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
             courseNameInput.value = e.target.textContent;
-            routeCourseTitleName.innerText = e.target.textContent;
+            routeCourseTitleName.innerText = e.target.textContent
             // remove search inp
             searchInput.classList.remove("active");
-          });
-        });
+          })
+        })
       }
 
       // Tags 1
-      tag1CourseNameInput.addEventListener("keyup", function () {
-        let inpValue = tag1CourseNameInput.value;
+      tag1CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag1CourseNameInput.value;
 
-        if (inpValue) {
-          // add searchInp
-          tag1SearchInput.classList.add("active");
-          let filterKeyWord = datas.filter(function (keyWord) {
-            return keyWord.toLowerCase().includes(inpValue.toLowerCase());
-          });
+      if(inpValue) {
+        // add searchInp
+        tag1SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
 
-          dataTag1SuggestionWordsGenerator(filterKeyWord);
+        dataTag1SuggestionWordsGenerator(filterKeyWord);
         } else {
           // remove searchInp
           tag1SearchInput.classList.remove("active");
@@ -1590,43 +1318,40 @@
       });
       // generate key word
       function dataTag1SuggestionWordsGenerator(arrsKeyWord) {
-        let keyWord = arrsKeyWord
-          .map(function (word) {
-            return "<li>" + word + "</li>";
-          })
-          .join("");
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
 
-        if (keyWord) {
+        if(keyWord) {
           tag1LiContainer.innerHTML = keyWord;
         } else {
-          tag1LiContainer.innerHTML =
-            "<li>" + tag1CourseNameInput.value + "</li>";
+          tag1LiContainer.innerHTML = "<li>" + tag1CourseNameInput.value + "</li>";
         }
         SelectTag1();
       }
       function SelectTag1() {
         let allListItems = tag1LiContainer.querySelectorAll("li");
-        allListItems.forEach(function (word) {
-          word.addEventListener("click", function (e) {
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
             tag1CourseNameInput.value = e.target.textContent;
             // remove search inp
             tag1SearchInput.classList.remove("active");
-          });
-        });
+          })
+        })
       }
-
+      
       // Tags 2
-      tag2CourseNameInput.addEventListener("keyup", function () {
-        let inpValue = tag2CourseNameInput.value;
+      tag2CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag2CourseNameInput.value;
 
-        if (inpValue) {
-          // add searchInp
-          tag2SearchInput.classList.add("active");
-          let filterKeyWord = datas.filter(function (keyWord) {
-            return keyWord.toLowerCase().includes(inpValue.toLowerCase());
-          });
+      if(inpValue) {
+        // add searchInp
+        tag2SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
 
-          dataTag2SuggestionWordsGenerator(filterKeyWord);
+        dataTag2SuggestionWordsGenerator(filterKeyWord);
         } else {
           // remove searchInp
           tag2SearchInput.classList.remove("active");
@@ -1634,43 +1359,40 @@
       });
       // generate key word
       function dataTag2SuggestionWordsGenerator(arrsKeyWord) {
-        let keyWord = arrsKeyWord
-          .map(function (word) {
-            return "<li>" + word + "</li>";
-          })
-          .join("");
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
 
-        if (keyWord) {
+        if(keyWord) {
           tag2LiContainer.innerHTML = keyWord;
         } else {
-          tag2LiContainer.innerHTML =
-            "<li>" + tag2CourseNameInput.value + "</li>";
+          tag2LiContainer.innerHTML = "<li>" + tag2CourseNameInput.value + "</li>";
         }
         SelectTag2();
       }
       function SelectTag2() {
         let allListItems = tag2LiContainer.querySelectorAll("li");
-        allListItems.forEach(function (word) {
-          word.addEventListener("click", function (e) {
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
             tag2CourseNameInput.value = e.target.textContent;
             // remove search inp
             tag2SearchInput.classList.remove("active");
-          });
-        });
+          })
+        })
       }
 
       // Tags 3
-      tag3CourseNameInput.addEventListener("keyup", function () {
-        let inpValue = tag3CourseNameInput.value;
+      tag3CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag3CourseNameInput.value;
 
-        if (inpValue) {
-          // add searchInp
-          tag3SearchInput.classList.add("active");
-          let filterKeyWord = datas.filter(function (keyWord) {
-            return keyWord.toLowerCase().includes(inpValue.toLowerCase());
-          });
+      if(inpValue) {
+        // add searchInp
+        tag3SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
 
-          dataTag3SuggestionWordsGenerator(filterKeyWord);
+        dataTag3SuggestionWordsGenerator(filterKeyWord);
         } else {
           // remove searchInp
           tag3SearchInput.classList.remove("active");
@@ -1678,43 +1400,40 @@
       });
       // generate key word
       function dataTag3SuggestionWordsGenerator(arrsKeyWord) {
-        let keyWord = arrsKeyWord
-          .map(function (word) {
-            return "<li>" + word + "</li>";
-          })
-          .join("");
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
 
-        if (keyWord) {
+        if(keyWord) {
           tag3LiContainer.innerHTML = keyWord;
         } else {
-          tag3LiContainer.innerHTML =
-            "<li>" + tag3CourseNameInput.value + "</li>";
+          tag3LiContainer.innerHTML = "<li>" + tag3CourseNameInput.value + "</li>";
         }
         SelectTag3();
       }
       function SelectTag3() {
         let allListItems = tag3LiContainer.querySelectorAll("li");
-        allListItems.forEach(function (word) {
-          word.addEventListener("click", function (e) {
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
             tag3CourseNameInput.value = e.target.textContent;
             // remove search inp
             tag3SearchInput.classList.remove("active");
-          });
-        });
+          })
+        })
       }
 
       // Tags 4
-      tag4CourseNameInput.addEventListener("keyup", function () {
-        let inpValue = tag4CourseNameInput.value;
+      tag4CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag4CourseNameInput.value;
 
-        if (inpValue) {
-          // add searchInp
-          tag4SearchInput.classList.add("active");
-          let filterKeyWord = datas.filter(function (keyWord) {
-            return keyWord.toLowerCase().includes(inpValue.toLowerCase());
-          });
+      if(inpValue) {
+        // add searchInp
+        tag4SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
 
-          dataTag4SuggestionWordsGenerator(filterKeyWord);
+        dataTag4SuggestionWordsGenerator(filterKeyWord);
         } else {
           // remove searchInp
           tag4SearchInput.classList.remove("active");
@@ -1722,43 +1441,40 @@
       });
       // generate key word
       function dataTag4SuggestionWordsGenerator(arrsKeyWord) {
-        let keyWord = arrsKeyWord
-          .map(function (word) {
-            return "<li>" + word + "</li>";
-          })
-          .join("");
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
 
-        if (keyWord) {
+        if(keyWord) {
           tag4LiContainer.innerHTML = keyWord;
         } else {
-          tag4LiContainer.innerHTML =
-            "<li>" + tag4CourseNameInput.value + "</li>";
+          tag4LiContainer.innerHTML = "<li>" + tag4CourseNameInput.value + "</li>";
         }
         SelectTag4();
       }
       function SelectTag4() {
         let allListItems = tag4LiContainer.querySelectorAll("li");
-        allListItems.forEach(function (word) {
-          word.addEventListener("click", function (e) {
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
             tag4CourseNameInput.value = e.target.textContent;
             // remove search inp
             tag4SearchInput.classList.remove("active");
-          });
-        });
+          })
+        })
       }
 
       // Tags 5
-      tag5CourseNameInput.addEventListener("keyup", function () {
-        let inpValue = tag5CourseNameInput.value;
+      tag5CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag5CourseNameInput.value;
 
-        if (inpValue) {
-          // add searchInp
-          tag5SearchInput.classList.add("active");
-          let filterKeyWord = datas.filter(function (keyWord) {
-            return keyWord.toLowerCase().includes(inpValue.toLowerCase());
-          });
+      if(inpValue) {
+        // add searchInp
+        tag5SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
 
-          dataTag5SuggestionWordsGenerator(filterKeyWord);
+        dataTag5SuggestionWordsGenerator(filterKeyWord);
         } else {
           // remove searchInp
           tag5SearchInput.classList.remove("active");
@@ -1766,68 +1482,77 @@
       });
       // generate key word
       function dataTag5SuggestionWordsGenerator(arrsKeyWord) {
-        let keyWord = arrsKeyWord
-          .map(function (word) {
-            return "<li>" + word + "</li>";
-          })
-          .join("");
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
 
-        if (keyWord) {
+        if(keyWord) {
           tag5LiContainer.innerHTML = keyWord;
         } else {
-          tag5LiContainer.innerHTML =
-            "<li>" + tag5CourseNameInput.value + "</li>";
+          tag5LiContainer.innerHTML = "<li>" + tag5CourseNameInput.value + "</li>";
         }
         SelectTag5();
       }
       function SelectTag5() {
         let allListItems = tag5LiContainer.querySelectorAll("li");
-        allListItems.forEach(function (word) {
-          word.addEventListener("click", function (e) {
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
             tag5CourseNameInput.value = e.target.textContent;
             // remove search inp
             tag5SearchInput.classList.remove("active");
-          });
-        });
+          })
+        })
       }
 
       // Tags 6
+      tag6CourseNameInput.addEventListener('keyup', function() {
+      let inpValue = tag6CourseNameInput.value;
 
+      if(inpValue) {
+        // add searchInp
+        tag6SearchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function(keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        })
+
+        dataTag6SuggestionWordsGenerator(filterKeyWord);
+        } else {
+          // remove searchInp
+          tag6SearchInput.classList.remove("active");
+        }
+      });
       // generate key word
       function dataTag6SuggestionWordsGenerator(arrsKeyWord) {
-        let keyWord = arrsKeyWord
-          .map(function (word) {
-            return "<li>" + word + "</li>";
-          })
-          .join("");
+        let keyWord = arrsKeyWord.map(function(word) {
+          return "<li>" + word + "</li>";
+        }).join('');
 
-        if (keyWord) {
+        if(keyWord) {
           tag6LiContainer.innerHTML = keyWord;
         } else {
-          tag6LiContainer.innerHTML =
-            "<li>" + tag6CourseNameInput.value + "</li>";
+          tag6LiContainer.innerHTML = "<li>" + tag6CourseNameInput.value + "</li>";
         }
         SelectTag6();
       }
       function SelectTag6() {
         let allListItems = tag6LiContainer.querySelectorAll("li");
-        allListItems.forEach(function (word) {
-          word.addEventListener("click", function (e) {
+        allListItems.forEach(function(word) {
+          word.addEventListener('click', function(e) {
             tag6CourseNameInput.value = e.target.textContent;
             // remove search inp
             tag6SearchInput.classList.remove("active");
-          });
-        });
+          })
+        })
       }
 
       function previewImageCourse() {
-        var optFile = document.getElementById("formFileImageCourse");
+        var optFile = document.getElementById('formFileImageCourse');
         var pathFile = optFile.value;
         var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
-
-        if (!allowedExtensions.exec(pathFile)) {
-          alert("Vui lòng chọn file ảnh có đuôi là: .jpeg/.jpg/.png");
-          optFile.value = "";
+        
+        if(!allowedExtensions.exec(pathFile)){
+          alert('Vui lòng chọn file ảnh có đuôi là: .jpeg/.jpg/.png');
+          optFile.value = '';
           return false;
         } else {
           frameImageCourse.src = "";
@@ -1841,8 +1566,7 @@
         event.preventDefault();
         // loading();
         document.getElementById("formFileImageCourse").value = null;
-        document.getElementById("frameImageCourse").src =
-          "./assets/images/upload-img.jpg";
+        document.getElementById("frameImageCourse").src = "./assets/images/upload-img.jpg";
       }
 
       document
@@ -1855,359 +1579,432 @@
           }
         });
 
-        
+        // Button create module
+        document
+          .getElementById('btnCreateModule')
+          .addEventListener('click', function () {
+            document.getElementById('inputCreateModule').style.display = 'block'
+            document.getElementById('buttonCreateModule').style.display = 'block'
+            document.getElementById('buttonClearCreateModule').style.display = 'block'
+          })
+
+        // Hide input create module
+        document
+          .getElementById('buttonClearCreateModule')
+          .addEventListener('click', function() {
+            document.getElementById('inputCreateModule').style.display = 'none'
+            document.getElementById('buttonCreateModule').style.display = 'none'
+            document.getElementById('buttonClearCreateModule').style.display = 'none'
+          })
+
+        // Create module
+        var selectedRow = null;
+        function handleAddTitleLecture() {
+          event.preventDefault();
+
+          var formData = readFormData();
+
+          // check
+          if(selectedRow === null) {
+            insertNewRecord(formData)
+          } else  {
+            updateRecord(formData);
+          }
+
+          resetDataForm();
+        }
+
+        // read data
+        function readFormData() {
+          var formData = {};
+
+          // check empt
+          if(document.getElementById("inputCreateModule").value === '') {
+            alert('Bạn cần nhập tên tiêu đề bài học!');
+            return;
+          }
+
+          formData["inputCreateModule"] = document.getElementById("inputCreateModule").value;
+
+          return formData;
+        }
+        // insert data
+        function insertNewRecord(data) {
+          var table = document.getElementById('storeList').getElementsByTagName('tbody')[0];
+          var newRow = table.insertRow(table.length);
+
+          var cellInputCreateModule = newRow.insertCell(0);
+          cellInputCreateModule.innerHTML = `<button class="btn btn-link mt-4 me-2" style="font-weight: 800">
+                                              ${data.inputCreateModule}
+                                            </button>`;
+
+          var cellFuncModule = newRow.insertCell(1);
+          cellFuncModule.innerHTML = `<button onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
+                                          Tạo nội dung
+                                        </button>
+                                        <button onclick="editRecord(this)" class="btn btn-secondary mt-3 me-2">
+                                          Sửa
+                                        </button>
+                                        <button onclick='deleteRecord(this)' class="btn btn-danger mt-3 me-2">
+                                          Xóa
+                                      </button>`;
+          // Show content module
+          document
+          .getElementById('buttonCreateContentModule')
+          .addEventListener('click', function() {
+            document.getElementById('inputCreateContentModule').style.display = 'block'
+            document.getElementById('buttonCreateContentModuleIcon').style.display = 'block'
+            document.getElementById('buttonClearCreateContentModule').style.display = 'block'
+          })
+          // Hide create content module
+          document
+            .getElementById('buttonClearCreateContentModule')
+            .addEventListener('click', function() {
+              document.getElementById('inputCreateContentModule').style.display = 'none'
+              document.getElementById('buttonCreateContentModuleIcon').style.display = 'none'
+              document.getElementById('buttonClearCreateContentModule').style.display = 'none'
+          })
+          
+        }
+        // edit data
+        function editRecord(tds) {
+          selectedRow = tds.parentElement.parentElement;
+          console.log('selectedRow', selectedRow)
+          document.getElementById('inputCreateModule').value = selectedRow.cells[0].innerText;
+          document.getElementById('buttonCreateModule').innerHTML = '<i style="font-size:24px" class="fa">&#xf00c;</i>';
+        }
+        // reset icon updated
+        document
+          .getElementById('buttonCreateModule')
+          .addEventListener('click', function() {
+            document.getElementById('buttonCreateModule').innerHTML = '<i style="font-size:24px" class="fa">&#xf067;</i>';
+          })
+        // update data
+        function updateRecord(formData) {
+          selectedRow.cells[0].innerHTML = `<button class="btn btn-link mt-4" style="font-weight: 800; font-size: 18px;">
+                                              ${formData.inputCreateModule}
+                                            </button>`
+        }
+        // delete data
+        function deleteRecord(td) {
+          if(confirm('Bạn có muốn xóa tiêu đề này không?')) {
+            row = td.parentElement.parentElement;
+            document.getElementById('storeList').deleteRow(row.rowIndex);
+          }
+          resetDataForm();
+        }
+        // reset data
+        function resetDataForm() {
+          document.getElementById('inputCreateModule').value = '';
+        }
+
+        var currRow=null;
+        // show input add content module
+        function addContentModule(getRow) {
+          row = getRow.parentElement.parentElement;
+          currRow = row;
+          console.log('currRow', currRow)
+          if(row) {
+            document.getElementById('inputCreateContentModule').style.display = 'block'
+            document.getElementById('buttonCreateContentModuleIcon').style.display = 'block'
+            document.getElementById('buttonClearCreateContentModule').style.display = 'block'
+          }
+        }
+
+        // Create content module
+        var selectedRowContentModule = null;
+        function handleAddContentModuleLecture() {
+            event.preventDefault();
+
+            var formData = readFormDataContentModule();
+            
+            // check
+            if(selectedRowContentModule === null) {
+              if(currRow) {
+                insertNewRecordContentModule(formData)
+              }
+            } else  {
+              updateRecordContentModule(formData);
+            }
+            resetDataFormContentModule();
+        }
+        // read data 
+        function readFormDataContentModule() {
+            var formData = {};
+
+            // check empt
+            if(document.getElementById("inputCreateContentModule").value === '') {
+              alert('Bạn cần nhập nội dung bài học!');
+              return;
+            }
+
+            formData["inputCreateContentModule"] = document.getElementById("inputCreateContentModule").value;
+
+            return formData;
+        }
+        // insert data
+        function insertNewRecordContentModule(data) {
+            var table = document.getElementById('storeListContentModule').getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow(table.length);
+
+            var cellInputContentModule = newRow.insertCell(0);
+            cellInputContentModule.innerHTML = `<p class="mt-1 text-decoration-none">
+                                                ${data.inputCreateContentModule}
+                                              </p>`;
+
+            var cellFuncContentModule = newRow.insertCell(1);
+            cellFuncContentModule.innerHTML = `<button onclick='editRecordContentModule(this)' class="btn btn-secondary mt-1 ms-4 me-2">
+                                                Sửa
+                                              </button>
+                                              <button onclick='deleteRecordContentModule(this)' class="btn btn-danger mt-1 me-2">
+                                                Xóa
+                                              </button>`;
+        }
+        // edit data 
+        function editRecordContentModule(td) {
+          selectedRowContentModule = td.parentElement.parentElement;
+          console.log('selectedRowContentModule', selectedRowContentModule)
+          document.getElementById('inputCreateContentModule').value = selectedRowContentModule.cells[0].innerText;
+          document.getElementById('buttonCreateContentModuleIcon').innerHTML = '<i style="font-size:24px" class="fa">&#xf00c;</i>';
+        }
+        document
+          .getElementById('buttonCreateContentModuleIcon')
+          .addEventListener('click', function() {
+            document.getElementById('buttonCreateContentModuleIcon').innerHTML = '<i style="font-size:24px" class="fa">&#xf067;</i>';
+          })
+        // update data
+        function updateRecordContentModule(formData) {
+          selectedRowContentModule.cells[0].innerHTML = `<a href="#" class="btn btn-link mt-1 text-decoration-none">
+                                                          ${formData.inputCreateContentModule}
+                                                        </a>`
+        }
+        // delete data
+        function deleteRecordContentModule(delData) {
+          if(confirm('Bạn có muốn xóa nội dung này không?')) {
+            row = delData.parentElement.parentElement;
+            document.getElementById('storeListContentModule').deleteRow(row.rowIndex);
+          }
+          resetDataFormContentModule();
+        }
+        // reset data
+        function resetDataFormContentModule() {
+          document.getElementById('inputCreateContentModule').value = '';
+        }
+
         // Collapse #2: Lộ trình khóa học
-        $(document).ready(function () {
-          $("#courseRouteBtn").click(function () {
+        $(document).ready(function(){
+          $("#courseRouteBtn").click(function(){
             $("#courseRouteLectureDetail").toggle();
           });
         });
 
-      // Colapse #2: Lộ trình khóa học 
-      // init var
-      let carets = document.getElementsByClassName('caret');
-      let btnCreateModule = document.getElementById('btnCreateModule');
-      let treeContainerBe = document.getElementById('treeContainerBe');
-      let infoRouteCorseTitleModule;
-      let infoRouteCorseContentModule;
+        // format type time
+        // var timepicker = new TimePicker("startTime", {
+        //   lang: "en",
+        //   theme: "dark",
+        // });
+        // // var inpStartTime = document.getElementById('startTime')
+        // timepicker.on("change", function (evt) {
+        //   var value = (evt.hour || "00") + ":" + (evt.minute || "00");
+        //   evt.element.value = value;
+        // });
 
-      // handle click (show content)
-      for(var i = 0; i < carets.length; i++) {
-        carets[i].addEventListener('click', function () {
-          this.classList.toggle('caret-down');
-          parent = this.parentElement;
-          parent.querySelector('.nested').classList.toggle('active');
-        })
-      }
-      // handle button create module
-      btnCreateModule.addEventListener('click', function() {
-        treeContainerBe.innerHTML += `
-                                    <li>
-                                      <input type="text" value="${infoRouteCorseTitleModule || 'Tiêu đề...'}" name="titleModule" id="titleModule" placeholder="Nhập tiêu đề..." />
-                                      <button class='createChild' id="createChild" title="Tạo nội dung">
-                                        <i style="font-size: 24px" class="fa">&#xf067;</i>
-                                      </button>
-                                      <button class='closeIT' title="Xóa tiêu đề">
-                                        <i style="font-size: 24px" class="fa">&#xf00d;</i>
-                                      </button>
-                                    </li>
-                                    `;
+        // Thời gian lớp học
+        var selectedTimeClassRow = null;
+        function onFormSubmitTimeClass() {
+          event.preventDefault();
 
-        document
-          .getElementById('titleModule')
-          .addEventListener('change', function() {
-            infoRouteCorseTitleModule = document.getElementById('titleModule').value;
-            // console.log('infoRouteCorseTitleModule', infoRouteCorseTitleModule)
-          })
+          var formData = readFormDataTimeClass();
 
-        // document
-        //   .getElementById('contentModule')
-        //   .addEventListener('change', function() {
-        //     infoRouteCorseContentModule = document.getElementById('contentModule').value;
-        //     console.log('infoRouteCorseContentModule', infoRouteCorseContentModule)
-        //   })
-      })
-      // handle add content for module
-      treeContainerBe.addEventListener('click', function(e) {
-        if(e.target.classList == 'closeIT') {
-          e.target.parentElement.remove();
-        }
-
-        if(e.target.classList == 'createChild') {
-          createChildBTN = e.target;
-          li = createChildBTN.parentElement;
-          count = prompt('Nhập số hàng: ');
-          var x = '';
-
-          for(var i = 1; i <= count; i++) {
-            x += `
-                  <li>
-                    <input type="text" value="${infoRouteCorseContentModule || 'Nội dung...'}" name="contentModule" id="contentModule" placeholder="Nội dung..." />
-                    <button class='closeIT'>
-                      Xóa
-                    </button>  
-                  </li>
-                 `;
+          if(selectedTimeClassRow === null) {
+            insertNewRecordTimeClass(formData)
+          } else {
+            updateRecordTimeClass(formData)
           }
-
-          li.innerHTML += `<ul>${x}</ul>`; // end create content
+          resetDataFormClass()
         }
-      })
 
-      // format type time
-      // var timepicker = new TimePicker("startTime", {
-      //   lang: "en",
-      //   theme: "dark",
-      // });
-      // // var inpStartTime = document.getElementById('startTime')
-      // timepicker.on("change", function (evt) {
-      //   var value = (evt.hour || "00") + ":" + (evt.minute || "00");
-      //   evt.element.value = value;
-      // });
+        let saveInfo;
+        // read data
+        function readFormDataTimeClass() {
+          var formData = {};
 
-      // Thời gian lớp học
-      var selectedTimeClassRow = null;
-      let rowIndexId = 1;
-      function onFormSubmitTimeClass() {
-        event.preventDefault();
-
-        var formData = readFormDataTimeClass();
-
-        if (selectedTimeClassRow === null) {
-          insertNewRecordTimeClass(formData);
-        } else {
-          updateRecordTimeClass(formData);
-          selectedTimeClassRow = null;
-        }
-        resetDataFormClass();
-      }
-
-      let saveInfo;
-      // read data
-      function readFormDataTimeClass() {
-        var formData = {};
-
-        formData["startTime"] = document.getElementById("startTime").value;
-        formData["endTime"] = document.getElementById("endTime").value;
-        formData["chkT2"] = document.getElementById("chkT2").value;
-        formData["chkT3"] = document.getElementById("chkT3").value;
-        formData["chkT4"] = document.getElementById("chkT4").value;
-        formData["chkT5"] = document.getElementById("chkT5").value;
-        formData["chkT6"] = document.getElementById("chkT6").value;
-        formData["chkT7"] = document.getElementById("chkT7").value;
-        formData["chkCN"] = document.getElementById("chkCN").value;
-        formData["slot"] = document.getElementById("slot").value;
-        formData["startTimeExpected"] =
-          document.getElementById("startTimeExpected").value;
-
-        return formData;
-      }
-      // Insert data
-      function insertNewRecordTimeClass(data) {
-        var index = 1;
-        var table = document
-          .getElementById("storeListTimeClass")
-          .getElementsByTagName("tbody")[0];
-        var newRow = table.insertRow(table.length);
-
-        //Khai báo biến thời gian bắt đầu và kết thúc
-        var hoursStart = document.getElementById("startTime").value;
-        var hS = hoursStart.split(":");
-        var hoursEnd = document.getElementById("endTime").value;
-        var hE = hoursEnd.split(":");
-        // Lấy thời gian hôm nay
-        var toDay = new Date();
-        var dateToDay =
-          toDay.getFullYear() +
-          "-" +
-          (toDay.getMonth() + 1) +
-          "-" +
-          toDay.getDate();
-        var dateNow = dateToDay.split("-");
-        //Khai báo biến cho ngày tháng năm
-        var startDate = document.getElementById("startTimeExpected").value;
-        var date1 = new Date(dateToDay);
-        var date2 = new Date(startDate);
-        console.log("ss");
-        if (
-          document.getElementById("startTime").value === "" ||
-          document.getElementById("endTime").value === "" ||
-          document.getElementById("slot").value === "" ||
-          document.getElementById("startTimeExpected").value === ""
-          //Kiểm tra thời gian bắt đầu so với thời gian kết thúc
-        ) {
-          alert("Bạn cần phải nhập đầy đủ các thông tin!");
-          return;
-        }
-        if (
-          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) <= 119 ||
-          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) >= 181
-        ) {
-          alert(
-            "Thời gian cho lớp học tối thiểu là 2 giờ và tối đa là 3 giờ! "
-          );
+          formData["startTime"] = document.getElementById("startTime").value;
+          formData["endTime"] = document.getElementById("endTime").value;
+          formData["chkT2"] = document.getElementById("chkT2").value;
+          formData["chkT3"] = document.getElementById("chkT3").value;
+          formData["chkT4"] = document.getElementById("chkT4").value;
+          formData["chkT5"] = document.getElementById("chkT5").value;
+          formData["chkT6"] = document.getElementById("chkT6").value;
+          formData["chkT7"] = document.getElementById("chkT7").value;
+          formData["chkCN"] = document.getElementById("chkCN").value;
+          formData["slot"] = document.getElementById("slot").value;
+          formData["startTimeExpected"] = document.getElementById("startTimeExpected").value;
           
-          return;
+          return formData;
         }
-        if (date1.getTime() >= date2.getTime()) {
-          alert("Ngày dự kiến mở lớp học không hợp lệ! ");
-          return;
-        }
+        // Insert data
+        function insertNewRecordTimeClass(data) {
+          var index= 1;
+          var table = document.getElementById("storeListTimeClass").getElementsByTagName('tbody')[0];
+          var newRow = table.insertRow(table.length);
 
-        var cell1 = newRow.insertCell(0);
-        cell1.innerHTML = rowIndexId++;
-
-        var cellStartTime = newRow.insertCell(1);
-        cellStartTime.innerHTML = data.startTime;
-
-        var cell2 = newRow.insertCell(2);
-        cell2.innerHTML = data.endTime;
-
-        var cell3 = newRow.insertCell(3);
-        var arrs = [];
-        var chk2 = document.getElementById("chkT2");
-        var chk3 = document.getElementById("chkT3");
-        var chk4 = document.getElementById("chkT4");
-        var chk5 = document.getElementById("chkT5");
-        var chk6 = document.getElementById("chkT6");
-        var chk7 = document.getElementById("chkT7");
-        var chk8 = document.getElementById("chkCN");
-        if (chk2.checked) {
-          arrs.push(data.chkT2);
-        }
-        if (chk3.checked) {
-          arrs.push(data.chkT3);
-        }
-        if (chk4.checked) {
-          arrs.push(data.chkT4);
-        }
-        if (chk5.checked) {
-          arrs.push(data.chkT5);
-        }
-        if (chk6.checked) {
-          arrs.push(data.chkT6);
-        }
-        if (chk7.checked) {
-          arrs.push(data.chkT7);
-        }
-        if (chk8.checked) {
-          arrs.push(data.chkCN);
-        }
-        var val = arrs.join("");
-        var lastChar = val.slice(-1);
-        if (lastChar == ",") {
-          val = val.slice(0, -1);
-        }
-        cell3.innerHTML = val;
-        saveInfo = val;
-
-        var cell4 = newRow.insertCell(4);
-        cell4.innerHTML = data.slot;
-
-        var cell5 = newRow.insertCell(5);
-        cell5.innerHTML = data.startTimeExpected;
-
-        var cell6 = newRow.insertCell(6);
-        cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn bg-danger  btn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`;
-      }
-      // edit data
-      function editRecordClass(tds) {
-        selectedTimeClassRow = tds.parentElement.parentElement;
-
-        var chktnt = selectedTimeClassRow.cells[3].innerText;
-        console.log(chktnt.length);
-
-        document.getElementById("startTime").value =
-          selectedTimeClassRow.cells[1].innerText;
-        document.getElementById("endTime").value =
-          selectedTimeClassRow.cells[2].innerText;
-        // 3
-        for (let i = 0; i <= chktnt.length; i++) {
-          if (chktnt[i] === "2") {
-            document.getElementById("chkT2").checked = true;
+          if(document.getElementById("startTime").value === '' || document.getElementById("endTime").value === '' || document.getElementById("slot") === '' || document.getElementById("startTimeExpected") === '') {
+            alert('Bạn cần phải nhập đầy đủ các thông tin!');
+            return;
           }
-          if (chktnt[i] === "3") {
-            document.getElementById("chkT3").checked = true;
+
+          var cell1 = newRow.insertCell(0);
+          cell1.innerHTML = index;
+
+          var cellStartTime = newRow.insertCell(1);
+          cellStartTime.innerHTML = data.startTime;
+
+          var cell2 = newRow.insertCell(2);
+          cell2.innerHTML = data.endTime;
+
+          var cell3 = newRow.insertCell(3);
+          var arrs=[];
+          var chk2 = document.getElementById('chkT2');
+          var chk3 = document.getElementById('chkT3');
+          var chk4 = document.getElementById('chkT4');
+          var chk5 = document.getElementById('chkT5');
+          var chk6 = document.getElementById('chkT6');
+          var chk7 = document.getElementById('chkT7');
+          var chk8 = document.getElementById('chkCN');
+          if(chk2.checked) {
+            arrs.push(data.chkT2)
           }
-          if (chktnt[i] === "4") {
-            document.getElementById("chkT4").checked = true;
+          if(chk3.checked) {
+            arrs.push(data.chkT3)
           }
-          if (chktnt[i] === "5") {
-            document.getElementById("chkT5").checked = true;
+          if(chk4.checked) {
+            arrs.push(data.chkT4)
           }
-          if (chktnt[i] === "6") {
-            document.getElementById("chkT6").checked = true;
+          if(chk5.checked) {
+            arrs.push(data.chkT5)
           }
-          if (chktnt[i] === "7") {
-            document.getElementById("chkT7").checked = true;
+          if(chk6.checked) {
+            arrs.push(data.chkT6)
           }
-          if (chktnt[i] === "N") {
-            document.getElementById("chkCN").checked = true;
+          if(chk7.checked) {
+            arrs.push(data.chkT7)
           }
+          if(chk8.checked) {
+            arrs.push(data.chkCN)
+          }
+          var val = arrs.join('');
+          var lastChar = val.slice(-1);
+          if (lastChar == ',') {
+              val= val.slice(0, -1);
+          }
+          cell3.innerHTML = val;
+          saveInfo = val;
+
+          var cell4 = newRow.insertCell(4);
+          cell4.innerHTML = data.slot;
+
+          var cell5 = newRow.insertCell(5);
+          cell5.innerHTML = data.startTimeExpected;
+
+          var cell6 = newRow.insertCell(6); 
+          cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn b  tn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`
+        }
+        // edit data
+        function editRecordClass(tds) {
+          selectedTimeClassRow = tds.parentElement.parentElement;
+
+          console.log(selectedTimeClassRow.cells[3].innerText)
+          console.log('saveInfo', saveInfo)
+
+          document.getElementById('startTime').value = selectedTimeClassRow.cells[1].innerText;
+          document.getElementById('endTime').value = selectedTimeClassRow.cells[2].innerText;
+          // 3
+          document.getElementById('chkT2').checked = false;
+          document.getElementById('chkT3').checked = false;
+          document.getElementById('chkT4').checked = false;
+          document.getElementById('chkT5').checked = false;
+          document.getElementById('chkT6').checked = false;
+          document.getElementById('chkT7').checked = false;
+          document.getElementById('chkCN').checked = false;
+          // 3
+          document.getElementById('slot').value = selectedTimeClassRow.cells[4].innerText;
+          document.getElementById('startTimeExpected').value = selectedTimeClassRow.cells[5].innerText;
+        
+          // change button to save
+          document.getElementById('createClassBtn').innerHTML = `<button class="btn btn-create-class p-0 m-0" id="createClassBtn">Lưu thay đổi</button>`;
+        }
+        // reset icon create class
+        document
+          .getElementById('createClassBtn')
+          .addEventListener('click', function() {
+            document.getElementById('createClassBtn').innerHTML = '<button class="btn btn-create-class p-0 m-0" id="createClassBtn">Tạo lớp học</button>';
+          })
+         // update data
+         function updateRecordTimeClass(formData) {
+          selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
+          selectedTimeClassRow.cells[2].innerHTML = formData.endTime;
+          var arrs=[];
+          var chk2 = document.getElementById('chkT2');
+          var chk3 = document.getElementById('chkT3');
+          var chk4 = document.getElementById('chkT4');
+          var chk5 = document.getElementById('chkT5');
+          var chk6 = document.getElementById('chkT6');
+          var chk7 = document.getElementById('chkT7');
+          var chk8 = document.getElementById('chkCN');
+          if(chk2.checked) {
+            arrs.push(formData.chkT2)
+          }
+          if(chk3.checked) {
+            arrs.push(formData.chkT3)
+          }
+          if(chk4.checked) {
+            arrs.push(formData.chkT4)
+          }
+          if(chk5.checked) {
+            arrs.push(formData.chkT5)
+          }
+          if(chk6.checked) {
+            arrs.push(formData.chkT6)
+          }
+          if(chk7.checked) {
+            arrs.push(formData.chkT7)
+          }
+          if(chk8.checked) {
+            arrs.push(formData.chkCN)
+          }
+          var val = arrs.join('');
+          var lastChar = val.slice(-1);
+          if (lastChar == ',') {
+              val= val.slice(0, -1);
+          }
+          selectedTimeClassRow.cells[3].innerHTML = val;
+          selectedTimeClassRow.cells[4].innerHTML = formData.slot;
+          selectedTimeClassRow.cells[5].innerHTML = formData.startTimeExpected;
+        }
+        // delete data
+        function handleDelClass(delData) {
+          if(confirm('Bạn có muốn xóa lớp học này không?')) {
+            row = delData.parentElement.parentElement;
+            document.getElementById('storeListTimeClass').deleteRow(row.rowIndex);
+          }
+          resetDataFormClass()
+        }
+        // reset data
+        function resetDataFormClass() {
+          document.getElementById('startTime').value = '';
+          document.getElementById('endTime').value = '';
+          document.getElementById('chkT2').checked = false;
+          document.getElementById('chkT3').checked = false;
+          document.getElementById('chkT4').checked = false;
+          document.getElementById('chkT5').checked = false;
+          document.getElementById('chkT6').checked = false;
+          document.getElementById('chkT7').checked = false;
+          document.getElementById('chkCN').checked = false;
+          document.getElementById('slot').selectedIndex = 0;
+          document.getElementById('startTimeExpected').value = '';
         }
 
-        // 3
-        document.getElementById("slot").value =
-          selectedTimeClassRow.cells[4].innerText;
-        document.getElementById("startTimeExpected").value =
-          selectedTimeClassRow.cells[5].innerText;
-
-        // change button to save
-        document.getElementById(
-          "createClassBtn"
-        ).innerHTML = `<button class="btn btn-create-class p-0 m-0" id="createClassBtn">Lưu thay đổi</button>`;
-      }
-      // reset icon create class
-      document
-        .getElementById("createClassBtn")
-        .addEventListener("click", function () {
-          document.getElementById("createClassBtn").innerHTML =
-            '<button class="btn btn-create-class p-0 m-0" id="createClassBtn">Tạo lớp học</button>';
-        });
-      // update data
-      function updateRecordTimeClass(formData) {
-        selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
-        selectedTimeClassRow.cells[2].innerHTML = formData.endTime;
-        var arrs = [];
-        var chk2 = document.getElementById("chkT2");
-        var chk3 = document.getElementById("chkT3");
-        var chk4 = document.getElementById("chkT4");
-        var chk5 = document.getElementById("chkT5");
-        var chk6 = document.getElementById("chkT6");
-        var chk7 = document.getElementById("chkT7");
-        var chk8 = document.getElementById("chkCN");
-        if (chk2.checked) {
-          arrs.push(formData.chkT2);
-        }
-        if (chk3.checked) {
-          arrs.push(formData.chkT3);
-        }
-        if (chk4.checked) {
-          arrs.push(formData.chkT4);
-        }
-        if (chk5.checked) {
-          arrs.push(formData.chkT5);
-        }
-        if (chk6.checked) {
-          arrs.push(formData.chkT6);
-        }
-        if (chk7.checked) {
-          arrs.push(formData.chkT7);
-        }
-        if (chk8.checked) {
-          arrs.push(formData.chkCN);
-        }
-        var val = arrs.join("");
-        var lastChar = val.slice(-1);
-        if (lastChar == ",") {
-          val = val.slice(0, -1);
-        }
-        selectedTimeClassRow.cells[3].innerHTML = val;
-        selectedTimeClassRow.cells[4].innerHTML = formData.slot;
-        selectedTimeClassRow.cells[5].innerHTML = formData.startTimeExpected;
-      }
-      // delete data
-      function handleDelClass(delData) {
-        if (confirm("Bạn có muốn xóa lớp học này không?")) {
-          row = delData.parentElement.parentElement;
-          document.getElementById("storeListTimeClass").deleteRow(row.rowIndex);
-        }
-        resetDataFormClass();
-      }
-      // reset data
-      function resetDataFormClass() {
-        document.getElementById("startTime").value = "";
-        document.getElementById("endTime").value = "";
-        document.getElementById("chkT2").checked = false;
-        document.getElementById("chkT3").checked = false;
-        document.getElementById("chkT4").checked = false;
-        document.getElementById("chkT5").checked = false;
-        document.getElementById("chkT6").checked = false;
-        document.getElementById("chkT7").checked = false;
-        document.getElementById("chkCN").checked = false;
-        document.getElementById("slot").selectedIndex = 0;
-        document.getElementById("startTimeExpected").value = "";
-      }
     </script>
     <script type="text/javascript">
       var country_arr = new Array(
@@ -2336,17 +2133,16 @@
           );
         }
       }
+     
+      document.getElementById('startTime').addEventListener('click', function () {
+      console.log('change time')
+      this.value = '07:01'
+    })
+  </script>
+  <script language="javascript">
+    print_country("country");
+  </script>
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
 
-      document
-        .getElementById("startTime")
-        .addEventListener("click", function () {
-          console.log("change time");
-          this.value = "07:01";
-        });
-    </script>
-    <script language="javascript">
-      print_country("country");
-    </script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
-  </body>
 </html>
