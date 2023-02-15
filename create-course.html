@@ -512,8 +512,11 @@
             <div class="col-lg-8 col-md-12">
               <div id="accordion">
                 <!-- Collapse #1: Thông tin khóa học -->
-                <div class="card">
+                <div class="card1">
                   <style>
+                    .card1{
+                      margin-bottom: -1px;
+                    }
                     .card-header .chevron {
                       float: right;
                     }
@@ -539,10 +542,10 @@
                     .card-header {
                       font-size: 17px;
                       padding: 20px;
-                      margin-top: -25px;
+                      margin-top: -1px;
                     }
                     .card-header i {
-                      margin-right: 20px;
+                      margin-right: 10px;
                     }
                   </style>
                   <div class="card mt-4">
@@ -981,8 +984,11 @@
                 </div>
 
                 <!-- Collapse #2: Lộ trình khóa học -->
-                <div class="card mt-4">
+                <div class="card2">
                   <style>
+                    .card2{
+                      margin-bottom: -1px;
+                    }
                     .card-header .chevron {
                       float: right;
                     }
@@ -1008,9 +1014,10 @@
                     .card-header {
                       font-size: 17px;
                       padding: 20px;
+                      margin-top: -1px;
                     }
                     .card-header i {
-                      margin-right: 20px;
+                      margin-right: 10px;
                     }
 
                   </style>
@@ -1088,8 +1095,11 @@
                 </div>
 
                 <!-- Collapse #3: Thời gian lớp học -->
-                <div class="card mt-4">
+                <div class="card3">
                   <style>
+                    .card3{
+                      margin-bottom: -1px;
+                    }
                     .card-header .chevron {
                       float: right;
                     }
@@ -1115,9 +1125,10 @@
                     .card-header {
                       font-size: 17px;
                       padding: 20px;
+                      margin-top: -1px;
                     }
                     .card-header i {
-                      margin-right: 20px;
+                      margin-right: 10px;
                     }
                   </style>
                   
@@ -1949,7 +1960,7 @@
       btnCreateModule.addEventListener('click', function() {
         treeContainerBe.innerHTML += `
                                     <li>
-                                      <input type="text" value="${infoRouteCorseTitleModule || 'Tiêu đề...'}" name="titleModule" id="titleModule" placeholder="Nhập tiêu đề..." />
+                                      <input type="text" value="${infoRouteCorseTitleModule || ''}" name="titleModule" id="titleModule" placeholder="Nhập tiêu đề..." />
                                       <button class='createChild' id="createChild" title="Tạo nội dung">
                                         <i style="font-size: 24px" class="fa">&#xf067;</i>
                                       </button>
@@ -1988,7 +1999,7 @@
           for(var i = 1; i <= count; i++) {
             x += `
                   <li>
-                    <input type="text" value="${infoRouteCorseContentModule || 'Nội dung...'}" name="contentModule" id="contentModule" placeholder="Nội dung..." />
+                    <input type="text" value="${infoRouteCorseContentModule || ''}" name="contentModule" id="contentModule" placeholder="Nội dung..." />
                     <button class='closeIT'>
                       Xóa
                     </button>  
