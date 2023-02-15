@@ -512,31 +512,63 @@
             <div class="col-lg-8 col-md-12">
               <div id="accordion">
                 <!-- Collapse #1: Thông tin khóa học -->
-                <div class="card">
-                  <div class="card">
-                    <div class="card-header" id="headingFour">
+                <div class="card1">
+                  <style>
+                    .card1{
+                      margin-bottom: -1px;
+                    }
+                    .card-header .chevron {
+                      float: right;
+                    }
+                    .card-header a.collapsed .fa-chevron-up {
+                      display: none;
+                    }
+                    .card-header a:not(.collapsed) .fa-chevron-down {
+                      display: none;
+                    }
+                    .card-header a.collapsed .fa-chevron-down {
+                      display: block;
+                    }
+                    .card-header a:not(.collapsed) .fa-chevron-up {
+                      display: block;
+                    }
+                    .card-header .chevron:before {
+                      content: '\f078';
+                      font-family: 'FontAwesome';
+                    }
+                    .card-header a.collapsed .chevron:before {
+                      content: '\f054';
+                    }
+                    .card-header {
+                      font-size: 17px;
+                      padding: 20px;
+                      margin-top: -1px;
+                    }
+                    .card-header i {
+                      margin-right: 10px;
+                    }
+                  </style>
+                  <div class="card mt-4">
+                    <div class="card-header" id="headingSix">
                       <h5 class="mb-0">
                         <span>Thông tin khóa học</span>
-                        <a
-                          href="#"
-                          data-toggle="collapse"
-                          data-target="#collapseSix"
-                          aria-expanded="true"
-                          aria-controls="collapseSix"
-                        >
-                          <i class="fa fa-chevron-down chevron"></i>
-                        </a>
+                        <a href="collapseSix"
+                           class="collapsed chevron"
+                           data-toggle="collapse"
+                           data-target="#collapseSix"
+                           aria-expanded="false"
+                           aria-controls="collapseSix"
+                        ></a>                      
                       </h5>
                     </div>
                     <div
                       id="collapseSix"
                       class="collapse show"
-                      aria-labelledby="headingSix"
-                      data-parent="#accordion"
+                      aria-labelledby="headingSix"                     
                     >
                       <div class="card-body">
                         <div
-                          id="multiCollapseOne"
+                          id="collapseSix"
                           class="collapse multi-collapse show p-4"
                         >
                           <div class="mentor-add-course">
@@ -951,39 +983,61 @@
                 </div>
 
                 <!-- Collapse #2: Lộ trình khóa học -->
-                <div class="card mt-4">
+                <div class="card2">
                   <style>
-                    .card-header {
-                      font-size: 17px;
-                      padding: 20px;
-                    }
-                    .card-header i {
-                      margin-right: 10px;
+                    .card2{
+                      margin-bottom: -1px;
                     }
                     .card-header .chevron {
                       float: right;
                     }
+                    .card-header a.collapsed .fa-chevron-up {
+                      display: none;
+                    }
+                    .card-header a:not(.collapsed) .fa-chevron-down {
+                      display: none;
+                    }
+                    .card-header a.collapsed .fa-chevron-down {
+                      display: block;
+                    }
+                    .card-header a:not(.collapsed) .fa-chevron-up {
+                      display: block;
+                    }
+                    .card-header .chevron:before {
+                      content: '\f078';
+                      font-family: 'FontAwesome';
+                    }
+                    .card-header a.collapsed .chevron:before {
+                      content: '\f054';
+                    }
+                    .card-header {
+                      font-size: 17px;
+                      padding: 20px;
+                      margin-top: -1px;
+                    }
+                    .card-header i {
+                      margin-right: 10px;
+                    }
+
                   </style>
-                  <div class="card">
+                  
+                  <div class="card mt-4">
                     <div class="card-header" id="headingFour">
                       <h5 class="mb-0">
                         <span>Lộ trình khóa học</span>
-                        <a
-                          href="#"
-                          data-toggle="collapse"
-                          data-target="#collapseFour"
-                          aria-expanded="true"
-                          aria-controls="collapseFour"
-                        >
-                          <i class="fa fa-chevron-down chevron"></i>
-                        </a>
+                        <a href="collapseFour"
+                           class="collapsed chevron"
+                           data-toggle="collapse"
+                           data-target="#collapseFour"
+                           aria-expanded="false"
+                           aria-controls="collapseFour"
+                        ></a>
                       </h5>
                     </div>
                     <div
                       id="collapseFour"
                       class="collapse show"
                       aria-labelledby="headingFour"
-                      data-parent="#accordion"
                     >
                       <div class="card-body">
                         <div
@@ -1039,40 +1093,60 @@
                 </div>
 
                 <!-- Collapse #3: Thời gian lớp học -->
-                <div class="card mt-4">
+                <div class="card3">
                   <style>
-                    .card-header {
-                      font-size: 17px;
-                      padding: 20px;
-                    }
-                    .card-header i {
-                      margin-right: 10px;
+                    .card3{
+                      margin-bottom: -1px;
                     }
                     .card-header .chevron {
                       float: right;
                     }
+                    .card-header a.collapsed .fa-chevron-up {
+                      display: none;
+                    }
+                    .card-header a:not(.collapsed) .fa-chevron-down {
+                      display: none;
+                    }
+                    .card-header a.collapsed .fa-chevron-down {
+                      display: block;
+                    }
+                    .card-header a:not(.collapsed) .fa-chevron-up {
+                      display: block;
+                    }
+                    .card-header .chevron:before {
+                      content: '\f078';
+                      font-family: 'FontAwesome';
+                    }
+                    .card-header a.collapsed .chevron:before {
+                      content: '\f054';
+                    }
+                    .card-header {
+                      font-size: 17px;
+                      padding: 20px;
+                      margin-top: -1px;
+                    }
+                    .card-header i {
+                      margin-right: 10px;
+                    }
                   </style>
-
-                  <div class="card">
+                  
+                  <div class="card mt-4">
                     <div class="card-header" id="headingFive">
                       <h5 class="mb-0">
                         <span>Thời gian lớp học</span>
-                        <a
-                          href="#"
-                          data-toggle="collapse"
-                          data-target="#collapseFive"
-                          aria-expanded="true"
-                          aria-controls="collapseFive"
-                        >
-                          <i class="fa fa-chevron-down chevron"></i>
-                        </a>
+                        <a href="collapseFive"
+                           class="collapsed chevron"
+                           data-toggle="collapse"
+                           data-target="#collapseFive"
+                           aria-expanded="false"
+                           aria-controls="collapseFive"
+                        ></a>
                       </h5>
                     </div>
                     <div
                       id="collapseFive"
                       class="collapse show"
                       aria-labelledby="headingFive"
-                      data-parent="#accordion"
                     >
                       <div class="card-body">
                         <div
@@ -1883,7 +1957,7 @@
       btnCreateModule.addEventListener('click', function() {
         treeContainerBe.innerHTML += `
                                     <li>
-                                      <input type="text" value="${infoRouteCorseTitleModule || 'Tiêu đề...'}" name="titleModule" id="titleModule" placeholder="Nhập tiêu đề..." />
+                                      <input type="text" value="${infoRouteCorseTitleModule || ''}" name="titleModule" id="titleModule" placeholder="Nhập tiêu đề..." />
                                       <button class='createChild' id="createChild" title="Tạo nội dung">
                                         <i style="font-size: 24px" class="fa">&#xf067;</i>
                                       </button>
@@ -1922,7 +1996,7 @@
           for(var i = 1; i <= count; i++) {
             x += `
                   <li>
-                    <input type="text" value="${infoRouteCorseContentModule || 'Nội dung...'}" name="contentModule" id="contentModule" placeholder="Nội dung..." />
+                    <input type="text" value="${infoRouteCorseContentModule || ''}" name="contentModule" id="contentModule" placeholder="Nội dung..." />
                     <button class='closeIT'>
                       Xóa
                     </button>  
