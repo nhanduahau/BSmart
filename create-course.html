@@ -1520,7 +1520,7 @@
         
         if (+min >= +max) {
           alert("Vui lòng chọn min phải bé hơn max!");
-          document.getElementById("minQuantity").value = +document.getElementById("minQuantity").value - 1;
+          document.getElementById("minQuantity").value = +document.getElementById("maxQuantity").value - 1;
         }
       }
       function handleChangeMaxQuantity() {
@@ -1529,7 +1529,7 @@
         
         if (+min >= +max) {
           alert("Vui lòng chọn max phải lớn hơn min!");
-          document.getElementById("maxQuantity").value = +document.getElementById("maxQuantity").value + 1;
+          document.getElementById("maxQuantity").value = +document.getElementById("minQuantity").value + 1;
         }
       }
 
