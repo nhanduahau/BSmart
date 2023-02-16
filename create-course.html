@@ -1957,7 +1957,7 @@
       btnCreateModule.addEventListener('click', function() {
         treeContainerBe.innerHTML += `
                                     <li>
-                                      <input type="text" value="${infoRouteCorseTitleModule || ''}" name="titleModule" id="titleModule" placeholder="Nhập tiêu đề..." />
+                                      <input type="text" value="${infoRouteCorseTitleModule || ''}" name="titleModule" id="titleModule" placeholder="Nhập tiêu đề..." style="border: 2px solid black; padding: 5px;" />
                                       <button class='createChild' id="createChild" title="Tạo nội dung">
                                         <i style="font-size: 24px" class="fa">&#xf067;</i>
                                       </button>
@@ -1996,7 +1996,7 @@
           for(var i = 1; i <= count; i++) {
             x += `
                   <li>
-                    <input type="text" value="${infoRouteCorseContentModule || ''}" name="contentModule" id="contentModule" placeholder="Nội dung..." />
+                    <input type="text" value="${infoRouteCorseContentModule || ''}" name="contentModule" id="contentModule" placeholder="Nội dung..." style="border: 1px solid black; padding: 5px;" />
                     <button class='closeIT'>
                       Xóa
                     </button>  
