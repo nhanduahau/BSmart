@@ -32,6 +32,10 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Tree view -->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" crossorigin="anonymous"> -->
+
     <!-- import type time picker -->
     <script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
     <link
@@ -1050,40 +1054,13 @@
                               class="course-route-title-name"
                               id="routeCourseTitleName"
                             ></h1>
-                            <button
-                              class="btn btn-primary"
-                              id="btnCreateModule"
-                            >
-                              Tạo module
-                            </button>
+                          </div>
+                          
+                          <!-- tree view -->
+                          <div id="bs-treeetable" class="treetable">
+                            Loading ...
                           </div>
 
-                          <!-- Show tree view (route course) -->
-                          <div class="">
-                            <ul id="tree-container">
-                              <li>
-                                <span class="caret"></span>
-
-                                <ul class="nested">
-                                  <li></li>
-                                  <li>
-                                    <span class="caret"></span>
-
-                                    <ul class="nested">
-                                      <li></li>
-                                      <li></li>
-                                    </ul>
-                                  </li>
-                                </ul>
-
-                              </li>
-                              <li></li>
-                            </ul>
-
-                          </div>
-
-                          <!-- render data -->
-                          <ul id="treeContainerBe"></ul>
                         </div>
                       </div>
                     </div>
@@ -1497,6 +1474,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- new jquery -->
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
     <!-- Import script owl carousel  -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
@@ -2616,5 +2595,38 @@
       print_country("country");
     </script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="./assets/js/jquery.edittreetable.js"></script>
+
+    <!-- Collapse #2 (Tree view) -->
+    <script type="text/javascript">
+      var data = [{
+        // id: 1, name: "Front-end Development", pid: 0, innercode: "1A"
+      }];
+      
+      // GET data from input
+      $("#bs-treeetable").bstreetable({
+        data: data,
+        // maintitle: "My skills",
+        nodeaddCallback: function (data, callback) {
+          console.log('data', data)
+          // alert(JSON.stringify(data));
+          //do your things then callback
+          // callback({ id: 18, name: data.name, innercode: "ttttt", pid: data.pid });
+        },
+        noderemoveCallback: function (data, callback) {
+          // alert(JSON.stringify(data));
+          //do your things then callback
+          callback();
+        },
+        nodeupdateCallback: function (data, callback) {
+          // alert(JSON.stringify(data));
+          //do your things then callback
+          // callback();
+        }
+      }
+      );
+  
+    </script>
   </body>
 </html>
