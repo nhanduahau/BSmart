@@ -15,7 +15,6 @@
       crossorigin="anonymous"
     />
 
-
     <!-- Import js (bootstrap 4) -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -39,7 +38,6 @@
       href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css"
       rel="stylesheet"
     />
-
 
     <!-- Import font-awesome -->
     <link
@@ -2022,6 +2020,9 @@
       // Thời gian lớp học
       var selectedTimeClassRow = null;
       let rowIndexId = 1;
+      let tempDate = [];
+      let indexTime = [];
+      let comCheck = [];
       function onFormSubmitTimeClass() {
         event.preventDefault();
 
@@ -2063,11 +2064,14 @@
           .getElementById("storeListTimeClass")
           .getElementsByTagName("tbody")[0];
         var newRow = table.insertRow(table.length);
+        // khai báo biến truy xuất vào bảng
 
         //Khai báo biến thời gian bắt đầu và kết thúc
         var hoursStart = document.getElementById("startTime").value;
-        var hS = hoursStart.split(":");
+
         var hoursEnd = document.getElementById("endTime").value;
+        //xử lý chuỗi
+        var hS = hoursStart.split(":");
         var hE = hoursEnd.split(":");
         // Lấy thời gian hôm nay
         var toDay = new Date();
@@ -2082,42 +2086,8 @@
         var startDate = document.getElementById("startTimeExpected").value;
         var date1 = new Date(dateToDay);
         var date2 = new Date(startDate);
-        console.log("ss");
-        if (
-          document.getElementById("startTime").value === "" ||
-          document.getElementById("endTime").value === "" ||
-          document.getElementById("slot").value === "" ||
-          document.getElementById("startTimeExpected").value === ""
-          //Kiểm tra thời gian bắt đầu so với thời gian kết thúc
-        ) {
-          alert("Bạn cần phải nhập đầy đủ các thông tin!");
-          return;
-        }
-        if (
-          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) <= 119 ||
-          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) >= 181
-        ) {
-          alert(
-            "Thời gian cho lớp học tối thiểu là 2 giờ và tối đa là 3 giờ! "
-          );
-          
-          return;
-        }
-        if (date1.getTime() >= date2.getTime()) {
-          alert("Ngày dự kiến mở lớp học không hợp lệ! ");
-          return;
-        }
+        var date3 = new Date();
 
-        var cell1 = newRow.insertCell(0);
-        cell1.innerHTML = rowIndexId++;
-
-        var cellStartTime = newRow.insertCell(1);
-        cellStartTime.innerHTML = data.startTime;
-
-        var cell2 = newRow.insertCell(2);
-        cell2.innerHTML = data.endTime;
-
-        var cell3 = newRow.insertCell(3);
         var arrs = [];
         var chk2 = document.getElementById("chkT2");
         var chk3 = document.getElementById("chkT3");
@@ -2147,30 +2117,125 @@
         if (chk8.checked) {
           arrs.push(data.chkCN);
         }
+
         var val = arrs.join("");
         var lastChar = val.slice(-1);
         if (lastChar == ",") {
           val = val.slice(0, -1);
         }
-        cell3.innerHTML = val;
-        saveInfo = val;
 
-        var cell4 = newRow.insertCell(4);
-        cell4.innerHTML = data.slot;
+        var tkb = val.split(",");
+        //Kiểm tra thời gian bắt đầu so với thời gian kết thúc
+        if (
+          //Thời gian bắt đầu cho đến kết thúc min=30 phút và max= 4 giờ
+          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) <= 29 ||
+          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) >= 241
+        ) {
+          alert(
+            "Thời gian cho lớp học tối thiểu là 30 phút và tối đa là 4 giờ! "
+          );
 
-        var cell5 = newRow.insertCell(5);
-        cell5.innerHTML = data.startTimeExpected;
+          return;
+        }
+        if (
+          date1.getTime() > date2.getTime() ||
+          (date1.getDate() === date2.getDate() &&
+            date1.getFullYear() === date2.getFullYear() &&
+            date1.getMonth() === date2.getMonth())
+        ) {
+          alert("Ngày dự kiến mở lớp học không hợp lệ! ");
+          return;
+        }
+        //Check thời gian thứ so với thời gian có thể tạo lớp học
 
-        var cell6 = newRow.insertCell(6);
-        cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn bg-danger  btn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`;
+        for (let i = 0; i < comCheck.length; i++) {
+          let temp = comCheck[i][1].split(",");
+
+          if (comCheck != null) {
+            for (let k = 0; k < tempDate.length; k++) {
+              for (let j = 0; j < tkb.length; j++) {
+                // kiểm tra thứ ngày tháng
+
+                if (tempDate[k] === tkb[j]) {
+                  var ssss = comCheck[i][0].split(",");
+                  var sT = ssss[0].split(":");
+                  var eT = ssss[1].split(":");
+                  // Kiểm tra thời gian
+                  if (
+                    sT[0] * 1 + sT[1] / 60 <= hS[0] * 1 + hS[1] / 60 &&
+                    hS[0] * 1 + hS[1] / 60 <= eT[0] * 1 + eT[1] / 60
+                  ) {
+                    alert("Thời gian đăng ký bị trùng lặp! xxx");
+
+                    return;
+                  }
+                }
+              }
+            }
+          }
+        }
+        //Lưu tất cả thời gian bắt đầu và kết thúc vào 1 biến cục bộ
+        var dateCheck = [];
+        dateCheck[0] = data.startTime + "," + data.endTime;
+        dateCheck[1] = val;
+
+        for (let i = 0; i < tkb.length; i++) {
+          tempDate.push(tkb[i]);
+        }
+        comCheck.push(dateCheck);
+
+        if (
+          document.getElementById("startTime").value === "" ||
+          document.getElementById("endTime").value === "" ||
+          document.getElementById("slot").value === "" ||
+          document.getElementById("startTimeExpected").value === "" ||
+          data === null
+        ) {
+          alert("Bạn cần phải nhập đầy đủ các thông tin!");
+          return;
+        } else {
+          var cell1 = newRow.insertCell(0);
+          var cellStartTime = newRow.insertCell(1);
+          var cell2 = newRow.insertCell(2);
+          var cell3 = newRow.insertCell(3);
+          var cell4 = newRow.insertCell(4);
+          var cell5 = newRow.insertCell(5);
+          var cell6 = newRow.insertCell(6);
+          //render số thứ tự
+          cell1.innerHTML = rowIndexId++;
+
+          //render thời gian bắt đầu
+          cellStartTime.innerHTML = data.startTime;
+
+          //render thời gian kết thúc
+          cell2.innerHTML = data.endTime;
+
+          //render thứ ngày tháng
+          cell3.innerHTML = val;
+          saveInfo = val;
+
+          // render số lượng
+          cell4.innerHTML = data.slot;
+
+          // Render Ngày tháng năm
+          cell5.innerHTML = data.startTimeExpected;
+
+          // Render nút thêm xóa sửa
+          cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn bg-danger  btn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`;
+        }
       }
+
       // edit data
       function editRecordClass(tds) {
+        data = tds;
         selectedTimeClassRow = tds.parentElement.parentElement;
 
         var chktnt = selectedTimeClassRow.cells[3].innerText;
-        console.log(chktnt.length);
 
+        indexTime[0] =
+          selectedTimeClassRow.cells[1].innerText +
+          selectedTimeClassRow.cells[2].innerText;
+        indexTime[1] = selectedTimeClassRow.cells[3].innerText;
         document.getElementById("startTime").value =
           selectedTimeClassRow.cells[1].innerText;
         document.getElementById("endTime").value =
@@ -2220,8 +2285,8 @@
         });
       // update data
       function updateRecordTimeClass(formData) {
-        selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
-        selectedTimeClassRow.cells[2].innerHTML = formData.endTime;
+        //Lấy dữ liệu từ bản và show lại trên thanh input
+
         var arrs = [];
         var chk2 = document.getElementById("chkT2");
         var chk3 = document.getElementById("chkT3");
@@ -2256,9 +2321,137 @@
         if (lastChar == ",") {
           val = val.slice(0, -1);
         }
+        var tkb = val.split(",");
+        ///////////////////////////////////////kiểm tra ////////////////////////////////////////
+        var hoursStart = document.getElementById("startTime").value;
+
+        var hoursEnd = document.getElementById("endTime").value;
+
+        var hS = hoursStart.split(":");
+        var hE = hoursEnd.split(":");
+
+        let hSEDate = [];
+        hSEDate[0] = hoursStart + "," + hoursEnd;
+        hSEDate[1] = val;
+        console.log("hSEDate || comCheck", val);
+        //Lấy vị trí thời gian
+        var lct = 0;
+        for (let i = 0; i < comCheck.length; i++) {
+          if (
+            indexTime[0] === comCheck[i][0] &&
+            indexTime[1] === comCheck[i][1]
+          ) {
+            lct = i;
+          }
+        }
+        // Kiểm tra ngày và giờ bắt đầu và kết thúc
+        var toDay = new Date();
+        var dateToDay =
+          toDay.getFullYear() +
+          "-" +
+          (toDay.getMonth() + 1) +
+          "-" +
+          toDay.getDate();
+        var dateNow = dateToDay.split("-");
+        //Khai báo biến cho ngày tháng năm
+        var startDate = document.getElementById("startTimeExpected").value;
+        var date1 = new Date(dateToDay);
+        var date2 = new Date(startDate);
+        var date3 = new Date();
+
+        if (
+          //Thời gian bắt đầu cho đến kết thúc min=30 phút và max= 4 giờ
+          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) <= 29 ||
+          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) >= 241
+        ) {
+          alert(
+            "Thời gian cho lớp học tối thiểu là 30 phút và tối đa là 4 giờ! "
+          );
+
+          return;
+        }
+        if (
+          date1.getTime() > date2.getTime() ||
+          (date1.getDate() === date2.getDate() &&
+            date1.getFullYear() === date2.getFullYear() &&
+            date1.getMonth() === date2.getMonth())
+        ) {
+          alert("Ngày dự kiến mở lớp học không hợp lệ! ");
+          return;
+        }
+
+        // kiểm tra trùng lịch
+        //Check thời gian thứ so với thời gian có thể tạo lớp học
+
+        for (let i = 0; i < comCheck.length; i++) {
+          let temp = comCheck[i][1].split(",");
+
+          if (comCheck != null) {
+            for (let k = 0; k < tempDate.length; k++) {
+              for (let j = 0; j < tkb.length; j++) {
+                // kiểm tra thứ ngày tháng
+
+                if (tempDate[k] === tkb[j]) {
+                  var ssss = comCheck[i][0].split(",");
+                  var sT = ssss[0].split(":");
+                  var eT = ssss[1].split(":");
+                  // Kiểm tra thời gian
+                  if (
+                    sT[0] * 1 + sT[1] / 60 <= hS[0] * 1 + hS[1] / 60 &&
+                    hS[0] * 1 + hS[1] / 60 <= eT[0] * 1 + eT[1] / 60
+                  ) {
+                    alert("Thời gian đăng ký bị trùng lặp!");
+
+                    return;
+                  }
+                }
+              }
+            }
+          }
+        }
+        //Lưu tất cả thời gian bắt đầu và kết thúc vào 1 biến cục bộ
+        var dateCheck = [];
+        dateCheck[0] = data.startTime + "," + data.endTime;
+        dateCheck[1] = val;
+
+        for (let i = 0; i < tkb.length; i++) {
+          tempDate.push(tkb[i]);
+        }
+
+        ///
+        for (let i = 0; i < comCheck.length; i++) {
+          if (hSEDate[0] === comCheck[i][0] && hSEDate[1] === comCheck[i][1]) {
+            console.log("cmm");
+            alert("Chưa có thay đổi!");
+            return;
+          }
+        }
+        //
+
+        /////////////////////////////////////////////////////////////////////////////////////
+        selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
+        selectedTimeClassRow.cells[2].innerHTML = formData.endTime;
+
         selectedTimeClassRow.cells[3].innerHTML = val;
         selectedTimeClassRow.cells[4].innerHTML = formData.slot;
         selectedTimeClassRow.cells[5].innerHTML = formData.startTimeExpected;
+
+        comCheck = comCheck.filter(function (element) {
+          return element !== comCheck[lct];
+        });
+        var delTempDate = comCheck[lct];
+        var arrDate = delTempDate[0][1];
+        tempDate = tempDate.filter(
+          (item) =>
+            !arrDate.includes(item) ||
+            arrDate.indexOf(item) === arrDate.lastIndexOf(item)
+        );
+
+        comCheck.push(hSEDate);
+
+        console.log("comcindexTimeheck", indexTime);
+        console.log("temdate", tempDate);
+        console.log("comCheck", comCheck);
       }
       // delete data
       function handleDelClass(delData) {
@@ -2266,6 +2459,7 @@
           row = delData.parentElement.parentElement;
           document.getElementById("storeListTimeClass").deleteRow(row.rowIndex);
         }
+
         resetDataFormClass();
       }
       // reset data
