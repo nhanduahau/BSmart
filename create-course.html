@@ -2680,6 +2680,39 @@
       function handleDelClass(delData) {
         if (confirm("Bạn có muốn xóa lớp học này không?")) {
           row = delData.parentElement.parentElement;
+          var schedule = row.cells[3].innerText.split(",");
+          tempDate = comCheckDate(tempDate, schedule);
+          var dataDate = [];
+          dataDate[0] = row.cells[1].innerText + "," + row.cells[2].innerText;
+
+          dataDate[1] = row.cells[3].innerText;
+          var lct = 0;
+          if (comCheck.length === dataDate.length) {
+            if (dataDate[0] === comCheck[0] && dataDate[1] === comCheck[1]) {
+              comCheck = [];
+            }
+          }
+          for (let i = 0; i < comCheck.length; i++) {
+            console.log("vxxxt");
+            if (
+              comCheck[i][0] === dataDate[0] &&
+              comCheck[i][1] === dataDate[1]
+            ) {
+              lct = i;
+              console.log("vt", lct);
+            }
+            lct = undefined;
+          }
+
+          comCheck = comCheck.filter(function (element) {
+            return element !== comCheck[lct];
+          });
+
+          console.log(schedule);
+
+          console.log(dataDate);
+          console.log(comCheck);
+          console.log(tempDate);
           document.getElementById("storeListTimeClass").deleteRow(row.rowIndex);
         }
 
