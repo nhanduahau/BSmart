@@ -257,20 +257,115 @@
   font-weight: bold;
 }
 
-.course-route-show-lecture {
-  p {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    line-height: 26px;
-    color: #333;
+#titleModule {
+  color: #0d6efd;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 6px;
+  margin: 6px;
+  margin-top: 22px;
+  font-weight: bold;
 
-    &:hover {
-      color: #ff630e;
-      opacity: 0.8;
-      transition: 0.3s all;
-    }
+  &:focus {
+    outline: none;
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
   }
+}
+
+#contentModule {
+  border: 1px solid #fff;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  }
+}
+
+.createChild {
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  &:hover {
+    color: #ff630e;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}
+
+// .course-route-show-lecture {
+//   p {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     line-height: 26px;
+//     color: #333;
+
+//     &:hover {
+//       color: #ff630e;
+//       opacity: 0.8;
+//       transition: 0.3s all;
+//     }
+//   }
+// }
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.closeIT {
+  border: none;
+  outline: none;
+  margin: 10px;
+  font-weight: 450;
+  background-color: transparent;
+
+  &:hover {
+    color: #ff630e;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}
+
+input {
+  overflow: visible;
+  border: none;
+}
+
+#treeContainerBe ul {
+  list-style: none;
+  border-left: 1px solid black;
+  padding: 0;
+  margin: 0;
+  padding-left: 35px;
+}
+
+#treeContainerBe ul li {
+  position: relative;
+  text-transform: capitalize;
+}
+
+#treeContainerBe ul li:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: -35px;
+  background: black;
+  height: 1px;
+  width: 32px;
 }
 
 // Thời gian lớp học
@@ -305,3 +400,124 @@
 //   top: 2000px;
 //   left: 0;
 // }
+
+// #2
+.treetable {}
+
+		.treetable .fa {
+			cursor: pointer;
+			padding-right: 5px;
+		}
+
+		.treetable .rowhidden {
+			display: none;
+		}
+
+		.treetable .j-addChild {
+			display: none;
+		}
+
+		.treetable .selected .j-addChild {
+			display: block;
+		}
+
+		.treetable .btn-outline {
+			background-color: transparent;
+		}
+
+		.treetable .form-control {
+			width: auto;
+			display: inline-block;
+		}
+
+		.treetable .textalign-center {
+			text-align: center;
+		}
+
+		.treetable .j-expend {
+			cursor: pointer;
+			width: 35% !important;
+			text-align: left !important;
+		}
+
+		.treetable .has-error .form-control {
+      color: red;
+			border: 1px solid red;
+		}
+
+		.treetable .maintitle {
+			width: 35% !important;
+		}
+
+		.treetable .j-remove {
+			padding: 8px;
+			cursor: pointer;
+			font-size: 16px;
+			color: red;
+		}
+
+		.treetable .tt-header {
+			margin-top: 10px;
+		}
+
+		.treetable .class-level-2 .class-level-ul .j-expend {
+			position: relative;
+			left: 22px;
+		}
+
+		.treetable .class-level-3 .class-level-ul .j-expend {
+			position: relative;
+			left: 44px;
+		}
+
+		.treetable .class-level-4 .class-level-ul .j-expend {
+			position: relative;
+			left: 66px;
+		}
+
+		.treetable .class-level-1 {
+      margin-top: 32px;
+			// border-bottom: dashed 1px #eee;
+		}
+
+		.treetable .class-level-ul {
+      margin-top: 12px;
+			padding: 0;
+			// margin-bottom: 2px;
+		}
+
+		.treetable .class-level-ul li {
+			float: left;
+			text-align: center;
+			vertical-align: middle;
+			padding: 1px 10px;
+			min-width: 120px;
+			list-style: none;
+		}
+
+		.treetable .class-level-ul:after {
+			display: block;
+			clear: both;
+			height: 0;
+			content: "\0020";
+		}
+
+		.treetable .tt-header div span {
+			width: auto;
+			line-height: 29px;
+			display: inline-block;
+			min-width: 120px;
+			text-align: center;
+		}
+
+		.treetable .tt-body {
+			// border: solid 1px #DDD;
+			padding-top: 1px;
+			background-color: #FFF;
+		}
+
+		.treetable .tt-header div {
+			// border: solid 1px #DDD;
+			border-bottom: none;
+			background-color: #FFF;
+		}
