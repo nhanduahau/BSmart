@@ -998,134 +998,13 @@
                               class="course-route-title-name"
                               id="routeCourseTitleName"
                             ></h1>
-                            <button
-                              class="btn btn-primary"
-                              id="btnCreateModule"
-                              onclick="handleCreateModule();"
-                            >
-                              Tạo module
-                            </button>
                           </div>
-                          <!-- Detail course (Create module) -->
-                          <div class="mt-2 ms-4">
-                            <!-- Create title module -->
-                            <div
-                              class="d-flex align-items-center justify-content-center"
-                            >
-                              <form
-                                class="d-flex align-items-center justify-content-center"
-                                autocomplete="off"
-                                onsubmit="handleAddTitleLecture()"
-                              >
-                                <input
-                                  type="text"
-                                  class="form-control w-100 me-2"
-                                  name="inputCreateModule"
-                                  id="inputCreateModule"
-                                  style="display: none"
-                                  placeholder="Tên tiêu đề bài học..."
-                                />
-                                <!-- Button icon create module -->
-                                <button
-                                  style="
-                                    background-color: transparent;
-                                    border: none;
-                                    display: none;
-                                  "
-                                  id="buttonCreateModule"
-                                >
-                                  <i style="font-size: 24px" class="fa"
-                                    >&#xf067;</i
-                                  >
-                                </button>
-                              </form>
-                              <!-- Button icon hide input create module -->
-                              <button
-                                style="
-                                  background-color: transparent;
-                                  border: none;
-                                  display: none;
-                                "
-                                id="buttonClearCreateModule"
-                              >
-                                <i style="font-size: 24px" class="fa"
-                                  >&#xf00d;</i
-                                >
-                              </button>
-                            </div>
-                            <!-- Create content module(chức năng tạo nội dung bài học) -->
-                            <div
-                              class="d-flex align-items-center justify-content-center"
-                            >
-                              <form
-                                class="d-flex align-items-center justify-content-center"
-                                autocomplete="off"
-                                onsubmit="handleAddContentModuleLecture();"
-                              >
-                                <input
-                                  style="display: none"
-                                  type="text"
-                                  class="form-control w-100 ms-4 me-2 mt-3"
-                                  name="inputCreateContentModule"
-                                  id="inputCreateContentModule"
-                                  placeholder="Nội dung bài học..."
-                                />
-                                <!-- Button icon create content module -->
-                                <button
-                                  class="mt-3"
-                                  style="
-                                    background-color: transparent;
-                                    border: none;
-                                    display: none;
-                                  "
-                                  id="buttonCreateContentModuleIcon"
-                                >
-                                  <i style="font-size: 24px" class="fa"
-                                    >&#xf067;</i
-                                  >
-                                </button>
-                              </form>
-                              <!-- Button icon hide input create content module -->
-                              <button
-                                class="mt-3"
-                                style="
-                                  background-color: transparent;
-                                  border: none;
-                                  display: none;
-                                "
-                                id="buttonClearCreateContentModule"
-                              >
-                                <i style="font-size: 24px" class="fa"
-                                  >&#xf00d;</i
-                                >
-                              </button>
-                            </div>
 
-                            <!-- <button class="btn btn-link" id="courseRouteBtn">
-                              I. MODULE 1: XÂY DỰNG WEBSITE VỚI HTML VÀ CSS
-                            </button> -->
+                          <!-- tree view -->
+                          <div id="bs-treeetable" class="treetable">
+                            Loading ...
+                          </div>
 
-                            <!-- Show title module(kết quả hiện th5 sau khi nhập tiêu đề bài hoc) -->
-                            <div
-                              class="course-route-show-lecture"
-                              id="courseRouteLectureDetail"
-                            >
-                              <table id="storeList" class="mt-2">
-                                <tbody>
-                                  <!-- render data -->
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-                          <!-- Show content module(kết quả hiển thị sau khi nhập tạo nội dung bài học) -->
-                          <div class="ms-5 course-route-show-lecture">
-                            <table id="storeListContentModule" class="mt-1">
-                              <tbody>
-                                <!-- render data -->
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -1523,10 +1402,12 @@
 
         if (+min < 1) {
           alert("Vui lòng chọn min lớn hơn hoặc bằng 1!");
+          document.getElementById("minQuantity").value = 1;
         }
 
         if (+min >= +max) {
           alert("Vui lòng chọn min phải bé hơn max!");
+          document.getElementById("minQuantity").value = +document.getElementById("maxQuantity").value - 1;
         }
       }
       function handleChangeMaxQuantity() {
@@ -1535,6 +1416,7 @@
 
         if (+min >= +max) {
           alert("Vui lòng chọn max phải lớn hơn min!");
+          document.getElementById("maxQuantity").value = +document.getElementById("minQuantity").value + 1;
         }
       }
 
