@@ -38,7 +38,7 @@
     };
     var TREENODECACHE = "treenode";
     var language = {};
-    language.addchild = "Thêm nội dung";
+    language.addchild = "";
     if (options) {
       $.extend(settings, options);
     }
@@ -50,7 +50,7 @@
     /*render data*/
     var dom_addFirstLevel = $("<div class='tt-operation m-b-sm'></div>").append(
       $(
-        "<button class='btn btn-primary btn-sm j-addClass float-end'><i class='fa fa-level-down'></i>&nbsp;Tạo module</button>"
+        "<button class='btn btn-primary btn-sm j-addClass mt-4 p-2'><i class='fa fa-level-down'></i>&nbsp;Tạo module</button>"
       )
     );
     var dom_table = $("<div class='tt-body'></div>");
@@ -88,7 +88,21 @@
       var curElement = $(".tt-body");
       var row = { id: "", name: "", pid: 0 };
       var curLevel = 1;
-      generateTreeNode(curElement, row, curLevel, true);
+      // generateTreeNode(curElement, row, curLevel, true);
+
+      // add parent and check empt
+      var requiredInput = curElement.find(".form-control*[required]");
+      var hasError = false;
+      requiredInput.each(function () {
+        if ($(this).val() == "") {
+          $(this).parent().addClass("has-error");
+          hasError = true;
+        }
+      });
+      if (!hasError) {
+        generateTreeNode(curElement, row, curLevel);
+      }
+      // End add parent and check empt
     });
     /*delegate remove event*/
     element.delegate(".j-remove", "click", function (event) {
@@ -96,12 +110,12 @@
       var parentDom = $(this).parents(".class-level-ul");
       var isRemoveAble = false;
       if (parentDom.attr("data-loaded") == "true") {
-        if (parentDom.parent().find(".class-level").length > 0) {
-          settings.customalert("Bạn cần phải xóa hết nội dung bên trong!");
-          return;
-        } else {
-          isRemoveAble = true;
-        }
+        // if (parentDom.parent().find(".class-level").length > 0) {
+        //   settings.customalert("Bạn cần phải xóa hết nội dung bên trong!");
+        //   return;
+        // } else {
+        // }
+        isRemoveAble = true;
       } else {
         //如果是新增加的节点则设置成可删除否则需要展开再删除
         if (parentDom.attr("data-id")) {
@@ -282,11 +296,13 @@
       var dom_row = $(
         '<div class="class-level class-level-' + curLevel + '"></div>'
       );
+      console.log("dom_row", dom_row);
       var dom_ul = $('<ul class="class-level-ul"></ul>');
       dom_ul
         .attr("data-pid", row.pid)
         .attr("data-level", curLevel)
         .attr("data-id", row.id);
+      console.log("dom_ul", dom_ul);
       row.innercode && dom_ul.attr("data-innercode", row.innercode);
       if (curLevel - 0 >= settings.maxlevel) {
         $('<li class="j-expend"></li>')
@@ -307,7 +323,7 @@
           .append('<label class="fa fa-plus p-xs"></label>')
           .append(
             $(
-              "<input type='text' class='form-control input-sm' required placeholder='Tiêu đề bài học...'/>"
+              "<input type='text' id='tieuDe' class='form-control input-sm' required placeholder='Tiêu đề bài học...'/>"
             )
               .attr("data-oldval", row["name"])
               .val(row["name"])
