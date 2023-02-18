@@ -515,41 +515,6 @@
               <div id="accordion">
                 <!-- Collapse #1: Thông tin khóa học -->
                 <div class="card1">
-                  <style>
-                    .card1{
-                      margin-bottom: -1px;
-                    }
-                    .card-header .chevron {
-                      float: right;
-                    }
-                    .card-header a.collapsed .fa-chevron-up {
-                      display: none;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-down {
-                      display: none;
-                    }
-                    .card-header a.collapsed .fa-chevron-down {
-                      display: block;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-up {
-                      display: block;
-                    }
-                    .card-header .chevron:before {
-                      content: '\f078';
-                      font-family: 'FontAwesome';
-                    }
-                    .card-header a.collapsed .chevron:before {
-                      content: '\f054';
-                    }
-                    .card-header {
-                      font-size: 17px;
-                      padding: 20px;
-                      margin-top: -1px;
-                    }
-                    .card-header i {
-                      margin-right: 10px;
-                    }
-                  </style>
                   <div class="card mt-4">
                     <div class="card-header" id="headingSix">
                       <h5 class="mb-0">
@@ -741,6 +706,21 @@
                                     Offline
                                   </option>
                                 </select>
+                              </div>
+
+                              <!--Điền link google meet-->
+                              <div class="mb-3">
+                                <label class="form-label">Link Google Meet: </label>
+                                <div class="sup-autocom">
+                                  <input
+                                    id="meetLink"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="https://meet.google.com/..."
+                                    onchange="checkMeetLink()"
+                                  /> 
+                                </div>
+                                <p id="meetLinkError" style="color:red"></p>
                               </div>
 
                               <!-- Số lượng học viên -->
@@ -986,43 +966,6 @@
 
                 <!-- Collapse #2: Lộ trình khóa học -->
                 <div class="card2">
-                  <style>
-                    .card2{
-                      margin-bottom: -1px;
-                    }
-                    .card-header .chevron {
-                      float: right;
-                    }
-                    .card-header a.collapsed .fa-chevron-up {
-                      display: none;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-down {
-                      display: none;
-                    }
-                    .card-header a.collapsed .fa-chevron-down {
-                      display: block;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-up {
-                      display: block;
-                    }
-                    .card-header .chevron:before {
-                      content: '\f078';
-                      font-family: 'FontAwesome';
-                    }
-                    .card-header a.collapsed .chevron:before {
-                      content: '\f054';
-                    }
-                    .card-header {
-                      font-size: 17px;
-                      padding: 20px;
-                      margin-top: -1px;
-                    }
-                    .card-header i {
-                      margin-right: 10px;
-                    }
-
-                  </style>
-                  
                   <div class="card mt-4">
                     <div class="card-header" id="headingFour">
                       <h5 class="mb-0">
@@ -1048,7 +991,7 @@
                         >
                           <!-- Title course -->
                           <div
-                            class="d-flex align-items-center justify-content-between"
+                            class="d-flex"
                           >
                             <h1
                               class="course-route-title-name"
@@ -1069,42 +1012,6 @@
 
                 <!-- Collapse #3: Thời gian lớp học -->
                 <div class="card3">
-                  <style>
-                    .card3{
-                      margin-bottom: -1px;
-                    }
-                    .card-header .chevron {
-                      float: right;
-                    }
-                    .card-header a.collapsed .fa-chevron-up {
-                      display: none;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-down {
-                      display: none;
-                    }
-                    .card-header a.collapsed .fa-chevron-down {
-                      display: block;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-up {
-                      display: block;
-                    }
-                    .card-header .chevron:before {
-                      content: '\f078';
-                      font-family: 'FontAwesome';
-                    }
-                    .card-header a.collapsed .chevron:before {
-                      content: '\f054';
-                    }
-                    .card-header {
-                      font-size: 17px;
-                      padding: 20px;
-                      margin-top: -1px;
-                    }
-                    .card-header i {
-                      margin-right: 10px;
-                    }
-                  </style>
-                  
                   <div class="card mt-4">
                     <div class="card-header" id="headingFive">
                       <h5 class="mb-0">
@@ -1906,96 +1813,6 @@
           }
         });
 
-        
-        // Collapse #2: Lộ trình khóa học
-        $(document).ready(function () {
-          $("#courseRouteBtn").click(function () {
-            $("#courseRouteLectureDetail").toggle();
-          });
-        });
-
-      // Colapse #2: Lộ trình khóa học 
-      // init var
-      let carets = document.getElementsByClassName('caret');
-      let btnCreateModule = document.getElementById('btnCreateModule');
-      let treeContainerBe = document.getElementById('treeContainerBe');
-      let infoRouteCorseTitleModule;
-      let infoRouteCorseContentModule;
-
-      // handle click (show content)
-      for(var i = 0; i < carets.length; i++) {
-        carets[i].addEventListener('click', function () {
-          this.classList.toggle('caret-down');
-          parent = this.parentElement;
-          parent.querySelector('.nested').classList.toggle('active');
-        })
-      }
-      // handle button create module
-      btnCreateModule.addEventListener('click', function() {
-        treeContainerBe.innerHTML += `
-                                    <li>
-                                      <input type="text" value="${infoRouteCorseTitleModule || ''}" name="titleModule" id="titleModule" placeholder="Nhập tiêu đề..." style="border: 2px solid black; padding: 5px;" />
-                                      <button class='createChild' id="createChild" title="Tạo nội dung">
-                                        <i style="font-size: 24px" class="fa">&#xf067;</i>
-                                      </button>
-                                      <button class='closeIT' title="Xóa tiêu đề">
-                                        <i style="font-size: 24px" class="fa">&#xf00d;</i>
-                                      </button>
-                                    </li>
-                                    `;
-
-        document
-          .getElementById('titleModule')
-          .addEventListener('change', function() {
-            infoRouteCorseTitleModule = document.getElementById('titleModule').value;
-            // console.log('infoRouteCorseTitleModule', infoRouteCorseTitleModule)
-          })
-
-        // document
-        //   .getElementById('contentModule')
-        //   .addEventListener('change', function() {
-        //     infoRouteCorseContentModule = document.getElementById('contentModule').value;
-        //     console.log('infoRouteCorseContentModule', infoRouteCorseContentModule)
-        //   })
-      })
-      // handle add content for module
-      treeContainerBe.addEventListener('click', function(e) {
-        if(e.target.classList == 'closeIT') {
-          e.target.parentElement.remove();
-        }
-
-        if(e.target.classList == 'createChild') {
-          createChildBTN = e.target;
-          li = createChildBTN.parentElement;
-          count = prompt('Nhập số hàng: ');
-          var x = '';
-
-          for(var i = 1; i <= count; i++) {
-            x += `
-                  <li>
-                    <input type="text" value="${infoRouteCorseContentModule || ''}" name="contentModule" id="contentModule" placeholder="Nội dung..." style="border: 0.1px solid black; padding: 5px;" />
-                    <button class='closeIT'>
-                      Xóa
-                    </button>  
-                  </li>
-                 `;
-          }
-
-          li.innerHTML += `<ul>${x}</ul>`; // end create content
-        }
-      })
-
-      // format type time
-      // var timepicker = new TimePicker("startTime", {
-      //   lang: "en",
-      //   theme: "dark",
-      // });
-      // // var inpStartTime = document.getElementById('startTime')
-      // timepicker.on("change", function (evt) {
-      //   var value = (evt.hour || "00") + ":" + (evt.minute || "00");
-      //   evt.element.value = value;
-      // });
-
       // Thời gian lớp học
       var selectedTimeClassRow = null;
       let rowIndexId = 1;
@@ -2454,6 +2271,22 @@
         document.getElementById("chkCN").checked = false;
         document.getElementById("slot").selectedIndex = 0;
         document.getElementById("startTimeExpected").value = "";
+      }
+    </script>
+    <!-- Validator link gg meet -->
+    <script>
+      function checkMeetLink() {
+        // Get the value of the input field
+        var link = document.getElementById("meetLink").value;
+      
+        // Check if the link is a valid Google Meet link
+        if (!link.match(/^(https:\/\/)?meet\.google\.com\/[a-z0-9-]+$/)) {
+          // Display an error message
+          document.getElementById("meetLinkError").innerHTML = "Vui lòng nhập một liên kết hợp lệ của Google Meet (https://meet.google.com/... , meet.google.com/...)";
+        } else {
+          // Clear error message
+          document.getElementById("meetLinkError").innerHTML = "";
+        }
       }
     </script>
     <script type="text/javascript">

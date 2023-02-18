@@ -3530,7 +3530,13 @@ input {
 
 .treetable .fa {
   cursor: pointer;
-  padding-right: 5px;
+  padding-right: 6px;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.treetable .fa.fa-remove {
+  font-size: 20px;
 }
 
 .treetable .rowhidden {
@@ -3560,7 +3566,7 @@ input {
 
 .treetable .j-expend {
   cursor: pointer;
-  width: 35% !important;
+  width: 40% !important;
   text-align: left !important;
 }
 
@@ -3574,19 +3580,16 @@ input {
 }
 
 .treetable .j-remove {
-  padding: 8px;
+  margin-top: 9px;
   cursor: pointer;
   font-size: 16px;
   color: red;
 }
 
-.treetable .tt-header {
-  margin-top: 10px;
-}
-
 .treetable .class-level-2 .class-level-ul .j-expend {
   position: relative;
   left: 22px;
+  margin-right: 38px;
 }
 
 .treetable .class-level-3 .class-level-ul .j-expend {
@@ -3612,8 +3615,6 @@ input {
   float: left;
   text-align: center;
   vertical-align: middle;
-  padding: 1px 10px;
-  min-width: 120px;
   list-style: none;
 }
 
@@ -3633,13 +3634,141 @@ input {
 }
 
 .treetable .tt-body {
-  padding-top: 1px;
   background-color: #FFF;
 }
 
 .treetable .tt-header div {
   border-bottom: none;
   background-color: #FFF;
+}
+
+.card1 {
+  margin-bottom: -1px;
+}
+
+.card-header .chevron {
+  float: right;
+}
+
+.card-header a.collapsed .fa-chevron-up {
+  display: none;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-down {
+  display: none;
+}
+
+.card-header a.collapsed .fa-chevron-down {
+  display: block;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-up {
+  display: block;
+}
+
+.card-header .chevron:before {
+  content: "\f078";
+  font-family: "FontAwesome";
+}
+
+.card-header a.collapsed .chevron:before {
+  content: "\f054";
+}
+
+.card-header {
+  font-size: 17px;
+  padding: 20px;
+  margin-top: -1px;
+}
+
+.card-header i {
+  margin-right: 10px;
+}
+
+.card2 {
+  margin-bottom: -1px;
+}
+
+.card-header .chevron {
+  float: right;
+}
+
+.card-header a.collapsed .fa-chevron-up {
+  display: none;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-down {
+  display: none;
+}
+
+.card-header a.collapsed .fa-chevron-down {
+  display: block;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-up {
+  display: block;
+}
+
+.card-header .chevron:before {
+  content: "\f078";
+  font-family: "FontAwesome";
+}
+
+.card-header a.collapsed .chevron:before {
+  content: "\f054";
+}
+
+.card-header {
+  font-size: 17px;
+  padding: 20px;
+  margin-top: -1px;
+}
+
+.card-header i {
+  margin-right: 10px;
+}
+
+.card3 {
+  margin-bottom: -1px;
+}
+
+.card-header .chevron {
+  float: right;
+}
+
+.card-header a.collapsed .fa-chevron-up {
+  display: none;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-down {
+  display: none;
+}
+
+.card-header a.collapsed .fa-chevron-down {
+  display: block;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-up {
+  display: block;
+}
+
+.card-header .chevron:before {
+  content: "\f078";
+  font-family: "FontAwesome";
+}
+
+.card-header a.collapsed .chevron:before {
+  content: "\f054";
+}
+
+.card-header {
+  font-size: 17px;
+  padding: 20px;
+  margin-top: -1px;
+}
+
+.card-header i {
+  margin-right: 10px;
 }
 
 .buy-course-wrapper .banner__buy-course {
