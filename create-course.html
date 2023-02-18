@@ -1205,7 +1205,7 @@
                                   .getElementById("endTime")
                                   .addEventListener("click", function () {
                                     console.log("change time");
-                                    this.value = "07:01";
+                                    this.value = "09:30";
                                   });
                               </script>
 
@@ -2355,8 +2355,6 @@
                     hS[0] * 1 + hS[1] / 60 <= eT[0] * 1 + eT[1] / 60
                   ) {
                     alert("Thời gian đăng ký bị trùng lặp!");
-                    alert("Thời gian đăng ký bị trùng lặp! xxx");
-
                     return;
                   }
                 }
@@ -2430,7 +2428,6 @@
         selectedTimeClassRow = tds.parentElement.parentElement;
 
         var chktnt = selectedTimeClassRow.cells[3].innerText;
-        console.log(chktnt.length);
 
         indexTime[0] =
           selectedTimeClassRow.cells[1].innerText +
@@ -2632,6 +2629,16 @@
           }
         }
         //
+        if (
+          formData.startTime === "" ||
+          formData.endTime === "" ||
+          val === "" ||
+          formData.slot === "" ||
+          data === null
+        ) {
+          alert("Bạn cần phải nhập đầy đủ các thông tin!");
+          return;
+        }
 
         /////////////////////////////////////////////////////////////////////////////////////
         selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
@@ -2846,7 +2853,7 @@
         .getElementById("startTime")
         .addEventListener("click", function () {
           console.log("change time");
-          this.value = "07:01";
+          this.value = "07:15";
         });
     </script>
     <script language="javascript">
