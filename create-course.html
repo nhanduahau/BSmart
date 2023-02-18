@@ -32,10 +32,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Tree view -->
-    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <!-- <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" crossorigin="anonymous"> -->
-
     <!-- import type time picker -->
     <script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
     <link
@@ -514,63 +510,31 @@
             <div class="col-lg-8 col-md-12">
               <div id="accordion">
                 <!-- Collapse #1: Thông tin khóa học -->
-                <div class="card1">
-                  <style>
-                    .card1{
-                      margin-bottom: -1px;
-                    }
-                    .card-header .chevron {
-                      float: right;
-                    }
-                    .card-header a.collapsed .fa-chevron-up {
-                      display: none;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-down {
-                      display: none;
-                    }
-                    .card-header a.collapsed .fa-chevron-down {
-                      display: block;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-up {
-                      display: block;
-                    }
-                    .card-header .chevron:before {
-                      content: '\f078';
-                      font-family: 'FontAwesome';
-                    }
-                    .card-header a.collapsed .chevron:before {
-                      content: '\f054';
-                    }
-                    .card-header {
-                      font-size: 17px;
-                      padding: 20px;
-                      margin-top: -1px;
-                    }
-                    .card-header i {
-                      margin-right: 10px;
-                    }
-                  </style>
-                  <div class="card mt-4">
-                    <div class="card-header" id="headingSix">
+                <div class="card">
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
                       <h5 class="mb-0">
                         <span>Thông tin khóa học</span>
-                        <a href="collapseSix"
-                           class="collapsed chevron"
-                           data-toggle="collapse"
-                           data-target="#collapseSix"
-                           aria-expanded="false"
-                           aria-controls="collapseSix"
-                        ></a>                      
+                        <a
+                          href="#"
+                          data-toggle="collapse"
+                          data-target="#collapseSix"
+                          aria-expanded="true"
+                          aria-controls="collapseSix"
+                        >
+                          <i class="fa fa-chevron-down chevron"></i>
+                        </a>
                       </h5>
                     </div>
                     <div
                       id="collapseSix"
                       class="collapse show"
-                      aria-labelledby="headingSix"                     
+                      aria-labelledby="headingSix"
+                      data-parent="#accordion"
                     >
                       <div class="card-body">
                         <div
-                          id="collapseSix"
+                          id="multiCollapseOne"
                           class="collapse multi-collapse show p-4"
                         >
                           <div class="mentor-add-course">
@@ -700,7 +664,7 @@
                                   <option value="backend">Back end</option>
                                   <option value="devops">Devops</option>
                                   <option value="database">Database</option>
-                                  <option value="other">Khác</option>
+                                  <option value="database">Khác</option>
                                 </select>
                               </div>
                               <!-- Ngôn ngữ lập trình -->
@@ -721,7 +685,6 @@
                                   <option value="databaseSql">
                                     Database SQL
                                   </option>
-                                  <option value="other">Khác</option>
                                 </select>
                               </div>
                               <!-- Hình thức khóa học -->
@@ -985,61 +948,39 @@
                 </div>
 
                 <!-- Collapse #2: Lộ trình khóa học -->
-                <div class="card2">
+                <div class="card mt-4">
                   <style>
-                    .card2{
-                      margin-bottom: -1px;
-                    }
-                    .card-header .chevron {
-                      float: right;
-                    }
-                    .card-header a.collapsed .fa-chevron-up {
-                      display: none;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-down {
-                      display: none;
-                    }
-                    .card-header a.collapsed .fa-chevron-down {
-                      display: block;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-up {
-                      display: block;
-                    }
-                    .card-header .chevron:before {
-                      content: '\f078';
-                      font-family: 'FontAwesome';
-                    }
-                    .card-header a.collapsed .chevron:before {
-                      content: '\f054';
-                    }
                     .card-header {
                       font-size: 17px;
                       padding: 20px;
-                      margin-top: -1px;
                     }
                     .card-header i {
                       margin-right: 10px;
                     }
-
+                    .card-header .chevron {
+                      float: right;
+                    }
                   </style>
-                  
-                  <div class="card mt-4">
+                  <div class="card">
                     <div class="card-header" id="headingFour">
                       <h5 class="mb-0">
                         <span>Lộ trình khóa học</span>
-                        <a href="collapseFour"
-                           class="collapsed chevron"
-                           data-toggle="collapse"
-                           data-target="#collapseFour"
-                           aria-expanded="false"
-                           aria-controls="collapseFour"
-                        ></a>
+                        <a
+                          href="#"
+                          data-toggle="collapse"
+                          data-target="#collapseFour"
+                          aria-expanded="true"
+                          aria-controls="collapseFour"
+                        >
+                          <i class="fa fa-chevron-down chevron"></i>
+                        </a>
                       </h5>
                     </div>
                     <div
                       id="collapseFour"
                       class="collapse show"
                       aria-labelledby="headingFour"
+                      data-parent="#accordion"
                     >
                       <div class="card-body">
                         <div
@@ -1054,13 +995,133 @@
                               class="course-route-title-name"
                               id="routeCourseTitleName"
                             ></h1>
+                            <button
+                              class="btn btn-primary"
+                              id="btnCreateModule"
+                              onclick="handleCreateModule();"
+                            >
+                              Tạo module
+                            </button>
                           </div>
-                          
-                          <!-- tree view -->
-                          <div id="bs-treeetable" class="treetable">
-                            Loading ...
-                          </div>
+                          <!-- Detail course (Create module) -->
+                          <div class="mt-2 ms-4">
+                            <!-- Create title module -->
+                            <div
+                              class="d-flex align-items-center justify-content-center"
+                            >
+                              <form
+                                class="d-flex align-items-center justify-content-center"
+                                autocomplete="off"
+                                onsubmit="handleAddTitleLecture()"
+                              >
+                                <input
+                                  type="text"
+                                  class="form-control w-100 me-2"
+                                  name="inputCreateModule"
+                                  id="inputCreateModule"
+                                  style="display: none"
+                                  placeholder="Tên tiêu đề bài học..."
+                                />
+                                <!-- Button icon create module -->
+                                <button
+                                  style="
+                                    background-color: transparent;
+                                    border: none;
+                                    display: none;
+                                  "
+                                  id="buttonCreateModule"
+                                >
+                                  <i style="font-size: 24px" class="fa"
+                                    >&#xf067;</i
+                                  >
+                                </button>
+                              </form>
+                              <!-- Button icon hide input create module -->
+                              <button
+                                style="
+                                  background-color: transparent;
+                                  border: none;
+                                  display: none;
+                                "
+                                id="buttonClearCreateModule"
+                              >
+                                <i style="font-size: 24px" class="fa"
+                                  >&#xf00d;</i
+                                >
+                              </button>
+                            </div>
+                            <!-- Create content module(chức năng tạo nội dung bài học) -->
+                            <div
+                              class="d-flex align-items-center justify-content-center"
+                            >
+                              <form
+                                class="d-flex align-items-center justify-content-center"
+                                autocomplete="off"
+                                onsubmit="handleAddContentModuleLecture();"
+                              >
+                                <input
+                                  style="display: none"
+                                  type="text"
+                                  class="form-control w-100 ms-4 me-2 mt-3"
+                                  name="inputCreateContentModule"
+                                  id="inputCreateContentModule"
+                                  placeholder="Nội dung bài học..."
+                                />
+                                <!-- Button icon create content module -->
+                                <button
+                                  class="mt-3"
+                                  style="
+                                    background-color: transparent;
+                                    border: none;
+                                    display: none;
+                                  "
+                                  id="buttonCreateContentModuleIcon"
+                                >
+                                  <i style="font-size: 24px" class="fa"
+                                    >&#xf067;</i
+                                  >
+                                </button>
+                              </form>
+                              <!-- Button icon hide input create content module -->
+                              <button
+                                class="mt-3"
+                                style="
+                                  background-color: transparent;
+                                  border: none;
+                                  display: none;
+                                "
+                                id="buttonClearCreateContentModule"
+                              >
+                                <i style="font-size: 24px" class="fa"
+                                  >&#xf00d;</i
+                                >
+                              </button>
+                            </div>
 
+                            <!-- <button class="btn btn-link" id="courseRouteBtn">
+                              I. MODULE 1: XÂY DỰNG WEBSITE VỚI HTML VÀ CSS
+                            </button> -->
+
+                            <!-- Show title module(kết quả hiện th5 sau khi nhập tiêu đề bài hoc) -->
+                            <div
+                              class="course-route-show-lecture"
+                              id="courseRouteLectureDetail"
+                            >
+                              <table id="storeList" class="mt-2">
+                                <tbody>
+                                  <!-- render data -->
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <!-- Show content module(kết quả hiển thị sau khi nhập tạo nội dung bài học) -->
+                          <div class="ms-5 course-route-show-lecture">
+                            <table id="storeListContentModule" class="mt-1">
+                              <tbody>
+                                <!-- render data -->
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1068,60 +1129,40 @@
                 </div>
 
                 <!-- Collapse #3: Thời gian lớp học -->
-                <div class="card3">
+                <div class="card mt-4">
                   <style>
-                    .card3{
-                      margin-bottom: -1px;
-                    }
-                    .card-header .chevron {
-                      float: right;
-                    }
-                    .card-header a.collapsed .fa-chevron-up {
-                      display: none;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-down {
-                      display: none;
-                    }
-                    .card-header a.collapsed .fa-chevron-down {
-                      display: block;
-                    }
-                    .card-header a:not(.collapsed) .fa-chevron-up {
-                      display: block;
-                    }
-                    .card-header .chevron:before {
-                      content: '\f078';
-                      font-family: 'FontAwesome';
-                    }
-                    .card-header a.collapsed .chevron:before {
-                      content: '\f054';
-                    }
                     .card-header {
                       font-size: 17px;
                       padding: 20px;
-                      margin-top: -1px;
                     }
                     .card-header i {
                       margin-right: 10px;
                     }
+                    .card-header .chevron {
+                      float: right;
+                    }
                   </style>
-                  
-                  <div class="card mt-4">
+
+                  <div class="card">
                     <div class="card-header" id="headingFive">
                       <h5 class="mb-0">
                         <span>Thời gian lớp học</span>
-                        <a href="collapseFive"
-                           class="collapsed chevron"
-                           data-toggle="collapse"
-                           data-target="#collapseFive"
-                           aria-expanded="false"
-                           aria-controls="collapseFive"
-                        ></a>
+                        <a
+                          href="#"
+                          data-toggle="collapse"
+                          data-target="#collapseFive"
+                          aria-expanded="true"
+                          aria-controls="collapseFive"
+                        >
+                          <i class="fa fa-chevron-down chevron"></i>
+                        </a>
                       </h5>
                     </div>
                     <div
                       id="collapseFive"
                       class="collapse show"
                       aria-labelledby="headingFive"
+                      data-parent="#accordion"
                     >
                       <div class="card-body">
                         <div
@@ -1474,8 +1515,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- new jquery -->
-    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
     <!-- Import script owl carousel  -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
@@ -1494,21 +1533,18 @@
 
         if (+min < 1) {
           alert("Vui lòng chọn min lớn hơn hoặc bằng 1!");
-          document.getElementById("minQuantity").value = 1;
         }
-        
+
         if (+min >= +max) {
           alert("Vui lòng chọn min phải bé hơn max!");
-          document.getElementById("minQuantity").value = +document.getElementById("maxQuantity").value - 1;
         }
       }
       function handleChangeMaxQuantity() {
         let min = document.getElementById("minQuantity").value;
         let max = document.getElementById("maxQuantity").value;
-        
+
         if (+min >= +max) {
           alert("Vui lòng chọn max phải lớn hơn min!");
-          document.getElementById("maxQuantity").value = +document.getElementById("minQuantity").value + 1;
         }
       }
 
@@ -1906,84 +1942,255 @@
           }
         });
 
-        
-        // Collapse #2: Lộ trình khóa học
-        $(document).ready(function () {
-          $("#courseRouteBtn").click(function () {
-            $("#courseRouteLectureDetail").toggle();
-          });
+      // Button create module
+      document
+        .getElementById("btnCreateModule")
+        .addEventListener("click", function () {
+          document.getElementById("inputCreateModule").style.display = "block";
+          document.getElementById("buttonCreateModule").style.display = "block";
+          document.getElementById("buttonClearCreateModule").style.display =
+            "block";
         });
 
-      // Colapse #2: Lộ trình khóa học 
-      // init var
-      let carets = document.getElementsByClassName('caret');
-      let btnCreateModule = document.getElementById('btnCreateModule');
-      let treeContainerBe = document.getElementById('treeContainerBe');
-      let infoRouteCorseTitleModule;
-      let infoRouteCorseContentModule;
+      // Hide input create module
+      document
+        .getElementById("buttonClearCreateModule")
+        .addEventListener("click", function () {
+          document.getElementById("inputCreateModule").style.display = "none";
+          document.getElementById("buttonCreateModule").style.display = "none";
+          document.getElementById("buttonClearCreateModule").style.display =
+            "none";
+        });
 
-      // handle click (show content)
-      for(var i = 0; i < carets.length; i++) {
-        carets[i].addEventListener('click', function () {
-          this.classList.toggle('caret-down');
-          parent = this.parentElement;
-          parent.querySelector('.nested').classList.toggle('active');
-        })
+      // Create module
+      var selectedRow = null;
+      function handleAddTitleLecture() {
+        event.preventDefault();
+
+        var formData = readFormData();
+
+        // check
+        if (selectedRow === null) {
+          insertNewRecord(formData);
+        } else {
+          updateRecord(formData);
+        }
+
+        resetDataForm();
       }
-      // handle button create module
-      btnCreateModule.addEventListener('click', function() {
-        treeContainerBe.innerHTML += `
-                                    <li>
-                                      <input type="text" value="${infoRouteCorseTitleModule || ''}" name="titleModule" id="titleModule" placeholder="Nhập tiêu đề..." style="border: 2px solid black; padding: 5px;" />
-                                      <button class='createChild' id="createChild" title="Tạo nội dung">
-                                        <i style="font-size: 24px" class="fa">&#xf067;</i>
-                                      </button>
-                                      <button class='closeIT' title="Xóa tiêu đề">
-                                        <i style="font-size: 24px" class="fa">&#xf00d;</i>
-                                      </button>
-                                    </li>
-                                    `;
 
+      // read data
+      function readFormData() {
+        var formData = {};
+
+        // check empt
+        if (document.getElementById("inputCreateModule").value === "") {
+          alert("Bạn cần nhập tên tiêu đề bài học!");
+          return;
+        }
+
+        formData["inputCreateModule"] =
+          document.getElementById("inputCreateModule").value;
+
+        return formData;
+      }
+      // insert data
+      function insertNewRecord(data) {
+        var table = document
+          .getElementById("storeList")
+          .getElementsByTagName("tbody")[0];
+        var newRow = table.insertRow(table.length);
+
+        var cellInputCreateModule = newRow.insertCell(0);
+        cellInputCreateModule.innerHTML = `<button class="btn btn-link mt-4 me-2" style="font-weight: 800">
+                                              ${data.inputCreateModule}
+                                            </button>`;
+
+        var cellFuncModule = newRow.insertCell(1);
+        cellFuncModule.innerHTML = `<button onclick='addContentModule(this)' class="btn btn-primary mt-3 me-2" id="buttonCreateContentModule">
+                                          Tạo nội dung
+                                        </button>
+                                        <button onclick="editRecord(this)" class="btn btn-secondary mt-3 me-2">
+                                          Sửa
+                                        </button>
+                                        <button onclick='deleteRecord(this)' class="btn btn-danger mt-3 me-2">
+                                          Xóa
+                                      </button>`;
+        // Show content module
         document
-          .getElementById('titleModule')
-          .addEventListener('change', function() {
-            infoRouteCorseTitleModule = document.getElementById('titleModule').value;
-            // console.log('infoRouteCorseTitleModule', infoRouteCorseTitleModule)
-          })
-
-        // document
-        //   .getElementById('contentModule')
-        //   .addEventListener('change', function() {
-        //     infoRouteCorseContentModule = document.getElementById('contentModule').value;
-        //     console.log('infoRouteCorseContentModule', infoRouteCorseContentModule)
-        //   })
-      })
-      // handle add content for module
-      treeContainerBe.addEventListener('click', function(e) {
-        if(e.target.classList == 'closeIT') {
-          e.target.parentElement.remove();
+          .getElementById("buttonCreateContentModule")
+          .addEventListener("click", function () {
+            document.getElementById("inputCreateContentModule").style.display =
+              "block";
+            document.getElementById(
+              "buttonCreateContentModuleIcon"
+            ).style.display = "block";
+            document.getElementById(
+              "buttonClearCreateContentModule"
+            ).style.display = "block";
+          });
+        // Hide create content module
+        document
+          .getElementById("buttonClearCreateContentModule")
+          .addEventListener("click", function () {
+            document.getElementById("inputCreateContentModule").style.display =
+              "none";
+            document.getElementById(
+              "buttonCreateContentModuleIcon"
+            ).style.display = "none";
+            document.getElementById(
+              "buttonClearCreateContentModule"
+            ).style.display = "none";
+          });
+      }
+      // edit data
+      function editRecord(tds) {
+        selectedRow = tds.parentElement.parentElement;
+        console.log("selectedRow", selectedRow);
+        document.getElementById("inputCreateModule").value =
+          selectedRow.cells[0].innerText;
+        document.getElementById("buttonCreateModule").innerHTML =
+          '<i style="font-size:24px" class="fa">&#xf00c;</i>';
+      }
+      // reset icon updated
+      document
+        .getElementById("buttonCreateModule")
+        .addEventListener("click", function () {
+          document.getElementById("buttonCreateModule").innerHTML =
+            '<i style="font-size:24px" class="fa">&#xf067;</i>';
+        });
+      // update data
+      function updateRecord(formData) {
+        selectedRow.cells[0].innerHTML = `<button class="btn btn-link mt-4" style="font-weight: 800; font-size: 18px;">
+                                              ${formData.inputCreateModule}
+                                            </button>`;
+      }
+      // delete data
+      function deleteRecord(td) {
+        if (confirm("Bạn có muốn xóa tiêu đề này không?")) {
+          row = td.parentElement.parentElement;
+          document.getElementById("storeList").deleteRow(row.rowIndex);
         }
+        resetDataForm();
+      }
+      // reset data
+      function resetDataForm() {
+        document.getElementById("inputCreateModule").value = "";
+      }
 
-        if(e.target.classList == 'createChild') {
-          createChildBTN = e.target;
-          li = createChildBTN.parentElement;
-          count = prompt('Nhập số hàng: ');
-          var x = '';
+      var currRow = null;
+      // show input add content module
+      function addContentModule(getRow) {
+        row = getRow.parentElement.parentElement;
+        currRow = row;
+        console.log("currRow", currRow);
+        if (row) {
+          document.getElementById("inputCreateContentModule").style.display =
+            "block";
+          document.getElementById(
+            "buttonCreateContentModuleIcon"
+          ).style.display = "block";
+          document.getElementById(
+            "buttonClearCreateContentModule"
+          ).style.display = "block";
+        }
+      }
 
-          for(var i = 1; i <= count; i++) {
-            x += `
-                  <li>
-                    <input type="text" value="${infoRouteCorseContentModule || ''}" name="contentModule" id="contentModule" placeholder="Nội dung..." style="border: 0.1px solid black; padding: 5px;" />
-                    <button class='closeIT'>
-                      Xóa
-                    </button>  
-                  </li>
-                 `;
+      // Create content module
+      var selectedRowContentModule = null;
+      function handleAddContentModuleLecture() {
+        event.preventDefault();
+
+        var formData = readFormDataContentModule();
+
+        // check
+        if (selectedRowContentModule === null) {
+          if (currRow) {
+            insertNewRecordContentModule(formData);
           }
-
-          li.innerHTML += `<ul>${x}</ul>`; // end create content
+        } else {
+          updateRecordContentModule(formData);
         }
-      })
+        resetDataFormContentModule();
+      }
+      // read data
+      function readFormDataContentModule() {
+        var formData = {};
+
+        // check empt
+        if (document.getElementById("inputCreateContentModule").value === "") {
+          alert("Bạn cần nhập nội dung bài học!");
+          return;
+        }
+
+        formData["inputCreateContentModule"] = document.getElementById(
+          "inputCreateContentModule"
+        ).value;
+
+        return formData;
+      }
+      // insert data
+      function insertNewRecordContentModule(data) {
+        var table = document
+          .getElementById("storeListContentModule")
+          .getElementsByTagName("tbody")[0];
+        var newRow = table.insertRow(table.length);
+
+        var cellInputContentModule = newRow.insertCell(0);
+        cellInputContentModule.innerHTML = `<p class="mt-1 text-decoration-none">
+                                                ${data.inputCreateContentModule}
+                                              </p>`;
+
+        var cellFuncContentModule = newRow.insertCell(1);
+        cellFuncContentModule.innerHTML = `<button onclick='editRecordContentModule(this)' class="btn btn-secondary mt-1 ms-4 me-2">
+                                                Sửa
+                                              </button>
+                                              <button onclick='deleteRecordContentModule(this)' class="btn btn-danger mt-1 me-2">
+                                                Xóa
+                                              </button>`;
+      }
+      // edit data
+      function editRecordContentModule(td) {
+        selectedRowContentModule = td.parentElement.parentElement;
+        console.log("selectedRowContentModule", selectedRowContentModule);
+        document.getElementById("inputCreateContentModule").value =
+          selectedRowContentModule.cells[0].innerText;
+        document.getElementById("buttonCreateContentModuleIcon").innerHTML =
+          '<i style="font-size:24px" class="fa">&#xf00c;</i>';
+      }
+      document
+        .getElementById("buttonCreateContentModuleIcon")
+        .addEventListener("click", function () {
+          document.getElementById("buttonCreateContentModuleIcon").innerHTML =
+            '<i style="font-size:24px" class="fa">&#xf067;</i>';
+        });
+      // update data
+      function updateRecordContentModule(formData) {
+        selectedRowContentModule.cells[0].innerHTML = `<a href="#" class="btn btn-link mt-1 text-decoration-none">
+                                                          ${formData.inputCreateContentModule}
+                                                        </a>`;
+      }
+      // delete data
+      function deleteRecordContentModule(delData) {
+        if (confirm("Bạn có muốn xóa nội dung này không?")) {
+          row = delData.parentElement.parentElement;
+          document
+            .getElementById("storeListContentModule")
+            .deleteRow(row.rowIndex);
+        }
+        resetDataFormContentModule();
+      }
+      // reset data
+      function resetDataFormContentModule() {
+        document.getElementById("inputCreateContentModule").value = "";
+      }
+
+      // Collapse #2: Lộ trình khóa học
+      $(document).ready(function () {
+        $("#courseRouteBtn").click(function () {
+          $("#courseRouteLectureDetail").toggle();
+        });
+      });
 
       // format type time
       // var timepicker = new TimePicker("startTime", {
@@ -2000,6 +2207,8 @@
       var selectedTimeClassRow = null;
       let rowIndexId = 1;
       let tempDate = [];
+      let tempDate1 = [];
+      let tempDate2 = [];
       let indexTime = [];
       let comCheck = [];
       function onFormSubmitTimeClass() {
@@ -2047,6 +2256,7 @@
 
         //Khai báo biến thời gian bắt đầu và kết thúc
         var hoursStart = document.getElementById("startTime").value;
+        var hS = hoursStart.split(":");
 
         var hoursEnd = document.getElementById("endTime").value;
         //xử lý chuỗi
@@ -2144,6 +2354,7 @@
                     sT[0] * 1 + sT[1] / 60 <= hS[0] * 1 + hS[1] / 60 &&
                     hS[0] * 1 + hS[1] / 60 <= eT[0] * 1 + eT[1] / 60
                   ) {
+                    alert("Thời gian đăng ký bị trùng lặp!");
                     alert("Thời gian đăng ký bị trùng lặp! xxx");
 
                     return;
@@ -2162,6 +2373,15 @@
           tempDate.push(tkb[i]);
         }
         comCheck.push(dateCheck);
+        // console kiểm tra
+
+        //console.log("tbk", tkb);
+        //console.log("tempDate", tempDate.length);
+        //console.log("val", val);
+        //console.log("arrs", arrs);
+        //console.log("check", comCheck);
+        //console.log("data.startTime", data.startTime);
+        // kiểm tra yêu cầu nhập tất cả số liệu
 
         if (
           document.getElementById("startTime").value === "" ||
@@ -2210,9 +2430,11 @@
         selectedTimeClassRow = tds.parentElement.parentElement;
 
         var chktnt = selectedTimeClassRow.cells[3].innerText;
+        console.log(chktnt.length);
 
         indexTime[0] =
           selectedTimeClassRow.cells[1].innerText +
+          "," +
           selectedTimeClassRow.cells[2].innerText;
         indexTime[1] = selectedTimeClassRow.cells[3].innerText;
         document.getElementById("startTime").value =
@@ -2249,7 +2471,9 @@
           selectedTimeClassRow.cells[4].innerText;
         document.getElementById("startTimeExpected").value =
           selectedTimeClassRow.cells[5].innerText;
+        ///////////////////////////////////////kiểm tra ////////////////////////////////////////
 
+        /////////////////////////////////////////////////////////////////////////////////////
         // change button to save
         document.getElementById(
           "createClassBtn"
@@ -2264,6 +2488,8 @@
         });
       // update data
       function updateRecordTimeClass(formData) {
+        selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
+        selectedTimeClassRow.cells[2].innerHTML = formData.endTime;
         //Lấy dữ liệu từ bản và show lại trên thanh input
 
         var arrs = [];
@@ -2312,7 +2538,7 @@
         let hSEDate = [];
         hSEDate[0] = hoursStart + "," + hoursEnd;
         hSEDate[1] = val;
-        console.log("hSEDate || comCheck", val);
+
         //Lấy vị trí thời gian
         var lct = 0;
         for (let i = 0; i < comCheck.length; i++) {
@@ -2415,31 +2641,63 @@
         selectedTimeClassRow.cells[4].innerHTML = formData.slot;
         selectedTimeClassRow.cells[5].innerHTML = formData.startTimeExpected;
 
-        comCheck = comCheck.filter(function (element) {
-          return element !== comCheck[lct];
-        });
         var delTempDate = comCheck[lct];
-        var arrDate = delTempDate[0][1];
-        tempDate = tempDate.filter(
-          (item) =>
-            !arrDate.includes(item) ||
-            arrDate.indexOf(item) === arrDate.lastIndexOf(item)
-        );
+
+        if (indexTime != "") {
+          var arrDate = indexTime[1].split(",");
+        }
+
+        tempDate = comCheckDate(tempDate, arrDate);
+        comCheck = deleteArrr(comCheck, delTempDate);
 
         comCheck.push(hSEDate);
-
-        console.log("comcindexTimeheck", indexTime);
-        console.log("temdate", tempDate);
-        console.log("comCheck", comCheck);
+      }
+      //
+      function comCheckDate(arr, check) {
+        const indices = {};
+        arr.forEach((event, index) => {
+          if (!indices[event]) {
+            indices[event] = [];
+          }
+          indices[event].push(index);
+        });
+        check.forEach((event) => {
+          if (indices[event]) {
+            arr[indices[event][0]] = "Trung";
+          }
+        });
+        return arr.filter((event) => event !== "Trung");
       }
       // delete data
       function handleDelClass(delData) {
         if (confirm("Bạn có muốn xóa lớp học này không?")) {
           row = delData.parentElement.parentElement;
+          var schedule = row.cells[3].innerText.split(",");
+          tempDate = comCheckDate(tempDate, schedule);
+          var dataDate = [];
+          dataDate[0] = row.cells[1].innerText + "," + row.cells[2].innerText;
+
+          dataDate[1] = row.cells[3].innerText;
+
+          comCheck = deleteArrr(comCheck, dataDate);
+
           document.getElementById("storeListTimeClass").deleteRow(row.rowIndex);
         }
 
         resetDataFormClass();
+      }
+      function deleteArrr(comCheck, dataDate) {
+        var lct = 0;
+        for (let i = 0; i < comCheck.length; i++) {
+          if (
+            comCheck[i][0] === dataDate[0] &&
+            comCheck[i][1] === dataDate[1]
+          ) {
+            lct = i;
+          }
+        }
+
+        return comCheck.filter((event) => event !== comCheck[lct]);
       }
       // reset data
       function resetDataFormClass() {
@@ -2595,38 +2853,5 @@
       print_country("country");
     </script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script type="text/javascript" src="./assets/js/jquery.edittreetable.js"></script>
-
-    <!-- Collapse #2 (Tree view) -->
-    <script type="text/javascript">
-      var data = [{
-        // id: 1, name: "Front-end Development", pid: 0, innercode: "1A"
-      }];
-      
-      // GET data from input
-      $("#bs-treeetable").bstreetable({
-        data: data,
-        // maintitle: "My skills",
-        nodeaddCallback: function (data, callback) {
-          console.log('data', data)
-          // alert(JSON.stringify(data));
-          //do your things then callback
-          // callback({ id: 18, name: data.name, innercode: "ttttt", pid: data.pid });
-        },
-        noderemoveCallback: function (data, callback) {
-          // alert(JSON.stringify(data));
-          //do your things then callback
-          callback();
-        },
-        nodeupdateCallback: function (data, callback) {
-          // alert(JSON.stringify(data));
-          //do your things then callback
-          // callback();
-        }
-      }
-      );
-  
-    </script>
   </body>
 </html>
