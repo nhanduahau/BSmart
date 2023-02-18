@@ -2434,6 +2434,7 @@
 
         indexTime[0] =
           selectedTimeClassRow.cells[1].innerText +
+          "," +
           selectedTimeClassRow.cells[2].innerText;
         indexTime[1] = selectedTimeClassRow.cells[3].innerText;
         document.getElementById("startTime").value =
@@ -2537,7 +2538,7 @@
         let hSEDate = [];
         hSEDate[0] = hoursStart + "," + hoursEnd;
         hSEDate[1] = val;
-        console.log("hSEDate || comCheck", val);
+
         //Lấy vị trí thời gian
         var lct = 0;
         for (let i = 0; i < comCheck.length; i++) {
@@ -2641,24 +2642,15 @@
         selectedTimeClassRow.cells[5].innerHTML = formData.startTimeExpected;
 
         var delTempDate = comCheck[lct];
-        console.log("temdate xxx", comCheck);
+
         if (indexTime != "") {
           var arrDate = indexTime[1].split(",");
         }
 
-        console.log("delTempDate", arrDate);
         tempDate = comCheckDate(tempDate, arrDate);
-        console.log("temdate", tempDate);
+        comCheck = deleteArrr(comCheck, delTempDate);
 
-        comCheck = comCheck.filter(function (element) {
-          return element !== comCheck[lct];
-        });
-
-        // comCheck.push("arrDate", arrDate);
-
-        console.log("comcindexTimeheck", indexTime);
-
-        console.log("comCheck", comCheck);
+        comCheck.push(hSEDate);
       }
       //
       function comCheckDate(arr, check) {
@@ -2686,37 +2678,26 @@
           dataDate[0] = row.cells[1].innerText + "," + row.cells[2].innerText;
 
           dataDate[1] = row.cells[3].innerText;
-          var lct = 0;
-          if (comCheck.length === dataDate.length) {
-            if (dataDate[0] === comCheck[0] && dataDate[1] === comCheck[1]) {
-              comCheck = [];
-            }
-          }
-          for (let i = 0; i < comCheck.length; i++) {
-            console.log("vxxxt");
-            if (
-              comCheck[i][0] === dataDate[0] &&
-              comCheck[i][1] === dataDate[1]
-            ) {
-              lct = i;
-              console.log("vt", lct);
-            }
-            lct = undefined;
-          }
 
-          comCheck = comCheck.filter(function (element) {
-            return element !== comCheck[lct];
-          });
+          comCheck = deleteArrr(comCheck, dataDate);
 
-          console.log(schedule);
-
-          console.log(dataDate);
-          console.log(comCheck);
-          console.log(tempDate);
           document.getElementById("storeListTimeClass").deleteRow(row.rowIndex);
         }
 
         resetDataFormClass();
+      }
+      function deleteArrr(comCheck, dataDate) {
+        var lct = 0;
+        for (let i = 0; i < comCheck.length; i++) {
+          if (
+            comCheck[i][0] === dataDate[0] &&
+            comCheck[i][1] === dataDate[1]
+          ) {
+            lct = i;
+          }
+        }
+
+        return comCheck.filter((event) => event !== comCheck[lct]);
       }
       // reset data
       function resetDataFormClass() {
