@@ -255,6 +255,7 @@
 .course-route-title-name {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 22px;
 }
 
 #titleModule {
@@ -302,21 +303,16 @@
   }
 }
 
-// .course-route-show-lecture {
-//   p {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     line-height: 26px;
-//     color: #333;
-
-//     &:hover {
-//       color: #ff630e;
-//       opacity: 0.8;
-//       transition: 0.3s all;
-//     }
-//   }
-// }
+.select2 {
+  &:hover {
+    // color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    border-radius: 4px;
+  }
+}
 
 .nested {
   display: none;
