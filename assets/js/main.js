@@ -22,12 +22,12 @@ $(document).ready(function () {
   // ----------------------------------------------------------------
 
   // Open modal login
-  $("#loginFormClose").click(function (event) {
-    $("#loginFormModal").css("top", "-100%");
-  });
-  $("#loginFormOpen").click(function (event) {
-    $("#loginFormModal").css("top", "0");
-  });
+  // $("#loginFormClose").click(function (event) {
+  //   $("#loginFormModal").css("top", "-100%");
+  // });
+  // $("#loginFormOpen").click(function (event) {
+  //   $("#loginFormModal").css("top", "0");
+  // });
   // ----------------------------------------------------------------
 
   // Scorll smooth

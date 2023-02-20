@@ -600,8 +600,8 @@ div.swiper-button-prev:after {
 }
 .header-cart .cart-total-number {
   position: absolute;
-  right: -15px;
-  top: -6px;
+  right: -4px;
+  top: -24px;
   background-color: #ff630e;
   color: #fff;
   border-radius: 50%;
@@ -611,6 +611,18 @@ div.swiper-button-prev:after {
   height: 20px;
   line-height: 20px;
   text-align: center;
+}
+
+.icon-shopping-cart {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+}
+
+.icon-logo {
+  width: 190px;
+  height: 120px;
+  object-fit: cover;
 }
 
 .banner {
@@ -1278,6 +1290,18 @@ div.swiper-button-prev:after {
   visibility: visible;
   z-index: 1000;
   bottom: 30%;
+}
+
+.icon-shopping-cart {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+}
+
+.icon-logo {
+  width: 190px;
+  height: 120px;
+  object-fit: cover;
 }
 
 .header-mobile-logo a {
@@ -2621,6 +2645,18 @@ div.swiper-button-prev:after {
   background-color: #ff630e;
   color: white;
   border: 0px solid;
+}
+
+.icon-shopping-cart {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+}
+
+.icon-logo {
+  width: 190px;
+  height: 120px;
+  object-fit: cover;
 }
 
 .blog-detail-wrapper .banner__blog-detail {
