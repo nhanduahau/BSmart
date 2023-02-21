@@ -75,7 +75,7 @@
         
     <!-- import ckeditor -->
     <!-- <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script> -->
-    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/decoupled-document/ckeditor.js"></script>
+    <script src="ckeditor\ckeditor.js"></script>
   </head>
   <body>
     <!-- Preloader start -->
@@ -147,9 +147,9 @@
             </div>
             <ul class="contact-info">
               <li class="mb-3">
-                <img src="./assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> bsmart@gmail.com
+                <i class="fa fa-envelope"></i> bsmart@gmail.com
               </li>
-              <li><img src="./assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> +98 946005077</li>
+              <li><i class="fa fa-phone"></i> +98 946005077</li>
             </ul>
             <ul class="social-list">
               <li>
@@ -248,9 +248,9 @@
               <div class="header-contact-info">
                 <ul>
                   <li class="mb-3">
-                    <img src="./assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> bsmart@gmail.com
+                    <i class="fa fa-envelope"></i> bsmart@gmail.com
                   </li>
-                  <li><img src="./assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> +98 946005077</li>
+                  <li><i class="fa fa-phone"></i> +98 946005077</li>
                 </ul>
               </div>
               <!-- End header contact info -->
@@ -452,11 +452,11 @@
                     </li>
                     <li>
                       <span
-                        ><img src="./assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">mentor@gmail.com</span
+                        ><i class="fa fa-envelope"></i>mentor@gmail.com</span
                       >
                     </li>
                     <li>
-                      <span><img src="./assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 0946005077</span>
+                      <span><i class="fa fa-phone"></i> 0946005077</span>
                     </li>
                     <li>
                       <span
@@ -935,7 +935,7 @@
                           id="multiCollapseTwo"
                           class="collapse multi-collapse show p-4"
                         >
-                          <!-- Title course -->
+                          <!-- Title- course -->
                           <div
                             class="d-flex"
                           >
@@ -944,16 +944,10 @@
                               id="routeCourseTitleName"
                             ></h1>
                           </div>
-
-                          <!-- The toolbar will be rendered in this container. -->
-                          <div id="toolbar-container"></div>
-
-                          <!-- add ckeditor -->
-                          <div id="editor" name="editor">
-                            <p>Nhập lộ trình khóa học...</p>
-                          </div>
-                          <form id="myFormCkeditor" name="myFormCkeditor">
-                          </form>
+                          <textarea name="editor1"></textarea>
+                          <script>
+                            CKEDITOR.replace( 'editor1' );
+                          </script>                                               
                           <button class="btn btn-primary mt-4 mb-4 float-end" onclick="event.preventDefault(); handleGetData()">Lưu</button>
                         </div>
                     </div>
@@ -1297,15 +1291,15 @@
               <div class="footer-contact">
                 <h4>Liên hệ với chúng tôi</h4>
                 <li>
-                  <img src="./assets/images/icon-location.png" class="icon-location" alt="icon-location">
+                  <i class="fa fa-map-marker"></i>
                   <p class="m-0">260/19 Tân Binh, Hồ Chí Minh</p>
                 </li>
                 <li>
-                  <img src="./assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
+                  <i class="fa fa-envelope"></i>
                   <p class="m-0">bsmart@gmail.com</p>
                 </li>
                 <li>
-                  <img src="./assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
                   <p class="m-0">+98 946005077</p>
                 </li>
               </div>
@@ -2155,7 +2149,6 @@
     <script language="javascript">
       print_country("country");
     </script>
-    <script type="text/javaScript" src="./assets/js/ckeditor.js"></script>
     <script type="text/javaScript" src="./assets/js/select2.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
