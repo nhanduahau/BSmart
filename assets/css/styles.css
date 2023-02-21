@@ -1304,6 +1304,31 @@ div.swiper-button-prev:after {
   object-fit: cover;
 }
 
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  margin-left: -16px;
+}
+
+.icon-location {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+}
+
+.icon-gmail {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  margin-left: 10px;
+  margin-right: 14px;
+}
+
+.header-contact-info li {
+  display: flex;
+  align-items: center;
+}
+
 .header-mobile-logo a {
   color: #0e0a38;
 }
