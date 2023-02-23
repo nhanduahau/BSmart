@@ -1635,6 +1635,12 @@ div.swiper-button-prev:after {
   color: #fff;
 }
 
+.icon-title-course {
+  width: 82px;
+  height: 82px !important;
+  object-fit: cover;
+}
+
 .course-detail-wrapper .banner-course-detail {
   background: url(../images/banner-2.jpg);
   background-size: cover;
