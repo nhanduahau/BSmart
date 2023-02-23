@@ -25,6 +25,10 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin: 0 auto 10px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  width: 100%;
 }
 .btn-primary-custom:hover {
   color: #ff630e;
@@ -1558,10 +1562,6 @@ div.swiper-button-prev:after {
   box-shadow: 0 0 10px rgba(51, 51, 51, 0.2);
   transition: all 0.3s;
 }
-.courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom img {
-  height: 150px;
-  object-fit: cover;
-}
 .courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom .card-title {
   min-height: 40px;
 }
@@ -1633,6 +1633,30 @@ div.swiper-button-prev:after {
 .courses-wrapper .course-content-container .courses-list-content .course-pagination ul li .active {
   background-color: #ff630e;
   color: #fff;
+}
+
+.icon-time {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.icon-user {
+  width: 12px !important;
+  height: 10px !important;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.icon-V {
+  width: 12px !important;
+  height: 10px !important;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.mark {
+  background-color: transparent;
 }
 
 .course-detail-wrapper .banner-course-detail {

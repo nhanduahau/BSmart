@@ -119,10 +119,6 @@
             box-shadow: 0 0 10px rgb(51 51 51 / 20%);
             transition: all 0.3s;
           }
-          img {
-            height: 150px;
-            object-fit: cover;
-          }
           .card-title {
             min-height: 40px;
             a {
@@ -205,4 +201,24 @@
       }
     }
   }
+}
+.icon-time {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+.icon-user{
+  width: 12px !important;
+  height: 10px !important;
+  object-fit: cover;
+  display: inline-block;
+}
+.icon-V{
+  width: 12px !important;
+  height: 10px !important;
+  object-fit: cover;
+  display: inline-block;
+}
+.mark {
+  background-color: transparent;
 }
