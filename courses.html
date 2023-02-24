@@ -416,13 +416,17 @@
           <div class="row">
             <div class="col-lg-3 col-md-5">
               <div class="course-sidebar">
+                <!-- Search -->
                 <form action="#" method="post" class="course-sidebar-search">
                   <input
+                    id="input-search-course"
                     type="text"
                     placeholder="Tìm kiếm ..."
                     class="form-control"
-                  /><i class="fa fa-search"></i>
+                  />
+                  <i class="fa fa-search icon-search-btn" onclick="event.preventDefault(); handleSearchCourseBtn()"></i>
                 </form>
+
                 <form action="#" method="post" class="category__course tag_r">
                   <div class="d-flex align-items-center">
                     <h3 class="me-2" onclick="showMore(`showLvMobile`)">
@@ -536,7 +540,8 @@
                     </div>
                   </div>
                 </form>
-                <form action="#" method="post" class="tag__form tag_r">
+                <!-- Hide -->
+                <form action="#" method="post" class="tag__form tag_r" style="display: none;">
                   <h3 onclick="showMore(`showHTMobi`)">Hình thức</h3>
                   <div id="showHTMobi" class="tag__course d-xs-none">
                     <div>
@@ -551,7 +556,7 @@
                     </div>
                   </div>
                 </form>
-                <form action="#" method="post" class="tag__location tag_r">
+                <form action="#" method="post" class="tag__location tag_r" style="display: none;">
                   <h3 onclick="showMore(`showLocalMobi`)">Khu vực</h3>
                   <div id="showLocalMobi" class="tag__course d-xs-none">
                     <div>
@@ -635,6 +640,7 @@
                     </div>
                   </div>
                 </form>
+                <!-- Hide -->
               </div>
             </div>
             <div class="col-lg-9 col-md-7">
@@ -655,76 +661,10 @@
                     </select>
                   </form>
                 </div>
+                <!-- render course list -->
                 <div class="main-courses-list mt-3">
-                  <div class="row">
-                    <div class="col-lg-4 mb-3">
-                      <div class="card card-course-custom position-relative">
-                        <div class="price-cost">1.200.000 đ</div>
-                        <img
-                          src="./assets/images/front-end-course.png"
-                          class="card-img-top"
-                          alt="hinh-anh-front-end-banner"
-                        />
-                        <div class="card-body position-relative">
-                          <img src="./assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
-                          <h5 class="card-title d-flex align-items-center">
-                            <a href="./course-detail.html">Front End Basic</a>
-                            <img src="./assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
-                          </h5>
-                          <p class="sub-title">Mentor Cường</p>
-                          <p class="description">
-                            Khóa học Frontend là quy trình sử dụng các ngôn ngữ
-                            HTML, CSS, JavaScript để thiết kế, xây dựng giao
-                            diện cho trang web hoặc ứng dụng web, giúp người
-                            dùng có thể xem và tương tác trực tiếp trên đó. Mục
-                            tiêu của việc thiết kế trang web là giúp người dùng
-                            dễ dàng sử dụng khi mở trang web.
-                          </p>
-                          <div class="testi-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                          </div>
-                          <div class="feedback-time">
-                            <span class="time">
-                              <img src="assets\images\clock-time.png" class="icon-time" alt="hinh-anh-front-end-icontime" style="display: inline-block;">
-                            <i class="cl-icon-clock" ></i>20hr
-                            </span>
-                            <span class="time">
-                              <img src="assets\images\user.png" class="icon-user" alt="hinh-anh-front-end-iconuser" style="display: inline-block;">
-                            <i class="cl-icon-user" ></i>106 học viên
-                            </span>
-                            <span class="mark">
-                              <img src="assets\images\check-mark.png" class="icon-V" alt="hinh-anh-front-end-iconV" style="display: inline-block;">
-                            <i class="cl-icon-V" ></i>26 Slot/cour
-                            </span>
-                          </div>                       
-                          <hr />
-                          <div
-                            class="d-flex justify-content-between align-items-center"
-                          >
-                            <span class="cost">1,200,000 VND</span>
-                          </div>
-                          <div id="btnShow">
-                            <a
-                            id="linkSign"
-                            href="./course-detail.html"
-                            class="btn btn-primary-custom"
-                            >Xem chi tiết</a
-                            >
-                            <a
-                              id="linkIntro"
-                              href="#"
-                              class="btn btn-outline-secondary-custom w-100 p-3"
-                              >Mã giới thiệu</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
+                  <div class="row" id="render-course-list">
+                    <!-- <div class="col-lg-4 mb-3">
                       <div class="card card-course-custom position-relative">
                         <div class="price-cost">1.200.000 đ</div>
                         <img
@@ -735,7 +675,7 @@
                         <div class="card-body position-relative">
                           <img src="./assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
                           <h5 class="card-title d-flex align-items-center">
-                            <a href="./course-detail.html">ReactJS Basic</a>
+                            <a href="./course-detail.html" id="name-course">ReactJS Basic</a>
                             <img src="./assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
                           </h5>
                           <p class="sub-title">Mentor Cường</p>
@@ -772,7 +712,6 @@
                           <div
                             class="d-flex justify-content-between align-items-center"
                           >
-                            <span class="cost">2,000,000 VND</span>
                           </div>
                           <div id="btnShow">
                             <a
@@ -790,8 +729,8 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
+                    </div> -->
+                    <!-- <div class="col-lg-4 mb-3">
                       <div class="card card-course-custom position-relative">
                         <div class="price-cost">1.200.000 đ</div>
                         <img
@@ -842,7 +781,6 @@
                           <div
                             class="d-flex justify-content-between align-items-center"
                           >
-                            <span class="cost">1,200,000 VND</span>
                           </div>
                           <div id="btnShow">
                             <a
@@ -860,8 +798,8 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
+                    </div> -->
+                    <!-- <div class="col-lg-4 mb-3">
                       <div class="card card-course-custom position-relative">
                         <div class="price-cost">1.200.000 đ</div>
                         <img
@@ -872,7 +810,7 @@
                         <div class="card-body position-relative">
                           <img src="./assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
                           <h5 class="card-title d-flex align-items-center">
-                            <a href="./course-detail.html">ReactJS Expert</a>
+                            <a href="./course-detail.html" id="name-course">ReactJS Expert</a>
                             <img src="assets\images\ANT 04_ICON.png" class="icon-title-course" alt="icon-title-course">
                           </h5>
                           <p class="sub-title">Mentor Cường</p>
@@ -909,7 +847,6 @@
                           <div
                             class="d-flex justify-content-between align-items-center"
                           >
-                            <span class="cost">3,000,000 VND</span>
                           </div>
                           <div id="btnShow">
                             <a
@@ -927,8 +864,8 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
+                    </div> -->
+                    <!-- <div class="col-lg-4 mb-3">
                       <div class="card card-course-custom position-relative">
                         <div class="price-cost">1.200.000 đ</div>
                         <img
@@ -939,7 +876,7 @@
                         <div class="card-body position-relative">
                           <img src="./assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
                           <h5 class="card-title d-flex align-items-center">
-                            <a href="./course-detail.html">PHP Basic</a>
+                            <a href="./course-detail.html" id="name-course">PHP Basic</a>
                             <img src="./assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
                           </h5>
                           <p class="sub-title">Mentor Long</p>
@@ -974,7 +911,6 @@
                           <div
                             class="d-flex justify-content-between align-items-center"
                           >
-                            <span class="cost">1,000,000 VND</span>
                           </div>
                           <div id="btnShow">
                             <a
@@ -992,8 +928,8 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
+                    </div> -->
+                    <!-- <div class="col-lg-4 mb-3">
                       <div class="card card-course-custom position-relative">
                         <div class="price-cost">1.200.000 đ</div>
                         <img
@@ -1004,7 +940,7 @@
                         <div class="card-body position-relative">
                           <img src="./assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
                           <h5 class="card-title d-flex align-items-center">
-                            <a href="./course-detail.html">Devops Basic</a>
+                            <a href="./course-detail.html" id="name-course">Devops Basic</a>
                             <img src="./assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
                           </h5>
                           <p class="sub-title">Mentor Long</p>
@@ -1046,7 +982,6 @@
                           <div
                             class="d-flex justify-content-between align-items-center"
                           >
-                            <span class="cost">1,000,000 VND</span>
                           </div>
                           <div id="btnShow">
                             <a
@@ -1064,8 +999,8 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
+                    </div> -->
+                    <!-- <div class="col-lg-4 mb-3">
                       <div class="card card-course-custom position-relative">
                         <div class="price-cost">1.200.000 đ</div>
                         <img
@@ -1076,7 +1011,7 @@
                         <div class="card-body position-relative">
                           <img src="./assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
                           <h5 class="card-title d-flex align-items-center">
-                            <a href="./course-detail.html">.NET Core Basic</a>
+                            <a href="./course-detail.html" id="name-course">.NET Core Basic</a>
                             <img src="./assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
                           </h5>
                           <p class="sub-title">Mentor Long</p>
@@ -1111,7 +1046,6 @@
                           <div
                             class="d-flex justify-content-between align-items-center"
                           >
-                            <span class="cost">1,300,000 VND</span>
                           </div>
                           <div id="btnShow">
                             <a
@@ -1129,8 +1063,8 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
+                    </div> -->
+                    <!-- <div class="col-lg-4 mb-3">
                       <div class="card card-course-custom position-relative">
                         <div class="price-cost">1.200.000 đ</div>
                         <img
@@ -1141,7 +1075,7 @@
                         <div class="card-body position-relative">
                           <img src="./assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
                           <h5 class="card-title d-flex align-items-center">
-                            <a href="./course-detail.html">.NET Core MVC</a>
+                            <a href="./course-detail.html" id="name-course">.NET Core MVC</a>
                             <img src="assets\images\ANT 02_ICON.png" class="icon-title-course" alt="icon-title-course">
                           </h5>
                           <p class="sub-title">Mentor Long</p>
@@ -1177,7 +1111,6 @@
                           <div
                             class="d-flex justify-content-between align-items-center"
                           >
-                            <span class="cost">1,000,000 VND</span>
                           </div>
                           <div id="btnShow">
                             <a
@@ -1195,8 +1128,8 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-4 mb-3">
+                    </div> -->
+                    <!-- <div class="col-lg-4 mb-3">
                       <div class="card card-course-custom position-relative">
                         <div class="price-cost">1.200.000 đ</div>
                         <img
@@ -1207,7 +1140,7 @@
                         <div class="card-body position-relative">
                           <img src="./assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
                           <h5 class="card-title d-flex align-items-center">
-                            <a href="./course-detail.html">.NET Core API</a>
+                            <a href="./course-detail.html" id="name-course">.NET Core API</a>
                             <img src="assets\images\ANT 02_ICON.png" class="icon-title-course" alt="icon-title-course">
                           </h5>
                           <p class="sub-title">Mentor Long</p>
@@ -1241,7 +1174,6 @@
                           <div
                             class="d-flex justify-content-between align-items-center"
                           >
-                            <span class="cost">1,500,000 VND</span>
                           </div>
                           <div id="btnShow">
                             <a
@@ -1259,9 +1191,11 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
+                <!-- render course list -->
+
                 <div class="d-flex justify-content-center align-items-center">
                   <div class="course-pagination">
                     <ul>
@@ -1389,12 +1323,13 @@
     </div>
     <!--  Hidden Link Intro and Sign -->
     <script>
+      // new change
       var mentor = true; //temp
       var member = false; //temp
 
       let elements = document.querySelectorAll("#linkIntro");
       let elementsSign = document.querySelectorAll("#linkSign");
-      let cost = document.querySelectorAll(".cost");
+      // let cost = document.querySelectorAll(".cost");
 
       let memberLearned = [
         true,
@@ -1412,7 +1347,6 @@
       for (let i = 0; i < elements.length; i++) {
         if (mentor == true) {
           elements[i].style.display = "none";
-          cost[i].style.display = "none";
           elementsSign[i].style.marginTop = "26px";
           elementsSign[i].style.marginBottom = "26px";
         }
@@ -1430,6 +1364,7 @@
           //else Show Link Introduction for All student in class
         }
       }
+
       //Dropdown list
       function showMoreLocal(local, text, upIcon, downIcon) {
         var lct = document.getElementById(local);
@@ -1482,6 +1417,6 @@
     ></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
-    <script type="text/javascript" src="./assets/js/resgisterCourse.js"></script>
+    <script type="text/javascript" src="./assets/js/courseList.js"></script>
   </body>
 </html>

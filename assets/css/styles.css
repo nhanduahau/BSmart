@@ -1675,6 +1675,8 @@ div.swiper-button-prev:after {
 }
 
 .time {
+  display: flex;
+  align-items: center;
   margin-right: 6px;
 }
 
@@ -1690,21 +1692,18 @@ div.swiper-button-prev:after {
 .icon-time {
   width: 10px;
   height: 10px;
-  display: inline-block;
 }
 
 .icon-user {
   width: 10px !important;
   height: 10px !important;
   object-fit: cover;
-  display: inline-block;
 }
 
 .icon-V {
   width: 10px !important;
   height: 10px !important;
   object-fit: cover;
-  display: inline-block;
 }
 
 .mark {
@@ -1714,6 +1713,16 @@ div.swiper-button-prev:after {
 .card-img-top {
   width: 100%;
   height: 180px;
+}
+
+.icon-search-btn {
+  margin-right: 6px;
+}
+.icon-search-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  color: #ff630e !important;
+  transition: all 0.3s;
 }
 
 .course-detail-wrapper .banner-course-detail {
