@@ -65,6 +65,7 @@
           }
           </style>
         </div>
+        <br>
         <div class="card1">
           <style>
             .card1 {
@@ -74,8 +75,10 @@
               background: #e0e0e0;
               box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
               display: flex;
-              justify-content: center;
+              align-items: center;
+              justify-content: space-between;
               position: relative;
+              padding: 0 30px; /* đặt padding cho card1 để tạo khoảng cách giữa nội dung và khung avatar */
             }
             
             .avatar {
@@ -90,113 +93,89 @@
               /* thêm bóng đổ cho khung avatar */
               box-shadow: 0px 0px 10px #888888;
             }
+            
+            .content1 {
+               width: 40%;
+              display: flex;
+              justify-content: flex-start;
+              flex-wrap: wrap;
+            }
+            .title-payment-1 {
+              margin-left: 120px; /* tạo khoảng cách giữa avatar và nội dung */
+              display: flex;
+              justify-content: space-between;
+            }
+            .course-info {
+              margin-top: 10px;
+              white-space: nowrap;
+            }
+            .course-info1 {
+              margin-top: 10px;
+              white-space: nowrap;
+            }
+            .course-info:nth-child(3) {
+              margin-top: 15px;
+            }
+            .course-info1:nth-child(3) {
+              margin-top: 50px;
+            }
+            .left-content {
+              flex-grow: 2;
+              margin-bottom: -100px;
+            }
+            .right-content {
+              flex-grow: 2;
+              margin-left: 150px;
+            }
+
           </style>
+          
           <div class="avatar"></div>
-        </div>
-        
-        
-        <div class="payment-form">
-          <div class="discount-token">
-
-            <label for="discount-token" class="label-default">Gift card/Discount code</label>
-
-            <div class="wrapper-flex">
-
-              <input type="text" name="discount-token" id="discount-token" class="input-default">
-
-              <button>
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> Nhập
-                </span>
-              </button>
-              <style>
-              button {
-                border: 2px solid #24b4fb;
-                background-color: #24b4fb;
-                border-radius: 0.9em;
-                padding: 0.8em 1.2em 0.8em 1em;
-                transition: all ease-in-out 0.2s;
-                font-size: 16px;
-               }
-               
-               button span {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #fff;
-                font-weight: 600;
-               }
-               
-               button:hover {
-                background-color: #0071e2;
-               }
-                
-            </style>
+          
+          <div class="title-payment-1">
+            <div class="left-content">
+              <h2 style="text-align: left; margin-bottom: 0;">Tên khoá học:</h2>
+              <h2 style="text-align: left; margin-bottom: 0;" class="course-info1">Thông tin khóa học:</h2>
+              <h2 style="text-align: left; margin-bottom: 0;" class="course-info1"></h2>
+              <h2 style="text-align: left; margin-bottom: 0;" class="course-info1">Mentor:</h2>
+              <h2 style="text-align: left; margin-bottom: 0;" class="course-info1">Thời gian dự kiến mở lớp:</h2>
             </div>
-
+            <div class="right-content">
+              <h2 style="text-align: left; margin-bottom: 0;">Nhập mã giới thiệu:</h2>
+              <input type="text" autocomplete="off" name="text" class="input" placeholder="Nhập mã">
+              <h2 style="text-align: left; margin-bottom: 0;" class="course-info">Số tiền gốc:</h2>
+              <h2 style="text-align: left; margin-bottom: 0;" class="course-info">Số lượng:</h2>
+              <h2 style="text-align: left; margin-bottom: 0;" class="course-info">Giảm:</h2>
+              <h2 style="text-align: left; margin-bottom: 0;" class="course-info">Tổng tiền:</h2>
+            </div>
           </div>
-          <div class="payment-method">
+          
+          <style>
+            h2:first-child {
+              margin-bottom: 0;
+              margin-top: -10px; /* di chuyển lên trên */
+            }
+            h2 {
+              opacity: 0.75; /* giảm độ đậm của chữ xuống còn 50% */
+              font-size: 18px; /* giảm kích thước font chữ */
+              margin-top: -10px; /* di chuyển lên trên */
+            }
+          </style>
+          <div class="payment-form">
+            <div class="discount-token">
+              <div class="wrapper-flex">
 
-            <button class="method selected">
-              <ion-icon name="card"></ion-icon>
-
-              <span>Credit Card</span>
-
-              <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
-            </button>
-
-            <button class="method">
-              <ion-icon name="logo-paypal"></ion-icon>
-
-              <span>PayPal</span>
-
-              <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
-            </button>
-
+                  
+              </style>
+              </div>
+  
+            </div>
           </div>
 
-          <form action="#">
-
-            <div class="cardholder-name">
-              <label for="cardholder-name" class="label-default">Cardholder name</label>
-              <input type="text" name="cardholder-name" id="cardholder-name" class="input-default">
-            </div>
-
-            <div class="card-number">
-              <label for="card-number" class="label-default">Card number</label>
-              <input type="number" name="card-number" id="card-number" class="input-default">
-            </div>
-
-            <div class="input-flex">
-
-              <div class="expire-date">
-                <label for="expire-date" class="label-default">Expiration date</label>
-
-                <div class="input-flex">
-
-                  <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31"
-                    class="input-default">
-                  /
-                  <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12"
-                    class="input-default">
-
-                </div>
-              </div>
-
-              <div class="cvv">
-                <label for="cvv" class="label-default">CVV</label>
-                <input type="number" name="cvv" id="cvv" class="input-default">
-              </div>
-
-            </div>
-
-          </form>
-
+          
         </div>
 
-        <button class="btn btn-primary">
-          <b>Pay</b> $ <span id="payAmount">2.15</span>
-        </button>
+        
 
       </section>
 
@@ -205,54 +184,42 @@
         - cart section
       -->
       <section class="cart">
-
-        <div class="cart-item-box">
-          <h2 class="section-heading1">THÔNG TIN NGƯỜI MUA</h2>
+      <div class="cart-item-box">
+        <h2 class="section-heading1">THÔNG TIN NGƯỜI MUA</h2>
+        <style>
+          .section-heading1{
+            text-align: center;
+          }
+        </style>
+        <br>
+        <div class="two">
+          <h1 class="two-1" style="opacity: 5;">Tên:</h1>
+          <h1 class="two-1" style="opacity: 5;">Số điện thoại:</h1>
+          <h1 class="two-1" style="opacity: 5;">Email:</h1>
           <style>
-            .section-heading1{
-              text-align: center;
+            .two-1{
+              font-weight: normal;
             }
           </style>
-          <br>
-          <div class="two">
-            <h1 class="two-1" style="opacity: 0.8;">Tên:</h1>
-            <h1 class="two-1" style="opacity: 0.8;">Số điện thoại:</h1>
-            <h1 class="two-1" style="opacity: 0.8;">Email:</h1>
-            <style>
-              .two-1{
-                font-weight: normal;
-              }
-            </style>
-          </div>
+        </div>
+      </div>
+      <div class="amount">
+
+        <div class="subtotal">
+          <span>Số dư :</span> <span> <span id="subtotal">VND</span></span>
+        </div>
+        <div class="total">
+          <span>Thanh toán :</span> <span> <span id="total">VND</span></span>
         </div>
 
-        <div class="wrapper">
-
-          
-
-          <div class="amount">
-
-            <div class="subtotal">
-              <span>Subtotal</span> <span>$ <span id="subtotal">2.05</span></span>
-            </div>
-
-            <div class="tax">
-              <span>Tax</span> <span>$ <span id="tax">0.10</span></span>
-            </div>
-
-            <div class="shipping">
-              <span>Shipping</span> <span>$ <span id="shipping">0.00</span></span>
-            </div>
-
-            <div class="total">
-              <span>Total</span> <span>$ <span id="total">2.15</span></span>
-            </div>
-
-          </div>
-
+        <div class="tax">
+          <span>Thanh toán :</span> <span><span id="tax">VND</span></span>
         </div>
+        
 
-      </section>
+    </div>
+    </section>
+  
 
     </div>
 
