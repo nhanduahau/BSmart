@@ -65,9 +65,76 @@
           }
           </style>
         </div>
-
+        <div class="card1">
+          <style>
+            .card1 {
+              width: 100%;
+              height: 254px;
+              border-radius: 50px;
+              background: #e0e0e0;
+              box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+              display: flex;
+              justify-content: center;
+              position: relative;
+            }
+            
+            .avatar {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background: #fff;
+              position: absolute;
+              top: 50%;
+              left: 70px; /* sử dụng giá trị left để đặt khung avatar bên trái */
+              transform: translate(-50%, -50%);
+              /* thêm bóng đổ cho khung avatar */
+              box-shadow: 0px 0px 10px #888888;
+            }
+          </style>
+          <div class="avatar"></div>
+        </div>
+        
+        
         <div class="payment-form">
+          <div class="discount-token">
 
+            <label for="discount-token" class="label-default">Gift card/Discount code</label>
+
+            <div class="wrapper-flex">
+
+              <input type="text" name="discount-token" id="discount-token" class="input-default">
+
+              <button>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> Nhập
+                </span>
+              </button>
+              <style>
+              button {
+                border: 2px solid #24b4fb;
+                background-color: #24b4fb;
+                border-radius: 0.9em;
+                padding: 0.8em 1.2em 0.8em 1em;
+                transition: all ease-in-out 0.2s;
+                font-size: 16px;
+               }
+               
+               button span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-weight: 600;
+               }
+               
+               button:hover {
+                background-color: #0071e2;
+               }
+                
+            </style>
+            </div>
+
+          </div>
           <div class="payment-method">
 
             <button class="method selected">
@@ -140,9 +207,9 @@
       <section class="cart">
 
         <div class="cart-item-box">
-          <h2 class="section-heading">THÔNG TIN NGƯỜI MUA</h2>
+          <h2 class="section-heading1">THÔNG TIN NGƯỜI MUA</h2>
           <style>
-            .section-heading{
+            .section-heading1{
               text-align: center;
             }
           </style>
@@ -161,19 +228,7 @@
 
         <div class="wrapper">
 
-          <div class="discount-token">
-
-            <label for="discount-token" class="label-default">Gift card/Discount code</label>
-
-            <div class="wrapper-flex">
-
-              <input type="text" name="discount-token" id="discount-token" class="input-default">
-
-              <button class="btn btn-outline">Apply</button>
-
-            </div>
-
-          </div>
+          
 
           <div class="amount">
 

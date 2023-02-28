@@ -323,8 +323,6 @@
   
   .discount-token {
     padding: 40px var(--px);
-    border-top:    1px solid var(--gainsboro);
-    border-bottom: 1px solid var(--gainsboro);
   }
   
   .wrapper-flex {
