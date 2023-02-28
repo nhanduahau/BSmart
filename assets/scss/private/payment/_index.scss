@@ -1,0 +1,207 @@
+body {
+    background-color: #e0e0e0;
+}
+
+.fa-chevron-left {
+   margin-right: 10px;
+}
+
+.checkout-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+
+    .link {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .separator {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .section-heading {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: black;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        line-height: 1.4rem !important;
+    }
+
+    .card1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+      }
+
+      .card1-container {
+        background-color: #e0e0e0;
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .card1-inner {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .card1-info-header {
+        margin-bottom: 30px;
+        line-height: 1.2rem;
+      }
+
+      .card1-info-footer {
+        line-height: 1.2rem;
+      }
+
+      .card1-info h1 {
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      
+      .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        background: #e0e0e0;
+        margin-right: 10px;
+      }
+
+      .one {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            margin-top: 8px;
+        }
+      }
+      
+      // Total price
+      .card1-total-price {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 100px;
+        flex: 1;
+      }
+
+      .card1-total-price-code {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        h1 {
+            color: black;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+      }
+
+      .card1-total-price-code-input {
+        width: 26%;
+        box-shadow: 0 0 8px 0 rgb(112, 111, 111);
+        border-radius: 6px;
+        margin-left: 10px;
+        padding: 4px;
+      }
+
+      .fa-check-circle {
+        margin-left: 6px;
+        color: green;
+      }
+
+      .card1-total-price-cost {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        h1 {
+            color: black;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-left: 6px;
+            margin-right: 8px;
+        }
+      }
+
+      .card1-total-price-quantity {
+        display: flex;
+        align-items: center;
+
+        h1 {
+            color: black;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-left: 6px;
+            margin-right: 8px;
+        }
+      }
+
+      .card1-total-price-reduce {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        h1 {
+            color: black;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-left: 6px;
+            margin-right: 8px;
+        }
+      }
+
+      .card1-total-price-total-cost {
+        display: flex;
+        align-items: center;
+
+        h1 {
+            color: black;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-left: 6px;
+            margin-right: 8px;
+        }
+      }
+
+      .card1-total-price-btn-delete {
+        background-color: transparent;
+        color: #9e9b9b;
+        font-size: 1rem;
+        font-weight: bold;
+        border-bottom: 2px solid #ccc;
+        margin-left: 32px;
+
+        &:hover {
+            opacity: 0.8;
+            color: #fd7e14;
+        }
+      }
+}
+
+.cart-item-box {
+    background-color: #fff;
+}
