@@ -147,7 +147,7 @@
   .checkout {
     width: 70%;
     padding: 40px var(--px);  
-    background: var(--white);
+    /* background: var(--white); */
     border-right: 1px solid var(--gainsboro);
   }
   
