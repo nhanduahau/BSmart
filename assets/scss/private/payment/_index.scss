@@ -203,5 +203,36 @@ body {
 }
 
 .cart-item-box {
+    margin-top: 40px;
     background-color: #fff;
+    border-radius: 4px;
+
+    // Info people buy
+    .section-heading1 {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .two {
+      margin-left: 12px;
+      line-height: 1.6rem;
+
+      .two-1 {
+        font-weight: 400;
+      }
+    }
+
+    // Total course 
+    .total-course {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
 }
