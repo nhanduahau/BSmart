@@ -4644,8 +4644,18 @@ body {
   color: #fd7e14;
 }
 
+.section-cart-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.section-cart-container .card {
+  width: 30%;
+}
+
 .cart-item-box {
   margin-top: 40px;
+  padding: 20px;
   background-color: #fff;
   border-radius: 4px;
 }
@@ -4656,7 +4666,6 @@ body {
   font-weight: 500;
 }
 .cart-item-box .two {
-  margin-left: 12px;
   line-height: 1.6rem;
 }
 .cart-item-box .two .two-1 {
@@ -4665,11 +4674,92 @@ body {
 .cart-item-box .total-course {
   display: flex;
   flex-direction: column;
+  line-height: 1.8rem;
 }
 .cart-item-box .total-course h2 {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
+}
+.cart-item-box .total-course p {
+  color: #9e9b9b;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.cart-item-box .total-course .total-course-price {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.cart-item-box .total-course .total-course-payment-title {
+  margin-top: 14px;
+}
+.cart-item-box .total-course .total-course-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.cart-item-box .total-course .total-course-icon-item {
+  border-radius: 6px;
+  box-shadow: 0 0 8px 0 rgb(112, 111, 111);
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.cart-item-box .total-course .total-course-icon-item-btn {
+  padding: 8px;
+  background-color: transparent;
+}
+.cart-item-box .total-course .total-course-icon-item-btn:hover {
+  opacity: 0.8;
+}
+.cart-item-box .total-course .total-course-momo-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+.cart-item-box .total-course .total-course-cash {
+  display: flex;
+  flex-direction: column;
+}
+.cart-item-box .total-course .total-course-cash-item {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+.cart-item-box .total-course .total-course-cash-item .total-course-cash-balance-lbl {
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 40%;
+}
+.cart-item-box .total-course .total-course-cash-item .total-course-cash-balance {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.section-card-contact {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 400px;
+}
+.section-card-contact h2 {
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.section-card-contact h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.section-card-contact .section-card-contact-desc {
+  margin-top: 6px;
+  font-size: 1rem;
+  color: #9e9b9b;
+  text-align: center;
 }
 
 .footer {

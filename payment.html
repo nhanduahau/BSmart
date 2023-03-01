@@ -35,7 +35,6 @@
 
 <body>
 
-
   <!--
     - main container
   -->
@@ -220,12 +219,12 @@
           <!-- Render cart -->
       </section>
 
-
       <!--
         - cart section
       -->
-      <section class="cart">
-        <div class="cart-item-box">
+      <div class="section-card-container">
+        <section class="cart">
+          <div class="cart-item-box">
           <h2 class="section-heading1">THÔNG TIN NGƯỜI MUA</h2>
 
           <hr class="separator" />
@@ -243,42 +242,76 @@
           <!-- Total course -->
           <div class="total-course">
             <h2>TỔNG KHÓA HỌC</h2>
-          </div>
-        </div>
+            <p>Total</p>
+            <h2 class="total-course-price">1.250.000 đ</h2>
+            <p class="total-course-payment-title">Thanh toán bằng: </p>
 
-        <!-- <div class="amount">
-          <div class="subtotal">
-            <span>Số dư :</span> <span> <span id="subtotal">VND</span></span>
-          </div>
-          <div class="total">
-            <span>Thanh toán :</span> <span> <span id="total">VND</span></span>
-          </div>
+            <div class="total-course-icons">
+              <div class="total-course-icon-item">
+                <button class="total-course-icon-item-btn">
+                  <img src="./assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo">
+                </button>
+              </div>
+              <div class="total-course-icon-item">
+                <button class="total-course-icon-item-btn">
+                  <img src="./assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo">
+                </button>
+              </div>
+              <div class="total-course-icon-item">
+                <button class="total-course-icon-item-btn">
+                  <img src="./assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo">
+                </button>
+              </div>
+            </div>
 
-          <div class="tax">
-            <span>Thanh toán :</span> <span><span id="tax">VND</span></span>
-        </div> -->
-      
-      </section>
+            <p class="total-course-payment-title">Thanh toán bằng: </p>
+
+            <!-- payment cash -->
+            <div class="total-course-cash">
+              <div class="total-course-cash-item">
+                <p class="total-course-cash-balance-lbl">Số dư: </p>
+                <p class="total-course-cash-balance">4.000.000 đ</p>
+              </div>
+              <div class="total-course-cash-item">
+                <p class="total-course-cash-balance-lbl">Thanh toán: </p>
+                <p class="total-course-cash-balance">1.250.000 đ</p>
+              </div>
+              <div class="total-course-cash-item">
+                <p class="total-course-cash-balance-lbl">Còn lại: </p>
+                <p class="total-course-cash-balance">2.750.000 đ</p>
+              </div>
+
+              <!-- Button payment -->
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-success mt-4 total-course-cash-payment-btn fw-bold w-50 ">Thanh toán</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-card-contact">
+          <h2>TỔNG ĐÀI HỖ TRỢ</h2>
+
+          <hr class="separator" />
+
+          <h1>
+            <i class="fa fa-phone"></i> +98 946005077
+          </h1>
+          <p class="section-card-contact-desc">Lorem ipsum, dolor sit amet conse. We will are available...  Pls!!!!!</p>
+      </div>
     </div>
-
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="assets\js\payment,js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
+<!--
+  - custom js link
+-->
+<script src="assets\js\payment,js"></script>
+
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </html>
