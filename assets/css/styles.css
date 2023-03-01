@@ -4645,7 +4645,31 @@ body {
 }
 
 .cart-item-box {
+  margin-top: 40px;
   background-color: #fff;
+  border-radius: 4px;
+}
+.cart-item-box .section-heading1 {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.cart-item-box .two {
+  margin-left: 12px;
+  line-height: 1.6rem;
+}
+.cart-item-box .two .two-1 {
+  font-weight: 400;
+}
+.cart-item-box .total-course {
+  display: flex;
+  flex-direction: column;
+}
+.cart-item-box .total-course h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .footer {
