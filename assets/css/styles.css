@@ -1802,6 +1802,10 @@ body {
   width: 80%;
 }
 
+.separator-bottom {
+  border-bottom: 2px solid #ccc !important;
+}
+
 .checkout-container {
   background-color: #fff;
   padding: 20px;
@@ -1810,9 +1814,6 @@ body {
 .checkout-container .link {
   font-size: 1.4rem;
   font-weight: 500;
-}
-.checkout-container .separator {
-  border-bottom: 1px solid #ccc;
 }
 .checkout-container .section-heading {
   font-size: 1.2rem;
@@ -1971,7 +1972,7 @@ body {
   border-radius: 4px;
 }
 .cart-item-box .section-heading1 {
-  margin-top: 14px;
+  margin-top: 4px;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
@@ -2082,9 +2083,9 @@ body {
   float: left;
   background: rgb(18, 18, 36);
   border-radius: 10px;
-  margin-right: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   padding: 20px;
-  justify-content: flex-end;
 }
 .cart-item-box .total-course .two-2 {
   display: flex;
@@ -2308,7 +2309,7 @@ body {
 }
 
 .course-of-member-container {
-  width: 25%;
+  width: 30%;
   margin-top: 40px;
 }
 .course-of-member-container .course-of-member-inner {
