@@ -1947,18 +1947,6 @@ body {
   margin-left: 6px;
   margin-right: 8px;
 }
-.checkout-container .card1-total-price-btn-delete {
-  background-color: transparent;
-  color: #9e9b9b;
-  font-size: 1rem;
-  font-weight: bold;
-  border-bottom: 2px solid #ccc;
-  margin-left: 32px;
-}
-.checkout-container .card1-total-price-btn-delete:hover {
-  opacity: 0.8;
-  color: #fd7e14;
-}
 
 .section-cart-container {
   display: flex;
