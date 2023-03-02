@@ -616,27 +616,18 @@
                   </button>
                 </div>
                 <div class="total-course-icon-item">
-                  <button class="total-course-icon-item-btn-1" data-toggle="modal" data-target="#exampleModal">
+                  <button class="total-course-icon-item-btn-momo" id="btn-momo" data-toggle="modal" data-target="#exampleModal">
                     <img src="./assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo"> 
                   </button>
                   <!-- Modal -->
                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog mw-100 w-50" role="document">
                       <div class="modal-content">
-                        <div class="modal-body">
+                        <div class="modal-body m-0 p-0">
                           <div class="one1">
                             <h1 class="title-1" style="font-weight: bold;">Đơn hàng hết hạn sau:</h1>
                             <p><span id="countdown">100</span> s</p>
-                            <script>
-                              var count = 100;
-                              var countdown = document.getElementById("countdown");
-                              var interval = setInterval(function() {
-                                countdown.innerHTML = count;
-                                count--;
-                                if (count < 0) clearInterval(interval);
-                              }, 1000);
-                            </script>
-                  
+
                             <h1 class="title-1" style="font-weight: bold;">Cổng thanh toán:</h1>
                             <p class="text-1" style="color: white;">Momo</p>
                             <hr class="separator" />
@@ -650,26 +641,9 @@
                             <p class="text-1" style="color: white;">1001514518515515</p>
                             <hr class="separator" />
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay lại</button>
-                            <style>
-                              .one1{
-                                border-radius: 10px;
-                                height: 100%;
-                                margin-right: 20px;
-                                padding: 20px;
-                                justify-content: flex-end;
-                              }
-                            </style>
+                            
                           </div>
                           <div class="two-2" style="display: flex;">
-                            
-                          <style>
-                            .two-2 {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                              }
-                          </style>
                           <div class="icon-4">
                             <img src="./assets/images/icon-momo.png" class="total-course-momo-icon-12" alt="img-momo">
                             <img src="./assets/images/icon-momo.png" class="total-course-momo-icon-123" alt="img-momo">
@@ -956,6 +930,7 @@
     - ionicon link
   -->
   <script type="text/javascript" src="./assets/js/main.js"></script>
+  <script type="text/javascript" src="./assets/js/payment.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>

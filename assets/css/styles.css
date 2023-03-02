@@ -2028,6 +2028,13 @@ body {
 .cart-item-box .total-course .total-course-icon-item-btn:hover {
   opacity: 0.8;
 }
+.cart-item-box .total-course .total-course-icon-item-btn-momo {
+  padding: 8px;
+  background-color: transparent;
+}
+.cart-item-box .total-course .total-course-icon-item-btn-momo:hover {
+  opacity: 0.8;
+}
 .cart-item-box .total-course .total-course-icon-item-btn-1 {
   padding: 8px;
   background-color: transparent;
@@ -2059,7 +2066,6 @@ body {
 }
 .cart-item-box .total-course .modal-body {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .cart-item-box .total-course .modal-title {
@@ -2068,7 +2074,7 @@ body {
 }
 .cart-item-box .total-course .one1 h1,
 .cart-item-box .total-course .one1 p {
-  color: #FF9900; /* Thay đổi màu chữ thành màu cam */
+  color: #FF6600; /* Thay đổi màu chữ thành màu cam */
 }
 .cart-item-box .total-course .one1 h1:nth-of-type(2) {
   margin-bottom: 20px; /* Thêm khoảng cách 20px giữa dòng chữ "Cổng thanh toán" và phần hiển thị dữ liệu */
@@ -2080,10 +2086,15 @@ body {
 .cart-item-box .total-course .one1 {
   float: left;
   background: rgb(18, 18, 36);
-  margin-right: 70px;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 20px;
+  justify-content: flex-end;
 }
 .cart-item-box .total-course .two-2 {
-  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .cart-item-box .total-course .separator {
   border-top: 2px solid white; /* Thay đổi màu đường kẻ ngang thành màu cam */

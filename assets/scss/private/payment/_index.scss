@@ -347,6 +347,14 @@ body {
           opacity: 0.8;
         }
       }
+      .total-course-icon-item-btn-momo {
+        padding: 8px;
+        background-color: transparent;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
       .total-course-icon-item-btn-1 {
         padding: 8px;
         background-color: transparent;
@@ -380,7 +388,6 @@ body {
       }
       .modal-body {
         display: flex;
-        align-items: center;
         justify-content: center;
       }
       
@@ -391,7 +398,7 @@ body {
       
       .one1 h1,
       .one1 p {
-        color: #FF9900; /* Thay đổi màu chữ thành màu cam */
+        color: #FF6600	; /* Thay đổi màu chữ thành màu cam */
       }
       .one1 h1:nth-of-type(2) {
         margin-bottom: 20px; /* Thêm khoảng cách 20px giữa dòng chữ "Cổng thanh toán" và phần hiển thị dữ liệu */
@@ -403,10 +410,15 @@ body {
       .one1 {
         float: left;
         background: rgb(18, 18, 36);
-        margin-right: 70px;
+          border-radius: 10px;
+          margin-right: 20px;
+          padding: 20px;
+          justify-content: flex-end;
       }
       .two-2 {
-        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       
       
