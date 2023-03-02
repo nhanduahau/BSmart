@@ -14,15 +14,22 @@ btnMomo.addEventListener('click', function() {
     
 
 // xóa khóa học
-const cards = document.querySelectorAll(".card1, .card2");
-
-for (let i = 0; i < cards.length; i++) {
-  const deleteButton = document.createElement("button");
-  deleteButton.textContent = "Xóa";
-  deleteButton.classList.add("card1-total-price-btn-delete");
-  deleteButton.addEventListener("click", () => {
-    cards[i].remove();
+const cards = document.querySelectorAll(".card");
+cards.forEach((card) => {
+  card.addEventListener("mouseover", () => {
+    const deleteBtn = card.querySelector(".card1-total-price-btn-delete");
+    deleteBtn.style.display = "block";
   });
-  const cardTotalPrice = cards[i].querySelector(".card1-total-price-total-cost");
-  cardTotalPrice.appendChild(deleteButton);
-}
+  card.addEventListener("mouseout", () => {
+    const deleteBtn = card.querySelector(".card1-total-price-btn-delete");
+    deleteBtn.style.display = "none";
+  });
+});
+const deleteBtns = document.querySelectorAll(".card1-total-price-btn-delete");
+deleteBtns.forEach((deleteBtn) => {
+  deleteBtn.addEventListener("click", () => {
+    const card = deleteBtn.closest(".card1");
+    card.remove();
+  });
+});
+
