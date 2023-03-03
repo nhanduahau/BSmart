@@ -1,3 +1,114 @@
+// Render card
+let renderCardCourse = document.getElementById("render-card-courses");
+let totalCourseInPayment = document.getElementById("quantity-courses-payment");
+let html;
+let htmls;
+
+// fake Data
+let arrCourses = [
+  {
+    id: 1,
+    nameCourse: "Front end Basic",
+    desc: "T3-T4 (10:10)",
+    nameMentor: "Mentor Cường",
+    time: "22/12/2022 (10:10)",
+    balance: 1200000,
+    quantity: 1,
+  },
+  {
+    id: 2,
+    nameCourse: "Front end Basic Nâng Cao",
+    desc: "T6-T7 (02:02)",
+    nameMentor: "Mentor Cường",
+    time: "11/11/2022 (02:02)",
+    balance: 1500000,
+    quantity: 1,
+  },
+  {
+    id: 2,
+    nameCourse: "JavaScript Nâng Cao",
+    desc: "CN (12:12)",
+    nameMentor: "Mentor Cường",
+    time: "15/2/2022 (12:12)",
+    balance: 2200000,
+    quantity: 1,
+  },
+];
+
+htmls = arrCourses.map((course) => {
+  return `
+    <div class="card1-container mb-2 w-100 card-course-item-${course.id}">
+      <div class="card1-inner">
+        <div class="avatar"></div>
+
+        <div class="card1-info">
+          <div class="card1-info-header">
+            <div class="d-flex align-items-center">
+              <h1 class="me-2">Tên khóa học: </h1>
+              <p>${course.nameCourse}</p>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <h1 class="me-2">Thông tin khóa học: </h1>
+              <p>${course.desc}</p>
+            </div>
+          </div>
+
+          <div class="card1-info-footer">
+            <div class="d-flex align-items-center">
+              <h1 class="me-2">Mentor: </h1>
+              <p>${course.nameMentor}</p>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <h1 class="me-2">Thời gian dự kiến mở lớp: </h1>
+              <p>${course.time}</p>
+            </div>
+          </div>
+
+          <div class="card1-total-price">
+            <div class="card1-total-price-cost">
+              <h1>Số tiền gốc: </h1>
+              <p>${course.balance}</p>
+            </div>
+              
+            <div class="card1-total-price-quantity">
+              <h1>Số lượng: </h1>
+              <p>${course.quantity}</p>
+            </div>
+          </div>
+        </div>
+       
+        <div class="card1-total-price-total-cost">
+          <button class="card1-total-price-btn-delete" id="btn-del-card-course" onclick="handleDeleteCardCourse(${course.id})">Xóa</button>
+        </div>
+      </div>
+    </div>
+  `;
+});
+
+html = htmls.join("");
+renderCardCourse.innerHTML = html;
+// Render card
+
+// Total course in payment
+totalCourseInPayment.innerHTML = arrCourses.length;
+
+// delete card course
+function handleDeleteCardCourse(id) {
+  var cardCourseItem = document.querySelector(".card-course-item-" + id);
+  var card1Elements;
+
+  if (cardCourseItem) {
+    cardCourseItem.remove();
+
+    // update total course in payment
+    card1Elements = document.querySelectorAll(".card1-container");
+    totalCourseInPayment.innerHTML = card1Elements.length;
+  }
+}
+
+// Payment with momo
 var btnMomo = document.getElementById("btn-momo");
 var countDown = document.getElementById("countdown");
 
@@ -15,24 +126,24 @@ btnMomo.addEventListener("click", function () {
 });
 
 // xóa khóa học
-const cards = document.querySelectorAll(".card");
-cards.forEach((card) => {
-  card.addEventListener("mouseover", () => {
-    const deleteBtn = card.querySelector(".card1-total-price-btn-delete");
-    deleteBtn.style.display = "block";
-  });
-  card.addEventListener("mouseout", () => {
-    const deleteBtn = card.querySelector(".card1-total-price-btn-delete");
-    deleteBtn.style.display = "none";
-  });
-});
-const deleteBtns = document.querySelectorAll(".card1-total-price-btn-delete");
-deleteBtns.forEach((deleteBtn) => {
-  deleteBtn.addEventListener("click", () => {
-    const card = deleteBtn.closest(".card1");
-    card.remove();
-  });
-});
+// const cards = document.querySelectorAll(".card");
+// cards.forEach((card) => {
+//   card.addEventListener("mouseover", () => {
+//     const deleteBtn = card.querySelector(".card1-total-price-btn-delete");
+//     deleteBtn.style.display = "block";
+//   });
+//   card.addEventListener("mouseout", () => {
+//     const deleteBtn = card.querySelector(".card1-total-price-btn-delete");
+//     deleteBtn.style.display = "none";
+//   });
+// });
+// const deleteBtns = document.querySelectorAll(".card1-total-price-btn-delete");
+// deleteBtns.forEach((deleteBtn) => {
+//   deleteBtn.addEventListener("click", () => {
+//     const card = deleteBtn.closest(".card1");
+//     card.remove();
+//   });
+// });
 
 // đếm giây not success
 var btnNotSuccess = document.getElementById("notification-not-success-payment");
@@ -113,18 +224,18 @@ document.querySelector(".total-course-cash-balance-2").innerText =
 
 //đếm item
 // Lấy tất cả các phần tử có class="card-1"
-const card1Elements = document.querySelectorAll(".card1");
+// const card1Elements = document.querySelectorAll(".card1");
 
 // Đếm số lượng phần tử đó
-const card1Count = card1Elements.length;
+// const card1Count = card1Elements.length;
 
 // Tạo thẻ p và thêm nội dung số lượng vào đó
-const pElement = document.getElementById("so-luong-div"); //createElement('p');
-pElement.innerHTML = `Bạn có ${card1Count} khóa học trong giỏ hàng`;
+// const pElement = document.getElementById("so-luong-div"); //createElement('p');
+// pElement.innerHTML = `Bạn có ${card1Count} khóa học trong giỏ hàng`;
 
 // Thêm thẻ p vào phần tử có class="so-luong"
-const soLuongElement = document.querySelector(".so-luong");
-soLuongElement.appendChild(pElement);
+// const soLuongElement = document.querySelector(".so-luong");
+// soLuongElement.appendChild(pElement);
 
 // Show payment cash
 var btnPaymentCash = document.getElementById("total-course-icon-item-btn");
