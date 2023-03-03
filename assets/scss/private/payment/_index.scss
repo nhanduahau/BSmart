@@ -389,6 +389,8 @@ body {
         width: 100px; /* Thay đổi độ rộng của icon tùy ý */
         height: 100px; /* Thay đổi độ cao của icon tùy ý */
       }
+
+    }
       .modal-header {
         display: flex;
         align-items: center;
@@ -419,16 +421,16 @@ body {
         float: left;
         background: rgb(18, 18, 36);
           border-radius: 10px;
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-          // margin-left: 20px;
-          // margin-right: 20px;
+          margin-right: 90px;
           padding: 20px;
+          justify-content: flex-end;
+          font-size: 20px;
       }
       .two-2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-right: 70px;
       }
       
       
@@ -458,6 +460,11 @@ body {
       margin-left: 10px;
     }  
     .q{
+      color: #ee0033;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    .q-1{
       color: rgb(216 45 139);;
       font-weight: 700;
       font-size: 30px;
@@ -568,6 +575,23 @@ body {
     }
     // icon-đăng ký
     .btn-dk {
+      color:#ee0033;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 2.5px solid #ee0033;
+      padding: 10px 20px;
+      font-size: 30px;
+      font-weight: bold;
+      background: transparent;
+      position: relative;
+      transition: all 1s;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 10px;
+    }
+    .btn-dk-1 {
       color:rgb(216, 45, 139);
       text-transform: uppercase;
       text-decoration: none;
@@ -609,6 +633,9 @@ body {
     .color-title{
       color: rgb(216, 45, 139);
     }
+    .color-title-3{
+      color: #ee0033;
+    }
     
       // Cash
       .total-course-cash {
@@ -631,9 +658,17 @@ body {
           color: black;
           font-size: 1.2rem;
         }
+        .total-course-cash-balance-1 {
+          color: black;
+          font-size: 1.2rem;
+        }
+        .total-course-cash-balance-2 {
+          color: black;
+          font-size: 1.2rem;
+        }
 
       }
-    }
+    
 
 
 .section-card-contact {
@@ -724,5 +759,17 @@ body {
     }
   }
 }
-
+// paysuccess
+.modal-title-2{
+  margin: 0 auto;
+  color: #ee0033;
+  font-size: 25px;
+}
+.h1-success-1{
+  color: red;
+}
+.h1-success-2{
+  color:#FF6600 ;
+  font-weight: bold;
+}
 
