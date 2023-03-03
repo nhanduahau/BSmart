@@ -583,18 +583,41 @@
 
             </div>
 
-            <hr class="separator" />
-
             <!-- Total course -->
-            <div class="total-course">
+            <div class="total-course mt-2">
               <h2>TỔNG KHÓA HỌC</h2>
-              <p>Total</p>
-              <h2 class="total-course-price">1.250.000 VND</h2>
-              <p class="total-course-payment-title">Thanh toán bằng: </p>
 
+              <!-- Mã code -->
+              <div class="card1-total-price-code">
+                <h1>Nhập mã code: </h1>
+                <input type="text" class="card1-total-price-code-input w-50">
+                <i class="fa fa-check-circle"></i>
+              </div>
+
+              <!-- Bill -->
+              <div class="bill-member">
+                <div class="bill-member-item">
+                  <h3>Tạm tính: </h3>
+                  <h3 class="bill-member-item-price">200.000 đ</h3>
+                </div>
+                <div class="bill-member-item">
+                  <h3>Giảm giá: </h3>
+                  <h3 class="bill-member-item-price">0 đ</h3>
+                </div>
+                <hr class="separator-bill" />
+                <div class="bill-member-item">
+                  <h3>Tổng tiền: </h3>
+                  <h3 class="bill-member-item-price">200.000 đ</h3>
+                </div>
+              </div>
+
+              <!-- <p>Total</p>
+              <h2 class="total-course-price">1.250.000 VND</h2> -->
+
+              <p class="total-course-payment-title">Thanh toán bằng: </p>
               <div class="total-course-icons">
                 <div class="total-course-icon-item">
-                  <button class="total-course-icon-item-btn">
+                  <button class="total-course-icon-item-btn" id="total-course-icon-item-btn">
                     <img src="./assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo">
                   </button>
                 </div>
@@ -799,7 +822,7 @@
                 </div>
 
                 <div class="total-course-icon-item">
-                  <button class="total-course-icon-item-btn"id="btn-viettel-1" data-toggle="modal" data-target="#exampleModal3">
+                  <button class="total-course-icon-item-btn-viettel-pay"id="btn-viettel-1" data-toggle="modal" data-target="#exampleModal3">
                     <img src="assets\images\viettelpay.png" class="total-course-momo-icon" alt="img-momo">
                   </button>
                   <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -934,10 +957,9 @@
                 </div>
               </div>
 
-              <p class="total-course-payment-title">Thanh toán bằng: </p>
-
               <!-- payment cash -->
-              <div class="total-course-cash">
+              <div class="total-course-cash" id="total-course-cash-show" style="display: none;">
+                <p class="total-course-payment-title">Thanh toán bằng: </p>
                 <div class="total-course-cash-item">
                   <p class="total-course-cash-balance-lbl">Số dư: </p>
                   <p class="total-course-cash-balance">4.000.000 VND</p>
