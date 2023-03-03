@@ -1882,7 +1882,6 @@ body {
 .checkout-container .card1-total-price-code {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 .checkout-container .card1-total-price-code h1 {
   color: black;
@@ -2413,6 +2412,52 @@ body {
 
 .hidden-1 {
   display: none;
+}
+
+.card1-total-price-code {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.card1-total-price-code-input {
+  border: 1px solid #fd7e14;
+  border-radius: 4px;
+  margin: 0 4px;
+  padding-left: 4px;
+}
+.card1-total-price-code-input:focus {
+  outline: 1px solid #fd7e14;
+  border: 1px solid #fd7e14;
+}
+
+.fa-check-circle {
+  color: green;
+}
+
+.total-course-icon-item-btn-viettel-pay {
+  padding: 6px;
+  background-color: transparent;
+}
+
+.bill-member {
+  padding: 6px;
+  border: 0.1px dashed black;
+  border-radius: 6px;
+}
+
+.bill-member-item {
+  display: flex;
+  align-items: center;
+}
+
+.bill-member-item-price {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.separator-bill {
+  border-bottom: 1px solid black;
 }
 
 .course-detail-wrapper .banner-course-detail {
