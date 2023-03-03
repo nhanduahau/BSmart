@@ -159,7 +159,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-left: 20px;
+        margin-left: 60px;
+        line-height: 2rem;
+        // margin-bottom: 40px;
         flex: 1;
       }
 
@@ -243,6 +245,7 @@ body {
       .card1-total-price-total-cost {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
 
         h1 {
             color: black;
@@ -254,6 +257,13 @@ body {
             margin-left: 6px;
             margin-right: 8px;
         }
+
+        .card1-total-price-btn-delete {
+          &:hover {
+            opacity: 0.8;
+            color: #fd7e14;
+          }
+        }
       }
 
       // .card1-total-price-btn-delete {
@@ -264,10 +274,10 @@ body {
       //   border-bottom: 2px solid #ccc;
       //   margin-left: 32px;
 
-      //   &:hover {
-      //       opacity: 0.8;
-      //       color: #fd7e14;
-      //   }
+        // &:hover {
+        //     opacity: 0.8;
+        //     color: #fd7e14;
+        // }
       // }
 }
 
@@ -773,3 +783,16 @@ body {
   font-weight: bold;
 }
 
+// số lượng
+.so-luong {
+  position: relative;
+
+  #so-luong-div {
+    position: absolute;
+    top: -24px;
+    right: 2px;
+  }
+}
+.hidden-1 {
+  display: none;
+}

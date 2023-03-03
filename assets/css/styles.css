@@ -1875,7 +1875,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 20px;
+  margin-left: 60px;
+  line-height: 2rem;
   flex: 1;
 }
 .checkout-container .card1-total-price-code {
@@ -1945,6 +1946,7 @@ body {
 .checkout-container .card1-total-price-total-cost {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .checkout-container .card1-total-price-total-cost h1 {
   color: black;
@@ -1954,6 +1956,10 @@ body {
 .checkout-container .card1-total-price-total-cost p {
   margin-left: 6px;
   margin-right: 8px;
+}
+.checkout-container .card1-total-price-total-cost .card1-total-price-btn-delete:hover {
+  opacity: 0.8;
+  color: #fd7e14;
 }
 
 .section-cart-container {
@@ -2394,6 +2400,19 @@ body {
 .h1-success-2 {
   color: #FF6600;
   font-weight: bold;
+}
+
+.so-luong {
+  position: relative;
+}
+.so-luong #so-luong-div {
+  position: absolute;
+  top: -24px;
+  right: 2px;
+}
+
+.hidden-1 {
+  display: none;
 }
 
 .course-detail-wrapper .banner-course-detail {
