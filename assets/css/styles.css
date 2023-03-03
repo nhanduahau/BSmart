@@ -1824,9 +1824,6 @@ body {
   line-height: 1.4rem !important;
 }
 .checkout-container .card1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-top: 12px;
 }
 .checkout-container .card1-container {
@@ -1837,6 +1834,7 @@ body {
   border-radius: 8px;
 }
 .checkout-container .card1-inner {
+  position: relative;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -1845,11 +1843,10 @@ body {
   border-radius: 8px;
 }
 .checkout-container .card1-info-header {
-  margin-bottom: 30px;
-  line-height: 1.2rem;
+  line-height: 1.6rem;
 }
 .checkout-container .card1-info-footer {
-  line-height: 1.2rem;
+  line-height: 1.6rem;
 }
 .checkout-container .card1-info h1 {
   color: black;
@@ -1857,8 +1854,8 @@ body {
   font-weight: 500;
 }
 .checkout-container .avatar {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   border-radius: 8px;
   background: #e0e0e0;
   margin-right: 10px;
@@ -1875,8 +1872,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 60px;
-  line-height: 2rem;
   flex: 1;
 }
 .checkout-container .card1-total-price-code {
@@ -2458,6 +2453,19 @@ body {
 
 .separator-bill {
   border-bottom: 1px solid black;
+}
+
+.card1-total-price-total-cost {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#quantity-courses-payment {
+  margin: 0 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fd7e14;
 }
 
 .course-detail-wrapper .banner-course-detail {
