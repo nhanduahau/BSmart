@@ -1,14 +1,16 @@
 var btnMomo = document.getElementById('btn-momo')
-var countdown = document.getElementById("countdown");
-var count = 100;
+var countDown = document.getElementById("countdown");
 
 btnMomo.addEventListener('click', function() { 
+  var countMomo = 100;
     console.log('->', btnMomo)
 
     var interval = setInterval(function() {
-        countdown.innerHTML = count;
-        count--;
-        if (count < 0) clearInterval(interval);
+      countDown.innerHTML = countMomo;
+      countMomo--;
+        if (countMomo <= 0) {
+          clearInterval(interval);
+        }
     }, 1000);
 })
     
@@ -32,46 +34,53 @@ deleteBtns.forEach((deleteBtn) => {
     card.remove();
   });
 });
-// đếm giây payment success
-var btnSuccess = document.getElementById('btn-success')
-var countdown = document.getElementById("countdown-1");
-var count = 10;
-btnSuccess.addEventListener('click', function() { 
-  console.log('->', btn-success)
+
+// đếm giây not success
+var btnNotSuccess = document.getElementById('notification-not-success-payment')
+var countdownNotSuccess = document.getElementById("countdown-not-success");
+var modal = document.getElementById("modal");
+
+btnNotSuccess.addEventListener('click', function() { 
+  var countNotSuccess = 10;
+  
   var interval = setInterval(function() {
-    document.getElementById("countdown-1").innerHTML = count;
-    count--;
-    if (count < 0) {
+    countNotSuccess--;
+    countdownNotSuccess.innerHTML = countNotSuccess;
+    if (countNotSuccess <= 0) {
       clearInterval(interval);
-      // Thực hiện hành động khi đếm ngược kết thúc, ví dụ chuyển hướng trang
-      window.location.href = "";
+      // tắt modal đi
+      modal.classList.add("hidden-1");
     }
   }, 1000);
 })
 
-//   var btnSuccess = document.getElementById('btn-success')
-// var countdown = document.getElementById("countdown-1");
-// var count = 10;
 
-// btn-success.addEventListener('click', function() { 
-//     console.log('->', btn-success)
+// đếm giây payment success
+var btnSuccess = document.getElementById('notification-success-payment')
+var countdownSuccess = document.getElementById("countdown-success");
+btnSuccess.addEventListener('click', function() { 
+  var countSuccess = 10;
+  
+  var interval = setInterval(function() {
+    countSuccess--;
+    countdownSuccess.innerHTML = countSuccess;
 
-//     var interval = setInterval(function() {
-//       document.getElementById("countdown-1").innerHTML = count;
-//         count--;
-//         if (count < 0) {
-//         clearInterval(interval);
-//          // Thực hiện hành động khi đếm ngược kết thúc, ví dụ chuyển hướng trang
-//       window.location.href = "https://vnexpress.net/";
-//         }
-//     }, 1000);
-// })
-
+    if (countSuccess <= 0) {
+      clearInterval(interval);
+      // Thực hiện hành động khi đếm ngược kết thúc, ví dụ chuyển hướng trang
+      window.location.href = "http://127.0.0.1:5502/member-detail.html";
+    }
+    
+  }, 1000);
+})
 
 // Điều kiện lúc thanh toán
-function checkBalance(e) {
+var btnPayment = document.getElementById('total-course-cash-payment-btn')
+btnPayment.addEventListener('click', function(e) {
   e.preventDefault();
 
+  console.log('btn payment')
+  
   var balance = document.querySelector('.total-course-cash-balance').textContent.replace(/\./g, '').replace(' đ', '');
   var payment = document.querySelector('.total-course-cash-balance-1').textContent.replace(/\./g, '').replace(' đ', '');
   
@@ -81,8 +90,8 @@ function checkBalance(e) {
   }
   
   // Thực hiện thanh toán nếu đủ tiền
-  window.location.href = "";
-}
+  // window.location.href = "";
+})
 
 //tính toán số dư khi thanh toán
 // Lấy giá trị của hai phần tử HTML
@@ -96,11 +105,21 @@ payment1 = parseInt(payment1.replace(/\D/g, ''));
 var remaining1 = balance1 - payment1;
 
 // Gán kết quả vào phần tử HTML
-document.querySelector('.total-course-cash-balance-2').innerText = remaining1.toLocaleString('vi-VN') + ' đ';
+document.querySelector('.total-course-cash-balance-2').innerText = remaining1.toLocaleString('vi-VN') + ' VND';
 
 
 //đếm item
-var parent = document.querySelector('.so-luong');
-var count = parent.querySelectorAll('.card-1').length;
-var countP = parent.querySelector('.count-1-1');
-countP.innerHTML = '(' + count + ') items';
+// Lấy tất cả các phần tử có class="card-1"
+const card1Elements = document.querySelectorAll('.card1');
+
+// Đếm số lượng phần tử đó
+const card1Count = card1Elements.length;
+
+// Tạo thẻ p và thêm nội dung số lượng vào đó
+const pElement = document.getElementById('so-luong-div') //createElement('p');
+pElement.innerHTML = `Bạn có ${card1Count} khóa học trong giỏ hàng`;
+
+// Thêm thẻ p vào phần tử có class="so-luong"
+const soLuongElement = document.querySelector('.so-luong');
+soLuongElement.appendChild(pElement);
+
