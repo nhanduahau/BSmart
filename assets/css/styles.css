@@ -2018,14 +2018,14 @@ body {
   margin-left: 12px;
 }
 .cart-item-box .total-course .total-course-icon-item-btn {
-  padding: 8px;
+  padding: 13px;
   background-color: transparent;
 }
 .cart-item-box .total-course .total-course-icon-item-btn:hover {
   opacity: 0.8;
 }
 .cart-item-box .total-course .total-course-icon-item-btn-momo {
-  padding: 8px;
+  padding: 7px;
   background-color: transparent;
 }
 .cart-item-box .total-course .total-course-icon-item-btn-momo:hover {
@@ -2466,6 +2466,15 @@ body {
   font-size: 1rem;
   font-weight: bold;
   color: #fd7e14;
+}
+
+.bill-member-item-price-2 {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.bill-member-item-price-1 {
+  margin-left: 10px;
 }
 
 .course-detail-wrapper .banner-course-detail {

@@ -25,7 +25,7 @@ let arrCourses = [
     quantity: 1,
   },
   {
-    id: 2,
+    id: 3,
     nameCourse: "JavaScript Nâng Cao",
     desc: "CN (12:12)",
     nameMentor: "Mentor Cường",
@@ -243,3 +243,32 @@ var showPaymentCash = document.getElementById("total-course-cash-show");
 btnPaymentCash.addEventListener("click", function (e) {
   $(showPaymentCash).toggle();
 });
+
+
+
+//kết quả tạm tính
+// Lấy danh sách các khóa học
+const courses = [...document.querySelectorAll('.card1-info')];
+
+// Tính tổng số tiền của các khóa học
+const totalPrice = courses.reduce((total, course) => {
+  const balance = parseFloat(course.querySelector('.card1-total-price-cost p').textContent);
+  return total + balance;
+}, 0);
+
+// Hiển thị giá trị tạm tính được với dấu chấm mỗi 3 số và đơn vị VND
+const formattedPrice = totalPrice.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'});
+document.querySelector('.bill-member-item-price').textContent = formattedPrice;
+
+// Tính tổng tiền sau khi trừ giảm giá và hiển thị số tiền giảm giá
+const discountPrice4 = 200000; // Giả sử giá giảm giá là 200,000 VND
+const formattedDiscountPrice = discountPrice4.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'});
+document.querySelector('.bill-member-item-price-1').textContent = formattedDiscountPrice;
+const totalAfterDiscount = totalPrice - discountPrice4;
+var moneyafter = document.getElementById("moneyafter");
+moneyafter.innerHTML=totalAfterDiscount
+var viettelafter = document.getElementById("viettelafter");
+viettelafter.innerHTML=totalAfterDiscount
+// Hiển thị giá trị tổng tiền tính được với dấu chấm mỗi 3 số và đơn vị VND
+const formattedTotalAfterDiscount = totalAfterDiscount.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'});
+document.querySelector('.bill-member-item-price-2').textContent = formattedTotalAfterDiscount;
