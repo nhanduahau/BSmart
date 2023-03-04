@@ -2018,14 +2018,14 @@ body {
   margin-left: 12px;
 }
 .cart-item-box .total-course .total-course-icon-item-btn {
-  padding: 8px;
+  padding: 13px;
   background-color: transparent;
 }
 .cart-item-box .total-course .total-course-icon-item-btn:hover {
   opacity: 0.8;
 }
 .cart-item-box .total-course .total-course-icon-item-btn-momo {
-  padding: 8px;
+  padding: 7px;
   background-color: transparent;
 }
 .cart-item-box .total-course .total-course-icon-item-btn-momo:hover {
