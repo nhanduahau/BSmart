@@ -491,16 +491,16 @@
               <div class="bill-member">
                 <div class="bill-member-item">
                   <h3>Tạm tính: </h3>
-                  <h3 class="bill-member-item-price">200.000 đ</h3>
+                  <h3 class="bill-member-item-price"></h3>
                 </div>
                 <div class="bill-member-item">
                   <h3>Giảm giá: </h3>
-                  <h3 class="bill-member-item-price">0 đ</h3>
+                  <h3 class="bill-member-item-price-1"></h3>
                 </div>
                 <hr class="separator-bill" />
                 <div class="bill-member-item">
                   <h3>Tổng tiền: </h3>
-                  <h3 class="bill-member-item-price">200.000 đ</h3>
+                  <h3 class="bill-member-item-price-2"></h3>
                 </div>
               </div>
 
@@ -509,11 +509,7 @@
 
               <p class="total-course-payment-title">Thanh toán bằng: </p>
               <div class="total-course-icons">
-                <div class="total-course-icon-item">
-                  <button class="total-course-icon-item-btn" id="total-course-icon-item-btn">
-                    <img src="./assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo">
-                  </button>
-                </div>
+                
                 <div class="total-course-icon-item">
                   <button class="total-course-icon-item-btn-momo" id="btn-momo" data-toggle="modal" data-target="#exampleModal">
                     <img src="./assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo"> 
@@ -533,7 +529,7 @@
                             <p class="text-1" style="color: white;">Momo</p>
                             <hr class="separator" />
                             <h1 class="title-1" style="font-weight: bold;">Số tiền:</h1>
-                            <p class="text-1" style="color: white;">1.250.000 VND</p>
+                            <p class="text-1" id="moneyafter" style="color: white;">1.250.000 VND</p>
                             <hr class="separator" />
                             <h1 class="title-1" style="font-weight: bold;">Thông tin:</h1>
                             <p class="text-1" style="color: white;">thanh-toan-khoa-hoc-donhang-10013</p>
@@ -848,6 +844,11 @@
                     </div>
                   </div>
                 </div>
+                <div class="total-course-icon-item">
+                  <button class="total-course-icon-item-btn" id="total-course-icon-item-btn">
+                    <img src="./assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo">
+                  </button>
+                </div>
               </div>
 
               <!-- payment cash -->
@@ -1032,14 +1033,14 @@
   <script type="text/javascript" src="./assets/js/payment.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
+  <!-- <script>
   // Sử dụng thư viện QRCode.js để tạo mã QR
     var qr = new QRCode(document.querySelector('.qr-code'), {
         text: 'Hello, world!', // Thay đổi nội dung ở đây
         width: 200,
         height: 200
     });
-  </script>
+  </script> -->
 </body>
 
 

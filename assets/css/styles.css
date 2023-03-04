@@ -2468,6 +2468,15 @@ body {
   color: #fd7e14;
 }
 
+.bill-member-item-price-2 {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.bill-member-item-price-1 {
+  margin-left: 10px;
+}
+
 .course-detail-wrapper .banner-course-detail {
   background: url(../images/banner-2.jpg);
   background-size: cover;
