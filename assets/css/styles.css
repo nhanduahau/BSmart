@@ -2836,6 +2836,10 @@ body {
   color: black;
 }
 
+.course-enroll-btn mt-3 {
+  display: flex;
+}
+
 .mentor-detail-wrapper .banner-mentor-detail {
   width: 100%;
   padding: 110px 0 100px;
