@@ -2504,6 +2504,16 @@ body {
   margin-top: 6px;
 }
 
+.icon-bst {
+  padding: 8px;
+  margin-left: 22px;
+  width: 80px;
+  background-color: transparent;
+}
+.icon-bst:hover {
+  opacity: 0.8;
+}
+
 .course-detail-wrapper {
   background-color: #fff;
 }
