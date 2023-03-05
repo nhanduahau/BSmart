@@ -1951,6 +1951,14 @@ body {
   margin-left: 6px;
   margin-right: 8px;
 }
+.checkout-container .card1-total-price-total-cost .card1-total-price-btn-delete {
+  background-color: transparent;
+  color: #9e9b9b;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  margin-left: 32px;
+}
 .checkout-container .card1-total-price-total-cost .card1-total-price-btn-delete:hover {
   opacity: 0.8;
   color: #fd7e14;
@@ -2025,8 +2033,14 @@ body {
   opacity: 0.8;
 }
 .cart-item-box .total-course .total-course-icon-item-btn-momo {
-  padding: 7px;
+  padding: 8px;
+  margin-left: 22px;
+  width: 80px;
   background-color: transparent;
+}
+.cart-item-box .total-course .total-course-icon-item-btn-momo .momo-inner {
+  margin-top: 4px;
+  margin-left: 12px;
 }
 .cart-item-box .total-course .total-course-icon-item-btn-momo:hover {
   opacity: 0.8;
@@ -2431,8 +2445,14 @@ body {
 }
 
 .total-course-icon-item-btn-viettel-pay {
-  padding: 6px;
+  padding: 8px;
+  margin-left: 22px;
+  width: 80px;
   background-color: transparent;
+}
+.total-course-icon-item-btn-viettel-pay .viettel-inner {
+  margin-top: 4px;
+  margin-left: 12px;
 }
 
 .bill-member {
@@ -2475,6 +2495,13 @@ body {
 
 .bill-member-item-price-1 {
   margin-left: 10px;
+}
+
+.form-check-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
 }
 
 .course-detail-wrapper {
