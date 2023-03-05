@@ -1,5 +1,5 @@
 // Lấy thông tin đăng nhập của người dùng
-const isLoggedIn = false; // Thay bằng true hoặc false tùy thuộc vào cách xác thực đăng nhập của bạn
+const isLoggedIn = true; // Thay bằng true hoặc false tùy thuộc vào cách xác thực đăng nhập của bạn
 
 // Lắng nghe sự kiện click vào nút "Đăng ký khóa học"
 document.getElementById("enroll-btn").addEventListener("click", function(event) {

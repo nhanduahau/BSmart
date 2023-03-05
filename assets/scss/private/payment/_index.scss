@@ -254,6 +254,12 @@ body {
         }
 
         .card1-total-price-btn-delete {
+          background-color: transparent;
+        color: #9e9b9b;
+        font-size: 1rem;
+        font-weight: bold;
+        border-bottom: 2px solid #ccc;
+        margin-left: 32px;
           &:hover {
             opacity: 0.8;
             color: #fd7e14;
@@ -361,8 +367,15 @@ body {
         }
       }
       .total-course-icon-item-btn-momo {
-        padding: 7px;
+        padding: 8px;
+        margin-left: 22px;
+        width: 80px;
         background-color: transparent;
+
+        .momo-inner {
+          margin-top: 4px;
+          margin-left: 12px;
+        }
 
         &:hover {
           opacity: 0.8;
@@ -815,8 +828,15 @@ body {
 }
 
 .total-course-icon-item-btn-viettel-pay {
-  padding: 6px;
+  padding: 8px;
+  margin-left: 22px;
+  width: 80px;
   background-color: transparent;
+
+  .viettel-inner {
+    margin-top: 4px;
+    margin-left: 12px;
+  }
 }
 
 // Bill 
@@ -858,4 +878,12 @@ body {
 }
 .bill-member-item-price-1{
   margin-left: 10px;
+}
+
+// rad button
+.form-check-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
 }
