@@ -2504,6 +2504,16 @@ body {
   margin-top: 6px;
 }
 
+.icon-bst {
+  padding: 8px;
+  margin-left: 22px;
+  width: 80px;
+  background-color: transparent;
+}
+w .icon-bst:hover {
+  opacity: 0.8;
+}
+
 .course-detail-wrapper {
   background-color: #fff;
 }
@@ -3554,6 +3564,7 @@ body {
   margin-bottom: 20px;
 }
 .annotation-wrapper .section2-annotation .box-annottation {
+  background-color: rgb(215, 212, 212);
   border-radius: 8px;
   padding: 20px 20px;
   -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
@@ -3561,31 +3572,34 @@ body {
 }
 .annotation-wrapper .section2-annotation .box-annottation button {
   height: 25px;
-  margin-right: 10px;
+  margin-right: 1px;
   border-radius: 8px;
   margin-bottom: 10px;
+  margin-left: 10px;
   background-color: #ff630e;
   color: aliceblue;
   border: 0px solid;
 }
 .annotation-wrapper .section2-annotation .box-annottation h3 {
-  padding: 10px 20px;
+  margin-left: 5px;
+  padding: 4px 4px;
   color: #ff630e;
   line-height: 30px;
   letter-spacing: 2px;
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 28px;
 }
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 5px;
   -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
   border-radius: 8px;
 }
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation .img-annotation {
+  background-color: white;
   padding-top: 15px;
   padding-left: 20px;
 }
@@ -3597,6 +3611,7 @@ body {
   border-radius: 50%;
 }
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation .content-annotation {
+  background-color: white;
   padding-left: 70px;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -3628,13 +3643,13 @@ body {
   background-color: #0e0a38;
 }
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation:hover .content {
-  color: #f5f5f5;
+  color: rgb(190, 190, 190);
 }
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation:hover .title {
-  color: #f5f5f5;
+  color: rgb(190, 190, 190);
 }
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation:hover .timeDate {
-  color: #f5f5f5;
+  color: rgb(190, 190, 190);
 }
 .annotation-wrapper .section2-annotation .btn-showmore {
   margin-top: 20px;
@@ -3646,6 +3661,7 @@ body {
   background-color: #ff630e;
   color: white;
   border: 0px solid;
+  padding: 5px;
 }
 
 .icon-shopping-cart {
@@ -3658,6 +3674,32 @@ body {
   width: 190px;
   height: 75px;
   object-fit: cover;
+}
+
+.bt-1 {
+  /* margin-top: 50px; */
+  float: left;
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.first {
+  background-color: #000066;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 100%;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* display: flex; */
+}
+
+.separator-bill {
+  border-bottom: 1px solid white;
 }
 
 .blog-detail-wrapper .banner__blog-detail {
