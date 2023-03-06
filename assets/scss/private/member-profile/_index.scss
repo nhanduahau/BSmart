@@ -1,0 +1,101 @@
+.wrapper {
+    background-color: #fff;
+
+    .courses-profile {
+        
+        h3 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 46px;
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    // Render courses 
+    .card-course-custom {
+        border-radius: 8px ;
+        box-shadow: 0 0 8px 0 rgb(188, 184, 184);
+
+        &:hover {
+            box-shadow: 0 0 18px 0 rgb(188, 184, 184);
+        }
+    }
+
+    .card-img-top {
+        border-radius: 8px;
+    }
+
+    .title-name-course {
+        color: #130f40;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .sub-title {
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    // History payment 
+    .history-payment-container {
+
+        h3 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 46px;
+        }
+    }
+
+    // sp table
+    #example_paginate {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    } 
+
+    #example_previous {
+        margin-right: 12px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+            color: #ff630e;
+            transition: all 0.3s;
+        }
+    }
+
+    #example_next {
+        margin-left: 12px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+            color: #ff630e;
+            transition: all 0.3s;
+        }
+    }
+
+    .paginate_button {
+        padding: 0 4px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+            color: #ff630e;
+            transition: all 0.3s;
+        }
+    }
+}
