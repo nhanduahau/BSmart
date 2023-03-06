@@ -386,3 +386,23 @@
 .course-enroll-btn mt-3{
   display: flex;
 }
+
+// Button 
+.list-class-info-item-btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 4px;
+}
+
+.option-info-class-btn {
+  padding: 6px;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #ff630e;
+  background-color: #ff630e;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
