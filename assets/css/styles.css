@@ -2867,6 +2867,24 @@ body {
   display: flex;
 }
 
+.list-class-info-item-btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 4px;
+}
+
+.option-info-class-btn {
+  padding: 6px;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #ff630e;
+  background-color: #ff630e;
+}
+.option-info-class-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .mentor-detail-wrapper .banner-mentor-detail {
   width: 100%;
   padding: 110px 0 100px;
