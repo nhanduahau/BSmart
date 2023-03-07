@@ -1265,6 +1265,7 @@ div.swiper-button-prev:after {
 }
 .our .out__sigle img {
   max-width: 100%;
+  height: 300px;
 }
 .our .out__sigle .instructor-links {
   position: absolute;
