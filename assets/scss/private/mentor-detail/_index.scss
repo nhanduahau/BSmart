@@ -115,7 +115,7 @@
       }
     }
     .about-mentor {
-      padding: 20px;
+      // padding: 20px;
       h3 {
         font-weight: 700;
         font-size: 36px;
@@ -124,7 +124,7 @@
       p {
         font-size: 16px;
         line-height: 26px;
-        color: $text-grey-color;
+        color: black; // $text-grey-color 
         text-align: justify;
       }
     }
@@ -145,7 +145,7 @@
       }
     }
     .experience {
-      padding: 20px 0 20px 20px;
+      // padding: 20px 0 20px 20px;
       h3 {
         font-weight: 700;
         font-size: 36px;
@@ -156,15 +156,16 @@
       p {
         font-size: 16px;
         line-height: 26px;
-        color: $text-grey-color;
+        color: black;
+        margin-bottom: 10px;
       }
     }
     .mentor-profile-counter {
       .counter-single {
-        margin: 0 10px 0 20px;
+        // margin: 0 10px 0 20px;
         padding: 25px 20px 20px 20px;
         background-color: $grey-white-color;
-        border-radius: 10px;
+        border-radius: 12px;
         .counter-number {
           h2 {
             color: $secondary-color;
@@ -182,40 +183,127 @@
       }
     }
     .courses {
-      padding: 35px 20px 0;
+      width: 100%;
+      // padding: 35px 20px 0;
+      margin-top: 22px;
       h3 {
         font-weight: 700;
         font-size: 36px;
         line-height: 46px;
       }
-      .course-card {
-        box-shadow: 0 0 10px rgb(51 51 51 / 10%);
-        .card-img-top {
-          width: 100%;
-          height: 210px;
+      // .course-card {
+      //   box-shadow: 0 0 10px rgb(51 51 51 / 10%);
+      //   .card-img-top {
+      //     width: 100%;
+      //     height: 210px;
+      //   }
+      //   .card-body {
+      //     padding: 30px 35px;
+      //     .card-price {
+      //       color: $secondary-color;
+      //       font-size: 24px;
+      //       font-weight: 700;
+      //     }
+      //     .card-title {
+      //       color: $primary-color;
+      //       margin: 6px 0 15px;
+      //       font-size: 24px;
+      //       font-weight: 700;
+      //       line-height: 34px;
+      //     }
+      //     .course-info-current {
+      //       p {
+      //         font-size: 16px;
+      //         color: $secondary-color;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+
+.main-courses-list {
+  .card-course-custom {
+    width: 100%;
+    &:hover {
+      box-shadow: 0 0 10px rgb(51 51 51 / 20%);
+      transition: all 0.3s;
+    }
+    .card-title {
+      min-height: 40px;
+      a {
+        color: #130f40;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        &:hover {
+          color: $secondary-color;
+          cursor: pointer;
+          transition: all 0.3s;
         }
-        .card-body {
-          padding: 30px 35px;
-          .card-price {
-            color: $secondary-color;
-            font-size: 24px;
-            font-weight: 700;
-          }
-          .card-title {
-            color: $primary-color;
-            margin: 6px 0 15px;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 34px;
-          }
-          .course-info-current {
-            p {
-              font-size: 16px;
-              color: $secondary-color;
-            }
-          }
+      }
+    }
+    .sub-title {
+      color: $text-grey-color;
+    }
+    .description {
+      color: $primary-color;
+      margin-top: 10px;
+      font-weight: 400;
+      text-align: justify;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 25px;
+      -webkit-line-clamp: 3;
+      height: 75px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+    .cost {
+      color: $secondary-color;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .add-to-cart {
+      i {
+        font-size: 27px;
+      }
+      &:hover {
+        i {
+          transition: all 0.3s;
+          color: $secondary-color;
+          cursor: pointer;
         }
       }
     }
   }
+}
+
+.description-detail {
+  color: $primary-color;
+  margin-top: 10px;
+  font-weight: 400;
+  text-align: justify;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  -webkit-line-clamp: 3;
+  height: 75px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+#name-course {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: black;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
 }
