@@ -283,8 +283,11 @@
 }
 
 // icon Search 
-.icon-search-btn {
-  margin-right: 6px;
+.icon-search-btn-course {
+  // margin-right: 6px;
+  position: absolute;
+  right: 20px !important;
+  top: 19px !important;
 
   &:hover {
     cursor: pointer;

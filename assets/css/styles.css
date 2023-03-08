@@ -1370,6 +1370,12 @@ div.swiper-button-prev:after {
   transition: all 0.2s;
 }
 
+.fa-search {
+  position: absolute;
+  right: 80px !important;
+  top: 1px !important;
+}
+
 .header-mobile-logo a {
   color: #0e0a38;
 }
@@ -1752,10 +1758,12 @@ div.swiper-button-prev:after {
   height: 180px;
 }
 
-.icon-search-btn {
-  margin-right: 6px;
+.icon-search-btn-course {
+  position: absolute;
+  right: 20px !important;
+  top: 19px !important;
 }
-.icon-search-btn:hover {
+.icon-search-btn-course:hover {
   cursor: pointer;
   opacity: 0.6;
   color: #ff630e !important;
