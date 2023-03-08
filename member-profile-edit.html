@@ -591,7 +591,9 @@
                   <div class="mb-3">
                     <label class="form-label form-label-custom">Mật khẩu mới *</label>
                     <div class="input-group">
-                        <input type="password" class="form-control" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="password-error">
+                      <input type="password" class="form-control" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="password-error" oninput="validatePassword()">
+
+
                         <button class="btn btn-outline-secondary" type="button" onclick="togglePasswordVisibility('password')">
                             <span class="material-icons">visibility</span>
                         </button>
@@ -602,7 +604,8 @@
                 <div class="mb-3">
                     <label class="form-label form-label-custom">Xác nhận mật khẩu mới *</label>
                     <div class="input-group">
-                        <input type="password" class="form-control" id="confirm-password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" oninput="checkPasswordMatch()" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="confirm-password-error">
+                      <input type="password" class="form-control" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="password-error" oninput="validatePassword()">
+
                         <button class="btn btn-outline-secondary" type="button" onclick="togglePasswordVisibility('confirm-password')">
                             <span class="material-icons">visibility</span>
                         </button>
