@@ -2511,7 +2511,7 @@ body {
   width: 80px;
   background-color: transparent;
 }
-w .icon-bst:hover {
+.icon-bst:hover {
   opacity: 0.8;
 }
 
@@ -5796,6 +5796,24 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-of-member-inner {
+    width: 87%;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 114vh;
   }
   /* ------------------------ */
   .sidebar-wrap {

@@ -110,6 +110,25 @@
       align-items: center;
     }
   }
+  // payment 
+  .content-payment{
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-of-member-inner{
+    width: 87%;
+  }
+  .cart-item-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 114vh;
+  }
   /* ------------------------ */
   // Sidebar header
   .sidebar-wrap {
