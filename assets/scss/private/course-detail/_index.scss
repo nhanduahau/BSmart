@@ -406,3 +406,24 @@
     cursor: pointer;
   }
 }
+
+/* Active + Non active*/
+.otp-class-active {
+  padding: 4px;
+  border-radius: 6px;
+  background-color: rgb(128, 232, 128);
+}
+
+.otp-class-active-none {
+  background-color: #fff
+}
+/* Active + Non active*/
+
+.option-info-class-btn-del {
+  display: none;
+  padding: 6px;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid red;
+  background-color: red;
+}
