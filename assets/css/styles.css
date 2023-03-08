@@ -1335,6 +1335,41 @@ div.swiper-button-prev:after {
   align-items: center;
 }
 
+.header-contact-info ul {
+  display: flex;
+  align-items: center;
+}
+
+.icon-gmail-header {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.icon-gmail-header {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.btn-primary-custom-select {
+  background-color: #ff630e;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-primary-custom-select:hover {
+  background-color: #fff;
+  color: #ff630e;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
 .header-mobile-logo a {
   color: #0e0a38;
 }
