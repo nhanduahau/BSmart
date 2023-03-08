@@ -898,3 +898,14 @@ body {
   }
   
 }
+.img-avatar{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 139px;
+  height: 140px;
+  border-radius: 4px;
+  object-fit: cover;
+}
