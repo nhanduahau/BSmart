@@ -5333,6 +5333,33 @@ input {
   border-radius: 8px;
 }
 
+.member-detail-wrapper .mentor-profile-edit-content {
+  padding: 20px;
+}
+.member-detail-wrapper .mentor-profile-edit-content label {
+  color: #0e0a38;
+  font-weight: 500;
+}
+.member-detail-wrapper .mentor-profile-edit-content .form-group-custome {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.member-detail-wrapper .mentor-profile-edit-content .form-group-custome h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+}
+.member-detail-wrapper .mentor-profile-edit-content .avatar_img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.member-detail-wrapper .mentor-profile-edit-content .id-card-warpper .card-id-custom img {
+  height: 220px;
+}
+
 .lms-wrapper .banner__lms {
   background-image: url(../images/banner-2.jpg);
   background-position: center;
