@@ -710,6 +710,7 @@ body {
 
 .section-card-contact {
   margin-top: 14px;
+  border:1px solid #9e9b9b;
   margin-bottom: 14px;
   padding: 20px;
   border-radius: 4px;
@@ -793,6 +794,10 @@ body {
     p {
       font-size: 1rem;
       font-weight: 500;
+    }
+    span{
+      font-size: 0.9rem;
+      font-weight: 400;
     }
   }
 }
