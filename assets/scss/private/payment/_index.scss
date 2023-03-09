@@ -351,7 +351,21 @@ body {
         margin-top: 10px;
       }
 
-      .total-course-icon-item {
+      .total-course-icon-item-momo, .total-course-icon-item-viettel-pay, .total-course-icon-item-bst {
+        border-radius: 6px;
+        box-shadow: 0 0 8px 0 rgb(112, 111, 111);
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+
+      .total-course-icon-item-momo-active, .total-course-icon-item-viettel-pay-active {
+        border-radius: 6px;
+        border: 2px solid green;
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+
+      .total-course-icon-item-momo-none-active, .total-course-icon-item-viettel-pay-none-active {
         border-radius: 6px;
         box-shadow: 0 0 8px 0 rgb(112, 111, 111);
         margin-right: 12px;

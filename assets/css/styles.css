@@ -2077,7 +2077,19 @@ body {
   justify-content: center;
   margin-top: 10px;
 }
-.cart-item-box .total-course .total-course-icon-item {
+.cart-item-box .total-course .total-course-icon-item-momo, .cart-item-box .total-course .total-course-icon-item-viettel-pay, .cart-item-box .total-course .total-course-icon-item-bst {
+  border-radius: 6px;
+  box-shadow: 0 0 8px 0 rgb(112, 111, 111);
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.cart-item-box .total-course .total-course-icon-item-momo-active, .cart-item-box .total-course .total-course-icon-item-viettel-pay-active {
+  border-radius: 6px;
+  border: 2px solid green;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.cart-item-box .total-course .total-course-icon-item-momo-none-active, .cart-item-box .total-course .total-course-icon-item-viettel-pay-none-active {
   border-radius: 6px;
   box-shadow: 0 0 8px 0 rgb(112, 111, 111);
   margin-right: 12px;
@@ -3751,6 +3763,13 @@ body {
 .header-contact-info-edit-profile ul li, .header-contact-info-member-pro ul li {
   display: flex;
   align-items: center;
+}
+
+.wrapper .paginate_button.current {
+  color: #ff630e !important;
+  background-color: #e4e2e2;
+  border-radius: 4px;
+  font-weight: 500;
 }
 
 body {
