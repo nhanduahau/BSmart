@@ -360,8 +360,7 @@
   \*-----------------------------------*/
   
   @media (max-width: 1200px) {
-  
-    .item-flex { flex-direction: column-reverse; }
+
   
     /**
      * checkout section responsive 

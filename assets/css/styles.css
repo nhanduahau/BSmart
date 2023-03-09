@@ -2090,8 +2090,6 @@ body {
 }
 .cart-item-box .total-course .total-course-icon-item-btn-momo {
   padding: 8px;
-  margin-left: 22px;
-  width: 80px;
   background-color: transparent;
 }
 .cart-item-box .total-course .total-course-icon-item-btn-momo .momo-inner {
@@ -2377,7 +2375,7 @@ body {
   padding: 20px;
   border-radius: 4px;
   background-color: #fff;
-  width: 400px;
+  width: 500px;
 }
 .section-card-contact h2 {
   text-align: center;
@@ -2502,8 +2500,6 @@ body {
 
 .total-course-icon-item-btn-viettel-pay {
   padding: 8px;
-  margin-left: 22px;
-  width: 80px;
   background-color: transparent;
 }
 .total-course-icon-item-btn-viettel-pay .viettel-inner {
@@ -2561,17 +2557,14 @@ body {
 }
 
 .icon-bst {
-  padding: 8px;
-  margin-left: 22px;
-  width: 80px;
+  padding: 1px;
   background-color: transparent;
 }
-w .icon-bst:hover {
+.icon-bst:hover {
   opacity: 0.8;
 }
 
 .img-avatar {
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -2580,6 +2573,7 @@ w .icon-bst:hover {
   height: 140px;
   border-radius: 4px;
   object-fit: cover;
+  width: 138px;
 }
 
 .course-detail-wrapper {
@@ -5914,9 +5908,42 @@ input {
   .aboutus-wrapper .owl-carousel .owl-nav .owl-next {
     right: -1%;
   }
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-of-member-inner {
+    width: 87%;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    width: 97vh;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 84vh;
+    justify-content: center;
+  }
+  .img-avatar {
+    width: 140px;
+  }
 }
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 767px) and (max-width: 992px) {
   .col-sm-12 {
     flex: 0 0 auto;
     width: 100%;
@@ -5944,6 +5971,39 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .header-mobile-content .img-avatar {
+    width: 140px;
+  }
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-of-member-inner {
+    width: 87%;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    width: 115vh;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 115vh;
+    justify-content: center;
   }
   /* ------------------------ */
   .sidebar-wrap {
@@ -6221,6 +6281,36 @@ input {
   }
   .login-form-container {
     display: none;
+  }
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-of-member-inner {
+    width: 87%;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 15px;
+    width: 65vh;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 65vh;
   }
   .swiper-slide button {
     font-size: 12px;
@@ -6614,4 +6704,154 @@ input {
   /* Footer */
   /* ------------------------ */
 }
-/* ---------------- *//*# sourceMappingURL=styles.css.map */
+/* ---------------- */
+@media only screen and (max-width: 480px) {
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-of-member-inner {
+    width: 87%;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    width: 55vh;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    width: 55vh;
+    margin-left: 20px;
+    justify-content: center;
+  }
+  .img-avatar {
+    width: 82px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 590px) {
+  .section-card-contact {
+    margin-right: 50px;
+    margin-left: 20px;
+    width: 55vh;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    width: 55vh;
+  }
+  .img-avatar {
+    width: 92px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-of-member-inner {
+    width: 87%;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    width: 127vh;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 127vh;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .img-avatar {
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-of-member-inner {
+    width: 87%;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    width: 115vh;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 115vh;
+    justify-content: center;
+  }
+  .img-avatar {
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .img-avatar {
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 685px) {
+  .img-avatar {
+    width: 120px;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    width: 90vh;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    width: 90vh;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
