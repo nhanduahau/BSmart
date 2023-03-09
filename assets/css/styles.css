@@ -5519,6 +5519,13 @@ input {
   align-items: center;
 }
 
+.form-control1 {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .lms-wrapper .banner__lms {
   background-image: url(../images/banner-2.jpg);
   background-position: center;
