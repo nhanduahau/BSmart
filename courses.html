@@ -429,6 +429,7 @@
                   <button class="fa fa-search icon-search-btn-course" onclick="event.preventDefault(); handleSearchCourseBtn()"></button>
                 </form>
 
+                <!-- Lĩnh vực -->
                 <form action="#" method="post" class="category__course tag_r">
                   <div class="d-flex align-items-center">
                     <h3 class="me-2" onclick="showMore(`showLvMobile`)">
@@ -441,6 +442,7 @@
                       ><i class="fa fa-arrow-up" style="display: none"></i
                     ></span> -->
                   </div>
+                  <!-- Show content -->
                   <div id="showLvMobile" class="categories__course d-xs-none">
                     <div class="checkbox__course">
                       <input id="idFontEnd" type="checkbox" />
@@ -463,17 +465,20 @@
                     <!-- Show more -->
                     <div
                       id="showMore"
-                      onclick="showMoreLocal(`linhVuc`,`txtShowTitle`,`upIcon`,`downIcon`)"
+                      onclick="showMoreLocal(`linhVuc`, `txtShowTitle`, `upIcon`, `downIcon`)"
                     >
                       <a class="txtShow">
-                        <span id="txtShowTitle">Xem thêm</span>
+                        <!-- Xem thêm -->
+                        <span id="txtShowTitle">Thu gọn</span>
                         <i
                           id="downIcon"
+                          style="display: none;"
                           class="fa fa-arrow-down"
                           aria-hidden="true"
                         ></i>
                         <i
                           id="upIcon"
+                          style="display: block;"
                           class="fa fa-arrow-up"
                           aria-hidden="true"
                         ></i>
@@ -481,6 +486,8 @@
                     </div>
                   </div>
                 </form>
+
+                <!-- Languages -->
                 <form action="#" method="post" class="tag__course tag_r">
                   <h3 onclick="showMore(`showSubMobi`)">Ngôn ngữ</h3>
                   <div id="showSubMobi" class="tag__course d-xs-none">
@@ -520,20 +527,22 @@
                           <label for="idMongoDB">Database MongoDB</label>
                         </div>
                       </div>
-                      <!-- Show more -->
+                      <!-- Show more ,`upIcon1`,`downIcon1`-->
                       <div
                         id="showMore"
-                        onclick="showMoreLocal(`subject`,`txtShowTitle1`,`upIcon1`,`downIcon1`)"
+                        onclick="showMoreLocal(`subject`,`txtShowTitle1`, `upIcon1`, `downIcon1`)"
                       >
                         <a class="txtShow">
-                          <span id="txtShowTitle1">Xem thêm</span>
+                          <span id="txtShowTitle1">Thu gọn</span>
                           <i
                             id="downIcon1"
+                            style="display: none;"
                             class="fa fa-arrow-down"
                             aria-hidden="true"
                           ></i>
                           <i
                             id="upIcon1"
+                            style="display: block;"
                             class="fa fa-arrow-up"
                             aria-hidden="true"
                           ></i>
@@ -542,6 +551,7 @@
                     </div>
                   </div>
                 </form>
+
                 <!-- Hide -->
                 <form action="#" method="post" class="tag__form tag_r" style="display: none;">
                   <h3 onclick="showMore(`showHTMobi`)">Hình thức</h3>
@@ -558,6 +568,7 @@
                     </div>
                   </div>
                 </form>
+
                 <form action="#" method="post" class="tag__location tag_r" style="display: none;">
                   <h3 onclick="showMore(`showLocalMobi`)">Khu vực</h3>
                   <div id="showLocalMobi" class="tag__course d-xs-none">
@@ -1374,18 +1385,22 @@
         var icUp = document.getElementById(upIcon);
         var icdown = document.getElementById(downIcon);
 
+        icUp.style.display = 'block';
+
         if (lct.style.display === "none") {
           lct.style.display = "block";
-          icUp.style.display = "block";
           icdown.style.display = "none";
+
           txt.innerText = "Thu gọn";
         } else {
           lct.style.display = "none";
           icdown.style.display = "block";
           icUp.style.display = "none";
+
           txt.innerText = "Xem thêm";
         }
       }
+
       //Dropdown list mobile
       function showMore(temp) {
         var lct = document.getElementById(temp);
