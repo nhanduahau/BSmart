@@ -181,6 +181,7 @@ var radios = document.getElementsByName("groupOfDefaultRadios");
 btnMomo.addEventListener("click", function () {
   bgContainerMomo.classList = "total-course-icon-item-viettel-pay-active";
   valueMomo = "momo";
+  valueViettelPay = "";
 
   bgContainerViettelPay.classList.remove(
     "total-course-icon-item-viettel-pay-active"
@@ -193,6 +194,7 @@ btnMomo.addEventListener("click", function () {
 btnViettelPay.addEventListener("click", function () {
   bgContainerViettelPay.classList = "total-course-icon-item-momo-active";
   valueViettelPay = "viettel-pay";
+  valueMomo = "";
 
   bgContainerMomo.classList.remove("total-course-icon-item-momo-active");
   bgContainerMomo.classList = "total-course-icon-item-momo-none-active";

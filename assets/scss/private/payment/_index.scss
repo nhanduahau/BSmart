@@ -358,6 +358,10 @@ body {
         margin-left: 12px;
       }
 
+      .total-course-icon-item-bst:hover {
+        cursor: not-allowed;
+      }
+
       .total-course-icon-item-momo-active, .total-course-icon-item-viettel-pay-active {
         border-radius: 6px;
         border: 2px solid green;
@@ -377,7 +381,8 @@ body {
         background-color: transparent;
 
         &:hover {
-          opacity: 0.8;
+          // opacity: 0.8;
+          cursor: not-allowed;
         }
       }
       .total-course-icon-item-btn-momo {

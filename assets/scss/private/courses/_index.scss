@@ -47,7 +47,7 @@
     padding: 100px 0;
     .course-sidebar {
       .course-sidebar-search {
-        padding: 10px;
+        // padding: 10px;
         display: flex;
         align-items: center;
         margin-bottom: 25px;
@@ -286,8 +286,8 @@
 .icon-search-btn-course {
   // margin-right: 6px;
   position: absolute;
-  right: 20px !important;
-  top: 19px !important;
+  right: 16px !important;
+  top: 9px !important;
   border: none;
   background-color: white;
 
@@ -297,4 +297,18 @@
     color: #ff630e !important;
     transition: all 0.3s;
   }
+}
+
+#txtShowTitle:hover {
+  opacity: 0.8;
+  color: #ff630e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#txtShowTitle1:hover {
+  opacity: 0.8;
+  color: #ff630e;
+  cursor: pointer;
+  transition: all 0.3s;
 }
