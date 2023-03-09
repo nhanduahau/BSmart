@@ -124,7 +124,7 @@
               <li class="mb-3">
                 <img src="./assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> bsmart@gmail.com
               </li>
-              <li><img src="./assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> +98 946005077</li>
+              <li><img src="./assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"> +98 946005077</li>
             </ul>
             <ul class="social-list">
               <li>
@@ -428,13 +428,13 @@
                         Chí Minh
                       </span>
                     </li>
-                    <li>
-                      <span
-                        ><img src="./assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">bsmart@gmail.com</span
-                      >
+                    <li class="d-flex align-items-center">
+                      <img src="./assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
+                      <span>bsmart@gmail.com</span>
                     </li>
-                    <li>
-                      <span><img src="./assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 0946005077</span>
+                    <li class="d-flex align-items-center">
+                      <img src="./assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 
+                      <span>0946005077</span>
                     </li>
                     <li>
                       <span
@@ -520,7 +520,7 @@
                         </div>
                         <div class="col-md-2 col-12">
                           <button
-                            onclick="clearAvatar()"
+                            onclick="event.preventDefault(); clearAvatar()"
                             class="btn btn-outline-secondary-custom p-2 w-100 mt-2 btn-clear"
                           >
                             Xoá ảnh
@@ -758,18 +758,9 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Script -->
     <script>
-      // Upload avatar
-      function previewAvatar() {
-        avatarImage.src = "";
-        avatarImage.src = URL.createObjectURL(event.target.files[0]);
-      }
-      function clearAvatar() {
-        event.preventDefault();
-        document.getElementById("formFileAvatar").value = null;
-        avatarImage.src = "./assets/images/avatar-mentor-1.jpg";
-      }
+      
     </script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
-    <script type="text/javascript" src="assets\js\member-profile-edit.js"></script>
+    <script type="text/javascript" src="./assets/js/memberProfileEdit.js"></script>
   </body>
 </html>
