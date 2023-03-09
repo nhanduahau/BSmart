@@ -1774,6 +1774,8 @@ div.swiper-button-prev:after {
   position: absolute;
   right: 20px !important;
   top: 19px !important;
+  border: none;
+  background-color: white;
 }
 .icon-search-btn-course:hover {
   cursor: pointer;
