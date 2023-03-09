@@ -368,8 +368,8 @@ body {
       }
       .total-course-icon-item-btn-momo {
         padding: 8px;
-        margin-left: 22px;
-        width: 80px;
+        // margin-left: 22px;
+        // width: 80px;
         background-color: transparent;
 
         .momo-inner {
@@ -695,7 +695,7 @@ body {
   padding: 20px;
   border-radius: 4px;
   background-color: #fff;
-  width: 400px;
+  width: 500px;
 
   h2 {
     text-align: center;
@@ -829,8 +829,8 @@ body {
 
 .total-course-icon-item-btn-viettel-pay {
   padding: 8px;
-  margin-left: 22px;
-  width: 80px;
+  // margin-left: 22px;
+  // width: 80px;
   background-color: transparent;
 
   .viettel-inner {
@@ -888,9 +888,9 @@ body {
   margin-top: 6px;
 }
 .icon-bst{
-  padding: 8px;
-  margin-left: 22px;
-  width: 80px;
+  padding: 1px;
+  // margin-left: 22px;
+  // width: 80px;
   background-color: transparent;
   &:hover {
     opacity: 0.8;
@@ -898,7 +898,7 @@ body {
   
 }
 .img-avatar{
-  position: absolute;
+  // position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -907,4 +907,5 @@ body {
   height: 140px;
   border-radius: 4px;
   object-fit: cover;
+  width: 138px;
 }
