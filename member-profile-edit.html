@@ -541,15 +541,10 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <label class="form-label form-label-custom"
-                      >Ngày Sinh</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      value=""
-                    />
+                    <label class="form-label form-label-custom">Ngày Sinh</label>
+                    <input type="date" class="form-control" value="">
                   </div>
+                  
                   <div class="mb-3">
                     <label class="form-label form-label-custom">Địa chỉ</label>
                     <input
@@ -559,15 +554,9 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <label class="form-label form-label-custom"
-                      >Số điện thoại</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      value=""
-                    />
-                  </div>
+                    <label class="form-label form-label-custom">Số điện thoại</label>
+                    <input type="text" class="form-control" value="" oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10;" />
+                </div>
                   <div class="mb-3 text-end">
                     <button
                       type="button"

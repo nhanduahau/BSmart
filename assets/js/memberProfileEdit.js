@@ -85,3 +85,16 @@ function updateData(event) {
   // gửi yêu cầu cập nhật dữ liệu bằng AJAX
   // ...
 }
+
+const inputDate = document.querySelector(".form-control");
+inputDate.addEventListener("blur", function() {
+  const dateString = this.value;
+  if (Date.parse(dateString)) {
+    console.log("Đây là kiểu ngày tháng năm hợp lệ!");
+  } else {
+    console.log("Đây không phải là kiểu ngày tháng năm hợp lệ!");
+    // Hiển thị thông báo lỗi cho người dùng tại đây
+  }
+});
+
+
