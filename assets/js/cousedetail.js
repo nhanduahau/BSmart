@@ -35,8 +35,8 @@ btnOtpClass.forEach((_btnCreate, _btnCreateIndex) => {
           _otpClass.classList = "otp-class-active";
           _btnCreate.style.display = "none";
 
-          // Check -> show button delete
           btnDelOtpClass.forEach((_delOptClass, _indexDelOtpClass) => {
+            // Check -> show button delete
             if (_indexDelOtpClass == _indexOtpClass) {
               _delOptClass.style.display = "block";
 
