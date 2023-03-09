@@ -184,3 +184,15 @@
 .separator-bill {
   border-bottom: 1px solid white;
 }
+
+.header-contact-info-contact-info ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-contact-info ul li {
+  display: flex;
+  align-items: center;
+}

@@ -1335,6 +1335,47 @@ div.swiper-button-prev:after {
   align-items: center;
 }
 
+.header-contact-info ul {
+  display: flex;
+  align-items: center;
+}
+
+.icon-gmail-header {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.icon-gmail-header {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.btn-primary-custom-select {
+  background-color: #ff630e;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-primary-custom-select:hover {
+  background-color: #fff;
+  color: #ff630e;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.fa-search {
+  position: absolute;
+  right: 80px !important;
+  top: 1px !important;
+}
+
 .header-mobile-logo a {
   color: #0e0a38;
 }
@@ -1353,6 +1394,18 @@ div.swiper-button-prev:after {
   line-height: 34px;
   color: #0e0a38;
   font-weight: 700;
+}
+
+.header-contact-info-login-succ ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-login-succ ul li {
+  display: flex;
+  align-items: center;
 }
 
 .register-wrapper .page-banner-area {
@@ -1717,10 +1770,12 @@ div.swiper-button-prev:after {
   height: 180px;
 }
 
-.icon-search-btn {
-  margin-right: 6px;
+.icon-search-btn-course {
+  position: absolute;
+  right: 20px !important;
+  top: 19px !important;
 }
-.icon-search-btn:hover {
+.icon-search-btn-course:hover {
   cursor: pointer;
   opacity: 0.6;
   color: #ff630e !important;
@@ -2902,6 +2957,27 @@ body {
   cursor: pointer;
 }
 
+/* Active + Non active*/
+.otp-class-active {
+  padding: 4px;
+  border-radius: 6px;
+  background-color: rgb(128, 232, 128);
+}
+
+.otp-class-active-none {
+  background-color: #fff;
+}
+
+/* Active + Non active*/
+.option-info-class-btn-del {
+  display: none;
+  padding: 6px;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid red;
+  background-color: red;
+}
+
 .mentor-detail-wrapper .banner-mentor-detail {
   width: 100%;
   padding: 110px 0 100px;
@@ -3574,6 +3650,18 @@ body {
   color: #999;
 }
 
+.header-contact-info-mem-detail ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-mem-detail ul li {
+  display: flex;
+  align-items: center;
+}
+
 .wrapper {
   background-color: #fff;
 }
@@ -3649,6 +3737,18 @@ body {
   opacity: 0.9;
   color: #ff630e;
   transition: all 0.3s;
+}
+
+.header-contact-info-edit-profile ul, .header-contact-info-member-pro ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-edit-profile ul li, .header-contact-info-member-pro ul li {
+  display: flex;
+  align-items: center;
 }
 
 .annotation-wrapper .banner__annotation {
@@ -3832,6 +3932,18 @@ body {
 
 .separator-bill {
   border-bottom: 1px solid white;
+}
+
+.header-contact-info-contact-info ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-contact-info ul li {
+  display: flex;
+  align-items: center;
 }
 
 .blog-detail-wrapper .banner__blog-detail {
@@ -4251,6 +4363,18 @@ body {
 }
 .member-detail-wrapper .mentor-profile-edit-content .id-card-warpper .card-id-custom img {
   height: 220px;
+}
+
+.header-contact-info-mentor-pro-edit ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-mentor-pro-edit ul li {
+  display: flex;
+  align-items: center;
 }
 
 .withdraw-wrapper .banner__withdraw {
@@ -4991,6 +5115,18 @@ input {
   margin-right: 10px;
 }
 
+.header-contact-info-create-course ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-create-course ul li {
+  display: flex;
+  align-items: center;
+}
+
 .buy-course-wrapper .banner__buy-course {
   background-image: url(../images/banner-2.jpg);
   background-position: center;
@@ -5364,6 +5500,18 @@ input {
 }
 .member-detail-wrapper .mentor-profile-edit-content .id-card-warpper .card-id-custom img {
   height: 220px;
+}
+
+.header-contact-info-member-profile-edit ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-member-profile-edit ul li {
+  display: flex;
+  align-items: center;
 }
 
 .lms-wrapper .banner__lms {
