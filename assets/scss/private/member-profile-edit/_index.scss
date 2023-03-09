@@ -44,3 +44,18 @@
     display: flex;
     align-items: center;
   }
+
+  // Icon show password
+  .show-password {
+    position: relative;
+  }
+
+  .show-password-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .btn-show-password {
+    width: 36px;
+  }
