@@ -591,12 +591,11 @@
                   </div>
                   <div class="mb-3">
                     <label class="form-label form-label-custom">Mật khẩu mới *</label>
-                    <div class="input-group">
+                    <div class="input-group show-password">
                       <input type="password" class="form-control" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="password-error" oninput="validatePassword()">
-
-
-                        <button class="btn btn-outline-secondary" type="button" onclick="togglePasswordVisibility('password')">
-                            <span class="material-icons">visibility</span>
+                      
+                      <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('password')">
+                        <i class="fa fa-eye show-password-icon"></i>
                         </button>
                     </div>
                     <div id="password-error" class="invalid-feedback">Mật khẩu mới phải có ít nhất 6 ký tự, bao gồm ít nhất 1 số, 1 chữ hoa, 1 ký tự đặc biệt</div>
@@ -604,12 +603,11 @@
                 
                 <div class="mb-3">
                     <label class="form-label form-label-custom">Xác nhận mật khẩu mới *</label>
-                    <div class="input-group">
+                    <div class="input-group show-password">
                       <input type="password" class="form-control" id="confirm-password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="confirm-password-error" oninput="checkPasswordMatch()">
-
-
-                        <button class="btn btn-outline-secondary" type="button" onclick="togglePasswordVisibility('confirm-password')">
-                            <span class="material-icons">visibility</span>
+                      
+                      <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('confirm-password')">
+                          <i class="fa fa-eye show-password-icon"></i>
                         </button>
                     </div>
                     <div id="confirm-password-error" class="invalid-feedback">Xác nhận mật khẩu mới phải trùng với mật khẩu mới</div>
