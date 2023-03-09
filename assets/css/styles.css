@@ -3751,6 +3751,10 @@ body {
   align-items: center;
 }
 
+body {
+  background-color: white;
+}
+
 .annotation-wrapper .banner__annotation {
   background-image: url(../images/banner-2.jpg);
   background-position: center;
@@ -3796,7 +3800,7 @@ body {
   margin-bottom: 20px;
 }
 .annotation-wrapper .section2-annotation .box-annottation {
-  background-color: rgb(215, 212, 212);
+  background-color: rgb(240, 235, 235);
   border-radius: 8px;
   padding: 20px 20px;
   -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
@@ -3919,7 +3923,7 @@ body {
 }
 
 .first {
-  background-color: #000066;
+  background-color: #0e0a38;
   position: absolute;
   top: 0;
   left: 0;
@@ -6264,6 +6268,10 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .col-md-6 {
+    display: flex;
+    width: 100vh;
+  }
   /* Global */
   * {
     transition: all 2s;

@@ -484,6 +484,11 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  //announcement
+  .col-md-6{
+    display: flex;
+    width: 100vh;
+  }
   /* Global */
   * {
     transition: all 2s;
