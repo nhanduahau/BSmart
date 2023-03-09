@@ -1396,6 +1396,18 @@ div.swiper-button-prev:after {
   font-weight: 700;
 }
 
+.header-contact-info-login-succ ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-login-succ ul li {
+  display: flex;
+  align-items: center;
+}
+
 .register-wrapper .page-banner-area {
   background-image: url(../images/banner-2.jpg);
   background-size: cover;
@@ -3644,6 +3656,18 @@ w .icon-bst:hover {
   color: #999;
 }
 
+.header-contact-info-mem-detail ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-mem-detail ul li {
+  display: flex;
+  align-items: center;
+}
+
 .wrapper {
   background-color: #fff;
 }
@@ -3719,6 +3743,18 @@ w .icon-bst:hover {
   opacity: 0.9;
   color: #ff630e;
   transition: all 0.3s;
+}
+
+.header-contact-info-edit-profile ul, .header-contact-info-member-pro ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-edit-profile ul li, .header-contact-info-member-pro ul li {
+  display: flex;
+  align-items: center;
 }
 
 .annotation-wrapper .banner__annotation {
@@ -3902,6 +3938,18 @@ w .icon-bst:hover {
 
 .separator-bill {
   border-bottom: 1px solid white;
+}
+
+.header-contact-info-contact-info ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-contact-info ul li {
+  display: flex;
+  align-items: center;
 }
 
 .blog-detail-wrapper .banner__blog-detail {
@@ -4321,6 +4369,18 @@ w .icon-bst:hover {
 }
 .member-detail-wrapper .mentor-profile-edit-content .id-card-warpper .card-id-custom img {
   height: 220px;
+}
+
+.header-contact-info-mentor-pro-edit ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-mentor-pro-edit ul li {
+  display: flex;
+  align-items: center;
 }
 
 .withdraw-wrapper .banner__withdraw {
@@ -5061,6 +5121,18 @@ input {
   margin-right: 10px;
 }
 
+.header-contact-info-create-course ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-create-course ul li {
+  display: flex;
+  align-items: center;
+}
+
 .buy-course-wrapper .banner__buy-course {
   background-image: url(../images/banner-2.jpg);
   background-position: center;
@@ -5434,6 +5506,18 @@ input {
 }
 .member-detail-wrapper .mentor-profile-edit-content .id-card-warpper .card-id-custom img {
   height: 220px;
+}
+
+.header-contact-info-member-profile-edit ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-member-profile-edit ul li {
+  display: flex;
+  align-items: center;
 }
 
 .lms-wrapper .banner__lms {

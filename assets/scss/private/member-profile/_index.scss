@@ -99,3 +99,15 @@
         }
     }
 }
+
+.header-contact-info-edit-profile ul, .header-contact-info-member-pro ul {
+    display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-edit-profile ul li, .header-contact-info-member-pro ul li {
+    display: flex;
+  align-items: center;
+}

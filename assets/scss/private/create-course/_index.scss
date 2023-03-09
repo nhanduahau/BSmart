@@ -627,3 +627,15 @@ input {
 .card-header i {
   margin-right: 10px;
 }
+
+.header-contact-info-create-course ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-create-course ul li {
+  display: flex; 
+  align-items: center;
+}
