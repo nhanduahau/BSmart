@@ -101,13 +101,20 @@
 }
 
 .header-contact-info-edit-profile ul, .header-contact-info-member-pro ul {
-    display: flex;
+  display: flex;
   align-items: center;
   margin-left: -44px;
   color: #fff;
 }
 
 .header-contact-info-edit-profile ul li, .header-contact-info-member-pro ul li {
-    display: flex;
+  display: flex;
   align-items: center;
+}
+
+.wrapper .paginate_button.current {
+    color: #ff630e !important;
+    background-color: #e4e2e2;
+    border-radius: 4px;
+    font-weight: 500;
 }

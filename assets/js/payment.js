@@ -71,14 +71,14 @@
 //               <h1>Số tiền gốc: </h1>
 //               <p>${course.balance}</p>
 //             </div>
-              
+
 //             <div class="card1-total-price-quantity">
 //               <h1>Số lượng: </h1>
 //               <p>${course.quantity}</p>
 //             </div>
 //           </div>
 //         </div>
-       
+
 //         <div class="card1-total-price-total-cost">
 //           <button class="card1-total-price-btn-delete" id="btn-del-card-course" onclick="handleDeleteCardCourse(${course.id})">Xóa</button>
 //         </div>
@@ -90,7 +90,6 @@
 // html = htmls.join("");
 // renderCardCourse.innerHTML = html;
 // Render card
-
 
 // Payment with momo
 // var btnMomo = document.getElementById("btn-momo");
@@ -168,26 +167,64 @@
 
 // Điều kiện lúc thanh toán
 var btnPayment = document.getElementById("total-course-cash-payment-btn");
-var radios = document.getElementsByName('groupOfDefaultRadios');
+var bgContainerMomo = document.querySelector(".total-course-icon-item-momo");
+var bgContainerViettelPay = document.querySelector(
+  ".total-course-icon-item-viettel-pay"
+);
+var btnMomo = document.getElementById("btn-momo");
+var btnViettelPay = document.getElementById("btn-viettel-1");
+var valueMomo;
+var valueViettelPay;
+var radios = document.getElementsByName("groupOfDefaultRadios");
 
+// clicked button momo
+btnMomo.addEventListener("click", function () {
+  bgContainerMomo.classList = "total-course-icon-item-viettel-pay-active";
+  valueMomo = "momo";
+
+  bgContainerViettelPay.classList.remove(
+    "total-course-icon-item-viettel-pay-active"
+  );
+  bgContainerViettelPay.classList =
+    "total-course-icon-item-viettel-pay-none-active";
+});
+
+// clicked button viettel pay
+btnViettelPay.addEventListener("click", function () {
+  bgContainerViettelPay.classList = "total-course-icon-item-momo-active";
+  valueViettelPay = "viettel-pay";
+
+  bgContainerMomo.classList.remove("total-course-icon-item-momo-active");
+  bgContainerMomo.classList = "total-course-icon-item-momo-none-active";
+});
+
+// clicked button payment
 btnPayment.addEventListener("click", function (e) {
   e.preventDefault();
 
-  for (var i = 0, length = radios.length; i < length; i++) {
-    if (radios[i].checked) {
-      // do whatever you want with the checked radio
-      if (radios[i].value == 'momo') {
-        // link QR Momo here
-        console.log('momo')
-      } else if(radios[i].value == 'Viettel') {
-        // link QR Viettel here
-        console.log('viettel')
-      }
-  
-      // only one radio can be logically checked, don't check the rest
-      break;
-    }
+  if (valueMomo == "momo") {
+    console.log("momo");
+  } else if (valueViettelPay == "viettel-pay") {
+    console.log("viettel-pay");
   }
+
+  // for (var i = 0, length = radios.length; i < length; i++) {
+  //   if (radios[i].checked) {
+  //     // do whatever you want with the checked radio
+  //     if (radios[i].value == "momo") {
+  //       // link QR Momo here
+  //       console.log("momo");
+  //       bgContainerMomo.style.border = "2px solid green";
+  //     } else if (radios[i].value == "Viettel") {
+  //       // link QR Viettel here
+  //       console.log("viettel");
+  //       bgContainerViettelPay.style.border = "2px solid green";
+  //     }
+
+  //     // only one radio can be logically checked, don't check the rest
+  //     break;
+  //   }
+  // }
 
   var balance = document
     .querySelector(".total-course-cash-balance")
@@ -244,54 +281,68 @@ btnPaymentCash.addEventListener("click", function (e) {
   $(showPaymentCash).toggle();
 });
 
-
-
 //kết quả tạm tính
 // Lấy danh sách các khóa học
-const courses = [...document.querySelectorAll('.card1-info')];
+const courses = [...document.querySelectorAll(".card1-info")];
 
 // Tính tổng số tiền của các khóa học
 const totalPrice = courses.reduce((total, course) => {
-  const balance = parseFloat(course.querySelector('.card1-total-price-cost p').textContent);
+  const balance = parseFloat(
+    course.querySelector(".card1-total-price-cost p").textContent
+  );
   return total + balance;
 }, 0);
 
 // Hiển thị giá trị tạm tính được với dấu chấm mỗi 3 số và đơn vị VND
-const formattedPrice = totalPrice.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'});
-document.querySelector('.bill-member-item-price').textContent = formattedPrice;
+const formattedPrice = totalPrice.toLocaleString("vi-VN", {
+  style: "currency",
+  currency: "VND",
+});
+document.querySelector(".bill-member-item-price").textContent = formattedPrice;
 
 // Tính tổng tiền sau khi trừ giảm giá và hiển thị số tiền giảm giá
 const discountPrice4 = 200000; // Giả sử giá giảm giá là 200,000 VND
-const formattedDiscountPrice = discountPrice4.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'});
-document.querySelector('.bill-member-item-price-1').textContent = formattedDiscountPrice;
+const formattedDiscountPrice = discountPrice4.toLocaleString("vi-VN", {
+  style: "currency",
+  currency: "VND",
+});
+document.querySelector(".bill-member-item-price-1").textContent =
+  formattedDiscountPrice;
 const totalAfterDiscount = totalPrice - discountPrice4;
 
-const formattedTotalAfterDiscount = totalAfterDiscount.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'});
-document.querySelector('.bill-member-item-price-2').textContent = formattedTotalAfterDiscount;
-
+const formattedTotalAfterDiscount = totalAfterDiscount.toLocaleString("vi-VN", {
+  style: "currency",
+  currency: "VND",
+});
+document.querySelector(".bill-member-item-price-2").textContent =
+  formattedTotalAfterDiscount;
 
 //
 let totalCourseInPayment = document.getElementById("quantity-courses-payment");
 
-  // Total course in payment
-  totalCourseInPayment.textContent = document.querySelectorAll('.card-course-item').length;
+// Total course in payment
+totalCourseInPayment.textContent =
+  document.querySelectorAll(".card-course-item").length;
 
-  // delete card course
-  function handleDeleteCardCourse() {
-    let cardCourseItem = document.querySelector(".card-course-item");
-    let card1Elements;
+// delete card course
+function handleDeleteCardCourse() {
+  let cardCourseItem = document.querySelector(".card-course-item");
+  let card1Elements;
 
-    if (cardCourseItem) {
-      cardCourseItem.remove();
+  if (cardCourseItem) {
+    cardCourseItem.remove();
 
-      // update total course in payment
-      card1Elements = document.querySelectorAll(".card-course-item");
-      totalCourseInPayment.textContent = card1Elements.length;
-    }
+    // update total course in payment
+    card1Elements = document.querySelectorAll(".card-course-item");
+    totalCourseInPayment.textContent = card1Elements.length;
   }
+}
 
 //Yêu cầu hiển thị ở số tiền gốc
 const totalPriceElement = document.getElementById("total-price");
-    const totalPrice1 = parseInt(totalPriceElement.textContent);
-    const formattedPrice1 = totalPrice.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
-    totalPriceElement.textContent = formattedPrice1;
+const totalPrice1 = parseInt(totalPriceElement.textContent);
+const formattedPrice1 = totalPrice.toLocaleString("vi-VN", {
+  style: "currency",
+  currency: "VND",
+});
+totalPriceElement.textContent = formattedPrice1;
