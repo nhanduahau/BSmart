@@ -1,14 +1,14 @@
 // Validator password for mentor
 var inputPasswordMentor = document.getElementById("password-mentor");
+var confirmPasswordMentor = document.getElementById("confirm-password-mentor");
 var messageValid = document.getElementById("message-validator");
 
-// When user write
+// When user types in password field
 var patternPassword =
-  /^(?=.*[a-z])(?=.*[A-Z])(?=.*d)(?=.*[@$!%*?&])[A-Za-zd@$!%*?&]{6,}$/;
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
 
 inputPasswordMentor.addEventListener("keyup", function () {
-  if (inputPasswordMentor.value.match(patternPassword)) {
-    console.log("matched");
+  if (patternPassword.test(inputPasswordMentor.value)) {
     messageValid.classList.remove("message-un-valid");
     messageValid.style.display = "none";
     return true;
@@ -19,25 +19,33 @@ inputPasswordMentor.addEventListener("keyup", function () {
   }
 });
 
+// // When user types in confirm password field
+// confirmPasswordMentor.addEventListener("keyup", function () {
+//   if (confirmPasswordMentor.value === inputPasswordMentor.value) {
+//     console.log("matched");
+//     messageValid.classList.remove("message-un-valid");
+//     messageValid.style.display = "none";
+//     return true;
+//   } else {
+//     messageValid.classList.add("message-un-valid");
+//     messageValid.style.display = "block";
+//     return false;
+//   }
+// });
+
 // điều kiện và ràng buộc khi nhập mật khẩu mới
 function checkPasswordMatch() {
   var password = document.getElementById("password");
   var confirmPassword = document.getElementById("confirm-password");
-
-  // var password1 = document.getElementById("password1");
-  // var confirm1Password = document.getElementById("confirm-password1");
-
   // var passwordMatch = document.getElementById("password-match");
   // var passwordNotMatch = document.getElementById("password-not-match");
   var passwordNotMatchFeedback = document.getElementById("password-error");
 
-  // var password1NotMatchFeedback = document.getElementById("password1-error");
 
   if (password.value == "" || confirmPassword.value == "") {
     // passwordMatch.style.display = "none";
     // passwordNotMatch.style.display = "none";
     passwordNotMatchFeedback.style.display = "none";
-    // password1NotMatchFeedback.style.display = "none";
     return;
   }
 
@@ -46,24 +54,17 @@ function checkPasswordMatch() {
     // passwordMatch.style.display = "inline";
     // passwordNotMatch.style.display = "none";
     passwordNotMatchFeedback.style.display = "block";
-
-    // confirm1Password.setCustomValidity("Mật khẩu không khớp")
-    // password1NotMatchFeedback.style.display = "block";
   } else {
     confirmPassword.setCustomValidity("");
     // passwordMatch.style.display = "none";
     // passwordNotMatch.style.display = "inline";
     passwordNotMatchFeedback.style.display = "none";
-
-    // confirm1Password.setCustomValidity("")
-    // password1NotMatchFeedback.style.display = "none";
   }
   if (password.value == "" || confirmPassword.value == "") {
     passwordMatch.style.display = "none";
     // passwordNotMatch.style.display = "none";
     // passwordNotMatchFeedback.style.display = "none";
     passwordError.className = "invalid-feedback";
-    // password1Error.className = "invalid-feedback1";
     return;
   }
 }
