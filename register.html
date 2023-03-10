@@ -480,8 +480,8 @@
                     </button>
                 </div>
                 <div id="confirm-password-error" class="invalid-feedback">Xác nhận mật khẩu mới phải trùng với mật khẩu mới</div>
-                <div id="password-match" class="material-icons" style="color:red; display:none">clear</div>
-                <div id="password-not-match" class="material-icons" style="color:green; display:none">done</div>
+                <!-- <div id="password-match" class="material-icons" style="color:red; display:none">clear</div>
+                <div id="password-not-match" class="material-icons" style="color:green; display:none">done</div> -->
             </div>
               <div class="registration-btn mb-3">
                 <a href="./login-success.html" class="btn btn-primary-custom">Đăng ký</a>
@@ -532,7 +532,7 @@
                   name="email"
                 />
               </div>
-              <div class="form-group mb-3">
+              <!-- <div class="form-group mb-3">
                 <label for="password" class="mb-2">Mật khẩu</label>
                 <input
                   type="password"
@@ -553,7 +553,32 @@
                   class="form-control"
                   name="confirmPassword"
                 />
-              </div>
+              </div> -->
+              <div class="form-group mb-3">
+                <label class="form-label form-label-custom">Nhập mật khẩu *</label>
+                <div class="input-group show-password">
+                  <input type="password" class="form-control" id="password1" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="password1-error" oninput="validatePassword()">
+                  
+                  <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('password1')">
+                    <i class="fa fa-eye show-password-icon"></i>
+                    </button>
+                </div>
+                <div id="password1-error" class="invalid-feedback1" style="display: none;">Mật khẩu mới phải có ít nhất 6 ký tự, bao gồm ít nhất 1 số, 1 chữ hoa, 1 ký tự đặc biệt</div>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label class="form-label form-label-custom">Xác nhận mật khẩu *</label>
+                <div class="input-group show-password">
+                  <input type="password" class="form-control" id="confirm-password1" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="confirm-password-error" oninput="checkPasswordMatch()">
+                  
+                  <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('confirm-password1')">
+                      <i class="fa fa-eye show-password-icon"></i>
+                    </button>
+                </div>
+                <div id="confirm-password-error" class="invalid-feedback1" style="display: none;">Xác nhận mật khẩu mới phải trùng với mật khẩu mới</div>
+                <!-- <div id="password-match" class="material-icons" style="color:red; display:none">clear</div>
+                <div id="password-not-match" class="material-icons" style="color:green; display:none">done</div> -->
+            </div>
               <div class="form-group mb-3">
                 <label for="confirmPassword" class="mb-2"
                   >Giới thiệu bản thân</label
