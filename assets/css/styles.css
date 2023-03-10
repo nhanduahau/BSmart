@@ -1504,6 +1504,10 @@ div.swiper-button-prev:after {
   color: #999;
 }
 
+.invalid-feedback1 {
+  color: red;
+}
+
 .banner__course {
   width: 100%;
   padding: 110px 0 100px;
@@ -5984,6 +5988,30 @@ input {
   .sidebar-wrap {
     display: none;
   }
+  .feedback-container {
+    margin-top: 24px !important;
+    width: 800px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .header-course-search {
+    display: none !important;
+  }
+  .feedback-left-info h2 {
+    font-size: 1.1rem !important;
+    font-weight: bold;
+  }
+  .select-feedback-container {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    width: 800px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .feedback-left-info h2 {
+    font-size: 1.1rem !important;
+    font-weight: bold;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom .card-title {
@@ -6045,6 +6073,30 @@ input {
   }
   .img-avatar {
     width: 140px;
+  }
+  .feedback-container {
+    margin-top: 24px !important;
+    width: 800px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .header-course-search {
+    display: none !important;
+  }
+  .feedback-left-info h2 {
+    font-size: 1.1rem !important;
+    font-weight: bold;
+  }
+  .select-feedback-container {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    width: 800px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .feedback-left-info h2 {
+    font-size: 1.1rem !important;
+    font-weight: bold;
   }
 }
 /* Tablet */
@@ -6364,6 +6416,35 @@ input {
   }
   .member-detail-wrapper .mentor-profile-edit-content .id-card-warpper .card-id-custom img {
     height: 300px;
+  }
+  .feedback-container {
+    margin-top: 24px !important;
+    width: 700px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .header-course-search {
+    display: none !important;
+  }
+  .feedback-left-info h2 {
+    font-size: 1rem !important;
+    font-weight: bold;
+  }
+  .select-feedback-container {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    width: 700px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .feedback-left-info h2 {
+    font-size: 1rem !important;
+    font-weight: bold;
+  }
+  .feedback-right-btn {
+    font-size: 0.9rem !important;
+    font-weight: 500;
+    padding: 7px !important;
   }
 }
 /* Mobile */
@@ -6812,9 +6893,49 @@ input {
   }
   /* Footer */
   /* ------------------------ */
+  .feedback-container {
+    margin-top: 24px !important;
+    width: 700px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .header-course-search {
+    display: none !important;
+  }
+  .feedback-left-info h2 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .select-feedback-container {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    width: 700px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .feedback-left-info h2 {
+    font-size: 1rem !important;
+    font-weight: bold;
+  }
+  .feedback-right-btn {
+    font-size: 0.79rem !important;
+    font-weight: 500;
+    padding: 6px !important;
+  }
 }
 /* ---------------- */
 @media only screen and (max-width: 480px) {
+  .feedback-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback-left {
+    display: flex;
+    align-items: center;
+  }
+  .feedback-right {
+    margin-top: 10px;
+  }
   .content-payment {
     display: flex;
     flex-direction: column;
@@ -6848,6 +6969,45 @@ input {
   .img-avatar {
     width: 82px;
   }
+  .feedback-container {
+    margin-top: 24px !important;
+    width: 400px !important;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .header-course-search {
+    display: none !important;
+  }
+  .feedback-header {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .feedback-left-info h2 {
+    font-size: 0.9rem !important;
+    font-weight: bold;
+  }
+  .select-feedback-container {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    width: 400px !important;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .feedback-left-info h2 {
+    font-size: 0.8rem !important;
+    font-weight: bold;
+  }
+  .feedback-right-btn {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.6rem !important;
+    font-weight: 400;
+    padding: 6px !important;
+  }
+  .select-feedback-left-info {
+    font-size: 0.8rem !important;
+    font-weight: bold;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 590px) {
   .section-card-contact {
@@ -6864,6 +7024,55 @@ input {
   }
   .img-avatar {
     width: 92px;
+  }
+  .feedback-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback-left {
+    display: flex;
+    align-items: center;
+  }
+  .feedback-right {
+    margin-top: 10px;
+  }
+  .feedback-container {
+    margin-top: 24px !important;
+    width: 400px !important;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .header-course-search {
+    display: none !important;
+  }
+  .feedback-header {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .feedback-left-info h2 {
+    font-size: 0.6rem !important;
+    font-weight: bold;
+  }
+  .select-feedback-container {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    width: 400px !important;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .feedback-left-info h2 {
+    font-size: 0.2rem !important;
+    font-weight: bold;
+  }
+  .feedback-right-btn {
+    margin: 0 !important;
+    font-size: 0.6rem !important;
+    font-weight: 400;
+    padding: 1px !important;
+  }
+  .select-feedback-left-info {
+    font-size: 0.2rem !important;
+    font-weight: bold;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -6942,10 +7151,68 @@ input {
   .img-avatar {
     width: 140px;
   }
+  .feedback-container {
+    margin-top: 24px !important;
+    width: 600px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .header-course-search {
+    display: none !important;
+  }
+  .feedback-left-info h2 {
+    font-size: 0.9rem !important;
+    font-weight: bold;
+  }
+  .select-feedback-container {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    width: 600px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .feedback-left-info h2 {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .feedback-right-btn {
+    font-size: 0.9rem !important;
+    font-weight: 400;
+    padding: 5px !important;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 685px) {
   .img-avatar {
     width: 120px;
+  }
+  .feedback-container {
+    margin-top: 24px !important;
+    width: 500px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .header-course-search {
+    display: none !important;
+  }
+  .feedback-left-info h2 {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .select-feedback-container {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    width: 500px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .feedback-left-info h2 {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  .feedback-right-btn {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+    padding: 5px !important;
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 991px) {
@@ -6962,5 +7229,47 @@ input {
     margin-left: 40px;
     width: 90vh;
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .feedback-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback-left {
+    display: flex;
+    align-items: center;
+  }
+  .feedback-right {
+    margin-top: 10px;
+  }
+  .feedback-container {
+    margin-top: 24px !important;
+    width: 320px !important;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .header-course-search {
+    display: none !important;
+  }
+  .feedback-left-info h2 {
+    font-size: 0.4rem;
+    font-weight: bold;
+  }
+  .select-feedback-container {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    width: 320px !important;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .feedback-left-info h2 {
+    font-size: 0.4rem;
+    font-weight: bold;
+  }
+  .feedback-right-btn {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+    padding: 6px !important;
   }
 }/*# sourceMappingURL=styles.css.map */
