@@ -840,6 +840,19 @@ body {
   border-radius: 4px;
   margin: 0 4px;
   padding-left: 4px;
+  margin-left: 34px;
+
+  &:focus {
+    outline: 1px solid #fd7e14;
+    border: 1px solid #fd7e14;
+  }
+}
+
+.card1-total-price-code-input-refer {
+  border: 1px solid #fd7e14;
+  border-radius: 4px;
+  margin: 0 4px;
+  padding-left: 4px;
 
   &:focus {
     outline: 1px solid #fd7e14;
