@@ -37,6 +37,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Import bstr4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!-- Import css reset -->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <!-- Import css styles -->
@@ -604,7 +608,54 @@
           </div>
           
           <div class="feedback-right">
-            <button class="feedback-right-btn">VIẾT ĐÁNH GIÁ</button>
+            <button class="feedback-right-btn" data-toggle="modal" data-target="#exampleModalCenter">VIẾT ĐÁNH GIÁ</button>
+          </div>
+
+          <!-- Show modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title title-feedback" id="exampleModalLongTitle">ĐÁNH GIÁ KHÓA HỌC</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="feedback-left-body">
+                    <img src="./assets/images/avatar-mentor-1.jpg" class="feedback-left-img" alt="img-course">
+                    <div class="feedback-left-info-body">
+                      <h2>FRONT END BASIC</h2>
+                      <h2>Giảng viên: Trương Long</h2>
+                      <h2>6.500.000 VNĐ</h2>
+                    </div>
+                  </div>
+
+                  <hr class="separator-bottom"/>
+
+                  <div class="feedback-icons">
+                    <h5>CHẤT LƯỢNG BÀI HỌC: </h5>
+                    <div class="testi-rating-feed">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                  
+                  <!-- Write feedback -->
+                  <div class="write-feedback">
+                    <h5>VIẾT ĐÁNH GIÁ:</h5>
+                    <textarea rows="10" placeholder="Để lại đánh giá..."></textarea>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="feedback-right-btn-send">GỬI ĐÁNH GIÁ</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -622,10 +673,80 @@
           </div>
 
           <div class="feedback-right">
-            <button class="feedback-right-btn">VIẾT ĐÁNH GIÁ</button>
+            <button class="feedback-right-btn" data-toggle="modal" data-target="#exampleModalCenter">VIẾT ĐÁNH GIÁ</button>
+          </div>
+
+          <!-- Show modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title title-feedback" id="exampleModalLongTitle">ĐÁNH GIÁ KHÓA HỌC</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="feedback-left-body">
+                    <img src="./assets/images/avatar-mentor-1.jpg" class="feedback-left-img" alt="img-course">
+                    <div class="feedback-left-info-body">
+                      <h2>FRONT END BASIC</h2>
+                      <h2>Giảng viên: Trương Long</h2>
+                      <h2>6.500.000 VNĐ</h2>
+                    </div>
+                  </div>
+
+                  <hr class="separator-bottom"/>
+
+                  <div class="feedback-icons">
+                    <h5>CHẤT LƯỢNG BÀI HỌC: </h5>
+                    <div class="testi-rating-feed">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                  
+                  <!-- Write feedback -->
+                  <div class="write-feedback">
+                    <h5>VIẾT ĐÁNH GIÁ:</h5>
+                    <textarea rows="10" placeholder="Để lại đánh giá..."></textarea>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="feedback-right-btn-send">GỬI ĐÁNH GIÁ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Select feedback -->
+      <div class="select-feedback-container">
+        <hr class="separator-bottom-feedback"/>
+
+        <!-- Body -->
+        <div class="feedback-body">
+          <div class="feedback-left">
+            <img src="./assets/images/avatar-mentor-1.jpg" class="feedback-left-img" alt="img-course">
+
+            <div class="feedback-left-info">
+              <h2 class="select-feedback-left-info">FRONT END BASIC</h2>
+              <h2 class="select-feedback-left-info">Giảng viên: Trương Long</h2>
+              <h2 class="select-feedback-left-info">6.500.000 VNĐ</h2>
+            </div>
+          </div>
+          
+          <div class="feedback-right">
+            <button class="feedback-right-btn">XEM ĐÁNH GIÁ</button>
           </div>
         </div>
 
+        <hr class="separator-bottom-feedback"/>
       </div>
 
       <!-- End feedback -->
@@ -745,6 +866,10 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Import script Jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
