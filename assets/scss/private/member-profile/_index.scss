@@ -1,120 +1,114 @@
 .wrapper {
     background-color: #fff;
-
-    .courses-profile {
-        
-        h3 {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 46px;
-        }
-    }
-
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        li {
-            display: flex;
-            align-items: center;
-        }
-    }
-
-    // Render courses 
-    .card-course-custom {
-        border-radius: 8px ;
-        box-shadow: 0 0 8px 0 rgb(188, 184, 184);
-
-        &:hover {
-            box-shadow: 0 0 18px 0 rgb(188, 184, 184);
-        }
-    }
-
-    .card-img-top {
-        border-radius: 8px;
-    }
-
-    .title-name-course {
-        color: #130f40;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 30px;
-    }
-
-    .sub-title {
-        color: black;
-        font-size: 16px;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-
-    // History payment 
-    .history-payment-container {
-
-        h3 {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 46px;
-        }
-    }
-
-    // sp table
-    #example_paginate, #historyMentorProfile_paginate {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    #example_previous {
-        margin-right: 12px;
-        cursor: pointer;
-
-        &:hover {
-            opacity: 0.9;
-            color: #ff630e;
-            transition: all 0.3s;
-        }
-    }
-
-    #example_next {
-        margin-left: 12px;
-        cursor: pointer;
-
-        &:hover {
-            opacity: 0.9;
-            color: #ff630e;
-            transition: all 0.3s;
-        }
-    }
-
-    .paginate_button {
-        padding: 0 4px;
-        cursor: pointer;
-
-        &:hover {
-            opacity: 0.9;
-            color: #ff630e;
-            transition: all 0.3s;
-        }
-    }
-}
-
-.header-contact-info-edit-profile ul, .header-contact-info-member-pro ul {
-  display: flex;
-  align-items: center;
-  margin-left: -44px;
-  color: #fff;
-}
-
-.header-contact-info-edit-profile ul li, .header-contact-info-member-pro ul li {
-  display: flex;
-  align-items: center;
-}
-
-.wrapper .paginate_button.current {
+  }
+  
+  .wrapper .courses-profile h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  
+  .wrapper .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .wrapper .contact-info li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper .card-course-custom {
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 #bcb8b8;
+  }
+  
+  .wrapper .card-course-custom:hover {
+    box-shadow: 0 0 18px 0 #bcb8b8;
+  }
+  
+  .wrapper .card-img-top {
+    border-radius: 8px;
+  }
+  
+  .wrapper .title-name-course {
+    color: #130f40;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  
+  .wrapper .sub-title {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .wrapper .history-payment-container h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  
+  .wrapper #example_paginate,
+  .wrapper #historyMentorProfile_paginate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .wrapper #example_previous {
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  
+  .wrapper #example_previous:hover {
+    opacity: 0.9;
+    color: #ff630e;
+    transition: all 0.3s;
+  }
+  
+  .wrapper #example_next {
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  
+  .wrapper #example_next:hover {
+    opacity: 0.9;
+    color: #ff630e;
+    transition: all 0.3s;
+  }
+  
+  .wrapper .paginate_button {
+    padding: 0 4px;
+    cursor: pointer;
+  }
+  
+  .wrapper .paginate_button:hover {
+    opacity: 0.9;
+    color: #ff630e;
+    transition: all 0.3s;
+  }
+  
+  .header-contact-info-edit-profile ul,
+  .header-contact-info-member-pro ul {
+    display: flex;
+    align-items: center;
+    margin-left: -44px;
+    color: #fff;
+  }
+  
+  .header-contact-info-edit-profile ul li,
+  .header-contact-info-member-pro ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper .paginate_button.current {
     color: #ff630e !important;
     background-color: #e4e2e2;
     border-radius: 4px;
     font-weight: 500;
-}
+  }

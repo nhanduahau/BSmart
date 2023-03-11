@@ -1,22 +1,23 @@
 .contacts-section {
   padding: 95px 0 150px;
-  background-color: $grey-white-color;
-  .form-contact-img {
-    border-radius: 10px;
-    box-shadow: 0 0 10px;
-  }
-  .form-contact-container {
-    padding: 25px 30px;
-    background-color: $white-color;
-    border-radius: 10px;
-    h2 {
-      font-size: 30px;
-      font-weight: 700;
-      color: $primary-color;
-      text-transform: uppercase;
-    }
-    textarea {
-      height: 161px;
-    }
-  }
+}
+
+.contacts-section .form-contact-img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+}
+
+.contacts-section .form-contact-container {
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+
+.contacts-section .form-contact-container h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contacts-section .form-contact-container textarea {
+  height: 161px;
 }
