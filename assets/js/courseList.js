@@ -163,7 +163,7 @@ htmls = arrCourses.map((course) => {
                     <a href="./course-detail.html" id="name-course">${
                       course.nameCourse
                     }</a>
-                    <img src="./assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
+                    <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
                 </h5>
                 <p class="sub-title">${course.nameMentor}</p>
                 <p class="description">${course.desc}</p>
@@ -262,7 +262,7 @@ inputSearch.addEventListener("keyup", function () {
                           <a href="./course-detail.html" id="name-course">${
                             arrCourses[i].nameCourse
                           }</a>
-                          <img src="./assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
+                          <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
                       </h5>
                       <p class="sub-title">${arrCourses[i].nameMentor}</p>
                       <p class="description">${arrCourses[i].desc}</p>
@@ -360,7 +360,7 @@ function handleSearchCourseBtn() {
                               <a href="./course-detail.html" id="name-course">${
                                 arrCourses[i].nameCourse
                               }</a>
-                              <img src="./assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
+                              <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
                           </h5>
                           <p class="sub-title">${arrCourses[i].nameMentor}</p>
                           <p class="description">${arrCourses[i].desc}</p>
