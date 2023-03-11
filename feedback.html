@@ -743,7 +743,55 @@
           </div>
           
           <div class="feedback-right">
-            <button class="feedback-right-btn">XEM ĐÁNH GIÁ</button>
+            <button class="feedback-right-btn" data-toggle="modal" data-target="#exampleModalCenterSelectFeedback">XEM ĐÁNH GIÁ</button>
+          </div>
+
+          <!-- Show modal -->
+          <div class="modal fade" id="exampleModalCenterSelectFeedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterSelectFeedbackTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title title-feedback" id="exampleModalLongTitle">ĐÁNH GIÁ KHÓA HỌC</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="feedback-left-body">
+                    <img src="./assets/images/avatar-mentor-1.jpg" class="feedback-left-img" alt="img-course">
+                    <div class="feedback-left-info-body">
+                      <h2>FRONT END BASIC</h2>
+                      <h2>Giảng viên: Trương Long</h2>
+                      <h2>6.500.000 VNĐ</h2>
+                    </div>
+                  </div>
+
+                  <hr class="separator-bottom"/>
+
+                  <div class="feedback-icons">
+                    <h5>CHẤT LƯỢNG BÀI HỌC: </h5>
+                    <div class="testi-rating-feed">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                  
+                  <!-- Write feedback -->
+                  <div class="write-feedback">
+                    <!-- <h5>VIẾT ĐÁNH GIÁ:</h5>
+                    <textarea rows="10" placeholder="Để lại đánh giá..."></textarea> -->
+                    <p>Load bình luận ở đây...</p>
+                  </div>
+
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="feedback-right-btn-send">GỬI ĐÁNH GIÁ</button>
+                </div> -->
+              </div>
+            </div>
           </div>
         </div>
 
