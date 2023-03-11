@@ -1081,7 +1081,6 @@ div.swiper-button-prev:after {
   background: rgba(5, 1, 51, 0.7);
 }
 .aboutus-wrapper .employee__img {
-  margin-top: 130px;
   width: 100%;
   padding: 30px;
 }
@@ -1502,7 +1501,8 @@ div.swiper-button-prev:after {
   color: #999;
 }
 
-.invalid-feedback1 {
+.invalid-feedback {
+  font-size: 13px;
   color: red;
 }
 
@@ -3042,6 +3042,11 @@ body {
   background-color: red;
 }
 
+.icon-level {
+  object-fit: cover;
+  width: 70px;
+}
+
 .mentor-detail-wrapper .banner-mentor-detail {
   width: 100%;
   padding: 110px 0 100px;
@@ -3299,7 +3304,7 @@ body {
 }
 
 .blog-wrapper .banner__blog {
-  background-image: url(../images/banner-2.jpg);
+  background-image: url(assetsimagesºnner-2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3341,7 +3346,6 @@ body {
 }
 .blog-wrapper .blog-area {
   background-color: #fff;
-  padding: 90px 0 100px;
 }
 .blog-wrapper .blog-area .all-posts-wrap {
   padding-right: 40px;
@@ -3868,7 +3872,7 @@ body {
   margin-bottom: 20px;
 }
 .annotation-wrapper .section2-annotation .box-annottation {
-  background-color: #e7e7e9;
+  background-color: #E8E7EC;
   border-radius: 8px;
   padding: 20px 20px;
   -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
@@ -4002,8 +4006,9 @@ body {
   /* display: flex; */
 }
 
-.separator-bill {
+.separator1-bill {
   border-bottom: 1px solid white;
+  margin-top: 20px;
 }
 
 .header-contact-info-contact-info ul {
@@ -5197,6 +5202,19 @@ input {
 .header-contact-info-create-course ul li {
   display: flex;
   align-items: center;
+}
+
+.card-body {
+  border: 1px solid #c1c1c1;
+}
+
+.card-body1 {
+  display: flex;
+  width: 100%;
+  border: 1px solid #c1c1c1;
+}
+.card-body1 .p-4 {
+  margin-left: 100px;
 }
 
 .buy-course-wrapper .banner__buy-course {
@@ -7425,5 +7443,10 @@ input {
     font-size: 0.8rem !important;
     font-weight: 400;
     padding: 6px !important;
+  }
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .row {
+    margin-right: 60px;
   }
 }/*# sourceMappingURL=styles.css.map */

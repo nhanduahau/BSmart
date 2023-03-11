@@ -2,7 +2,7 @@
 var inputPasswordMentor = document.getElementById("password-mentor");
 var confirmPasswordMentor = document.getElementById("confirm-password-mentor");
 var messageValid = document.getElementById("message-validator");
-
+var message1Valid = document.getElementById("message-validator1");
 // When user types in password field
 var patternPassword =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
@@ -19,19 +19,19 @@ inputPasswordMentor.addEventListener("keyup", function () {
   }
 });
 
-// // When user types in confirm password field
-// confirmPasswordMentor.addEventListener("keyup", function () {
-//   if (confirmPasswordMentor.value === inputPasswordMentor.value) {
-//     console.log("matched");
-//     messageValid.classList.remove("message-un-valid");
-//     messageValid.style.display = "none";
-//     return true;
-//   } else {
-//     messageValid.classList.add("message-un-valid");
-//     messageValid.style.display = "block";
-//     return false;
-//   }
-// });
+// When user types in confirm password field
+confirmPasswordMentor.addEventListener("keyup", function () {
+  if (confirmPasswordMentor.value === inputPasswordMentor.value) {
+    console.log("matched");
+    message1Valid.classList.remove("message-un-valid");
+    message1Valid.style.display = "none";
+    return true;
+  } else {
+    message1Valid.classList.add("message-un-valid");
+    message1Valid.style.display = "block";
+    return false;
+  }
+});
 
 // điều kiện và ràng buộc khi nhập mật khẩu mới
 function checkPasswordMatch() {

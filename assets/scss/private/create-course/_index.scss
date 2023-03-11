@@ -639,3 +639,14 @@ input {
   display: flex; 
   align-items: center;
 }
+.card-body{
+  border: 1px solid #c1c1c1;
+}
+.card-body1{
+  display: flex;
+  width: 100%;
+  border: 1px solid #c1c1c1;
+  .p-4{
+    margin-left: 100px;
+  }
+}
