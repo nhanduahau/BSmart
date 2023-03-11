@@ -800,6 +800,7 @@ div.swiper-button-prev:after {
 }
 
 .learning-path .left-section-content {
+  color: white;
   position: relative;
 }
 
@@ -832,6 +833,7 @@ div.swiper-button-prev:after {
 }
 
 .learning-path .right-section .right-section-content {
+  color: white;
   position: relative;
 }
 
@@ -6660,6 +6662,10 @@ input {
   text-align: justify;
   line-height: 30px;
   font-weight: 400;
+}
+
+.service-card-icon, .service-card-title {
+  color: #ff630e;
 }
 
 .footer {
