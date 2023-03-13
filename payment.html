@@ -573,6 +573,10 @@
                   <h3>Giảm giá: </h3>
                   <h3 class="bill-member-item-price-1"></h3>
                 </div>
+                <div class="bill-member-item bill-bsmart-pay-number">
+                  <h3 class="bill-member-item-price-bsmart-pay-label">Sử dụng Bsmart: </h3>
+                  <h3 class="bill-member-item-price-bsmart-pay-number"></h3>
+                </div>
                 <!-- <hr class="separator-bill" /> -->
                 <div class="bill-member-item">
                   <h3>Tổng tiền: </h3>
@@ -584,37 +588,45 @@
               <h2 class="total-course-price">1.250.000 VND</h2> -->
 
               <p class="total-course-payment-title">Thanh toán bằng: </p>
-              <div class="total-course-icons">
+              <div class="select-1 ms-1">
+                <br>
+                <form>
+                  <div class="d-flex align-items-center">
+                    <span>Sử dụng BSmart: </span>
+                    <span class="bsmart-pay-number">200</span>
+                    <select class="form-select time-select" id="select-pay-confirm" aria-label="Default select example">
+                      <option value="bsmart-non-use" selected>Không sử dụng</option>
+                      <option value="bsmart-use">Sử dụng</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Hide -->
+              <!-- <div class="total-course-icons">
                 
-                  <!-- Momo -->
+                  
                   <div class="total-course-icon-item-momo">
                     <button class="total-course-icon-item-btn-momo" id="btn-momo" data-toggle="modal" data-target="#exampleModal">
-                      <img src="/assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo"> 
-                      <!-- <div class="custom-control custom-radio momo-inner" style="display: none;">
-                        <input type="radio" class="custom-control-input" value="momo" id="momo" name="groupOfDefaultRadios">
-                        <label class="custom-control-label" for="momo"></label>
-                      </div> -->
+                      <img src="/assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo">               
                     </button>
                   </div>
 
-                  <!-- Viettel pay -->
+                  
                   <div class="total-course-icon-item-viettel-pay">
                     <button class="total-course-icon-item-btn-viettel-pay" id="btn-viettel-1" data-toggle="modal" data-target="#exampleModal3">
                       <img src="assets\images\viettelpay.png" class="total-course-momo-icon" alt="img-momo">
-                      <!-- <div class="custom-control custom-radio viettel-inner">
-                        <input type="radio" class="custom-control-input" id="Viettel" value="Viettel" name="groupOfDefaultRadios">
-                        <label class="custom-control-label" for="Viettel"></label>
-                      </div> -->
                     </button>
                   </div>
 
-                <!-- Hide -->
+                
                 <div class="total-course-icon-item-bst">
                   <button class="total-course-icon-item-btn" id="total-course-icon-item-btn" disabled>
                     <p class="icon-bst" style="color: #003366;font-weight:bold;">BST</p>
                   </button>
                 </div>  
-              </div>
+              </div> -->
+              <!-- Hide -->
 
               <!-- payment cash -->
               <div class="total-course-cash" id="total-course-cash-show" style="display: none;">

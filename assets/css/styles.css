@@ -1600,6 +1600,12 @@ div.swiper-button-prev:after {
   color: red;
 }
 
+.message-match {
+  margin-top: 2px;
+  font-size: 0.8rem;
+  color: red;
+}
+
 .banner__course {
   width: 100%;
   padding: 110px 0 100px;
@@ -2887,6 +2893,27 @@ body {
   width: 138px;
 }
 
+.bsmart-pay-number {
+  margin-left: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fd7e14;
+}
+
+.bill-bsmart-pay-number {
+  display: none;
+}
+
+.bill-bsmart-pay-number {
+  display: flex;
+  align-items: center;
+}
+
+.bill-member-item-price-bsmart-pay-label {
+  display: none;
+  margin-right: 6px;
+}
+
 .course-detail-wrapper {
   background-color: #fff;
 }
@@ -3348,6 +3375,31 @@ body {
 .icon-level {
   object-fit: cover;
   width: 70px;
+}
+
+.time-select {
+  margin-left: 10px;
+  width: 290px;
+}
+
+.submit-select {
+  display: flex;
+  justify-content: center;
+}
+
+.bt-submit {
+  border: 1px solid #ff630e;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff630e;
+}
+
+.bt-submit:hover {
+  border: 1px solid #ff630e;
+  opacity: 0.8;
 }
 
 .mentor-detail-wrapper .banner-mentor-detail {

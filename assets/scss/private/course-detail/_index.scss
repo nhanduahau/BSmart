@@ -460,3 +460,27 @@
   object-fit: cover;
   width: 70px;
 }
+
+.time-select{
+  margin-left: 10px;
+  width: 290px;
+}
+.submit-select{
+  display: flex;
+  // flex-direction: column;
+  // width: 50%;
+  justify-content: center;
+}
+.bt-submit{
+  border: 1px solid #ff630e;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff630e;
+}
+.bt-submit:hover{
+  border: 1px solid #ff630e;
+  opacity: 0.8;
+}
