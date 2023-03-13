@@ -1435,6 +1435,11 @@
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  //buy.course
+  .row{
+    display: flex;
+    margin-left: 15vh;
+  }
   .img-avatar{
     width: 140px;
   }

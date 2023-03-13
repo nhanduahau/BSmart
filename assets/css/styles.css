@@ -6304,7 +6304,7 @@ input {
 
 .feedback-left-info h2 {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .feedback-right-btn {
@@ -8052,6 +8052,10 @@ input {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  .row {
+    display: flex;
+    margin-left: 15vh;
+  }
   .img-avatar {
     width: 140px;
   }
