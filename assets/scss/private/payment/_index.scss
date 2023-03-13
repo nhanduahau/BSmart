@@ -958,3 +958,24 @@ body {
   object-fit: cover;
   width: 138px;
 }
+
+.bsmart-pay-number {
+  margin-left: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fd7e14;
+}
+
+.bill-bsmart-pay-number {
+  display: none;
+}
+
+.bill-bsmart-pay-number {
+  display: flex;
+  align-items: center;
+}
+
+.bill-member-item-price-bsmart-pay-label {
+  display: none;
+  margin-right: 6px;
+}
