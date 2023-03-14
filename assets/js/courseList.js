@@ -43,7 +43,7 @@ let arrCourses = [
     avtImageMentor: "./assets/images/avatar-mentor-2.jpg",
     nameCourse: "ReactJS Intermediate",
     nameMentor: "Mentor Cường",
-    desc:"Khóa học gồm hơn 15 bài tập và dự án vô cùng thực tế tất tần tật về ReactJS từ Component, Binding, Sự kiện, Render, State, Cơ chế truyền dữ liệu, Lifecycle, Pure Component, Redux, Context, Hook, React Animation, Hook Animation, Kết nối Backend qua Restful API...Các kiến thức này cực kì cần thiết để bạn nhận việc và làm ngay cho doanh nghiệp.",
+    desc: "Khóa học gồm hơn 15 bài tập và dự án vô cùng thực tế tất tần tật về ReactJS từ Component, Binding, Sự kiện, Render, State, Cơ chế truyền dữ liệu, Lifecycle, Pure Component, Redux, Context, Hook, React Animation, Hook Animation, Kết nối Backend qua Restful API...Các kiến thức này cực kì cần thiết để bạn nhận việc và làm ngay cho doanh nghiệp.",
     time: "20h",
     quantity: "106 học viên",
     slot: "26 slot",
@@ -58,7 +58,7 @@ let arrCourses = [
     avtImageMentor: "./assets/images/avatar-mentor-2.jpg",
     nameCourse: "ReactJS Expert",
     nameMentor: "Mentor Cường",
-    desc:"Hoạt động với mong muốn mang đến cho các lập trình viên một thư viện dữ liệu dồi dào và miễn phí và Reactjs. Không những thế, thư viện cũng chính là nơi để mọi người có thể tham gia thảo luận về các kiến thức, kinh nghiệm cùng đề tài mà mình đang thực hiện.",
+    desc: "Hoạt động với mong muốn mang đến cho các lập trình viên một thư viện dữ liệu dồi dào và miễn phí và Reactjs. Không những thế, thư viện cũng chính là nơi để mọi người có thể tham gia thảo luận về các kiến thức, kinh nghiệm cùng đề tài mà mình đang thực hiện.",
     time: "20h",
     quantity: "106 học viên",
     slot: "26 slot",
@@ -73,7 +73,7 @@ let arrCourses = [
     avtImageMentor: "./assets/images/avatar-mentor-2.jpg",
     nameCourse: "PHP Basic",
     nameMentor: "Mentor Cường",
-    desc:"Khóa học đào tạo cấp tốc để trở thành lập trình viên PHP chuyên nghiệp cho người mới bắt đầu. Học cùng với chuyên gia nhiều năm kinh nghiệm trong nghề. Tự code các dự án thực tế ngay trong buổi học.",
+    desc: "Khóa học đào tạo cấp tốc để trở thành lập trình viên PHP chuyên nghiệp cho người mới bắt đầu. Học cùng với chuyên gia nhiều năm kinh nghiệm trong nghề. Tự code các dự án thực tế ngay trong buổi học.",
     time: "20h",
     quantity: "106 học viên",
     slot: "26 slot",
@@ -88,7 +88,7 @@ let arrCourses = [
     avtImageMentor: "./assets/images/avatar-mentor-2.jpg",
     nameCourse: "Devops Basic",
     nameMentor: "Mentor Cường",
-    desc:"Với 15 buổi học, kết hợp giữa lý thuyết và những bài thực hành thực tiễn, học viên học tại BSmart sẽ có cơ hội tiếp cận xu hướng làm việc mới, hiện đại hơn, có khả năng sử dụng các công cụ hỗ trợ cho những teams đã, đang và sẽ triển khai theo mô hình Devops. Khóa học DevOps on AWS của BSmart được thiết kế dựa trên việc tổng hợp những kinh nghiệm và kỹ năng thực tiễn trong quá trình làm dự án thực tế, đồng thời cập nhật và tổng hợp từ nhiều nguồn khác nhau, từ đó giúp học viên có cái nhìn bao quát và rõ nhất về Devops.",
+    desc: "Với 15 buổi học, kết hợp giữa lý thuyết và những bài thực hành thực tiễn, học viên học tại BSmart sẽ có cơ hội tiếp cận xu hướng làm việc mới, hiện đại hơn, có khả năng sử dụng các công cụ hỗ trợ cho những teams đã, đang và sẽ triển khai theo mô hình Devops. Khóa học DevOps on AWS của BSmart được thiết kế dựa trên việc tổng hợp những kinh nghiệm và kỹ năng thực tiễn trong quá trình làm dự án thực tế, đồng thời cập nhật và tổng hợp từ nhiều nguồn khác nhau, từ đó giúp học viên có cái nhìn bao quát và rõ nhất về Devops.",
     time: "20h",
     quantity: "106 học viên",
     slot: "26 slot",
@@ -103,7 +103,7 @@ let arrCourses = [
     avtImageMentor: "./assets/images/avatar-mentor-2.jpg",
     nameCourse: ".NET Core Basic",
     nameMentor: "Mentor Cường",
-    desc:"Khóa học lập trình asp.net dành cho các bạn sinh viên khoa CNTT các trường Trung cấp - Cao đẳng - Đại học . Và tất cả các đối tượng yêu thích, đam mê và mong muốn trở thành lập trình viên công nghệ .NET",
+    desc: "Khóa học lập trình asp.net dành cho các bạn sinh viên khoa CNTT các trường Trung cấp - Cao đẳng - Đại học . Và tất cả các đối tượng yêu thích, đam mê và mong muốn trở thành lập trình viên công nghệ .NET",
     time: "20h",
     quantity: "106 học viên",
     slot: "26 slot",
@@ -118,7 +118,7 @@ let arrCourses = [
     avtImageMentor: "./assets/images/avatar-mentor-2.jpg",
     nameCourse: ".NET Core MVC",
     nameMentor: "Mentor Cường",
-    desc:"Khóa học này là khóa học thứ 3 của các bạn giúp các bạn có cái nhìn tổng quan và các bước để xây dựng một dự án thực tế sử dụng ASP.NET MVC. Khóa học này mình xây dựng không theo một giáo trình nào mà đi thẳng vào thực tế dự án.",
+    desc: "Khóa học này là khóa học thứ 3 của các bạn giúp các bạn có cái nhìn tổng quan và các bước để xây dựng một dự án thực tế sử dụng ASP.NET MVC. Khóa học này mình xây dựng không theo một giáo trình nào mà đi thẳng vào thực tế dự án.",
     time: "20h",
     quantity: "106 học viên",
     slot: "26 slot",
@@ -133,7 +133,7 @@ let arrCourses = [
     avtImageMentor: "./assets/images/avatar-mentor-2.jpg",
     nameCourse: ".NET Core API",
     nameMentor: "Mentor Cường",
-    desc:"Khoá học này thiết kế theo phương pháp mới xây dựng một REST API chuẩn REST từng bước sau đó refactoring code theo Design Pattern.",
+    desc: "Khoá học này thiết kế theo phương pháp mới xây dựng một REST API chuẩn REST từng bước sau đó refactoring code theo Design Pattern.",
     time: "20h",
     quantity: "106 học viên",
     slot: "26 slot",
@@ -147,7 +147,7 @@ let arrCourses = [
 htmls = arrCourses.map((course) => {
   console.log("c", course);
   return `
-    <div class="col-lg-4 mb-3">
+    <div class="col-xl-4 col-lg-6 mb-3">
         <div class="card card-course-custom position-relative">
             <div class="price-cost">${course.price} đ</div>
             <img
