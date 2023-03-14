@@ -21,17 +21,53 @@ document
 // opt class
 let otpClass = document.querySelectorAll(".item-info-class");
 let btnOtpClass = document.querySelectorAll(".option-info-class-btn");
+let inputIdClass = document.querySelectorAll("#input-id-class");
 let btnDelOtpClass = document.querySelectorAll(".option-info-class-btn-del");
+let idOptionClassed = document.getElementById("id-class-optioned");
+
+// save option classed
+let saveOptionClass = [];
+let indexOptionClass = [];
+let saveClassed = [];
+let optionClassed = [];
 
 btnOtpClass.forEach((_btnCreate, _btnCreateIndex) => {
   // event clicked button Otp class
   _btnCreate.addEventListener("click", function () {
-    // console.log("_btnCreateIndex", _btnCreateIndex);
+    saveClassed.push(_btnCreate);
+    saveOptionClass.push(_btnCreateIndex);
+
+    // handle input
+    inputIdClass.forEach((_inpIdClass, _indexInpIdClass) => {
+      if (_indexInpIdClass == _btnCreateIndex) {
+        idOptionClassed.value = _inpIdClass.value;
+      }
+    });
 
     otpClass.forEach((_otpClass, _indexOtpClass) => {
       // check -> show optioned class
       if (_btnCreateIndex == _indexOtpClass) {
+        indexOptionClass.push(_indexOtpClass);
+        optionClassed.push(_otpClass);
+
         if (confirm("Bạn có muốn chọn lớp này hay không?") == true) {
+          if (saveOptionClass.length > 1) {
+            if (saveOptionClass[0] == indexOptionClass[0]) {
+              // clear bg classed
+              optionClassed.forEach((_optClassed) => {
+                _optClassed.classList.remove("otp-class-active");
+              });
+
+              // clear button del class + show button create class
+              btnDelOtpClass.forEach((_delOptClass, _indexDelOtpClass) => {
+                saveClassed.forEach((_classed) => {
+                  _delOptClass.style.display = "none";
+                  _classed.style.display = "block";
+                });
+              });
+            }
+          }
+
           _otpClass.classList = "otp-class-active";
           _btnCreate.style.display = "none";
 
