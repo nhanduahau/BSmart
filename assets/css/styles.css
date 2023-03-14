@@ -824,6 +824,7 @@ div.swiper-button-prev:after {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .learning-path .right-section:hover:before {
@@ -940,10 +941,26 @@ div.swiper-button-prev:after {
 }
 
 .courses-section .course-card .btn-invite-course {
+  background-color: #ff630e;
+  color: #fff;
   padding: 10px 20px;
   font-size: 20px;
   border: none;
   border-radius: 5px;
+}
+
+.courses-section .course-card .btn-invite-course:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn-search-mobile {
+  position: absolute;
+  right: -70px;
+  top: 13px;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .testimonial-content {
@@ -6886,6 +6903,95 @@ input {
   .container {
     max-width: 1320px !important;
   }
+  .learning-path {
+    transition: all 0.2s;
+  }
+  .advantages {
+    padding: 0;
+    margin-bottom: 60px;
+    transition: all 0.2s;
+  }
+  .container-select-course-mobile {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+  .btn-primary-custom-select-mobile {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .advantages .service-card {
+    margin-bottom: 0px;
+  }
+  .section-heading-title-mobile {
+    margin-bottom: 0px;
+  }
+  .advantages .service-card .service-card-content {
+    padding: 0px;
+  }
+  .advantages .service-card div:first-child {
+    margin-bottom: 0px !important;
+  }
+  .advantages .service-card {
+    padding: 10px 0;
+  }
+  .image-mobile-home-page {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .left-section {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #000;
+  }
+  .right-section {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #000;
+  }
+  .courses-section-mobile-home-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .our {
+    padding: 0;
+  }
+  .our h1 {
+    margin-bottom: 0px;
+  }
+  .testimonial-content-mobile-home-page {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+  .section-heading-of-member-title {
+    margin-bottom: 10px;
+  }
+  .contact-mobile {
+    display: block;
+  }
+  .contacts-section-home-page {
+    margin-top: 80px;
+    padding: 0;
+  }
+  .btn-outline-secondary-custom-laptop {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .section-heading-title-mobile {
+    margin-top: 60px;
+  }
+  .contacts-section .form-contact-container {
+    margin-left: 24px;
+    padding: 0px;
+  }
+  .form-contact-img {
+    margin-bottom: 20px;
+  }
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -6915,6 +7021,95 @@ input {
   .feedback-left-info h2 {
     font-size: 1.1rem !important;
     font-weight: bold;
+  }
+  .learning-path {
+    transition: all 0.2s;
+  }
+  .advantages {
+    padding: 0;
+    margin-bottom: 60px;
+    transition: all 0.2s;
+  }
+  .container-select-course-mobile {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+  .btn-primary-custom-select-mobile {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .advantages .service-card {
+    margin-bottom: 0px;
+  }
+  .section-heading-title-mobile {
+    margin-bottom: 0px;
+  }
+  .advantages .service-card .service-card-content {
+    padding: 0px;
+  }
+  .advantages .service-card div:first-child {
+    margin-bottom: 0px !important;
+  }
+  .advantages .service-card {
+    padding: 10px 0;
+  }
+  .image-mobile-home-page {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .left-section {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #000;
+  }
+  .right-section {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #000;
+  }
+  .courses-section-mobile-home-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .our {
+    padding: 0;
+  }
+  .our h1 {
+    margin-bottom: 0px;
+  }
+  .testimonial-content-mobile-home-page {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+  .section-heading-of-member-title {
+    margin-bottom: 10px;
+  }
+  .contact-mobile {
+    display: block;
+  }
+  .contacts-section-home-page {
+    margin-top: 80px;
+    padding: 0;
+  }
+  .btn-outline-secondary-custom-laptop {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .section-heading-title-mobile {
+    margin-top: 60px;
+  }
+  .contacts-section .form-contact-container {
+    margin-left: 24px;
+    padding: 0px;
+  }
+  .form-contact-img {
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -7001,6 +7196,95 @@ input {
   .feedback-left-info h2 {
     font-size: 1.1rem !important;
     font-weight: bold;
+  }
+  .learning-path {
+    transition: all 0.2s;
+  }
+  .advantages {
+    padding: 0;
+    margin-bottom: 60px;
+    transition: all 0.2s;
+  }
+  .container-select-course-mobile {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+  .btn-primary-custom-select-mobile {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .advantages .service-card {
+    margin-bottom: 0px;
+  }
+  .section-heading-title-mobile {
+    margin-bottom: 0px;
+  }
+  .advantages .service-card .service-card-content {
+    padding: 0px;
+  }
+  .advantages .service-card div:first-child {
+    margin-bottom: 0px !important;
+  }
+  .advantages .service-card {
+    padding: 10px 0;
+  }
+  .image-mobile-home-page {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .left-section {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #000;
+  }
+  .right-section {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #000;
+  }
+  .courses-section-mobile-home-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .our {
+    padding: 0;
+  }
+  .our h1 {
+    margin-bottom: 0px;
+  }
+  .testimonial-content-mobile-home-page {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+  .section-heading-of-member-title {
+    margin-bottom: 10px;
+  }
+  .contact-mobile {
+    display: block;
+  }
+  .contacts-section-home-page {
+    margin-top: 80px;
+    padding: 0;
+  }
+  .btn-outline-secondary-custom-laptop {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .section-heading-title-mobile {
+    margin-top: 60px;
+  }
+  .contacts-section .form-contact-container {
+    margin-left: 24px;
+    padding: 0px;
+  }
+  .form-contact-img {
+    margin-bottom: 20px;
   }
 }
 /* Tablet */
@@ -7179,7 +7463,7 @@ input {
   }
   .swiper-slide button {
     font-size: 12px;
-    padding: 3px !important;
+    padding: 3px;
   }
   .banner {
     padding: 0;
@@ -7349,6 +7633,81 @@ input {
     font-size: 0.9rem !important;
     font-weight: 500;
     padding: 7px !important;
+  }
+  .learning-path {
+    transition: all 0.2s;
+  }
+  .advantages {
+    padding: 0;
+    margin-bottom: 60px;
+    transition: all 0.2s;
+  }
+  .container-select-course-mobile {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+  .btn-primary-custom-select-mobile {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .advantages .service-card {
+    margin-bottom: 0px;
+  }
+  .section-heading-title-mobile {
+    margin-bottom: 0px;
+  }
+  .advantages .service-card .service-card-content {
+    padding: 0px;
+  }
+  .advantages .service-card div:first-child {
+    margin-bottom: 0px !important;
+  }
+  .advantages .service-card {
+    padding: 10px 0;
+  }
+  .image-mobile-home-page {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 20px !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .left-section {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #000;
+  }
+  .right-section {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #000;
+  }
+  .courses-section-mobile-home-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .our {
+    padding: 0;
+  }
+  .our h1 {
+    margin-bottom: 0px;
+  }
+  .testimonial-content-mobile-home-page {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+  .section-heading-of-member-title {
+    margin-bottom: 10px;
+  }
+  .contact-mobile {
+    display: block;
+  }
+  .contacts-section-home-page {
+    margin-top: 80px;
+    padding: 0;
   }
 }
 /* Mobile */
@@ -7601,6 +7960,73 @@ input {
   .home-wrapper .banner .caption-content .btn-outline-secondary-custom {
     padding: 14px 20px;
     font-size: 14px;
+  }
+  .home-wrapper .container-select-course-mobile {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+  .home-wrapper .btn-primary-custom-select-mobile {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .home-wrapper .advantages .service-card {
+    margin-bottom: 0px;
+  }
+  .home-wrapper .section-heading-title-mobile {
+    margin-bottom: 0px;
+  }
+  .home-wrapper .advantages .service-card .service-card-content {
+    padding: 0px;
+  }
+  .home-wrapper .advantages .service-card div:first-child {
+    margin-bottom: 0px !important;
+  }
+  .home-wrapper .advantages .service-card {
+    padding: 10px 0;
+  }
+  .home-wrapper .image-mobile-home-page {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 20px !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .home-wrapper .left-section {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #000;
+  }
+  .home-wrapper .right-section {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #000;
+  }
+  .home-wrapper .courses-section-mobile-home-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .home-wrapper .our {
+    padding: 0;
+  }
+  .home-wrapper .our h1 {
+    margin-bottom: 0px;
+  }
+  .home-wrapper .testimonial-content-mobile-home-page {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+  .home-wrapper .section-heading-of-member-title {
+    margin-bottom: 10px;
+  }
+  .home-wrapper .contact-mobile {
+    display: block;
+  }
+  .home-wrapper .contacts-section-home-page {
+    margin-top: 80px;
+    padding: 0;
   }
   .home-wrapper .aboutus {
     padding: 100px 0;
@@ -8052,10 +8478,6 @@ input {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .row {
-    display: flex;
-    margin-left: 15vh;
-  }
   .img-avatar {
     width: 140px;
   }

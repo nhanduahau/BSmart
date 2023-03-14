@@ -2,6 +2,120 @@
   .container {
     max-width: 1320px !important;
   }
+
+  // index (home page)
+  .learning-path {
+    transition: all 0.2s;
+  }
+
+  .advantages {
+    padding: 0;
+    margin-bottom: 60px;
+    transition: all 0.2s;
+  }
+
+  .container-select-course-mobile {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+
+  .btn-primary-custom-select-mobile {
+    padding: 14px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  }
+
+  .advantages .service-card {
+    margin-bottom: 0px;
+  }
+
+  .section-heading-title-mobile {
+    margin-bottom: 0px;
+  }
+
+  .advantages .service-card .service-card-content {
+    padding: 0px;
+  }
+
+  .advantages .service-card div:first-child {
+    margin-bottom: 0px !important;
+  }
+
+  .advantages .service-card {
+    padding: 10px 0;
+  }
+
+  .image-mobile-home-page {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    // padding: 0 20px !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .left-section {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #000;
+  }
+
+  .right-section {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #000;
+  }
+
+  .courses-section-mobile-home-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .our {
+    padding: 0;
+  }
+
+  .our h1 {
+    margin-bottom: 0px;
+  }
+
+  .testimonial-content-mobile-home-page {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  .section-heading-of-member-title {
+    margin-bottom: 10px;
+  }
+
+  .contact-mobile {
+    display: block;
+  }
+
+  .contacts-section-home-page {
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  .btn-outline-secondary-custom-laptop {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .section-heading-title-mobile {
+    margin-top: 60px;
+  }
+
+  .contacts-section .form-contact-container {
+    margin-left: 24px;
+    padding: 0px;
+  }
+
+  .form-contact-img {
+    margin-bottom: 20px;
+  }
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -43,6 +157,120 @@
     }
   }
   // feedback 
+
+   // index (home page)
+   .learning-path {
+    transition: all 0.2s;
+  }
+
+  .advantages {
+    padding: 0;
+    margin-bottom: 60px;
+    transition: all 0.2s;
+  }
+
+  .container-select-course-mobile {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+
+  .btn-primary-custom-select-mobile {
+    padding: 14px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  }
+
+  .advantages .service-card {
+    margin-bottom: 0px;
+  }
+
+  .section-heading-title-mobile {
+    margin-bottom: 0px;
+  }
+
+  .advantages .service-card .service-card-content {
+    padding: 0px;
+  }
+
+  .advantages .service-card div:first-child {
+    margin-bottom: 0px !important;
+  }
+
+  .advantages .service-card {
+    padding: 10px 0;
+  }
+
+  .image-mobile-home-page {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    // padding: 0 20px !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .left-section {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #000;
+  }
+
+  .right-section {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #000;
+  }
+
+  .courses-section-mobile-home-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .our {
+    padding: 0;
+  }
+
+  .our h1 {
+    margin-bottom: 0px;
+  }
+
+  .testimonial-content-mobile-home-page {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  .section-heading-of-member-title {
+    margin-bottom: 10px;
+  }
+
+  .contact-mobile {
+    display: block;
+  }
+
+  .contacts-section-home-page {
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  .btn-outline-secondary-custom-laptop {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .section-heading-title-mobile {
+    margin-top: 60px;
+  }
+
+  .contacts-section .form-contact-container {
+    margin-left: 24px;
+    padding: 0px;
+  }
+
+  .form-contact-img {
+    margin-bottom: 20px;
+  }
 }
 
 // Laptop medium
@@ -179,6 +407,120 @@
     }
   }
   // feedback 
+
+  // index (home page)
+  .learning-path {
+    transition: all 0.2s;
+  }
+
+  .advantages {
+    padding: 0;
+    margin-bottom: 60px;
+    transition: all 0.2s;
+  }
+
+  .container-select-course-mobile {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+
+  .btn-primary-custom-select-mobile {
+    padding: 14px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  }
+
+  .advantages .service-card {
+    margin-bottom: 0px;
+  }
+
+  .section-heading-title-mobile {
+    margin-bottom: 0px;
+  }
+
+  .advantages .service-card .service-card-content {
+    padding: 0px;
+  }
+
+  .advantages .service-card div:first-child {
+    margin-bottom: 0px !important;
+  }
+
+  .advantages .service-card {
+    padding: 10px 0;
+  }
+
+  .image-mobile-home-page {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    // padding: 0 20px !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .left-section {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #000;
+  }
+
+  .right-section {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #000;
+  }
+
+  .courses-section-mobile-home-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .our {
+    padding: 0;
+  }
+
+  .our h1 {
+    margin-bottom: 0px;
+  }
+
+  .testimonial-content-mobile-home-page {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  .section-heading-of-member-title {
+    margin-bottom: 10px;
+  }
+
+  .contact-mobile {
+    display: block;
+  }
+
+  .contacts-section-home-page {
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  .btn-outline-secondary-custom-laptop {
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .section-heading-title-mobile {
+    margin-top: 60px;
+  }
+
+  .contacts-section .form-contact-container {
+    margin-left: 24px;
+    padding: 0px;
+  }
+
+  .form-contact-img {
+    margin-bottom: 20px;
+  }
 }
 
 /* Tablet */
@@ -371,7 +713,7 @@
   .swiper-slide {
     button {
       font-size: 12px;
-      padding: 3px !important;
+      padding: 3px;
     }
   }
   // Banner
@@ -590,7 +932,102 @@
     font-weight: 500;
     padding: 7px !important;
   }
-  // feedback 
+  // feedback
+  
+  // index (home page)
+  .learning-path {
+    transition: all 0.2s;
+  }
+
+  .advantages {
+    padding: 0;
+    margin-bottom: 60px;
+    transition: all 0.2s;
+  }
+
+  .container-select-course-mobile {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+
+  .btn-primary-custom-select-mobile {
+    padding: 14px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  }
+
+  .advantages .service-card {
+    margin-bottom: 0px;
+  }
+
+  .section-heading-title-mobile {
+    margin-bottom: 0px;
+  }
+
+  .advantages .service-card .service-card-content {
+    padding: 0px;
+  }
+
+  .advantages .service-card div:first-child {
+    margin-bottom: 0px !important;
+  }
+
+  .advantages .service-card {
+    padding: 10px 0;
+  }
+
+  .image-mobile-home-page {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 20px !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .left-section {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #000;
+  }
+
+  .right-section {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #000;
+  }
+
+  .courses-section-mobile-home-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .our {
+    padding: 0;
+  }
+
+  .our h1 {
+    margin-bottom: 0px;
+  }
+
+  .testimonial-content-mobile-home-page {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  .section-heading-of-member-title {
+    margin-bottom: 10px;
+  }
+
+  .contact-mobile {
+    display: block;
+  }
+
+  .contacts-section-home-page {
+    margin-top: 80px;
+    padding: 0;
+  }
 }
 
 /* Mobile */
@@ -841,6 +1278,90 @@
           font-size: 14px;
         }
       }
+    }
+    // index (homepage)
+    .container-select-course-mobile {
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s;
+    }
+
+    .btn-primary-custom-select-mobile {
+      padding: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    }
+
+    .advantages .service-card {
+      margin-bottom: 0px;
+    }
+
+    .section-heading-title-mobile {
+      margin-bottom: 0px;
+    }
+
+    .advantages .service-card .service-card-content {
+      padding: 0px;
+    }
+
+    .advantages .service-card div:first-child {
+      margin-bottom: 0px !important;
+    }
+
+    .advantages .service-card {
+      padding: 10px 0;
+    }
+
+    .image-mobile-home-page {
+      display: block;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0 20px !important;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    .left-section {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 6px #000;
+    }
+
+    .right-section {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 6px #000;
+    }
+
+    .courses-section-mobile-home-page {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    .our {
+      padding: 0;
+    }
+
+    .our h1 {
+      margin-bottom: 0px;
+    }
+
+    .testimonial-content-mobile-home-page {
+      padding: 0;
+      margin-bottom: 80px;
+    }
+
+    .section-heading-of-member-title {
+      margin-bottom: 10px;
+    }
+
+    .contact-mobile {
+      display: block;
+    }
+
+    .contacts-section-home-page {
+      margin-top: 80px;
+      padding: 0;
     }
     /* ------------------------ */
     /* About us */
@@ -1436,10 +1957,10 @@
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   //buy.course
-  .row{
-    display: flex;
-    margin-left: 15vh;
-  }
+  // .row{
+  //   display: flex;
+    // margin-left: 15vh;
+  // }
   .img-avatar{
     width: 140px;
   }
