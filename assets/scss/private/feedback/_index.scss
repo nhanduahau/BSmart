@@ -149,8 +149,17 @@
   margin-right: 12px;
 }
 
-.feedback-header h2 {
-  margin-top: 10px;
+// .feedback-header h2 {
+//   margin-top: 10px;
+// }
+
+.feedback-header1 {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 12px;
 }
 
 .separator-bottom-feedback {

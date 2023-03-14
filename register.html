@@ -517,7 +517,7 @@
                 <label for="name" class="mb-2">Họ và tên</label>
                 <input
                   type="text"
-                  value="Phạm Văn Cường"
+                  value=""
                   placeholder="Họ và tên"
                   class="form-control"
                   name="name"
@@ -527,7 +527,7 @@
                 <label for="name" class="mb-2">Số điện thoại</label>
                 <input
                   type="text"
-                  value="0353815411"
+                  value=""
                   placeholder="Số điện thoại"
                   class="form-control"
                   name="name"
@@ -537,7 +537,7 @@
                 <label for="email" class="mb-2">E-Mail</label>
                 <input
                   type="text"
-                  value="pvcuong@gmail.com"
+                  value=""
                   placeholder="E-Mail"
                   class="form-control"
                   name="email"
@@ -600,12 +600,28 @@
                   >Giới thiệu bản thân</label
                 >
                 <div class="form-floating">
-                  <textarea
-                    class="form-control"
-                    placeholder="Leave a comment here"
-                    id="floatingTextarea2"
-                    style="height: 100px"
-                  >Tôi tên Phạm Văn Cường, sinh năm 2000, quê ở Vũng Tàu. Tôi sẽ đảm nhiệm với vai trò mentor Reactjs cho dự án BSmart.</textarea>
+                  <div class="form-floating">
+                    <div
+                      class="box_luuy"
+                      style="
+                        clear: both;
+                        line-height: 1.7;
+                        color: white;
+                        font-family: Roboto;
+                        letter-spacing: -0.75px;
+                        margin: 5px 0px;
+                        transition: 0.5s;
+                      "
+                    >
+                      <textarea
+                        id="input_luuy"
+                        rows="5"
+                        style="width: 100%"
+                        oninput="countChar(this)"
+                        maxlength="200"
+                      ></textarea>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="registration-btn mb-3">
