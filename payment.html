@@ -189,7 +189,7 @@
   <!-- End login form modal -->
 
   <!-- main container -->
-  <main class="container-w">
+  <div class="wrapper payment-wrapper">
     <!-- Start header -->
     <header class="header-main">
       <div class="header-top">
@@ -410,10 +410,11 @@
       </div>
     </header>
     <!-- End header -->
-    <section class="banner__payment">
-      <div class="container">
+
+    <section class="banner__course">
+      <div class="content__banner_course">
         <div class="caption-content text-center">
-          <h2>ĐĂNG KÝ KHÓA HỌC</h2>
+          <h1>ĐĂNG KÝ KHÓA HỌC</h1>
           <!-- <p><a href="./index.html">Trang chủ </a><span> > </span> ĐĂNG KÝ KHÓA HỌC</p> -->
         </div>
       </div>
@@ -486,36 +487,36 @@
                 <div class="card1-info">
                   <div class="card1-info-header">
                     <div class="d-flex align-items-center">
-                      <h1 class="me-2">Tên khóa học: </h1>
+                      <h1 class="me-2 title-payment-card">Tên khóa học: </h1>
                       <p>Front end Basic</p>
                     </div>
         
                     <div class="d-flex align-items-center">
-                      <h1 class="me-2">Thông tin khóa học: </h1>
+                      <h1 class="me-2 title-payment-card">Thông tin khóa học: </h1>
                       <p>T3-T4 (10:10)</p>
                     </div>
                   </div>
         
                   <div class="card1-info-footer">
                     <div class="d-flex align-items-center">
-                      <h1 class="me-2">Mentor: </h1>
+                      <h1 class="me-2 title-payment-card">Mentor: </h1>
                       <p>Mentor Cường</p>
                     </div>
         
                     <div class="d-flex align-items-center">
-                      <h1 class="me-2">Thời gian dự kiến mở lớp: </h1>
+                      <h1 class="me-2 title-payment-card">Thời gian dự kiến mở lớp: </h1>
                       <p>22/12/2022 (10:10)</p>
                     </div>
                   </div>
         
                   <div class="card1-total-price">
                     <div class="card1-total-price-cost">
-                        <h1>Giá tiền: </h1>
+                        <h1 class="title-payment-card">Giá tiền: </h1>
                         <p id="total-price">1200000</p>
                     </div>
 
                     <div class="card1-total-price-quantity">
-                      <h1>Số lượng: </h1>
+                      <h1 class="title-payment-card">Số lượng: </h1>
                       <p>1</p>
                     </div>
                   </div>
@@ -533,144 +534,154 @@
 
         <!-- cart section -->
         <div class="section-card-container">
-          <section class="cart">
-            <div class="cart-item-box">
+          <div class="cart-item-box">
             <h2 class="section-heading1">THÔNG TIN NGƯỜI MUA</h2>
-
+        
             <hr class="separator-bottom" />
-            
+        
             <!-- Info people buy -->
             <div class="two">
               <h1 class="two-1" style="opacity: 5;">Tên:</h1>
               <h1 class="two-1" style="opacity: 5;">Số điện thoại:</h1>
               <h1 class="two-1" style="opacity: 5;">Email:</h1>
-
             </div>
-
+        
             <!-- Total course -->
-            <div class="total-course mt-2">
-              <h2>TỔNG KHÓA HỌC</h2>
-
-              <!-- Mã giới thiệu -->
-              <div class="card1-total-price-code">
-                <h1>Nhập mã giới thiệu: </h1>
-                <input type="text" class="card1-total-price-code-input-refer w-50">
-                <i class="fa fa-check-circle"></i>
-              </div>
-
-              <!-- Mã code -->
-              <div class="card1-total-price-code">
-                <h1>Nhập mã code: </h1>
-                <input type="text" class="card1-total-price-code-input w-50">
-                <i class="fa fa-check-circle"></i>
-              </div>
-
-              <!-- Bill -->
-              <div class="bill-member">
-                <div class="bill-member-item">
-                  <h3>Tạm tính: </h3>
-                  <h3 class="bill-member-item-price"></h3>
-                </div>
-                <div class="bill-member-item">
-                  <h3>Giảm giá: </h3>
-                  <h3 class="bill-member-item-price-1"></h3>
-                </div>
-                <div class="bill-member-item bill-bsmart-pay-number">
-                  <h3 class="bill-member-item-price-bsmart-pay-label">Sử dụng Bsmart: </h3>
-                  <h3 class="bill-member-item-price-bsmart-pay-number"></h3>
-                </div>
-                <!-- <hr class="separator-bill" /> -->
-                <div class="bill-member-item">
-                  <h3>Tổng tiền: </h3>
-                  <h3 class="bill-member-item-price-2"></h3>
-                </div>
-              </div>
-
-              <!-- <p>Total</p>
-              <h2 class="total-course-price">1.250.000 VND</h2> -->
-              <br>
-              <form>
-                <div class="d-flex align-items-center">
-                  <span>Sử dụng BSmart: </span>
-                  <span class="bsmart-pay-number">200</span>
-                  <select class="form-select time-select" id="select-pay-confirm" aria-label="Default select example">
-                    <option value="bsmart-non-use" selected>Không sử dụng</option>
-                    <option value="bsmart-use">Sử dụng</option>
-                  </select>
-                </div>
-              </form>
-
-              <p class="total-course-payment-title">Thanh toán bằng: </p>
-              <div class="select-1 ms-1">
-                <br>
-                
-              </div>
-
-              <!-- Hide -->
-              <div class="total-course-icons">
-                
-                  
-                  <div class="total-course-icon-item-momo">
-                    <button class="total-course-icon-item-btn-momo" id="btn-momo" data-toggle="modal" data-target="#exampleModal">
-                      <img src="/assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo">               
-                    </button>
+            <div class="row">
+              <div class="col-lg-12 col-sm-12">
+                <div class="total-course mt-2">
+                  <h2>TỔNG KHÓA HỌC</h2>
+        
+                  <!-- Mã giới thiệu -->
+                  <div class="card1-total-price-code">
+                    <h1>Nhập mã giới thiệu: </h1>
+                    <input type="text" class="card1-total-price-code-input-refer w-50">
+                    <i class="fa fa-check-circle"></i>
                   </div>
-
-                  
-                  <div class="total-course-icon-item-viettel-pay">
-                    <button class="total-course-icon-item-btn-viettel-pay" id="btn-viettel-1" data-toggle="modal" data-target="#exampleModal3">
-                      <img src="assets\images\viettelpay.png" class="total-course-momo-icon" alt="img-momo">
-                    </button>
+        
+                  <!-- Mã code -->
+                  <div class="card1-total-price-code">
+                    <h1>Nhập mã code: </h1>
+                    <input type="text" class="card1-total-price-code-input w-50">
+                    <i class="fa fa-check-circle"></i>
                   </div>
-
-                
-                <!-- <div class="total-course-icon-item-bst">
-                  <button class="total-course-icon-item-btn" id="total-course-icon-item-btn" disabled>
-                    <p class="icon-bst" style="color: #003366;font-weight:bold;">BST</p>
-                  </button>
-                </div>   -->
-              </div>
-              <!-- Hide -->
-
-              <!-- payment cash -->
-              <div class="total-course-cash" id="total-course-cash-show" style="display: none;">
-                <p class="total-course-payment-title">Thanh toán bằng: </p>
-                <div class="total-course-cash-item">
-                  <p class="total-course-cash-balance-lbl">Số dư: </p>
-                  <p class="total-course-cash-balance">4.000.000 VND</p>
+        
+                  <!-- Bill -->
+                  <div class="bill-member">
+                    <div class="bill-member-item">
+                      <h3>Tạm tính: </h3>
+                      <h3 class="bill-member-item-price"></h3>
+                    </div>
+                    <div class="bill-member-item">
+                      <h3>Giảm giá: </h3>
+                      <h3 class="bill-member-item-price-1"></h3>
+                    </div>
+                    <div class="bill-member-item bill-bsmart-pay-number">
+                      <h3 class="bill-member-item-price-bsmart-pay-label">Sử dụng Bsmart: </h3>
+                      <h3 class="bill-member-item-price-bsmart-pay-number"></h3>
+                    </div>
+                    <!-- <hr class="separator-bill" /> -->
+                    <div class="bill-member-item">
+                      <h3>Tổng tiền: </h3>
+                      <h3 class="bill-member-item-price-2"></h3>
+                    </div>
+                  </div>
+        
+                  <!-- <p>Total</p>
+                                  <h2 class="total-course-price">1.250.000 VND</h2> -->
+                  <br>
+                  <form>
+                    <div class="d-flex align-items-center">
+                      <span>Sử dụng BSmart: </span>
+                      <span class="bsmart-pay-number">200</span>
+                      <select class="form-select time-select" id="select-pay-confirm" aria-label="Default select example">
+                        <option value="bsmart-non-use" selected>Không sử dụng</option>
+                        <option value="bsmart-use">Sử dụng</option>
+                      </select>
+                    </div>
+                  </form>
+        
+                  <p class="total-course-payment-title">Thanh toán bằng: </p>
+                  <div class="select-1 ms-1">
+                    <br>
+        
+                  </div>
+        
+                  <!-- Hide -->
+                  <div class="total-course-icons">
+        
+        
+                    <div class="total-course-icon-item-momo">
+                      <button class="total-course-icon-item-btn-momo" id="btn-momo" data-toggle="modal"
+                        data-target="#exampleModal">
+                        <img src="/assets/images/icon-momo.png" class="total-course-momo-icon" alt="img-momo">
+                      </button>
+                    </div>
+        
+        
+                    <div class="total-course-icon-item-viettel-pay">
+                      <button class="total-course-icon-item-btn-viettel-pay" id="btn-viettel-1" data-toggle="modal"
+                        data-target="#exampleModal3">
+                        <img src="assets\images\viettelpay.png" class="total-course-momo-icon" alt="img-momo">
+                      </button>
+                    </div>
+        
+        
+                    <!-- <div class="total-course-icon-item-bst">
+                                      <button class="total-course-icon-item-btn" id="total-course-icon-item-btn" disabled>
+                                        <p class="icon-bst" style="color: #003366;font-weight:bold;">BST</p>
+                                      </button>
+                                    </div>   -->
+                  </div>
+                  <!-- Hide -->
+        
+                  <!-- payment cash -->
+                  <div class="total-course-cash" id="total-course-cash-show" style="display: none;">
+                    <p class="total-course-payment-title">Thanh toán bằng: </p>
+                    <div class="total-course-cash-item">
+                      <p class="total-course-cash-balance-lbl">Số dư: </p>
+                      <p class="total-course-cash-balance">4.000.000 VND</p>
+                    </div>
+                    <div class="total-course-cash-item">
+                      <p class="total-course-cash-balance-lbl">Thanh toán: </p>
+                      <p class="total-course-cash-balance-1">1.250.000 VND</p>
+                    </div>
+                    <div class="total-course-cash-item">
+                      <p class="total-course-cash-balance-lbl">Còn lại: </p>
+                      <p class="total-course-cash-balance-2"></p>
+                    </div>
+                  </div>
+                  <!-- Button payment -->
+                  <div class="d-flex justify-content-center">
+                    <!-- onclick="checkBalance()" -->
+                    <button class="btn btn-success mt-4 fw-bold w-50" id="total-course-cash-payment-btn">Thanh toán</button>
+                  </div>
                 </div>
-                <div class="total-course-cash-item">
-                  <p class="total-course-cash-balance-lbl">Thanh toán: </p>
-                  <p class="total-course-cash-balance-1">1.250.000 VND</p>
-                </div>
-                <div class="total-course-cash-item">
-                  <p class="total-course-cash-balance-lbl">Còn lại: </p>
-                  <p class="total-course-cash-balance-2"></p>
-                </div> 
-              </div>
-               <!-- Button payment -->
-              <div class="d-flex justify-content-center">
-                <!-- onclick="checkBalance()" -->
-                <button class="btn btn-success mt-4 fw-bold w-50" id="total-course-cash-payment-btn">Thanh toán</button>
               </div>
             </div>
-          </section>
-
-          <div class="section-card-contact">
-          <h2>TỔNG ĐÀI HỖ TRỢ</h2>
-
-          <hr class="separator-bottom" />
-
-          <h1>
-            <i class="fa fa-phone"></i> 028 9999 7939
-          </h1>
-          <!-- <p class="section-card-contact-desc"></p> -->
-      
+        
+            <!-- Contact -->
+            <div class="row">
+              <div class="col-lg-12 col-sm-12 section-card-contact">
+                <!-- <div class="section-card-contact"> -->
+                <h2>TỔNG ĐÀI HỖ TRỢ</h2>
+        
+                <hr class="separator-bottom" />
+        
+                <h1>
+                  <i class="fa fa-phone"></i> 028 9999 7939
+                </h1>
+                <!-- <p class="section-card-contact-desc"></p> -->
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
 
-    <!-- footer -->
+    <!-- Start footer -->
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -679,17 +690,17 @@
           </div>
         </div>
         <div class="row mb-5">
-          <div class="col-lg-4 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-4 mb-3">
             <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
             <p class="hotline">Hotline: 096.105.1014</p>
             <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
           </div>
-          <div class="col-lg-4 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-4 mb-3">
             <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
             <p class="hotline">Hotline: 096.105.1014</p>
             <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
           </div>
-          <div class="col-lg-4 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-4 mb-3">
             <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
             <p class="hotline">Hotline: 096.105.1014</p>
             <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
@@ -700,12 +711,10 @@
           <div class="col-lg-4 col-md-6 mb-3">
             <div class="footer-logo">
               <a href="#"
-                ><span class="site-logo site-logo-footer"
-                  ><img
-                    src="/assets/images/icon-logo-footer.png"
-                    class="icon-logo"
-                    alt="icon-logo" /></span
-              ></a>
+                ><span class="site-logo site-logo-footer">
+                  <img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo">
+                </span></a
+              >
               <p class="footer-about-description">
                 Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
                 các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
@@ -744,16 +753,6 @@
               </ul>
             </div>
           </div>
-          <!-- <div class="col-lg-4 col-md-6 mb-3">
-            <div class="footer-control d-flex align-items-center mt-5">
-              <a
-                href="./courses.html"
-                class="btn btn-primary-custom p-2 mb-2"
-              >
-                Đăng ký khoá học
-              </a>
-            </div>
-          </div> -->
           <div class="col-lg-4 col-md-6 mb-3">
             <div class="footer-contact">
               <h4>Liên hệ với chúng tôi</h4>
@@ -780,7 +779,8 @@
         </p>
       </div>
     </footer>
-  </main>
+    <!-- End footer -->
+  </div>
 
   <!-- Import script bootstrap V5 -->
   <script
