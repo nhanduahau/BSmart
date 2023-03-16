@@ -11,6 +11,7 @@ body {
 .container-w {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .fa-chevron-left {
@@ -783,7 +784,7 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   border-radius: 4px;
-  padding: 20px;
+  // padding: 20px;
   background-color: #fff;
 }
 
@@ -978,4 +979,8 @@ body {
 .bill-member-item-price-bsmart-pay-label {
   display: none;
   margin-right: 6px;
+}
+
+.text-success {
+  color: #28a745 !important;
 }

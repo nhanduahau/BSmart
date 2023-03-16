@@ -11,55 +11,55 @@ var valueViettelPay;
 var radios = document.getElementsByName("groupOfDefaultRadios");
 
 // clicked button momo
-// btnMomo.addEventListener("click", function () {
-//   bgContainerMomo.classList = "total-course-icon-item-viettel-pay-active";
-//   valueMomo = "momo";
-//   valueViettelPay = "";
+btnMomo.addEventListener("click", function () {
+  bgContainerMomo.classList = "total-course-icon-item-viettel-pay-active";
+  valueMomo = "momo";
+  valueViettelPay = "";
 
-//   bgContainerViettelPay.classList.remove(
-//     "total-course-icon-item-viettel-pay-active"
-//   );
-//   bgContainerViettelPay.classList =
-//     "total-course-icon-item-viettel-pay-none-active";
-// });
+  bgContainerViettelPay.classList.remove(
+    "total-course-icon-item-viettel-pay-active"
+  );
+  bgContainerViettelPay.classList =
+    "total-course-icon-item-viettel-pay-none-active";
+});
 
 // // clicked button viettel pay
-// btnViettelPay.addEventListener("click", function () {
-//   bgContainerViettelPay.classList = "total-course-icon-item-momo-active";
-//   valueViettelPay = "viettel-pay";
-//   valueMomo = "";
+btnViettelPay.addEventListener("click", function () {
+  bgContainerViettelPay.classList = "total-course-icon-item-momo-active";
+  valueViettelPay = "viettel-pay";
+  valueMomo = "";
 
-//   bgContainerMomo.classList.remove("total-course-icon-item-momo-active");
-//   bgContainerMomo.classList = "total-course-icon-item-momo-none-active";
-// });
+  bgContainerMomo.classList.remove("total-course-icon-item-momo-active");
+  bgContainerMomo.classList = "total-course-icon-item-momo-none-active";
+});
 
 // clicked button payment
-// btnPayment.addEventListener("click", function (e) {
-//   e.preventDefault();
+btnPayment.addEventListener("click", function (e) {
+  e.preventDefault();
 
-//   if (valueMomo == "momo") {
-//     console.log("momo");
-//   } else if (valueViettelPay == "viettel-pay") {
-//     console.log("viettel-pay");
-//   }
+  if (valueMomo == "momo") {
+    console.log("momo");
+  } else if (valueViettelPay == "viettel-pay") {
+    console.log("viettel-pay");
+  }
 
-//   var balance = document
-//     .querySelector(".total-course-cash-balance")
-//     .textContent.replace(/\./g, "")
-//     .replace(" đ", "");
-//   var payment = document
-//     .querySelector(".total-course-cash-balance-1")
-//     .textContent.replace(/\./g, "")
-//     .replace(" đ", "");
+  // var balance = document
+  //   .querySelector(".total-course-cash-balance")
+  //   .textContent.replace(/\./g, "")
+  //   .replace(" đ", "");
+  // var payment = document
+  //   .querySelector(".total-course-cash-balance-1")
+  //   .textContent.replace(/\./g, "")
+  //   .replace(" đ", "");
 
-//   if (parseInt(balance) < parseInt(payment)) {
-//     alert("Không đủ tiền để thanh toán");
-//     return false;
-//   }
+  // if (parseInt(balance) < parseInt(payment)) {
+  //   alert("Không đủ tiền để thanh toán");
+  //   return false;
+  // }
 
-//   // Thực hiện thanh toán nếu đủ tiền
-//   // window.location.href = "";
-// });
+  // Thực hiện thanh toán nếu đủ tiền
+  // window.location.href = "";
+});
 
 //tính toán số dư khi thanh toán
 // Lấy giá trị của hai phần tử HTML
@@ -151,18 +151,24 @@ const formattedPrice1 = totalPrice.toLocaleString("vi-VN", {
 totalPriceElement.textContent = formattedPrice1;
 
 // BSmart
-var selectBsmartSelectPayConfirm = document.getElementById('select-pay-confirm')
-var billBsmartPayNumber = document.querySelector('.bill-bsmart-pay-number')
-var showBsmartNumber = document.querySelector('.bill-member-item-price-bsmart-pay-number')
-var showBsmartLabel = document.querySelector('.bill-member-item-price-bsmart-pay-label')
-var bsmartInWallet = document.querySelector('.bsmart-pay-number')
+var selectBsmartSelectPayConfirm =
+  document.getElementById("select-pay-confirm");
+var billBsmartPayNumber = document.querySelector(".bill-bsmart-pay-number");
+var showBsmartNumber = document.querySelector(
+  ".bill-member-item-price-bsmart-pay-number"
+);
+var showBsmartLabel = document.querySelector(
+  ".bill-member-item-price-bsmart-pay-label"
+);
+var bsmartInWallet = document.querySelector(".bsmart-pay-number");
 
-selectBsmartSelectPayConfirm.addEventListener('change', function() {
-  if(selectBsmartSelectPayConfirm.value == 'bsmart-use') {
-    billBsmartPayNumber.style.cssText = `block; align-items: center;`
-    showBsmartLabel.style.display = 'block'
-    showBsmartNumber.innerHTML = parseInt(bsmartInWallet.innerText).toLocaleString('vi-VN') + ' ₫';
+selectBsmartSelectPayConfirm.addEventListener("change", function () {
+  if (selectBsmartSelectPayConfirm.value == "bsmart-use") {
+    billBsmartPayNumber.style.cssText = `block; align-items: center;`;
+    showBsmartLabel.style.display = "block";
+    showBsmartNumber.innerHTML =
+      parseInt(bsmartInWallet.innerText).toLocaleString("vi-VN") + " ₫";
   } else {
-    billBsmartPayNumber.style.display = 'none'
+    billBsmartPayNumber.style.display = "none";
   }
-})
+});

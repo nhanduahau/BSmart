@@ -2055,6 +2055,7 @@ body {
 .container-w {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .fa-chevron-left {
@@ -2823,7 +2824,6 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   border-radius: 4px;
-  padding: 20px;
   background-color: #fff;
 }
 
@@ -3018,6 +3018,10 @@ body {
 .bill-member-item-price-bsmart-pay-label {
   display: none;
   margin-right: 6px;
+}
+
+.text-success {
+  color: #28a745 !important;
 }
 
 .course-detail-wrapper {
@@ -7086,6 +7090,13 @@ input {
   .form-contact-img {
     margin-bottom: 20px;
   }
+  .course-content-container-page-course {
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+  .pag-course-bottom {
+    margin-bottom: 40px;
+  }
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -7205,6 +7216,49 @@ input {
   .form-contact-img {
     margin-bottom: 20px;
   }
+  .checkout {
+    padding: 0 var(--px) !important;
+  }
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-of-member-inner {
+    width: 87%;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+  }
+  .card1-info {
+    margin-top: 6px;
+    font-size: 1.1rem !important;
+  }
+  .title-payment-card {
+    font-size: 1.2rem !important;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .img-avatar {
+    width: 140px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom .card-title {
@@ -7234,6 +7288,9 @@ input {
   .aboutus-wrapper .owl-carousel .owl-nav .owl-next {
     right: -1%;
   }
+  .checkout {
+    padding: 0 var(--px) !important;
+  }
   .content-payment {
     display: flex;
     flex-direction: column;
@@ -7250,19 +7307,26 @@ input {
     display: flex;
     justify-content: center;
   }
+  .card1-info {
+    margin-top: 6px;
+    font-size: 1.1rem !important;
+  }
+  .title-payment-card {
+    font-size: 1.2rem !important;
+  }
   .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 60px;
-    width: 97vh;
+    margin-top: 10px;
   }
   .section-card-contact {
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
-    width: 84vh;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
   .img-avatar {
     width: 140px;
@@ -7414,6 +7478,9 @@ input {
   .header-mobile-content .img-avatar {
     width: 140px;
   }
+  .checkout {
+    padding: 0 var(--px) !important;
+  }
   .content-payment {
     display: flex;
     flex-direction: column;
@@ -7430,19 +7497,26 @@ input {
     display: flex;
     justify-content: center;
   }
+  .card1-info {
+    margin-top: 6px;
+    font-size: 1.1rem !important;
+  }
+  .title-payment-card {
+    font-size: 1.2rem !important;
+  }
   .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 60px;
-    width: 115vh;
+    margin-top: 10px;
   }
   .section-card-contact {
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
-    width: 115vh;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
   /* ------------------------ */
   .sidebar-wrap {
@@ -7750,6 +7824,7 @@ input {
     margin-bottom: 0px;
   }
   .section-heading-title-mobile {
+    margin-top: 60px;
     margin-bottom: 0px;
   }
   .advantages .service-card .service-card-content {
@@ -7803,6 +7878,13 @@ input {
     margin-top: 80px;
     padding: 0;
   }
+  .course-content-container-page-course {
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+  .pag-course-bottom {
+    margin-bottom: 40px;
+  }
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
@@ -7829,6 +7911,55 @@ input {
   .login-form-container {
     display: none;
   }
+  .checkout {
+    padding: 0 var(--px) !important;
+  }
+  .checkout-container {
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+    border-bottom: none !important;
+  }
+  .card1-info {
+    margin-top: 6px;
+    font-size: 1.1rem !important;
+  }
+  .title-payment-card {
+    font-size: 1.2rem !important;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    border-right: none !important;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .card1-total-price-code-input-refer {
+    width: 70% !important;
+  }
+  .card1-total-price-code-input {
+    width: 70% !important;
+  }
+  .course-of-member-inner {
+    width: 100%;
+  }
+  .bill-member {
+    margin-top: 10px;
+  }
+  .total-course-icons {
+    margin-top: 0px !important;
+  }
   .content-payment {
     display: flex;
     flex-direction: column;
@@ -7837,27 +7968,6 @@ input {
     display: flex;
     justify-content: center;
     width: 100%;
-  }
-  .course-of-member-inner {
-    width: 87%;
-  }
-  .cart {
-    display: flex;
-    justify-content: center;
-  }
-  .cart-item-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 60px;
-    margin-right: 15px;
-    width: 65vh;
-  }
-  .section-card-contact {
-    display: flex;
-    flex-direction: column;
-    margin-left: 60px;
-    width: 65vh;
   }
   .swiper-slide button {
     font-size: 12px;
@@ -8346,6 +8456,13 @@ input {
     font-weight: 500;
     padding: 6px !important;
   }
+  .course-content-container-page-course {
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+  .pag-course-bottom {
+    margin-bottom: 40px;
+  }
 }
 /* ---------------- */
 @media only screen and (max-width: 480px) {
@@ -8380,18 +8497,43 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 60px;
-    width: 55vh;
+    margin-top: 10px;
   }
   .section-card-contact {
     display: flex;
     flex-direction: column;
-    width: 55vh;
-    margin-left: 20px;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
   .img-avatar {
     width: 82px;
+    object-fit: cover;
+  }
+  .card1 {
+    transition: all 0.2s;
+  }
+  .card1-info {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .title-payment-card {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+  }
+  .card1-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-avatar {
+    height: 140px !important;
+    border-radius: 4px;
+    object-fit: cover;
+    width: 138px !important;
+  }
+  .checkout-container .card1-total-price-cost {
+    margin-top: 4px;
   }
   .feedback-container {
     margin-top: 24px !important;
@@ -8434,17 +8576,27 @@ input {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 590px) {
+  .card1-info {
+    margin-top: 6px;
+    font-size: 0.8rem !important;
+  }
+  .title-payment-card {
+    font-size: 1rem !important;
+  }
   .section-card-contact {
-    margin-right: 50px;
-    margin-left: 20px;
-    width: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
   .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 60px;
-    width: 55vh;
+    padding: 0;
+    margin-top: 10px;
   }
   .img-avatar {
     width: 92px;
@@ -8498,6 +8650,81 @@ input {
     font-size: 0.2rem !important;
     font-weight: bold;
   }
+  .checkout {
+    padding: 0 var(--px) !important;
+  }
+  .checkout-container {
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+    border-bottom: none !important;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    border-right: none !important;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .card1-total-price-code-input-refer {
+    width: 70% !important;
+  }
+  .card1-total-price-code-input {
+    width: 70% !important;
+  }
+  .course-of-member-inner {
+    width: 100%;
+  }
+  .bill-member {
+    margin-top: 10px;
+  }
+  .total-course-icons {
+    margin-top: 0px !important;
+  }
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .card1 {
+    transition: all 0.2s;
+  }
+  .card1-info {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .title-payment-card {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+  }
+  .card1-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-avatar {
+    height: 140px !important;
+    border-radius: 4px;
+    object-fit: cover;
+    width: 138px !important;
+  }
+  .checkout-container .card1-total-price-cost {
+    margin-top: 4px;
+  }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .content-payment {
@@ -8520,15 +8747,15 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 60px;
-    width: 127vh;
+    margin-top: 10px;
   }
   .section-card-contact {
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
-    width: 127vh;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
@@ -8557,15 +8784,15 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 60px;
-    width: 115vh;
+    margin-top: 10px;
   }
   .section-card-contact {
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
-    width: 115vh;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
   .img-avatar {
     width: 140px;
@@ -8604,10 +8831,48 @@ input {
     font-weight: 400;
     padding: 5px !important;
   }
+  .card1 {
+    transition: all 0.2s;
+  }
+  .card1-info {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .title-payment-card {
+    font-size: 0.5rem;
+    font-weight: 400;
+  }
+  .card1-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-avatar {
+    height: 140px !important;
+    border-radius: 4px;
+    object-fit: cover;
+    width: 138px !important;
+  }
+  .checkout-container .card1-total-price-cost {
+    margin-top: 4px;
+  }
+  .card1-info {
+    margin-top: 6px;
+    font-size: 0.8rem !important;
+  }
+  .title-payment-card {
+    font-size: 1rem !important;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 685px) {
   .img-avatar {
     width: 120px;
+  }
+  .card1-info {
+    margin-top: 6px;
+    font-size: 0.8rem !important;
+  }
+  .title-payment-card {
+    font-size: 1rem !important;
   }
   .feedback-container {
     margin-top: 24px !important;
@@ -8638,21 +8903,45 @@ input {
     font-weight: 400;
     padding: 5px !important;
   }
+  .card1 {
+    transition: all 0.2s;
+  }
+  .card1-info {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .title-payment-card {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+  }
+  .card1-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-avatar {
+    height: 140px !important;
+    border-radius: 4px;
+    object-fit: cover;
+    width: 138px !important;
+  }
+  .checkout-container .card1-total-price-cost {
+    margin-top: 4px;
+  }
 }
 @media only screen and (min-width: 767px) and (max-width: 991px) {
   .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 40px;
-    width: 90vh;
+    margin-top: 10px;
   }
   .section-card-contact {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    width: 90vh;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -8696,9 +8985,33 @@ input {
     font-weight: 400;
     padding: 6px !important;
   }
+  .card1-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-avatar {
+    height: 140px;
+    border-radius: 4px;
+    object-fit: cover;
+    width: 138px;
+  }
+  .checkout-container .card1-total-price-cost {
+    margin-top: 4px;
+  }
+  .card1-info {
+    margin-top: 6px;
+    font-size: 0.8rem !important;
+  }
+  .title-payment-card {
+    font-size: 0.8rem !important;
+  }
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
-  .row {
-    margin-right: 60px;
+  .course-content-container-page-course {
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+  .pag-course-bottom {
+    margin-bottom: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */
