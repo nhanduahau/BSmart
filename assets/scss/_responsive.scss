@@ -10,6 +10,29 @@
     display: flex;
   }
 
+  // create course 
+  .content-info-mentor-create-course {
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+
+  // .card-body1 .p-4 {
+  //   margin-left: 0 !important;
+  // }
+
+  .opt-day-create-course {
+    margin-top: 14px;
+  }
+
+  .data-create-course tr td {
+    font-size: 0.6rem !important;
+  }
+
+  .data-create-course-title-tbl {
+    font-size: 0.6rem !important;
+  }
+  // create course 
+
   .container {
     max-width: 1320px !important;
   }
@@ -140,6 +163,29 @@
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  // create course 
+  .content-info-mentor-create-course {
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+
+  .card-body1 .p-4 {
+    margin-left: 0 !important;
+  }
+
+  .opt-day-create-course {
+    margin-top: 14px;
+  }
+
+  .data-create-course tr td {
+    font-size: 0.6rem !important;
+  }
+
+  .data-create-course-title-tbl {
+    font-size: 0.6rem !important;
+  }
+  // create course 
+
   .sidebar-wrap {
     display: none;
   }
@@ -606,6 +652,71 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  // create course 
+  .content-info-mentor-create-course {
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+
+  .card-body1 .p-4 {
+    margin-left: 0 !important;
+  }
+
+  .opt-day-create-course {
+    margin-top: 14px;
+  }
+
+  .data-create-course tr td {
+    font-size: 0.6rem !important;
+  }
+
+  .data-create-course-title-tbl {
+    font-size: 0.6rem !important;
+  }
+  // create course 
+
+  // Lms 
+  .advantages-lms {
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+
+  .section-heading-lms {
+    margin-bottom: 0 !important;
+  }
+
+  .service-card-lms {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .service-card-item-lms {
+    margin-bottom: 0 !important;
+  }
+
+  .section-lms {
+    margin-top: 40px;
+  }
+
+  .section-lms-func-title {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .box-bStudent-lms {
+    padding-top: 0 !important;
+  }
+
+  .box-bStudent-lms-item {
+    margin-top: 12px !important;
+  }
+
+  .section-lms-inner {
+    padding: 0 !important;
+  }
+
+  // Lms
+
   .col-sm-12 {
     flex: 0 0 auto;
     width: 100%;
@@ -1136,6 +1247,92 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  // create course 
+  .content-info-mentor-create-course {
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+
+  .card-body1 .p-4 {
+    margin-left: 0 !important;
+  }
+
+  .opt-day-create-course {
+    margin-top: 14px;
+  }
+
+  .data-create-course tr td {
+    font-size: 0.6rem !important;
+  }
+
+  .data-create-course-title-tbl {
+    font-size: 0.6rem !important;
+  }
+  // create course 
+
+  // course detail
+  .course-single-area-course-detail {
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+
+  .course-descriptions-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-descriptions-inner p {
+    font-size: 1rem !important;
+  }
+
+  .courses-section-course-detail {
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+  // course detail
+
+  // Lms 
+  .advantages-lms {
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+
+  .section-heading-lms {
+    margin-bottom: 0 !important;
+  }
+
+  .service-card-lms {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .service-card-item-lms {
+    margin-bottom: 0 !important;
+  }
+
+  .section-lms {
+    margin-top: 40px;
+  }
+
+  .section-lms-func-title {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .box-bStudent-lms {
+    padding-top: 0 !important;
+  }
+
+  .box-bStudent-lms-item {
+    margin-top: 12px !important;
+  }
+
+  .section-lms-inner {
+    padding: 0 !important;
+  }
+
+  // Lms
+
   //announcement
   .col-md-6{
     display: flex;
@@ -1850,6 +2047,7 @@
   .pag-course-bottom {
     margin-bottom: 40px;
   }
+  // course
 }
 /* ---------------- */
 
@@ -2044,7 +2242,7 @@
     display: none !important;
   }
   
-  .feedback-header {
+  .feedback-header, .feedback-header1 {
     display: flex;
     justify-content: flex-start;
   }

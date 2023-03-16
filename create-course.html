@@ -418,7 +418,7 @@
           <p><a href="index.html">Trang chủ</a><span> > </span> Tạo khóa học</p>
         </div>
       </section>
-      <section class="content-info-mentor">
+      <section class="content-info-mentor content-info-mentor-create-course">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-12">
@@ -563,7 +563,7 @@
                                     type="text"
                                     class="form-control"
                                   />
-                                  <div class="autocom-box">
+                                  <div class="autocom-box" style="display: none;">
                                     <!-- render list course name -->
                                   </div>
                                 </div>
@@ -749,7 +749,7 @@
                                   >Số lượng học viên:
                                 </label>
                                 <div
-                                  class="col-lg-4 col-md-6 d-flex align-items-center"
+                                  class="col-lg-4 col-md-12 col-sm-12 d-flex align-items-center"
                                   id="quantity"
                                 >
                                   <!-- Min -->
@@ -947,9 +947,9 @@
                       id="collapseFour"
                       class="collapse show"
                     >
-                      <div class="card-body1">
+                      <div class="card-body1 card-body1-create-course">
                         <div
-                          id="multiCollapseTwo"
+                          id="multiCollapseTwo multiCollapseTwo-create-course" 
                           class="collapse multi-collapse show p-4"
                         >
                           <!-- Title- course -->
@@ -1041,7 +1041,7 @@
 
                               <!-- Chọn các thứ trong tuần -->
                               <div
-                                class="col-lg-4 col-md-12 d-flex align-items-center mt-3-1"
+                                class="col-lg-4 col-md-12 d-flex align-items-center mt-3-1 opt-day-create-course"
                               >
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T2</label>
@@ -1175,16 +1175,16 @@
                           </form>
 
                           <!-- Table list course schedule -->
-                          <div class="col-lg-12 col-md-12 mt-4">
+                          <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
                             <table
                               class="table table-striped table-hover"
                               id="storeListTimeClass"
                             >
-                              <thead>
+                              <thead class="data-create-course-title-tbl">
                                 <tr>
-                                  <th scope="col" style="font-weight: bold">
+                                  <!-- <th scope="col" style="font-weight: bold">
                                     
-                                  </th>
+                                  </th> -->
                                   <th scope="col" style="font-weight: bold">
                                     Giờ bắt đầu
                                   </th>
@@ -1206,8 +1206,9 @@
                                 </tr>
                               </thead>
                               <!-- Data -->
-                              <tbody>
+                              <tbody class="data-create-course">
                                 <!-- render data -->
+                                
                               </tbody>
                             </table>
                           </div>
@@ -1240,17 +1241,17 @@
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-4">
               <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-4">
               <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-4">
               <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
@@ -1312,15 +1313,15 @@
               <div class="footer-contact">
                 <h4>Liên hệ với chúng tôi</h4>
                 <li>
-                  <i class="fa fa-map-marker"></i>
+                  <img src="/assets/images/icon-location.png" class="icon-location" alt="icon-location">
                   <p class="m-0">260/19 Tân Binh, Hồ Chí Minh</p>
                 </li>
                 <li>
-                  <i class="fa fa-envelope"></i>
+                  <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
                   <p class="m-0">admin@bsmart.edu.vn</p>
                 </li>
                 <li>
-                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
                   <p class="m-0">028 9999 79 39</p>
                 </li>
               </div>
@@ -1420,6 +1421,8 @@
       });
       courseNameInput.addEventListener("keyup", function () {
         let inpValue = courseNameInput.value;
+
+        liContainer.style.display = 'block'
 
         if (inpValue) {
           // add searchInp
