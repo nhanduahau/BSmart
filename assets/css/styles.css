@@ -6979,6 +6979,9 @@ input {
 }
 
 @media only screen and (min-width: 1200px) {
+  .banner-aboutus1 {
+    display: flex;
+  }
   .content-info-mentor-create-course {
     padding: 0 !important;
     margin-top: 20px;
@@ -6991,9 +6994,6 @@ input {
   }
   .data-create-course-title-tbl {
     font-size: 0.6rem !important;
-  }
-  .banner-aboutus1 {
-    display: flex;
   }
   .container {
     max-width: 1320px !important;
