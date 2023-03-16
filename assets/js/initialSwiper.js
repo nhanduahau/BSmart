@@ -1,7 +1,7 @@
 let swiperTypicalCourse = new Swiper(".swiper-typical-course", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 10,
-  slidesPerGroup: 4,
+  slidesPerGroup: 1,
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -28,9 +28,9 @@ let swiperTypicalCourse = new Swiper(".swiper-typical-course", {
 });
 
 let swiperTypicalMentor = new Swiper(".swiper-typical-mentor", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 10,
-  slidesPerGroup: 4,
+  slidesPerGroup: 1,
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -57,9 +57,9 @@ let swiperTypicalMentor = new Swiper(".swiper-typical-mentor", {
 });
 
 let swiperTypicalTestimonial = new Swiper(".swiper-testimonial", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 10,
-  slidesPerGroup: 4,
+  slidesPerGroup: 1,
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",

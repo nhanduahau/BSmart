@@ -388,6 +388,14 @@
 
 // Laptop medium
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  //course-detail
+  .course-descriptions-inner{
+    display: flex;
+    flex-direction: column;
+  }
+  // .all-class{
+  //   width: 50%;
+  // }
   // member profile edit 
   .content-info-mentor-member-profile-edit {
     padding: 0 !important;
@@ -1278,49 +1286,58 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  //course
+  .icon-arrow-1{
+    display: block !important;
+  }
+  .icon-arrow-2{
+    display: block !important;
+  }
   //course-detail
-  // .course-single-categories{
-  //   margin: 0 !important;
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-  // .ms-4-1{
-  //   margin-bottom: 35px !important;
-  //   margin-left: 30px;
-  // }
-  // .fe-title-1{
-  //   font-size: 12px !important;
-  //   // margin-top:6px !important;
-  // }
-  // .onl-1{
-  //   font-size: 12px !important;
-  //   // margin-top: 6px !important;
-  // }
-  // .size-font{
-  //   font-size: 13px;
-  // }
-  // .size-font-1{
-  //   font-size: 13px;
-  // }
-  // .title-lv{
-  //   font-size: 13px;
-  // }
-  .course-single-categories {
+  .course-single-categories{
+    margin: 0 !important;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 12px !important;
+    justify-content: space-between;
   }
-  .course-single-categories-fe {
-    margin-right: 0 !important;
+  .ms-4-1{
+    margin-bottom: 29px !important;
+    margin-left: 30px;
   }
-  .course-single-categories-onl {
-    margin-left: 0 !important;
-    margin-top: 10px;
+  .fe-title-1{
+    font-size: 12px !important;
+    // margin-top:6px !important;
   }
-  .course-single-categories-lv {
-    margin:  0 !important;
+  .onl-1{
+    font-size: 12px !important;
+    // margin-top: 6px !important;
   }
+  .size-font{
+    margin-left: 5px !important;
+    font-size: 13px;
+  }
+  .size-font-1{
+    margin-left: 6px !important;
+    font-size: 13px;
+  }
+  .title-lv{
+    font-size: 13px;
+  }
+  // .course-single-categories {
+  //   display: flex;
+  //   // flex-direction: column;
+  //   justify-content: center;
+  //   margin-top: 12px !important;
+  // }
+  // .course-single-categories-fe {
+  //   margin-right: 0 !important;
+  // }
+  // .course-single-categories-onl {
+  //   margin-left: 0 !important;
+  //   margin-top: 10px;
+  // }
+  // .course-single-categories-lv {
+  //   margin:  0 !important;
+  // }
   // member profile
   .content-info-mentor-member-profile {
     padding: 0 !important;
@@ -1865,7 +1882,7 @@
       .courses-content {
         .item {
           display: flex;
-          justify-content: center;
+          // justify-content: center;
           .btn-invite-course {
             width: 100%;
           }
