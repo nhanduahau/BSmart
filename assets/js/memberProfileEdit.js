@@ -81,10 +81,20 @@ function validatePassword() {
 
 // Nút cập nhật phần mật khẩu
 function updateData(event) {
-  event.preventDefault(); // ngăn chặn chuyển trang mặc định của nút submit
-  // gửi yêu cầu cập nhật dữ liệu bằng AJAX
-  // ...
+  event.preventDefault();
+  
+  // Lưu thông tin vào localStorage
+  localStorage.setItem("avatarImage", document.getElementById("avatarImage").src);
+  localStorage.setItem("hoTen", document.querySelector('input[type="text"]').value);
+  localStorage.setItem("ngaySinh", document.querySelector('input[type="date"]').value);
+  localStorage.setItem("diaChi", document.querySelectorAll('input[type="text"]')[1].value);
+  localStorage.setItem("soDienThoai", document.querySelectorAll('input[type="text"]')[2].value);
+  localStorage.setItem("matKhauMoi", document.getElementById("password").value);
+  
+  // Chuyển qua trang HTML khác
+  window.location.href = "member-profile.html";
 }
+
 
 const inputDate = document.querySelector(".form-control");
 inputDate.addEventListener("blur", function() {
