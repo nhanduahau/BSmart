@@ -1,4 +1,15 @@
 @media only screen and (min-width: 1200px) {
+
+  //aboutus
+  //aboutus
+  .my-element{
+    // margin-right: 70px;
+  }
+  .banner-aboutus1{
+    
+    display: flex;
+  }
+
   .container {
     max-width: 1320px !important;
   }
@@ -331,6 +342,9 @@
 
 // Laptop medium
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .my-element{
+    margin-right: 50px;
+  }
   .courses-wrapper {
     .course-content-container {
       .courses-list-content {
@@ -2203,6 +2217,10 @@
     }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  //aboutus
+  .my-element{
+    // margin-right: 50px;
+  }
   .img-avatar{
     width: 140px;
   }
