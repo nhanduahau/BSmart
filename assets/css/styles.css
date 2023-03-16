@@ -1418,7 +1418,7 @@ div.swiper-button-prev:after {
 .btn-primary-custom-select {
   background-color: #ff630e;
   color: #fff;
-  padding: 15px 30px;
+  padding: 15px 7px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 600;
@@ -3491,6 +3491,10 @@ body {
 .bt-submit:hover {
   border: 1px solid #ff630e;
   opacity: 0.8;
+}
+
+.ms-4-1 {
+  margin-left: 50px;
 }
 
 .mentor-detail-wrapper .banner-mentor-detail {
@@ -7972,6 +7976,22 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .course-single-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 12px !important;
+  }
+  .course-single-categories-fe {
+    margin-right: 0 !important;
+  }
+  .course-single-categories-onl {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+  .course-single-categories-lv {
+    margin: 0 !important;
+  }
   .content-info-mentor-member-profile {
     padding: 0 !important;
     margin-top: 20px;
@@ -8447,7 +8467,7 @@ input {
   }
   .home-wrapper .advantages-2 .btn-outline-secondary-custom {
     padding: 14px 20px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .home-wrapper .advantages-2 .btn-primary-custom {
     padding: 14px 10px;
