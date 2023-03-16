@@ -7955,6 +7955,13 @@ input {
     margin-top: 80px;
     padding: 0;
   }
+  .btn-aboutus-home-page {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-description {
+    margin-top: 10px;
+  }
   .course-content-container-page-course {
     padding: 0 !important;
     margin-top: 40px;
@@ -8448,6 +8455,13 @@ input {
   }
   .home-wrapper .contacts-section .form-contact-container {
     margin-top: 15px;
+  }
+  .btn-aboutus-home-page {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-description {
+    margin-top: 10px;
   }
   /* ------------------------ */
   .aboutus-wrapper .banner__aboutus .caption-content h2 {
