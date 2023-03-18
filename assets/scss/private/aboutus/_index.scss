@@ -487,6 +487,7 @@
 .employ__box img {
   position: relative;
   width: 100%;
+  object-fit: cover;
 }
 .img_title_1{
   display: flex;
@@ -509,3 +510,91 @@
 // .information-1 .content-1{
 //   background-color: #F9DAC9;
 // }
+.caption_img{
+  position: relative;
+}
+.title_img_aboutus{
+  position: absolute;
+  top:0;
+  bottom: 0 ;
+  left: 20%;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 20%;
+  text-align: justify;
+}
+
+.title_img_aboutus-text {
+  line-height: 25px;
+  color: #ff630e;
+  font-size: 25px;
+  // margin-right: -100px;
+}
+// .img_aboutus_3{
+//   object-fit: cover;
+// }
+
+// .bt-aboutus_1 {
+//   position: absolute;
+//   top:0;
+//   bottom: 0 ;
+//   left: 20%;
+//   right: 0;
+//   display: grid;
+//   justify-content: center;
+//   align-content: center;
+//   text-align: justify;
+//   padding: 6px;
+//   border-radius: 4px;
+//   color: #fff;
+//   border: 1px solid #ff630e;
+//   background-color: #ff630e;
+// }
+
+// .bt-aboutus_1:hover {
+//   opacity: 0.8;
+//   cursor: pointer;
+// }
+// .img-aboutus-end{
+//   position: relative;
+// }
+.caption_img1{
+  position: relative;
+}
+.img_aboutus_3{
+  position: absolute;
+  top:0;
+  bottom: 0 ;
+  left: 20%;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 20%;
+  text-align: justify;
+}
+
+.bt-aboutus_1{
+  line-height: 25px;
+  display: block;
+  background-color: #ff630e;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px; 
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 auto 10px;
+  width: 100%;
+}
+.bt-aboutus_1:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

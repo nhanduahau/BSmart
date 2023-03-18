@@ -1549,6 +1549,7 @@ div.swiper-button-prev:after {
 .employ__box img {
   position: relative;
   width: 100%;
+  object-fit: cover;
 }
 
 .img_title_1 {
@@ -1568,6 +1569,70 @@ div.swiper-button-prev:after {
   line-height: 30px;
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.caption_img {
+  position: relative;
+}
+
+.title_img_aboutus {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 20%;
+  text-align: justify;
+}
+
+.title_img_aboutus-text {
+  line-height: 25px;
+  color: #ff630e;
+  font-size: 25px;
+}
+
+.caption_img1 {
+  position: relative;
+}
+
+.img_aboutus_3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 20%;
+  text-align: justify;
+}
+
+.bt-aboutus_1 {
+  line-height: 25px;
+  display: block;
+  background-color: #ff630e;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 auto 10px;
+  width: 100%;
+}
+
+.bt-aboutus_1:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .header-mobile-logo a {
@@ -3147,10 +3212,6 @@ body {
 .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .course-share:hover {
   transition: all 0.3s;
   color: #ff630e;
-}
-
-.course-detail-wrapper .course-single-area .course-single-content .course-single-categories {
-  margin: 25px 0 50px;
 }
 
 .course-detail-wrapper .course-single-area .course-single-content .course-single-categories ul li {
@@ -7021,7 +7082,6 @@ input {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (min-width: 1200px) {
@@ -7143,6 +7203,14 @@ input {
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .title_img_aboutus-text {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .font-title {
+    font-size: 20px !important;
+  }
   .content-info-mentor-create-course {
     padding: 0 !important;
     margin-top: 20px;
@@ -7520,6 +7588,14 @@ input {
 }
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .title_img_aboutus-text {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+  }
+  .font-title {
+    font-size: 20px !important;
+  }
   .content-info-mentor-member-profile-edit {
     padding: 0 !important;
     margin-top: 20px;
@@ -8021,6 +8097,30 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .banner1 .caption-content p {
+    margin-top: 20px;
+  }
+  .img-2 {
+    height: 200px;
+  }
+  .information h3 {
+    line-height: 50px;
+  }
+  .aboutus1 {
+    padding: 0 !important;
+  }
+  .content-aboutus-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .title_img_aboutus-text {
+    font-size: 6px;
+    font-weight: 500;
+    line-height: 7px;
+  }
+  .font-title {
+    font-size: 10px !important;
+  }
   .icon-arrow-1 {
     display: block !important;
   }
@@ -9268,5 +9368,13 @@ input {
   }
   .pag-course-bottom {
     margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1470px) {
+  .title_img_aboutus-text {
+    font-size: 16px;
+  }
+  .font-title {
+    font-size: 30px !important;
   }
 }/*# sourceMappingURL=styles.css.map */

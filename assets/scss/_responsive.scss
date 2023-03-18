@@ -1,7 +1,6 @@
 @media only screen and (min-width: 1200px) {
 
   //aboutus
-  //aboutus
   .my-element{
     // margin-right: 70px;
   }
@@ -163,6 +162,15 @@
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  //aboutus
+  .title_img_aboutus-text{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .font-title{
+    font-size: 20px !important;
+  }
   // create course 
   .content-info-mentor-create-course {
     padding: 0 !important;
@@ -671,6 +679,17 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+
+    //aboutus
+    .title_img_aboutus-text{
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 15px;
+    }
+    .font-title{
+      font-size: 20px !important;
+    }
+
   // member profile edit 
   .content-info-mentor-member-profile-edit {
     padding: 0 !important;
@@ -1286,6 +1305,37 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  //aboutus
+  .banner1 .caption-content p{
+    margin-top: 20px;
+  }
+  .img-2{
+    height: 200px;
+  }
+  .information h3{
+    line-height: 50px;
+  }
+  .aboutus1{
+    padding: 0 !important;
+  }
+  .content-aboutus-1{
+    display: flex;
+    flex-direction: column;
+  }
+  .title_img_aboutus-text{
+    font-size: 6px;
+    font-weight: 500;
+    line-height: 7px;
+  }
+  .font-title{
+    font-size: 10px !important;
+  }
+  // .img-aboutus-2{
+  //   max-width: 100%;
+  //   height: auto;
+  // }
+
+
   //course
   .icon-arrow-1{
     display: block !important;
@@ -2889,4 +2939,16 @@
   .pag-course-bottom {
     margin-bottom: 40px;
   }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1470px) {
+
+    .title_img_aboutus-text{
+    font-size: 16px;
+    // line-height: 20px;
+  }
+  .font-title{
+    font-size: 30px !important;
+  }
+
 }
