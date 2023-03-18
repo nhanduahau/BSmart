@@ -2,17 +2,24 @@
 function previewAvatar() {
   var optFile = document.getElementById("formFileAvatar");
   var pathFile = optFile.value;
-  var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
-
+  var allowedExtensions = /(.jpg|.jpeg|.png)$/i;
+  
   if (!allowedExtensions.exec(pathFile)) {
-    alert("Vui lòng chọn file ảnh có đuôi là: .jpeg/.jpg/.png");
-    optFile.value = "";
-    return false;
+  alert("Vui lòng chọn file ảnh có đuôi là: .jpeg/.jpg/.png");
+  optFile.value = "";
+  return false;
   } else {
-    avatarImage.src = "";
-    avatarImage.src = URL.createObjectURL(event.target.files[0]);
+  var fileSize = optFile.files[0].size; // lấy kích thước tệp đầu vào
+  if (fileSize > 2000000) { // giới hạn kích thước tệp là 2MB
+  alert("Kích thước tệp ảnh tải lên quá lớn. Vui lòng chọn tệp ảnh có dung lượng tối đa là 2MB.");
+  optFile.value = "";
+  return false;
+  } else {
+  avatarImage.src = "";
+  avatarImage.src = URL.createObjectURL(event.target.files[0]);
   }
-}
+  }
+  }
 
 function clearAvatar() {
   document.getElementById("formFileAvatar").value = null;

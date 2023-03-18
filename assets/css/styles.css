@@ -411,11 +411,12 @@ div.swiper-button-prev:after {
   color: #fff;
 }
 .header-course-search span {
+  justify-content: center;
   position: absolute;
   color: rgba(255, 255, 255, 0.5);
   z-index: 10000;
   top: 10px;
-  right: 20px;
+  right: 90px;
 }
 
 .header-log-reg {
@@ -1567,10 +1568,6 @@ div.swiper-button-prev:after {
   line-height: 30px;
   font-weight: 400;
   margin-bottom: 20px;
-}
-
-.information-1 .content-1 {
-  background-color: #F9DAC9;
 }
 
 .header-mobile-logo a {
