@@ -52,11 +52,12 @@
     }
   }
   span {
+    justify-content: center;
     position: absolute;
     color: rgba(255, 255, 255, 0.5);
     z-index: 10000;
     top: 10px;
-    right: 20px;
+    right: 90px;
   }
 }
 .header-log-reg {
