@@ -134,7 +134,7 @@
 }
 
 .courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom .card-title {
-  min-height: 40px;
+  min-height: 24px;
 }
 
 .courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom .card-title a {
@@ -231,8 +231,8 @@
 }
 
 .icon-title-course {
-  width: 82px;
-  height: 82px !important;
+  width: 42px;
+  height: 42px !important;
   object-fit: cover;
 }
 
@@ -248,8 +248,8 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: #ff630e;
-  border: 4px solid #ff630e;
   background-color: #fff;
+  box-shadow: 2px 2px gray;
 }
 
 .feedback-time {
@@ -326,4 +326,23 @@
   color: #ff630e;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.card-title {
+  margin-top: 14px;
+  width: 100%;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  line-height: 20px !important;
+  // height: 75px;
+
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.icon-lv-title-right {
+  position: absolute;
+  right: -20px;
+  top: -20px;
 }

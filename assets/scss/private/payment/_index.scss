@@ -984,3 +984,23 @@ body {
 .text-success {
   color: #28a745 !important;
 }
+
+.info-people-buy {
+  display: flex;
+  align-items: center;
+}
+
+.info-people-buy-label {
+  font-weight: 500 !important;
+  margin-right: 88px;
+}
+
+.info-people-buy-label-phone {
+  font-weight: 500 !important;
+  margin-right: 20px;
+}
+
+.info-people-buy-label-email {
+  font-weight: 500 !important;
+  margin-right: 76px;
+}
