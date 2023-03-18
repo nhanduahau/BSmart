@@ -487,3 +487,12 @@
 .ms-4-1{
   margin-left: 50px;
 }
+
+// Scroll fix top
+.scroll-fix-on-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 124px;
+  padding: 10px;
+  transition: all 0.2s;
+}

@@ -679,6 +679,14 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .section-heading-course-title {
+    margin-bottom: 8px !important;
+  }
+
+  .icon-logo {
+    margin-left: -50px;
+  }
+
 
     //aboutus
     .title_img_aboutus-text{
@@ -1003,9 +1011,13 @@
     }
   }
   /* ------------------------ */
+  .advantages-2 {
+    padding: 20px 0 20px;
+    margin-bottom: 40px;
+  }
   /* About us */
   .aboutus {
-    padding: 100px 0;
+    padding: 20px 0;
 
     .about-description {
       font-size: 18px;
@@ -1267,7 +1279,7 @@
 
   .testimonial-content-mobile-home-page {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .section-heading-of-member-title {
@@ -1305,6 +1317,10 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .icon-logo {
+    margin-left: -50px;
+  }
+
   //aboutus
   .banner1 .caption-content p{
     margin-top: 20px;
@@ -1810,6 +1826,11 @@
       margin-bottom: 20px;
     }
 
+    .advantages {
+      // padding: 95px 0 150px;
+      padding-top: 40px;
+    }
+
     .advantages .service-card {
       margin-bottom: 0px;
     }
@@ -1866,7 +1887,11 @@
 
     .testimonial-content-mobile-home-page {
       padding: 0;
-      margin-bottom: 80px;
+      margin-bottom: 60px;
+    }
+
+    .section-heading-course-title {
+      margin-bottom: 8px !important;
     }
 
     .section-heading-of-member-title {
@@ -1884,7 +1909,7 @@
     /* ------------------------ */
     /* About us */
     .aboutus {
-      padding: 100px 0;
+      padding: 20px 0;
 
       .about-description {
         font-size: 18px;
@@ -1908,8 +1933,16 @@
     // }
     /* ------------------------ */
     /* Advantages */
+    .advantages-2 {
+      padding: 20px 0 20px;
+      margin-bottom: 60px;
+    }
+
+    .courses-section {
+      padding-top: 20px;
+    }
     .advantages {
-      padding-bottom: 80px;
+      padding-bottom: 40px;
       .section-heading {
         text-align: center !important;
       }
@@ -2056,6 +2089,9 @@
       gap: 10px 36px;
     }
   }
+  .section-heading-home {
+    margin-top: 20px;
+  }
   /* ------------------------ */
   // Register page
   .register-wrapper {
@@ -2199,7 +2235,7 @@
       font-size: 1rem;
       font-weight: bold;
     }
-  }
+  } 
 
   .select-feedback-container {
     margin-top: 24px !important;
