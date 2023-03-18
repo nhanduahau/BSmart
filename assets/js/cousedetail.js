@@ -50,7 +50,7 @@ btnOtpClass.forEach((_btnCreate, _btnCreateIndex) => {
         indexOptionClass.push(_indexOtpClass);
         optionClassed.push(_otpClass);
 
-        if (confirm("Bạn có muốn chọn lớp này hay không?") == true) {
+        // if (confirm("Bạn có muốn chọn lớp này hay không?") == true) {
           if (saveOptionClass.length > 1) {
             if (saveOptionClass[0] == indexOptionClass[0]) {
               // clear bg classed
@@ -78,17 +78,18 @@ btnOtpClass.forEach((_btnCreate, _btnCreateIndex) => {
 
               // event clicked button Delete opt class
               _delOptClass.addEventListener("click", function () {
-                if (confirm("Bạn có muốn hủy chọn lớp này không?") == true) {
+                // if (confirm("Bạn có muốn hủy chọn lớp này không?") == true) {
                   _delOptClass.style.display = "none";
                   _otpClass.classList = "otp-class-active-none";
                   _btnCreate.style.display = "block";
                 }
-              });
+              // }
+              );
             }
           });
-        } else {
-          return;
-        }
+        // } else {
+        //   return;
+        // }
       }
     });
   });
