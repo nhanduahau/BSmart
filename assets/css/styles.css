@@ -8152,6 +8152,33 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .icon-logo {
+    margin-left: -50px;
+  }
+  .banner1 .caption-content p {
+    margin-top: 20px;
+  }
+  .img-2 {
+    height: 200px;
+  }
+  .information h3 {
+    line-height: 50px;
+  }
+  .aboutus1 {
+    padding: 0 !important;
+  }
+  .content-aboutus-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .title_img_aboutus-text {
+    font-size: 6px;
+    font-weight: 500;
+    line-height: 7px;
+  }
+  .font-title {
+    font-size: 10px !important;
+  }
   .icon-arrow-1 {
     display: block !important;
   }
