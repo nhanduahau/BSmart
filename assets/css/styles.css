@@ -1582,7 +1582,7 @@ div.swiper-button-prev:after {
 .login-mobile-section .login-form-content {
   background: #fff;
   border-radius: 10px;
-  padding: 60px;
+  padding: 20px;
 }
 
 .login-mobile-section .login-form-content h3 {
@@ -1870,7 +1870,7 @@ div.swiper-button-prev:after {
 }
 
 .courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom .card-title {
-  min-height: 40px;
+  min-height: 24px;
 }
 
 .courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom .card-title a {
@@ -1967,8 +1967,8 @@ div.swiper-button-prev:after {
 }
 
 .icon-title-course {
-  width: 82px;
-  height: 82px !important;
+  width: 42px;
+  height: 42px !important;
   object-fit: cover;
 }
 
@@ -1984,8 +1984,8 @@ div.swiper-button-prev:after {
   font-size: 1.4rem;
   font-weight: 600;
   color: #ff630e;
-  border: 4px solid #ff630e;
   background-color: #fff;
+  box-shadow: 2px 2px gray;
 }
 
 .feedback-time {
@@ -2062,6 +2062,23 @@ div.swiper-button-prev:after {
   color: #ff630e;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.card-title {
+  margin-top: 14px;
+  width: 100%;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  line-height: 20px !important;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.icon-lv-title-right {
+  position: absolute;
+  right: -20px;
+  top: -20px;
 }
 
 * {
@@ -3046,6 +3063,26 @@ body {
   color: #28a745 !important;
 }
 
+.info-people-buy {
+  display: flex;
+  align-items: center;
+}
+
+.info-people-buy-label {
+  font-weight: 500 !important;
+  margin-right: 88px;
+}
+
+.info-people-buy-label-phone {
+  font-weight: 500 !important;
+  margin-right: 20px;
+}
+
+.info-people-buy-label-email {
+  font-weight: 500 !important;
+  margin-right: 76px;
+}
+
 .course-detail-wrapper {
   background-color: #fff;
 }
@@ -3536,6 +3573,14 @@ body {
 
 .ms-4-1 {
   margin-left: 50px;
+}
+
+.scroll-fix-on-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 124px;
+  padding: 10px;
+  transition: all 0.2s;
 }
 
 .mentor-detail-wrapper .banner-mentor-detail {
@@ -7520,6 +7565,12 @@ input {
 }
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .section-heading-course-title {
+    margin-bottom: 8px !important;
+  }
+  .icon-logo {
+    margin-left: -50px;
+  }
   .content-info-mentor-member-profile-edit {
     padding: 0 !important;
     margin-top: 20px;
@@ -7792,9 +7843,13 @@ input {
     width: 50%;
   }
   /* ------------------------ */
+  .advantages-2 {
+    padding: 20px 0 20px;
+    margin-bottom: 40px;
+  }
   /* About us */
   .aboutus {
-    padding: 100px 0;
+    padding: 20px 0;
   }
   .aboutus .about-description {
     font-size: 18px;
@@ -7992,7 +8047,7 @@ input {
   }
   .testimonial-content-mobile-home-page {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   .section-heading-of-member-title {
     margin-bottom: 10px;
@@ -8021,6 +8076,9 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .icon-logo {
+    margin-left: -50px;
+  }
   .icon-arrow-1 {
     display: block !important;
   }
@@ -8424,6 +8482,9 @@ input {
     font-size: 14px;
     margin-bottom: 20px;
   }
+  .home-wrapper .advantages {
+    padding-top: 40px;
+  }
   .home-wrapper .advantages .service-card {
     margin-bottom: 0px;
   }
@@ -8469,7 +8530,10 @@ input {
   }
   .home-wrapper .testimonial-content-mobile-home-page {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+  }
+  .home-wrapper .section-heading-course-title {
+    margin-bottom: 8px !important;
   }
   .home-wrapper .section-heading-of-member-title {
     margin-bottom: 10px;
@@ -8482,7 +8546,7 @@ input {
     padding: 0;
   }
   .home-wrapper .aboutus {
-    padding: 100px 0;
+    padding: 20px 0;
   }
   .home-wrapper .aboutus .about-description {
     font-size: 18px;
@@ -8498,8 +8562,15 @@ input {
     font-size: 14px;
     margin-bottom: 20px;
   }
+  .home-wrapper .advantages-2 {
+    padding: 20px 0 20px;
+    margin-bottom: 60px;
+  }
+  .home-wrapper .courses-section {
+    padding-top: 20px;
+  }
   .home-wrapper .advantages {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
   .home-wrapper .advantages .section-heading {
     text-align: center !important;
@@ -8601,6 +8672,9 @@ input {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px 36px;
+  }
+  .section-heading-home {
+    margin-top: 20px;
   }
   /* ------------------------ */
   .register-wrapper .registration-form-wrap {

@@ -361,7 +361,8 @@ function handleSearchCourseBtn() {
                                 arrCourses[i].nameCourse
                               }</a>
                               <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
-                          </h5>
+                              </h5>
+                          
                           <p class="sub-title">${arrCourses[i].nameMentor}</p>
                           <p class="description">${arrCourses[i].desc}</p>
                           <div class="testi-rating">
