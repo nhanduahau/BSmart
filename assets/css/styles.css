@@ -1558,7 +1558,7 @@ div.swiper-button-prev:after {
 }
 
 .information:nth-child(2) {
-  margin-top: -70px;
+  margin-top: -10px;
 }
 
 .information p {
@@ -1602,9 +1602,8 @@ div.swiper-button-prev:after {
 
 .img_aboutus_3 {
   position: absolute;
-  top: 0;
+  top: 315px;
   bottom: 0;
-  left: 20%;
   right: 0;
   text-align: center;
   margin: 0 auto;
@@ -1616,13 +1615,14 @@ div.swiper-button-prev:after {
 }
 
 .bt-aboutus_1 {
+  border: 0;
   line-height: 25px;
   display: block;
   background-color: #ff630e;
   color: #fff;
-  padding: 15px 30px;
+  padding: 12px 30px;
   border-radius: 30px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -7248,6 +7248,34 @@ input {
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .bt-aboutus_1 {
+    border: 0px;
+    line-height: 25px;
+    display: block;
+    background-color: rgb(255, 99, 14);
+    color: rgb(255, 255, 255);
+    padding: 5px 17px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px auto 10px;
+    width: 100%;
+  }
+  .img_aboutus_3 {
+    position: absolute;
+    top: 190px;
+    bottom: 0;
+    right: 30px;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    text-align: justify;
+  }
   .title_img_aboutus-text {
     font-size: 10px;
     font-weight: 500;
@@ -7638,6 +7666,34 @@ input {
   }
   .icon-logo {
     margin-left: -50px;
+  }
+  .bt-aboutus_1 {
+    border: 0px;
+    line-height: 25px;
+    display: block;
+    background-color: rgb(255, 99, 14);
+    color: rgb(255, 255, 255);
+    padding: 2px 15px;
+    border-radius: 30px;
+    font-size: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px auto 10px;
+    width: 100%;
+  }
+  .img_aboutus_3 {
+    position: absolute;
+    top: 160px;
+    bottom: 0;
+    right: 30px;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    text-align: justify;
   }
   .title_img_aboutus-text {
     font-size: 10px;
@@ -8157,6 +8213,33 @@ input {
   }
   .icon-logo {
     margin-left: -50px;
+  }
+  .bt-aboutus_1 {
+    border: 0px;
+    display: block;
+    background-color: rgb(255, 99, 14);
+    color: rgb(255, 255, 255);
+    padding: 1px 5px;
+    border-radius: 30px;
+    font-size: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px auto 10px;
+    width: 100%;
+  }
+  .img_aboutus_3 {
+    position: absolute;
+    top: 107px;
+    bottom: 0;
+    right: 30px;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    text-align: justify;
   }
   .banner1 .caption-content p {
     margin-top: 20px;
@@ -9453,5 +9536,66 @@ input {
   }
   .font-title {
     font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1670px) {
+  .img_aboutus_3 {
+    position: absolute;
+    top: 260px;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    text-align: justify;
+  }
+  .bt-aboutus_1 {
+    border: 0;
+    line-height: 25px;
+    display: block;
+    background-color: #ff630e;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 auto 10px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 390px) and (max-width: 499px) {
+  .bt-aboutus_1 {
+    object-fit: cover;
+    border: 0px;
+    display: block;
+    background-color: rgb(255, 99, 14);
+    color: rgb(255, 255, 255);
+    padding: 1px 2px;
+    border-radius: 10px;
+    font-size: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px auto 10px;
+    width: 100%;
+  }
+  .img_aboutus_3 {
+    object-fit: cover;
+    position: absolute;
+    top: 88px;
+    bottom: 0;
+    right: 30px;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    text-align: justify;
   }
 }/*# sourceMappingURL=styles.css.map */
