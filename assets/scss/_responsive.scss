@@ -1317,6 +1317,11 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+
+.blog-wrapper .blog-area .all-posts-wrap{
+  padding-right: 20px !important;
+}
+
   .icon-logo {
     margin-left: -50px;
   }
