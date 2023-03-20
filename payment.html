@@ -573,9 +573,14 @@
                 </div>
                   <!-- Mã code -->
                   <div class="card1-total-price-code">
-                    <h1>Nhập mã code: </h1>
-                    <input type="text" class="card1-total-price-code-input w-50">
-                    <i class="fa fa-check-circle" style="margin-left: 2px;"></i>
+                    <h1>Mã giảm giá: </h1>
+                    <form action="~/cart/VerifyVoucher" id="form-voucher1" method="post">
+                      <span id="remove-input1">
+                          <input style="margin-left:50px" type="text" name="voucherCode1" id="voucherCode1" class="card1-total-price-code-input w-50" value="">
+                          <i class="fa fa-check-circle"></i>
+                      </span>
+                      <a type="submit" style="color : #ff630e;" id="submitVoucher1">Nhập</a>
+                  </form>
                   </div>
         
                   <!-- Bill -->
