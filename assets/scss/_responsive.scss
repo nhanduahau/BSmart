@@ -919,7 +919,7 @@
   .sidebar-wrap {
     display: block;
     position: fixed;
-    z-index: 2;
+    z-index: 9999;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease-out 0s;
@@ -1380,6 +1380,28 @@
 /* Mobile */
 @media only screen and (max-width: 767px) {
 
+  // Cart header 
+  .header-cart {
+    margin-right: 42px;
+  }
+  
+  .icon-shopping-cart {
+    margin-top: 10px;
+    width: 52px !important;
+    height: 52px !important;
+    object-fit: cover;
+  }
+  
+  .cart-total-number {
+    margin-top: 6px;
+    font-size: 1rem;
+  }
+
+  .cart-total-number-mobile {
+    margin-top: 40px;
+  }
+// Cart header 
+
 .blog-wrapper .blog-area .all-posts-wrap{
   padding-right: 20px !important;
 }
@@ -1769,7 +1791,7 @@
   .sidebar-wrap {
     display: block;
     position: fixed;
-    z-index: 2;
+    z-index: 9999;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease-out 0s;
@@ -2371,6 +2393,24 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
+  .card1-total-price-code-lbl {
+    font-size: 0.9rem;
+    width: 74% !important;
+  }
+
+  .card1-total-price-code-lbl-use-bs {
+    font-size: 0.9rem;
+    width: 100% !important;
+  }
+
+  .time-select {
+    width: 120px !important;
+  }
+
+  .card1-total-price-code-input {
+    width: 78% !important;
+  }
+
   // payment 
   .feedback-body {
     display: flex;
