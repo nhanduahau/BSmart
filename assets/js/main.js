@@ -78,7 +78,7 @@ $(document).ready(function () {
 
   // Active sidebar
   $("#closeSidebar").click(function (event) {
-    var $sidebar = $("#sidebar-mobile").css("right", "-100%");
+    var $sidebar = $("#sidebar-mobile").css("right", "-200%");
   });
 
   $("#activeMenu").click(function (event) {
