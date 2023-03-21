@@ -132,10 +132,17 @@ body {
 }
 
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation .content-annotation .timeDate {
-  padding-left: 20px;
+  padding-left: 15px;
   padding-top: 10px;
   color: gray;
   font-size: 14px;
+}
+
+.time-minus {
+  padding-top: 10px;
+  color: gray;
+  font-size: 14px;
+  margin-left: 12px;
 }
 
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation:hover {

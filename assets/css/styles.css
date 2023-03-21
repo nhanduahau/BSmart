@@ -3370,18 +3370,22 @@ body {
   color: #ff630e;
 }
 
-.course-detail-wrapper .course-single-area .course-single-content .course-single-categories ul li {
-  display: inline-block;
-}
-
 .course-detail-wrapper .course-single-area .course-single-content .course-single-categories ul li a {
   display: inline-block;
   color: #999;
   font-size: 16px;
   border-radius: 4px;
   background-color: #f5f5f5;
-  padding: 5px 10px;
+  padding: 4px;
   margin: 0 2px 10px;
+}
+
+.size-font {
+  margin-left: 2px;
+}
+
+.size-font-1 {
+  margin-left: 2px;
 }
 
 .course-detail-wrapper .course-single-area .course-single-content .course-single-categories ul li a:hover {
@@ -4808,10 +4812,17 @@ body {
 }
 
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation .content-annotation .timeDate {
-  padding-left: 20px;
+  padding-left: 15px;
   padding-top: 10px;
   color: gray;
   font-size: 14px;
+}
+
+.time-minus {
+  padding-top: 10px;
+  color: gray;
+  font-size: 14px;
+  margin-left: 12px;
 }
 
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation:hover {
@@ -7249,6 +7260,16 @@ input {
 }
 
 @media only screen and (min-width: 1200px) {
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
   .owl-next span {
     top: 0 !important;
     right: 58px !important;
@@ -7402,6 +7423,16 @@ input {
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
   .owl-next span {
     top: 0 !important;
     right: 26px !important;
@@ -7645,6 +7676,16 @@ input {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
   .owl-next span {
     top: 0 !important;
     right: 8px !important;
@@ -7875,6 +7916,16 @@ input {
 }
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
   .owl-next span {
     top: 0 !important;
     right: 16px !important;
@@ -8458,6 +8509,16 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
   .card1-total-price-code-mobile-container {
     display: flex;
     flex: 1;
@@ -8560,7 +8621,6 @@ input {
   }
   .ms-4-1 {
     margin-bottom: 29px !important;
-    margin-left: 30px;
   }
   .fe-title-1 {
     font-size: 12px !important;
@@ -9263,6 +9323,40 @@ input {
 }
 /* ---------------- */
 @media only screen and (max-width: 480px) {
+  .icon-level {
+    width: 32px !important;
+    height: 42px !important;
+    object-fit: cover;
+  }
+  .title-lv {
+    font-size: 0.6rem !important;
+  }
+  .size-font {
+    margin-left: 2px !important;
+    font-size: 0.6rem !important;
+  }
+  .size-font-1 {
+    margin-left: 2px !important;
+    font-size: 0.6rem !important;
+  }
+  .onl-1 {
+    padding: 2px !important;
+    font-size: 0.6rem !important;
+  }
+  .fe-title-1 {
+    padding: 2px !important;
+    font-size: 0.6rem !important;
+  }
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
   .owl-next span {
     top: 0 !important;
     right: 4px !important;
@@ -9770,6 +9864,16 @@ input {
   }
 }
 @media only screen and (max-width: 420px) {
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -400px !important;
+    font-size: 4rem !important;
+  }
   .card1-total-price-code {
     align-items: start;
     display: flex;
@@ -9888,6 +9992,16 @@ input {
   }
 }
 @media only screen and (min-width: 390px) and (max-width: 499px) {
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -400px !important;
+    font-size: 4rem !important;
+  }
   .card1-total-price-code {
     display: flex;
     flex-direction: column;
@@ -9927,6 +10041,16 @@ input {
   }
 }
 @media only screen and (min-width: 390px) and (max-width: 480px) {
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -400px !important;
+    font-size: 4rem !important;
+  }
   .card1-total-price-code {
     align-items: start;
     display: flex;

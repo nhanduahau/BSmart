@@ -106,7 +106,7 @@
 }
 
 .course-detail-wrapper .course-single-area .course-single-content .course-single-categories ul li {
-  display: inline-block;
+  // display: inline-block;
 }
 
 .course-detail-wrapper .course-single-area .course-single-content .course-single-categories ul li a {
@@ -115,8 +115,16 @@
   font-size: 16px;
   border-radius: 4px;
   background-color: #f5f5f5;
-  padding: 5px 10px;
+  // padding: 5px 10px;
+  padding: 4px;
   margin: 0 2px 10px;
+}
+
+.size-font {
+  margin-left: 2px;
+}
+.size-font-1 {
+  margin-left: 2px;
 }
 
 .course-detail-wrapper .course-single-area .course-single-content .course-single-categories ul li a:hover {
