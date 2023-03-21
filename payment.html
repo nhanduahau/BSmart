@@ -399,6 +399,14 @@
                 <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
               </span></a>
             </div>
+            <!-- Cart -->
+            <div class="header-cart">
+              <a href="payment.html">
+                <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
+                <span class="cart-total-number cart-total-number-mobile">0</span>
+              </a>
+            </div>
+            <!-- Cart -->
             <div class="header-mobile-menu-hambuger" id="activeMenu">
               <i class="fa fa-bars"></i>
             </div>
@@ -559,28 +567,59 @@
                   <h2>TỔNG KHÓA HỌC</h2>
         
                   <!-- Mã giới thiệu -->
-                  <div class="card1-total-price-code" id="input-voucher">
-                    <h1>Mã giảm giá: </h1>
-
-                    <form action="~/cart/VerifyVoucher" id="form-voucher" method="post">
-                        <span id="remove-input">
-                            <input style="margin-left:50px" type="text" name="voucherCode" id="voucherCode" class="card1-total-price-code-input-refer w-50" value="">
-                            <i class="fa fa-check-circle"></i>
-                        </span>
-                        <a type="submit" style="color : #ff630e;" id="submitVoucher">Nhập</a>
-                    </form>
-
-                </div>
+                  <div class="card1-total-price-code">
+                    <h1 class="card1-total-price-code-lbl">Nhập mã giới thiệu: </h1>
+                    <div class="card1-total-price-code-mobile-container">
+                      <input type="text" class="card1-total-price-code-input-refer w-50">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
+                  </div>
+        
                   <!-- Mã code -->
                   <div class="card1-total-price-code">
-                    <h1>Mã giảm giá: </h1>
+                    <h1 class="card1-total-price-code-lbl">Mã giảm giá: </h1>
                     <form action="~/cart/VerifyVoucher" id="form-voucher1" method="post">
-                      <span id="remove-input1">
-                          <input style="margin-left:50px" type="text" name="voucherCode1" id="voucherCode1" class="card1-total-price-code-input w-50" value="">
-                          <i class="fa fa-check-circle"></i>
-                      </span>
+                      <!-- <span id="remove-input1"> -->
+                        <input style="margin-left:50px" type="text" name="voucherCode1" id="voucherCode1" class="card1-total-price-code-input w-50" value="">
+                        <i class="fa fa-check-circle"></i>
+                        <i class='fas fa-question icon-question-payment' data-toggle="modal" data-target="#exampleModalPolicy"></i>
+                      <!-- </span> -->
                       <a type="submit" style="color : #ff630e;" id="submitVoucher1">Nhập</a>
                   </form>
+
+                    <!-- Show modal policy -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalPolicy" tabindex="-1" role="dialog" aria-labelledby="exampleModalPolicyLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title" id="exampleModalPolicyLabel">Giới thiệu và hướng dẫn nhập mã giảm giá</h1>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+
+                          <hr class="separator-policy"/>
+
+                          <div class="modal-body modal-body-policy">
+                            <h3 class="title-slogan">Bạn có biết gì chưa? Ở BSmart đang có chương trình giảm giá 1 triệu đồng đấy. Hãy Nhanh Tay Đăng Ký Học Thôi Nào.</h3>
+                            <p class="desc-temp">Chương trình khuyến mãi cho các bạn nhanh tay nhập ngay mã code voucher giảm giá lên đến 1 triệu đồng. Đây là chương trình giới hạn chỉ với những bạn có trong tay tấm thẻ voucher giảm giá với mã code trên đó. Ở <strong class="name-primary">BSmart</strong>, chúng tôi không chỉ cố gắng đem đến cho học viên các kiến thức bổ ích nhằm trao dồi thêm kiến thức thường nhật mà bạn có được từ trường học; mà còn là các kiến thức các kĩ thuật mà chỉ số ít người có thể biết. Nhằm đáp ứng nhu cầu nghiên cứu tò mò của các bạn, <strong class="name-primary">BSmart</strong> gửi đến các bạn may mắn sở hữu trên tay tấm thẻ voucher của <strong class="name-primary">BSmart</strong> giảm đến <strong class="name-primary">1.000.000 vnđ</strong>. <a href="./courses.html" class="link-page-course">Hãy Nhanh Tay Đăng Ký Khóa Học Thôi Nào!</a></p>
+                            <p class="instruct-title">Hướng dẫn sử dụng: </p>
+                          
+                            <!-- Step -->
+                            <div class="step-footer">
+                              <p class="step-1">Bước 1: Truy cập vào đường link: <a href="./index.html" style="color: blue;">bsmart.edu.vn</a>.</p>
+                              <p class="step-1">Bước 2: Vào mục Register để trở thành 1 BSmart sớm nhất.</p>
+                              <p class="step-1">Bước 3: Chọn khóa học và ấn nút đăng ký khóa học.</p>
+                              <p class="step-1">Bước 4: Điền mã voucher vào khung giảm giá và ấn nút Thanh toán.</p>
+
+                              <i class="step-1">(* Lưu ý: mỗi mã voucher chỉ được dùng 1 lần duy nhất.)</i>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
                   </div>
         
                   <!-- Bill -->
@@ -609,7 +648,7 @@
                   <br>
                   <form>
                     <div class="d-flex align-items-center">
-                      <span>Sử dụng BSmart: </span>
+                      <span class="card1-total-price-code-lbl-use-bs">Sử dụng BSmart: </span>
                       <span class="bsmart-pay-number">200</span>
                       <select class="form-select time-select" id="select-pay-confirm" aria-label="Default select example">
                         <option value="bsmart-non-use" selected>Không sử dụng</option>
