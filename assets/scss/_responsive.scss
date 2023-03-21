@@ -1,4 +1,16 @@
 @media only screen and (min-width: 1200px) {
+  // Slide Danh sách lớp học
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
+  // Slide Danh sách lớp học
         // Slide 
         .owl-next span {
           top: 0 !important;
@@ -205,6 +217,18 @@
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  // Slide Danh sách lớp học
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
+  // Slide Danh sách lớp học
       // Slide 
       .owl-next span {
         top: 0 !important;
@@ -509,6 +533,18 @@
 
 // Laptop medium
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  // Slide Danh sách lớp học
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
+  // Slide Danh sách lớp học
   // Slide 
   .owl-next span {
     top: 0 !important;
@@ -831,6 +867,19 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  // Slide Danh sách lớp học
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
+  // Slide Danh sách lớp học
+
   // Slide 
   .owl-next span {
     top: 0 !important;
@@ -1547,7 +1596,18 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-
+  // Slide Danh sách lớp học
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
+  // Slide Danh sách lớp học
   // payment 
   .card1-total-price-code-mobile-container {
     display: flex;
@@ -1676,7 +1736,7 @@
   }
   .ms-4-1{
     margin-bottom: 29px !important;
-    margin-left: 30px;
+    // margin-left: 30px;
   }
   .fe-title-1{
     font-size: 12px !important;
@@ -2582,6 +2642,46 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
+  // .course-single-categories-lv {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+  .icon-level {
+    width: 32px !important;
+    height: 42px !important;
+    object-fit: cover;
+  }
+  .title-lv {
+    font-size: 0.6rem !important;
+  }
+  .size-font {
+    margin-left: 2px !important;
+    font-size: 0.6rem !important;
+  }
+  .size-font-1 {
+    margin-left: 2px !important;
+    font-size: 0.6rem !important;
+  }
+  .onl-1 {
+    padding: 2px !important;
+    font-size: 0.6rem !important;
+  }
+  .fe-title-1 {
+    padding: 2px !important;
+    font-size: 0.6rem !important;
+  }
+  // Slide Danh sách lớp học
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -22px !important;
+    font-size: 4rem !important;
+  }
+  // Slide Danh sách lớp học
   // Slide 
 .owl-next span {
   top: 0 !important;
@@ -3223,6 +3323,18 @@
 }
 
 @media only screen and (max-width: 420px) {
+  // Slide Danh sách lớp học
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -400px !important;
+    font-size: 4rem !important;
+  }
+  // Slide Danh sách lớp học
   .card1-total-price-code{
     align-items: start;
     display: flex;
@@ -3377,6 +3489,18 @@
 
 }
 @media only screen and (min-width: 390px) and (max-width: 499px) {
+  // Slide Danh sách lớp học
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -400px !important;
+    font-size: 4rem !important;
+  }
+  // Slide Danh sách lớp học
   // payment
   .card1-total-price-code{
     // align-items: start;
@@ -3424,6 +3548,18 @@
   
   }
 @media only screen and (min-width: 390px) and (max-width: 480px) {
+  // Slide Danh sách lớp học
+  .list-class-owl-theme .owl-next span {
+    top: 60px !important;
+    right: -20px !important;
+    font-size: 4rem !important;
+  }
+  .list-class-owl-theme .owl-prev span {
+    top: 60px !important;
+    left: -400px !important;
+    font-size: 4rem !important;
+  }
+  // Slide Danh sách lớp học
   .card1-total-price-code{
     align-items: start;
     display: flex;
