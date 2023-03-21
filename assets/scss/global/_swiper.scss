@@ -54,7 +54,8 @@
 
 div.swiper-button-next,
 div.swiper-button-prev {
-  top: 60%;
+  // top: 60%;
+  // right: -80px;
   &:after {
     color: $secondary-color;
   }
@@ -120,7 +121,7 @@ div.swiper-button-prev {
 .swiper-typical-mentor {
   div.swiper-button-next,
   div.swiper-button-prev {
-    top: 50%;
+    // top: 50%;
     &:after {
       color: $secondary-color;
     }

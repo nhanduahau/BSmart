@@ -569,16 +569,23 @@
                   <!-- Mã giới thiệu -->
                   <div class="card1-total-price-code">
                     <h1 class="card1-total-price-code-lbl">Nhập mã giới thiệu: </h1>
-                    <input type="text" class="card1-total-price-code-input-refer w-50">
-                    <i class="fa fa-check-circle"></i>
+                    <div class="card1-total-price-code-mobile-container">
+                      <input type="text" class="card1-total-price-code-input-refer w-50">
+                      <i class="fa fa-check-circle"></i>
+                    </div>
                   </div>
         
                   <!-- Mã code -->
                   <div class="card1-total-price-code">
-                    <h1 class="card1-total-price-code-lbl">Nhập mã code: </h1>
-                    <input type="text" class="card1-total-price-code-input w-50">
-                    <i class="fa fa-check-circle"></i>
-                    <i class='fas fa-question icon-question-payment' data-toggle="modal" data-target="#exampleModalPolicy"></i>
+                    <h1 class="card1-total-price-code-lbl">Mã giảm giá: </h1>
+                    <form action="~/cart/VerifyVoucher" id="form-voucher1" method="post">
+                      <!-- <span id="remove-input1"> -->
+                        <input style="margin-left:50px" type="text" name="voucherCode1" id="voucherCode1" class="card1-total-price-code-input w-50" value="">
+                        <i class="fa fa-check-circle"></i>
+                        <i class='fas fa-question icon-question-payment' data-toggle="modal" data-target="#exampleModalPolicy"></i>
+                      <!-- </span> -->
+                      <a type="submit" style="color : #ff630e;" id="submitVoucher1">Nhập</a>
+                  </form>
 
                     <!-- Show modal policy -->
                     <!-- Modal -->
@@ -670,7 +677,7 @@
         
                     <div class="total-course-icon-item-viettel-pay">
                       <button class="total-course-icon-item-btn-viettel-pay" id="btn-viettel-1" data-toggle="modal"
-                        data-target="#exampleModal3">
+                        data-target="#exampleModal3" disabled>
                         <img src="assets\images\viettelpay.png" class="total-course-momo-icon" alt="img-momo">
                       </button>
                     </div>

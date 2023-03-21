@@ -1,4 +1,47 @@
 @media only screen and (min-width: 1200px) {
+        // Slide 
+        .owl-next span {
+          top: 0 !important;
+          right: 58px !important;
+          font-size: 4rem !important;
+        }
+      
+        .owl-prev span {
+          top: 0 !important;
+          left: 26px !important;
+          font-size: 4rem !important;
+        }
+        // slide 
+
+// payment 
+.card1-total-price-code {
+  display: flex;
+  flex: 1;
+}
+.card1-total-price-code-mobile-container {
+  display: flex;
+  flex: 1;
+}
+
+.icon-question-payment {
+  margin-top: 4px;
+  margin-left: 18px;
+  margin-right: 20px;
+}
+#form-voucher1 {
+  display: flex;
+  flex:  1;
+}
+
+.fa-check-circle {
+  margin-top: 6px;
+}
+.card1-total-price-code-input-refer {
+  padding: 0;
+  width: 100% !important;
+  margin-left: 4px !important;
+}
+// payment 
 
   //aboutus
   .my-element{
@@ -162,6 +205,45 @@
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      // Slide 
+      .owl-next span {
+        top: 0 !important;
+        right: 26px !important;
+        font-size: 4rem !important;
+      }
+    
+      .owl-prev span {
+        top: 0 !important;
+        left: 0px !important;
+        font-size: 4rem !important;
+      }
+      // slide 
+
+  // payment 
+  .card1-total-price-code {
+    display: flex;
+    flex: 1;
+  }
+  .card1-total-price-code-mobile-container {
+    display: flex;
+    flex: 1;
+  }
+
+  .icon-question-payment {
+    margin-top: 4px;
+    margin-left: 18px;
+    margin-right: 20px;
+  }
+  #form-voucher1 {
+    display: flex;
+    flex:  1;
+  }
+
+  .fa-check-circle {
+    margin-top: 6px;
+  }
+  // payment 
+
   //aboutus
 
   .bt-aboutus_1 {
@@ -427,6 +509,45 @@
 
 // Laptop medium
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  // Slide 
+  .owl-next span {
+    top: 0 !important;
+    right: 8px !important;
+    font-size: 4rem !important;
+  }
+
+  .owl-prev span {
+    top: 0 !important;
+    left: -36px !important;
+    font-size: 4rem !important;
+  }
+  // slide 
+
+  // payment 
+  .card1-total-price-code {
+    display: flex;
+    flex: 1;
+  }
+  .card1-total-price-code-mobile-container {
+    display: flex;
+    flex: 1;
+  }
+
+  .icon-question-payment {
+    margin-top: 4px;
+    margin-left: 18px;
+    margin-right: 20px;
+  }
+  #form-voucher1 {
+    display: flex;
+    flex:  1;
+  }
+
+  .fa-check-circle {
+    margin-top: 6px;
+  }
+  // payment 
+  
   //course-detail
   .course-descriptions-inner{
     display: flex;
@@ -710,6 +831,53 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  // Slide 
+  .owl-next span {
+    top: 0 !important;
+    right: 16px !important;
+    font-size: 4rem !important;
+  }
+
+  .owl-prev span {
+    top: 0 !important;
+    left: 16px !important;
+    font-size: 4rem !important;
+  }
+  // slide 
+
+  // payment 
+  .card1-total-price-code {
+    display: flex;
+    flex: 1;
+  }
+  .card1-total-price-code-mobile-container {
+    display: flex;
+    flex: 1;
+  }
+
+  .icon-question-payment {
+    margin-top: 4px;
+    margin-left: 18px;
+    margin-right: 20px;
+  }
+  #form-voucher1 {
+    display: flex;
+    flex:  1;
+  }
+
+  .fa-check-circle {
+    margin-top: 6px;
+  }
+  // payment 
+
+  .card1-total-price-code-input-refer {
+    width: 70% !important;
+  }
+
+  .card1-total-price-code-input {
+    width: 65% !important;
+  }
+
   .section-heading-course-title {
     margin-bottom: 8px !important;
   }
@@ -1380,6 +1548,27 @@
 /* Mobile */
 @media only screen and (max-width: 767px) {
 
+  // payment 
+  .card1-total-price-code-mobile-container {
+    display: flex;
+    flex: 1;
+  }
+
+  .icon-question-payment {
+    margin-top: 4px;
+    margin-left: 18px;
+    margin-right: 20px;
+  }
+
+  .fa-check-circle {
+    margin-top: 6px;
+  }
+
+  #form-voucher1 {
+    display: flex !important;
+    flex: 1;
+  }
+
   // Cart header 
   .header-cart {
     margin-right: 42px;
@@ -1712,11 +1901,11 @@
   }
 
   .card1-total-price-code-input-refer {
-    width: 70% !important;
+    width: 79% !important;
   }
 
   .card1-total-price-code-input {
-    width: 70% !important;
+    width: 65% !important;
   }
 
   .course-of-member-inner{
@@ -2393,9 +2582,28 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
+  // Slide 
+.owl-next span {
+  top: 0 !important;
+  right: 4px !important;
+  font-size: 4rem !important;
+}
+
+.owl-prev span {
+  top: 0 !important;
+  right: -48px !important;
+  font-size: 4rem !important;
+}
+
+.out__sigle-member {
+  width: 100%;
+  margin-left: 18px;
+}
+// slide 
+
   .card1-total-price-code-lbl {
     font-size: 0.9rem;
-    width: 74% !important;
+    width: 52% !important;
   }
 
   .card1-total-price-code-lbl-use-bs {
@@ -2676,7 +2884,7 @@
     }
   
     .card1-total-price-code-input-refer {
-      width: 70% !important;
+      width: 79% !important;
     }
   
     .card1-total-price-code-input {
@@ -3015,6 +3223,15 @@
 }
 
 @media only screen and (max-width: 420px) {
+  .card1-total-price-code{
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .card1-total-price-code-input {
+    width: 68% !important;
+    margin-left: 0 !important;
+  }
   // feedback 
   .feedback-body {
     display: flex;
@@ -3160,7 +3377,17 @@
 
 }
 @media only screen and (min-width: 390px) and (max-width: 499px) {
-
+  // payment
+  .card1-total-price-code{
+    // align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card1-total-price-code-input {
+    width: 68% !important;
+    margin-left: 0 !important;
+  }
   //aboutus
   .bt-aboutus_1 {
     object-fit: cover;
@@ -3196,3 +3423,19 @@
 
   
   }
+@media only screen and (min-width: 390px) and (max-width: 480px) {
+  .card1-total-price-code{
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .card1-total-price-code-input {
+    width: 68% !important;
+    margin-left: 0 !important;
+  }
+  .card1-total-price-code-input-refer {
+    padding: 0;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
