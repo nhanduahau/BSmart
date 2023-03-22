@@ -1608,7 +1608,21 @@
     font-size: 4rem !important;
   }
   // Slide Danh sách lớp học
+
   // payment 
+   .img-avatar {
+    width: 400px !important;
+    object-fit: cover;
+  }
+
+  .card1-inner .avatar {
+    margin-right: 240px ;
+  }
+  
+  .card1-info {
+    margin-left: -50px;
+  }
+
   .card1-total-price-code-mobile-container {
     display: flex;
     flex: 1;
@@ -2774,12 +2788,18 @@
     }
   
     .card1-info {
-      font-size: 0.8rem;
+      margin-left: 0 !important;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .payment-card-desc {
+      font-size: 0.7rem !important;
       font-weight: 400;
     }
   
     .title-payment-card {
-      font-size: 0.8rem !important;
+      font-size: 0.9rem !important;
       font-weight: 400;
     }
 
@@ -2792,11 +2812,19 @@
       height: 140px !important;
       border-radius: 4px;
       object-fit: cover;
-      width: 138px !important;
+      width: 200px !important;
     }
     
     .checkout-container .card1-total-price-cost {
       margin-top: 4px;
+    }
+  
+    .card1-inner .avatar {
+      margin-right: 60px !important ;
+    }
+    
+    .card1-info {
+      margin-left: -50px;
     }
     // payment 
 
@@ -3197,12 +3225,12 @@
     flex-direction: column;
   }
 
-  .img-avatar {
-    height: 140px !important;
-    border-radius: 4px;
-    object-fit: cover;
-    width: 138px !important;
-  }
+  // .img-avatar {
+  //   height: 140px !important;
+  //   border-radius: 4px;
+  //   object-fit: cover;
+  //   width: 138px !important;
+  // }
   
   .checkout-container .card1-total-price-cost {
     margin-top: 4px;
@@ -3284,7 +3312,7 @@
   }
 
   .title-payment-card {
-    font-size: 0.8rem !important;
+    // font-size: 0.8rem !important;
     font-weight: 400;
   }
 
@@ -3293,11 +3321,24 @@
     flex-direction: column;
   }
 
+  // .img-avatar {
+  //   height: 140px !important;
+  //   border-radius: 4px;
+  //   object-fit: cover;
+  //   width: 138px !important;
+  // }
+
   .img-avatar {
-    height: 140px !important;
-    border-radius: 4px;
+    width: 400px !important;
     object-fit: cover;
-    width: 138px !important;
+  }
+
+  .card1-inner .avatar {
+    margin-right: 240px ;
+  }
+  
+  .card1-info {
+    margin-left: -50px;
   }
   
   .checkout-container .card1-total-price-cost {
@@ -3548,6 +3589,13 @@
   
   }
 @media only screen and (min-width: 390px) and (max-width: 480px) {
+  // payment
+  .img-avatar {
+    width: 200px !important;
+    object-fit: cover;
+  }
+  // payment
+
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;

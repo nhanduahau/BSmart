@@ -124,13 +124,14 @@ function updateData(event) {
 const inputDate = document.getElementById("dob-member-profile-edit");
 var patternDOB = /^([0-9]{2})-([0-9]{2})-([0-9]{4})$/;
 console.log(".", typeof patternDOB);
+
 inputDate.addEventListener("keyup", function () {
-  console.log("patternDOB.value", typeof inputDate.value);
+  console.log("inputDate.value", typeof inputDate.value);
   if (patternDOB.test(inputDate.value)) {
-    console.log("valid!");
+    console.log("valid.");
     return true;
   } else {
-    console.log("invalid.");
+    console.log("invalid!");
     return false;
   }
 
