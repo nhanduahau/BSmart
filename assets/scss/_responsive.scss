@@ -867,6 +867,12 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .employ__box .img-aboutus-1 {
+    display: block;
+  }
+  .employ__box .img-aboutus-2 {
+    display: none;
+  }
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -2386,6 +2392,19 @@
 
   /* ------------------------ */
   // About us page
+  .employ__box .img-aboutus-1 {
+    display: none;
+  }
+  .employ__box .img-aboutus-2 {
+    display: block;
+  }
+  .banner1 .caption-content h2 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 77px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
   .aboutus-wrapper {
     .banner__aboutus {
       .caption-content {
@@ -2394,18 +2413,18 @@
         }
       }
     }
-    .employee__img {
-      margin-top: 30px;
-      width: 100%;
+    // .employee__img {
+    //   margin-top: 30px;
+    //   width: 100%;
 
-      gap: 30px 0;
-      padding: 70px;
-      .employ__box {
-        &:not(:first-child) {
-          display: none !important;
-        }
-      }
-    }
+    //   gap: 30px 0;
+    //   padding: 70px;
+    //   .employ__box {
+    //     &:not(:first-child) {
+    //       display: block !important;
+    //     }
+    //   }
+    // }
 
     .sec-heading__about {
       h5 {

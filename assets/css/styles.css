@@ -7945,6 +7945,12 @@ input {
 }
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .employ__box .img-aboutus-1 {
+    display: block;
+  }
+  .employ__box .img-aboutus-2 {
+    display: none;
+  }
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
     right: -20px !important;
@@ -9172,17 +9178,21 @@ input {
     margin-top: 10px;
   }
   /* ------------------------ */
+  .employ__box .img-aboutus-1 {
+    display: none;
+  }
+  .employ__box .img-aboutus-2 {
+    display: block;
+  }
+  .banner1 .caption-content h2 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 77px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
   .aboutus-wrapper .banner__aboutus .caption-content h2 {
     font-size: 25px;
-  }
-  .aboutus-wrapper .employee__img {
-    margin-top: 30px;
-    width: 100%;
-    gap: 30px 0;
-    padding: 70px;
-  }
-  .aboutus-wrapper .employee__img .employ__box:not(:first-child) {
-    display: none !important;
   }
   .aboutus-wrapper .sec-heading__about h5 {
     margin-bottom: 10px;
