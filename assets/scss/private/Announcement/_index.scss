@@ -226,3 +226,38 @@ body {
   display: flex;
   align-items: center;
 }
+
+.page-link{
+  color: gray;
+}
+.page-link:hover {
+  background-color: #ff630e;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.page-item.active .page-link {
+  background-color: #ff630e;
+  color: #fff;
+  border-color: #5b5b5b;
+}
+.page-item .li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+// .page-item:nth-child(2) a,
+// .page-item:nth-child(3) a,
+// .page-item:nth-child(4) a {
+// display: block;
+// border-radius: 50%;
+// height: 40px;
+// width: 40px;
+// line-height: 25px;
+// text-align: center;
+// }
+
