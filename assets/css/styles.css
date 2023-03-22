@@ -4365,10 +4365,11 @@ body {
 }
 
 .member-detail-wrapper .content-info-mentor .member-info .member-img img {
+  object-fit: cover;
   margin-top: 20px;
   border-radius: 4px;
-  max-width: 100%;
-  height: 100%;
+  width: 130px;
+  height: 130px;
 }
 
 .member-detail-wrapper .content-info-mentor .member-info .member-details h4 {
@@ -9709,6 +9710,17 @@ input {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .advantages-2 .advantages-2-content h4 {
+    font-size: 16px !important;
+    margin-bottom: 0 !important;
+  }
+  .advantages-2 .advantages-2-content h2 {
+    font-size: 22px !important;
+    margin-bottom: 0 !important;
+  }
+  .title-index1 {
+    font-size: 12px !important;
+  }
   .content-payment {
     display: flex;
     flex-direction: column;
@@ -9744,6 +9756,17 @@ input {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  .advantages-2 .advantages-2-content h4 {
+    font-size: 15px !important;
+    margin-bottom: 0 !important;
+  }
+  .advantages-2 .advantages-2-content h2 {
+    font-size: 21px !important;
+    margin-bottom: 0 !important;
+  }
+  .title-index1 {
+    font-size: 11px !important;
+  }
   .img-avatar {
     width: 140px;
   }
@@ -10064,6 +10087,17 @@ input {
   }
 }
 @media only screen and (min-width: 390px) and (max-width: 480px) {
+  .advantages-2 .advantages-2-content h4 {
+    font-size: 14px !important;
+    margin-bottom: 0 !important;
+  }
+  .advantages-2 .advantages-2-content h2 {
+    font-size: 20px !important;
+    margin-bottom: 0 !important;
+  }
+  .title-index1 {
+    font-size: 11px !important;
+  }
   .img-avatar {
     width: 200px !important;
     object-fit: cover;
