@@ -207,7 +207,7 @@
     <!-- End login form modal -->
     <div class="wrapper home-wrapper">
       <!-- Start header -->
-      <header class="header-main">
+      <header class="header-main position-relative">
         <div class="header-top">
           <div class="container">
             <div class="header-top-wrapper">
@@ -226,6 +226,7 @@
                 </ul>
               </div>
               <!-- End header social -->
+
               <!-- Start header contact info -->
               <div class="header-contact-info">
                 <ul>
@@ -236,18 +237,17 @@
                 </ul>
               </div>
               <!-- End header contact info -->
+
               <!-- Start header search -->
-              <div class="header-course-search w-75 d-flex justify-content-center">
+              <div class="header-course-search w-75 d-flex justify-content-center wrapper-search">
+                <!-- sup-autocom-search -->
                 <form action="#" method="post" class="w-75">
-                  <input
-                    type="text"
-                    placeholder="Tìm kiếm khoá học"
-                    class="form-control w-100"
-                  />
+                  <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" />
                 </form>
                 <span><i class="fa fa-search"></i></span>
               </div>
               <!-- End header search -->
+
               <div class="header-log-reg d-flex justify-content-end">
                 <ul>
                   <li><a href="./login.html" id="loginFormOpen">Đăng nhập</a></li>
@@ -258,6 +258,13 @@
             </div>
           </div>
         </div>
+
+        <!-- Sup search -->
+        <div class="sup-autocom-search" >
+          <div class="autocom-box-search" style="display: none;">
+          </div>
+        </div>
+
         <div class="header-bottom">
           <div class="container">
             <div class="header-bottom-wrapper">
@@ -1190,5 +1197,6 @@
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/initialSwiper.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/search.js"></script>
   </body>
 </html>
