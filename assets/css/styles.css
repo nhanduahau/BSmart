@@ -2338,6 +2338,10 @@ body {
   font-weight: 500;
 }
 
+.payment-card-desc {
+  font-size: 1rem !important;
+}
+
 .checkout-container .avatar {
   width: 140px;
   height: 140px;
@@ -4807,9 +4811,10 @@ body {
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation .content-annotation .content {
   padding-top: 10px;
   padding-left: 20px;
-  line-height: 15px;
+  line-height: 20px;
   color: black;
   font-size: 16px;
+  margin-right: 4px;
 }
 
 .annotation-wrapper .section2-annotation .box-annottation .box-content-annatation .content-annotation .timeDate {
@@ -8520,6 +8525,16 @@ input {
     left: -22px !important;
     font-size: 4rem !important;
   }
+  .img-avatar {
+    width: 400px !important;
+    object-fit: cover;
+  }
+  .card1-inner .avatar {
+    margin-right: 240px;
+  }
+  .card1-info {
+    margin-left: -50px;
+  }
   .card1-total-price-code-mobile-container {
     display: flex;
     flex: 1;
@@ -9435,11 +9450,16 @@ input {
     transition: all 0.2s;
   }
   .card1-info {
-    font-size: 0.8rem;
+    margin-left: 0 !important;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .payment-card-desc {
+    font-size: 0.7rem !important;
     font-weight: 400;
   }
   .title-payment-card {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
     font-weight: 400;
   }
   .card1-inner {
@@ -9450,10 +9470,16 @@ input {
     height: 140px !important;
     border-radius: 4px;
     object-fit: cover;
-    width: 138px !important;
+    width: 200px !important;
   }
   .checkout-container .card1-total-price-cost {
     margin-top: 4px;
+  }
+  .card1-inner .avatar {
+    margin-right: 60px !important;
+  }
+  .card1-info {
+    margin-left: -50px;
   }
   .feedback-container {
     margin-top: 24px !important;
@@ -9788,12 +9814,6 @@ input {
     display: flex;
     flex-direction: column;
   }
-  .img-avatar {
-    height: 140px !important;
-    border-radius: 4px;
-    object-fit: cover;
-    width: 138px !important;
-  }
   .checkout-container .card1-total-price-cost {
     margin-top: 4px;
   }
@@ -9853,7 +9873,6 @@ input {
     font-weight: 400;
   }
   .title-payment-card {
-    font-size: 0.8rem !important;
     font-weight: 400;
   }
   .card1-inner {
@@ -9861,10 +9880,14 @@ input {
     flex-direction: column;
   }
   .img-avatar {
-    height: 140px !important;
-    border-radius: 4px;
+    width: 400px !important;
     object-fit: cover;
-    width: 138px !important;
+  }
+  .card1-inner .avatar {
+    margin-right: 240px;
+  }
+  .card1-info {
+    margin-left: -50px;
   }
   .checkout-container .card1-total-price-cost {
     margin-top: 4px;
@@ -10074,6 +10097,10 @@ input {
   }
   .title-index1 {
     font-size: 11px !important;
+  }
+  .img-avatar {
+    width: 200px !important;
+    object-fit: cover;
   }
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
