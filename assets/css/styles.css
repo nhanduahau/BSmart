@@ -1900,6 +1900,11 @@ div.swiper-button-prev:after {
   color: red;
 }
 
+#phone-number-mentor-error {
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
 .banner__course {
   width: 100%;
   padding: 110px 0 100px;
