@@ -27,12 +27,11 @@ confirmPasswordMentor.addEventListener("keyup", function () {
     message1Valid.style.display = "none";
     message1ValidMatch.style.display = "none";
     return true;
-  } 
-  else {
-    message1ValidMatch.classList.add('message-match');
+  } else {
+    message1ValidMatch.classList.add("message-match");
     message1ValidMatch.style.display = "block";
     return false;
-  } 
+  }
 });
 
 //Học Viên
@@ -43,7 +42,6 @@ function checkPasswordMatch() {
   // var passwordMatch = document.getElementById("password-match");
   // var passwordNotMatch = document.getElementById("password-not-match");
   var passwordNotMatchFeedback = document.getElementById("password-error");
-
 
   if (password.value == "" || confirmPassword.value == "") {
     // passwordMatch.style.display = "none";
@@ -106,3 +104,22 @@ function validatePassword() {
     // password1Error.className = "invalid-feedback1 d-block";
   }
 }
+
+// Validate phone number
+var inpPhoneNumber = document.getElementById("phone-number-member");
+var patternPhoneNumber = /^(84|0[3|5|7|8|9])+([0-9]{8})\b$/;
+// /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+var messageError = document.getElementById("phone-number-error");
+
+messageError.style.display = "none";
+
+inpPhoneNumber.addEventListener("keyup", function () {
+  if (inpPhoneNumber.value.match(patternPhoneNumber)) {
+    messageError.style.display = "none";
+    return true;
+  } else {
+    messageError.style.display = "block";
+    messageError.style.color = "red";
+    return false;
+  }
+});

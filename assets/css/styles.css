@@ -7001,6 +7001,11 @@ input {
   padding: 5px;
 }
 
+#phone-number-error {
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
 .lms-wrapper .banner__lms {
   background-image: url(/assets/images/banner-2.jpg);
   background-position: center;
@@ -7553,6 +7558,9 @@ input {
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .autocom-box-search {
+    display: none !important;
+  }
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
     right: -20px !important;
@@ -7806,6 +7814,9 @@ input {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .autocom-box-search {
+    display: none !important;
+  }
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
     right: -20px !important;
@@ -8046,6 +8057,9 @@ input {
 }
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .autocom-box-search {
+    display: none !important;
+  }
   .employ__box .img-aboutus-1 {
     display: block;
   }
@@ -8645,6 +8659,9 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .autocom-box-search {
+    display: none !important;
+  }
   .course-detail-cate-fe p {
     font-size: 0.9rem !important;
   }

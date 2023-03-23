@@ -144,3 +144,22 @@ inputDate.addEventListener("keyup", function () {
   //   // Hiển thị thông báo lỗi cho người dùng tại đây
   // }
 });
+
+// Validate phone number
+var inpPhoneNumber = document.getElementById("phone-number-member");
+var patternPhoneNumber = /^(84|0[3|5|7|8|9])+([0-9]{8})\b$/;
+// /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+var messageError = document.getElementById("phone-number-error");
+
+messageError.style.display = "none";
+
+inpPhoneNumber.addEventListener("keyup", function () {
+  if (inpPhoneNumber.value.match(patternPhoneNumber)) {
+    messageError.style.display = "none";
+    return true;
+  } else {
+    messageError.style.display = "block";
+    messageError.style.color = "red";
+    return false;
+  }
+});
