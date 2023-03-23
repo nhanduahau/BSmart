@@ -1602,6 +1602,35 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  // cate
+  .course-detail-cate-fe p {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-online p {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-rate p {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-fe-link {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-rate {
+    // margin-left: 18px;
+    // margin-top: 4px;
+  }
+
+  .icon-level-cate {
+    width: 42px !important;
+    height: 42px !important;
+    left: 112px;
+  }
+  // cate
+
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -1614,7 +1643,21 @@
     font-size: 4rem !important;
   }
   // Slide Danh sách lớp học
+
   // payment 
+   .img-avatar {
+    width: 400px !important;
+    object-fit: cover;
+  }
+
+  .card1-inner .avatar {
+    margin-right: 240px ;
+  }
+  
+  .card1-info {
+    margin-left: -50px;
+  }
+
   .card1-total-price-code-mobile-container {
     display: flex;
     flex: 1;
@@ -1843,12 +1886,15 @@
   }
 
   .course-descriptions-inner {
-    display: flex;
+    display: flex !important;
+    align-items: flex-start !important;
     flex-direction: column;
   }
 
   .course-descriptions-inner p {
+    text-align: start !important;
     font-size: 1rem !important;
+    line-height: 0.5rem !important;
   }
 
   .courses-section-course-detail {
@@ -2661,10 +2707,63 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
-  // .course-single-categories-lv {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
+    // cate
+    .course-detail-cate-online .course-detail-cate-fe-link {
+      margin-left: -50px !important;
+    }
+
+    .course-detail-cate-fe {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .course-detail-cate-online {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .course-detail-mobile-cate {
+      display: flex !important;
+      align-items: center;
+    }
+
+    .course-detail-mobile-cate {
+      margin-top: 0.7rem !important;
+      margin-bottom: 1.4rem !important;
+    }
+
+    .course-detail-cate-fe p {
+      font-size: 0.9rem !important;
+    }
+    
+    .course-detail-cate-online {
+      margin-left: 22px;
+    }
+
+    .course-detail-cate-online p {
+      font-size: 0.9rem !important;
+    }
+  
+    .course-detail-cate-rate p {
+      font-size: 0.9rem !important;
+    }
+  
+    .course-detail-cate-fe-link {
+      font-size: 0.9rem !important;
+    }
+  
+    .course-detail-cate-rate {
+      margin-left: 12px !important;
+      margin-bottom: 24px;
+    }
+  
+    .icon-level-cate {
+      width: 42px !important;
+      height: 42px !important;
+      left: 116px;
+    }
+    // cate
+  
   .icon-level {
     width: 32px !important;
     height: 42px !important;
@@ -2793,12 +2892,18 @@
     }
   
     .card1-info {
-      font-size: 0.8rem;
+      margin-left: 0 !important;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .payment-card-desc {
+      font-size: 0.7rem !important;
       font-weight: 400;
     }
   
     .title-payment-card {
-      font-size: 0.8rem !important;
+      font-size: 0.9rem !important;
       font-weight: 400;
     }
 
@@ -2811,11 +2916,19 @@
       height: 140px !important;
       border-radius: 4px;
       object-fit: cover;
-      width: 138px !important;
+      width: 200px !important;
     }
     
     .checkout-container .card1-total-price-cost {
       margin-top: 4px;
+    }
+  
+    .card1-inner .avatar {
+      margin-right: 60px !important ;
+    }
+    
+    .card1-info {
+      margin-left: -50px;
     }
     // payment 
 
@@ -3246,12 +3359,12 @@
     flex-direction: column;
   }
 
-  .img-avatar {
-    height: 140px !important;
-    border-radius: 4px;
-    object-fit: cover;
-    width: 138px !important;
-  }
+  // .img-avatar {
+  //   height: 140px !important;
+  //   border-radius: 4px;
+  //   object-fit: cover;
+  //   width: 138px !important;
+  // }
   
   .checkout-container .card1-total-price-cost {
     margin-top: 4px;
@@ -3334,7 +3447,7 @@
   }
 
   .title-payment-card {
-    font-size: 0.8rem !important;
+    // font-size: 0.8rem !important;
     font-weight: 400;
   }
 
@@ -3343,11 +3456,24 @@
     flex-direction: column;
   }
 
+  // .img-avatar {
+  //   height: 140px !important;
+  //   border-radius: 4px;
+  //   object-fit: cover;
+  //   width: 138px !important;
+  // }
+
   .img-avatar {
-    height: 140px !important;
-    border-radius: 4px;
+    width: 400px !important;
     object-fit: cover;
-    width: 138px !important;
+  }
+
+  .card1-inner .avatar {
+    margin-right: 240px ;
+  }
+  
+  .card1-info {
+    margin-left: -50px;
   }
   
   .checkout-container .card1-total-price-cost {
@@ -3373,6 +3499,63 @@
 }
 
 @media only screen and (max-width: 420px) {
+  // cate
+  .course-detail-cate-online .course-detail-cate-fe-link {
+    margin-left: -50px !important;
+  }
+
+  .course-detail-cate-fe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-detail-cate-online {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-detail-mobile-cate {
+    display: flex !important;
+    align-items: center;
+  }
+
+  .course-detail-mobile-cate {
+    margin-top: 0.7rem !important;
+    margin-bottom: 1.4rem !important;
+  }
+
+  .course-detail-cate-fe p {
+    font-size: 0.9rem !important;
+  }
+  
+  .course-detail-cate-online {
+    margin-left: 22px;
+  }
+
+  .course-detail-cate-online p {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-rate p {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-fe-link {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-rate {
+    margin-left: 12px !important;
+    margin-bottom: 24px;
+  }
+
+  .icon-level-cate {
+    width: 42px !important;
+    height: 42px !important;
+    left: 116px;
+  }
+  // cate
+
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -3613,6 +3796,13 @@
     font-size: 11px !important;
   }
 
+  // payment
+  .img-avatar {
+    width: 200px !important;
+    object-fit: cover;
+  }
+  // payment
+
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -3639,4 +3829,63 @@
     width: 100% !important;
     margin-left: 0 !important;
   }
+}
+
+@media screen and (max-width: 360px) {
+  // cate
+  .course-detail-cate-online .course-detail-cate-fe-link {
+    margin-left: -50px !important;
+  }
+
+  .course-detail-cate-fe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-detail-cate-online {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-detail-mobile-cate {
+    display: flex !important;
+    align-items: center;
+  }
+
+  .course-detail-mobile-cate {
+    margin-top: 0.7rem !important;
+    margin-bottom: 1.4rem !important;
+  }
+
+  .course-detail-cate-fe p {
+    font-size: 0.8rem !important;
+  }
+  
+  .course-detail-cate-online {
+    margin-left: 22px;
+  }
+
+  .course-detail-cate-online p {
+    font-size: 0.8rem !important;
+  }
+
+  .course-detail-cate-rate p {
+    font-size: 0.8rem !important;
+  }
+
+  .course-detail-cate-fe-link {
+    font-size: 0.8rem !important;
+  }
+
+  .course-detail-cate-rate {
+    margin-left: 12px !important;
+    margin-bottom: 24px;
+  }
+
+  .icon-level-cate {
+    width: 42px !important;
+    height: 42px !important;
+    left: 100px;
+  }
+  // cate
 }
