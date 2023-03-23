@@ -121,17 +121,21 @@ function updateData(event) {
 }
 
 // Validator DOB
-const inputDate = document.getElementById("dob-member-profile-edit");
-var patternDOB = /^([0-9]{2})-([0-9]{2})-([0-9]{4})$/;
-console.log(".", typeof patternDOB);
+var inputDate = document.getElementById("dob-member-profile-edit");
+var patternDOB = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/;
+var messageErrorDOB = document.getElementById("message-error-dob");
+
+messageErrorDOB.style.display = "none";
 
 inputDate.addEventListener("keyup", function () {
-  console.log("inputDate.value", typeof inputDate.value);
-  if (patternDOB.test(inputDate.value)) {
-    console.log("valid.");
+  console.log("inputDate.value", inputDate.value);
+  if (inputDate.value.match(patternDOB)) {
+    messageErrorDOB.style.display = "none";
+    console.log("ok");
     return true;
   } else {
-    console.log("invalid!");
+    console.log("no!");
+    messageErrorDOB.style.display = "block";
     return false;
   }
 

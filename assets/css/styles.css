@@ -1175,10 +1175,6 @@ div.swiper-button-prev:after {
   height: 200px;
 }
 
-.card-body {
-  text-align: center;
-}
-
 .sub-title, .card-text {
   font-weight: 400;
   color: #999 !important;
@@ -2518,16 +2514,16 @@ body {
 
 .checkout-container .card1-total-price-total-cost .card1-total-price-btn-delete {
   background-color: transparent;
-  color: #9e9b9b;
+  color: #fd7e14;
   font-size: 1rem;
-  font-weight: bold;
-  border-bottom: 2px solid #ccc;
+  font-weight: 500;
   margin-left: 32px;
 }
 
 .checkout-container .card1-total-price-total-cost .card1-total-price-btn-delete:hover {
-  opacity: 0.8;
+  opacity: 0.7;
   color: #fd7e14;
+  transition: all 0.2s;
 }
 
 .section-cart-container {
@@ -2586,7 +2582,8 @@ body {
 }
 
 .cart-item-box .total-course .total-course-payment-title {
-  margin-top: 14px;
+  margin-top: 20px;
+  color: black;
 }
 
 .cart-item-box .total-course .total-course-icons {
@@ -3325,6 +3322,15 @@ body {
   font-weight: 500 !important;
   line-height: 1.1rem !important;
   margin-top: 6px;
+}
+
+#submitVoucher1 {
+  font-size: 1rem;
+}
+
+#submitVoucher1:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .course-detail-wrapper {
@@ -4783,6 +4789,10 @@ body {
   background-color: #e4e2e2;
   border-radius: 4px;
   font-weight: 500;
+}
+
+.description {
+  flex: 1;
 }
 
 body {
@@ -7011,6 +7021,12 @@ input {
   font-size: 0.9rem;
 }
 
+#message-error-dob {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
 .lms-wrapper .banner__lms {
   background-image: url(/assets/images/banner-2.jpg);
   background-position: center;
@@ -8839,6 +8855,15 @@ input {
   }
   .courses-profile-title {
     text-align: center;
+    font-size: 1.3rem !important;
+    margin-bottom: 0 !important;
+    line-height: 12px !important;
+  }
+  .history-payment-container h3 {
+    text-align: center;
+    font-size: 1.3rem !important;
+    margin-bottom: 0 !important;
+    line-height: 12px !important;
   }
   .history-payment-container {
     margin-top: 40px !important;
