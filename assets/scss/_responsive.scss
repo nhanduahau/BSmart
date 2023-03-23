@@ -1,4 +1,13 @@
 @media only screen and (min-width: 1200px) {
+  .employ__box .img-aboutus-2 {
+    display: none;
+  }
+  .img_aboutus_4{
+    display: none;
+  }
+  .img-aboutus-end-1{
+    display: none;
+  }
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -217,6 +226,7 @@
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+ 
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -1602,6 +1612,13 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .img-1 {
+    margin-top: 50px;
+    width: 100%;
+    height: 260px;
+    border-radius: 30px;
+    object-fit: cover;
+}
   // cate
   .course-detail-cate-fe p {
     font-size: 0.9rem !important;
@@ -1706,11 +1723,13 @@
 
   .icon-logo {
     margin-left: -50px;
+    margin-top: 10px !important;
   }
 
   //aboutus
 
   .bt-aboutus_1 {
+    margin-top: 170px !important;
     border: 0px;
     // line-height: 25px;
     display: block;
@@ -1748,7 +1767,12 @@
   }
   .information h3{
     line-height: 50px;
+    font-size: 35px;
   }
+  .information {
+    padding-top: 30px;
+    text-align: center;
+}
   .aboutus1{
     padding: 0 !important;
   }
@@ -2444,11 +2468,23 @@
   .img-aboutus-2 {
     display: block;
   }
+  .img-aboutus-3 {
+    display: none;
+  }
+  .img-aboutus-4 {
+    display: block !important;
+  }
+  .img-aboutus-end {
+    display: none;
+  }
+  .img-aboutus-end-1 {
+    display: block !important;
+  }
   .banner1 .caption-content h2 {
     color: #fff;
     font-size: 50px;
-    line-height: 77px;
-    font-weight: 700;
+    line-height: 65px;
+    font-weight: 500;
     margin-bottom: 20px;
 }
   .aboutus-wrapper {
@@ -3781,6 +3817,23 @@
   
   }
 @media only screen and (min-width: 390px) and (max-width: 480px) {
+  //aboutus
+  .bt-aboutus_1 {
+    margin-top: 80px !important;
+    border: 0px;
+    // line-height: 25px;
+    display: block;
+    background-color: rgb(255, 99, 14);
+    color: rgb(255, 255, 255);
+    padding: 1px 5px;
+    border-radius: 30px;
+    font-size: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px auto 10px;
+    width: 100%;
+  }
   //trang  index
 
   .advantages-2 .advantages-2-content h4{
@@ -3888,4 +3941,23 @@
     left: 100px;
   }
   // cate
+}
+@media only screen and (min-width: 480px) and (max-width: 650px) {
+  //aboutus
+  .bt-aboutus_1 {
+    margin-top: 100px !important;
+    border: 0px;
+    // line-height: 25px;
+    display: block;
+    background-color: rgb(255, 99, 14);
+    color: rgb(255, 255, 255);
+    padding: 1px 5px;
+    border-radius: 30px;
+    font-size: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px auto 10px;
+    width: 100%;
+  }
 }
