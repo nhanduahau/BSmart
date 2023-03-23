@@ -1,4 +1,10 @@
 @media only screen and (min-width: 1200px) {
+  // .sup-autocom-search {
+  //   right: 130px !important;
+  //   width: 32%;
+  //   z-index: 9999 !important;
+  // }
+  
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -217,6 +223,9 @@
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .autocom-box-search {
+    display: none !important;
+  }
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -533,6 +542,9 @@
 
 // Laptop medium
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .autocom-box-search {
+    display: none !important;
+  }
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -867,6 +879,9 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .autocom-box-search {
+    display: none !important;
+  }
   .employ__box .img-aboutus-1 {
     display: block;
   }
@@ -1602,6 +1617,12 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+
+  // auto search
+  .autocom-box-search {
+    display: none !important;
+  }
+
   // cate
   .course-detail-cate-fe p {
     font-size: 0.9rem !important;

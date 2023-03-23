@@ -580,8 +580,9 @@
                   </div>
                   <div class="mb-3">
                     <label class="form-label form-label-custom">Số điện thoại</label>
-                    <input type="text" class="form-control" value="" oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10;" />
-                </div>
+                    <input type="text" class="form-control" id="phone-number-member" value="" oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10;" />
+                    <span id="phone-number-error">Số điện thoại không hợp lệ. (Phải gồm 10 số và bắt đầu bằng 03 | 05 | 07 | 08 | 09)</span>
+                  </div>
                   <div class="mb-3 text-end">
                     <button
                       type="button"
