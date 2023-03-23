@@ -440,6 +440,16 @@
                 />
               </div>
               <div class="form-group mb-3">
+                <label for="name" class="mb-2">Tên đăng nhập</label>
+                <input
+                  type="text"
+                  value=""
+                  placeholder="Tên đăng nhập"
+                  class="form-control"
+                  name="name"
+                />
+              </div>
+              <div class="form-group mb-3">
                 <label for="email" class="mb-2">E-Mail</label>
                 <input
                   type="text"
@@ -448,6 +458,19 @@
                   class="form-control"
                   name="email"
                 />
+              </div>
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2">Số điện thoại</label>
+                <input
+                  type="text"
+                  id="phone-number-member"
+                  oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10"
+                  value=""
+                  placeholder="Số điện thoại"
+                  class="form-control"
+                  name="name"
+                />
+                <span id="phone-number-error">Số điện thoại không hợp lệ. (Phải gồm 10 số và bắt đầu bằng 03 | 05 | 07 | 08 | 09)</span>
               </div>
               <!-- <div class="form-group mb-3">
                 <label for="password" class="mb-2">Mật khẩu</label>
@@ -474,7 +497,7 @@
               <div class="mb-3">
                 <label class="form-label form-label-custom">Nhập mật khẩu *</label>
                 <div class="input-group show-password">
-                  <input type="password" class="form-control" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="password-error" oninput="validatePassword()">
+                  <input type="password" class="form-control" id="password" placeholder="Mật khẩu" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="password-error" oninput="validatePassword()">
                   
                   <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('password')">
                     <i class="fa fa-eye show-password-icon"></i>
@@ -486,7 +509,7 @@
             <div class="mb-3">
                 <label class="form-label form-label-custom">Xác nhận mật khẩu *</label>
                 <div class="input-group show-password">
-                  <input type="password" class="form-control" id="confirm-password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="confirm-password-error" oninput="checkPasswordMatch()">
+                  <input type="password" class="form-control" id="confirm-password" placeholder="Xác nhận mật khẩu" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="confirm-password-error" oninput="checkPasswordMatch()">
                   
                   <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('confirm-password')">
                       <i class="fa fa-eye show-password-icon"></i>
@@ -526,17 +549,14 @@
                 />
               </div>
               <div class="form-group mb-3">
-                <label for="name" class="mb-2">Số điện thoại</label>
+                <label for="name" class="mb-2">Tên đăng nhập</label>
                 <input
                   type="text"
-                  id="phone-number-member"
-                  oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10"
                   value=""
-                  placeholder="Số điện thoại"
+                  placeholder="Tên đăng nhập"
                   class="form-control"
                   name="name"
                 />
-                <span id="phone-number-error">Số điện thoại không hợp lệ. (Phải gồm 10 số và bắt đầu bằng 03 | 05 | 07 | 08 | 09)</span>
               </div>
               <div class="form-group mb-3">
                 <label for="email" class="mb-2">E-Mail</label>
@@ -548,11 +568,24 @@
                   name="email"
                 />
               </div>
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2">Số điện thoại</label>
+                <input
+                  type="text"
+                  id="phone-number-mentor"
+                  oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10"
+                  value=""
+                  placeholder="Số điện thoại"
+                  class="form-control"
+                  name="name"
+                />
+                <span id="phone-number-mentor-error">Số điện thoại không hợp lệ. (Phải gồm 10 số và bắt đầu bằng 03 | 05 | 07 | 08 | 09)</span>
+              </div>
               <!-- Password -->
               <div class="form-group mb-3">          
                 <label class="form-label form-label-custom">Nhập mật khẩu *</label>
                 <div class="input-group show-password">
-                  <input type="password" class="form-control" id="password-mentor" required/>
+                  <input type="password" class="form-control" id="password-mentor" placeholder="Mật khẩu" required/>
                   <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('password-mentor')">
                     <i class="fa fa-eye show-password-icon"></i>
                   </button>
@@ -564,7 +597,7 @@
               <div class="form-group mb-3">
                 <label class="form-label form-label-custom">Xác nhận mật khẩu *</label>
                 <div class="input-group show-password">
-                  <input type="password" class="form-control" id="confirm-password-mentor" required />
+                  <input type="password" class="form-control" id="confirm-password-mentor" placeholder="Xác nhận mật khẩu" required />
                   <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('confirm-password-mentor')">
                     <i class="fa fa-eye show-password-icon"></i>
                   </button>
