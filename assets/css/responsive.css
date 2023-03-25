@@ -27,7 +27,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 16px;
+    padding: 4px;
   }
   .header-mobile-content .header-mobile-logo {
     font-size: 30px;
