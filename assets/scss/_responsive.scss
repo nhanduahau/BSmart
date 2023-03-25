@@ -879,6 +879,26 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  // revert col list class to top
+  .container-revert-list-class-on-top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .list-class-info {
+    margin-bottom: -12px !important;
+  }
+
+  .lotrinh {
+    // margin-top: -10px !important;
+    margin-bottom: 16px;
+  }
+
+  .title-class-info {
+    margin-top: 10px;
+  }
+  // revert col list class to top
+
   .autocom-box-search {
     display: none !important;
   }
@@ -1093,7 +1113,7 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 16px;
+    padding: 4px;
     .header-mobile-logo {
       font-size: 30px;
       font-weight: 700;
@@ -1617,6 +1637,34 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  // icon logo mobile
+  .icon-logo-mobile {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: -22px;
+  }
+  // icon logo mobile
+
+  // revert col list class to top
+  .container-revert-list-class-on-top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .list-class-info {
+    margin-bottom: -12px !important;
+  }
+
+  .lotrinh {
+    // margin-top: -10px !important;
+    margin-bottom: 16px;
+  }
+
+  .title-class-info {
+    margin-top: 10px;
+  }
+  // revert col list class to top
 
   // auto search
   .autocom-box-search {
@@ -1705,7 +1753,7 @@
   }
   
   .icon-shopping-cart {
-    margin-top: 10px;
+    margin-top: 27px;
     width: 52px !important;
     height: 52px !important;
     object-fit: cover;
@@ -1717,7 +1765,7 @@
   }
 
   .cart-total-number-mobile {
-    margin-top: 40px;
+    margin-top: 56px;
   }
 // Cart header 
 
@@ -1854,14 +1902,14 @@
   }
 
   .courses-profile-title {
-    text-align: center;
+    text-align: left;
     font-size: 1.3rem !important;
     margin-bottom: 0 !important;
     line-height: 12px !important; 
   }
 
   .history-payment-container h3 {
-    text-align: center;
+    text-align: left;
     font-size: 1.3rem !important;
     margin-bottom: 0 !important;
     line-height: 12px !important;
@@ -2106,7 +2154,7 @@
   .header-mobile-content {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 4px;
     .header-mobile-logo {
       font-size: 30px;
       font-weight: 700;
