@@ -249,6 +249,16 @@
   margin-bottom: 15px;
 }
 
+.feedback-item {
+  display: none;
+}
+
+#btn-show-more {
+  display: none;
+  padding: 4px;
+  font-weight: 400 !important;
+}
+
 .course-detail-wrapper .course-single-area .course-single-content .course-feedback .course-feedback-inner .feedback-item {
   margin-bottom: 40px;
 }
@@ -558,3 +568,7 @@
   object-fit: cover;
 }
 // cate
+
+.container-list-class-info {
+  margin-top: -10px;
+}

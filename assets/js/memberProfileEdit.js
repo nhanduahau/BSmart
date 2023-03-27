@@ -63,6 +63,7 @@ function checkPasswordMatch() {
     return;
   }
 }
+
 function togglePasswordVisibility(id) {
   var input = document.getElementById(id);
   var icon = input.nextElementSibling.querySelector("span");
@@ -74,6 +75,58 @@ function togglePasswordVisibility(id) {
     // icon.textContent = "visibility";
   }
 }
+
+// Validator DOB
+var inputDate = document.getElementById("dob-member-profile-edit");
+var patternDOB = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/;
+var messageErrorDOB = document.getElementById("message-error-dob");
+
+messageErrorDOB.style.display = "none";
+
+inputDate.addEventListener("keyup", function () {
+  console.log("inputDate.value", inputDate.value);
+  if (inputDate.value.match(patternDOB)) {
+    messageErrorDOB.style.display = "none";
+    console.log("ok");
+    return true;
+  } else {
+    console.log("no!");
+    messageErrorDOB.style.display = "block";
+    return false;
+  }
+
+  // const dateString = this.value;
+  // console.log("dateString", dateString);
+  // if (Date.parse(dateString)) {
+  //   console.log("Đây là kiểu ngày tháng năm hợp lệ!");
+  // } else {
+  //   console.log("Đây không phải là kiểu ngày tháng năm hợp lệ!");
+  //   // Hiển thị thông báo lỗi cho người dùng tại đây
+  // }
+});
+
+// Validate phone number
+var inpPhoneNumber = document.getElementById("phone-number-member");
+var patternPhoneNumber = /^(84|0[3|5|7|8|9])+([0-9]{8})\b$/;
+// /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+var messageError = document.getElementById("phone-number-error");
+
+messageError.style.display = "none";
+
+function checkPhoneNumber() {
+  inpPhoneNumber.addEventListener("keyup", function () {
+    if (inpPhoneNumber.value.match(patternPhoneNumber)) {
+      messageError.style.display = "none";
+      return true;
+    } else {
+      messageError.style.display = "block";
+      messageError.style.color = "red";
+      return false;
+    }
+  });
+}
+checkPhoneNumber();
+
 //thông báo ràng buộc mật khẩu
 function validatePassword() {
   var password = document.getElementById("password");
@@ -93,54 +146,41 @@ function validatePassword() {
 function updateData(event) {
   event.preventDefault();
 
-  // Lưu thông tin vào localStorage
-  localStorage.setItem(
-    "avatarImage",
-    document.getElementById("avatarImage").src
-  );
-  localStorage.setItem(
-    "hoTen",
-    document.querySelector('input[type="text"]').value
-  );
-  localStorage.setItem(
-    "ngaySinh",
-    document.querySelector('input[type="date"]').value
-  );
-  localStorage.setItem(
-    "diaChi",
-    document.querySelectorAll('input[type="text"]')[1].value
-  );
-  localStorage.setItem(
-    "soDienThoai",
-    document.querySelectorAll('input[type="text"]')[2].value
-  );
-  localStorage.setItem("matKhauMoi", document.getElementById("password").value);
-
-  // Chuyển qua trang HTML khác
-  window.location.href = "member-profile.html";
-}
-
-// Validator DOB
-const inputDate = document.getElementById("dob-member-profile-edit");
-var patternDOB = /^([0-9]{2})-([0-9]{2})-([0-9]{4})$/;
-console.log(".", typeof patternDOB);
-
-inputDate.addEventListener("keyup", function () {
-  console.log("inputDate.value", typeof inputDate.value);
-  if (patternDOB.test(inputDate.value)) {
-    console.log("valid.");
-    return true;
+  // check inputs
+  if (
+    !inpPhoneNumber.value.match(patternPhoneNumber) ||
+    !inputDate.value.match(patternDOB)
+  ) {
+    alert("Bạn cần phải nhập đầy đủ thông tin!");
+    return;
   } else {
-    console.log("invalid!");
-    return false;
-  }
+    // Lưu thông tin vào localStorage
+    localStorage.setItem(
+      "avatarImage",
+      document.getElementById("avatarImage").src
+    );
+    localStorage.setItem(
+      "hoTen",
+      document.querySelector('input[type="text"]').value
+    );
+    localStorage.setItem(
+      "ngaySinh",
+      document.querySelector('input[type="date"]').value
+    );
+    localStorage.setItem(
+      "diaChi",
+      document.querySelectorAll('input[type="text"]')[1].value
+    );
+    localStorage.setItem(
+      "soDienThoai",
+      document.querySelectorAll('input[type="text"]')[2].value
+    );
+    localStorage.setItem(
+      "matKhauMoi",
+      document.getElementById("password").value
+    );
 
-  // const dateString = this.value;
-  // console.log("dateString", dateString);
-  // if (Date.parse(dateString)) {
-  //   console.log("Đây là kiểu ngày tháng năm hợp lệ!");
-  // } else {
-  //   console.log("Đây không phải là kiểu ngày tháng năm hợp lệ!");
-  //   // Hiển thị thông báo lỗi cho người dùng tại đây
-  // }
-});
+    // Chuyển qua trang HTML khác
+    window.location.href = "member-profile.html";
+  }
+}

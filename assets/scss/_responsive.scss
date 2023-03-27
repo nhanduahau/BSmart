@@ -1,4 +1,10 @@
 @media only screen and (min-width: 1200px) {
+  // .sup-autocom-search {
+  //   right: 130px !important;
+  //   width: 32%;
+  //   z-index: 9999 !important;
+  // }
+  
   .employ__box .img-aboutus-2 {
     display: none;
   }
@@ -226,6 +232,9 @@
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .autocom-box-search {
+    display: none !important;
+  }
  
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
@@ -543,6 +552,9 @@
 
 // Laptop medium
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .autocom-box-search {
+    display: none !important;
+  }
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -877,6 +889,79 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+    // lms 
+    .lms-wrapper .section3 h3 {
+      margin-bottom: 0 !important;
+    }
+  
+    .title-heading-lms {
+      margin-top: -30px !important;
+    }
+  
+    .lms-wrapper .section4 .box-bStudent h3{
+      margin-top: 12px;
+    }
+  
+    .lms-wrapper .section4 .func h3 {
+      margin-bottom: 10px !important;
+    }
+  
+    .lms-wrapper .section5 .func {
+      margin-top: -20px;
+      margin-bottom: 20px;
+    }
+  
+    .lms-wrapper .section5 .box-bStudent h3 {
+      margin-top: 10px;
+    }
+  
+    .courses-section-desk {
+      margin-top: 30px;
+    }
+  
+    .section-heading-course-title {
+      margin-bottom: 0px !important;
+    }
+  
+    .courses-section {
+      padding: 0px;
+    }
+  
+    .lms-wrapper .section5 .box-bStudent {
+      margin-bottom: 0px;
+    }
+    // lms
+  // icon logo mobile
+  .icon-logo-mobile {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: -22px;
+  }
+  // icon logo mobile
+  // revert col list class to top
+  .container-revert-list-class-on-top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .list-class-info {
+    margin-bottom: -12px !important;
+  }
+
+  .lotrinh {
+    // margin-top: -10px !important;
+    margin-bottom: 16px;
+  }
+
+  .title-class-info {
+    margin-top: 10px;
+  }
+  // revert col list class to top
+
+  .autocom-box-search {
+    display: none !important;
+  }
   .employ__box .img-aboutus-1 {
     display: block;
   }
@@ -1050,10 +1135,6 @@
     margin-top: 40px;
   }
 
-  .section-lms-func-title {
-    padding: 0 !important;
-    margin-bottom: 0 !important;
-  }
 
   .box-bStudent-lms {
     padding-top: 0 !important;
@@ -1088,7 +1169,7 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 16px;
+    padding: 4px;
     .header-mobile-logo {
       font-size: 30px;
       font-weight: 700;
@@ -1560,7 +1641,7 @@
   }
 
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    // padding-top: 60px;
     padding-bottom: 40px;
   }
 
@@ -1612,6 +1693,112 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  // lms 
+  .lms-wrapper .section3 h3{
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .section-heading {
+    font-size: 32px !important;
+    font-weight: 600;
+  }
+
+  .lms-wrapper .section4 .func h3 {
+    font-size: 32px !important;
+    font-weight: 600;
+  }
+
+  .lms-wrapper .section4 .func h4 {
+    font-weight: 500;
+  }
+
+  .advantages .service-card .service-card-title {
+    font-weight: 500;
+  }
+
+  .lms-wrapper .section3 h3 {
+    margin-bottom: 0 !important;
+  }
+
+  .title-heading-lms {
+    margin-top: -30px !important;
+  }
+
+  .lms-wrapper .section4 .box-bStudent h3{
+    margin-top: 12px;
+  }
+
+  .lms-wrapper .section4 .func h3 {
+    margin-bottom: 10px !important;
+  }
+
+  .lms-wrapper .section5 .func {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .lms-wrapper .section5 .box-bStudent h3 {
+    margin-top: 10px;
+  }
+
+  .courses-section-desk {
+    margin-top: 30px;
+  }
+
+  .section-heading-course-title {
+    margin-bottom: 0px !important;
+  }
+
+  .courses-section {
+    padding: 0px;
+  }
+
+  .lms-wrapper .section5 .box-bStudent {
+    margin-bottom: 0px;
+  }
+  // lms
+
+  .title-banner1 {
+    text-align: justify !important;
+  }
+  .write-1 {
+    text-align: justify !important;
+  }
+  // icon logo mobile
+  .icon-logo-mobile {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: -22px;
+  }
+  // icon logo mobile
+
+  // revert col list class to top
+  .container-revert-list-class-on-top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .list-class-info {
+    margin-bottom: -12px !important;
+  }
+
+  .lotrinh {
+    // margin-top: -10px !important;
+    margin-bottom: 16px;
+  }
+
+  .title-class-info {
+    margin-top: 10px;
+  }
+  // revert col list class to top
+
+  // auto search
+  .autocom-box-search {
+    display: none !important;
+  }
+
   .img-1 {
     margin-top: 50px;
     width: 100%;
@@ -1701,7 +1888,7 @@
   }
   
   .icon-shopping-cart {
-    margin-top: 10px;
+    margin-top: 27px;
     width: 52px !important;
     height: 52px !important;
     object-fit: cover;
@@ -1713,7 +1900,7 @@
   }
 
   .cart-total-number-mobile {
-    margin-top: 40px;
+    margin-top: 56px;
   }
 // Cart header 
 
@@ -1857,7 +2044,17 @@
   }
 
   .courses-profile-title {
-    text-align: center;
+    text-align: left;
+    font-size: 1.3rem !important;
+    margin-bottom: 0 !important;
+    line-height: 12px !important; 
+  }
+
+  .history-payment-container h3 {
+    text-align: left;
+    font-size: 1.3rem !important;
+    margin-bottom: 0 !important;
+    line-height: 12px !important;
   }
 
   .history-payment-container {
@@ -2099,7 +2296,7 @@
   .header-mobile-content {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 4px;
     .header-mobile-logo {
       font-size: 30px;
       font-weight: 700;
@@ -2743,6 +2940,46 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
+    // lms 
+    .lms-wrapper .banner__lms h2 {
+      line-height: 44px;
+    }
+
+    .lms-wrapper .section3 h3{
+      font-size: 32px;
+    }
+
+    .section-heading {
+      font-size: 32px !important;
+    }
+    // lms 
+    
+    // home 
+    .left-section-mobile {
+      padding: 100px 0 !important;
+    }
+
+    .left-section-mobile h2 {
+      font-size: 26px !important;
+    }
+
+    .left-section-mobile p {
+      margin-top: -12px;
+      font-size: 16px !important;
+    }
+
+    .right-section-mobile {
+      padding: 100px 0 !important;
+    }
+
+    .right-section-mobile h2 {
+      font-size: 26px !important;
+    }
+
+    .right-section-mobile p {
+      margin-top: -12px;
+      font-size: 16px !important;
+    }
     // cate
     .course-detail-cate-online .course-detail-cate-fe-link {
       margin-left: -50px !important;

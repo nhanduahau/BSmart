@@ -73,7 +73,7 @@
         <div class="sidebar-content">
           <div class="sidebar-top">
             <a href="./index.html" class="sidebar-logo">
-              <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
+              <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
             </a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
@@ -388,7 +388,7 @@
             <div class="header-mobile-content">
               <div class="header-mobile-logo"><span>
                 <a href="./index.html"><span class="site-logo">
-                  <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
+                  <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
                 </span></a>
               </span></div>
               <!-- Cart -->
@@ -568,6 +568,7 @@
                   <div class="mb-3">
                     <label class="form-label form-label-custom">Ngày Sinh</label>
                     <input type="date" class="form-control" id="dob-member-profile-edit">
+                    <span id="message-error-dob">Ngày sinh không hợp lệ. (vd: 14/10/1999)</span>
                   </div>
                   
                   <div class="mb-3">
@@ -580,8 +581,9 @@
                   </div>
                   <div class="mb-3">
                     <label class="form-label form-label-custom">Số điện thoại</label>
-                    <input type="text" class="form-control" value="" oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10;" />
-                </div>
+                    <input type="text" class="form-control" id="phone-number-member" value="" oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10;" />
+                    <span id="phone-number-error">Số điện thoại không hợp lệ. (Phải gồm 10 số và bắt đầu bằng 03 | 05 | 07 | 08 | 09)</span>
+                  </div>
                   <div class="mb-3 text-end">
                     <button
                       type="button"
