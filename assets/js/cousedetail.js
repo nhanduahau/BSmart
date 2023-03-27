@@ -51,46 +51,63 @@ btnOtpClass.forEach((_btnCreate, _btnCreateIndex) => {
         optionClassed.push(_otpClass);
 
         // if (confirm("Bạn có muốn chọn lớp này hay không?") == true) {
-          if (saveOptionClass.length > 1) {
-            if (saveOptionClass[0] == indexOptionClass[0]) {
-              // clear bg classed
-              optionClassed.forEach((_optClassed) => {
-                _optClassed.classList.remove("otp-class-active");
-              });
+        if (saveOptionClass.length > 1) {
+          if (saveOptionClass[0] == indexOptionClass[0]) {
+            // clear bg classed
+            optionClassed.forEach((_optClassed) => {
+              _optClassed.classList.remove("otp-class-active");
+            });
 
-              // clear button del class + show button create class
-              btnDelOtpClass.forEach((_delOptClass, _indexDelOtpClass) => {
-                saveClassed.forEach((_classed) => {
-                  _delOptClass.style.display = "none";
-                  _classed.style.display = "block";
-                });
+            // clear button del class + show button create class
+            btnDelOtpClass.forEach((_delOptClass, _indexDelOtpClass) => {
+              saveClassed.forEach((_classed) => {
+                _delOptClass.style.display = "none";
+                _classed.style.display = "block";
               });
-            }
+            });
           }
+        }
 
-          _otpClass.classList = "otp-class-active";
-          _btnCreate.style.display = "none";
+        _otpClass.classList = "otp-class-active";
+        _btnCreate.style.display = "none";
 
-          btnDelOtpClass.forEach((_delOptClass, _indexDelOtpClass) => {
-            // Check -> show button delete
-            if (_indexDelOtpClass == _indexOtpClass) {
-              _delOptClass.style.display = "block";
+        btnDelOtpClass.forEach((_delOptClass, _indexDelOtpClass) => {
+          // Check -> show button delete
+          if (_indexDelOtpClass == _indexOtpClass) {
+            _delOptClass.style.display = "block";
 
-              // event clicked button Delete opt class
-              _delOptClass.addEventListener("click", function () {
+            // event clicked button Delete opt class
+            _delOptClass.addEventListener(
+              "click",
+              function () {
                 // if (confirm("Bạn có muốn hủy chọn lớp này không?") == true) {
-                  _delOptClass.style.display = "none";
-                  _otpClass.classList = "otp-class-active-none";
-                  _btnCreate.style.display = "block";
-                }
+                _delOptClass.style.display = "none";
+                _otpClass.classList = "otp-class-active-none";
+                _btnCreate.style.display = "block";
+              }
               // }
-              );
-            }
-          });
+            );
+          }
+        });
         // } else {
         //   return;
         // }
       }
     });
   });
+});
+
+// Button load more
+var btnShowMore = document.getElementById("btn-show-more");
+$(".feedback-item").slice(0, 5).show();
+
+console.log("items ->", $(".feedback-item"));
+
+if ($(".feedback-item").length >= 5) {
+  btnShowMore.style.display = "block";
+}
+
+// handle clicked load more
+btnShowMore.addEventListener("click", function () {
+  $(".feedback-item:hidden").slice(0, 5).slideDown();
 });

@@ -63,6 +63,7 @@ function checkPasswordMatch() {
     return;
   }
 }
+
 function togglePasswordVisibility(id) {
   var input = document.getElementById(id);
   var icon = input.nextElementSibling.querySelector("span");
@@ -73,51 +74,6 @@ function togglePasswordVisibility(id) {
     input.type = "password";
     // icon.textContent = "visibility";
   }
-}
-//thông báo ràng buộc mật khẩu
-function validatePassword() {
-  var password = document.getElementById("password");
-  var passwordError = document.getElementById("password-error");
-
-  if (password.validity.valid) {
-    passwordError.textContent = "";
-    passwordError.className = "invalid-feedback";
-  } else {
-    passwordError.textContent =
-      "Mật khẩu mới phải có ít nhất 6 ký tự, bao gồm ít nhất 1 số, 1 chữ hoa, 1 ký tự đặc biệt";
-    passwordError.className = "invalid-feedback d-block";
-  }
-}
-
-// Nút cập nhật phần mật khẩu
-function updateData(event) {
-  event.preventDefault();
-
-  // Lưu thông tin vào localStorage
-  localStorage.setItem(
-    "avatarImage",
-    document.getElementById("avatarImage").src
-  );
-  localStorage.setItem(
-    "hoTen",
-    document.querySelector('input[type="text"]').value
-  );
-  localStorage.setItem(
-    "ngaySinh",
-    document.querySelector('input[type="date"]').value
-  );
-  localStorage.setItem(
-    "diaChi",
-    document.querySelectorAll('input[type="text"]')[1].value
-  );
-  localStorage.setItem(
-    "soDienThoai",
-    document.querySelectorAll('input[type="text"]')[2].value
-  );
-  localStorage.setItem("matKhauMoi", document.getElementById("password").value);
-
-  // Chuyển qua trang HTML khác
-  window.location.href = "member-profile.html";
 }
 
 // Validator DOB
@@ -157,13 +113,74 @@ var messageError = document.getElementById("phone-number-error");
 
 messageError.style.display = "none";
 
-inpPhoneNumber.addEventListener("keyup", function () {
-  if (inpPhoneNumber.value.match(patternPhoneNumber)) {
-    messageError.style.display = "none";
-    return true;
+function checkPhoneNumber() {
+  inpPhoneNumber.addEventListener("keyup", function () {
+    if (inpPhoneNumber.value.match(patternPhoneNumber)) {
+      messageError.style.display = "none";
+      return true;
+    } else {
+      messageError.style.display = "block";
+      messageError.style.color = "red";
+      return false;
+    }
+  });
+}
+checkPhoneNumber();
+
+//thông báo ràng buộc mật khẩu
+function validatePassword() {
+  var password = document.getElementById("password");
+  var passwordError = document.getElementById("password-error");
+
+  if (password.validity.valid) {
+    passwordError.textContent = "";
+    passwordError.className = "invalid-feedback";
   } else {
-    messageError.style.display = "block";
-    messageError.style.color = "red";
-    return false;
+    passwordError.textContent =
+      "Mật khẩu mới phải có ít nhất 6 ký tự, bao gồm ít nhất 1 số, 1 chữ hoa, 1 ký tự đặc biệt";
+    passwordError.className = "invalid-feedback d-block";
   }
-});
+}
+
+// Nút cập nhật phần mật khẩu
+function updateData(event) {
+  event.preventDefault();
+
+  // check inputs
+  if (
+    !inpPhoneNumber.value.match(patternPhoneNumber) ||
+    !inputDate.value.match(patternDOB)
+  ) {
+    alert("Bạn cần phải nhập đầy đủ thông tin!");
+    return;
+  } else {
+    // Lưu thông tin vào localStorage
+    localStorage.setItem(
+      "avatarImage",
+      document.getElementById("avatarImage").src
+    );
+    localStorage.setItem(
+      "hoTen",
+      document.querySelector('input[type="text"]').value
+    );
+    localStorage.setItem(
+      "ngaySinh",
+      document.querySelector('input[type="date"]').value
+    );
+    localStorage.setItem(
+      "diaChi",
+      document.querySelectorAll('input[type="text"]')[1].value
+    );
+    localStorage.setItem(
+      "soDienThoai",
+      document.querySelectorAll('input[type="text"]')[2].value
+    );
+    localStorage.setItem(
+      "matKhauMoi",
+      document.getElementById("password").value
+    );
+
+    // Chuyển qua trang HTML khác
+    window.location.href = "member-profile.html";
+  }
+}
