@@ -572,3 +572,63 @@
 .container-list-class-info {
   margin-top: -10px;
 }
+
+// Link giới thiệu
+.container-link-copy {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.link-lbl {
+  margin-right: 20px;
+}
+
+.copy-link {
+  --height: 36px;
+  margin-top: 15px;
+  display: flex;
+  flex: 1;
+}
+
+.copy-link-input {
+  flex-grow: 1;
+  padding: 0 8px;
+  font-size: 14px;
+  border: 1px solid #ff630e;
+  border-right: none;
+  outline: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.copy-link-input:hover {
+  background: #eeeeee;
+}
+
+.copy-link-button {
+  flex-shrink: 0;
+  // width: var(--height);
+  height: var(--height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff630e;
+  color: white;
+  outline: none;
+  border: 1px solid #ff630e;
+  cursor: pointer;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.copy-link-button:hover {
+  opacity: 0.8;
+}
+
+.btn-copy-link {
+  font-size: 1rem;
+  padding: 6px;
+}
+// Link giới thiệu
+
