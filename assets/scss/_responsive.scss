@@ -1699,6 +1699,14 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  // link giới thiệu (course-detail)
+  .link-lbl {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-left: -6px;
+  }
+  // link giới thiệu (course-detail)
+
   // lms 
   .lms-wrapper .section3 h3{
     font-size: 32px;
