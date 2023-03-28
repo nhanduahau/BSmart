@@ -52,6 +52,10 @@
 @import "./private/wallet-management/_index.scss";
 // Import feedback component
 @import "./private/feedback/_index.scss";
+// Import Forgot-password
+@import "./private/forgot-password/index.scss";
+// Import reset-password
+@import "./private/reset-password/index.scss";
 // Import member-profile-edit component
 @import "./private/member-profile-edit/_index.scss";
 // Import lms component
