@@ -2248,6 +2248,10 @@ div.swiper-button-prev:after {
   top: -20px;
 }
 
+.course-side-lbl-item {
+  font-weight: 500;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -3890,6 +3894,62 @@ body {
 
 .container-list-class-info {
   margin-top: -10px;
+}
+
+.container-link-copy {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.link-lbl {
+  margin-right: 20px;
+}
+
+.copy-link {
+  --height: 36px;
+  margin-top: 15px;
+  display: flex;
+  flex: 1;
+}
+
+.copy-link-input {
+  flex-grow: 1;
+  padding: 0 8px;
+  font-size: 14px;
+  border: 1px solid #ff630e;
+  border-right: none;
+  outline: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.copy-link-input:hover {
+  background: #eeeeee;
+}
+
+.copy-link-button {
+  flex-shrink: 0;
+  height: var(--height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff630e;
+  color: white;
+  outline: none;
+  border: 1px solid #ff630e;
+  cursor: pointer;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.copy-link-button:hover {
+  opacity: 0.8;
+}
+
+.btn-copy-link {
+  font-size: 1rem;
+  padding: 6px;
 }
 
 .mentor-detail-wrapper .banner-mentor-detail {
@@ -6971,6 +7031,13 @@ input {
   border-top: none;
 }
 
+.title-reset-1 h3 {
+  font-size: 24px;
+  line-height: 34px;
+  color: #0e0a38;
+  font-weight: 700;
+}
+
 .member-detail-wrapper .mentor-profile-edit-content {
   margin: 0;
   padding: 0;
@@ -8789,6 +8856,11 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .link-lbl {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-left: -6px;
+  }
   .lms-wrapper .section3 h3 {
     font-size: 32px;
     font-weight: 600;
@@ -8946,7 +9018,7 @@ input {
     padding-right: 20px !important;
   }
   .icon-logo {
-    margin-left: -50px;
+    margin-left: -30px;
     margin-top: 10px !important;
   }
   .aboutus1 {
