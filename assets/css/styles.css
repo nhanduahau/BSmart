@@ -727,7 +727,7 @@ div.swiper-button-prev:after {
 }
 
 .aboutus {
-  padding: 95px 0 150px;
+  padding: 40px 0 50px;
   background: url(/assets/images/background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -2250,6 +2250,17 @@ div.swiper-button-prev:after {
 
 .course-side-lbl-item {
   font-weight: 500;
+}
+
+.custom-price-item {
+  display: flex;
+  align-items: center;
+}
+
+.custom-price-item p {
+  font-size: 0.9rem;
+  margin-left: 6px;
+  color: gray;
 }
 
 * {
@@ -3950,6 +3961,39 @@ body {
 .btn-copy-link {
   font-size: 1rem;
   padding: 6px;
+}
+
+.price-cost-detail {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ff630e;
+  background-color: #fff;
+  box-shadow: 2px 2px gray;
+  z-index: 2;
+}
+
+.icon-time {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+}
+
+.time p {
+  font-size: 0.8rem;
+  margin-left: 2px;
+}
+
+.mark p {
+  font-size: 0.8rem;
+  margin-left: 2px;
 }
 
 .mentor-detail-wrapper .banner-mentor-detail {
@@ -7532,6 +7576,9 @@ input {
 }
 
 @media only screen and (min-width: 1200px) {
+  .section-heading-course-title-mobile {
+    margin-top: 20px;
+  }
   .employ__box .img-aboutus-2 {
     display: none;
   }
@@ -7656,7 +7703,7 @@ input {
     box-shadow: 0 0 6px #000;
   }
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 40px;
   }
   .our {
@@ -7685,7 +7732,7 @@ input {
     margin-bottom: 20px;
   }
   .section-heading-title-mobile {
-    margin-top: 60px;
+    margin-top: 40px;
   }
   .contacts-section .form-contact-container {
     margin-left: 24px;
@@ -7880,7 +7927,7 @@ input {
     box-shadow: 0 0 6px #000;
   }
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .our {
@@ -8165,7 +8212,7 @@ input {
     box-shadow: 0 0 6px #000;
   }
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .our {
@@ -8506,7 +8553,6 @@ input {
     font-weight: 700;
     color: #0e0a38;
     font-size: 30px;
-    line-height: 1.42857143;
   }
   .sidebar-wrap .sidebar-content .sidebar-top .sidebar-logo i {
     font-size: 30px !important;
@@ -8817,6 +8863,7 @@ input {
     box-shadow: 0 0 6px #000;
   }
   .courses-section-mobile-home-page {
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .our {
@@ -8903,6 +8950,9 @@ input {
   }
   .section-heading-course-title {
     margin-bottom: 0px !important;
+  }
+  .section-heading-course-title-mobile {
+    margin-top: 20px;
   }
   .courses-section {
     padding: 0px;
@@ -9357,7 +9407,6 @@ input {
     font-weight: 700;
     color: #0e0a38;
     font-size: 30px;
-    line-height: 1.42857143;
   }
   .sidebar-wrap .sidebar-content .sidebar-top .sidebar-logo i {
     font-size: 30px !important;
@@ -9529,7 +9578,7 @@ input {
     box-shadow: 0 0 6px #000;
   }
   .home-wrapper .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .home-wrapper .our {
@@ -9546,6 +9595,7 @@ input {
     margin-bottom: 8px !important;
   }
   .home-wrapper .section-heading-of-member-title {
+    margin-top: -20px;
     margin-bottom: 10px;
   }
   .home-wrapper .contact-mobile {
@@ -9929,7 +9979,7 @@ input {
   }
   .owl-next span {
     top: 0 !important;
-    right: 4px !important;
+    right: 8px !important;
     font-size: 4rem !important;
   }
   .owl-prev span {

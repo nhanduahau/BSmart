@@ -83,7 +83,7 @@
     font-weight: 700;
     color: #130f40;
     font-size: 30px;
-    line-height: 1.42857143;
+    /* line-height: 1.42857143; */
   }
   .sidebar-wrap .sidebar-content .sidebar-top i {
     font-size: 30px !important;

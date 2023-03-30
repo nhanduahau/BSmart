@@ -351,3 +351,17 @@
 .course-side-lbl-item {
   font-weight: 500;
 }
+
+.custom-price-item {
+  display: flex;
+  align-items: center;
+}
+
+.custom-price-item p {
+  font-size: 0.9rem;
+  margin-left: 6px;
+  color: gray;
+}
+
+// Button search course 
+.btn-search-course {}
