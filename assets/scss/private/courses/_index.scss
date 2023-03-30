@@ -364,4 +364,18 @@
 }
 
 // Button search course 
-.btn-search-course {}
+.btn-search-course {
+  background-color: #ff630e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px;
+  border: 1px solid #ff630e;
+  margin-bottom: 22px;
+  font-size: 0.9rem;
+}
+
+.btn-search-course:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
