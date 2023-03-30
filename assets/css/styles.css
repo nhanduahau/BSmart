@@ -8553,6 +8553,7 @@ input {
     font-weight: 700;
     color: #0e0a38;
     font-size: 30px;
+    line-height: 0 !important;
   }
   .sidebar-wrap .sidebar-content .sidebar-top .sidebar-logo i {
     font-size: 30px !important;
@@ -8903,6 +8904,9 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .sidebar-logo {
+    line-height: 0 !important;
+  }
   .link-lbl {
     font-size: 0.8rem;
     width: 100%;
@@ -9407,6 +9411,7 @@ input {
     font-weight: 700;
     color: #0e0a38;
     font-size: 30px;
+    line-height: 0 !important;
   }
   .sidebar-wrap .sidebar-content .sidebar-top .sidebar-logo i {
     font-size: 30px !important;
@@ -9871,6 +9876,9 @@ input {
 }
 /* ---------------- */
 @media only screen and (max-width: 480px) {
+  .sidebar-logo {
+    line-height: 0 !important;
+  }
   .lms-wrapper .banner__lms h2 {
     line-height: 44px;
   }

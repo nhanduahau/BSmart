@@ -1265,7 +1265,7 @@
           font-weight: 700;
           color: $primary-color;
           font-size: 30px;
-          // line-height: 1.42857143;
+          line-height: 0 !important;
           i {
             font-size: 30px !important;
           }
@@ -1702,6 +1702,10 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+
+  .sidebar-logo {
+    line-height: 0 !important;
+  }
   // link giới thiệu (course-detail)
   .link-lbl {
     font-size: 0.8rem;
@@ -2358,7 +2362,7 @@
           font-weight: 700;
           color: $primary-color;
           font-size: 30px;
-          // line-height: 1.42857143;
+          line-height: 0 !important;
           i {
             font-size: 30px !important;
           }
@@ -2963,6 +2967,9 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
+  .sidebar-logo {
+    line-height: 0 !important;
+  }
     // lms 
     .lms-wrapper .banner__lms h2 {
       line-height: 44px;
