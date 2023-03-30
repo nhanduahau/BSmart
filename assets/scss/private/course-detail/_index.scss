@@ -632,3 +632,35 @@
 }
 // Link giới thiệu
 
+.price-cost-detail {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ff630e;
+  background-color: #fff;
+  box-shadow: 2px 2px gray;
+  z-index: 2;
+}
+
+.icon-time {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+}
+
+.time p {
+  font-size: 0.8rem;
+  margin-left: 2px;
+}
+
+.mark p {
+  font-size: 0.8rem;
+  margin-left: 2px;
+}

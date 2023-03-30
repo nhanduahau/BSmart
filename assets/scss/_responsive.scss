@@ -1,4 +1,7 @@
 @media only screen and (min-width: 1200px) {
+  .section-heading-course-title-mobile {
+    margin-top: 20px;
+  }
   // .sup-autocom-search {
   //   right: 130px !important;
   //   width: 32%;
@@ -171,7 +174,7 @@
   }
 
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 40px;
   }
 
@@ -208,7 +211,7 @@
   }
 
   .section-heading-title-mobile {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .contacts-section .form-contact-container {
@@ -457,7 +460,7 @@
   }
 
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
@@ -840,7 +843,7 @@
   }
 
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
@@ -1262,7 +1265,7 @@
           font-weight: 700;
           color: $primary-color;
           font-size: 30px;
-          line-height: 1.42857143;
+          // line-height: 1.42857143;
           i {
             font-size: 30px !important;
           }
@@ -1647,7 +1650,7 @@
   }
 
   .courses-section-mobile-home-page {
-    // padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
@@ -1761,7 +1764,12 @@
   }
 
   .section-heading-course-title {
+    // margin-top: 20px;
     margin-bottom: 0px !important;
+  }
+
+  .section-heading-course-title-mobile {
+    margin-top: 20px;
   }
 
   .courses-section {
@@ -2350,7 +2358,7 @@
           font-weight: 700;
           color: $primary-color;
           font-size: 30px;
-          line-height: 1.42857143;
+          // line-height: 1.42857143;
           i {
             font-size: 30px !important;
           }
@@ -2529,7 +2537,7 @@
     }
 
     .courses-section-mobile-home-page {
-      padding-top: 60px;
+      padding-top: 40px;
       padding-bottom: 40px;
     }
 
@@ -2551,6 +2559,7 @@
     }
 
     .section-heading-of-member-title {
+      margin-top: -20px;
       margin-bottom: 10px;
     }
 
@@ -3090,7 +3099,7 @@
   // Slide 
 .owl-next span {
   top: 0 !important;
-  right: 4px !important;
+  right: 8px !important;
   font-size: 4rem !important;
 }
 
