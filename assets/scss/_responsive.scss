@@ -3143,12 +3143,14 @@
   // Slide Danh sách lớp học
   // Slide 
 .owl-next span {
+  display: none;
   top: 0 !important;
   right: 8px !important;
   font-size: 4rem !important;
 }
 
 .owl-prev span {
+  display: none;
   top: 0 !important;
   right: -48px !important;
   font-size: 4rem !important;
