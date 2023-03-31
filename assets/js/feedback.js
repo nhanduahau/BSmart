@@ -28,15 +28,24 @@ btnFeedback.forEach((_btnFeedback, index) => {
       activeIcon2.classList.add("active-icon-star");
       activeIcon3.classList.add("active-icon-star");
       activeIcon4.classList.remove("active-icon-star");
+
+      activeIcon5.classList.remove("active-icon-star");
       getNumberStar.value = index + 1;
     } else if (index == 1) {
       activeIcon1.classList.add("active-icon-star");
       activeIcon2.classList.add("active-icon-star");
       activeIcon3.classList.remove("active-icon-star");
+
+      activeIcon4.classList.remove("active-icon-star");
+      activeIcon5.classList.remove("active-icon-star");
       getNumberStar.value = index + 1;
     } else {
       activeIcon1.classList.add("active-icon-star");
       activeIcon2.classList.remove("active-icon-star");
+
+      activeIcon3.classList.remove("active-icon-star");
+      activeIcon4.classList.remove("active-icon-star");
+      activeIcon5.classList.remove("active-icon-star");
       getNumberStar.value = index + 1;
     }
   });
