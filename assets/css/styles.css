@@ -672,6 +672,10 @@ div.swiper-button-prev:after {
   object-fit: cover;
 }
 
+.btn-search-mobile-icon {
+  margin-right: 80px;
+}
+
 .banner {
   background-image: url(/assets/images/banner.jpg);
   background-repeat: no-repeat;
@@ -8558,7 +8562,6 @@ input {
     height: 100%;
     position: absolute;
     right: 0;
-    overflow-y: scroll;
   }
   .sidebar-wrap .sidebar-content .sidebar-top {
     display: flex;
@@ -9416,7 +9419,6 @@ input {
     height: 100%;
     position: absolute;
     right: 0;
-    overflow-y: scroll;
   }
   .sidebar-wrap .sidebar-content .sidebar-top {
     display: flex;
