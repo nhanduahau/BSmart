@@ -7096,6 +7096,22 @@ input {
   border-top: none;
 }
 
+.btn-star-feedback {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: gray;
+}
+
+.active-icon-star {
+  color: #ff630e;
+  transition: all 0.3s;
+}
+
+#value-star {
+  display: none;
+}
+
 .title-reset-1 h3 {
   font-size: 24px;
   line-height: 34px;
