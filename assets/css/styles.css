@@ -3934,7 +3934,7 @@ body {
 }
 
 .link-lbl {
-  margin-right: 20px;
+  margin-right: 6px;
 }
 
 .copy-link {
@@ -3953,6 +3953,7 @@ body {
   outline: none;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+  height: 40px;
 }
 
 .copy-link-input:hover {
@@ -3961,7 +3962,7 @@ body {
 
 .copy-link-button {
   flex-shrink: 0;
-  height: var(--height);
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;

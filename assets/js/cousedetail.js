@@ -99,10 +99,9 @@ btnOtpClass.forEach((_btnCreate, _btnCreateIndex) => {
 
 // Button load more
 var btnShowMore = document.getElementById("btn-show-more");
+var arrFeedback = [];
 
 $(".feedback-item").slice(0, 5).show(); // load
-
-console.log("items ->", $(".feedback-item"));
 
 if ($(".feedback-item").length >= 5) {
   btnShowMore.style.display = "block";
@@ -111,6 +110,15 @@ if ($(".feedback-item").length >= 5) {
 // handle clicked load more
 btnShowMore.addEventListener("click", function () {
   $(".feedback-item:hidden").slice(0, 5).slideDown();
+  arrFeedback.push($(".feedback-item:hidden").slice(0, 5));
+
+  // console.log("arrFeedback", arrFeedback);
+  // console.log("arrFeedback.length - 1", arrFeedback[arrFeedback.length - 1]);
+
+  if (arrFeedback[arrFeedback.length - 1].length === 0) {
+    console.log("hide button");
+    btnShowMore.style.display = "none";
+  }
 });
 
 // Link giới thiệu
