@@ -581,7 +581,7 @@
 }
 
 .link-lbl {
-  margin-right: 20px;
+  margin-right: 6px;
 }
 
 .copy-link {
@@ -600,6 +600,7 @@
   outline: none;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+  height: 40px;
 }
 
 .copy-link-input:hover {
@@ -609,7 +610,8 @@
 .copy-link-button {
   flex-shrink: 0;
   // width: var(--height);
-  height: var(--height);
+  height: 40px;
+  // height: var(--height);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -620,6 +622,7 @@
   cursor: pointer;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  // margin-right: 28px;
 }
 
 .copy-link-button:hover {
@@ -632,3 +635,39 @@
 }
 // Link giới thiệu
 
+.price-cost-detail {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ff630e;
+  background-color: #fff;
+  box-shadow: 2px 2px gray;
+  z-index: 2;
+}
+
+.icon-time {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+}
+
+.time p {
+  font-size: 0.8rem;
+  margin-left: 2px;
+}
+
+.mark p {
+  font-size: 0.8rem;
+  margin-left: 2px;
+}
+
+.course-detail-id-class {
+  // width: 80%;
+}

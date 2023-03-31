@@ -351,3 +351,31 @@
 .course-side-lbl-item {
   font-weight: 500;
 }
+
+.custom-price-item {
+  display: flex;
+  align-items: center;
+}
+
+.custom-price-item p {
+  font-size: 0.9rem;
+  margin-left: 6px;
+  color: gray;
+}
+
+// Button search course 
+.btn-search-course {
+  background-color: #ff630e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px;
+  border: 1px solid #ff630e;
+  margin-bottom: 22px;
+  font-size: 0.9rem;
+}
+
+.btn-search-course:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s;
+}

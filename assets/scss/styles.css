@@ -3976,7 +3976,7 @@ div.swiper-button-prev:after {
     font-weight: 700;
     color: #0e0a38;
     font-size: 30px;
-    line-height: 1.42857143;
+    /* line-height: 1.42857143; */
   }
   .sidebar-wrap .sidebar-content .sidebar-top .sidebar-logo i {
     font-size: 30px !important;
@@ -4296,7 +4296,7 @@ div.swiper-button-prev:after {
     font-weight: 700;
     color: #0e0a38;
     font-size: 30px;
-    line-height: 1.42857143;
+    /* line-height: 1.42857143; */
   }
   .sidebar-wrap .sidebar-content .sidebar-top .sidebar-logo i {
     font-size: 30px !important;

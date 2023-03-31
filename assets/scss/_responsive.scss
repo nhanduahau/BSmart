@@ -1,4 +1,7 @@
 @media only screen and (min-width: 1200px) {
+  .section-heading-course-title-mobile {
+    margin-top: 20px;
+  }
   // .sup-autocom-search {
   //   right: 130px !important;
   //   width: 32%;
@@ -171,7 +174,7 @@
   }
 
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 40px;
   }
 
@@ -208,7 +211,7 @@
   }
 
   .section-heading-title-mobile {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .contacts-section .form-contact-container {
@@ -481,7 +484,7 @@
   }
 
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
@@ -864,7 +867,7 @@
   }
 
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
@@ -970,7 +973,7 @@
   // icon logo mobile
   .icon-logo-mobile {
     width: 100px;
-    height: 100px;
+    height: 75px;
     object-fit: cover;
     margin-left: -22px;
   }
@@ -1286,7 +1289,7 @@
       height: 100%;
       position: absolute;
       right: 0;
-      overflow-y: scroll;
+      // overflow-y: scroll;
       .sidebar-top {
         display: flex;
         align-items: center;
@@ -1295,7 +1298,7 @@
           font-weight: 700;
           color: $primary-color;
           font-size: 30px;
-          line-height: 1.42857143;
+          line-height: 0 !important;
           i {
             font-size: 30px !important;
           }
@@ -1680,7 +1683,7 @@
   }
 
   .courses-section-mobile-home-page {
-    // padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
@@ -1739,6 +1742,10 @@
   .wrapper .contact-info .li-title-2{
     margin-left: 110px !important;
     // justify-content: center !important;
+  }
+
+  .sidebar-logo {
+    line-height: 0 !important;
   }
   // link giới thiệu (course-detail)
   .link-lbl {
@@ -1802,7 +1809,12 @@
   }
 
   .section-heading-course-title {
+    // margin-top: 20px;
     margin-bottom: 0px !important;
+  }
+
+  .section-heading-course-title-mobile {
+    margin-top: 20px;
   }
 
   .courses-section {
@@ -1823,7 +1835,7 @@
   // icon logo mobile
   .icon-logo-mobile {
     width: 100px;
-    height: 100px;
+    height: 75px;
     object-fit: cover;
     margin-left: -22px;
   }
@@ -2382,7 +2394,7 @@
       height: 100%;
       position: absolute;
       right: 0;
-      overflow-y: scroll;
+      // overflow-y: scroll;
       .sidebar-top {
         display: flex;
         align-items: center;
@@ -2391,7 +2403,7 @@
           font-weight: 700;
           color: $primary-color;
           font-size: 30px;
-          line-height: 1.42857143;
+          line-height: 0 !important;
           i {
             font-size: 30px !important;
           }
@@ -2570,7 +2582,7 @@
     }
 
     .courses-section-mobile-home-page {
-      padding-top: 60px;
+      padding-top: 40px;
       padding-bottom: 40px;
     }
 
@@ -2592,6 +2604,7 @@
     }
 
     .section-heading-of-member-title {
+      margin-top: -20px;
       margin-bottom: 10px;
     }
 
@@ -2995,15 +3008,6 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
-  // member-profile
-  .span-title-1{
-    width: 169px !important;
-  }
-  .wrapper .contact-info .li-title-2{
-    margin-left: 80px !important;
-    // justify-content: center !important;
-  }
-
     // lms 
     .lms-wrapper .banner__lms h2 {
       line-height: 44px;
@@ -3140,7 +3144,7 @@
   // Slide 
 .owl-next span {
   top: 0 !important;
-  right: 4px !important;
+  right: 8px !important;
   font-size: 4rem !important;
 }
 

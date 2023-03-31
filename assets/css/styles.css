@@ -668,8 +668,12 @@ div.swiper-button-prev:after {
 
 .icon-logo {
   width: 190px;
-  height: 120px;
+  height: 75px;
   object-fit: cover;
+}
+
+.btn-search-mobile-icon {
+  margin-right: 80px;
 }
 
 .banner {
@@ -727,7 +731,7 @@ div.swiper-button-prev:after {
 }
 
 .aboutus {
-  padding: 95px 0 150px;
+  padding: 40px 0 50px;
   background: url(/assets/images/background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -2250,6 +2254,33 @@ div.swiper-button-prev:after {
 
 .course-side-lbl-item {
   font-weight: 500;
+}
+
+.custom-price-item {
+  display: flex;
+  align-items: center;
+}
+
+.custom-price-item p {
+  font-size: 0.9rem;
+  margin-left: 6px;
+  color: gray;
+}
+
+.btn-search-course {
+  background-color: #ff630e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px;
+  border: 1px solid #ff630e;
+  margin-bottom: 22px;
+  font-size: 0.9rem;
+}
+
+.btn-search-course:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 * {
@@ -3903,7 +3934,7 @@ body {
 }
 
 .link-lbl {
-  margin-right: 20px;
+  margin-right: 6px;
 }
 
 .copy-link {
@@ -3922,6 +3953,7 @@ body {
   outline: none;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+  height: 40px;
 }
 
 .copy-link-input:hover {
@@ -3930,7 +3962,7 @@ body {
 
 .copy-link-button {
   flex-shrink: 0;
-  height: var(--height);
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3950,6 +3982,39 @@ body {
 .btn-copy-link {
   font-size: 1rem;
   padding: 6px;
+}
+
+.price-cost-detail {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ff630e;
+  background-color: #fff;
+  box-shadow: 2px 2px gray;
+  z-index: 2;
+}
+
+.icon-time {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+}
+
+.time p {
+  font-size: 0.8rem;
+  margin-left: 2px;
+}
+
+.mark p {
+  font-size: 0.8rem;
+  margin-left: 2px;
 }
 
 .mentor-detail-wrapper .banner-mentor-detail {
@@ -7039,6 +7104,22 @@ input {
   border-top: none;
 }
 
+.btn-star-feedback {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: gray;
+}
+
+.active-icon-star {
+  color: #ff630e;
+  transition: all 0.3s;
+}
+
+#value-star {
+  display: none;
+}
+
 .title-reset-1 h3 {
   font-size: 24px;
   line-height: 34px;
@@ -7540,6 +7621,9 @@ input {
 }
 
 @media only screen and (min-width: 1200px) {
+  .section-heading-course-title-mobile {
+    margin-top: 20px;
+  }
   .employ__box .img-aboutus-2 {
     display: none;
   }
@@ -7664,7 +7748,7 @@ input {
     box-shadow: 0 0 6px #000;
   }
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 40px;
   }
   .our {
@@ -7693,7 +7777,7 @@ input {
     margin-bottom: 20px;
   }
   .section-heading-title-mobile {
-    margin-top: 60px;
+    margin-top: 40px;
   }
   .contacts-section .form-contact-container {
     margin-left: 24px;
@@ -7910,7 +7994,7 @@ input {
     box-shadow: 0 0 6px #000;
   }
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .our {
@@ -8195,7 +8279,7 @@ input {
     box-shadow: 0 0 6px #000;
   }
   .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .our {
@@ -8275,7 +8359,7 @@ input {
   }
   .icon-logo-mobile {
     width: 100px;
-    height: 100px;
+    height: 75px;
     object-fit: cover;
     margin-left: -22px;
   }
@@ -8531,7 +8615,6 @@ input {
     height: 100%;
     position: absolute;
     right: 0;
-    overflow-y: scroll;
   }
   .sidebar-wrap .sidebar-content .sidebar-top {
     display: flex;
@@ -8542,7 +8625,7 @@ input {
     font-weight: 700;
     color: #0e0a38;
     font-size: 30px;
-    line-height: 1.42857143;
+    line-height: 0 !important;
   }
   .sidebar-wrap .sidebar-content .sidebar-top .sidebar-logo i {
     font-size: 30px !important;
@@ -8853,6 +8936,7 @@ input {
     box-shadow: 0 0 6px #000;
   }
   .courses-section-mobile-home-page {
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .our {
@@ -8892,6 +8976,9 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .sidebar-logo {
+    line-height: 0 !important;
+  }
   .span-title-1 {
     width: 336px !important;
   }
@@ -8946,6 +9033,9 @@ input {
   .section-heading-course-title {
     margin-bottom: 0px !important;
   }
+  .section-heading-course-title-mobile {
+    margin-top: 20px;
+  }
   .courses-section {
     padding: 0px;
   }
@@ -8960,7 +9050,7 @@ input {
   }
   .icon-logo-mobile {
     width: 100px;
-    height: 100px;
+    height: 75px;
     object-fit: cover;
     margin-left: -22px;
   }
@@ -9388,7 +9478,6 @@ input {
     height: 100%;
     position: absolute;
     right: 0;
-    overflow-y: scroll;
   }
   .sidebar-wrap .sidebar-content .sidebar-top {
     display: flex;
@@ -9399,7 +9488,7 @@ input {
     font-weight: 700;
     color: #0e0a38;
     font-size: 30px;
-    line-height: 1.42857143;
+    line-height: 0 !important;
   }
   .sidebar-wrap .sidebar-content .sidebar-top .sidebar-logo i {
     font-size: 30px !important;
@@ -9571,7 +9660,7 @@ input {
     box-shadow: 0 0 6px #000;
   }
   .home-wrapper .courses-section-mobile-home-page {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .home-wrapper .our {
@@ -9588,6 +9677,7 @@ input {
     margin-bottom: 8px !important;
   }
   .home-wrapper .section-heading-of-member-title {
+    margin-top: -20px;
     margin-bottom: 10px;
   }
   .home-wrapper .contact-mobile {
@@ -9863,6 +9953,9 @@ input {
 }
 /* ---------------- */
 @media only screen and (max-width: 480px) {
+  .sidebar-logo {
+    line-height: 0 !important;
+  }
   .span-title-1 {
     width: 169px !important;
   }
@@ -9977,7 +10070,7 @@ input {
   }
   .owl-next span {
     top: 0 !important;
-    right: 4px !important;
+    right: 8px !important;
     font-size: 4rem !important;
   }
   .owl-prev span {
