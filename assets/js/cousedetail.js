@@ -99,7 +99,8 @@ btnOtpClass.forEach((_btnCreate, _btnCreateIndex) => {
 
 // Button load more
 var btnShowMore = document.getElementById("btn-show-more");
-$(".feedback-item").slice(0, 5).show();
+
+$(".feedback-item").slice(0, 5).show(); // load
 
 console.log("items ->", $(".feedback-item"));
 
