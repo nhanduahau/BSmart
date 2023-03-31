@@ -232,6 +232,30 @@
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  // member-profile
+  .member-detail-wrapper .content-info-mentor .member-info .member-img {
+    background-image: url(/assets/images/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 50px 68px 30px;
+}
+  .img-banner-1{
+    margin-right: 50px !important;
+  }
+    .icon-gmail{
+      margin-left:31px !important ;
+    }
+    .fa-location-arrow{
+      margin-left: 41px !important;
+    }
+    .span-title-1{
+      width: 157px !important;
+      margin-left: 25px !important;
+    }
+    .wrapper .contact-info .li-title-2{
+      margin-left: 39px !important;
+      // justify-content: center !important;
+    }
   .autocom-box-search {
     display: none !important;
   }
@@ -892,6 +916,15 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+
+    // member-profile
+    .span-title-1{
+      width: 169px !important;
+    }
+    .wrapper .contact-info .li-title-2{
+      margin-left: 33px !important;
+      // justify-content: center !important;
+    }
     // lms 
     .lms-wrapper .section3 h3 {
       margin-bottom: 0 !important;
@@ -1699,6 +1732,14 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  // member-profile
+  .span-title-1{
+    width: 336px !important;
+  }
+  .wrapper .contact-info .li-title-2{
+    margin-left: 110px !important;
+    // justify-content: center !important;
+  }
   // link giới thiệu (course-detail)
   .link-lbl {
     font-size: 0.8rem;
@@ -2954,6 +2995,15 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
+  // member-profile
+  .span-title-1{
+    width: 169px !important;
+  }
+  .wrapper .contact-info .li-title-2{
+    margin-left: 80px !important;
+    // justify-content: center !important;
+  }
+
     // lms 
     .lms-wrapper .banner__lms h2 {
       line-height: 44px;
@@ -4136,6 +4186,11 @@
 }
 
 @media screen and (max-width: 360px) {
+  //member-profile
+  .wrapper .contact-info .li-title-2{
+    margin-left: 30px !important;
+    // justify-content: center !important;
+  }
   // cate
   .course-detail-cate-online .course-detail-cate-fe-link {
     margin-left: -50px !important;
@@ -4216,5 +4271,11 @@
   //aboutus
   .img-1{
     width: 100% !important;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 470px) {
+  .wrapper .contact-info .li-title-2{
+    margin-left: 70px !important;
+    // justify-content: center !important;
   }
 }
