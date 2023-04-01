@@ -81,7 +81,7 @@
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.832);
   font-weight: bold;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 }
 
 .courses-wrapper .course-content-container .course-sidebar .tag_r .checkbox__course {
@@ -349,7 +349,10 @@
 
 //
 .course-side-lbl-item {
-  font-weight: 500;
+  font-size: 17px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.832);
+    font-weight: bold;
 }
 
 .custom-price-item {
@@ -368,7 +371,7 @@
   background-color: #ff630e;
   color: #fff;
   border-radius: 6px;
-  padding: 6px;
+  padding: 10px;
   border: 1px solid #ff630e;
   margin-bottom: 22px;
   font-size: 0.9rem;

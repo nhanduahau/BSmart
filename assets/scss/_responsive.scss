@@ -2967,6 +2967,20 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
+  .btn-search-course {
+    display: block;
+    background-color: #ff630e;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 auto 10px;
+    width: 100%;
+  }
+  
   .sidebar-logo {
     line-height: 0 !important;
   }
