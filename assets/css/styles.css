@@ -8978,14 +8978,14 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
-  .sidebar-logo {
-    line-height: 0 !important;
-  }
   .span-title-1 {
     width: 336px !important;
   }
   .wrapper .contact-info .li-title-2 {
     margin-left: 110px !important;
+  }
+  .sidebar-logo {
+    line-height: 0 !important;
   }
   .link-lbl {
     font-size: 0.8rem;
@@ -9970,12 +9970,6 @@ input {
   }
   .sidebar-logo {
     line-height: 0 !important;
-  }
-  .span-title-1 {
-    width: 169px !important;
-  }
-  .wrapper .contact-info .li-title-2 {
-    margin-left: 80px !important;
   }
   .lms-wrapper .banner__lms h2 {
     line-height: 44px;
