@@ -9769,6 +9769,7 @@ input {
     display: none;
   }
   .img-aboutus-4 {
+    object-fit: cover !important;
     display: block !important;
   }
   .img-aboutus-end {
