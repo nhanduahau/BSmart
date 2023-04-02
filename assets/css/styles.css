@@ -1988,7 +1988,6 @@ div.swiper-button-prev:after {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.832);
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .courses-wrapper .course-content-container .course-sidebar .tag_r .checkbox__course {
@@ -2253,7 +2252,10 @@ div.swiper-button-prev:after {
 }
 
 .course-side-lbl-item {
-  font-weight: 500;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.832);
+  font-weight: bold;
 }
 
 .custom-price-item {
@@ -2271,7 +2273,7 @@ div.swiper-button-prev:after {
   background-color: #ff630e;
   color: #fff;
   border-radius: 6px;
-  padding: 6px;
+  padding: 10px;
   border: 1px solid #ff630e;
   margin-bottom: 22px;
   font-size: 0.9rem;
@@ -9954,6 +9956,22 @@ input {
 }
 /* ---------------- */
 @media only screen and (max-width: 480px) {
+  .btn-search-course {
+    display: block;
+    background-color: #ff630e;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 auto 10px;
+    width: 100%;
+  }
+  .sidebar-logo {
+    line-height: 0 !important;
+  }
   .lms-wrapper .banner__lms h2 {
     line-height: 44px;
   }
