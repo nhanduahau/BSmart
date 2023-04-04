@@ -69,8 +69,21 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <a href="./index.html" class="sidebar-logo">BSMART</a>
+            <a href="./index.html" class="sidebar-logo">
+              <img
+                src="/assets/images/icon-logo-mobile.png"
+                class="icon-logo-mobile"
+                alt="icon-logo"
+              />
+            </a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
+          </div>
+           <!-- Cart -->
+           <div class="header-cart">
+            <a href="payment.html">
+              <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
+              <span class="cart-total-number">0</span>
+            </a>
           </div>
           <div class="sidebar-center">
             <ul class="sidebar-mean-nav">
@@ -80,25 +93,25 @@
                 <a href="./courses.html">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Front End</a></li>
-                    <li><a href="#">Back End</a></li>
-                    <li><a href="#">Devops</a></li>
+                    <li><a href="courses.html">Front End</a></li>
+                    <li><a href="courses.html">Back End</a></li>
+                    <li><a href="courses.html">Devops</a></li>
                   </ul>
                 </div>
                 <a class="mean-expand" href="#">+</a>
                 <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
-                <a href="#">Giảng viên</a>
-                <div class="d-flex align-items-center justify-content-end">
+                <a href="view-mentor-profile.html">Giảng viên</a>
+                <!-- <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Mentor Long</a></li>
-                    <li><a href="#">Mentor Cuong</a></li>
+                    <li><a href="view-mentor-profile.html">Mentor Long</a></li>
+                    <li><a href="view-mentor-profile.html">Mentor Cuong</a></li>
                   </ul>
-                </div>
+                </div> -->
 
-                <a class="mean-expand" href="#">+</a>
-                <a class="mean-non-expand" href="#">-</a>
+                <!-- <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a> -->
               </li>
               <li><a href="./blog.html">Blog</a></li>
             </ul>
@@ -117,11 +130,11 @@
             </div>
             <ul class="contact-info">
               <li class="mb-3">
-                <i class="fa fa-envelope"></i> bsmart@gmail.com
+                <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">admin@bsmart.edu.vn
               </li>
-              <li><i class="fa fa-phone"></i> +98 946005077</li>
+              <li><img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 028 9999 79 39</li>
             </ul>
-            <ul class="social-list">
+            <!-- <ul class="social-list">
               <li>
                 <a href="#"><i class="fa fa-twitter"></i></a>
               </li>
@@ -131,9 +144,9 @@
               <li>
                 <a href="#"><i class="fa fa-dribbble"></i></a>
               </li>
-            </ul>
+            </ul> -->
             <ul class="sidebar-controls">
-              <li><a href="./login-mobile.html">Login</a></li>
+              <li><a href="./login.html">Login</a></li>
               <li><small>|</small></li>
               <li><a href="./register.html">Register</a></li>
             </ul>
@@ -199,12 +212,12 @@
             <div class="header-top-wrapper">
               <!-- Start header social -->
               <div class="header-top-social text-left">
-                <ul>
+                <ul class="list-icons-header">
                   <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-dribbble"></i></a>
@@ -215,28 +228,32 @@
               <!-- Start header contact info -->
               <div class="header-contact-info">
                 <ul>
-                  <li class="mb-3">
-                    <i class="fa fa-envelope"></i> bsmart@gmail.com
+                  <li class="me-4">
+                    <img src="/assets/images/icon-gmail.png" class="icon-gmail-header" alt="icon-gmail"> admin@bsmart.edu.vn
                   </li>
-                  <li><i class="fa fa-phone"></i> +98 946005077</li>
+                  <li><img src="/assets/images/icon-phone.png" class="icon-gmail-header" alt="icon-gmail"></i> 028 9999 79 39</li>
                 </ul>
               </div>
               <!-- End header contact info -->
               <!-- Start header search -->
-              <div class="header-course-search">
-                <input
-                  type="text"
-                  placeholder="Tìm kiếm khoá học"
-                  class="form-control"
-                />
+              <div class="header-course-search w-75 d-flex justify-content-center">
+                <form action="#" method="post" class="w-75">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm khoá học"
+                    class="form-control w-100"
+                  />
+                </form>
                 <span><i class="fa fa-search"></i></span>
               </div>
               <!-- End header search -->
               <div class="header-log-reg d-flex justify-content-end">
                 <ul>
-                  <li><a href="#" id="loginFormOpen">Login</a></li>
+                  <li>
+                    <a href="./login.html" id="loginFormOpen">Đăng nhập</a>
+                  </li>
                   <li><small>|</small></li>
-                  <li><a href="./register.html">Register</a></li>
+                  <li><a href="./register.html">Đăng ký</a></li>
                 </ul>
               </div>
             </div>
@@ -245,7 +262,14 @@
         <div class="header-bottom">
           <div class="container">
             <div class="header-bottom-wrapper">
-              <a href="./index.html"><span class="site-logo">BSMART</span></a>
+              <a href="./index.html"
+                ><span class="site-logo">
+                  <img
+                    src="/assets/images/icon-logo.png"
+                    class="icon-logo"
+                    alt="icon-logo"
+                  /> </span
+              ></a>
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="collapse navbar-collapse">
@@ -276,7 +300,7 @@
                             class="content-sub-nav d-flex justify-content-between"
                           >
                             <div>
-                              <a href="#">Front End</a>
+                              <a href="courses.html">Front End</a>
                               <ul>
                                 <li>
                                   <a href="#"><span>+</span> Front End Basic</a>
@@ -293,7 +317,7 @@
                               </ul>
                             </div>
                             <div>
-                              <a href="#">Back End</a>
+                              <a href="courses.html">Back End</a>
                               <ul>
                                 <li>
                                   <a href="#"><span>+</span> NodeJS </a>
@@ -307,25 +331,29 @@
                               </ul>
                             </div>
                             <div>
-                              <a href="#">Devops</a>
+                              <a href="courses.html">Devops</a>
                             </div>
                           </div>
                         </div>
                       </li>
                       <li>
-                        <a href="#" class="nav-link nav-link-custom"
+                        <a href="view-mentor-profile.html" class="nav-link nav-link-custom"
                           >Giảng viên</a
                         >
-                        <ul class="sub-menu">
+                        <!-- <ul class="sub-menu">
                           <li>
-                            <a href="./mentor-detail.html">Mentor Cường</a>
+                            <a href="./view-mentor-profile.html">Mentor Cường</a>
                           </li>
                           <li>
-                            <a href="./mentor-detail.html">Mentor Long</a>
+                            <a href="./view-mentor-profile.html">Mentor Long</a>
                           </li>
-                        </ul>
+                        </ul> -->
                       </li>
-
+                      <li>
+                        <a href="./lms.html" class="nav-link nav-link-custom"
+                          >Nền tảng LMS</a
+                        >
+                      </li>
                       <li>
                         <a href="./blog.html" class="nav-link nav-link-custom"
                           >Blog</a
@@ -337,24 +365,30 @@
                           <li>
                             <a href="./blog.html">Khuyến mãi</a>
                           </li>
-                          <li>
+                          <!-- <li>
                             <a href="./blog.html">Tuyển dụng</a>
-                          </li>
+                          </li> -->
                           <li>
                             <a href="./blog.html">Hoạt động</a>
                           </li>
                         </ul>
                       </li>
-                      <li>
-                        <a href="#" class="nav-link nav-link-custom">Tuyển dụng</a>
-                      </li>
+                      <!-- <li>
+                        <a href="#" class="nav-link nav-link-custom"
+                          >Tuyển dụng</a
+                        >
+                      </li> -->
                     </ul>
                   </div>
                 </div>
               </nav>
               <div class="header-cart">
                 <a href="#"
-                  ><i class="fa fa-shopping-cart"></i>
+                  ><img
+                    src="/assets/images/icon-shopping-cart.jpg"
+                    class="icon-shopping-cart"
+                    alt="icon-shopping-cart"
+                  />
                   <span class="cart-total-number">0</span>
                 </a>
               </div>
@@ -364,7 +398,17 @@
         <div class="header-mobile">
           <div class="container">
             <div class="header-mobile-content">
-              <div class="header-mobile-logo"><span>BSMART</span></div>
+              <div class="header-mobile-logo">
+                <span>
+                  <img
+                    src="/assets/images/icon-logo-mobile.png"
+                    class="icon-logo-mobile"
+                    alt="icon-logo"
+                  />
+                </span>
+              </div>
+             
+              <!-- Cart -->
               <div class="header-mobile-menu-hambuger" id="activeMenu">
                 <i class="fa fa-bars"></i>
               </div>
@@ -380,106 +424,32 @@
           <div class="caption-content text-center">
             <h2>Về chúng tôi</h2>
             <p>
-              <a href="./index.html">Trang chủ</a><span> > </span> về chúng tôi
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="employee__img">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 mt-5">
-              <div class="employ__box">
-                <img src="./assets/images/banner.jpg" alt="hinh anh" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="sec-heading__about">
-        <div class="container">
-          <h5>Chúng tôi là ai?</h5>
-          <h2>
-            BSmart đang cung cấp các khóa học online và offline chất lượng tốt
-            nhất. Tất cả các giảng viên của chúng tôi đều là các chuyên gia.
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            assumenda ut hic quod maiores asperiores corrupti consectetur
-            accusantium officiis exercitationem enim provident tempora quas,
-            atque rem, dolorem et? Odio, voluptatibus.
+              <a href="./index.html"><strong>Trang chủ</strong></a><span> > </span><strong> Về chúng tôi</strong>
           </p>
-        </div>
-      </section>
-
-      <section class="counter container">
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <div class="counter-single">
-              <h2>35,535+</h2>
-              <div class="counter-title">
-                <p>Sinh viên đã đăng ký</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="counter-single">
-              <h2>35+</h2>
-              <div class="counter-title">
-                <p>Giảng viên đã đăng ký</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="counter-single">
-              <h2>66%</h2>
-              <div class="counter-title">
-                <p>Tỷ lệ thành công</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-
-      <section class="why-choose-area">
+      
+      <section class="aboutus1" id="">
         <div class="container">
-          <h4>BEST LEARNING PLATFORM</h4>
-          <h2>Vì sao bạn nên chọn BSmart</h2>
-          <div class="choose">
+          <div class="aboutus-content1">
             <div class="row">
-              <div class="col-xs-12 col-md-4">
-                <div class="choose-single">
-                  <img src="./assets/images/folder.svg" alt="" />
-                  <h3>High Quality Courses</h3>
-                  <p>
-                    Donec nec justo eget felis facilisis fermentum. Aliquam
-                    porttitor mauris sit amet orci. Aenean dignissim
-                    pellentesque felis.
-                  </p>
-                </div>
+              <div class="col-md-6 col-sm-12 content-aboutus-1">
+                <img class="img-2" src="assets\images\icon-logo.png" alt="">
+            <h1 class="title-banner1">Câu chuyện của một nhóm người với đam mê lập trình bất tận</h1>
+            <br>
+            <p class="write-1">Từ việc nhận thấy được sự khó khăn, gặp rào cản về vấn đề học tập cũng như
+              bằng cấp của một số bạn có định hướng, đam mê về lập trình, BSmart đã tạo nên
+              một cộng đồng cho mọi đối tượng, mọi lứa tuổi, kết nối các bạn có cùng đam mê,
+              cùng thắc mắc để cùng phát triển. Người có kiến thức, khả năng tốt về lập trình
+              có mong muốn truyền đạt lại cho người mới bắt đầu hay có nhu cầu trau dồi khả
+              năng của mình thêm nữa. Người có nhu cầu tìm hiểu, học hỏi về lập trình có thể
+              lựa chọn người hướng dẫn có phương pháp giảng dạy mà bản thân cho là thu
+              hút, phù hợp với mình.</p>
               </div>
-              <div class="col-xs-12 col-md-4">
-                <div class="choose-single">
-                  <img src="./assets/images/ribbon.svg" alt="" />
-                  <h3>Expert Instructors</h3>
-                  <p>
-                    Donec nec justo eget felis facilisis fermentum. Aliquam
-                    porttitor mauris sit amet orci. Aenean dignissim
-                    pellentesque felis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-xs-12 col-md-4">
-                <div class="choose-single">
-                  <img src="./assets/images/teacher.svg" alt="" />
-                  <h3>Life Time Access</h3>
-                  <p>
-                    Donec nec justo eget felis facilisis fermentum. Aliquam
-                    porttitor mauris sit amet orci. Aenean dignissim
-                    pellentesque felis.
-                  </p>
+              <div class="col-md-6 col-sm-12" style="justify-content: center; margin-top: -20px !important;">
+                <div class="banner-aboutus1">
+                  <img class="img-1" src="assets\images\banner-aboutus.jpg" alt="Hinh anh" />
                 </div>
               </div>
             </div>
@@ -487,157 +457,80 @@
         </div>
       </section>
 
-      <section class="our">
-        <div class="container">
-          <h2>MENTOR</h2>
-          <h1>Mentor tiêu biểu</h1>
-          <div class="swiper swiper-typical-mentor">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="out__sigle">
-                  <img src="./assets/images/instructor-2.jpg" alt="" />
-                  <h3>Shane Warne</h3>
-                  <h4>Instructor</h4>
-                  <div class="instructor-links">
-                    <ul>
-                      <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                      </li>
-                    </ul>
-                  </div>
+      <section class="banner1">
+        <div class="container1">
+            <div class="caption-content text-center">
+                <h2>SỨ MỆNH VÀ TẦM NHÌN</h2>
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <p>Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.</p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-center">
+                      <div class="my-element"></div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <p>Ở BSmart, chúng tôi nói không với sự muộn màng, dù là bạn người đến từ lĩnh vực ngoài công nghệ, dù bạn đến từ độ tuổi nào, chúng tôi luôn khai phá được tiềm năng ở bên trong bạn.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="out__sigle">
-                  <img src="./assets/images/instructor-2.jpg" alt="" />
-                  <h3>Shane Warne</h3>
-                  <h4>Instructor</h4>
-                  <div class="instructor-links">
-                    <ul>
-                      <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="out__sigle">
-                  <img src="./assets/images/instructor-2.jpg" alt="" />
-                  <h3>Shane Warne</h3>
-                  <h4>Instructor</h4>
-                  <div class="instructor-links">
-                    <ul>
-                      <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="out__sigle">
-                  <img src="./assets/images/instructor-2.jpg" alt="" />
-                  <h3>Shane Warne</h3>
-                  <h4>Instructor</h4>
-                  <div class="instructor-links">
-                    <ul>
-                      <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="out__sigle">
-                  <img src="./assets/images/instructor-2.jpg" alt="" />
-                  <h3>Shane Warne</h3>
-                  <h4>Instructor</h4>
-                  <div class="instructor-links">
-                    <ul>
-                      <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="out__sigle">
-                  <img src="./assets/images/instructor-2.jpg" alt="" />
-                  <h3>Shane Warne</h3>
-                  <h4>Instructor</h4>
-                  <div class="instructor-links">
-                    <ul>
-                      <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="information-2">
+      <div class="content-2">
+        <div class="row">
+          <div class="caption_img">
+            <div class="title_img_aboutus">
+            </div>
+            <img class="img-aboutus-3" src="assets\images\WEB-01.png" alt="img-aboutus" style="max-width: 100%; height: auto;">
+            <img class="img-aboutus-4" src="assets\images\MOBILE-01.png" alt="img-aboutus" style="max-width: 100%; height: auto;display: none;">
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <!-- <section class="information-1">
+      <div class="content-1">
+        <div class="row">
+          <div class="img_aboutus_3">
+            <button class="bt-aboutus_1">ĐĂNG KÝ NGAY</button>
+            <img class="img-aboutus-end" src="assets\images\export 04-01.png" alt="hinh_anh" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="information-1">
+      <div class="content-1">
+        <div class="row">
+          <div class="caption_img1">
+            <div class="img_aboutus_3">
+              <a href="courses.html"><button class="bt-aboutus_1">ĐĂNG KÝ NGAY!</button></a>
+            </div>
+            <img class="img-aboutus-end" src="assets\images\export 04-01.png" alt="hinh_anh" style="width: 100%;">
+            <img class="img-aboutus-end-1" src="assets\images\CÁCH VẬN HÀNH_KHÔNG CÓ NÚT.png" alt="hinh_anh" style="width: 100%;display: none;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+
+    <section class="information">
+      <div class="container">
+        <div class="row">
+          <div class="introduction">
+            <h3>LỘ TRÌNH PHÁT TRIỂN</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mt-5">
+      <div class="employ__box">
+        <img class="img-aboutus-1" src="assets\images\LỘ TRÌNH PHÁT TRIỂN-01.png" alt="hinh anh"/>
+        <img class="img-aboutus-2" src="assets\images\MOBILE PAGE-01.png" alt="hinh anh"/>
+      </div>
+    </div> 
+      <br>
 
       <footer class="footer">
         <div class="container">
@@ -647,17 +540,17 @@
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-4 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-4 mb-3">
               <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-4 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-4 mb-3">
               <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-4 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-4 mb-3">
               <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
@@ -665,11 +558,11 @@
           </div>
           <hr class="text-success mt-5 mb-5" />
           <div class="row">
-            <div class="col-lg-3 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-logo">
-                <a href="#"
-                  ><span class="site-logo site-logo-footer">BSMART</span></a
-                >
+                <a href="index.html"><span class="site-logo site-logo-footer" style="margin-left: 20px;">
+                    <img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo">
+                  </span></a>
                 <p class="footer-about-description">
                   Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
                   các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
@@ -680,11 +573,11 @@
                   <li>
                     <a href="#"><i class="fa fa-facebook"></i></a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
+                  </li> -->
                   <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-pinterest"></i></a>
@@ -692,46 +585,49 @@
                   <li>
                     <a href="#"><i class="fa fa-instagram"></i></a>
                   </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-3">
-              <div class="footer-menu">
-                <h4>Menu</h4>
-                <ul>
-                  <li><a href="#">Trang chủ</a></li>
-                  <li><a href="#">Về chúng tôi</a></li>
-                  <li><a href="#">Nền tảng LMS</a></li>
-                  <li><a href="#">Khoá học</a></li>
-                  <li><a href="#">Giảng viên</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-control d-flex align-items-center mt-5">
-                <a
-                  href="./courses.html"
-                  class="btn btn-primary-custom p-2 mb-2"
-                >
-                  Đăng ký khoá học
-                </a>
+              <div class="footer-menu">
+                <h4>Menu</h4>
+                <ul>
+                  <li><a href="./index.html">Trang chủ</a></li>
+                  <li><a href="./aboutus.html">Về chúng tôi</a></li>
+                  <li><a href="./courses.html">Khoá học</a></li>
+                  <li><a href="./view-mentor-profile.html">Giảng viên</a></li>
+                  <li><a href="./lms.html">Nền tảng LMS</a></li>
+                  <li><a href="./blog.html">Blog</a></li>
+                </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-3">
+            <!-- <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="footer-control d-flex align-items-center mt-5">
+                    <a
+                      href="./courses.html"
+                      class="btn btn-primary-custom p-2 mb-2"
+                    >
+                      Đăng ký khoá học
+                    </a>
+                  </div>
+                </div> -->
+            <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-contact">
                 <h4>Liên hệ với chúng tôi</h4>
                 <li>
-                  <i class="fa fa-map-marker"></i>
-                  <p class="m-0">260/19 Tân Binh, Hồ Chí Minh</p>
+                  <img src="/assets/images/icon-location.png" class="icon-location" alt="icon-location">
+                  <p class="m-0">Tòa S9.02A, Vinhomes Grand Park, Quận 9</p>
                 </li>
                 <li>
-                  <i class="fa fa-envelope"></i>
-                  <p class="m-0">bsmart@gmail.com</p>
+                  <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
+                  <p class="m-0">admin@bsmart.edu.vn</p>
                 </li>
                 <li>
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <p class="m-0">+98 946005077</p>
+                  <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
+                  <p class="m-0">028 9999 79 39</p>
                 </li>
               </div>
             </div>
@@ -744,7 +640,6 @@
           </p>
         </div>
       </footer>
-    </div>
     <!-- Import script bootstrap V5 -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

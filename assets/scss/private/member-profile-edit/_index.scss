@@ -1,0 +1,76 @@
+.member-detail-wrapper .mentor-profile-edit-content {
+  margin: 0;
+  padding: 0;
+}
+
+.member-detail-wrapper .mentor-profile-edit-content label {
+  color: #0e0a38;
+  font-weight: 500;
+}
+
+.member-detail-wrapper .mentor-profile-edit-content .form-group-custome {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.member-detail-wrapper .mentor-profile-edit-content .form-group-custome h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.member-detail-wrapper .mentor-profile-edit-content .avatar_img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.member-detail-wrapper .mentor-profile-edit-content .id-card-warpper .card-id-custom img {
+  height: 220px;
+}
+
+.header-contact-info-member-profile-edit ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-member-profile-edit ul li {
+  display: flex;
+  align-items: center;
+}
+
+.show-password {
+  position: relative;
+}
+
+.show-password-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btn-show-password {
+  width: 36px;
+}
+
+.form-control1 {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#phone-number-error {
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+#message-error-dob {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}

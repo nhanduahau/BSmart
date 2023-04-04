@@ -43,6 +43,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
     <!-- Import css responsive -->
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+     <!-- import material icon-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <!-- Preloader start -->
@@ -64,7 +66,9 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <a href="./index.html" class="sidebar-logo">BSMART</a>
+            <a href="./index.html" class="sidebar-logo">
+              <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
+            </a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
           <div class="sidebar-center">
@@ -75,25 +79,25 @@
                 <a href="./courses.html">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Front End</a></li>
-                    <li><a href="#">Back End</a></li>
-                    <li><a href="#">Devops</a></li>
+                    <li><a href="courses.html">Front End</a></li>
+                    <li><a href="courses.html">Back End</a></li>
+                    <li><a href="courses.html">Devops</a></li>
                   </ul>
                 </div>
                 <a class="mean-expand" href="#">+</a>
                 <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
-                <a href="#">Giảng viên</a>
-                <div class="d-flex align-items-center justify-content-end">
+                <a href="view-mentor-profile.html">Giảng viên</a>
+                <!-- <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Mentor Long</a></li>
-                    <li><a href="#">Mentor Cuong</a></li>
+                    <li><a href="view-mentor-profile.html">Mentor Long</a></li>
+                    <li><a href="view-mentor-profile.html">Mentor Cuong</a></li>
                   </ul>
                 </div>
 
                 <a class="mean-expand" href="#">+</a>
-                <a class="mean-non-expand" href="#">-</a>
+                <a class="mean-non-expand" href="#">-</a> -->
               </li>
               <li><a href="./blog.html">Blog</a></li>
             </ul>
@@ -112,9 +116,9 @@
             </div>
             <ul class="contact-info">
               <li class="mb-3">
-                <i class="fa fa-envelope"></i> bsmart@gmail.com
+                <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> admin@bsmart.edu.vn
               </li>
-              <li><i class="fa fa-phone"></i> +98 946005077</li>
+              <li><img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 028 9999 79 39</li>
             </ul>
             <ul class="social-list">
               <li>
@@ -128,7 +132,7 @@
               </li>
             </ul>
             <ul class="sidebar-controls">
-              <li><a href="./login-mobile.html">Login</a></li>
+              <li><a href="./login.html">Login</a></li>
               <li><small>|</small></li>
               <li><a href="./register.html">Register</a></li>
             </ul>
@@ -171,12 +175,12 @@
             <div class="login-btn text-center mb-2">
               <a href="./login-success.html" class="btn btn-primary-custom p-2">Đăng nhập</a>
             </div>
-            <div id="gSignInWrapper" class="mb-4 w-100">
+            <!-- <div id="gSignInWrapper" class="mb-4 w-100">
               <div id="customBtn" class="customGPlusSignIn w-100">
                 <span class="icon"></span>
                 <span class="buttonText">Đăng nhập bằng tài khoản google</span>
               </div>
-            </div>
+            </div> -->
             <div class="new-registration text-center">
               <span>Bạn chưa có tài khoản?</span>
               <a href="#" class="link-custom">Đăng ký ngay</a>
@@ -194,12 +198,12 @@
             <div class="header-top-wrapper">
               <!-- Start header social -->
               <div class="header-top-social text-left">
-                <ul>
+                <ul class="list-icons-header">
                   <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-dribbble"></i></a>
@@ -210,28 +214,30 @@
               <!-- Start header contact info -->
               <div class="header-contact-info">
                 <ul>
-                  <li class="mb-3">
-                    <i class="fa fa-envelope"></i> bsmart@gmail.com
+                  <li class="me-4">
+                    <img src="/assets/images/icon-gmail.png" class="icon-gmail-header" alt="icon-gmail"> admin@bsmart.edu.vn
                   </li>
-                  <li><i class="fa fa-phone"></i> +98 946005077</li>
+                  <li><img src="/assets/images/icon-phone.png" class="icon-gmail-header" alt="icon-gmail"></i> 028 9999 79 39</li>
                 </ul>
               </div>
               <!-- End header contact info -->
               <!-- Start header search -->
-              <div class="header-course-search">
-                <input
-                  type="text"
-                  placeholder="Tìm kiếm khoá học"
-                  class="form-control"
-                />
+              <div class="header-course-search w-75 d-flex justify-content-center">
+                <form action="#" method="post" class="w-75">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm khoá học"
+                    class="form-control w-100"
+                  />
+                </form>
                 <span><i class="fa fa-search"></i></span>
               </div>
               <!-- End header search -->
               <div class="header-log-reg d-flex justify-content-end">
                 <ul>
-                  <li><a href="#" id="loginFormOpen">Login</a></li>
+                  <li><a href="./login.html" id="loginFormOpen">Đăng nhập</a></li>
                   <li><small>|</small></li>
-                  <li><a href="./register.html">Register</a></li>
+                  <li><a href="./register.html">Đăng ký</a></li>
                 </ul>
               </div>
             </div>
@@ -240,7 +246,9 @@
         <div class="header-bottom">
           <div class="container">
             <div class="header-bottom-wrapper">
-              <a href="./index.html"><span class="site-logo">BSMART</span></a>
+              <a href="./index.html"><span class="site-logo">
+                <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
+              </span></a>
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="collapse navbar-collapse">
@@ -248,9 +256,7 @@
                     <!-- Menu cấp parent -->
                     <ul class="navbar-nav">
                       <li>
-                        <a
-                          href="./index.html"
-                          class="nav-link nav-link-custom active"
+                        <a href="./index.html" class="nav-link nav-link-custom"
                           >Trang Chủ</a
                         >
                       </li>
@@ -273,7 +279,7 @@
                             class="content-sub-nav d-flex justify-content-between"
                           >
                             <div>
-                              <a href="#">Front End</a>
+                              <a href="courses.html">Front End</a>
                               <ul>
                                 <li>
                                   <a href="#"><span>+</span> Front End Basic</a>
@@ -290,7 +296,7 @@
                               </ul>
                             </div>
                             <div>
-                              <a href="#">Back End</a>
+                              <a href="courses.html">Back End</a>
                               <ul>
                                 <li>
                                   <a href="#"><span>+</span> NodeJS </a>
@@ -304,27 +310,35 @@
                               </ul>
                             </div>
                             <div>
-                              <a href="#">Devops</a>
+                              <a href="courses.html">Devops</a>
                             </div>
                           </div>
                         </div>
                       </li>
                       <li>
-                        <a href="#" class="nav-link nav-link-custom"
+                        <a href="view-mentor-profile.html" class="nav-link nav-link-custom"
                           >Giảng viên</a
                         >
-                        <ul class="sub-menu">
+                        <!-- <ul class="sub-menu">
                           <li>
-                            <a href="./mentor-detail.html">Mentor Cường</a>
+                            <a href="./view-mentor-profile.html">Mentor Cường</a>
                           </li>
                           <li>
-                            <a href="./mentor-detail.html">Mentor Long</a>
+                            <a href="./view-mentor-profile.html">Mentor Long</a>
                           </li>
-                        </ul>
+                        </ul> -->
                       </li>
 
                       <li>
-                        <a href="./blog.html" class="nav-link nav-link-custom"
+                        <a href="./lms.html" class="nav-link nav-link-custom"
+                          >Nền tảng LMS</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          href="./blog.html"
+                          class="nav-link nav-link-custom"
                           >Blog</a
                         >
                         <ul class="sub-menu">
@@ -334,21 +348,26 @@
                           <li>
                             <a href="./blog.html">Khuyến mãi</a>
                           </li>
-                          <li>
+                          <!-- <li>
                             <a href="./blog.html">Tuyển dụng</a>
-                          </li>
+                          </li> -->
                           <li>
                             <a href="./blog.html">Hoạt động</a>
                           </li>
                         </ul>
                       </li>
+                      <!-- <li>
+                        <a href="#" class="nav-link nav-link-custom"
+                          >Tuyển dụng</a
+                        >
+                      </li> -->
                     </ul>
                   </div>
                 </div>
               </nav>
               <div class="header-cart">
                 <a href="#"
-                  ><i class="fa fa-shopping-cart"></i>
+                  ><img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
                   <span class="cart-total-number">0</span>
                 </a>
               </div>
@@ -358,7 +377,11 @@
         <div class="header-mobile">
           <div class="container">
             <div class="header-mobile-content">
-              <div class="header-mobile-logo"><span>BSMART</span></div>
+              <div class="header-mobile-logo"><span>
+                <a href="./index.html"><span class="site-logo">
+                  <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
+                </span></a>
+              </span></div>
               <div class="header-mobile-menu-hambuger" id="activeMenu">
                 <i class="fa fa-bars"></i>
               </div>
@@ -389,7 +412,7 @@
                     Học viên
                   </div>
                 </div>
-                <div class="col-lg-6 p-0">
+                <div class="col-lg-6 p-0 dis">
                   <div
                     class="tab-item"
                     onclick="openTabRegister('mentorRegisterForm')"
@@ -410,8 +433,18 @@
                 <label for="name" class="mb-2">Họ và tên</label>
                 <input
                   type="text"
-                  value="tangbaotran"
+                  value=""
                   placeholder="Họ và tên"
+                  class="form-control"
+                  name="name"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2">Tên đăng nhập</label>
+                <input
+                  type="text"
+                  value=""
+                  placeholder="Tên đăng nhập"
                   class="form-control"
                   name="name"
                 />
@@ -420,38 +453,55 @@
                 <label for="email" class="mb-2">E-Mail</label>
                 <input
                   type="text"
-                  value="tangbaotrann@gmail.com"
+                  value=""
                   placeholder="E-Mail"
                   class="form-control"
                   name="email"
                 />
               </div>
               <div class="form-group mb-3">
-                <label for="password" class="mb-2">Mật khẩu</label>
+                <label for="name" class="mb-2">Số điện thoại</label>
                 <input
-                  type="password"
-                  value="123456"
-                  placeholder="Mật khẩu"
+                  type="text"
+                  id="phone-number-member"
+                  oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10"
+                  value=""
+                  placeholder="Số điện thoại"
                   class="form-control"
-                  name="password"
+                  name="name"
                 />
+                <span id="phone-number-error">Số điện thoại không hợp lệ. (Phải gồm 10 số và bắt đầu bằng 03 | 05 | 07 | 08 | 09)</span>
               </div>
-              <div class="form-group mb-3">
-                <label for="confirmPassword" class="mb-2"
-                  >Xác nhận mật khẩu</label
-                >
-                <input
-                  type="password"
-                  value="123456"
-                  placeholder="Xác nhận mật khẩu"
-                  class="form-control"
-                  name="confirmPassword"
-                />
-              </div>
+
+              <div class="mb-3">
+                <label class="form-label form-label-custom">Nhập mật khẩu *</label>
+                <div class="input-group show-password">
+                  <input type="password" class="form-control" id="password" placeholder="Mật khẩu" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="password-error" oninput="validatePassword()">
+                  
+                  <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('password')">
+                    <i class="fa fa-eye show-password-icon"></i>
+                    </button>
+                </div>
+                <div id="password-error" class="invalid-feedback fs-13">Mật khẩu mới phải có ít nhất 6 ký tự, bao gồm ít nhất 1 số, 1 chữ hoa, 1 ký tự đặc biệt</div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label form-label-custom">Xác nhận mật khẩu *</label>
+                <div class="input-group show-password">
+                  <input type="password" class="form-control" id="confirm-password" placeholder="Xác nhận mật khẩu" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="confirm-password-error" oninput="checkPasswordMatch()">
+                  
+                  <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('confirm-password')">
+                      <i class="fa fa-eye show-password-icon"></i>
+                    </button>
+                </div>
+                <div id="confirm-password-error" class="invalid-feedback">Xác nhận mật khẩu mới phải trùng với mật khẩu mới</div>
+                <!-- <div id="password-match" class="material-icons" style="color:red; display:none">clear</div>
+                <div id="password-not-match" class="material-icons" style="color:green; display:none">done</div> -->
+            </div>
               <div class="registration-btn mb-3">
                 <a href="./login-success.html" class="btn btn-primary-custom">Đăng ký</a>
               </div>
-              <div id="gSignInWrapper" class="mb-4 w-100">
+              <!-- <div id="gSignInWrapper" class="mb-4 w-100">
                 <div
                   id="customBtn"
                   class="customGPlusSignIn w-100 p-2 d-flex justify-content-center align-items-center"
@@ -461,7 +511,7 @@
                     >Đăng nhập bằng tài khoản google</span
                   >
                 </div>
-              </div>
+              </div> -->
             </div>
             <div
               id="mentorRegisterForm"
@@ -471,18 +521,18 @@
                 <label for="name" class="mb-2">Họ và tên</label>
                 <input
                   type="text"
-                  value="Phạm Văn Cường"
+                  value=""
                   placeholder="Họ và tên"
                   class="form-control"
                   name="name"
                 />
               </div>
               <div class="form-group mb-3">
-                <label for="name" class="mb-2">Số điện thoại</label>
+                <label for="name" class="mb-2">Tên đăng nhập</label>
                 <input
                   type="text"
-                  value="0353815411"
-                  placeholder="Số điện thoại"
+                  value=""
+                  placeholder="Tên đăng nhập"
                   class="form-control"
                   name="name"
                 />
@@ -491,51 +541,109 @@
                 <label for="email" class="mb-2">E-Mail</label>
                 <input
                   type="text"
-                  value="pvcuong@gmail.com"
+                  value=""
                   placeholder="E-Mail"
                   class="form-control"
                   name="email"
                 />
               </div>
               <div class="form-group mb-3">
-                <label for="password" class="mb-2">Mật khẩu</label>
+                <label for="name" class="mb-2">Số điện thoại</label>
                 <input
-                  type="password"
-                  value="123456"
-                  placeholder="Mật khẩu"
+                  type="text"
+                  id="phone-number-mentor"
+                  oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10"
+                  value=""
+                  placeholder="Số điện thoại"
                   class="form-control"
-                  name="password"
+                  name="name"
                 />
+                <span id="phone-number-mentor-error">Số điện thoại không hợp lệ. (Phải gồm 10 số và bắt đầu bằng 03 | 05 | 07 | 08 | 09)</span>
               </div>
+              <!-- Password -->
+              <div class="form-group mb-3">          
+                <label class="form-label form-label-custom">Nhập mật khẩu *</label>
+                <div class="input-group show-password">
+                  <input type="password" class="form-control" id="password-mentor" placeholder="Mật khẩu" required/>
+                  <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('password-mentor')">
+                    <i class="fa fa-eye show-password-icon"></i>
+                  </button>
+                </div>
+                
+                <div id="message-validator" style="display: none;">Mật khẩu mới phải có ít nhất 6 ký tự, bao gồm ít nhất 1 số, 1 chữ hoa, 1 ký tự đặc biệt.</div>
+              </div>
+              
               <div class="form-group mb-3">
-                <label for="confirmPassword" class="mb-2"
-                  >Xác nhận mật khẩu</label
-                >
-                <input
-                  type="password"
-                  value="123456"
-                  placeholder="Xác nhận mật khẩu"
-                  class="form-control"
-                  name="confirmPassword"
-                />
+                <label class="form-label form-label-custom">Xác nhận mật khẩu *</label>
+                <div class="input-group show-password">
+                  <input type="password" class="form-control" id="confirm-password-mentor" placeholder="Xác nhận mật khẩu" required />
+                  <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('confirm-password-mentor')">
+                    <i class="fa fa-eye show-password-icon"></i>
+                  </button>
+                </div>
+                <div id="message-validator1" style="display: none;">Mật khẩu mới phải có ít nhất 6 ký tự, bao gồm ít nhất 1 số, 1 chữ hoa, 1 ký tự đặc biệt.</div>
+                <div id="message-validator1-match" style="display: none;">Xác nhận mật khẩu không khớp.</div>
               </div>
+
+              <!-- <div class="form-group mb-3">
+                <label class="form-label form-label-custom">Nhập mật khẩu *</label>
+                <div class="input-group show-password">
+                  <input type="password" class="form-control" id="password1" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="password1-error" oninput="validatePassword()">
+                  
+                  <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('password1')">
+                    <i class="fa fa-eye show-password-icon"></i>
+                    </button>
+                </div>
+                <div id="password1-error" class="invalid-feedback1" style="display: none;">Mật khẩu mới phải có ít nhất 6 ký tự, bao gồm ít nhất 1 số, 1 chữ hoa, 1 ký tự đặc biệt</div>
+              </div> -->
+            
+            <!-- <div class="form-group mb-3">
+                <label class="form-label form-label-custom">Xác nhận mật khẩu *</label>
+                <div class="input-group show-password">
+                  <input type="password" class="form-control" id="confirm-password1" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" title="Mật khẩu phải có ít nhất 6 ký tự, phải có ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt" aria-describedby="confirm-password-error" oninput="checkPasswordMatch()">
+                  
+                  <button class="btn btn-outline-secondary btn-show-password" type="button" onclick="togglePasswordVisibility('confirm-password1')">
+                      <i class="fa fa-eye show-password-icon"></i>
+                    </button>
+                </div>
+                <div id="confirm-password-error" class="invalid-feedback1" style="display: none;">Xác nhận mật khẩu mới phải trùng với mật khẩu mới</div>
+                <div id="password-match" class="material-icons" style="color:red; display:none">clear</div>
+                <div id="password-not-match" class="material-icons" style="color:green; display:none">done</div>
+            </div> -->
+
               <div class="form-group mb-3">
                 <label for="confirmPassword" class="mb-2"
                   >Giới thiệu bản thân</label
                 >
                 <div class="form-floating">
-                  <textarea
-                    class="form-control"
-                    placeholder="Leave a comment here"
-                    id="floatingTextarea2"
-                    style="height: 100px"
-                  >Tôi tên Phạm Văn Cường, sinh năm 2000, quê ở Vũng Tàu. Tôi sẽ đảm nhiệm với vai trò mentor Reactjs cho dự án BSmart.</textarea>
+                  <div class="form-floating">
+                    <div
+                      class="box_luuy"
+                      style="
+                        clear: both;
+                        line-height: 1.7;
+                        color: white;
+                        font-family: Roboto;
+                        letter-spacing: -0.75px;
+                        margin: 5px 0px;
+                        transition: 0.5s;
+                      "
+                    >
+                      <textarea
+                        id="input_luuy"
+                        rows="5"
+                        style="width: 98%"
+                        oninput="countChar(this)"
+                        maxlength="200"
+                      ></textarea>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="registration-btn mb-3">
                 <a href="./login-success.html" class="btn btn-primary-custom">Đăng ký</a>
               </div>
-              <div id="gSignInWrapper" class="mb-4 w-100">
+              <!-- <div id="gSignInWrapper" class="mb-4 w-100">
                 <div
                   id="customBtn"
                   class="customGPlusSignIn w-100 p-2 d-flex justify-content-center align-items-center"
@@ -545,7 +653,7 @@
                     >Đăng nhập bằng tài khoản google</span
                   >
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -559,17 +667,17 @@
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-4">
               <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-4">
               <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-4">
               <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
@@ -577,10 +685,12 @@
           </div>
           <hr class="text-success mt-5 mb-5" />
           <div class="row">
-            <div class="col-lg-3 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-logo">
-                <a href="#"
-                  ><span class="site-logo site-logo-footer">BSMART</span></a
+                <a href="index.html"
+                  ><span class="site-logo site-logo-footer">
+                    <img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo">
+                  </span></a
                 >
                 <p class="footer-about-description">
                   Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
@@ -592,11 +702,11 @@
                   <li>
                     <a href="#"><i class="fa fa-facebook"></i></a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
+                  </li> -->
                   <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-pinterest"></i></a>
@@ -604,39 +714,46 @@
                   <li>
                     <a href="#"><i class="fa fa-instagram"></i></a>
                   </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-3">
-              <div class="footer-menu">
-                <h4>Menu</h4>
-                <ul>
-                  <li><a href="#">Khoá học</a></li>
-                  <li><a href="#">Giảng viên</a></li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
+              <div class="footer-menu">
+                <h4>Menu</h4>
+                <ul>
+                  <li><a href="./index.html">Trang chủ</a></li>
+                  <li><a href="./aboutus.html">Về chúng tôi</a></li>
+                  <li><a href="./courses.html">Khoá học</a></li>
+                  <li><a href="./view-mentor-profile.html">Giảng viên</a></li>
+                  <li><a href="./lms.html">Nền tảng LMS</a></li>
+                  <li><a href="./blog.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-control">
                 <button class="btn btn-primary-custom p-2 mb-2">
                   Đăng ký khoá học
                 </button>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-3">
+            </div> -->
+            <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-contact">
                 <h4>Liên hệ với chúng tôi</h4>
                 <li>
-                  <i class="fa fa-map-marker"></i>
-                  <p class="m-0">260/19 Tân Binh, Hồ Chí Minh</p>
+                  <img src="/assets/images/icon-location.png" class="icon-location" alt="icon-location">
+                  <p class="m-0">Tòa S9.02A, Vinhomes Grand Park, Quận 9</p>
                 </li>
                 <li>
-                  <i class="fa fa-envelope"></i>
-                  <p class="m-0">bsmart@gmail.com</p>
+                  <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
+                  <p class="m-0">admin@bsmart.edu.vn</p>
                 </li>
                 <li>
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <p class="m-0">+98 946005077</p>
+                  <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
+                  <p class="m-0">028 9999 79 39</p>
                 </li>
               </div>
             </div>
@@ -673,6 +790,7 @@
     ></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/regester.js"></script>
     <script>
       function openTabRegister(name) {
         var i;

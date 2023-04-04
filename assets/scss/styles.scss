@@ -18,12 +18,14 @@
 @import "./private/homepage/_index.scss";
 // Import scss content aboutus
 @import "./private/aboutus/_index.scss";
-// Import scss login mobile page
-@import "./private/loginMobilePage/_index";
+// Import scss login page
+@import "./private/login/_index";
 // Import scss register component
 @import "./private/register/_index.scss";
 // Import scss courses component
 @import "./private/courses/_index.scss";
+// Import payment component
+@import "./private/payment/_index.scss";
 // Import scss course detail component
 @import "./private/course-detail/_index.scss";
 // Import scss mentor detail component
@@ -32,8 +34,10 @@
 @import "./private/blog/_index.scss";
 // Import scss member detail component
 @import "./private/member-detail/_index.scss";
+// Import scss member profile component
+@import "./private/member-profile/index";
 // Import scss annotation component
-@import "./private/annotation/_index.scss";
+@import "./private/announcement/_index.scss";
 // Import scss blog detail component
 @import "./private/blog-detail/_index.scss";
 // Import scss mentor edit component
@@ -48,6 +52,12 @@
 @import "./private/wallet-management/_index.scss";
 // Import feedback component
 @import "./private/feedback/_index.scss";
+// Import Forgot-password
+@import "./private/forgot-password/index.scss";
+// Import reset-password
+@import "./private/reset-password/index.scss";
+// Import member-profile-edit component
+@import "./private/member-profile-edit/_index.scss";
 // Import lms component
 @import "./private/lms/_index.scss";
 // Import scss footer component

@@ -1,32 +1,29 @@
-.create-course-wrapper {
-  .mentor-add-course {
-    // padding: 35px 20px 0;
-    .add-course-form {
-      color: $primary-color;
-      .image-container {
-        position: relative;
-        #frameImageCourse {
-          max-height: 260px;
-          border-radius: 10px;
-        }
-        .loading {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          width: 100%;
-          height: 100%;
-          display: none;
-          align-items: center;
-          justify-content: center;
-          background: rgba(255, 255, 255, 0.7);
-        }
-      }
-    }
-  }
+.create-course-wrapper .mentor-add-course .add-course-form {
+  color: #0e0a38;
 }
 
-// Thông tin khóa học
+.create-course-wrapper .mentor-add-course .add-course-form .image-container {
+  position: relative;
+}
+
+.create-course-wrapper .mentor-add-course .add-course-form .image-container #frameImageCourse {
+  max-height: 260px;
+  border-radius: 10px;
+}
+
+.create-course-wrapper .mentor-add-course .add-course-form .image-container .loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+
 .sup-autocom {
   background-color: #fff;
   width: 100%;
@@ -36,7 +33,7 @@
   border-radius: 5px 5px 0 0;
 }
 
-.sup-autocom.active .autocom-box{
+.sup-autocom.active .autocom-box {
   padding: 10px 8px;
 }
 
@@ -59,16 +56,16 @@
   width: 100%;
   cursor: default;
   border-radius: 3px;
-
-  &:hover {
-    background: #efefef;
-  }
 }
 
-// Tag 1
+.autocom-box li:hover {
+  background: #efefef;
+}
+
 .tag1-sup-autocom {
   position: relative;
 }
+
 .tag1-autocom-box {
   position: absolute;
   top: 42px;
@@ -80,9 +77,11 @@
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
 .tag1-sup-autocom.active .tag1-autocom-box li {
   display: block;
-} 
+}
+
 .tag1-autocom-box li {
   list-style: none;
   padding: 8px 12px;
@@ -90,16 +89,16 @@
   width: 100%;
   cursor: default;
   border-radius: 3px;
-
-  &:hover {
-    background: #efefef;
-  }
 }
 
-// Tag 2
+.tag1-autocom-box li:hover {
+  background: #efefef;
+}
+
 .tag2-sup-autocom {
   position: relative;
 }
+
 .tag2-autocom-box {
   position: absolute;
   top: 42px;
@@ -111,9 +110,11 @@
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
 .tag2-sup-autocom.active .tag2-autocom-box li {
   display: block;
-} 
+}
+
 .tag2-autocom-box li {
   list-style: none;
   padding: 8px 12px;
@@ -121,16 +122,16 @@
   width: 100%;
   cursor: default;
   border-radius: 3px;
-
-  &:hover {
-    background: #efefef;
-  }
 }
 
-// Tag 3
+.tag2-autocom-box li:hover {
+  background: #efefef;
+}
+
 .tag3-sup-autocom {
   position: relative;
 }
+
 .tag3-autocom-box {
   position: absolute;
   top: 42px;
@@ -142,9 +143,11 @@
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
 .tag3-sup-autocom.active .tag3-autocom-box li {
   display: block;
-} 
+}
+
 .tag3-autocom-box li {
   list-style: none;
   padding: 8px 12px;
@@ -152,16 +155,16 @@
   width: 100%;
   cursor: default;
   border-radius: 3px;
-
-  &:hover {
-    background: #efefef;
-  }
 }
 
-// Tag 4
+.tag3-autocom-box li:hover {
+  background: #efefef;
+}
+
 .tag4-sup-autocom {
   position: relative;
 }
+
 .tag4-autocom-box {
   position: absolute;
   top: 42px;
@@ -173,9 +176,11 @@
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
 .tag4-sup-autocom.active .tag4-autocom-box li {
   display: block;
-} 
+}
+
 .tag4-autocom-box li {
   list-style: none;
   padding: 8px 12px;
@@ -183,16 +188,16 @@
   width: 100%;
   cursor: default;
   border-radius: 3px;
-
-  &:hover {
-    background: #efefef;
-  }
 }
 
-// Tag 5
+.tag4-autocom-box li:hover {
+  background: #efefef;
+}
+
 .tag5-sup-autocom {
   position: relative;
 }
+
 .tag5-autocom-box {
   position: absolute;
   top: 42px;
@@ -204,9 +209,11 @@
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
 .tag5-sup-autocom.active .tag5-autocom-box li {
   display: block;
-} 
+}
+
 .tag5-autocom-box li {
   list-style: none;
   padding: 8px 12px;
@@ -214,16 +221,16 @@
   width: 100%;
   cursor: default;
   border-radius: 3px;
-
-  &:hover {
-    background: #efefef;
-  }
 }
 
-// Tag 6
+.tag5-autocom-box li:hover {
+  background: #efefef;
+}
+
 .tag6-sup-autocom {
   position: relative;
 }
+
 .tag6-autocom-box {
   position: absolute;
   top: 42px;
@@ -235,9 +242,11 @@
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
 .tag6-sup-autocom.active .tag6-autocom-box li {
   display: block;
-} 
+}
+
 .tag6-autocom-box li {
   list-style: none;
   padding: 8px 12px;
@@ -245,45 +254,131 @@
   width: 100%;
   cursor: default;
   border-radius: 3px;
-
-  &:hover {
-    background: #efefef;
-  }
 }
 
-// Lộ trình khóa học
+.tag6-autocom-box li:hover {
+  background: #efefef;
+}
+
 .course-route-title-name {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 22px;
 }
 
-.course-route-show-lecture {
-  p {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    line-height: 26px;
-    color: #333;
-
-    &:hover {
-      color: #ff630e;
-      opacity: 0.8;
-      transition: 0.3s all;
-    }
-  }
+#titleModule {
+  color: #0d6efd;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 6px;
+  margin: 6px;
+  margin-top: 22px;
+  font-weight: bold;
 }
 
-// Thời gian lớp học
+#titleModule:focus {
+  outline: none;
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+#contentModule {
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+#contentModule:focus {
+  outline: none;
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.createChild {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.createChild:hover {
+  color: #ff630e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.select2:hover {
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  border-radius: 4px;
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.closeIT {
+  border: none;
+  outline: none;
+  margin: 10px;
+  font-weight: 450;
+  background-color: transparent;
+}
+
+.closeIT:hover {
+  color: #ff630e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+input {
+  overflow: visible;
+  border: none;
+}
+
+#treeContainerBe ul {
+  list-style: none;
+  border-left: 1px solid black;
+  padding: 0;
+  margin: 0;
+  padding-left: 35px;
+}
+
+#treeContainerBe ul li {
+  position: relative;
+  text-transform: capitalize;
+}
+
+#treeContainerBe ul li:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: -35px;
+  background: black;
+  height: 1px;
+  width: 32px;
+}
+
 .btn-create-class {
   color: #fff;
   background-color: #ff630e;
+}
 
-  &:hover {
-    color: #fff;
-    background-color: #ff630e;
-    opacity: 0.8;
-    transition: 0.3s all;
-  }
+.btn-create-class:hover {
+  color: #fff;
+  background-color: #ff630e;
+  opacity: 0.8;
+  transition: 0.3s all;
 }
 
 .fa:hover {
@@ -299,9 +394,271 @@
   width: 100px;
 }
 
-// ._jw-tpk-dark
-// ._jw-tpk-container {
-//   position: absolute;
-//   top: 2000px;
-//   left: 0;
-// }
+.treetable .fa {
+  cursor: pointer;
+  padding-right: 6px;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.treetable .fa.fa-remove {
+  font-size: 20px;
+}
+
+.treetable .rowhidden {
+  display: none;
+}
+
+.treetable .j-addChild {
+  display: none;
+}
+
+.treetable .selected .j-addChild {
+  display: block;
+}
+
+.treetable .btn-outline {
+  background-color: transparent;
+}
+
+.treetable .form-control {
+  width: auto;
+  display: inline-block;
+}
+
+.treetable .textalign-center {
+  text-align: center;
+}
+
+.treetable .j-expend {
+  cursor: pointer;
+  width: 40% !important;
+  text-align: left !important;
+}
+
+.treetable .has-error .form-control {
+  color: red;
+  border: 1px solid red;
+}
+
+.treetable .maintitle {
+  width: 35% !important;
+}
+
+.treetable .j-remove {
+  margin-top: 9px;
+  cursor: pointer;
+  font-size: 16px;
+  color: red;
+}
+
+.treetable .class-level-2 .class-level-ul .j-expend {
+  position: relative;
+  left: 22px;
+  margin-right: 38px;
+}
+
+.treetable .class-level-3 .class-level-ul .j-expend {
+  position: relative;
+  left: 44px;
+}
+
+.treetable .class-level-4 .class-level-ul .j-expend {
+  position: relative;
+  left: 66px;
+}
+
+.treetable .class-level-1 {
+  margin-top: 32px;
+}
+
+.treetable .class-level-ul {
+  margin-top: 12px;
+  padding: 0;
+}
+
+.treetable .class-level-ul li {
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  list-style: none;
+}
+
+.treetable .class-level-ul:after {
+  display: block;
+  clear: both;
+  height: 0;
+  content: "\0020";
+}
+
+.treetable .tt-header div span {
+  width: auto;
+  line-height: 29px;
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+}
+
+.treetable .tt-body {
+  background-color: #FFF;
+}
+
+.treetable .tt-header div {
+  border-bottom: none;
+  background-color: #FFF;
+}
+
+.card1 {
+  margin-bottom: -1px;
+}
+
+.card-header .chevron {
+  float: right;
+}
+
+.card-header a.collapsed .fa-chevron-up {
+  display: none;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-down {
+  display: none;
+}
+
+.card-header a.collapsed .fa-chevron-down {
+  display: block;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-up {
+  display: block;
+}
+
+.card-header .chevron:before {
+  content: '\f078';
+  font-family: 'FontAwesome';
+}
+
+.card-header a.collapsed .chevron:before {
+  content: '\f054';
+}
+
+.card-header {
+  font-size: 17px;
+  padding: 20px;
+  margin-top: -1px;
+}
+
+.card-header i {
+  margin-right: 10px;
+}
+
+.card2 {
+  margin-bottom: -1px;
+}
+
+.card-header .chevron {
+  float: right;
+}
+
+.card-header a.collapsed .fa-chevron-up {
+  display: none;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-down {
+  display: none;
+}
+
+.card-header a.collapsed .fa-chevron-down {
+  display: block;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-up {
+  display: block;
+}
+
+.card-header .chevron:before {
+  content: '\f078';
+  font-family: 'FontAwesome';
+}
+
+.card-header a.collapsed .chevron:before {
+  content: '\f054';
+}
+
+.card-header {
+  font-size: 17px;
+  padding: 20px;
+  margin-top: -1px;
+}
+
+.card-header i {
+  margin-right: 10px;
+}
+
+.card3 {
+  margin-bottom: -1px;
+}
+
+.card-header .chevron {
+  float: right;
+}
+
+.card-header a.collapsed .fa-chevron-up {
+  display: none;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-down {
+  display: none;
+}
+
+.card-header a.collapsed .fa-chevron-down {
+  display: block;
+}
+
+.card-header a:not(.collapsed) .fa-chevron-up {
+  display: block;
+}
+
+.card-header .chevron:before {
+  content: '\f078';
+  font-family: 'FontAwesome';
+}
+
+.card-header a.collapsed .chevron:before {
+  content: '\f054';
+}
+
+.card-header {
+  font-size: 17px;
+  padding: 20px;
+  margin-top: -1px;
+}
+
+.card-header i {
+  margin-right: 10px;
+}
+
+.header-contact-info-create-course ul {
+  display: flex;
+  align-items: center;
+  margin-left: -44px;
+  color: #fff;
+}
+
+.header-contact-info-create-course ul li {
+  display: flex;
+  align-items: center;
+}
+
+.card-body {
+  border: 1px solid #c1c1c1;
+}
+
+.card-body1 {
+  display: flex;
+  width: 100%;
+  border: 1px solid #c1c1c1;
+}
+
+.card-body1 .p-4 {
+  margin-left: 100px;
+}

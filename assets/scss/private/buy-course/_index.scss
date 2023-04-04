@@ -1,61 +1,64 @@
-.buy-course-wrapper {
-  .banner__buy-course {
-    background-image: url(../images/banner-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 110px 0 100px;
-    position: relative;
-    z-index: -2;
-    h2 {
-      color: $secondary-color;
-      line-height: 30px;
-      letter-spacing: 2px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      font-size: 49px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 26px;
-      color: $grey-white-color;
-      a {
-        color: $grey-white-color;
-        transition: all 0.3s;
-        &:hover {
-          color: $secondary-color;
-        }
-      }
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(5, 1, 51, 0.7);
-    }
-  }
-  .section2 {
-    padding-top: 50px;
-    margin-bottom: 20px;
-    .box-infor {
-      h3 {
-        color: $secondary-color;
-        font-size: 24px;
-        font-weight: 500;
-        text-align: center;
-      }
-      p {
-        font-size: 16px;
-        font-weight: 500px;
-        color: $secondary-color;
+.buy-course-wrapper .banner__buy-course {
+  background-image: url(/assets/images/banner-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0 100px;
+  position: relative;
+  z-index: -2;
+}
 
-        padding-bottom: 10px;
-      }
-    }
-  }
+.buy-course-wrapper .banner__buy-course h2 {
+  color: #ff630e;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 49px;
+}
+
+.buy-course-wrapper .banner__buy-course p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #f5f5f5;
+}
+
+.buy-course-wrapper .banner__buy-course p a {
+  color: #f5f5f5;
+  transition: all 0.3s;
+}
+
+.buy-course-wrapper .banner__buy-course p a:hover {
+  color: #ff630e;
+}
+
+.buy-course-wrapper .banner__buy-course:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(5, 1, 51, 0.7);
+}
+
+.buy-course-wrapper .section2 {
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.buy-course-wrapper .section2 .box-infor h3 {
+  color: #ff630e;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.buy-course-wrapper .section2 .box-infor p {
+  font-size: 16px;
+  font-weight: 500px;
+  color: #ff630e;
+  padding-bottom: 10px;
 }

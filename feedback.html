@@ -37,6 +37,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Import bstr4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!-- Import css reset -->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <!-- Import css styles -->
@@ -59,12 +63,19 @@
       </div>
     </div>
     <!-- Preloader end -->
+
     <!-- Start Sidebar mobile -->
     <div class="sidebar-wrap" id="sidebar-mobile">
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <a href="./index.html" class="sidebar-logo">BSMART</a>
+            <a href="./index.html" class="sidebar-logo">
+              <img
+                src="/assets/images/icon-logo-mobile.png"
+                class="icon-logo-mobile"
+                alt="icon-logo"
+              />
+            </a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
           <div class="sidebar-center">
@@ -75,25 +86,25 @@
                 <a href="./courses.html">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Front End</a></li>
-                    <li><a href="#">Back End</a></li>
-                    <li><a href="#">Devops</a></li>
+                    <li><a href="courses.html">Front End</a></li>
+                    <li><a href="courses.html">Back End</a></li>
+                    <li><a href="courses.html">Devops</a></li>
                   </ul>
                 </div>
                 <a class="mean-expand" href="#">+</a>
                 <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
-                <a href="#">Giảng viên</a>
-                <div class="d-flex align-items-center justify-content-end">
+                <a href="view-mentor-profile.html">Giảng viên</a>
+                <!-- <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Mentor Long</a></li>
-                    <li><a href="#">Mentor Cuong</a></li>
+                    <li><a href="view-mentor-profile.html">Mentor Long</a></li>
+                    <li><a href="view-mentor-profile.html">Mentor Cuong</a></li>
                   </ul>
                 </div>
 
                 <a class="mean-expand" href="#">+</a>
-                <a class="mean-non-expand" href="#">-</a>
+                <a class="mean-non-expand" href="#">-</a> -->
               </li>
               <li><a href="./blog.html">Blog</a></li>
             </ul>
@@ -112,9 +123,9 @@
             </div>
             <ul class="contact-info">
               <li class="mb-3">
-                <i class="fa fa-envelope"></i> bsmart@gmail.com
+                <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> admin@bsmart.edu.vn
               </li>
-              <li><i class="fa fa-phone"></i> +98 946005077</li>
+              <li><img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 028 9999 79 39</li>
             </ul>
             <ul class="social-list">
               <li>
@@ -128,7 +139,7 @@
               </li>
             </ul>
             <ul class="sidebar-controls">
-              <li><a href="./login-mobile.html">Login</a></li>
+              <li><a href="./login.html">Login</a></li>
               <li><small>|</small></li>
               <li><a href="./register.html">Register</a></li>
             </ul>
@@ -137,6 +148,7 @@
       </div>
     </div>
     <!-- End Sidebar mobile -->
+
     <!-- Login form modal -->
     <div id="loginFormModal" class="login-form-container">
       <div
@@ -188,6 +200,7 @@
       </div>
     </div>
     <!-- End login form modal -->
+
     <div class="feedback-wrapper">
       <!-- Start header -->
       <header class="header-main">
@@ -196,12 +209,12 @@
             <div class="header-top-wrapper">
               <!-- Start header social -->
               <div class="header-top-social text-left">
-                <ul>
+                <ul class="list-icons-header">
                   <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-dribbble"></i></a>
@@ -212,20 +225,20 @@
               <!-- Start header contact info -->
               <div class="header-contact-info">
                 <ul>
-                  <li class="mb-3">
-                    <i class="fa fa-envelope"></i> bsmart@gmail.com
+                  <li class="me-4">
+                    <img src="/assets/images/icon-gmail.png" class="icon-gmail-header" alt="icon-gmail"> admin@bsmart.edu.vn
                   </li>
-                  <li><i class="fa fa-phone"></i> +98 946005077</li>
+                  <li><img src="/assets/images/icon-phone.png" class="icon-gmail-header" alt="icon-gmail"></i> 028 9999 79 39</li>
                 </ul>
               </div>
               <!-- End header contact info -->
               <!-- Start header search -->
-              <div class="header-course-search">
-                <form action="#" method="post">
+              <div class="header-course-search w-75 d-flex justify-content-center">
+                <form action="#" method="post" class="w-75">
                   <input
                     type="text"
                     placeholder="Tìm kiếm khoá học"
-                    class="form-control"
+                    class="form-control w-100"
                   />
                 </form>
                 <span><i class="fa fa-search"></i></span>
@@ -233,9 +246,11 @@
               <!-- End header search -->
               <div class="header-log-reg d-flex justify-content-end">
                 <ul>
-                  <li><a href="#" id="loginFormOpen">Login</a></li>
+                  <li>
+                    <a href="./login.html" id="loginFormOpen">Đăng nhập</a>
+                  </li>
                   <li><small>|</small></li>
-                  <li><a href="./register.html">Register</a></li>
+                  <li><a href="./register.html">Đăng ký</a></li>
                 </ul>
               </div>
             </div>
@@ -244,7 +259,13 @@
         <div class="header-bottom">
           <div class="container">
             <div class="header-bottom-wrapper">
-              <a href="./index.html"><span class="site-logo">BSMART</span></a>
+              <a href="./index.html"
+                ><span class="site-logo"
+                  ><img
+                    src="/assets/images/icon-logo.png"
+                    class="icon-logo"
+                    alt="icon-logo" /></span
+              ></a>
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="collapse navbar-collapse">
@@ -252,9 +273,7 @@
                     <!-- Menu cấp parent -->
                     <ul class="navbar-nav">
                       <li>
-                        <a
-                          href="./index.html"
-                          class="nav-link nav-link-custom active"
+                        <a href="./index.html" class="nav-link nav-link-custom"
                           >Trang Chủ</a
                         >
                       </li>
@@ -265,11 +284,7 @@
                           >Về Chúng Tôi</a
                         >
                       </li>
-                      <li>
-                        <a href="./lms.html" class="nav-link nav-link-custom"
-                          >Nền tảng LMS</a
-                        >
-                      </li>
+
                       <li>
                         <a
                           href="./courses.html"
@@ -281,7 +296,7 @@
                             class="content-sub-nav d-flex justify-content-between"
                           >
                             <div>
-                              <a href="#">Front End</a>
+                              <a href="courses.html">Front End</a>
                               <ul>
                                 <li>
                                   <a href="#"><span>+</span> Front End Basic</a>
@@ -298,7 +313,7 @@
                               </ul>
                             </div>
                             <div>
-                              <a href="#">Back End</a>
+                              <a href="courses.html">Back End</a>
                               <ul>
                                 <li>
                                   <a href="#"><span>+</span> NodeJS </a>
@@ -312,27 +327,35 @@
                               </ul>
                             </div>
                             <div>
-                              <a href="#">Devops</a>
+                              <a href="courses.html">Devops</a>
                             </div>
                           </div>
                         </div>
                       </li>
                       <li>
-                        <a href="#" class="nav-link nav-link-custom"
+                        <a href="view-mentor-profile.html" class="nav-link nav-link-custom"
                           >Giảng viên</a
                         >
-                        <ul class="sub-menu">
+                        <!-- <ul class="sub-menu">
                           <li>
-                            <a href="./mentor-detail.html">Mentor Cường</a>
+                            <a href="./view-mentor-profile.html">Mentor Cường</a>
                           </li>
                           <li>
-                            <a href="./mentor-detail.html">Mentor Long</a>
+                            <a href="./view-mentor-profile.html">Mentor Long</a>
                           </li>
-                        </ul>
+                        </ul> -->
                       </li>
 
                       <li>
-                        <a href="./blog.html" class="nav-link nav-link-custom"
+                        <a href="./lms.html" class="nav-link nav-link-custom"
+                          >Nền tảng LMS</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          href="./blog.html"
+                          class="nav-link nav-link-custom"
                           >Blog</a
                         >
                         <ul class="sub-menu">
@@ -342,21 +365,30 @@
                           <li>
                             <a href="./blog.html">Khuyến mãi</a>
                           </li>
-                          <li>
+                          <!-- <li>
                             <a href="./blog.html">Tuyển dụng</a>
-                          </li>
+                          </li> -->
                           <li>
                             <a href="./blog.html">Hoạt động</a>
                           </li>
                         </ul>
                       </li>
+                      <!-- <li>
+                        <a href="#" class="nav-link nav-link-custom"
+                          >Tuyển dụng</a
+                        >
+                      </li> -->
                     </ul>
                   </div>
                 </div>
               </nav>
               <div class="header-cart">
                 <a href="#"
-                  ><i class="fa fa-shopping-cart"></i>
+                  ><img
+                    src="/assets/images/icon-shopping-cart.jpg"
+                    class="icon-shopping-cart"
+                    alt="icon-shopping-cart"
+                  />
                   <span class="cart-total-number">0</span>
                 </a>
               </div>
@@ -366,7 +398,19 @@
         <div class="header-mobile">
           <div class="container">
             <div class="header-mobile-content">
-              <div class="header-mobile-logo"><span>BSMART</span></div>
+              <div class="header-mobile-logo"><span>
+                <a href="./index.html"><span class="site-logo">
+                  <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
+                </span></a>
+              </span></div>
+              <!-- Cart -->
+              <div class="header-cart">
+                <a href="payment.html">
+                  <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
+                  <span class="cart-total-number">0</span>
+                </a>
+              </div>
+              <!-- Cart -->
               <div class="header-mobile-menu-hambuger" id="activeMenu">
                 <i class="fa fa-bars"></i>
               </div>
@@ -375,8 +419,9 @@
         </div>
       </header>
       <!-- End header -->
+
       <!-- Start feedback -->
-      <section class="banner__feedback">
+      <!-- <section class="banner__feedback">
         <div class="container">
           <div class="caption-content text-center">
             <h2>Feedback</h2>
@@ -384,21 +429,20 @@
           </div>
         </div>
       </section>
-
       <section class="section-feedback">
         <div class="container">
           <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
               <div class="from-feedback">
-                <!--  -->
+
                 <div class="box-title">
                   <h3>
                     Đóng góp ý kiến cho chúng tôi về chất lượng giảng dạy của
                     giảng viên
                   </h3>
                 </div>
-                <!--  -->
+              
                 <div class="box-content">
                   <p>
                     Hãy cho chúng tôi biết cách chúng tôi có thể cải thiện trải
@@ -409,10 +453,10 @@
                     tiết nhé.
                   </p>
                 </div>
-                <!--  -->
+                
                 <div class="from-content">
                   <form action="/">
-                    <!-- Teacher -->
+                   
                     <label for="teacher"
                       >Chọn giản viên mà bạn muốn đánh giá:</label
                     ><br />
@@ -429,7 +473,7 @@
                     </select>
                     <br />
                     <hr class="sethr" />
-                    <!-- subject -->
+                   
                     <label for="subject"
                       >Chọn môn học mà bạn muốn đánh giá:</label
                     ><br />
@@ -450,7 +494,6 @@
                     </select>
                     <br />
                     <hr class="sethr" />
-                    <!--  -->
 
                     <label for="feeling"
                       >Bạn cảm thấy mức độ nhiệt tình của giáo viên như thế
@@ -490,7 +533,7 @@
                     />5
 
                     <br />
-                    <!--  -->
+                   
                     <hr />
                     <label for="YN"
                       >Giảng viên có giải đáp thắc mắc kịp thời ngay buổi học
@@ -513,7 +556,7 @@
 
                     <br />
                     <hr />
-                    <!--  -->
+                  
                     <label for="feeling"
                       >Giảng viên có thường xuyên hướng dẫn bài tập hay
                       không?</label
@@ -554,7 +597,231 @@
             <div class="col-md-3"></div>
           </div>
         </div>
-      </section>
+      </section> -->
+
+      <div class="feedback-container">
+        <!-- Header -->
+        <div class="feedback-header">
+          <h2>Khóa học cần đánh giá</h2>
+        </div>
+
+        <hr class="separator-bottom-feedback"/>
+
+        <!-- Body -->
+        <div class="feedback-body">
+          <div class="feedback-left">
+            <img src="/assets/images/avatar-mentor-1.jpg" class="feedback-left-img" alt="img-course">
+
+            <div class="feedback-left-info">
+              <h2>FRONT END BASIC</h2>
+              <h2>Giảng viên: Trương Long</h2>
+              <h2>6.500.000 VNĐ</h2>
+            </div>
+          </div>
+          
+          <div class="feedback-right">
+            <button class="feedback-right-btn" data-toggle="modal" data-target="#exampleModalCenter">VIẾT ĐÁNH GIÁ</button>
+          </div>
+
+          <!-- Show modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title title-feedback" id="exampleModalLongTitle">ĐÁNH GIÁ KHÓA HỌC</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="feedback-left-body">
+                    <img src="/assets/images/avatar-mentor-1.jpg" class="feedback-left-img" alt="img-course">
+                    <div class="feedback-left-info-body">
+                      <h2>FRONT END BASIC</h2>
+                      <h2>Giảng viên: Trương Long</h2>
+                      <h2>6.500.000 VNĐ</h2>
+                    </div>
+                  </div>
+
+                  <hr class="separator-bottom"/>
+
+                  <div class="feedback-icons">
+                    <h5>CHẤT LƯỢNG BÀI HỌC: </h5>
+                    <div class="testi-rating-feed">
+                      <button class="btn-star-feedback">
+                        <i class="fa fa-star" id="star-active-1"></i>
+                      </button>
+                      <button class="btn-star-feedback">
+                        <i class="fa fa-star" id="star-active-2"></i>
+                      </button>
+                      <button class="btn-star-feedback">
+                        <i class="fa fa-star" id="star-active-3"></i>
+                      </button>
+                      <button class="btn-star-feedback">
+                        <i class="fa fa-star" id="star-active-4"></i>
+                      </button>
+                      <button class="btn-star-feedback">
+                        <i class="fa fa-star" id="star-active-5"></i>
+                      </button>
+                    </div>
+                    <input type="text" id="value-star">
+                  </div>
+                  
+                  <!-- Write feedback -->
+                  <div class="write-feedback">
+                    <h5>VIẾT ĐÁNH GIÁ:</h5>
+                    <textarea rows="10" placeholder="Để lại đánh giá..."></textarea>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="feedback-right-btn-send">GỬI ĐÁNH GIÁ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="separator-bottom-feedback"/>
+
+        <div class="feedback-body">
+          <div class="feedback-left">
+            <img src="/assets/images/avatar-mentor-1.jpg" class="feedback-left-img" alt="img-course">
+
+            <div class="feedback-left-info">
+              <h2>FRONT END BASIC</h2>
+              <h2>Giảng viên: Trương Long</h2>
+              <h2>6.500.000 VNĐ</h2>
+            </div>
+          </div>
+
+          <div class="feedback-right">
+            <button class="feedback-right-btn" data-toggle="modal" data-target="#exampleModalCenter">VIẾT ĐÁNH GIÁ</button>
+          </div>
+
+          <!-- Show modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title title-feedback" id="exampleModalLongTitle">ĐÁNH GIÁ KHÓA HỌC</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="feedback-left-body">
+                    <img src="/assets/images/avatar-mentor-1.jpg" class="feedback-left-img" alt="img-course">
+                    <div class="feedback-left-info-body">
+                      <h2>FRONT END BASIC</h2>
+                      <h2>Giảng viên: Trương Long</h2>
+                      <h2>6.500.000 VNĐ</h2>
+                    </div>
+                  </div>
+
+                  <hr class="separator-bottom"/>
+
+                  <div class="feedback-icons">
+                    <h5>CHẤT LƯỢNG BÀI HỌC: </h5>
+                    <div class="testi-rating-feed">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                  
+                  <!-- Write feedback -->
+                  <div class="write-feedback">
+                    <h5>VIẾT ĐÁNH GIÁ:</h5>
+                    <textarea rows="10" placeholder="Để lại đánh giá..."></textarea>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="feedback-right-btn-send">GỬI ĐÁNH GIÁ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Select feedback -->
+      <div class="select-feedback-container">
+        <div class="feedback-header1">
+          <h2>Khóa học đã đánh giá</h2>
+        </div>
+        <hr class="separator-bottom-feedback"/>
+        <!-- Body -->
+        <div class="feedback-body">
+          <div class="feedback-left">
+            <img src="/assets/images/avatar-mentor-1.jpg" class="feedback-left-img" alt="img-course">
+
+            <div class="feedback-left-info">
+              <h2 class="select-feedback-left-info">FRONT END BASIC</h2>
+              <h2 class="select-feedback-left-info">Giảng viên: Trương Long</h2>
+              <h2 class="select-feedback-left-info">6.500.000 VNĐ</h2>
+            </div>
+          </div>
+          
+          <div class="feedback-right">
+            <button class="feedback-right-btn" data-toggle="modal" data-target="#exampleModalCenterSelectFeedback">XEM ĐÁNH GIÁ</button>
+          </div>
+
+          <!-- Show modal -->
+          <div class="modal fade" id="exampleModalCenterSelectFeedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterSelectFeedbackTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title title-feedback" id="exampleModalLongTitle">ĐÁNH GIÁ KHÓA HỌC</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="feedback-left-body">
+                    <img src="/assets/images/avatar-mentor-1.jpg" class="feedback-left-img" alt="img-course">
+                    <div class="feedback-left-info-body">
+                      <h2>FRONT END BASIC</h2>
+                      <h2>Giảng viên: Trương Long</h2>
+                      <h2>6.500.000 VNĐ</h2>
+                    </div>
+                  </div>
+
+                  <hr class="separator-bottom"/>
+
+                  <div class="feedback-icons">
+                    <h5>CHẤT LƯỢNG BÀI HỌC: </h5>
+                    <div class="testi-rating-feed">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                  
+                  <!-- Write feedback -->
+                  <div class="write-feedback">
+                    <!-- <h5>VIẾT ĐÁNH GIÁ:</h5>
+                    <textarea rows="10" placeholder="Để lại đánh giá..."></textarea> -->
+                    <p>Load bình luận ở đây...</p>
+                  </div>
+
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="feedback-right-btn-send">GỬI ĐÁNH GIÁ</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="separator-bottom-feedback"/>
+      </div>
+
       <!-- End feedback -->
       <footer class="footer">
         <div class="container">
@@ -564,17 +831,17 @@
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-4 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-4 mb-3">
               <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-4 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-4 mb-3">
               <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-4 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-4 mb-3">
               <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
@@ -582,11 +849,15 @@
           </div>
           <hr class="text-success mt-5 mb-5" />
           <div class="row">
-            <div class="col-lg-3 col-md-6 mb-3">
+            <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-logo">
-                <a href="#"
-                  ><span class="site-logo site-logo-footer">BSMART</span></a
-                >
+                <a href="index.html"
+                  ><span class="site-logo site-logo-footer"
+                    ><img
+                      src="/assets/images/icon-logo-footer.png"
+                      class="icon-logo"
+                      alt="icon-logo" /></span
+                ></a>
                 <p class="footer-about-description">
                   Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
                   các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
@@ -597,11 +868,11 @@
                   <li>
                     <a href="#"><i class="fa fa-facebook"></i></a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
+                  </li> -->
                   <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-pinterest"></i></a>
@@ -609,23 +880,26 @@
                   <li>
                     <a href="#"><i class="fa fa-instagram"></i></a>
                   </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-3">
-              <div class="footer-menu">
-                <h4>Menu</h4>
-                <ul>
-                  <li><a href="#">Trang chủ</a></li>
-                  <li><a href="#">Về chúng tôi</a></li>
-                  <li><a href="#">Nền tảng LMS</a></li>
-                  <li><a href="#">Khoá học</a></li>
-                  <li><a href="#">Giảng viên</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
+              <div class="footer-menu">
+                <h4>Menu</h4>
+                <ul>
+                  <li><a href="./index.html">Trang chủ</a></li>
+                  <li><a href="./aboutus.html">Về chúng tôi</a></li>
+                  <li><a href="./courses.html">Khoá học</a></li>
+                  <li><a href="./view-mentor-profile.html">Giảng viên</a></li>
+                  <li><a href="./lms.html">Nền tảng LMS</a></li>
+                  <li><a href="./blog.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-control d-flex align-items-center mt-5">
                 <a
                   href="./courses.html"
@@ -634,21 +908,21 @@
                   Đăng ký khoá học
                 </a>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-3">
+            </div> -->
+            <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-contact">
                 <h4>Liên hệ với chúng tôi</h4>
                 <li>
-                  <i class="fa fa-map-marker"></i>
-                  <p class="m-0">260/19 Tân Binh, Hồ Chí Minh</p>
+                  <img src="/assets/images/icon-location.png" class="icon-location" alt="icon-location">
+                  <p class="m-0">Tòa S9.02A, Vinhomes Grand Park, Quận 9</p>
                 </li>
                 <li>
-                  <i class="fa fa-envelope"></i>
-                  <p class="m-0">bsmart@gmail.com</p>
+                  <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
+                  <p class="m-0">admin@bsmart.edu.vn</p>
                 </li>
                 <li>
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <p class="m-0">+98 946005077</p>
+                  <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
+                  <p class="m-0">028 9999 79 39</p>
                 </li>
               </div>
             </div>
@@ -668,6 +942,10 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Import script Jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -686,5 +964,6 @@
     <script src="https://apis.google.com/js/api:client.js"></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/feedback.js"></script>
   </body>
 </html>

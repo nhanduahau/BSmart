@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // Owl carousel
   $(".owl-carousel").owlCarousel({
-    loop: true,
+    loop: false,
     margin: 10,
     nav: true,
     responsive: {
@@ -22,12 +22,12 @@ $(document).ready(function () {
   // ----------------------------------------------------------------
 
   // Open modal login
-  $("#loginFormClose").click(function (event) {
-    $("#loginFormModal").css("top", "-100%");
-  });
-  $("#loginFormOpen").click(function (event) {
-    $("#loginFormModal").css("top", "0");
-  });
+  // $("#loginFormClose").click(function (event) {
+  //   $("#loginFormModal").css("top", "-100%");
+  // });
+  // $("#loginFormOpen").click(function (event) {
+  //   $("#loginFormModal").css("top", "0");
+  // });
   // ----------------------------------------------------------------
 
   // Scorll smooth
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
   // Active sidebar
   $("#closeSidebar").click(function (event) {
-    var $sidebar = $("#sidebar-mobile").css("right", "-100%");
+    var $sidebar = $("#sidebar-mobile").css("right", "-200%");
   });
 
   $("#activeMenu").click(function (event) {
