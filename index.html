@@ -243,13 +243,16 @@
               <!-- End header contact info -->
 
               <!-- Start header search -->
-              <div class="header-course-search w-75 d-flex justify-content-center wrapper-search">
-                <!-- sup-autocom-search -->
-                <form action="#" method="post" class="w-75">
-                  <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" />
+              <div class="header-course-search w-75 d-flex justify-content-center">
+                <!--Form này bao tới cả search index - nơi đóng form sau RenderBody-->
+                <form action="/search/index" method="get" class="w-75" id="findCourse" style="display: flex">
+                    <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" name="NameCourse">
+                    <button type="submit" form="findCourse" style="display: contents">
+                        <span><i class="fa fa-search"></i></span>
+                    </button>
                 </form>
-                <span><i class="fa fa-search"></i></span>
-              </div>
+
+            </div>
               <!-- End header search -->
 
               <div class="header-log-reg d-flex justify-content-end">
