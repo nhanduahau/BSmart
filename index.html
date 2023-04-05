@@ -133,17 +133,24 @@
               <li><img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 028 9999 79 39</li>
             </ul>
             <br>
-            <!-- <ul class="social-list">
+            <ul class="social-list">
               <li>
+                <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+              </li>
+              <!-- <li>
                 <a href="#"><i class="fa fa-twitter"></i></a>
+              </li> -->
+              <li>
+                <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              </li>
+             
+              <li>
+                <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="index.html"><i class="fa fa-dribbble"></i></a>
               </li>
-              <li>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-              </li>
-            </ul> -->
+            </ul>
             <ul class="sidebar-controls">
               <li><a href="./login.html">Đăng nhập</a></li>
               <li><small>|</small></li>
@@ -224,9 +231,9 @@
                     <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                   </li>
                   
-                  <!-- <li>
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                  </li> -->
+                  <li>
+                    <a href="index.html"><i class="fa fa-dribbble"></i></a>
+                  </li>
                 </ul>
               </div>
               <!-- End header social -->
@@ -243,13 +250,16 @@
               <!-- End header contact info -->
 
               <!-- Start header search -->
-              <div class="header-course-search w-75 d-flex justify-content-center wrapper-search">
-                <!-- sup-autocom-search -->
-                <form action="#" method="post" class="w-75">
-                  <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" />
+              <div class="header-course-search w-75 d-flex justify-content-center">
+                <!--Form này bao tới cả search index - nơi đóng form sau RenderBody-->
+                <form action="/search/index" method="get" class="w-75" id="findCourse" style="display: flex">
+                    <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" name="NameCourse">
+                    <button type="submit" form="findCourse" style="display: contents">
+                        <span><i class="fa fa-search"></i></span>
+                    </button>
                 </form>
-                <span><i class="fa fa-search"></i></span>
-              </div>
+
+            </div>
               <!-- End header search -->
 
               <div class="header-log-reg d-flex justify-content-end">
@@ -1252,6 +1262,9 @@
                  
                   <li>
                     <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                  </li>
+                  <li>
+                    <a href="index.html"><i class="fa fa-dribbble"></i></a>
                   </li>
                 </ul>
 

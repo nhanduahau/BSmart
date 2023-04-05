@@ -52,7 +52,7 @@
       <div class="sidebar-content">
         <div class="sidebar-top">
           <a href="./index.html" class="sidebar-logo">
-            <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo" />
+            <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
           </a>
           <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
         </div>
@@ -79,8 +79,8 @@
                   <li><a href="view-mentor-profile.html">Mentor Long</a></li>
                   <li><a href="view-mentor-profile.html">Mentor Cuong</a></li>
                 </ul>
-              </div> -->
-<!-- 
+              </div>
+
               <a class="mean-expand" href="#">+</a>
               <a class="mean-non-expand" href="#">-</a> -->
             </li>
@@ -89,12 +89,19 @@
         </div>
         <div class="sidebar-bottom">
           <div class="search-course">
-            <form action="#" method="post">
-              <input type="text" placeholder="Tìm kiếm khoá học" class="form-control" />
-            </form>
+            <input type="text" name="NameCourseMobile" placeholder="Tìm kiếm khoá học" class="form-control" form="findCourse">
 
-            <span><i class="fa fa-search"></i></span>
-          </div>
+
+                <!-- <span><i class="fa fa-search"></i></span> -->
+            <button type="submit" class="btn-search-mobile"><i class="fa fa-search btn-search-mobile-icon"></i></button>
+
+            <style>
+                .btn-search-mobile-icon {
+                    margin-right: 80px;
+                }
+            </style>
+
+        </div>
           <ul class="contact-info">
             <li class="mb-3">
               <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> admin@bsmart.edu.vn
@@ -103,13 +110,20 @@
           </ul>
           <ul class="social-list">
             <li>
+              <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+            </li>
+            <!-- <li>
               <a href="#"><i class="fa fa-twitter"></i></a>
+            </li> -->
+            <li>
+              <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </li>
+           
+            <li>
+              <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-dribbble"></i></a>
+              <a href="index.html"><i class="fa fa-dribbble"></i></a>
             </li>
           </ul>
           <ul class="sidebar-controls">
@@ -181,9 +195,9 @@
                   <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                 </li>
                 
-                <!-- <li>
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
-                </li> -->
+                <li>
+                  <a href="index.html"><i class="fa fa-dribbble"></i></a>
+                </li>
               </ul>
             </div>
             <!-- End header social -->
@@ -201,12 +215,15 @@
             <!-- End header contact info -->
             <!-- Start header search -->
             <div class="header-course-search w-75 d-flex justify-content-center">
-              <form action="#" method="post" class="w-75">
-                <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100" />
-                <span><i class="fa fa-search"></i></span>
+              <!--Form này bao tới cả search index - nơi đóng form sau RenderBody-->
+              <form action="/search/index" method="get" class="w-75" id="findCourse" style="display: flex">
+                  <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" name="NameCourse">
+                  <button type="submit" form="findCourse" style="display: contents">
+                      <span><i class="fa fa-search"></i></span>
+                  </button>
               </form>
 
-            </div>
+          </div>
             <!-- End header search -->
             <div class="header-log-reg d-flex justify-content-end align-items-center">
               <span class="d-block me-3">
@@ -521,6 +538,9 @@
              
               <li>
                 <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+              </li>
+              <li>
+                <a href="index.html"><i class="fa fa-dribbble"></i></a>
               </li>
             </ul>
           </div>
