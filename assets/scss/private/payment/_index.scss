@@ -1020,6 +1020,16 @@ body {
 }
 
 // Icon question
+.icon-question-referral-code {
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.icon-question-referral-code:hover {
+  color: #fd7e14;
+  transition: all 0.2s;
+}
+
 .icon-question-payment {
   margin-left: 6px;
   cursor: pointer;

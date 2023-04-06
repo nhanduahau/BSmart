@@ -3301,6 +3301,16 @@ body {
   margin-right: 76px;
 }
 
+.icon-question-referral-code {
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.icon-question-referral-code:hover {
+  color: #fd7e14;
+  transition: all 0.2s;
+}
+
 .icon-question-payment {
   margin-left: 6px;
   cursor: pointer;
@@ -7668,6 +7678,11 @@ input {
     display: flex;
     flex: 1;
   }
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 18px;
+    margin-right: 1px;
+  }
   .icon-question-payment {
     margin-top: 4px;
     margin-left: 18px;
@@ -7855,6 +7870,14 @@ input {
   .card1-total-price-code-mobile-container {
     display: flex;
     flex: 1;
+  }
+  .card1-total-price-code-input-refer {
+    width: 100% !important;
+  }
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 15px;
+    margin-right: 0px;
   }
   .icon-question-payment {
     margin-top: 4px;
@@ -8433,7 +8456,12 @@ input {
     margin-top: 6px;
   }
   .card1-total-price-code-input-refer {
-    width: 70% !important;
+    width: 100% !important;
+  }
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 15px;
+    margin-right: 0px;
   }
   .card1-total-price-code-input {
     width: 65% !important;
@@ -9402,8 +9430,14 @@ input {
     margin-top: 22px;
     margin-bottom: 22px;
   }
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 30px;
+    margin-right: 0px;
+  }
   .card1-total-price-code-input-refer {
-    width: 79% !important;
+    width: 100% !important;
+    margin-left: 4px;
   }
   .card1-total-price-code-input {
     width: 65% !important;
@@ -10512,6 +10546,14 @@ input {
     font-weight: 400;
     padding: 5px !important;
   }
+  .card1-total-price-code-input-refer {
+    width: 100% !important;
+  }
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 15px;
+    margin-right: 0px;
+  }
   .card1 {
     transition: all 0.2s;
   }
@@ -10897,6 +10939,11 @@ input {
     width: 100% !important;
     margin-left: 0 !important;
   }
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 21px;
+    margin-right: 0px;
+  }
 }
 @media screen and (max-width: 360px) {
   .wrapper .contact-info .li-title-2 {
@@ -10972,4 +11019,249 @@ input {
   .wrapper .contact-info .li-title-2 {
     margin-left: 70px !important;
   }
+}
+@media only screen and (min-width: 481px) and (max-width: 499px) {
+  .card1-total-price-code-input-refer {
+    width: 100% !important;
+    margin-left: 42px !important;
+  }
+  .card1-total-price-code-input {
+    width: 100% !important;
+    margin-left: 104px !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .card1-total-price-code-input-refer {
+    width: 70% !important;
+    margin-left: 0px !important;
+  }
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 22px;
+    margin-right: 0px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+#content .content_landingpage .strong-terms-of-service, .title-terms-of-service1, .title-terms-of-service2, .title-terms-of-service3, .title-terms-of-service4, .title-terms-of-service5, .title-terms-of-service6 {
+  font-weight: 500;
+}
+
+#content .content_landingpage .title-terms-of-service3 {
+  font-size: 15px !important;
+}
+
+.title-terms-of-service1 {
+  font-size: 36px;
+}
+
+.title-terms-of-service2 {
+  font-size: 30px;
+}
+
+#content .content_landingpage {
+  font-size: 15px !important;
+  background-color: white;
+  line-height: 2.4;
+  word-wrap: break-word;
+  margin-top: 30px;
+}
+
+.title-terms-of-service1, .title-terms-of-service2, .title-terms-of-service3, .title-terms-of-service4, .title-terms-of-service5, .title-terms-of-service6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.title-terms-of-service1, .title-terms-of-service2, .title-terms-of-service3, .title-terms-of-service4, .title-terms-of-service5, .title-terms-of-service6 {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  line-height: 1.1;
+  color: inherit;
+  font-weight: 500;
+}
+
+.title-terms-of-service1 {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+          margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+          margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.title-terms-of-service2 {
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+          margin-block-start: 0.83em;
+  -webkit-margin-after: 0.83em;
+          margin-block-end: 0.83em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.title-terms-of-service3 {
+  display: block;
+  font-size: 1.17em;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.terms-of-service-content {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+#content .content_landingpage .ul-terms-of-service .li-terms-of-service {
+  list-style: disc;
+}
+
+#content .ul-terms-of-service .li-terms-of-service {
+  margin-left: 20px;
+}
+
+.li-terms-of-service::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  -moz-text-align-last: start !important;
+       text-align-last: start !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#content .content_landingpage .strong-privacy-policy, .title-privacy-policy1, .title-privacy-policy2, .title-privacy-policy3, .title-privacy-policy4, .title-privacy-policy5, .title-privacy-policy6 {
+  font-weight: 500;
+}
+
+#content .content_landingpage .title-privacy-policy3 {
+  font-size: 15px !important;
+}
+
+.title-privacy-policy1 {
+  font-size: 36px;
+}
+
+.title-privacy-policy2 {
+  font-size: 30px;
+}
+
+.title-privacy-policy1, .title-privacy-policy2, .title-privacy-policy3, .title-privacy-policy4, .title-privacy-policy5, .title-privacy-policy6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.title-privacy-policy1, .title-privacy-policy2, .title-privacy-policy3, .title-privacy-policy4, .title-privacy-policy5, .title-privacy-policy6 {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  line-height: 1.1;
+  color: inherit;
+  font-weight: 500;
+}
+
+.title-privacy-policy1 {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+          margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+          margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.title-privacy-policy2 {
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+          margin-block-start: 0.83em;
+  -webkit-margin-after: 0.83em;
+          margin-block-end: 0.83em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.title-privacy-policy3 {
+  display: block;
+  font-size: 1.17em;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.privacy-policy-content {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  margin: 0;
+}
+
+#content .content_landingpage {
+  list-style: disc;
+}
+
+#content {
+  margin-left: 20px;
+}
+
+#content .content_landingpage {
+  font-size: 15px !important;
+  background-color: white;
+  line-height: 2.4;
+  word-wrap: break-word;
+  margin-top: 30px;
 }/*# sourceMappingURL=styles.css.map */
