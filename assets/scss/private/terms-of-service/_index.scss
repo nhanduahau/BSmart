@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+#content .content_landingpage .strong-terms-of-service, .title-terms-of-service1, .title-terms-of-service2, .title-terms-of-service3, .title-terms-of-service4, .title-terms-of-service5, .title-terms-of-service6 {
+    font-weight: 500;
+}
+
+#content .content_landingpage .title-terms-of-service3 {
+    font-size: 15px !important;
+}
+
+.title-terms-of-service1 {
+    font-size: 36px;
+}
+
+.title-terms-of-service2 {
+    font-size: 30px;
+}
+
+#content .content_landingpage {
+    font-size: 15px !important;
+    background-color: white;
+    line-height: 2.4;
+    word-wrap: break-word;
+    margin-top: 30px;
+}
+
+.title-terms-of-service1, .title-terms-of-service2, .title-terms-of-service3, .title-terms-of-service4, .title-terms-of-service5, .title-terms-of-service6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.title-terms-of-service1, .title-terms-of-service2, .title-terms-of-service3, .title-terms-of-service4, .title-terms-of-service5, .title-terms-of-service6 {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    line-height: 1.1;
+    color: inherit;
+    font-weight: 500;
+}
+
+.title-terms-of-service1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+
+.title-terms-of-service2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.title-terms-of-service3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.terms-of-service-content {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#content .content_landingpage .ul-terms-of-service .li-terms-of-service {
+    list-style: disc;
+}
+
+#content .ul-terms-of-service .li-terms-of-service {
+    margin-left: 20px;
+}
+
+.li-terms-of-service::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}

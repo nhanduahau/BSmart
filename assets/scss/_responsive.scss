@@ -53,6 +53,13 @@
   flex: 1;
 }
 
+//fix question-icon
+.icon-question-referral-code {
+  margin-top: 4px;
+  margin-left: 18px;
+  margin-right: 1px;
+}
+
 .icon-question-payment {
   margin-top: 4px;
   margin-left: 18px;
@@ -297,6 +304,16 @@
   .card1-total-price-code-mobile-container {
     display: flex;
     flex: 1;
+  }
+  // fix question-icon
+  .card1-total-price-code-input-refer {
+    width: 100% !important;
+  }
+
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 15px;
+    margin-right: 0px;
   }
 
   .icon-question-payment {
@@ -1058,9 +1075,16 @@
     margin-top: 6px;
   }
   // payment 
-
+ 
+  // fix question-icon
   .card1-total-price-code-input-refer {
-    width: 70% !important;
+    width: 100% !important;
+  }
+
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 15px;
+    margin-right: 0px;
   }
 
   .card1-total-price-code-input {
@@ -2300,8 +2324,16 @@
     margin-bottom: 22px;
   }
 
+  // fix question-icon
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 30px;
+    margin-right: 0px;
+  }
+
   .card1-total-price-code-input-refer {
-    width: 79% !important;
+    width: 100% !important;
+    margin-left: 4px;
   }
 
   .card1-total-price-code-input {
@@ -3701,6 +3733,19 @@
   // feedback 
 
   // payment 
+
+
+  // fix question-icon
+  .card1-total-price-code-input-refer {
+    width: 100% !important;
+  }
+
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+
   .card1 {
     transition: all 0.2s;
   }
@@ -4181,6 +4226,8 @@
   }
   // payment
 
+  
+
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -4207,6 +4254,14 @@
     width: 100% !important;
     margin-left: 0 !important;
   }
+
+    // fix question-icon
+  
+    .icon-question-referral-code {
+      margin-top: 4px;
+      margin-left: 21px;
+      margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -4301,5 +4356,27 @@
   .wrapper .contact-info .li-title-2{
     margin-left: 70px !important;
     // justify-content: center !important;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 499px) {
+  .card1-total-price-code-input-refer {
+    width: 100% !important;
+    margin-left: 42px !important;
+  }
+
+  .card1-total-price-code-input {
+    width: 100% !important;
+    margin-left: 104px !important;
+  }
+}
+@media only screen and (max-width: 360px){
+  .card1-total-price-code-input-refer{
+    width: 70% !important;
+    margin-left: 0px !important;
+  }
+  .icon-question-referral-code{
+    margin-top: 4px;
+    margin-left: 22px;
+    margin-right: 0px;
   }
 }
