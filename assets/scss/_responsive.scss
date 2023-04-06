@@ -1735,6 +1735,10 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .display-options-container {
+    /* Show the display resolution and orientation sections */
+    display: block;
+  }
   // member-profile
   .span-title-1{
     width: 336px !important;
@@ -2052,9 +2056,9 @@
   .icon-arrow-1{
     display: block !important;
   }
-  .icon-arrow-2{
-    display: block !important;
-  }
+  // .icon-arrow-2{
+  //   display: block !important;
+  // }
   //course-detail
   .course-single-categories{
     margin: 0 !important;

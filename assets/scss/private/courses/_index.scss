@@ -382,3 +382,7 @@
   cursor: pointer;
   transition: all 0.3s;
 }
+.display-options-container {
+  /* Hide the display resolution and orientation sections by default */
+  display: none;
+}
