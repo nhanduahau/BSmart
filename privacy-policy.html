@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BSmart</title>
+    <title>Chính sách bảo mật</title>
     <!-- Import css bootstrap v5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -69,10 +69,17 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <a href="./index.html" class="sidebar-logo">
-              <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
+            <a href="./index.html">
+              <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
             </a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
+          </div>
+          <!-- Cart -->
+          <div class="header-cart">
+            <a href="payment.html">
+              <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
+              <span class="cart-total-number">0</span>
+            </a>
           </div>
           <div class="sidebar-center">
             <ul class="sidebar-mean-nav">
@@ -102,53 +109,45 @@
                 <a class="mean-expand" href="#">+</a>
                 <a class="mean-non-expand" href="#">-</a> -->
               </li>
-              <li><a href="./lms.html">Nền tảng LMS</a></li>
               <li><a href="./blog.html">Blog</a></li>
+              <li><a href="#">Tuyển dụng</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <input type="text" name="NameCourseMobile" placeholder="Tìm kiếm khoá học" class="form-control" form="findCourse">
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
 
-
-                  <!-- <span><i class="fa fa-search"></i></span> -->
-              <button type="submit" class="btn-search-mobile"><i class="fa fa-search btn-search-mobile-icon"></i></button>
-
-              <style>
-                  .btn-search-mobile-icon {
-                      margin-right: 80px;
-                  }
-              </style>
-
-          </div>
+              <!-- <span><i class="fa fa-search"></i></span> -->
+              <button class="btn-search-mobile"><i class="fa fa-search btn-search-mobile-icon"></i></button>
+            </div>
             <ul class="contact-info">
               <li class="mb-3">
                 <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> admin@bsmart.edu.vn
               </li>
               <li><img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 028 9999 79 39</li>
             </ul>
-            <ul class="social-list">
+            <br>
+            <!-- <ul class="social-list">
               <li>
-                <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-              </li>
-              <!-- <li>
                 <a href="#"><i class="fa fa-twitter"></i></a>
-              </li> -->
-              <li>
-                <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
               </li>
-             
               <li>
-                <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
               </li>
-              <!-- <li>
-                <a href="index.html"><i class="fa fa-dribbble"></i></a>
-              </li> -->
-            </ul>
+              <li>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
+            </ul> -->
             <ul class="sidebar-controls">
-              <li><a href="./login.html">Login</a></li>
+              <li><a href="./login.html">Đăng nhập</a></li>
               <li><small>|</small></li>
-              <li><a href="./register.html">Register</a></li>
+              <li><a href="./register.html">Đăng ký</a></li>
             </ul>
           </div>
         </div>
@@ -164,12 +163,12 @@
         <div class="login-form-content">
           <div class="close-login-form" id="loginFormClose">&times;</div>
           <h3 class="mb-3 text-center">Đăng nhập</h3>
-          <form action="#">
+          <form action="#" method="post">
             <div class="form-group mb-3">
-              <input type="text" placeholder="Email" class="form-control" />
+              <input type="text" value="tangbaotrann@gmail.com" placeholder="Email" class="form-control" />
             </div>
             <div class="form-group mb-3">
-              <input type="text" placeholder="Password" class="form-control" />
+              <input type="password" value="123456" placeholder="Password" class="form-control" />
             </div>
             <div
               class="form-check d-flex justify-content-between align-items-center mb-3"
@@ -187,7 +186,9 @@
               </div>
             </div>
             <div class="login-btn text-center mb-2">
-              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
+              <a href="./login-success.html" class="btn btn-primary-custom p-2"
+                >Đăng nhập</a
+              >
             </div>
             <div id="gSignInWrapper" class="mb-4 w-100">
               <div id="customBtn" class="customGPlusSignIn w-100">
@@ -197,16 +198,16 @@
             </div>
             <div class="new-registration text-center">
               <span>Bạn chưa có tài khoản?</span>
-              <a href="#" class="link-custom">Đăng ký ngay</a>
+              <a href="./register.html" class="link-custom">Đăng ký ngay</a>
             </div>
           </form>
         </div>
       </div>
     </div>
     <!-- End login form modal -->
-    <div class="aboutus-wrapper">
+    <div class="wrapper home-wrapper">
       <!-- Start header -->
-      <header class="header-main">
+      <header class="header-main position-relative">
         <div class="header-top">
           <div class="container">
             <div class="header-top-wrapper">
@@ -214,21 +215,18 @@
               <div class="header-top-social text-left">
                 <ul class="list-icons-header">
                   <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
                   </li>
-                  
-                  <!-- <li>
-                    <a href="index.html"><i class="fa fa-dribbble"></i></a>
-                  </li> -->
                 </ul>
               </div>
               <!-- End header social -->
+
               <!-- Start header contact info -->
               <div class="header-contact-info">
                 <ul>
@@ -239,22 +237,20 @@
                 </ul>
               </div>
               <!-- End header contact info -->
-              <!-- Start header search -->
-              <div class="header-course-search w-75 d-flex justify-content-center">
-                <!--Form này bao tới cả search index - nơi đóng form sau RenderBody-->
-                <form action="/search/index" method="get" class="w-75" id="findCourse" style="display: flex">
-                    <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" name="NameCourse">
-                    <button type="submit" form="findCourse" style="display: contents">
-                        <span><i class="fa fa-search"></i></span>
-                    </button>
-                </form>
 
-            </div>              <!-- End header search -->
+              <!-- Start header search -->
+              <div class="header-course-search w-75 d-flex justify-content-center wrapper-search">
+                <!-- sup-autocom-search -->
+                <form action="#" method="post" class="w-75">
+                  <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" />
+                </form>
+                <span><i class="fa fa-search"></i></span>
+              </div>
+              <!-- End header search -->
+
               <div class="header-log-reg d-flex justify-content-end">
                 <ul>
-                  <li>
-                    <a href="./login.html" id="loginFormOpen">Đăng nhập</a>
-                  </li>
+                  <li><a href="./login.html" id="loginFormOpen">Đăng nhập</a></li>
                   <li><small>|</small></li>
                   <li><a href="./register.html">Đăng ký</a></li>
                 </ul>
@@ -262,17 +258,20 @@
             </div>
           </div>
         </div>
+
+        <!-- Sup search -->
+        <div class="sup-autocom-search" >
+          <div class="autocom-box-search" style="display: none;">
+          </div>
+        </div>
+
         <div class="header-bottom">
           <div class="container">
             <div class="header-bottom-wrapper">
-              <a href="./index.html"
-                ><span class="site-logo">
-                  <img
-                    src="/assets/images/icon-logo.png"
-                    class="icon-logo"
-                    alt="icon-logo"
-                  /> </span
-              ></a>
+              <a href="./index.html">
+                <!-- <span class="site-logo"> -->
+                <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
+              <!-- </span></a> -->
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="collapse navbar-collapse">
@@ -280,14 +279,16 @@
                     <!-- Menu cấp parent -->
                     <ul class="navbar-nav">
                       <li>
-                        <a href="./index.html" class="nav-link nav-link-custom"
+                        <a
+                          href="./index.html"
+                          class="nav-link nav-link-custom active"
                           >Trang Chủ</a
                         >
                       </li>
                       <li>
                         <a
                           href="./aboutus.html"
-                          class="nav-link nav-link-custom active"
+                          class="nav-link nav-link-custom"
                           >Về Chúng Tôi</a
                         >
                       </li>
@@ -352,11 +353,13 @@
                           </li>
                         </ul> -->
                       </li>
+
                       <li>
                         <a href="./lms.html" class="nav-link nav-link-custom"
                           >Nền tảng LMS</a
                         >
                       </li>
+
                       <li>
                         <a href="./blog.html" class="nav-link nav-link-custom"
                           >Blog</a
@@ -386,31 +389,25 @@
                 </div>
               </nav>
               <div class="header-cart">
-                <a href="#"
-                  ><img
-                    src="/assets/images/icon-shopping-cart.jpg"
-                    class="icon-shopping-cart"
-                    alt="icon-shopping-cart"
-                  />
+                <a href="#">
+                  <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
                   <span class="cart-total-number">0</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
+        <!-- Header mobile -->
         <div class="header-mobile">
           <div class="container">
             <div class="header-mobile-content">
               <div class="header-mobile-logo">
-                <span>
-                  <img
-                    src="/assets/images/icon-logo-mobile.png"
-                    class="icon-logo-mobile"
-                    alt="icon-logo"
-                  />
-                </span>
+                <a href="./index.html">
+                  <span class="site-logo">
+                  <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
+                </span></a>
               </div>
-             
+              
               <!-- Cart -->
               <div class="header-mobile-menu-hambuger" id="activeMenu">
                 <i class="fa fa-bars"></i>
@@ -419,122 +416,88 @@
           </div>
         </div>
       </header>
-      <!-- End header -->
+    
+      <div v id="content" style="background-color: #f5f5f5; padding-top: 45px;">
+        <div class="row">
+          <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12 content_landingpage container">
+                <h1 class="title-terms-of-service1" style="text-align: center;">
+                  <strong class="strong-privacy-policy">CHÍNH SÁCH BẢO MẬT THÔNG TIN</strong>
+                </h1>
+                <p class="privacy-policy-content">
+                  <strong class="strong-privacy-policy">1. Chúng tôi thu thập những thông tin gì?</strong>
+                </p>
+                <p class="privacy-policy-content">Chúng tôi thu nhập thông tin từ bạn khi bạn đăng ký trên trang web của chúng tôi. </p>
+                <p class="privacy-policy-content">Dữ liệu cá nhân mà BSMART có thể thu thập bao gồm, nhưng không giới hạn:</p>
+                <p class="privacy-policy-content">a. Họ tên; </p>
+                <p class="privacy-policy-content">b. Ngày sinh; </p>
+                <p class="privacy-policy-content">c. Giới tính; </p>
+                <p class="privacy-policy-content">d. Địa chỉ</p>
+                <p class="privacy-policy-content">e. Email;</p>
+                <p class="privacy-policy-content">f. Tài khoản ngân hàng và thông tin thanh toán;</p>
+                <p class="privacy-policy-content">g. Số điện thoại;</p>
+                <p class="privacy-policy-content">h. Thông tin được gửi bởi hoặc liên quan đến (các) thiết bị được sử dụng để truy cập vào Các Dịch vụ hoặc Nền tảng của chúng tôi.</p>
+                <p class="privacy-policy-content">i. Bất kỳ thông tin nào khác về người dùng khi người dùng đăng nhập để sử dụng Các Dịch Vụ hoặc Nền tảng của chúng tôi/p>
+                <p class="privacy-policy-content">j. Dữ liệu tổng hợp về nội dung người dùng sử dụng.</p>
+                <p class="privacy-policy-content">Bạn có thể tự chỉnh sửa được tên trong trang quản lý tài khoản. Nếu cần đổi email đăng nhập hoặc số điện thoại, bạn cần gửi yêu cầu cho chúng tôi và trải qua các bước  xác thực.</p>
+                <br>
+              
+                <p class="privacy-policy-content">
+                  <strong class="strong-privacy-policy">2. Chúng tôi sẽ làm gì với thông tin của bạn?</strong>
+                </p> 
+                <p class="privacy-policy-content">BSMART sử dụng thông tin chúng tôi thu thập cho các mục đích:</p>
+                <p class="privacy-policy-content">a. Để xem xét và/hoặc xử lý đơn đăng ký/giao dịch; đăng ký email của bạn với chúng tôi</p>
+                <p class="privacy-policy-content">b. Để quản lý việc bạn sử dụng dịch vụ của chúng tôi </p>
+                <p class="privacy-policy-content">c. Để đáp ứng, xử lý, giải quyết hoặc hoàn tất một giao dịch và/hoặc đáp ứng các yêu cầu của bạn đối với các sản phẩm và dịch vụ nhất định và thông báo cho bạn về các vấn đề dịch vụ và các hoạt động tài khoản bất thường;</p>
+                <p class="privacy-policy-content">d. Để thực thi các Điều Khoản Dịch Vụ của chúng tôi</p>
+                <p class="privacy-policy-content">e. Để bảo vệ sự an toàn cá nhân và các quyền, tài sản hoặc sự an toàn của người khác;</p>
+                <p class="privacy-policy-content">f. Để nhận dạng và/hoặc xác minh;</p>
+                <p class="privacy-policy-content">g. để giải quyết hoặc tạo điều kiện dịch vụ khách hàng, thực hiện các khiếu nại của bạn, giải quyết hoặc trả lời bất kỳ thắc mắc nào được gửi bởi (hoặc nhằm được gửi bởi) bạn hoặc thay mặt bạn;</p>
+                <p class="privacy-policy-content">h.  Để liên hệ với bạn hoặc liên lạc với bạn qua điện thoại, tin nhắn văn bản, email nhằm mục đích quản trị quan hệ của bạn với chúng tôi</p>
+                <p class="privacy-policy-content">i.  Để gửi thông báo tới bạn qua trình duyệt hoặc qua ứng dụng BSMART trên điện thoại ;</p>
+                <p class="privacy-policy-content">j. Để tiến hành các hoạt động nghiên cứu, phân tích và phát triển (bao gồm, nhưng không giới hạn ở, phân tích dữ liệu, khảo sát, phát triển và/hoặc lập đặc tính sản phẩm và dịch vụ), để phân tích cách thức bạn sử dụng Các Dịch Vụ của chúng tôi, để cải thiện Các Dịch Vụ hoặc sản phẩm của chúng tôi và/hoặc để cải thiện trải nghiệm khách hàng của bạn</p>
+                <p class="privacy-policy-content">k.   Vì mục đích tiếp thị, gửi cho bạn qua email, thông tin và tài liệu tiếp thị và quảng bá liên quan đến các sản phẩm và/hoặc dịch vụ. Bạn có thể hủy đăng ký nhận các thông tin tiếp thị tại bất cứ thời điểm nào bằng cách sử dụng chức năng hủy đăng ký email. </p>
+                <p class="privacy-policy-content">l.  Để ngăn chặn hoặc điều tra bất kỳ hoạt động gian lận, phi pháp, thiếu sót hay hành vi sai trái nào, cho dù có liên quan đến việc bạn sử dụng Các Dịch Vụ của chúng tôi.</p>
+                <br>
+                
+                <p class="privacy-policy-content">
+                  <strong class="strong-privacy-policy">3. Bảo mật</strong>
+                </p>
+                <p class="privacy-policy-content">Bảo mật thông tin cá nhân của bạn là rất quan trọng với chúng tôi. Các thông đăng ký mua hàng của bạn sẽ được bảo mật bằng cách sử dụng công nghệ mã hóa an toàn SSL - Secure Sockets Layer. Không có phương pháp truyền qua Internet, hoặc phương pháp lưu trữ điện tử, là 100% an toàn. Vì vậy, trong khi chúng tôi cố gắng sử dụng phương tiện mã hóa an toàn để bảo vệ thông tin cá nhân của bạn, chúng tôi không thể đảm bảo an ninh tuyệt đối. Nếu bạn có bất kỳ câu hỏi về bảo mật trên trang web của chúng tôi, bạn có thể gửi email cho chúng tôi tại cskh@BSMART.VN </p>
+                <br>
 
-      <!-- Start Aboutus -->
-      <section class="banner__aboutus">
-        <div class="container">
-          <div class="caption-content text-center">
-            <h2>Về chúng tôi</h2>
-            <p>
-              <a href="./index.html"><strong>Trang chủ</strong></a><span> > </span><strong> Về chúng tôi</strong>
-          </p>
-          </div>
-        </div>
-      </section>
-      
-      <section class="aboutus1" id="">
-        <div class="container">
-          <div class="aboutus-content1">
-            <div class="row">
-              <div class="col-md-6 col-sm-12 content-aboutus-1">
-                <img class="img-2" src="assets\images\icon-logo.png" alt="">
-            <h1 class="title-banner1">Câu chuyện của một nhóm người với đam mê lập trình bất tận</h1>
+                <p class="privacy-policy-content">
+                  <strong class="strong-privacy-policy">4. Cookies và công nghệ phân tích dữ liệu khác</strong>
+                </p>
+                <p class="privacy-policy-content">Cookies là một lượng nhỏ dữ liệu, được gửi tới trình duyệt của bạn từ một trang web và được lưu trữ trên ổ đĩa cứng của máy tính. Cookies cho phép trang web hoặc hệ thống của các bên cung cấp dịch vụ nhận diện trình duyệt của bạn và lưu lại một số thông tin nhất định. Chúng tôi dùng cookies để hiểu và lưu trữ hoạt động của bạn và đáp ứng các nhu cầu của bạn tốt hơn cho lần truy cập sau.</p>
+                <p class="privacy-policy-content">Chúng tôi sử dụng Google Analytics như được mô tả trong <a href="https://policies.google.com/technologies/partner-sites" style="color: black">“Cách Google sử dụng dữ liệu khi bạn sử dụng trang web hoặc ứng dụng của các đối tác của chúng tôi”</a>. Bạn có thể ngăn chặn dữ liệu của bạn không cho Google Analytics sử dụng trên trang web bằng cách cài đặt trình bổ sung trình duyệt không tham gia Google Analytics <a href="https://tools.google.com/dlpage/gaoptout " style="color: black">tại đây</a>. Chúng tôi cũng sử dụng che dấu địa chỉ IP, một kỹ thuật được sử dụng để chặn các địa chỉ IP được thu thập bởi <a href="https://policies.google.com/technologies/partner-sites" style="color: black">Google Analytics</a> và lưu trữ chúng dưới dạng viết tắt để ngăn chặn bị truy tìm lại với người dùng cá nhân. Một số trang web của chúng tôi cũng có thể sử dụng Google Analytics cho Nhà quảng cáo Hiển thị Hình ảnh bao gồm DoubleClick hoặc Tiếp thị lại động cung cấp quảng cáo dựa trên sở thích dựa trên lượt truy cập của bạn vào trang web này hoặc các trang web khác. Bạn có thể sử dụng <a href="https://myadcenter.google.com/u/0/?sasb=true" style="color: black"  >Cài đặt Quảng cáo</a> để quản lý quảng cáo Google mà bạn nhìn thấy và chọn không tham gia quảng cáo dựa trên sở thích.</p>
+                <br>
+
+                <p>
+                  <strong class="strong-privacy-policy">5. Chúng tôi có cung cấp thông tin cho bên khác không?</strong>
+                </p>
+                <p class="privacy-policy-content">Chúng tôi không bán, trao đổi, hoặc sử dụng các hình thức thương mại khác với những thông tin cá nhân của bạn. Tuy nhiên, thông tin không định danh của những người truy cập vào trang web có thể được sử dụng và cung cấp cho các bên khác nhằm mục đích marketing, quảng cáo hoặc mục đích sử dụng khác.</p>
+                <br>
+                
+                <p class="privacy-policy-content">
+                  <strong class="strong-privacy-policy">6. Xóa tài khoản</strong>
+                </p> 
+                <p class="privacy-policy-content">Các cá nhân sở hữu tài khoản trên BSMART được quyền xóa bỏ tài khoản bất kỳ thời điểm nào. Chúng tôi chỉ hỗ trợ khôi phục trong trường hợp nhầm lẫn hoặc tài khoản bị tấn công trong thời gian 30 ngày kể từ thời điểm xóa. Để xóa tài khoản, truy cập tài khoản sở hữu, trên điều hướng nhấn vào biểu tượng Avatar, chọn mục "Xóa tài khoản", tiếp theo sẽ chuyển sang trang xác nhận trước khi xóa. Vui lòng đọc kỹ các thông tin được cung cấp trước khi thực sự làm hành động này.</p>
+                <br>
+
+                <p>
+                  <strong class="strong-privacy-policy">7. Nếu bạn có thắc mắc, hãy liên hệ với chúng tôi </strong>
+                </p>
+                <p class="privacy-policy-content">Gửi email tới cskh@ BSMART.vn </p>
+                <p class="privacy-policy-content">Địa chỉ liên hệ: Công ty cổ phần đào tạo trực tuyến BSMART</p>
+                <br>
+              </div>
+            </div>
             <br>
-            <p class="write-1">Từ việc nhận thấy được sự khó khăn, gặp rào cản về vấn đề học tập cũng như
-              bằng cấp của một số bạn có định hướng, đam mê về lập trình, BSmart đã tạo nên
-              một cộng đồng cho mọi đối tượng, mọi lứa tuổi, kết nối các bạn có cùng đam mê,
-              cùng thắc mắc để cùng phát triển. Người có kiến thức, khả năng tốt về lập trình
-              có mong muốn truyền đạt lại cho người mới bắt đầu hay có nhu cầu trau dồi khả
-              năng của mình thêm nữa. Người có nhu cầu tìm hiểu, học hỏi về lập trình có thể
-              lựa chọn người hướng dẫn có phương pháp giảng dạy mà bản thân cho là thu
-              hút, phù hợp với mình.</p>
-              </div>
-              <div class="col-md-6 col-sm-12" style="justify-content: center; margin-top: -20px !important;">
-                <div class="banner-aboutus1">
-                  <img class="img-1" src="assets\images\banner-aboutus.jpg" alt="Hinh anh" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="banner1">
-        <div class="container1">
-            <div class="caption-content text-center">
-                <h2>SỨ MỆNH VÀ TẦM NHÌN</h2>
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12">
-                        <p>Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.</p>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-center">
-                      <div class="my-element"></div>
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-sm-12">
-                        <p>Ở BSmart, chúng tôi nói không với sự muộn màng, dù là bạn người đến từ lĩnh vực ngoài công nghệ, dù bạn đến từ độ tuổi nào, chúng tôi luôn khai phá được tiềm năng ở bên trong bạn.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="information-2">
-      <div class="content-2">
-        <div class="row">
-          <div class="caption_img">
-            <div class="title_img_aboutus">
-            </div>
-            <img class="img-aboutus-3" src="assets\images\WEB-01.png" alt="img-aboutus" style="max-width: 100%; height: auto;">
-            <img class="img-aboutus-4" src="assets\images\MOBILE-01.png" alt="img-aboutus" style="max-width: 100%; height: auto;display: none;">
-          </div>
-        </div>
+            <br>
+            <br>
       </div>
-    </section>
 
-    <!-- <section class="information-1">
-      <div class="content-1">
-        <div class="row">
-          <div class="img_aboutus_3">
-            <button class="bt-aboutus_1">ĐĂNG KÝ NGAY</button>
-            <img class="img-aboutus-end" src="assets\images\export 04-01.png" alt="hinh_anh" style="width: 100%;">
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <section class="information-1">
-      <div class="content-1">
-        <div class="row">
-          <div class="caption_img1">
-            <div class="img_aboutus_3">
-              <a href="courses.html"><button class="bt-aboutus_1">ĐĂNG KÝ NGAY!</button></a>
-            </div>
-            <img class="img-aboutus-end" src="assets\images\export 04-01.png" alt="hinh_anh" style="width: 100%;">
-            <img class="img-aboutus-end-1" src="assets\images\CÁCH VẬN HÀNH_KHÔNG CÓ NÚT.png" alt="hinh_anh" style="width: 100%;display: none;">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <br>
-
-    <section class="information">
-      <div class="container">
-        <div class="row">
-          <div class="introduction">
-            <h3>LỘ TRÌNH PHÁT TRIỂN</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="mt-5">
-      <div class="employ__box">
-        <img class="img-aboutus-1" src="assets\images\LỘ TRÌNH PHÁT TRIỂN-01.png" alt="hinh anh"/>
-        <img class="img-aboutus-2" src="assets\images\MOBILE PAGE-01.png" alt="hinh anh"/>
-      </div>
-    </div> 
-      <br>
-
+       <!-- Start footer -->
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -563,9 +526,11 @@
           <div class="row">
             <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-logo">
-                <a href="index.html"><span class="site-logo site-logo-footer" style="margin-left: 20px;">
+                <a href="index.html"
+                  ><span class="site-logo site-logo-footer">
                     <img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo">
-                  </span></a>
+                  </span></a
+                >
                 <p class="footer-about-description">
                   Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
                   các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
@@ -574,7 +539,7 @@
                 <h6>Theo dõi chúng tôi tại:</h6>
                 <ul class="footer-social-icons">
                   <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
                   </li>
                   <!-- <li>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -582,13 +547,15 @@
                   <li>
                     <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
-                 
+                  <li>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                  </li>
                   <li>
                     <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                   </li>
-                  <!-- <li>
-                    <a href="index.html"><i class="fa fa-dribbble"></i></a>
-                  </li> -->
                 </ul>
               </div>
             </div>
@@ -608,15 +575,15 @@
               </div>
             </div>
             <!-- <div class="col-lg-4 col-md-6 mb-3">
-                  <div class="footer-control d-flex align-items-center mt-5">
-                    <a
-                      href="./courses.html"
-                      class="btn btn-primary-custom p-2 mb-2"
-                    >
-                      Đăng ký khoá học
-                    </a>
-                  </div>
-                </div> -->
+              <div class="footer-control d-flex align-items-center mt-5">
+                <a
+                  href="./courses.html"
+                  class="btn btn-primary-custom p-2 mb-2"
+                >
+                  Đăng ký khoá học
+                </a>
+              </div>
+            </div> -->
             <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-contact">
                 <h4>Liên hệ với chúng tôi</h4>
@@ -643,6 +610,8 @@
           </p>
         </div>
       </footer>
+      <!-- End footer -->
+    </div>
     <!-- Import script bootstrap V5 -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -663,10 +632,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- API google -->
+    <script src="https://apis.google.com/js/api:client.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/initialSwiper.js"></script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
-  </body>
-</html>
+    <script type="text/javascript" src="./assets/js/main.js"></script>  
+    <script type="text/javascript" src="./assets/js/search.js"></script> 
+    </body>
+    </html>
