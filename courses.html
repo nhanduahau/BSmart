@@ -66,7 +66,11 @@
         <div class="sidebar-content">
           <div class="sidebar-top">
             <a href="./index.html" class="sidebar-logo">
-              <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
+              <img
+                src="/assets/images/icon-logo-mobile.png"
+                class="icon-logo-mobile"
+                alt="icon-logo"
+              />
             </a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
@@ -98,25 +102,21 @@
                 <a class="mean-expand" href="#">+</a>
                 <a class="mean-non-expand" href="#">-</a> -->
               </li>
-              <li><a href="./lms.html">Nền tảng LMS</a></li>
               <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <input type="text" name="NameCourseMobile" placeholder="Tìm kiếm khoá học" class="form-control" form="findCourse">
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
 
-
-                  <!-- <span><i class="fa fa-search"></i></span> -->
-              <button type="submit" class="btn-search-mobile"><i class="fa fa-search btn-search-mobile-icon"></i></button>
-
-              <style>
-                  .btn-search-mobile-icon {
-                      margin-right: 80px;
-                  }
-              </style>
-
-          </div>
+              <span><i class="fa fa-search"></i></span>
+            </div>
             <ul class="contact-info">
               <li class="mb-3">
                 <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> admin@bsmart.edu.vn
@@ -125,26 +125,19 @@
             </ul>
             <ul class="social-list">
               <li>
-                <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-              </li>
-              <!-- <li>
                 <a href="#"><i class="fa fa-twitter"></i></a>
-              </li> -->
-              <li>
-                <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
               </li>
-             
               <li>
-                <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
               </li>
-              <!-- <li>
-                <a href="index.html"><i class="fa fa-dribbble"></i></a>
-              </li> -->
+              <li>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
             </ul>
             <ul class="sidebar-controls">
-              <li><a href="./login.html">Login</a></li>
+              <li><a href="./login.html">Đăng nhập</a></li>
               <li><small>|</small></li>
-              <li><a href="./register.html">Register</a></li>
+              <li><a href="./register.html">Đăng ký</a></li>
             </ul>
           </div>
         </div>
@@ -214,18 +207,14 @@
               <div class="header-top-social text-left">
                 <ul class="list-icons-header">
                   <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
                   </li>
-                  
-                  <!-- <li>
-                    <a href="index.html"><i class="fa fa-dribbble"></i></a>
-                  </li> -->
                 </ul>
               </div>
 
@@ -242,15 +231,15 @@
               <!-- End header contact info -->
               <!-- Start header search -->
               <div class="header-course-search w-75 d-flex justify-content-center">
-                <!--Form này bao tới cả search index - nơi đóng form sau RenderBody-->
-                <form action="/search/index" method="get" class="w-75" id="findCourse" style="display: flex">
-                    <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" name="NameCourse">
-                    <button type="submit" form="findCourse" style="display: contents">
-                        <span><i class="fa fa-search"></i></span>
-                    </button>
+                <form action="#" method="post" class="w-75">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm khoá học"
+                    class="form-control w-100"
+                  />
                 </form>
-
-            </div>
+                <span><i class="fa fa-search"></i></span>
+              </div>
               <!-- End header search -->
               <div class="header-log-reg d-flex justify-content-end">
                 <ul>
@@ -446,129 +435,187 @@
               <div class="course-sidebar">
 
                 <!-- Khoảng giá -->
-                <div class="row mb-3">
-                  <div class="col-lg-12 col-md-12 mb-2">
-                    <p class="course-side-lbl-item">Khoảng giá: </p>
+              
+                <form action="#" method="post" class="tag__course tag_r">
+                  <div class="d-flex align-items-center">
+                    <div class="display-options-container">
+                      <!-- Display resolution and orientation sections here -->
+                      <i class="fa fa-arrow-down icon-arrow-2 me-2"></i>
+                      <i class="fa fa-arrow-up icon-arrow-3 me-2" style="display: none;"></i>
+                    </div>
+                  <h3 onclick="showMore(`showSubMobile2`)">
+                    KHOẢNG GIÁ: </h3>
                   </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 mb-2 custom-price-item">
-                    <input type="checkbox" /> <p>Tất cả</p>
+                  <div id="showSubMobile2" class="tag__course d-xs-none">
+                    <div>
+                      <div class="d-flex align-items-center custom-price-item">
+                        <input type="checkbox" class="form-check me-1" id="myCheckbox"/>
+                        <label for="myCheckbox"><p style="color: gray; font-size: 0.9rem;">Tất cả</p></label>
+                      </div>
+                      <div class="d-flex align-items-center custom-price-item">
+                        <input type="checkbox" class="form-check me-1" id="myCheckbox1"/>
+                        <label for="myCheckbox1"><p style="color: gray; font-size: 0.9rem;">Dưới 1.000.000 đ</p></label>
+                      </div>
+                      <div class="d-flex align-items-center custom-price-item">
+                        <input type="checkbox" class="form-check me-1" id="myCheckbox2"/>
+                        <label for="myCheckbox2"><p style="color: gray; font-size: 0.9rem;">Dưới 2.000.000 đ</p></label>
+                      </div>
+                      <div class="d-flex align-items-center custom-price-item">
+                        <input type="checkbox" class="form-check me-1" id="myCheckbox3"/>
+                        <label for="myCheckbox3"><p style="color: gray; font-size: 0.9rem;">Dưới 3.000.000 đ</p></label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 mb-2 custom-price-item">
-                    <input type="checkbox" /> <p>Dưới 1.000.000 đ</p>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 mb-2 custom-price-item">
-                    <input type="checkbox" /> <p>Dưới 2.000.000 đ</p>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 custom-price-item">
-                    <input type="checkbox" /> <p>Dưới 3.000.000 đ</p>
-                  </div>
-                </div>
+                </form>
 
                 <!-- Hình thức học -->
-                <div class="row mb-3">
-                  <div class="col-lg-12 col-md-12 mb-1">
-                    <p class="course-side-lbl-item">Hình thức học: </p>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 d-flex align-items-start flex-column">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" class="form-check me-1" /> <p style="color: gray; font-size: 0.9rem;">Online</p>
+                
+                <form action="#" method="post" class="tag__course tag_r">
+                  <div class="d-flex align-items-center">
+                    <div class="display-options-container">
+                      <!-- Display resolution and orientation sections here -->
+                      <i class="fa fa-arrow-down icon-arrow-2 me-2"></i>
+                      <i class="fa fa-arrow-up icon-arrow-3 me-2" style="display: none;"></i>
                     </div>
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" class="form-check me-1" /> <p style="color: gray; font-size: 0.9rem;">Offline</p>
+                  <h3 onclick="showMore(`showSubMobile1`)">
+                    HÌNH THỨC HỌC: </h3>
+                  </div>
+                  <div id="showSubMobile1" class="tag__course d-xs-none">
+                    <div>
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="form-check me-1" id="myCheckbox4"/>
+                        <label for="myCheckbox4"><p style="color: gray; font-size: 0.9rem;">Online</p></label>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="form-check me-1" id="myCheckbox5"/>
+                        <label for="myCheckbox5"><p style="color: gray; font-size: 0.9rem;">Offline</p></label>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </form>
 
                 <!-- Level -->
-                <div class="row mb-3">
-                  <div class="col-lg-12 col-md-12 mb-1">
-                    <p class="course-side-lbl-item">Trình độ: </p>
+                <form action="#" method="post" class="tag__course tag_r">
+                  <div class="d-flex align-items-center">
+                    <div class="display-options-container">
+                      <!-- Display resolution and orientation sections here -->
+                      <i class="fa fa-arrow-down icon-arrow-2 me-2"></i>
+                      <i class="fa fa-arrow-up icon-arrow-3 me-2" style="display: none;"></i>
+                    </div>
+                  <h3 onclick="showMore(`showSubMobi`)">
+                    Trình độ: </h3>
                   </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" class="form-check me-1" /> 
-                      <p style="color: gray; font-size: 0.9rem;">Dễ</p>
-                      <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course" style="margin-left: 50px;">
-                    </div>
-                    <div class="d-flex align-items-center" style="margin-top: -10px;">
-                      <input type="checkbox" class="form-check me-1" /> 
-                      <p style="color: gray; font-size: 0.9rem;">Trung bình</p>
-                      <img src="/assets/images/icon-title-course-2.png" class="icon-title-course" alt="icon-title-course" />
-                    </div>
-                    <div class="d-flex align-items-center" style="margin-top: -10px;">
-                      <input type="checkbox" class="form-check me-1" /> 
-                      <p style="color: gray; font-size: 0.9rem;">Khó</p>
-                      <img src="/assets/images/icon-title-course-3.png" class="icon-title-course" alt="icon-title-course" style="margin-left: 44px;">
-                    </div>
-                    <div class="d-flex align-items-center" style="margin-top: -10px;">
-                      <input type="checkbox" class="form-check me-1" /> 
-                      <p style="color: gray; font-size: 0.9rem;">Cực khó</p>
-                      <img src="/assets/images/icon-title-course-4.png" class="icon-title-course" alt="icon-title-course" style="margin-left: 16px;">
+                  <div id="showSubMobi" class="tag__course d-xs-none">
+                    <div>
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="form-check me-1" id="myCheckbox6"/>
+                        <label for="myCheckbox6"><p style="color: gray; font-size: 0.9rem;">Dễ</p></label>
+                        <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course" style="margin-left: 50px;">
+                      </div>
+                      <div class="d-flex align-items-center" style="margin-top: -10px;">
+                        <input type="checkbox" class="form-check me-1" id="myCheckbox7"/>
+                        <label for="myCheckbox7"><p style="color: gray; font-size: 0.9rem;">Trung bình</p></label>
+                        <img src="/assets/images/icon-title-course-2.png" class="icon-title-course" alt="icon-title-course" />
+                      </div>
+                     
+
+                      <div id="subject">
+                        <div class="d-flex align-items-center" style="margin-top: -10px;">
+                          <input type="checkbox" class="form-check me-1" id="myCheckbox8"/>
+                          <label for="myCheckbox8"><p style="color: gray; font-size: 0.9rem;">Khó</p></label>
+                          <img src="/assets/images/icon-title-course-3.png" class="icon-title-course" alt="icon-title-course" style="margin-left: 44px;">
+                        </div>
+                        <div class="d-flex align-items-center" style="margin-top: -10px;">
+                          <input type="checkbox" class="form-check me-1" id="myCheckbox9"/>
+                          <label for="myCheckbox9"><p style="color: gray; font-size: 0.9rem;">Cực khó</p></label>
+                          <img src="/assets/images/icon-title-course-4.png" class="icon-title-course" alt="icon-title-course" style="margin-left: 16px;">
+                        </div>
+                      </div>
+                      <!-- Show more ,`upIcon1`,`downIcon1`-->
+                      <div
+                        id="showMore"
+                        onclick="showMoreLocal(`subject`,`txtShowTitle1`, `upIcon1`, `downIcon1`)"
+                      >
+                        <a class="txtShow">
+                          <span id="txtShowTitle1">Thu gọn</span>
+                          <i
+                            id="downIcon1"
+                            style="display: none;"
+                            class="fa fa-arrow-down"
+                            aria-hidden="true"
+                          ></i>
+                          <i
+                            id="upIcon1"
+                            style="display: block;"
+                            class="fa fa-arrow-up"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </form>
 
                 <!-- Lĩnh vực -->
-                <form action="#" method="post" class="category__course tag_r">
+                <form action="#" method="post" class="tag__course tag_r">
                   <div class="d-flex align-items-center">
-                    <i class="fa fa-arrow-down icon-arrow-1 me-2" style="display: none;"></i>
-                    <h3 class="me-2" onclick="showMore(`showLvMobile`)">
-                      Lĩnh vực            
-                    </h3>
-                    <!-- <span class="openFilterCourse"
-                      ><i class="fa fa-arrow-down"></i
-                    ></span>
-                    <span class="closeFilterCourse"
-                      ><i class="fa fa-arrow-up" style="display: none"></i
-                    ></span> -->
+                    <div class="display-options-container">
+                      <!-- Display resolution and orientation sections here -->
+                      <i class="fa fa-arrow-down icon-arrow-2 me-2"></i>
+                      <i class="fa fa-arrow-up icon-arrow-3 me-2" style="display: none;"></i>
+                    </div>
+                  <h3 onclick="showMore(`showSubMobile3`)">
+                    Lĩnh vực: </h3>
                   </div>
-                  <!-- Show content -->
-                  <div id="showLvMobile" class="categories__course d-xs-none">
-                    <div class="checkbox__course">
-                      <input id="idFontEnd" type="checkbox" />
-                      <label for="idFontEnd">Front End</label>
-                    </div>
-                    <div class="checkbox__course">
-                      <input id="idBackEnd" type="checkbox" />
-                      <label for="idBackEnd">Back End</label>
-                    </div>
-                    <div id="linhVuc">
-                      <div class="checkbox__course">
-                        <input id="idDevops" type="checkbox" />
-                        <label for="idDevops">Devops</label>
+                  <div id="showSubMobile3" class="tag__course d-xs-none">
+                    <div>
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="form-check me-1" id="myCheckbox10"/>
+                        <label for="myCheckbox10"><p style="color: gray; font-size: 0.9rem;">Front End</p></label>
                       </div>
-                      <div class="checkbox__course">
-                        <input id="idDatabase" type="checkbox" />
-                        <label for="idDatabase">Database</label>
+                      <div class="d-flex align-items-center" style="margin-top: -10px;">
+                        <input type="checkbox" class="form-check me-1" id="myCheckbox11"/>
+                        <label for="myCheckbox11"><p style="color: gray; font-size: 0.9rem;">Back End</p></label>
                       </div>
-                    </div>
-                    <!-- Show more -->
-                    <div
-                      id="showMore"
-                      onclick="showMoreLocal(`linhVuc`, `txtShowTitle`, `upIcon`, `downIcon`)"
-                    >
-                      <a class="txtShow">
-                        <!-- Xem thêm -->
-                        <span id="txtShowTitle">Thu gọn</span>
-                        <i
-                          id="downIcon"
-                          style="display: none;"
-                          class="fa fa-arrow-down"
-                          aria-hidden="true"
-                        ></i>
-                        <i
-                          id="upIcon"
-                          style="display: block;"
-                          class="fa fa-arrow-up"
-                          aria-hidden="true"
-                        ></i>
-                      </a>
+                     
+
+                      <div id="linhvuc">
+                        <div class="d-flex align-items-center" style="margin-top: -10px;">
+                          <input type="checkbox" class="form-check me-1" id="myCheckbox12"/>
+                          <label for="myCheckbox12"><p style="color: gray; font-size: 0.9rem;">Devops</p></label>
+                        </div>
+                        <div class="d-flex align-items-center" style="margin-top: -10px;">
+                          <input type="checkbox" class="form-check me-1" id="myCheckbox13"/>
+                          <label for="myCheckbox13"><p style="color: gray; font-size: 0.9rem;">Database</p></label>
+                        </div>
+                      </div>
+                      <!-- Show more ,`txtShowTitle4`, `upIcon4`, `downIcon4`-->
+                      <div
+                        id="showMore"
+                        onclick="showMoreLocal(`linhvuc`,`txtShowTitle4`, `upIcon4`, `downIcon4`)"
+                      >
+                        <a class="txtShow">
+                          <span id="txtShowTitle4">Thu gọn</span>
+                          <i
+                            id="downIcon4"
+                            style="display: none;"
+                            class="fa fa-arrow-down"
+                            aria-hidden="true"
+                          ></i>
+                          <i
+                            id="upIcon4"
+                            style="display: block;"
+                            class="fa fa-arrow-up"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </form>
 
                 <!-- Languages -->
-                <form action="#" method="post" class="tag__course tag_r">
+                <!-- <form action="#" method="post" class="tag__course tag_r">
                   <div class="d-flex align-items-center">
                   <i class="fa fa-arrow-down icon-arrow-2 me-2" style="display: none;"></i>
                   <h3 onclick="showMore(`showSubMobi`)">
@@ -611,7 +658,7 @@
                           <label for="idMongoDB">Database MongoDB</label>
                         </div>
                       </div>
-                      <!-- Show more ,`upIcon1`,`downIcon1`-->
+                      Show more ,`upIcon1`,`downIcon1`
                       <div
                         id="showMore"
                         onclick="showMoreLocal(`subject`,`txtShowTitle1`, `upIcon1`, `downIcon1`)"
@@ -634,7 +681,7 @@
                       </div>
                     </div>
                   </div>
-                </form>
+                </form> -->
 
                 <!-- Hide -->
                 <form action="#" method="post" class="tag__form tag_r" style="display: none;">
@@ -1062,7 +1109,7 @@
                 <h6>Theo dõi chúng tôi tại:</h6>
                 <ul class="footer-social-icons">
                   <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
                   </li>
                   <!-- <li>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -1070,13 +1117,15 @@
                   <li>
                     <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
-                 
+                  <li>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                  </li>
                   <li>
                     <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                   </li>
-                  <!-- <li>
-                    <a href="index.html"><i class="fa fa-dribbble"></i></a>
-                  </li> -->
                 </ul>
               </div>
             </div>
@@ -1227,6 +1276,7 @@
     ></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/course.js"></script>
     <!-- <script type="text/javascript" src="./assets/js/courseList.js"></script> -->
   </body>
 </html>
