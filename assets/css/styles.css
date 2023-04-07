@@ -7240,7 +7240,7 @@ input {
   background-size: cover;
   padding: 110px 0 100px;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .lms-wrapper .banner__lms h2 {
@@ -7268,7 +7268,7 @@ input {
   color: #ff630e;
 }
 
-.lms-wrapper .banner__lms:after {
+.lms-wrapper .banner__lms::after {
   content: "";
   position: absolute;
   top: 0;
