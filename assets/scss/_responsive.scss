@@ -3045,6 +3045,10 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
+    // member-profile
+    .span-title-1{
+      width: 270px !important;
+    }
   .btn-search-course {
     display: block;
     background-color: #ff630e;
