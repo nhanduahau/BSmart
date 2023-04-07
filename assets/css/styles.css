@@ -4557,6 +4557,10 @@ body {
   transition: all 0.3s;
 }
 
+.blog-area .entry-content p strong {
+  font-weight: bold;
+}
+
 .member-detail-wrapper .banner-member-detail {
   width: 100%;
   padding: 110px 0 100px;
@@ -7662,7 +7666,7 @@ input {
   }
   .owl-next span {
     top: 0 !important;
-    right: 58px !important;
+    right: 26px !important;
     font-size: 4rem !important;
   }
   .owl-prev span {
