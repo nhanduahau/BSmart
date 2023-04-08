@@ -7827,6 +7827,19 @@ input {
     margin-bottom: 40px;
   }
 }
+@media only screen and (max-width: 1200px) {
+  #content-privacy {
+    padding-top: 0px !important;
+    margin-right: 5px !important;
+  }
+  #content-terms-of-service {
+    padding-top: 0px !important;
+    margin-right: 5px !important;
+  }
+  .content-row {
+    background-color: white !important;
+  }
+}
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .member-detail-wrapper .content-info-mentor .member-info .member-img {
@@ -11075,11 +11088,11 @@ input {
   box-sizing: border-box;
 }
 
-#content .content_landingpage .strong-terms-of-service, .title-terms-of-service1, .title-terms-of-service2, .title-terms-of-service3, .title-terms-of-service4, .title-terms-of-service5, .title-terms-of-service6 {
+#content-terms-of-service .content_landingpage .strong-terms-of-service, .title-terms-of-service1, .title-terms-of-service2, .title-terms-of-service3, .title-terms-of-service4, .title-terms-of-service5, .title-terms-of-service6 {
   font-weight: 500;
 }
 
-#content .content_landingpage .title-terms-of-service3 {
+#content-terms-of-service .content_landingpage .title-terms-of-service3 {
   font-size: 15px !important;
 }
 
@@ -11091,7 +11104,7 @@ input {
   font-size: 30px;
 }
 
-#content .content_landingpage {
+#content-terms-of-service .content_landingpage {
   font-size: 15px !important;
   background-color: white;
   line-height: 2.4;
@@ -11170,11 +11183,11 @@ input {
           margin-inline-end: 0px;
 }
 
-#content .content_landingpage .ul-terms-of-service .li-terms-of-service {
+#content-terms-of-service .content_landingpage .ul-terms-of-service .li-terms-of-service {
   list-style: disc;
 }
 
-#content .ul-terms-of-service .li-terms-of-service {
+#content-terms-of-service .ul-terms-of-service .li-terms-of-service {
   margin-left: 20px;
 }
 
@@ -11188,15 +11201,22 @@ input {
        text-align-last: start !important;
 }
 
+.content-container-terms-of-service {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px !important;
+  padding-right: 27px;
+}
+
 * {
   box-sizing: border-box;
 }
 
-#content .content_landingpage .strong-privacy-policy, .title-privacy-policy1, .title-privacy-policy2, .title-privacy-policy3, .title-privacy-policy4, .title-privacy-policy5, .title-privacy-policy6 {
+#content-privacy .content_landingpage .strong-privacy-policy, .title-privacy-policy1, .title-privacy-policy2, .title-privacy-policy3, .title-privacy-policy4, .title-privacy-policy5, .title-privacy-policy6 {
   font-weight: 500;
 }
 
-#content .content_landingpage .title-privacy-policy3 {
+#content-privacy .content_landingpage .title-privacy-policy3 {
   font-size: 15px !important;
 }
 
@@ -11280,18 +11300,31 @@ input {
   margin: 0;
 }
 
-#content .content_landingpage {
+#content-privacy .content_landingpage {
   list-style: disc;
 }
 
-#content {
+#content-privacy {
+  padding-top: 45px;
   margin-left: 20px;
 }
 
-#content .content_landingpage {
+#content-privacy .content_landingpage {
   font-size: 15px !important;
   background-color: white;
   line-height: 2.4;
   word-wrap: break-word;
   margin-top: 30px;
+}
+
+.content-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 12px;
+  padding-right: 27px;
+}
+
+.content-row {
+  margin-left: -15px;
+  margin-right: -15px;
 }/*# sourceMappingURL=styles.css.map */

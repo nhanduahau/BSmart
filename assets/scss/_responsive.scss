@@ -240,6 +240,24 @@
     margin-bottom: 40px;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+    //fix responsive
+    #content-privacy{
+      padding-top: 0px !important;
+      margin-right: 5px !important;
+    }
+
+    #content-terms-of-service{
+      padding-top: 0px !important;
+      margin-right: 5px !important;
+    }
+
+    .content-row{
+      background-color: white !important;
+    }
+}
+
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   // member-profile

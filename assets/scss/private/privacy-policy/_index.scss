@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-#content .content_landingpage .strong-privacy-policy, .title-privacy-policy1, .title-privacy-policy2, .title-privacy-policy3, .title-privacy-policy4, .title-privacy-policy5, .title-privacy-policy6 {
+#content-privacy .content_landingpage .strong-privacy-policy, .title-privacy-policy1, .title-privacy-policy2, .title-privacy-policy3, .title-privacy-policy4, .title-privacy-policy5, .title-privacy-policy6 {
     font-weight: 500;
 }
 
-#content .content_landingpage .title-privacy-policy3 {
+#content-privacy .content_landingpage .title-privacy-policy3 {
     font-size: 15px !important;
 }
 
@@ -75,15 +75,16 @@
     margin: 0;
 }
 
-#content .content_landingpage {
+#content-privacy .content_landingpage {
     list-style: disc;
 }
 
-#content {
+#content-privacy {
+    padding-top: 45px;
     margin-left: 20px;
 }
 
-#content .content_landingpage {
+#content-privacy .content_landingpage {
     font-size: 15px !important;
     background-color: white;
     line-height: 2.4;
@@ -91,6 +92,18 @@
     margin-top: 30px;
 }
 
+//fix responsive
+.content-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 27px;
+}
+
+.content-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
 
 
 
