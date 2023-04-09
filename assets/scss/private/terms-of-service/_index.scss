@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-#content .content_landingpage .strong-terms-of-service, .title-terms-of-service1, .title-terms-of-service2, .title-terms-of-service3, .title-terms-of-service4, .title-terms-of-service5, .title-terms-of-service6 {
+#content-terms-of-service .content_landingpage .strong-terms-of-service, .title-terms-of-service1, .title-terms-of-service2, .title-terms-of-service3, .title-terms-of-service4, .title-terms-of-service5, .title-terms-of-service6 {
     font-weight: 500;
 }
 
-#content .content_landingpage .title-terms-of-service3 {
+#content-terms-of-service .content_landingpage .title-terms-of-service3 {
     font-size: 15px !important;
 }
 
@@ -18,7 +18,7 @@
     font-size: 30px;
 }
 
-#content .content_landingpage {
+#content-terms-of-service .content_landingpage {
     font-size: 15px !important;
     background-color: white;
     line-height: 2.4;
@@ -82,11 +82,11 @@
     margin-inline-end: 0px;
 }
 
-#content .content_landingpage .ul-terms-of-service .li-terms-of-service {
+#content-terms-of-service .content_landingpage .ul-terms-of-service .li-terms-of-service {
     list-style: disc;
 }
 
-#content .ul-terms-of-service .li-terms-of-service {
+#content-terms-of-service .ul-terms-of-service .li-terms-of-service {
     margin-left: 20px;
 }
 
@@ -97,4 +97,12 @@
     text-indent: 0px !important;
     text-align: start !important;
     text-align-last: start !important;
+}
+
+//fix-responsive
+.content-container-terms-of-service{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px !important;
+    padding-right: 27px;
 }
