@@ -59,13 +59,18 @@
       </div>
     </div>
     <!-- Preloader end -->
+
     <!-- Start Sidebar mobile -->
     <div class="sidebar-wrap" id="sidebar-mobile">
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
             <a href="./index.html" class="sidebar-logo">
-              <img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo">
+              <img
+                src="/assets/images/icon-logo-mobile.png"
+                class="icon-logo-mobile"
+                alt="icon-logo"
+              />
             </a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
@@ -97,25 +102,21 @@
                 <a class="mean-expand" href="#">+</a>
                 <a class="mean-non-expand" href="#">-</a> -->
               </li>
-              <li><a href="./lms.html">Nền tảng LMS</a></li>
               <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <input type="text" name="NameCourseMobile" placeholder="Tìm kiếm khoá học" class="form-control" form="findCourse">
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
 
-
-                  <!-- <span><i class="fa fa-search"></i></span> -->
-              <button type="submit" class="btn-search-mobile"><i class="fa fa-search btn-search-mobile-icon"></i></button>
-
-              <style>
-                  .btn-search-mobile-icon {
-                      margin-right: 80px;
-                  }
-              </style>
-
-          </div>
+              <span><i class="fa fa-search"></i></span>
+            </div>
             <ul class="contact-info">
               <li class="mb-3">
                 <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> admin@bsmart.edu.vn
@@ -124,32 +125,26 @@
             </ul>
             <ul class="social-list">
               <li>
-                <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-              </li>
-              <!-- <li>
                 <a href="#"><i class="fa fa-twitter"></i></a>
-              </li> -->
-              <li>
-                <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
               </li>
-             
               <li>
-                <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
               </li>
-              <!-- <li>
-                <a href="index.html"><i class="fa fa-dribbble"></i></a>
-              </li> -->
+              <li>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
             </ul>
             <ul class="sidebar-controls">
-              <li><a href="./login.html">Login</a></li>
+              <li><a href="./login.html">Đăng nhập</a></li>
               <li><small>|</small></li>
-              <li><a href="./register.html">Register</a></li>
+              <li><a href="./register.html">Đăng ký</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <!-- End Sidebar mobile -->
+
     <!-- Login form modal -->
     <div id="loginFormModal" class="login-form-container">
       <div
@@ -201,7 +196,8 @@
       </div>
     </div>
     <!-- End login form modal -->
-    <div class="wrapper blog-wrapper">
+
+    <div class="wrapper courses-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -211,20 +207,17 @@
               <div class="header-top-social text-left">
                 <ul class="list-icons-header">
                   <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
                   </li>
-                  
-                  <!-- <li>
-                    <a href="index.html"><i class="fa fa-dribbble"></i></a>
-                  </li> -->
                 </ul>
               </div>
+
               <!-- End header social -->
               <!-- Start header contact info -->
               <div class="header-contact-info">
@@ -238,15 +231,15 @@
               <!-- End header contact info -->
               <!-- Start header search -->
               <div class="header-course-search w-75 d-flex justify-content-center">
-                <!--Form này bao tới cả search index - nơi đóng form sau RenderBody-->
-                <form action="/search/index" method="get" class="w-75" id="findCourse" style="display: flex">
-                    <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" name="NameCourse">
-                    <button type="submit" form="findCourse" style="display: contents">
-                        <span><i class="fa fa-search"></i></span>
-                    </button>
+                <form action="#" method="post" class="w-75">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm khoá học"
+                    class="form-control w-100"
+                  />
                 </form>
-
-            </div>
+                <span><i class="fa fa-search"></i></span>
+              </div>
               <!-- End header search -->
               <div class="header-log-reg d-flex justify-content-end">
                 <ul>
@@ -264,12 +257,11 @@
           <div class="container">
             <div class="header-bottom-wrapper">
               <a href="./index.html"
-                ><span class="site-logo">
-                  <img
+                ><span class="site-logo"
+                  ><img
                     src="/assets/images/icon-logo.png"
                     class="icon-logo"
-                    alt="icon-logo"
-                  /> </span
+                    alt="icon-logo" /></span
               ></a>
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -304,7 +296,9 @@
                               <a href="courses.html">Front End</a>
                               <ul>
                                 <li>
-                                  <a href="#"><span>+</span> Front End Basic</a>
+                                  <a href="#"
+                                    ><span>+</span> Front End Basic</a
+                                  >
                                 </li>
                                 <li>
                                   <a href="#"><span>+</span> ReactJS</a>
@@ -338,9 +332,10 @@
                         </div>
                       </li>
                       <li>
-                        <a href="mentor-list.html" class="nav-link nav-link-custom"
+                        <a href="mentor-list.html" class="nav-link nav-link-custom active"
                           >Mentor</a
                         >
+                        <!-- view-mentor-profile.html -->
                         <!-- <ul class="sub-menu">
                           <li>
                             <a href="./view-mentor-profile.html">Mentor Cường</a>
@@ -358,9 +353,7 @@
                       </li>
                       
                       <li>
-                        <a
-                          href="./blog.html"
-                          class="nav-link nav-link-custom active"
+                        <a href="./blog.html" class="nav-link nav-link-custom"
                           >Blog</a
                         >
                         <ul class="sub-menu">
@@ -424,250 +417,99 @@
         </div>
       </header>
       <!-- End header -->
-      <!-- Banner section -->
-      <!-- <section class="banner__blog">
-        <div class="container">
-          <div class="caption-content text-center">
-            <h2>Blog</h2>
-            <p><a href="index.html">Trang chủ</a><span> > </span> blog</p>
-          </div>
+
+      <!-- Start content -->
+      <!-- Start banner course -->
+      <section class="banner__course">
+        <div class="content__banner_course">
+          <h1>Danh sách Mentor</h1>
+          <p><a href="index.html">Trang chủ</a><span> > </span> Mentor</p>
         </div>
-      </section> -->
-      <!-- End banner section -->
-      <!-- Blog section content -->
-      <section class="blog-area two">
+      </section>
+      <!-- End banner course -->
+
+      <!-- Start content -->
+      <section class="course-content-container course-content-container-page-course">
         <div class="container">
           <div class="row">
-            <div class="col-md-9 all-posts-wrap col-sm-12">
-              <!--start blog post-->
-              <div class="blog-posts">
-                <div class="blog-post-thumb">
-                  <img
-                    src="assets/images/blog-member.jpg"
-                    alt="image"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="blog-posts-meta mt-3">
-                  <ul>
-                    <li><i class="fa fa-user"></i><a href="#">BSmart</a></li>
-                    <li>
-                      <i class="fa fa-calendar"></i><a href="#">12/30/2023</a>
-                    </li>
-                    <li>
-                      <i class="fa fa-tags"></i
-                      ><a href="#">Lập trình & thiết kế web</a>
-                    </li>
-                  </ul>
-                </div>
-                <h3>
-                  <a href="blog-detail.html"
-                    >Tìm hiểu phát triển ứng dụng web từ các chuyên gia</a
-                  >
-                </h3>
-                <div class="entry-content">
-                  <p>
-                    Điều quan trọng là phải có một dịch vụ khách hàng tốt, một
-                    nhà cung cấp dịch vụ khách hàng. Hendrerit của Hạm đội Xe
-                    tải trẻ em không có thùng. Trong trừ khi hoặc, xe tải hoặc,
-                    protein đó, bất động sản hoặc, trừ khi. Nhưng giá cả, ligula
-                    sollicitudin laoreet viverra, tra tấn các thành viên libero
-                    leo, eget nhạt nhẽo bây giờ tra tấn eu nibh. Không mềm. Cứ
-                    như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và
-                    vulutate volutpat, eros pede [...]
-                  </p>
-                  <div>
-                    <a
-                      href="./blog-detail.html"
-                      class="btn btn-primary-custom p-2"
-                      >Đọc thêm</a
-                    >
+            
+            <div class="col-lg-9 col-md-7">
+              <div class="courses-list-content">
+                <div class="header-courses-list">
+                  <div class="d-flex counter-course">
+                    <h5>1</h5>
+                    <p>Mentor</p>
                   </div>
                 </div>
-                <hr />
-              </div>
-              <!--end blog post-->
 
-              <!--start blog post-->
-              <div class="blog-posts">
-                <div class="blog-post-thumb">
-                  <img
-                    src="assets/images/blog-member.jpg"
-                    alt="image"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="blog-posts-meta mt-3">
-                  <ul>
-                    <li><i class="fa fa-user"></i><a href="#">bsmart</a></li>
-                    <li>
-                      <i class="fa fa-calendar"></i><a href="#">12/30/2022</a>
-                    </li>
-                    <li>
-                      <i class="fa fa-tags"></i
-                      ><a href="#">Lập trình & thiết kế web</a>
-                    </li>
-                  </ul>
-                </div>
-                <h3>
-                  <a href="blog-detail.html"
-                    >Mở rộng cơ hội nghề nghiệp của bạn với Python</a
-                  >
-                </h3>
-                <div class="entry-content">
-                  <p>
-                    Điều quan trọng là phải có một dịch vụ khách hàng tốt, một
-                    nhà cung cấp dịch vụ khách hàng. Hendrerit của Hạm đội Xe
-                    tải trẻ em không có thùng. Trong trừ khi hoặc, xe tải hoặc,
-                    protein đó, bất động sản hoặc, trừ khi. Nhưng giá cả, ligula
-                    sollicitudin laoreet viverra, tra tấn các thành viên libero
-                    leo, eget nhạt nhẽo bây giờ tra tấn eu nibh. Không mềm. Cứ
-                    như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và
-                    vulutate volutpat, eros pede [...]
-                  </p>
-                  <div>
-                    <a
-                      href="./blog-detail.html"
-                      class="btn btn-primary-custom p-2"
-                      >đọc thêm</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <!--end blog post-->
+                <!-- render course list -->
+                <div class="main-courses-list mt-3">
+                  <div class="row" id="render-course-list">
+                    <div class="col-lg-4 mb-3">
+                      <div class="card card-course-custom position-relative">
+                        <img
+                          src="https://thumbs.dreamstime.com/z/handsome-latin-businessman-smiling-you-portrait-working-his-laptop-sitting-office-desk-copyspace-37249502.jpg"
+                          alt="hinh-anh-mentor-banner"
+                        />
+                        <div class="card-body position-relative">
+                          <!-- Icon lv -->
+                          <div class="d-flex flex-column position-relative">
+                            <div class="icon-lv-title-right">
+                            </div>
 
-              <!--end blog post-->
-
-              <div class="blog-pagination text-center">
-                <ul>
-                  <li><a href="#" class="active">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li>
-                    <a href="#"><i class="fa fa-angle-right"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--start sidebar-->
-            <div class="col-md-3 col-sm-12">
-              <div class="blog-sidebar">
-                <!--start widget-->
-                <div class="search-form widget">
-                  <form>
-                    <input
-                      type="text"
-                      placeholder="Tìm kiếm bài viết..."
-                      class="form-control"
-                    />
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                  </form>
-                </div>
-                <!--end widget-->
-                <!--start widget-->
-                <div class="latest-post widget">
-                  <h4>Bài viết gần đây</h4>
-                  <!--start recent post single-->
-                  <div class="recent-post-single">
-                    <div class="recent-post-cont two">
-                      <h6>
-                        <a class="recent-news-title" href="#"
-                          >Tìm hiểu phát triển ứng dụng web từ các chuyên gia</a
-                        >
-                      </h6>
-                      <p class="recent-post-date mt-2" style="font-size: 0.7rem !important;">12/30/2023</p>
+                            <!-- Title course -->
+                            <a href="./course-detail.html" class="card-title" id="name-course" style="color: #ff630e;">Mentor Cường</a>
+                          </div>
+                          
+                            <p class="description">
+                            Mentor với nhiều năm kinh nghiệm đã từng giảng dạy trên hàng trăm lớp học cùng hàng ngàn những phản hồi tích cực, 
+                            mentor tự tin đem đến cho bạn khóa học có lộ trình bài bản, dễ hiểu và mang tính ứng dụng cao
+                          </p>
+                          <br>
+                          <br>
+                          <div class="feedback-time">
+                            <img src="/assets/images/check-mark.png" class="icon-V" alt="hinh-anh-front-end-iconV" style="display: inline-block;">
+                            <i class="cl-icon-V" style="font-weight: bold;"></i>
+                            <span class="mark" style="font-weight: bold; margin-left:3px">
+                                8 Khóa học
+                            </span>
+                          </div>
+                          <hr />
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                          </div>
+                          <div id="btnShow">
+                            <a
+                            id="linkSign"
+                            href="./view-mentor-profile.html"
+                            class="btn btn-primary-custom p-3"
+                            >Xem chi tiết</a
+                            >
+                            <a
+                              id="linkIntro"
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-3"
+                              >Mã giới thiệu</a
+                            >
+                          </div>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
-                  <!--end recent post single-->
                 </div>
-                <!--end widget-->
-                <!--start widget-->
-                <div class="menu-list widget">
-                  <h4>Thể loại</h4>
-                  <ul class="widget-list">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Kinh doanh</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-angle-right"></i> Khoa học</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-angle-right"></i> Giáo dục</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Thiết kế đồ họa</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Lập trình</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i>Thiết kế web</a
-                      >
-                    </li>
-                  </ul>
+                <!-- render course list -->
+
+                <div class="d-flex justify-content-center align-items-center pag-course-bottom">
                 </div>
-                <!--end widget-->
-                <!--start widget-->
-                <!-- <div class="menu-list widget">
-                  <h4>Dòng thời gian</h4>
-                  <ul class="widget-list">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Tháng 5, 2023</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Tháng 6, 2023</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Tháng 7, 2023</a
-                      >
-                    </li>
-                  </ul>
-                </div> -->
-                <!--end widget-->
-                <!--start widget-->
-                <!-- <div class="menu-list widget">
-                  <h4>Lưu trữ</h4>
-                  <ul class="widget-list">
-                    <li>
-                      <a href="#"><i class="fa fa-angle-right"></i> Đăng ký</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Đăng nhập</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Entries feed</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> WordPress.org</a
-                      >
-                    </li>
-                  </ul>
-                </div> -->
-                <!--end widget-->
               </div>
             </div>
-            <!--end sidebar-->
           </div>
         </div>
       </section>
-      <!-- End blog section content -->
-      <!-- Start footer -->
+      <!-- End content -->
+
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -697,12 +539,11 @@
             <div class="col-lg-4 col-md-6 mb-3">
               <div class="footer-logo">
                 <a href="index.html"
-                  ><span class="site-logo site-logo-footer" style="margin-left: 20px;">
-                    <img
+                  ><span class="site-logo site-logo-footer"
+                    ><img
                       src="/assets/images/icon-logo-footer.png"
                       class="icon-logo"
-                      alt="icon-logo"
-                    /> </span
+                      alt="icon-logo" /></span
                 ></a>
                 <p class="footer-about-description">
                   Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
@@ -712,7 +553,7 @@
                 <h6>Theo dõi chúng tôi tại:</h6>
                 <ul class="footer-social-icons">
                   <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
                   </li>
                   <!-- <li>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -720,13 +561,15 @@
                   <li>
                     <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </li>
-                 
+                  <li>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                  </li>
                   <li>
                     <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
                   </li>
-                  <!-- <li>
-                    <a href="index.html"><i class="fa fa-dribbble"></i></a>
-                  </li> -->
                 </ul>
               </div>
             </div>
@@ -735,7 +578,7 @@
                 <h4>Menu</h4>
                 <ul>
                   <li><a href="./index.html">Trang chủ</a></li>
-                  <li><a href="./aboutus.html">Về chúng tôi</a></li>  
+                  <li><a href="./aboutus.html">Về chúng tôi</a></li>          
                   <li><a href="./courses.html">Khoá học</a></li>
                   <li><a href="./mentor-list.html">Mentor</a></li>
                   <li><a href="./lms.html">Nền tảng LMS</a></li>
@@ -763,9 +606,9 @@
                   <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
                   <p class="m-0">admin@bsmart.edu.vn</p>
                 </li>
-                <li>
+                <li class="mt-2">
                   <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
-                  <p class="m-0">02899997939</p>
+                  <p class="m-0">028 9999 79 39</p>
                 </li>
               </div>
             </div>
@@ -778,8 +621,85 @@
           </p>
         </div>
       </footer>
-      <!-- End footer -->
     </div>
+    <!--  Hidden Link Intro and Sign -->
+    <script>
+      // new change
+      var mentor = true; //temp
+      var member = false; //temp
+
+      let elements = document.querySelectorAll("#linkIntro");
+      let elementsSign = document.querySelectorAll("#linkSign");
+      // let cost = document.querySelectorAll(".cost");
+
+      let memberLearned = [
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+      ];
+
+      //Check Token if User is mentor
+      for (let i = 0; i < elements.length; i++) {
+        if (mentor == true) {
+          elements[i].style.display = "none";
+          elementsSign[i].style.marginTop = "26px";
+          elementsSign[i].style.marginBottom = "26px";
+        }
+      }
+      //Check Token if User is member
+      if (member == true) {
+        for (let i = 0; i < elements.length; i++) {
+          //Check student's subject
+          if (memberLearned[i] == true) {
+            //if student dosen't has in class
+            elements[i].style.display = "none";
+            elementsSign[i].style.marginTop = "51px";
+            elementsSign[i].style.marginBottom = "0px";
+          }
+          //else Show Link Introduction for All student in class
+        }
+      }
+
+      //Dropdown list
+      function showMoreLocal(local, text, upIcon, downIcon) {
+        var lct = document.getElementById(local);
+        var txt = document.getElementById(text);
+        var icUp = document.getElementById(upIcon);
+        var icdown = document.getElementById(downIcon);
+
+        icUp.style.display = 'block';
+
+        if (lct.style.display === "none") {
+          lct.style.display = "block";
+          icdown.style.display = "none";
+
+          txt.innerText = "Thu gọn";
+        } else {
+          lct.style.display = "none";
+          icdown.style.display = "block";
+          icUp.style.display = "none";
+
+          txt.innerText = "Xem thêm";
+        }
+      }
+
+      //Dropdown list mobile
+      function showMore(temp) {
+        var lct = document.getElementById(temp);
+        var drd = lct.classList.contains("d-xs-none");
+        if (drd) {
+          lct.classList.remove("d-xs-none");
+        } else {
+          lct.classList.add("d-xs-none");
+        }
+      }
+    </script>
     <!-- Import script bootstrap V5 -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -800,9 +720,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- API google -->
-    <script src="https://apis.google.com/js/api:client.js"></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/course.js"></script>
+    <!-- <script type="text/javascript" src="./assets/js/courseList.js"></script> -->
   </body>
 </html>
