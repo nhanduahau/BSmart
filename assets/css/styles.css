@@ -7150,10 +7150,6 @@ input {
   display: none;
 }
 
-.forgot-password-title {
-  font-size: 54px !important;
-}
-
 .title-reset-1 h3 {
   font-size: 24px;
   line-height: 34px;
@@ -11344,6 +11340,5 @@ input {
 }
 
 .content-row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin: -30px -15px 50px -15px;
 }/*# sourceMappingURL=styles.css.map */
