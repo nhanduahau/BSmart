@@ -4290,6 +4290,21 @@
     }
 }
 
+@media screen and (max-width: 430px) {
+  //fix title forgot password responsive
+  .forgot-password-title{
+    font-size: 50px !important;
+  }
+}
+
+@media screen and (max-width: 362px){
+  //fix title forgot password responsive
+  .forgot-password-title{
+    font-size: 45px !important;
+  }
+
+}
+
 @media screen and (max-width: 360px) {
   //member-profile
   .wrapper .contact-info .li-title-2{
