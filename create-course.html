@@ -1,126 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BSmart</title>
-    <!-- Test git 1 -->
-    <!-- Test git 2 -->
 
-    <!-- Import css bootstrap v5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BSmart</title>
+  <!-- Test git 1 -->
+  <!-- Test git 2 -->
 
-    <!-- Import js (bootstrap 4) -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Import css bootstrap v5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-    <!-- Import font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Import js (bootstrap 4) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <!-- Imoprt owl carousel -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Import swiper -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-    <!-- Import css reset -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
-    <!-- Import css styles -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
-    <!-- Import css responsive -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+  <!-- Import font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- import select2 -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-        
-    <!-- import ckeditor -->
-    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script> -->
-    <script src="ckeditor\ckeditor.js"></script>
-  </head>
-  <body>
-    <!-- Preloader start -->
-    <div class="preloader">
-      <div class="lds-roller">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+  <!-- Imoprt owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Import swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- Import css reset -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+  <!-- Import css styles -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+  <!-- Import css responsive -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+
+  <!-- import select2 -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <!-- import ckeditor -->
+  <!-- <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script> -->
+  <script src="ckeditor\ckeditor.js"></script>
+</head>
+
+<body>
+  <!-- Preloader start -->
+  <div class="preloader">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    <!-- Preloader end -->
-    <!-- Start Sidebar mobile -->
-    <div class="sidebar-wrap" id="sidebar-mobile">
-      <div class="container-fluid">
-        <div class="sidebar-content">
-          <div class="sidebar-top">
-            <a href="./index.html" class="sidebar-logo">
-              <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
-            </a>
-            <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
-          </div>
-          <div class="sidebar-center">
-            <ul class="sidebar-mean-nav">
-              <li><a href="./index.html">Trang chủ</a></li>
-              <li><a href="./aboutus.html">Về chúng tôi</a></li>
-              <li>
-                <a href="./courses.html">Khoá học</a>
-                <div class="d-flex align-items-center justify-content-end">
-                  <ul class="sub-menu">
-                    <li><a href="courses.html">Front End</a></li>
-                    <li><a href="courses.html">Back End</a></li>
-                    <li><a href="courses.html">Devops</a></li>
-                  </ul>
-                </div>
-                <a class="mean-expand" href="#">+</a>
-                <a class="mean-non-expand" href="#">-</a>
-              </li>
-              <li>
-                <a href="mentor-list.html">Mentor</a>
-                <!-- <div class="d-flex align-items-center justify-content-end">
+  </div>
+  <!-- Preloader end -->
+  <!-- Start Sidebar mobile -->
+  <div class="sidebar-wrap" id="sidebar-mobile">
+    <div class="container-fluid">
+      <div class="sidebar-content">
+        <div class="sidebar-top">
+          <a href="./index.html" class="sidebar-logo">
+            <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
+          </a>
+          <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
+        </div>
+        <div class="sidebar-center">
+          <ul class="sidebar-mean-nav">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./aboutus.html">Về chúng tôi</a></li>
+            <li>
+              <a href="./courses.html">Khoá học</a>
+              <div class="d-flex align-items-center justify-content-end">
+                <ul class="sub-menu">
+                  <li><a href="courses.html">Front End</a></li>
+                  <li><a href="courses.html">Back End</a></li>
+                  <li><a href="courses.html">Devops</a></li>
+                </ul>
+              </div>
+              <a class="mean-expand" href="#">+</a>
+              <a class="mean-non-expand" href="#">-</a>
+            </li>
+            <li>
+              <a href="mentor-list.html">Mentor</a>
+              <!-- <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
                     <li><a href="view-mentor-profile.html">Mentor Long</a></li>
                     <li><a href="view-mentor-profile.html">Mentor Cuong</a></li>
@@ -129,245 +107,225 @@
 
                 <a class="mean-expand" href="#">+</a>
                 <a class="mean-non-expand" href="#">-</a> -->
-              </li>
-              <li><a href="./lms.html">Nền tảng LMS</a></li>
-              <li><a href="./blog.html">Blog</a></li>
-            </ul>
+            </li>
+            <li><a href="./lms.html">Nền tảng LMS</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="search-course">
+            <input type="text" name="NameCourseMobile" placeholder="Tìm kiếm khoá học" class="form-control"
+              form="findCourse">
+
+
+            <!-- <span><i class="fa fa-search"></i></span> -->
+            <button type="submit" class="btn-search-mobile"><i class="fa fa-search btn-search-mobile-icon"></i></button>
+
+            <style>
+              .btn-search-mobile-icon {
+                margin-right: 80px;
+              }
+            </style>
+
           </div>
-          <div class="sidebar-bottom">
-            <div class="search-course">
-              <input type="text" name="NameCourseMobile" placeholder="Tìm kiếm khoá học" class="form-control" form="findCourse">
-
-
-                  <!-- <span><i class="fa fa-search"></i></span> -->
-              <button type="submit" class="btn-search-mobile"><i class="fa fa-search btn-search-mobile-icon"></i></button>
-
-              <style>
-                  .btn-search-mobile-icon {
-                      margin-right: 80px;
-                  }
-              </style>
-
-          </div>
-            <ul class="contact-info">
-              <li class="mb-3">
-                <i class="fa fa-envelope"></i> admin@bsmart.edu.vn
-              </li>
-              <li><i class="fa fa-phone"></i> 028 9999 79 39</li>
-            </ul>
-            <ul class="social-list">
-              <li>
-                <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-              </li>
-              <!-- <li>
+          <ul class="contact-info">
+            <li class="mb-3">
+              <i class="fa fa-envelope"></i> admin@bsmart.edu.vn
+            </li>
+            <li><i class="fa fa-phone"></i> 028 9999 79 39</li>
+          </ul>
+          <ul class="social-list">
+            <li>
+              <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+            </li>
+            <!-- <li>
                 <a href="#"><i class="fa fa-twitter"></i></a>
               </li> -->
-              <li>
-                <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
-              </li>
-             
-              <li>
-                <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
-              </li>
-              <!-- <li>
+            <li>
+              <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
+                  class="fa fa-linkedin"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
+                  class="fa fa-youtube-play"></i></a>
+            </li>
+            <!-- <li>
                 <a href="index.html"><i class="fa fa-dribbble"></i></a>
               </li> -->
-            </ul>
-            <ul class="sidebar-controls">
-              <li><a href="./login.html">Login</a></li>
-              <li><small>|</small></li>
-              <li><a href="./register.html">Register</a></li>
-            </ul>
+          </ul>
+          <ul class="sidebar-controls">
+            <li><a href="./login.html">Login</a></li>
+            <li><small>|</small></li>
+            <li><a href="./register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Sidebar mobile -->
+  <!-- Login form modal -->
+  <div id="loginFormModal" class="login-form-container">
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100%">
+      <div class="login-form-content">
+        <div class="close-login-form" id="loginFormClose">&times;</div>
+        <h3 class="mb-3 text-center">Đăng nhập</h3>
+        <form action="#" method="post">
+          <div class="form-group mb-3">
+            <input type="text" placeholder="Email" class="form-control" />
           </div>
-        </div>
+          <div class="form-group mb-3">
+            <input type="text" placeholder="Password" class="form-control" />
+          </div>
+          <div class="form-check d-flex justify-content-between align-items-center mb-3">
+            <div class="checkbox d-flex align-items-center">
+              <input type="checkbox" class="form-check-input mt-0" id="signed" />
+              <label for="signed" class="ms-1">Remember me</label>
+            </div>
+            <div class="forgot-pass">
+              <a href="#" class="link-custom">Forgot Password?</a>
+            </div>
+          </div>
+          <div class="login-btn text-center mb-2">
+            <a href="./login-success.html" class="btn btn-primary-custom p-2">Đăng nhập</a>
+          </div>
+          <div id="gSignInWrapper" class="mb-4 w-100">
+            <div id="customBtn" class="customGPlusSignIn w-100">
+              <span class="icon"></span>
+              <span class="buttonText">Đăng nhập bằng tài khoản google</span>
+            </div>
+          </div>
+          <div class="new-registration text-center">
+            <span>Bạn chưa có tài khoản?</span>
+            <a href="./register.html" class="link-custom">Đăng ký ngay</a>
+          </div>
+        </form>
       </div>
     </div>
-    <!-- End Sidebar mobile -->
-    <!-- Login form modal -->
-    <div id="loginFormModal" class="login-form-container">
-      <div
-        class="container-fluid d-flex justify-content-center align-items-center"
-        style="height: 100%"
-      >
-        <div class="login-form-content">
-          <div class="close-login-form" id="loginFormClose">&times;</div>
-          <h3 class="mb-3 text-center">Đăng nhập</h3>
-          <form action="#" method="post">
-            <div class="form-group mb-3">
-              <input type="text" placeholder="Email" class="form-control" />
-            </div>
-            <div class="form-group mb-3">
-              <input type="text" placeholder="Password" class="form-control" />
-            </div>
-            <div
-              class="form-check d-flex justify-content-between align-items-center mb-3"
-            >
-              <div class="checkbox d-flex align-items-center">
-                <input
-                  type="checkbox"
-                  class="form-check-input mt-0"
-                  id="signed"
-                />
-                <label for="signed" class="ms-1">Remember me</label>
-              </div>
-              <div class="forgot-pass">
-                <a href="#" class="link-custom">Forgot Password?</a>
-              </div>
-            </div>
-            <div class="login-btn text-center mb-2">
-              <a href="./login-success.html" class="btn btn-primary-custom p-2"
-                >Đăng nhập</a
-              >
-            </div>
-            <div id="gSignInWrapper" class="mb-4 w-100">
-              <div id="customBtn" class="customGPlusSignIn w-100">
-                <span class="icon"></span>
-                <span class="buttonText">Đăng nhập bằng tài khoản google</span>
-              </div>
-            </div>
-            <div class="new-registration text-center">
-              <span>Bạn chưa có tài khoản?</span>
-              <a href="./register.html" class="link-custom">Đăng ký ngay</a>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- End login form modal -->
-    <div class="wrapper member-detail-wrapper create-course-wrapper">
-      <!-- Start header -->
-      <header class="header-main">
-        <div class="header-top">
-          <div class="container">
-            <div class="header-top-wrapper">
-              <!-- Start header social -->
-              <div class="header-top-social text-left">
-                <ul class="list-icons-header">
-                  <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                  </li>
-                  
-                  <!-- <li>
+  </div>
+  <!-- End login form modal -->
+  <div class="wrapper member-detail-wrapper create-course-wrapper">
+    <!-- Start header -->
+    <header class="header-main">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-wrapper">
+            <!-- Start header social -->
+            <div class="header-top-social text-left">
+              <ul class="list-icons-header">
+                <li>
+                  <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
+                      class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
+                      class="fa fa-youtube-play"></i></a>
+                </li>
+
+                <!-- <li>
                     <a href="index.html"><i class="fa fa-dribbble"></i></a>
                   </li> -->
-                </ul>
-              </div>
-              <!-- End header social -->
-              <!-- Start header contact info -->
-              <div class="header-contact-info-create-course">
-                <ul>
-                  <li class="me-4">
-                    <img src="/assets/images/icon-gmail.png" class="icon-gmail-header" alt="icon-gmail"> admin@bsmart.edu.vn
-                  </li>
-                  <li><img src="/assets/images/icon-phone.png" class="icon-gmail-header" alt="icon-gmail"></i> 028 9999 79 39</li>
-                </ul>
-              </div>
-              <!-- End header contact info -->
-              <!-- Start header search -->
-              <div class="header-course-search w-75 d-flex justify-content-center">
-                <!--Form này bao tới cả search index - nơi đóng form sau RenderBody-->
-                <form action="/search/index" method="get" class="w-75" id="findCourse" style="display: flex">
-                    <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" name="NameCourse">
-                    <button type="submit" form="findCourse" style="display: contents">
-                        <span><i class="fa fa-search"></i></span>
-                    </button>
-                </form>
+              </ul>
+            </div>
+            <!-- End header social -->
+            <!-- Start header contact info -->
+            <div class="header-contact-info-create-course">
+              <ul>
+                <li class="me-4">
+                  <img src="/assets/images/icon-gmail.png" class="icon-gmail-header" alt="icon-gmail">
+                  admin@bsmart.edu.vn
+                </li>
+                <li><img src="/assets/images/icon-phone.png" class="icon-gmail-header" alt="icon-gmail"></i> 028 9999 79
+                  39</li>
+              </ul>
+            </div>
+            <!-- End header contact info -->
+            <!-- Start header search -->
+            <div class="header-course-search w-75 d-flex justify-content-center">
+              <!--Form này bao tới cả search index - nơi đóng form sau RenderBody-->
+              <form action="/search/index" method="get" class="w-75" id="findCourse" style="display: flex">
+                <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course"
+                  id="search-course-inp" name="NameCourse">
+                <button type="submit" form="findCourse" style="display: contents">
+                  <span><i class="fa fa-search"></i></span>
+                </button>
+              </form>
 
             </div>
-              <!-- End header search -->
-              <div class="header-log-reg d-flex justify-content-end">
-                <a href="./member-detail.html">
-                  <img
-                    src="/assets/images/avatar-mentor-3.jpg"
-                    alt="hinh anh"
-                    class="avatar"
-                  />
-                </a>
-              </div>
+            <!-- End header search -->
+            <div class="header-log-reg d-flex justify-content-end">
+              <a href="./member-detail.html">
+                <img src="/assets/images/avatar-mentor-3.jpg" alt="hinh anh" class="avatar" />
+              </a>
             </div>
           </div>
         </div>
-        <div class="header-bottom">
-          <div class="container">
-            <div class="header-bottom-wrapper">
-              <a href="./index.html"><span class="site-logo"><img src="/assets/images/icon-logo.png" class="icon-logo" alt="icon-logo"></span></a>
-              <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <div class="collapse navbar-collapse">
-                    <!-- Menu -->
-                    <!-- Menu cấp parent -->
-                    <ul class="navbar-nav">
-                      <li>
-                        <a href="./index.html" class="nav-link nav-link-custom"
-                          >Trang Chủ</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./aboutus.html"
-                          class="nav-link nav-link-custom"
-                          >Về Chúng Tôi</a
-                        >
-                      </li>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="header-bottom-wrapper">
+            <a href="./index.html"><span class="site-logo"><img src="/assets/images/icon-logo.png" class="icon-logo"
+                  alt="icon-logo"></span></a>
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                  <!-- Menu -->
+                  <!-- Menu cấp parent -->
+                  <ul class="navbar-nav">
+                    <li>
+                      <a href="./index.html" class="nav-link nav-link-custom">Trang Chủ</a>
+                    </li>
+                    <li>
+                      <a href="./aboutus.html" class="nav-link nav-link-custom">Về Chúng Tôi</a>
+                    </li>
 
-                      <li>
-                        <a
-                          href="./courses.html"
-                          class="nav-link nav-link-custom"
-                          >Khoá Học</a
-                        >
-                        <div class="sub-nav">
-                          <div
-                            class="content-sub-nav d-flex justify-content-between"
-                          >
-                            <div>
-                              <a href="courses.html">Front End</a>
-                              <ul>
-                                <li>
-                                  <a href="#"><span>+</span> Front End Basic</a>
-                                </li>
-                                <li>
-                                  <a href="#"><span>+</span> ReactJS</a>
-                                </li>
-                                <li>
-                                  <a href="#"><span>+</span> VueJS</a>
-                                </li>
-                                <li>
-                                  <a href="#"><span>+</span> Angular</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <div>
-                              <a href="courses.html">Back End</a>
-                              <ul>
-                                <li>
-                                  <a href="#"><span>+</span> NodeJS </a>
-                                </li>
-                                <li>
-                                  <a href="#"><span>+</span> .NET Core MVC</a>
-                                </li>
-                                <li>
-                                  <a href="#"><span>+</span> .NET Core API</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <div>
-                              <a href="courses.html">Devops</a>
-                            </div>
+                    <li>
+                      <a href="./courses.html" class="nav-link nav-link-custom">Khoá Học</a>
+                      <div class="sub-nav">
+                        <div class="content-sub-nav d-flex justify-content-between">
+                          <div>
+                            <a href="courses.html">Front End</a>
+                            <ul>
+                              <li>
+                                <a href="#"><span>+</span> Front End Basic</a>
+                              </li>
+                              <li>
+                                <a href="#"><span>+</span> ReactJS</a>
+                              </li>
+                              <li>
+                                <a href="#"><span>+</span> VueJS</a>
+                              </li>
+                              <li>
+                                <a href="#"><span>+</span> Angular</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <a href="courses.html">Back End</a>
+                            <ul>
+                              <li>
+                                <a href="#"><span>+</span> NodeJS </a>
+                              </li>
+                              <li>
+                                <a href="#"><span>+</span> .NET Core MVC</a>
+                              </li>
+                              <li>
+                                <a href="#"><span>+</span> .NET Core API</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <a href="courses.html">Devops</a>
                           </div>
                         </div>
-                      </li>
-                      <li>
-                        <a href="mentor-list.html" class="nav-link nav-link-custom"
-                          >Mentor</a
-                        >
-                        <!-- <ul class="sub-menu">
+                      </div>
+                    </li>
+                    <li>
+                      <a href="mentor-list.html" class="nav-link nav-link-custom">Mentor</a>
+                      <!-- <ul class="sub-menu">
                           <li>
                             <a href="./view-mentor-profile.html">Mentor Cường</a>
                           </li>
@@ -375,356 +333,275 @@
                             <a href="./view-mentor-profile.html">Mentor Long</a>
                           </li>
                         </ul> -->
-                      </li>
+                    </li>
 
-                      <li>
-                        <a href="./lms.html" class="nav-link nav-link-custom"
-                          >Nền tảng LMS</a
-                        >
-                      </li>
-                      
-                      <li>
-                        <a href="./blog.html" class="nav-link nav-link-custom"
-                          >Blog</a
-                        >
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="./blog.html">Sự kiện</a>
-                          </li>
-                          <li>
-                            <a href="./blog.html">Khuyến mãi</a>
-                          </li>
-                          <!-- <li>
+                    <li>
+                      <a href="./lms.html" class="nav-link nav-link-custom">Nền tảng LMS</a>
+                    </li>
+
+                    <li>
+                      <a href="./blog.html" class="nav-link nav-link-custom">Blog</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="./blog.html">Sự kiện</a>
+                        </li>
+                        <li>
+                          <a href="./blog.html">Khuyến mãi</a>
+                        </li>
+                        <!-- <li>
                             <a href="./blog.html">Tuyển dụng</a>
                           </li> -->
-                          <li>
-                            <a href="./blog.html">Hoạt động</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-              <div class="header-cart">
-                <a href="#"
-                  ><img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
-                  <span class="cart-total-number">0</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header-mobile">
-          <div class="container">
-            <div class="header-mobile-content">
-              <div class="header-mobile-logo"><span>
-                <a href="./index.html"><span class="site-logo">
-                  <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
-                </span></a>
-              </span></div>
-              <!-- Cart -->
-              <div class="header-cart">
-                <a href="payment.html">
-                  <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
-                  <span class="cart-total-number">0</span>
-                </a>
-              </div>
-              <!-- Cart -->
-              <div class="header-mobile-menu-hambuger" id="activeMenu">
-                <i class="fa fa-bars"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- End header -->
-      <section class="banner-member-detail">
-        <div class="banner-content">
-          <h1>Tạo khóa học</h1>
-          <p><a href="index.html">Trang chủ</a><span> > </span> Tạo khóa học</p>
-        </div>
-      </section>
-      <section class="content-info-mentor content-info-mentor-create-course">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-12">
-              <div class="member-info">
-                <div class="member-img">
-                  <img
-                    src="/assets/images/avatar-mentor-1.jpg"
-                    alt="hinh anh member"
-                  />
-                </div>
-                <div class="member-details">
-                  <h4>Mentor Cường</h4>
-                  <p>Mentor</p>
-                  <ul class="social-list">
-                    <li>
-                      <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <li>
+                          <a href="./blog.html">Hoạt động</a>
+                        </li>
+                      </ul>
                     </li>
-                    <!-- <li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="header-cart">
+              <a href="#"><img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart"
+                  alt="icon-shopping-cart">
+                <span class="cart-total-number">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile">
+        <div class="container">
+          <div class="header-mobile-content">
+            <div class="header-mobile-logo"><span>
+                <a href="./index.html"><span class="site-logo">
+                    <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
+                  </span></a>
+              </span></div>
+            <!-- Cart -->
+            <div class="header-cart">
+              <a href="payment.html">
+                <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
+                <span class="cart-total-number">0</span>
+              </a>
+            </div>
+            <!-- Cart -->
+            <div class="header-mobile-menu-hambuger" id="activeMenu">
+              <i class="fa fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+    <section class="banner-member-detail">
+      <div class="banner-content">
+        <h1>Tạo khóa học</h1>
+        <p><a href="index.html">Trang chủ</a><span> > </span> Tạo khóa học</p>
+      </div>
+    </section>
+    <section class="content-info-mentor content-info-mentor-create-course">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="member-info">
+              <div class="member-img">
+                <img src="/assets/images/avatar-mentor-1.jpg" alt="hinh anh member" />
+              </div>
+              <div class="member-details">
+                <h4>Mentor Cường</h4>
+                <p>Mentor</p>
+                <ul class="social-list">
+                  <li>
+                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <!-- <li>
                       <a href="#"><i class="fa fa-twitter"></i></a>
                     </li> -->
-                    <li>
-                      <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                   
-                    <li>
-                      <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                    </li>
-                    <!-- <li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
+                        class="fa fa-linkedin"></i></a>
+                  </li>
+
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
+                        class="fa fa-youtube-play"></i></a>
+                  </li>
+                  <!-- <li>
                       <a href="index.html"><i class="fa fa-dribbble"></i></a>
                     </li> -->
-                  </ul>
-                  <ul class="contact-info">
-                    <li>
-                      <span><i class="fa fa-male fs-2"></i></span>
-                    </li>
-                    <li>
-                      <span>27/01/2001</span>
-                    </li>
-                    <li>
-                      <span>
-                        <i class="fa fa-location-arrow"></i> Tân Bình, Tp. Hồ
-                        Chí Minh
-                      </span>
-                    </li>
-                    <li>
-                      <span
-                        ><i class="fa fa-envelope"></i>mentor@gmail.com</span
-                      >
-                    </li>
-                    <li>
-                      <span><i class="fa fa-phone"></i> 0946005077</span>
-                    </li>
-                    <li>
-                      <span
-                        >Số dư hiện tại:
-                        <span class="current-amount">300,000 BS</span></span
-                      >
-                    </li>
-                  </ul>
-                  <div class="contact-btn">
-                    <a
-                      href="./mentor-profile-edit.html"
-                      class="btn btn-primary-custom"
-                      >Chỉnh sửa thông tin</a
-                    >
-                  </div>
-                  <div class="mt-2">
-                    <a
-                      href="./wallet-management.html"
-                      class="btn btn-primary-custom w-100"
-                      >Quản lý ví tiền</a
-                    >
-                  </div>
-                  <div class="mt-2">
-                    <a href="#" class="btn btn-primary-custom w-100"
-                      >Rút tiền</a
-                    >
-                  </div>
-                  <div class="mt-2">
-                    <a
-                      href="./mentor-profile.html"
-                      class="btn btn-primary-custom w-100"
-                      >Danh sách khoá học</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="member-operation mt-3">
-                <h4>Các hoạt động gần đây</h4>
-                <ul>
+                </ul>
+                <ul class="contact-info">
                   <li>
-                    <p class="mt-2">Đã đăng ký khoá học ReactJS Basic</p>
-                    <span>01/01/2023</span>
-                    <hr />
+                    <span><i class="fa fa-male fs-2"></i></span>
                   </li>
                   <li>
-                    <p class="mt-2">
-                      Đã nhận được 100 BS từ việc chia sẻ khoá học
-                    </p>
-                    <span>01/01/2023</span>
-                    <hr />
+                    <span>27/01/2001</span>
+                  </li>
+                  <li>
+                    <span>
+                      <i class="fa fa-location-arrow"></i> Tân Bình, Tp. Hồ
+                      Chí Minh
+                    </span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-envelope"></i>mentor@gmail.com</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-phone"></i> 0946005077</span>
+                  </li>
+                  <li>
+                    <span>Số dư hiện tại:
+                      <span class="current-amount">300,000 BS</span></span>
                   </li>
                 </ul>
+                <div class="contact-btn">
+                  <a href="./mentor-profile-edit.html" class="btn btn-primary-custom">Chỉnh sửa thông tin</a>
+                </div>
+                <div class="mt-2">
+                  <a href="./wallet-management.html" class="btn btn-primary-custom w-100">Quản lý ví tiền</a>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="btn btn-primary-custom w-100">Rút tiền</a>
+                </div>
+                <div class="mt-2">
+                  <a href="./mentor-profile.html" class="btn btn-primary-custom w-100">Danh sách khoá học</a>
+                </div>
               </div>
             </div>
-            <div class="col-lg-8 col-md-12">
-              <div id="accordion">
-                <!-- Collapse #1: Thông tin khóa học -->
-                <div class="card1">
-                  <div class="card mt-4">
-                    <div class="card-header" id="headingSix">
-                      <h5 class="mb-0">
-                        <span>Thông tin khóa học</span>
-                        <a
-                          href="collapseSix"
-                          class="collapsed chevron"
-                          data-toggle="collapse"
-                          data-target="#collapseSix"
-                          aria-expanded="false"
-                          aria-controls="collapseSix"
-                        >
-                          <!-- <i class="fa fa-chevron-down chevron"></i> -->
-                        </a>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapseSix"
-                      class="collapse show"
-                      aria-labelledby="headingSix"
-                      data-parent="#accordion"
-                    >
-                      <div class="card-body">
-                        <div
-                          id="multiCollapseOne"
-                          class="collapse multi-collapse show p-4"
-                        >
-                          <div class="mentor-add-course">
-                            <form
-                              action="#"
-                              method="post"
-                              class="add-course-form"
-                            >
-                              <!-- Tên khóa học -->
-                              <div class="mb-3">
-                                <label class="form-label">Tên khoá học: </label>
-                                <div class="sup-autocom">
-                                  <input
-                                    id="courseName"
-                                    type="text"
-                                    class="form-control"
-                                  />
-                                  <div class="autocom-box" style="display: none;">
-                                    <!-- render list course name -->
-                                  </div>
+            <div class="member-operation mt-3">
+              <h4>Các hoạt động gần đây</h4>
+              <ul>
+                <li>
+                  <p class="mt-2">Đã đăng ký khoá học ReactJS Basic</p>
+                  <span>01/01/2023</span>
+                  <hr />
+                </li>
+                <li>
+                  <p class="mt-2">
+                    Đã nhận được 100 BS từ việc chia sẻ khoá học
+                  </p>
+                  <span>01/01/2023</span>
+                  <hr />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12">
+            <div id="accordion">
+              <!-- Collapse #1: Thông tin khóa học -->
+              <div class="card1">
+                <div class="card mt-4">
+                  <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                      <span>Thông tin khóa học</span>
+                      <a href="collapseSix" class="collapsed chevron" data-toggle="collapse" data-target="#collapseSix"
+                        aria-expanded="false" aria-controls="collapseSix">
+                        <!-- <i class="fa fa-chevron-down chevron"></i> -->
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                      <div id="multiCollapseOne" class="collapse multi-collapse show p-4">
+                        <div class="mentor-add-course">
+                          <form action="#" method="post" class="add-course-form">
+                            <!-- Tên khóa học -->
+                            <div class="mb-3">
+                              <label class="form-label">Tên khoá học: </label>
+                              <div class="sup-autocom">
+                                <input id="courseName" type="text" class="form-control" />
+                                <div class="autocom-box" style="display: none;">
+                                  <!-- render list course name -->
                                 </div>
                               </div>
-                              <!-- Trình độ -->
-                              <div class="mb-3">
-                                <label class="form-label me-2"
-                                  >Trình độ:
+                            </div>
+                            <!-- Trình độ -->
+                            <div class="mb-3">
+                              <label class="form-label me-2">Trình độ:
+                              </label>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="radio" name="optradio" checked />
+                                  Beginner
                                 </label>
-                                <div class="form-check-inline">
-                                  <label class="form-check-label">
-                                    <input
-                                      type="radio"
-                                      name="optradio"
-                                      checked
-                                    />
-                                    Beginner
-                                  </label>
-                                </div>
-                                <div class="form-check-inline">
-                                  <label class="form-check-label">
-                                    <input type="radio" name="optradio" />
-                                    Intermediate
-                                  </label>
-                                </div>
-                                <div class="form-check-inline">
-                                  <label class="form-check-label">
-                                    <input type="radio" name="optradio" />
-                                    Advanced
-                                  </label>
-                                </div>
-                                <div class="form-check-inline">
-                                  <label class="form-check-label">
-                                    <input type="radio" name="optradio" />
-                                    Expert
-                                  </label>
-                                </div>
                               </div>
-                              <!--Giá tiền-->
-                              <div class="mb-3">
-                                <label class="form-label">Giá tiền: </label>
-                                <div class="cost-1">
-                                  <input
-                                    id="Name1"
-                                    type="text"
-                                    class="form-control"
-                                  />
-                                </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="radio" name="optradio" />
+                                  Intermediate
+                                </label>
                               </div>
-                              <!-- Upload ảnh -->
-                              <div class="mb-3">
-                                <div class="card card-image-custom">
-                                  <div class="p-2">
-                                    <div
-                                      class="rounded border my-border-color p-1"
-                                    >
-                                      <div class="image-container">
-                                        <img
-                                          id="frameImageCourse"
-                                          src="/assets/images/upload-img.jpg"
-                                          class="img-fluid w-100 rounded"
-                                        />
-                                        <div
-                                          class="loading"
-                                          id="loading-upload-img"
-                                        >
-                                          <div
-                                            class="spinner-border"
-                                            role="status"
-                                          >
-                                            <span class="sr-only"
-                                              >Loading...</span
-                                            >
-                                          </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="radio" name="optradio" />
+                                  Advanced
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="radio" name="optradio" />
+                                  Expert
+                                </label>
+                              </div>
+                            </div>
+                            <!--Giá tiền-->
+                            <div class="mb-3">
+                              <label class="form-label">Giá tiền: </label>
+                              <div class="cost-1">
+                                <input id="Name1" type="text" class="form-control" />
+                              </div>
+                            </div>
+                            <!-- Upload ảnh -->
+                            <div class="mb-3">
+                              <div class="card card-image-custom">
+                                <div class="p-2">
+                                  <div class="rounded border my-border-color p-1">
+                                    <div class="image-container">
+                                      <img id="frameImageCourse" src="/assets/images/upload-img.jpg"
+                                        class="img-fluid w-100 rounded" />
+                                      <div class="loading" id="loading-upload-img">
+                                        <div class="spinner-border" role="status">
+                                          <span class="sr-only">Loading...</span>
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="card-body">
-                                      <div
-                                        class="row align-items-center group-title"
-                                      >
-                                        <div class="col-md-2 col-sm-2">
-                                          <label class="text-center mb-2"
-                                            >Hình ảnh:
-                                          </label>
-                                        </div>
-                                        <div class="col-md-7">
-                                          <input
-                                            class="form-control w-100 mb-2"
-                                            type="file"
-                                            accept=".jpg, jpeg, .png"
-                                            id="formFileImageCourse"
-                                            onchange="previewImageCourse()"
-                                          />
-                                        </div>
-                                        <div class="col-md-3">
-                                          <button
-                                            onclick="clearImageCourse()"
-                                            class="btn btn-outline-secondary-custom p-2 w-100"
-                                          >
-                                            Xoá ảnh
-                                          </button>
-                                        </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="row align-items-center group-title">
+                                      <div class="col-md-2 col-sm-2">
+                                        <label class="text-center mb-2">Hình ảnh:
+                                        </label>
+                                      </div>
+                                      <div class="col-md-7">
+                                        <input class="form-control w-100 mb-2" type="file" accept=".jpg, jpeg, .png"
+                                          id="formFileImageCourse" onchange="previewImageCourse()" />
+                                      </div>
+                                      <div class="col-md-3">
+                                        <button onclick="clearImageCourse()"
+                                          class="btn btn-outline-secondary-custom p-2 w-100">
+                                          Xoá ảnh
+                                        </button>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <!-- Lĩnh vực -->
-                              <div class="mb-3">
-                                <label class="me-2 mb-2">Lĩnh vực: </label>
-                                <select
-                                  id=""
-                                  class="form-select"
-                                  aria-label="Default select example"
-                                >
-                                  <option selected value="frontend">
-                                    Front End
-                                  </option>
-                                  <option value="backend">Back end</option>
-                                  <option value="devops">Devops</option>
-                                  <option value="database">Database</option>
-                                  <option value="database">Khác</option>
-                                </select>
-                              </div>
-                              <!-- Ngôn ngữ lập trình -->
-                              <!-- <div class="mb-3">
+                            </div>
+                            <!-- Lĩnh vực -->
+                            <div class="mb-3">
+                              <label class="me-2 mb-2">Lĩnh vực: </label>
+                              <select id="" class="form-select" aria-label="Default select example">
+                                <option selected value="frontend">
+                                  Front End
+                                </option>
+                                <option value="backend">Back end</option>
+                                <option value="devops">Devops</option>
+                                <option value="database">Database</option>
+                                <option value="database">Khác</option>
+                              </select>
+                            </div>
+                            <!-- Ngôn ngữ lập trình -->
+                            <!-- <div class="mb-3">
                                 <label class="form-label"
                                   >Ngôn ngữ lập trình:
                                 </label>
@@ -743,84 +620,57 @@
                                   </option>
                                 </select>
                               </div> -->
-                              <!-- Hình thức khóa học -->
-                              <div class="mb-3">
-                                <label class="form-label"
-                                  >Hình thức khoá học:
+                            <!-- Hình thức khóa học -->
+                            <div class="mb-3">
+                              <label class="form-label">Hình thức khoá học:
+                              </label>
+                              <select id="formsOfTraining" class="form-select" aria-label="Default select example">
+                                <option selected value="Online">
+                                  Online
+                                </option>
+                                <option value="Offline" disabled>
+                                  Offline
+                                </option>
+                              </select>
+                            </div>
+
+                            <!--Điền link google meet-->
+                            <div class="mb-3">
+                              <label class="form-label">Link Google Meet: </label>
+                              <div class="sup-autocom">
+                                <input id="meetLink" type="text" class="form-control"
+                                  placeholder="https://meet.google.com/..." onchange="checkMeetLink()" />
+                              </div>
+                              <p id="meetLinkError" style="color:red"></p>
+                            </div>
+
+                            <!-- Số lượng học viên -->
+                            <div class="mb-3">
+                              <label class="form-label">Số lượng học viên:
+                              </label>
+                              <div class="col-lg-4 col-md-12 col-sm-12 d-flex align-items-center" id="quantity">
+                                <!-- Min -->
+                                <label class="form-label me-2 mt-2">Min:
                                 </label>
-                                <select
-                                  id="formsOfTraining"
-                                  class="form-select"
-                                  aria-label="Default select example"
-                                >
-                                  <option selected value="Online">
-                                    Online
-                                  </option>
-                                  <option value="Offline" disabled>
-                                    Offline
-                                  </option>
-                                </select>
-                              </div>
+                                <input type="number" id="minQuantity" onchange="handleChangeMinQuantity()"
+                                  class="form-control" value="1" />
 
-                              <!--Điền link google meet-->
-                              <div class="mb-3">
-                                <label class="form-label">Link Google Meet: </label>
-                                <div class="sup-autocom">
-                                  <input
-                                    id="meetLink"
-                                    type="text"
-                                    class="form-control"
-                                    placeholder="https://meet.google.com/..."
-                                    onchange="checkMeetLink()"
-                                  /> 
-                                </div>
-                                <p id="meetLinkError" style="color:red"></p>
-                              </div>
-
-                              <!-- Số lượng học viên -->
-                              <div class="mb-3">
-                                <label class="form-label"
-                                  >Số lượng học viên:
+                                <!-- Max -->
+                                <label class="form-label me-2 mt-2 ms-4">Max:
                                 </label>
-                                <div
-                                  class="col-lg-4 col-md-12 col-sm-12 d-flex align-items-center"
-                                  id="quantity"
-                                >
-                                  <!-- Min -->
-                                  <label class="form-label me-2 mt-2"
-                                    >Min:
-                                  </label>
-                                  <input
-                                    type="number"
-                                    id="minQuantity"
-                                    onchange="handleChangeMinQuantity()"
-                                    class="form-control"
-                                    value="1"
-                                  />
-
-                                  <!-- Max -->
-                                  <label class="form-label me-2 mt-2 ms-4"
-                                    >Max:
-                                  </label>
-                                  <input
-                                    type="number"
-                                    id="maxQuantity"
-                                    onchange="handleChangeMaxQuantity()"
-                                    class="form-control"
-                                    value="15"
-                                  />
-                                </div>
+                                <input type="number" id="maxQuantity" onchange="handleChangeMaxQuantity()"
+                                  class="form-control" value="15" />
                               </div>
-                              <!-- Tag khóa học -->
-                              <div class="mb-4">
-                                <label for="tags-input" class="form-label"
-                                  >Tags:
-                                </label>
-                                <input type="text" class="js-example-basic-multiple" placeholder="Chọn tags...">
-                              </div>
+                            </div>
+                            <!-- Tag khóa học -->
+                            <div class="mb-4">
+                              <label for="tags-input" class="form-label">Tags:
+                              </label>
+                              <input type="text" class="js-example-basic-multiple" placeholder="Chọn tags...">
+                            </div>
 
-                              <!-- Bỏ -->
-                              <!-- <div class="mb-3">
+                            <!-- Bỏ -->
+                            <!-- <div class="mb-3">
                                 <label class="form-label">Phân loại khoá học</label>
                                 <select
                                   class="form-select"
@@ -832,7 +682,7 @@
                                   <option value="3">Three</option>
                                 </select>
                               </div> -->
-                              <!-- <div class="mb-3">
+                            <!-- <div class="mb-3">
                                 <label class="form-label">Ngày mở khoá học</label>
                                 <input
                                   type="text"
@@ -840,72 +690,50 @@
                                   value="20/01/2023"
                                 />
                               </div> -->
-                              <!-- Bỏ -->
+                            <!-- Bỏ -->
 
-                              <!-- Địa chỉ -->
-                              <div id="showLocation" style="display: none">
-                                <div class="mb-3">
-                                  <label class="form-label">Tỉnh Thành: </label>
-                                  <select
-                                    onchange="print_state('state',this.selectedIndex);"
-                                    id="country"
-                                    class="form-select"
-                                    aria-label="Default select example"
-                                  >
-                                    <!-- <option selected>Chọn thành phố</option>
+                            <!-- Địa chỉ -->
+                            <div id="showLocation" style="display: none">
+                              <div class="mb-3">
+                                <label class="form-label">Tỉnh Thành: </label>
+                                <select onchange="print_state('state',this.selectedIndex);" id="country"
+                                  class="form-select" aria-label="Default select example">
+                                  <!-- <option selected>Chọn thành phố</option>
                                     <option value="1">Online</option>
                                     <option value="2">Offline</option> -->
-                                  </select>
-                                </div>
-                                <div class="mb-3">
-                                  <label class="form-label"
-                                    >Quận | Huyện:
-                                  </label>
-                                  <select
-                                    onchange="print_district('district',this.selectedIndex);"
-                                    name="state"
-                                    id="state"
-                                    class="form-select"
-                                    aria-label="Default select example"
-                                  >
-                                    <option selected>
-                                      Vui lòng chọn tỉnh thành trước
-                                    </option>
-                                  </select>
-                                </div>
-                                <div class="mb-3">
-                                  <label class="form-label">Đường: </label>
-                                  <select
-                                    name="district"
-                                    id="district"
-                                    class="form-select"
-                                    aria-label="Default select example"
-                                  >
-                                    <option selected>
-                                      Vui lòng chọn quận huyện trước
-                                    </option>
-                                  </select>
-                                </div>
-                                <div class="mb-3">
-                                  <label class="form-label"
-                                    >Địa chỉ chi tiết:
-                                  </label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    value=""
-                                  />
-                                </div>
+                                </select>
                               </div>
-                              <!-- Mô tả khóa học -->
                               <div class="mb-3">
-                                <label class="form-label"
-                                  >Mô tả khoá học:
+                                <label class="form-label">Quận | Huyện:
                                 </label>
-                                <div class="form-floating">
-                                  <div
-                                    class="box_luuy"
-                                    style="
+                                <select onchange="print_district('district',this.selectedIndex);" name="state"
+                                  id="state" class="form-select" aria-label="Default select example">
+                                  <option selected>
+                                    Vui lòng chọn tỉnh thành trước
+                                  </option>
+                                </select>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label">Đường: </label>
+                                <select name="district" id="district" class="form-select"
+                                  aria-label="Default select example">
+                                  <option selected>
+                                    Vui lòng chọn quận huyện trước
+                                  </option>
+                                </select>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label">Địa chỉ chi tiết:
+                                </label>
+                                <input type="text" class="form-control" value="" />
+                              </div>
+                            </div>
+                            <!-- Mô tả khóa học -->
+                            <div class="mb-3">
+                              <label class="form-label">Mô tả khoá học:
+                              </label>
+                              <div class="form-floating">
+                                <div class="box_luuy" style="
                                       background: #f3efef;
                                       box-shadow: rgba(0, 0, 0, 0.1) 3px 4px 4px;
                                       clear: both;
@@ -916,91 +744,64 @@
                                       margin: 5px 0px;
                                       padding: 20px 25px;
                                       transition: 0.5s;
-                                    "
-                                  >
-                                    <textarea
-                                      id="input_luuy"
-                                      rows="5"
-                                      style="width: 100%"
-                                      oninput="countChar(this)"
-                                      maxlength="200"
-                                    ></textarea>
-                                  </div>
-                                  <span
-                                    id="charNum"
-                                    aria-label="Đã dùng 0/200 ký tự"
-                                    role="img"
-                                    class="ZTPlmc"
-                                    style="float: right"
-                                    >0 / 200</span
-                                  >
+                                    ">
+                                  <textarea id="input_luuy" rows="5" style="width: 100%" oninput="countChar(this)"
+                                    maxlength="200"></textarea>
                                 </div>
-
-                                <script>
-                                  function countChar(textarea) {
-                                    var count = textarea.value.length;
-                                    document.getElementById(
-                                      "charNum"
-                                    ).innerHTML = count + " / 200";
-                                    if (count > 200) {
-                                      textarea.value = textarea.value.substring(
-                                        0,
-                                        200
-                                      );
-                                    }
-                                  }
-                                </script>
+                                <span id="charNum" aria-label="Đã dùng 0/200 ký tự" role="img" class="ZTPlmc"
+                                  style="float: right">0 / 200</span>
                               </div>
-                            </form>
-                          </div>
+
+                              <script>
+                                function countChar(textarea) {
+                                  var count = textarea.value.length;
+                                  document.getElementById(
+                                    "charNum"
+                                  ).innerHTML = count + " / 200";
+                                  if (count > 200) {
+                                    textarea.value = textarea.value.substring(
+                                      0,
+                                      200
+                                    );
+                                  }
+                                }
+                              </script>
+                            </div>
+                          </form>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <!-- Collapse #2: Lộ trình khóa học -->
-                <div class="card2">
-                  <div class="card mt-4">
-                    <div class="card-header" id="headingFour">
-                      <h5 class="mb-0">
-                        <span>Lộ trình khóa học</span>
-                        <a
-                          href="collapseFour"
-                          class="collapsed chevron"
-                          data-toggle="collapse"
-                          data-target="#collapseFour"
-                          aria-expanded="false"
-                          aria-controls="collapseFour"
-                        >
-                          <!-- <i class="fa fa-chevron-down chevron"></i> -->
-                        </a>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapseFour"
-                      class="collapse show"
-                    >
-                      <div class="card-body1 card-body1-create-course">
-                        <div
-                          id="multiCollapseTwo multiCollapseTwo-create-course" 
-                          class="collapse multi-collapse show p-4"
-                        >
-                          <!-- Title- course -->
-                          <div
-                            class="d-flex"
-                          >
-                            <h1
-                              class="course-route-title-name"
-                              id="routeCourseTitleName"
-                            ></h1>
-                          </div>
-                          <textarea name="editor1"></textarea>
-                          <script>
-                            CKEDITOR.replace( 'editor1' );
-                          </script>                                               
-                          <button class="btn btn-primary mt-4 mb-4 float-end" onclick="event.preventDefault(); handleGetData()">Lưu</button>
+              <!-- Collapse #2: Lộ trình khóa học -->
+              <div class="card2">
+                <div class="card mt-4">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <span>Lộ trình khóa học</span>
+                      <a href="collapseFour" class="collapsed chevron" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <!-- <i class="fa fa-chevron-down chevron"></i> -->
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse show">
+                    <div class="card-body1 card-body1-create-course">
+                      <div id="multiCollapseTwo multiCollapseTwo-create-course"
+                        class="collapse multi-collapse show p-4">
+                        <!-- Title- course -->
+                        <div class="d-flex">
+                          <h1 class="course-route-title-name" id="routeCourseTitleName"></h1>
                         </div>
+                        <textarea name="editor1"></textarea>
+                        <script>
+                          CKEDITOR.replace('editor1');
+                        </script>
+                        <button class="btn btn-primary mt-4 mb-4 float-end"
+                          onclick="event.preventDefault(); handleGetData()">Lưu</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1011,43 +812,22 @@
                     <div class="card-header" id="headingFive">
                       <h5 class="mb-0">
                         <span>Thời gian lớp học</span>
-                        <a
-                          href="collapseFive"
-                          class="collapsed chevron"
-                          data-toggle="collapse"
-                          data-target="#collapseFive"
-                          aria-expanded="false"
-                          aria-controls="collapseFive"
-                        >
+                        <a href="collapseFive" class="collapsed chevron" data-toggle="collapse"
+                          data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                           <!-- <i class="fa fa-chevron-down chevron"></i> -->
                         </a>
                       </h5>
                     </div>
-                    <div
-                      id="collapseFive"
-                      class="collapse show"
-                      aria-labelledby="headingFive"
-                    >
+                    <div id="collapseFive" class="collapse show" aria-labelledby="headingFive">
                       <div class="card-body">
-                        <div
-                          id="multi#collapseFive"
-                          class="collapse multi-collapse show p-4"
-                        >
-                          <form
-                            autocomplete="off"
-                            onsubmit="onFormSubmitTimeClass()"
-                          >
+                        <div id="multi#collapseFive" class="collapse multi-collapse show p-4">
+                          <form autocomplete="off" onsubmit="onFormSubmitTimeClass()">
                             <div class="row">
                               <!-- Start time -->
                               <div class="col-lg-4 col-md-12 position-relative">
                                 <div class="form-group mt-3">
                                   <label for="startTime">Giờ bắt đầu: </label>
-                                  <input
-                                    type="time"
-                                    class="form-control w-75 mt-1"
-                                    name="startTime"
-                                    id="startTime"
-                                  />
+                                  <input type="time" class="form-control w-75 mt-1" name="startTime" id="startTime" />
                                 </div>
                               </div>
 
@@ -1055,12 +835,7 @@
                               <div class="col-lg-4 col-md-12">
                                 <div class="form-group mt-3">
                                   <label for="endTime">Giờ kết thúc: </label>
-                                  <input
-                                    type="time"
-                                    class="form-control w-75 mt-1"
-                                    name="endTime"
-                                    id="endTime"
-                                  />
+                                  <input type="time" class="form-control w-75 mt-1" name="endTime" id="endTime" />
                                 </div>
                               </div>
 
@@ -1074,84 +849,40 @@
                               </script>
 
                               <!-- Chọn các thứ trong tuần -->
-                              <div
-                                class="col-lg-4 col-md-12 d-flex align-items-center mt-3-1 opt-day-create-course"
-                              >
+                              <div class="col-lg-4 col-md-12 d-flex align-items-center mt-3-1 opt-day-create-course">
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T2</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T2,"
-                                    name="chkT2"
-                                    id="chkT2"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T2," name="chkT2" id="chkT2" />
                                 </div>
 
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T3</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T3,"
-                                    name="chkT3"
-                                    id="chkT3"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T3," name="chkT3" id="chkT3" />
                                 </div>
 
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T4</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T4,"
-                                    name="chkT4"
-                                    id="chkT4"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T4," name="chkT4" id="chkT4" />
                                 </div>
 
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T5</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T5,"
-                                    name="chkT5"
-                                    id="chkT5"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T5," name="chkT5" id="chkT5" />
                                 </div>
 
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T6</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T6,"
-                                    name="chkT6"
-                                    id="chkT6"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T6," name="chkT6" id="chkT6" />
                                 </div>
 
                                 <div class="d-flex flex-column me-3">
                                   <label class="form-check-label">T7</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="T7,"
-                                    name="chkT7"
-                                    id="chkT7"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="T7," name="chkT7" id="chkT7" />
                                 </div>
 
                                 <div class="d-flex flex-column">
                                   <label class="form-check-label">CN</label>
-                                  <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    value="CN,"
-                                    name="chkCN"
-                                    id="chkCN"
-                                  />
+                                  <input type="checkbox" class="form-check-input" value="CN," name="chkCN" id="chkCN" />
                                 </div>
                               </div>
                             </div>
@@ -1160,10 +891,7 @@
                               <div class="col-lg-4 col-md-12">
                                 <div class="form-group mt-3">
                                   <label for="slot">Slot: </label>
-                                  <select
-                                    class="form-select w-75 mt-1"
-                                    id="slot"
-                                  >
+                                  <select class="form-select w-75 mt-1" id="slot">
                                     <option selected value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -1185,23 +913,15 @@
                               <!-- Ngày dự kiến mở lớp -->
                               <div class="col-lg-4 col-md-12">
                                 <div class="form-group mt-3">
-                                  <label for="startTimeExpected"
-                                    >Ngày dự kiến mở lớp:
+                                  <label for="startTimeExpected">Ngày dự kiến mở lớp:
                                   </label>
-                                  <input
-                                    type="date"
-                                    class="form-control w-75 mt-1"
-                                    name="startTimeExpected"
-                                    id="startTimeExpected"
-                                  />
+                                  <input type="date" class="form-control w-75 mt-1" name="startTimeExpected"
+                                    id="startTimeExpected" />
                                 </div>
                               </div>
                               <!-- Button create class -->
                               <div class="col-lg-4 col-md-12 mt-4">
-                                <button
-                                  class="btn btn-create-class"
-                                  id="createClassBtn"
-                                >
+                                <button class="btn btn-create-class" id="createClassBtn">
                                   Tạo lớp học
                                 </button>
                               </div>
@@ -1210,10 +930,7 @@
 
                           <!-- Table list course schedule -->
                           <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
-                            <table
-                              class="table table-striped table-hover"
-                              id="storeListTimeClass"
-                            >
+                            <table class="table table-striped table-hover" id="storeListTimeClass">
                               <thead class="data-create-course-title-tbl">
                                 <tr>
                                   <!-- <th scope="col" style="font-weight: bold">
@@ -1242,7 +959,7 @@
                               <!-- Data -->
                               <tbody class="data-create-course">
                                 <!-- render data -->
-                                
+
                               </tbody>
                             </table>
                           </div>
@@ -1264,955 +981,964 @@
             </div>
           </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Start footer -->
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <h3 class="title-address">TP.Hồ Chí Minh</h3>
-            </div>
+    <!-- Start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <h3 class="title-address">TP.Hồ Chí Minh</h3>
           </div>
-          <div class="row mb-5">
-            <div class="col-lg-4 col-md-4">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
-            <div class="col-lg-4 col-md-4">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
-            <div class="col-lg-4 col-md-4">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
           </div>
-          <hr class="text-success mt-5 mb-5" />
-          <div class="row">
-            <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-logo">
-                <a href="index.html"
-                  ><span class="site-logo site-logo-footer"><img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo"></span></a
-                >
-                <p class="footer-about-description">
-                  Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
-                  các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
-                  tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
-                </p>
-                <h6>Theo dõi chúng tôi tại:</h6>
-                <ul class="footer-social-icons">
-                  <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <!-- <li>
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+          </div>
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+          </div>
+        </div>
+        <hr class="text-success mt-5 mb-5" />
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-logo">
+              <a href="index.html"><span class="site-logo site-logo-footer" style="margin-left: 20px;">
+                  <img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo">
+                </span></a>
+              <p class="footer-about-description">
+                Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
+                các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
+                tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
+              </p>
+              <h6>Theo dõi chúng tôi tại:</h6>
+              <ul class="footer-social-icons">
+                <li>
+                  <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <!-- <li>
                     <a href="#"><i class="fa fa-twitter"></i></a>
                   </li> -->
-                  <li>
-                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                 
-                  <li>
-                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                  </li>
-                  <!-- <li>
+                <li>
+                  <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
+                      class="fa fa-linkedin"></i></a>
+                </li>
+
+                <li>
+                  <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
+                      class="fa fa-youtube-play"></i></a>
+                </li>
+                <!-- <li>
                     <a href="index.html"><i class="fa fa-dribbble"></i></a>
                   </li> -->
-                </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-menu">
+              <h4>Menu</h4>
+              <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./aboutus.html">Về chúng tôi</a></li>
+                <li><a href="./courses.html">Khoá học</a></li>
+                <li><a href="./mentor-list.html">Mentor</a></li>
+                <li><a href="./lms.html">Nền tảng LMS</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
 
-              </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-menu">
+              <h4>Điều khoản</h4>
+              <ul>
+                <li><a href="./terms-of-service.html">Điều khoản dịch vụ</a></li>
+                <li><a href="./privacy-policy.html">Chính sách bảo mật</a></li>
+              </ul>
             </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-menu">
-                <h4>Menu</h4>
-                <ul>
-                  <li><a href="./index.html">Trang chủ</a></li>
-                  <li><a href="./aboutus.html">Về chúng tôi</a></li>
-                  <li><a href="./courses.html">Khoá học</a></li>
-                  <li><a href="./mentor-list.html">Mentor</a></li>
-                  <li><a href="./lms.html">Nền tảng LMS</a></li>
-                  <li><a href="./blog.html">Blog</a></li>
-                  <li><a href="./terms-of-service.html">Điều khoản dịch vụ</a></li>
-                  <li><a href="./privacy-policy.html">Chính sách bảo mật</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-control">
-                <button class="btn btn-primary-custom p-2 mb-2">
-                  Đăng ký khoá học
-                </button>
-              </div>
-            </div> -->
-            <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-contact">
-                <h4>Liên hệ với chúng tôi</h4>
-                <li>
-                  <img src="/assets/images/icon-location.png" class="icon-location" alt="icon-location">
-                  <p class="m-0">Tòa S9.02A, Vinhomes Grand Park, Quận 9</p>
-                </li>
-                <li>
-                  <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
-                  <p class="m-0">admin@bsmart.edu.vn</p>
-                </li>
-                <li>
-                  <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
-                  <p class="m-0">028 9999 79 39</p>
-                </li>
-              </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="footer-control d-flex align-items-center mt-5">
+                    <a
+                      href="./courses.html"
+                      class="btn btn-primary-custom p-2 mb-2"
+                    >
+                      Đăng ký khoá học
+                    </a>
+                  </div>
+                </div> -->
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-contact">
+              <h4>Liên hệ với chúng tôi</h4>
+              <li>
+                <img src="/assets/images/icon-location.png" class="icon-location" alt="icon-location">
+                <p class="m-0">Tòa S9.02A, Vinhomes Grand Park, Quận 9</p>
+              </li>
+              <li>
+                <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
+                <p class="m-0">admin@bsmart.edu.vn</p>
+              </li>
+              <li>
+                <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
+                <p class="m-0">028 9999 79 39</p>
+              </li>
             </div>
           </div>
         </div>
-        <hr class="text-success mt-5" />
-        <div class="container">
-          <p class="m-0 text-light">
-            © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
-          </p>
-        </div>
-      </footer>
-      <!-- End footer -->
-    </div>
-    <!-- Import script bootstrap V5 -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Import script owl carousel  -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- Import swiper -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Script -->
-    <script>
-      // validate số lượng học viên
-      function handleChangeMinQuantity() {
-        let min = document.getElementById("minQuantity").value;
-        let max = document.getElementById("maxQuantity").value;
+      </div>
+      <hr class="text-success mt-5" />
+      <div class="container">
+        <p class="m-0 text-light text-center">
+          © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
+        </p>
+      </div>
+    </footer>
+    <!-- End footer -->
+  </div>
+  <!-- Import script bootstrap V5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- Import script owl carousel  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Import swiper -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Script -->
+  <script>
+    // validate số lượng học viên
+    function handleChangeMinQuantity() {
+      let min = document.getElementById("minQuantity").value;
+      let max = document.getElementById("maxQuantity").value;
 
-        if (+min < 1) {
-          alert("Vui lòng chọn min lớn hơn hoặc bằng 1!");
-          document.getElementById("minQuantity").value = 1;
-        }
-
-        if (+min >= +max) {
-          alert("Vui lòng chọn min phải bé hơn max!");
-          document.getElementById("minQuantity").value = +document.getElementById("maxQuantity").value - 1;
-        }
-      }
-      function handleChangeMaxQuantity() {
-        let min = document.getElementById("minQuantity").value;
-        let max = document.getElementById("maxQuantity").value;
-
-        if (+min >= +max) {
-          alert("Vui lòng chọn max phải lớn hơn min!");
-          document.getElementById("maxQuantity").value = +document.getElementById("minQuantity").value + 1;
-        }
+      if (+min < 1) {
+        alert("Vui lòng chọn min lớn hơn hoặc bằng 1!");
+        document.getElementById("minQuantity").value = 1;
       }
 
-      // autocomplete course name
-      let liContainer = document.querySelector(".autocom-box");
-      let courseNameInput = document.getElementById("courseName");
-      let searchInput = document.querySelector(".sup-autocom");
+      if (+min >= +max) {
+        alert("Vui lòng chọn min phải bé hơn max!");
+        document.getElementById("minQuantity").value = +document.getElementById("maxQuantity").value - 1;
+      }
+    }
+    function handleChangeMaxQuantity() {
+      let min = document.getElementById("minQuantity").value;
+      let max = document.getElementById("maxQuantity").value;
 
-      // route course title name
-      let routeCourseTitleName = document.getElementById(
-        "routeCourseTitleName"
-      );
+      if (+min >= +max) {
+        alert("Vui lòng chọn max phải lớn hơn min!");
+        document.getElementById("maxQuantity").value = +document.getElementById("minQuantity").value + 1;
+      }
+    }
 
-      // data
-      let datas = [
-        "TypeScript",
-        "Swift",
-        "Scala",
-        "Objective-C",
-        "Shell",
-        "C",
-        "C#",
-        "CSS",
-        "C++",
-        "PHP",
-        "Ruby",
-        "Python",
-        "Java",
-        "JavaScript",
-        "Developer",
-        "Web Designer",
-        "Web Developer",
-        "Front-end Web Developer",
-        "Back-end Web Developer",
-        "Login Form in HTML & CSS",
-        "How to learn HTML & CSS",
-        "How to learn JavaScript",
-      ];
-      // evt
-      courseNameInput.addEventListener("change", function () {
-        // change theo input ở thông tin khóa học
-        routeCourseTitleName.innerText = courseNameInput.value;
-      });
-      courseNameInput.addEventListener("keyup", function () {
-        let inpValue = courseNameInput.value;
+    // autocomplete course name
+    let liContainer = document.querySelector(".autocom-box");
+    let courseNameInput = document.getElementById("courseName");
+    let searchInput = document.querySelector(".sup-autocom");
 
-        liContainer.style.display = 'block'
+    // route course title name
+    let routeCourseTitleName = document.getElementById(
+      "routeCourseTitleName"
+    );
 
-        if (inpValue) {
-          // add searchInp
-          searchInput.classList.add("active");
-          let filterKeyWord = datas.filter(function (keyWord) {
-            return keyWord.toLowerCase().includes(inpValue.toLowerCase());
-          });
+    // data
+    let datas = [
+      "TypeScript",
+      "Swift",
+      "Scala",
+      "Objective-C",
+      "Shell",
+      "C",
+      "C#",
+      "CSS",
+      "C++",
+      "PHP",
+      "Ruby",
+      "Python",
+      "Java",
+      "JavaScript",
+      "Developer",
+      "Web Designer",
+      "Web Developer",
+      "Front-end Web Developer",
+      "Back-end Web Developer",
+      "Login Form in HTML & CSS",
+      "How to learn HTML & CSS",
+      "How to learn JavaScript",
+    ];
+    // evt
+    courseNameInput.addEventListener("change", function () {
+      // change theo input ở thông tin khóa học
+      routeCourseTitleName.innerText = courseNameInput.value;
+    });
+    courseNameInput.addEventListener("keyup", function () {
+      let inpValue = courseNameInput.value;
 
-          dataSuggestionWordsGenerator(filterKeyWord);
-        } else {
-          // remove searchInp
+      liContainer.style.display = 'block'
+
+      if (inpValue) {
+        // add searchInp
+        searchInput.classList.add("active");
+        let filterKeyWord = datas.filter(function (keyWord) {
+          return keyWord.toLowerCase().includes(inpValue.toLowerCase());
+        });
+
+        dataSuggestionWordsGenerator(filterKeyWord);
+      } else {
+        // remove searchInp
+        searchInput.classList.remove("active");
+      }
+    });
+    // generate key word
+    let customListItem;
+    function dataSuggestionWordsGenerator(arrsKeyWord) {
+      let keyWord = arrsKeyWord
+        .map(function (word) {
+          return "<li>" + word + "</li>";
+        })
+        .join("");
+
+      if (keyWord) {
+        liContainer.innerHTML = keyWord;
+      } else {
+        liContainer.innerHTML = "<li>" + courseNameInput.value + "</li>";
+      }
+      Select();
+    }
+    // select
+    function Select() {
+      let allListItems = liContainer.querySelectorAll("li");
+      allListItems.forEach(function (word) {
+        word.addEventListener("click", function (e) {
+          courseNameInput.value = e.target.textContent;
+          routeCourseTitleName.innerText = e.target.textContent;
+          // remove search inp
           searchInput.classList.remove("active");
+        });
+      });
+    }
+
+    function previewImageCourse() {
+      var optFile = document.getElementById("formFileImageCourse");
+      var pathFile = optFile.value;
+      var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
+
+      if (!allowedExtensions.exec(pathFile)) {
+        alert("Vui lòng chọn file ảnh có đuôi là: .jpeg/.jpg/.png");
+        optFile.value = "";
+        return false;
+      } else {
+        frameImageCourse.src = "";
+        frameImageCourse.src = window.URL.createObjectURL(
+          event.target.files[0]
+        );
+      }
+    }
+    // reset upload image
+    function clearImageCourse() {
+      event.preventDefault();
+      // loading();
+      document.getElementById("formFileImageCourse").value = null;
+      document.getElementById("frameImageCourse").src =
+        "./assets/images/upload-img.jpg";
+    }
+
+    document
+      .getElementById("formsOfTraining")
+      .addEventListener("change", function () {
+        if (this.value == "Online") {
+          document.getElementById("showLocation").style.display = "none";
+        } else {
+          document.getElementById("showLocation").style.display = "block";
         }
       });
-      // generate key word
-      let customListItem;
-      function dataSuggestionWordsGenerator(arrsKeyWord) {
-        let keyWord = arrsKeyWord
-          .map(function (word) {
-            return "<li>" + word + "</li>";
-          })
-          .join("");
 
-        if (keyWord) {
-          liContainer.innerHTML = keyWord;
-        } else {
-          liContainer.innerHTML = "<li>" + courseNameInput.value + "</li>";
-        }
-        Select();
+    // Thời gian lớp học
+    var selectedTimeClassRow = null;
+    let rowIndexId = 1;
+    let tempDate = [];
+    let tempDate1 = [];
+    let tempDate2 = [];
+    let indexTime = [];
+    let comCheck = [];
+    function onFormSubmitTimeClass() {
+      event.preventDefault();
+
+      var formData = readFormDataTimeClass();
+
+      if (selectedTimeClassRow === null) {
+        insertNewRecordTimeClass(formData);
+      } else {
+        updateRecordTimeClass(formData);
+        selectedTimeClassRow = null;
       }
-      // select
-      function Select() {
-        let allListItems = liContainer.querySelectorAll("li");
-        allListItems.forEach(function (word) {
-          word.addEventListener("click", function (e) {
-            courseNameInput.value = e.target.textContent;
-            routeCourseTitleName.innerText = e.target.textContent;
-            // remove search inp
-            searchInput.classList.remove("active");
-          });
-        });
-      }      
+      resetDataFormClass();
+    }
 
-      function previewImageCourse() {
-        var optFile = document.getElementById("formFileImageCourse");
-        var pathFile = optFile.value;
-        var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
+    let saveInfo;
+    // read data
+    function readFormDataTimeClass() {
+      var formData = {};
 
-        if (!allowedExtensions.exec(pathFile)) {
-          alert("Vui lòng chọn file ảnh có đuôi là: .jpeg/.jpg/.png");
-          optFile.value = "";
-          return false;
-        } else {
-          frameImageCourse.src = "";
-          frameImageCourse.src = window.URL.createObjectURL(
-            event.target.files[0]
-          );
-        }
+      formData["startTime"] = document.getElementById("startTime").value;
+      formData["endTime"] = document.getElementById("endTime").value;
+      formData["chkT2"] = document.getElementById("chkT2").value;
+      formData["chkT3"] = document.getElementById("chkT3").value;
+      formData["chkT4"] = document.getElementById("chkT4").value;
+      formData["chkT5"] = document.getElementById("chkT5").value;
+      formData["chkT6"] = document.getElementById("chkT6").value;
+      formData["chkT7"] = document.getElementById("chkT7").value;
+      formData["chkCN"] = document.getElementById("chkCN").value;
+      formData["slot"] = document.getElementById("slot").value;
+      formData["startTimeExpected"] =
+        document.getElementById("startTimeExpected").value;
+
+      return formData;
+    }
+    // Insert data
+    function insertNewRecordTimeClass(data) {
+      var index = 1;
+      var table = document
+        .getElementById("storeListTimeClass")
+        .getElementsByTagName("tbody")[0];
+      var newRow = table.insertRow(table.length);
+      // khai báo biến truy xuất vào bảng
+
+      //Khai báo biến thời gian bắt đầu và kết thúc
+      var hoursStart = document.getElementById("startTime").value;
+      var hS = hoursStart.split(":");
+
+      var hoursEnd = document.getElementById("endTime").value;
+      //xử lý chuỗi
+      var hS = hoursStart.split(":");
+      var hE = hoursEnd.split(":");
+      // Lấy thời gian hôm nay
+      var toDay = new Date();
+      var dateToDay =
+        toDay.getFullYear() +
+        "-" +
+        (toDay.getMonth() + 1) +
+        "-" +
+        toDay.getDate();
+      var dateNow = dateToDay.split("-");
+      //Khai báo biến cho ngày tháng năm
+      var startDate = document.getElementById("startTimeExpected").value;
+      var date1 = new Date(dateToDay);
+      var date2 = new Date(startDate);
+      var date3 = new Date();
+
+      var arrs = [];
+      var chk2 = document.getElementById("chkT2");
+      var chk3 = document.getElementById("chkT3");
+      var chk4 = document.getElementById("chkT4");
+      var chk5 = document.getElementById("chkT5");
+      var chk6 = document.getElementById("chkT6");
+      var chk7 = document.getElementById("chkT7");
+      var chk8 = document.getElementById("chkCN");
+      if (chk2.checked) {
+        arrs.push(data.chkT2);
       }
-      // reset upload image
-      function clearImageCourse() {
-        event.preventDefault();
-        // loading();
-        document.getElementById("formFileImageCourse").value = null;
-        document.getElementById("frameImageCourse").src =
-          "./assets/images/upload-img.jpg";
+      if (chk3.checked) {
+        arrs.push(data.chkT3);
+      }
+      if (chk4.checked) {
+        arrs.push(data.chkT4);
+      }
+      if (chk5.checked) {
+        arrs.push(data.chkT5);
+      }
+      if (chk6.checked) {
+        arrs.push(data.chkT6);
+      }
+      if (chk7.checked) {
+        arrs.push(data.chkT7);
+      }
+      if (chk8.checked) {
+        arrs.push(data.chkCN);
       }
 
-      document
-        .getElementById("formsOfTraining")
-        .addEventListener("change", function () {
-          if (this.value == "Online") {
-            document.getElementById("showLocation").style.display = "none";
-          } else {
-            document.getElementById("showLocation").style.display = "block";
-          }
-        });
-
-      // Thời gian lớp học
-      var selectedTimeClassRow = null;
-      let rowIndexId = 1;
-      let tempDate = [];
-      let tempDate1 = [];
-      let tempDate2 = [];
-      let indexTime = [];
-      let comCheck = [];
-      function onFormSubmitTimeClass() {
-        event.preventDefault();
-
-        var formData = readFormDataTimeClass();
-
-        if (selectedTimeClassRow === null) {
-          insertNewRecordTimeClass(formData);
-        } else {
-          updateRecordTimeClass(formData);
-          selectedTimeClassRow = null;
-        }
-        resetDataFormClass();
+      var val = arrs.join("");
+      var lastChar = val.slice(-1);
+      if (lastChar == ",") {
+        val = val.slice(0, -1);
       }
 
-      let saveInfo;
-      // read data
-      function readFormDataTimeClass() {
-        var formData = {};
+      var tkb = val.split(",");
+      //Kiểm tra thời gian bắt đầu so với thời gian kết thúc
+      if (
+        //Thời gian bắt đầu cho đến kết thúc min=30 phút và max= 4 giờ
+        hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) <= 29 ||
+        hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) >= 241
+      ) {
+        alert(
+          "Thời gian cho lớp học tối thiểu là 30 phút và tối đa là 4 giờ! "
+        );
 
-        formData["startTime"] = document.getElementById("startTime").value;
-        formData["endTime"] = document.getElementById("endTime").value;
-        formData["chkT2"] = document.getElementById("chkT2").value;
-        formData["chkT3"] = document.getElementById("chkT3").value;
-        formData["chkT4"] = document.getElementById("chkT4").value;
-        formData["chkT5"] = document.getElementById("chkT5").value;
-        formData["chkT6"] = document.getElementById("chkT6").value;
-        formData["chkT7"] = document.getElementById("chkT7").value;
-        formData["chkCN"] = document.getElementById("chkCN").value;
-        formData["slot"] = document.getElementById("slot").value;
-        formData["startTimeExpected"] =
-          document.getElementById("startTimeExpected").value;
-
-        return formData;
+        return;
       }
-      // Insert data
-      function insertNewRecordTimeClass(data) {
-        var index = 1;
-        var table = document
-          .getElementById("storeListTimeClass")
-          .getElementsByTagName("tbody")[0];
-        var newRow = table.insertRow(table.length);
-        // khai báo biến truy xuất vào bảng
+      if (
+        date1.getTime() > date2.getTime() ||
+        (date1.getDate() === date2.getDate() &&
+          date1.getFullYear() === date2.getFullYear() &&
+          date1.getMonth() === date2.getMonth())
+      ) {
+        alert("Ngày dự kiến mở lớp học không hợp lệ! ");
+        return;
+      }
+      //Check thời gian thứ so với thời gian có thể tạo lớp học
 
-        //Khai báo biến thời gian bắt đầu và kết thúc
-        var hoursStart = document.getElementById("startTime").value;
-        var hS = hoursStart.split(":");
+      for (let i = 0; i < comCheck.length; i++) {
+        let temp = comCheck[i][1].split(",");
 
-        var hoursEnd = document.getElementById("endTime").value;
-        //xử lý chuỗi
-        var hS = hoursStart.split(":");
-        var hE = hoursEnd.split(":");
-        // Lấy thời gian hôm nay
-        var toDay = new Date();
-        var dateToDay =
-          toDay.getFullYear() +
-          "-" +
-          (toDay.getMonth() + 1) +
-          "-" +
-          toDay.getDate();
-        var dateNow = dateToDay.split("-");
-        //Khai báo biến cho ngày tháng năm
-        var startDate = document.getElementById("startTimeExpected").value;
-        var date1 = new Date(dateToDay);
-        var date2 = new Date(startDate);
-        var date3 = new Date();
+        if (comCheck != null) {
+          for (let k = 0; k < tempDate.length; k++) {
+            for (let j = 0; j < tkb.length; j++) {
+              // kiểm tra thứ ngày tháng
 
-        var arrs = [];
-        var chk2 = document.getElementById("chkT2");
-        var chk3 = document.getElementById("chkT3");
-        var chk4 = document.getElementById("chkT4");
-        var chk5 = document.getElementById("chkT5");
-        var chk6 = document.getElementById("chkT6");
-        var chk7 = document.getElementById("chkT7");
-        var chk8 = document.getElementById("chkCN");
-        if (chk2.checked) {
-          arrs.push(data.chkT2);
-        }
-        if (chk3.checked) {
-          arrs.push(data.chkT3);
-        }
-        if (chk4.checked) {
-          arrs.push(data.chkT4);
-        }
-        if (chk5.checked) {
-          arrs.push(data.chkT5);
-        }
-        if (chk6.checked) {
-          arrs.push(data.chkT6);
-        }
-        if (chk7.checked) {
-          arrs.push(data.chkT7);
-        }
-        if (chk8.checked) {
-          arrs.push(data.chkCN);
-        }
-
-        var val = arrs.join("");
-        var lastChar = val.slice(-1);
-        if (lastChar == ",") {
-          val = val.slice(0, -1);
-        }
-
-        var tkb = val.split(",");
-        //Kiểm tra thời gian bắt đầu so với thời gian kết thúc
-        if (
-          //Thời gian bắt đầu cho đến kết thúc min=30 phút và max= 4 giờ
-          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) <= 29 ||
-          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) >= 241
-        ) {
-          alert(
-            "Thời gian cho lớp học tối thiểu là 30 phút và tối đa là 4 giờ! "
-          );
-
-          return;
-        }
-        if (
-          date1.getTime() > date2.getTime() ||
-          (date1.getDate() === date2.getDate() &&
-            date1.getFullYear() === date2.getFullYear() &&
-            date1.getMonth() === date2.getMonth())
-        ) {
-          alert("Ngày dự kiến mở lớp học không hợp lệ! ");
-          return;
-        }
-        //Check thời gian thứ so với thời gian có thể tạo lớp học
-
-        for (let i = 0; i < comCheck.length; i++) {
-          let temp = comCheck[i][1].split(",");
-
-          if (comCheck != null) {
-            for (let k = 0; k < tempDate.length; k++) {
-              for (let j = 0; j < tkb.length; j++) {
-                // kiểm tra thứ ngày tháng
-
-                if (tempDate[k] === tkb[j]) {
-                  var ssss = comCheck[i][0].split(",");
-                  var sT = ssss[0].split(":");
-                  var eT = ssss[1].split(":");
-                  // Kiểm tra thời gian
-                  if (
-                    sT[0] * 1 + sT[1] / 60 <= hS[0] * 1 + hS[1] / 60 &&
-                    hS[0] * 1 + hS[1] / 60 <= eT[0] * 1 + eT[1] / 60
-                  ) {
-                    alert("Thời gian đăng ký bị trùng lặp!");
-                    return;
-                  }
+              if (tempDate[k] === tkb[j]) {
+                var ssss = comCheck[i][0].split(",");
+                var sT = ssss[0].split(":");
+                var eT = ssss[1].split(":");
+                // Kiểm tra thời gian
+                if (
+                  sT[0] * 1 + sT[1] / 60 <= hS[0] * 1 + hS[1] / 60 &&
+                  hS[0] * 1 + hS[1] / 60 <= eT[0] * 1 + eT[1] / 60
+                ) {
+                  alert("Thời gian đăng ký bị trùng lặp!");
+                  return;
                 }
               }
             }
           }
         }
-        //Lưu tất cả thời gian bắt đầu và kết thúc vào 1 biến cục bộ
-        var dateCheck = [];
-        dateCheck[0] = data.startTime + "," + data.endTime;
-        dateCheck[1] = val;
+      }
+      //Lưu tất cả thời gian bắt đầu và kết thúc vào 1 biến cục bộ
+      var dateCheck = [];
+      dateCheck[0] = data.startTime + "," + data.endTime;
+      dateCheck[1] = val;
 
-        for (let i = 0; i < tkb.length; i++) {
-          tempDate.push(tkb[i]);
+      for (let i = 0; i < tkb.length; i++) {
+        tempDate.push(tkb[i]);
+      }
+      comCheck.push(dateCheck);
+      // console kiểm tra
+
+      //console.log("tbk", tkb);
+      //console.log("tempDate", tempDate.length);
+      //console.log("val", val);
+      //console.log("arrs", arrs);
+      //console.log("check", comCheck);
+      //console.log("data.startTime", data.startTime);
+      // kiểm tra yêu cầu nhập tất cả số liệu
+
+      if (
+        document.getElementById("startTime").value === "" ||
+        document.getElementById("endTime").value === "" ||
+        document.getElementById("slot").value === "" ||
+        document.getElementById("startTimeExpected").value === "" ||
+        data === null
+      ) {
+        alert("Bạn cần phải nhập đầy đủ các thông tin!");
+        return;
+      } else {
+        var cell1 = newRow.insertCell(0);
+        var cellStartTime = newRow.insertCell(1);
+        var cell2 = newRow.insertCell(2);
+        var cell3 = newRow.insertCell(3);
+        var cell4 = newRow.insertCell(4);
+        var cell5 = newRow.insertCell(5);
+        var cell6 = newRow.insertCell(6);
+        //render số thứ tự
+        cell1.innerHTML = ""
+
+        //render thời gian bắt đầu
+        cellStartTime.innerHTML = data.startTime;
+
+        //render thời gian kết thúc
+        cell2.innerHTML = data.endTime;
+
+        //render thứ ngày tháng
+        cell3.innerHTML = val;
+        saveInfo = val;
+
+        // render số lượng
+        cell4.innerHTML = data.slot;
+
+        // Render Ngày tháng năm
+        cell5.innerHTML = data.startTimeExpected;
+
+        // Render nút thêm xóa sửa
+        cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn bg-danger  btn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`;
+      }
+    }
+
+    // edit data
+    function editRecordClass(tds) {
+      data = tds;
+      selectedTimeClassRow = tds.parentElement.parentElement;
+
+      var chktnt = selectedTimeClassRow.cells[3].innerText;
+
+      indexTime[0] =
+        selectedTimeClassRow.cells[1].innerText +
+        "," +
+        selectedTimeClassRow.cells[2].innerText;
+      indexTime[1] = selectedTimeClassRow.cells[3].innerText;
+      document.getElementById("startTime").value =
+        selectedTimeClassRow.cells[1].innerText;
+      document.getElementById("endTime").value =
+        selectedTimeClassRow.cells[2].innerText;
+      // 3
+      for (let i = 0; i <= chktnt.length; i++) {
+        if (chktnt[i] === "2") {
+          document.getElementById("chkT2").checked = true;
         }
-        comCheck.push(dateCheck);
-        // console kiểm tra
-
-        //console.log("tbk", tkb);
-        //console.log("tempDate", tempDate.length);
-        //console.log("val", val);
-        //console.log("arrs", arrs);
-        //console.log("check", comCheck);
-        //console.log("data.startTime", data.startTime);
-        // kiểm tra yêu cầu nhập tất cả số liệu
-
-        if (
-          document.getElementById("startTime").value === "" ||
-          document.getElementById("endTime").value === "" ||
-          document.getElementById("slot").value === "" ||
-          document.getElementById("startTimeExpected").value === "" ||
-          data === null
-        ) {
-          alert("Bạn cần phải nhập đầy đủ các thông tin!");
-          return;
-        } else {
-          var cell1 = newRow.insertCell(0);
-          var cellStartTime = newRow.insertCell(1);
-          var cell2 = newRow.insertCell(2);
-          var cell3 = newRow.insertCell(3);
-          var cell4 = newRow.insertCell(4);
-          var cell5 = newRow.insertCell(5);
-          var cell6 = newRow.insertCell(6);
-          //render số thứ tự
-          cell1.innerHTML = ""
-
-          //render thời gian bắt đầu
-          cellStartTime.innerHTML = data.startTime;
-
-          //render thời gian kết thúc
-          cell2.innerHTML = data.endTime;
-
-          //render thứ ngày tháng
-          cell3.innerHTML = val;
-          saveInfo = val;
-
-          // render số lượng
-          cell4.innerHTML = data.slot;
-
-          // Render Ngày tháng năm
-          cell5.innerHTML = data.startTimeExpected;
-
-          // Render nút thêm xóa sửa
-          cell6.innerHTML = `<button onClick='handleDelClass(this)' class="btn bg-danger  btn-danger me-2">Xóa</button> <button onClick="editRecordClass(this)" class="btn btn-primary">Sửa</button>`;
+        if (chktnt[i] === "3") {
+          document.getElementById("chkT3").checked = true;
+        }
+        if (chktnt[i] === "4") {
+          document.getElementById("chkT4").checked = true;
+        }
+        if (chktnt[i] === "5") {
+          document.getElementById("chkT5").checked = true;
+        }
+        if (chktnt[i] === "6") {
+          document.getElementById("chkT6").checked = true;
+        }
+        if (chktnt[i] === "7") {
+          document.getElementById("chkT7").checked = true;
+        }
+        if (chktnt[i] === "N") {
+          document.getElementById("chkCN").checked = true;
         }
       }
 
-      // edit data
-      function editRecordClass(tds) {
-        data = tds;
-        selectedTimeClassRow = tds.parentElement.parentElement;
+      // 3
+      document.getElementById("slot").value =
+        selectedTimeClassRow.cells[4].innerText;
+      document.getElementById("startTimeExpected").value =
+        selectedTimeClassRow.cells[5].innerText;
+      ///////////////////////////////////////kiểm tra ////////////////////////////////////////
 
-        var chktnt = selectedTimeClassRow.cells[3].innerText;
+      /////////////////////////////////////////////////////////////////////////////////////
+      // change button to save
+      document.getElementById(
+        "createClassBtn"
+      ).innerHTML = `<button class="btn btn-create-class p-0 m-0" id="createClassBtn">Lưu thay đổi</button>`;
+    }
+    // reset icon create class
+    document
+      .getElementById("createClassBtn")
+      .addEventListener("click", function () {
+        document.getElementById("createClassBtn").innerHTML =
+          '<button class="btn btn-create-class p-0 m-0" id="createClassBtn">Tạo lớp học</button>';
+      });
+    // update data
+    function updateRecordTimeClass(formData) {
+      selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
+      selectedTimeClassRow.cells[2].innerHTML = formData.endTime;
+      //Lấy dữ liệu từ bản và show lại trên thanh input
 
-        indexTime[0] =
-          selectedTimeClassRow.cells[1].innerText +
-          "," +
-          selectedTimeClassRow.cells[2].innerText;
-        indexTime[1] = selectedTimeClassRow.cells[3].innerText;
-        document.getElementById("startTime").value =
-          selectedTimeClassRow.cells[1].innerText;
-        document.getElementById("endTime").value =
-          selectedTimeClassRow.cells[2].innerText;
-        // 3
-        for (let i = 0; i <= chktnt.length; i++) {
-          if (chktnt[i] === "2") {
-            document.getElementById("chkT2").checked = true;
-          }
-          if (chktnt[i] === "3") {
-            document.getElementById("chkT3").checked = true;
-          }
-          if (chktnt[i] === "4") {
-            document.getElementById("chkT4").checked = true;
-          }
-          if (chktnt[i] === "5") {
-            document.getElementById("chkT5").checked = true;
-          }
-          if (chktnt[i] === "6") {
-            document.getElementById("chkT6").checked = true;
-          }
-          if (chktnt[i] === "7") {
-            document.getElementById("chkT7").checked = true;
-          }
-          if (chktnt[i] === "N") {
-            document.getElementById("chkCN").checked = true;
-          }
-        }
-
-        // 3
-        document.getElementById("slot").value =
-          selectedTimeClassRow.cells[4].innerText;
-        document.getElementById("startTimeExpected").value =
-          selectedTimeClassRow.cells[5].innerText;
-        ///////////////////////////////////////kiểm tra ////////////////////////////////////////
-
-        /////////////////////////////////////////////////////////////////////////////////////
-        // change button to save
-        document.getElementById(
-          "createClassBtn"
-        ).innerHTML = `<button class="btn btn-create-class p-0 m-0" id="createClassBtn">Lưu thay đổi</button>`;
+      var arrs = [];
+      var chk2 = document.getElementById("chkT2");
+      var chk3 = document.getElementById("chkT3");
+      var chk4 = document.getElementById("chkT4");
+      var chk5 = document.getElementById("chkT5");
+      var chk6 = document.getElementById("chkT6");
+      var chk7 = document.getElementById("chkT7");
+      var chk8 = document.getElementById("chkCN");
+      if (chk2.checked) {
+        arrs.push(formData.chkT2);
       }
-      // reset icon create class
-      document
-        .getElementById("createClassBtn")
-        .addEventListener("click", function () {
-          document.getElementById("createClassBtn").innerHTML =
-            '<button class="btn btn-create-class p-0 m-0" id="createClassBtn">Tạo lớp học</button>';
-        });
-      // update data
-      function updateRecordTimeClass(formData) {
-        selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
-        selectedTimeClassRow.cells[2].innerHTML = formData.endTime;
-        //Lấy dữ liệu từ bản và show lại trên thanh input
+      if (chk3.checked) {
+        arrs.push(formData.chkT3);
+      }
+      if (chk4.checked) {
+        arrs.push(formData.chkT4);
+      }
+      if (chk5.checked) {
+        arrs.push(formData.chkT5);
+      }
+      if (chk6.checked) {
+        arrs.push(formData.chkT6);
+      }
+      if (chk7.checked) {
+        arrs.push(formData.chkT7);
+      }
+      if (chk8.checked) {
+        arrs.push(formData.chkCN);
+      }
+      var val = arrs.join("");
+      var lastChar = val.slice(-1);
+      if (lastChar == ",") {
+        val = val.slice(0, -1);
+      }
+      var tkb = val.split(",");
+      ///////////////////////////////////////kiểm tra ////////////////////////////////////////
+      var hoursStart = document.getElementById("startTime").value;
 
-        var arrs = [];
-        var chk2 = document.getElementById("chkT2");
-        var chk3 = document.getElementById("chkT3");
-        var chk4 = document.getElementById("chkT4");
-        var chk5 = document.getElementById("chkT5");
-        var chk6 = document.getElementById("chkT6");
-        var chk7 = document.getElementById("chkT7");
-        var chk8 = document.getElementById("chkCN");
-        if (chk2.checked) {
-          arrs.push(formData.chkT2);
-        }
-        if (chk3.checked) {
-          arrs.push(formData.chkT3);
-        }
-        if (chk4.checked) {
-          arrs.push(formData.chkT4);
-        }
-        if (chk5.checked) {
-          arrs.push(formData.chkT5);
-        }
-        if (chk6.checked) {
-          arrs.push(formData.chkT6);
-        }
-        if (chk7.checked) {
-          arrs.push(formData.chkT7);
-        }
-        if (chk8.checked) {
-          arrs.push(formData.chkCN);
-        }
-        var val = arrs.join("");
-        var lastChar = val.slice(-1);
-        if (lastChar == ",") {
-          val = val.slice(0, -1);
-        }
-        var tkb = val.split(",");
-        ///////////////////////////////////////kiểm tra ////////////////////////////////////////
-        var hoursStart = document.getElementById("startTime").value;
+      var hoursEnd = document.getElementById("endTime").value;
 
-        var hoursEnd = document.getElementById("endTime").value;
+      var hS = hoursStart.split(":");
+      var hE = hoursEnd.split(":");
 
-        var hS = hoursStart.split(":");
-        var hE = hoursEnd.split(":");
+      let hSEDate = [];
+      hSEDate[0] = hoursStart + "," + hoursEnd;
+      hSEDate[1] = val;
 
-        let hSEDate = [];
-        hSEDate[0] = hoursStart + "," + hoursEnd;
-        hSEDate[1] = val;
-
-        //Lấy vị trí thời gian
-        var lct = 0;
-        for (let i = 0; i < comCheck.length; i++) {
-          if (
-            indexTime[0] === comCheck[i][0] &&
-            indexTime[1] === comCheck[i][1]
-          ) {
-            lct = i;
-          }
-        }
-        // Kiểm tra ngày và giờ bắt đầu và kết thúc
-        var toDay = new Date();
-        var dateToDay =
-          toDay.getFullYear() +
-          "-" +
-          (toDay.getMonth() + 1) +
-          "-" +
-          toDay.getDate();
-        var dateNow = dateToDay.split("-");
-        //Khai báo biến cho ngày tháng năm
-        var startDate = document.getElementById("startTimeExpected").value;
-        var date1 = new Date(dateToDay);
-        var date2 = new Date(startDate);
-        var date3 = new Date();
-
+      //Lấy vị trí thời gian
+      var lct = 0;
+      for (let i = 0; i < comCheck.length; i++) {
         if (
-          //Thời gian bắt đầu cho đến kết thúc min=30 phút và max= 4 giờ
-          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) <= 29 ||
-          hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) >= 241
+          indexTime[0] === comCheck[i][0] &&
+          indexTime[1] === comCheck[i][1]
         ) {
-          alert(
-            "Thời gian cho lớp học tối thiểu là 30 phút và tối đa là 4 giờ! "
-          );
-
-          return;
+          lct = i;
         }
-        if (
-          date1.getTime() > date2.getTime() ||
-          (date1.getDate() === date2.getDate() &&
-            date1.getFullYear() === date2.getFullYear() &&
-            date1.getMonth() === date2.getMonth())
-        ) {
-          alert("Ngày dự kiến mở lớp học không hợp lệ! ");
-          return;
-        }
+      }
+      // Kiểm tra ngày và giờ bắt đầu và kết thúc
+      var toDay = new Date();
+      var dateToDay =
+        toDay.getFullYear() +
+        "-" +
+        (toDay.getMonth() + 1) +
+        "-" +
+        toDay.getDate();
+      var dateNow = dateToDay.split("-");
+      //Khai báo biến cho ngày tháng năm
+      var startDate = document.getElementById("startTimeExpected").value;
+      var date1 = new Date(dateToDay);
+      var date2 = new Date(startDate);
+      var date3 = new Date();
 
-        // kiểm tra trùng lịch
-        //Check thời gian thứ so với thời gian có thể tạo lớp học
+      if (
+        //Thời gian bắt đầu cho đến kết thúc min=30 phút và max= 4 giờ
+        hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) <= 29 ||
+        hE[0] * 60 + hE[1] * 1 - (hS[0] * 60 + hS[1] * 1) >= 241
+      ) {
+        alert(
+          "Thời gian cho lớp học tối thiểu là 30 phút và tối đa là 4 giờ! "
+        );
 
-        for (let i = 0; i < comCheck.length; i++) {
-          let temp = comCheck[i][1].split(",");
+        return;
+      }
+      if (
+        date1.getTime() > date2.getTime() ||
+        (date1.getDate() === date2.getDate() &&
+          date1.getFullYear() === date2.getFullYear() &&
+          date1.getMonth() === date2.getMonth())
+      ) {
+        alert("Ngày dự kiến mở lớp học không hợp lệ! ");
+        return;
+      }
 
-          if (comCheck != null) {
-            for (let k = 0; k < tempDate.length; k++) {
-              for (let j = 0; j < tkb.length; j++) {
-                // kiểm tra thứ ngày tháng
+      // kiểm tra trùng lịch
+      //Check thời gian thứ so với thời gian có thể tạo lớp học
 
-                if (tempDate[k] === tkb[j]) {
-                  var ssss = comCheck[i][0].split(",");
-                  var sT = ssss[0].split(":");
-                  var eT = ssss[1].split(":");
-                  // Kiểm tra thời gian
-                  if (
-                    sT[0] * 1 + sT[1] / 60 <= hS[0] * 1 + hS[1] / 60 &&
-                    hS[0] * 1 + hS[1] / 60 <= eT[0] * 1 + eT[1] / 60
-                  ) {
-                    alert("Thời gian đăng ký bị trùng lặp!");
+      for (let i = 0; i < comCheck.length; i++) {
+        let temp = comCheck[i][1].split(",");
 
-                    return;
-                  }
+        if (comCheck != null) {
+          for (let k = 0; k < tempDate.length; k++) {
+            for (let j = 0; j < tkb.length; j++) {
+              // kiểm tra thứ ngày tháng
+
+              if (tempDate[k] === tkb[j]) {
+                var ssss = comCheck[i][0].split(",");
+                var sT = ssss[0].split(":");
+                var eT = ssss[1].split(":");
+                // Kiểm tra thời gian
+                if (
+                  sT[0] * 1 + sT[1] / 60 <= hS[0] * 1 + hS[1] / 60 &&
+                  hS[0] * 1 + hS[1] / 60 <= eT[0] * 1 + eT[1] / 60
+                ) {
+                  alert("Thời gian đăng ký bị trùng lặp!");
+
+                  return;
                 }
               }
             }
           }
         }
-        //Lưu tất cả thời gian bắt đầu và kết thúc vào 1 biến cục bộ
-        var dateCheck = [];
-        dateCheck[0] = data.startTime + "," + data.endTime;
-        dateCheck[1] = val;
+      }
+      //Lưu tất cả thời gian bắt đầu và kết thúc vào 1 biến cục bộ
+      var dateCheck = [];
+      dateCheck[0] = data.startTime + "," + data.endTime;
+      dateCheck[1] = val;
 
-        for (let i = 0; i < tkb.length; i++) {
-          tempDate.push(tkb[i]);
-        }
+      for (let i = 0; i < tkb.length; i++) {
+        tempDate.push(tkb[i]);
+      }
 
-        ///
-        for (let i = 0; i < comCheck.length; i++) {
-          if (hSEDate[0] === comCheck[i][0] && hSEDate[1] === comCheck[i][1]) {
-            console.log("cmm");
-            alert("Chưa có thay đổi!");
-            return;
-          }
-        }
-        //
-        if (
-          formData.startTime === "" ||
-          formData.endTime === "" ||
-          val === "" ||
-          formData.slot === "" ||
-          data === null
-        ) {
-          alert("Bạn cần phải nhập đầy đủ các thông tin!");
+      ///
+      for (let i = 0; i < comCheck.length; i++) {
+        if (hSEDate[0] === comCheck[i][0] && hSEDate[1] === comCheck[i][1]) {
+          console.log("cmm");
+          alert("Chưa có thay đổi!");
           return;
         }
-
-        /////////////////////////////////////////////////////////////////////////////////////
-        selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
-        selectedTimeClassRow.cells[2].innerHTML = formData.endTime;
-
-        selectedTimeClassRow.cells[3].innerHTML = val;
-        selectedTimeClassRow.cells[4].innerHTML = formData.slot;
-        selectedTimeClassRow.cells[5].innerHTML = formData.startTimeExpected;
-
-        var delTempDate = comCheck[lct];
-
-        if (indexTime != "") {
-          var arrDate = indexTime[1].split(",");
-        }
-
-        tempDate = comCheckDate(tempDate, arrDate);
-        comCheck = deleteArrr(comCheck, delTempDate);
-
-        comCheck.push(hSEDate);
       }
       //
-      function comCheckDate(arr, check) {
-        const indices = {};
-        arr.forEach((event, index) => {
-          if (!indices[event]) {
-            indices[event] = [];
-          }
-          indices[event].push(index);
-        });
-        check.forEach((event) => {
-          if (indices[event]) {
-            arr[indices[event][0]] = "Trung";
-          }
-        });
-        return arr.filter((event) => event !== "Trung");
+      if (
+        formData.startTime === "" ||
+        formData.endTime === "" ||
+        val === "" ||
+        formData.slot === "" ||
+        data === null
+      ) {
+        alert("Bạn cần phải nhập đầy đủ các thông tin!");
+        return;
       }
-      // delete data
-      function handleDelClass(delData) {
-        if (confirm("Bạn có muốn xóa lớp học này không?")) {
-          row = delData.parentElement.parentElement;
-          var schedule = row.cells[3].innerText.split(",");
-          tempDate = comCheckDate(tempDate, schedule);
-          var dataDate = [];
-          dataDate[0] = row.cells[1].innerText + "," + row.cells[2].innerText;
 
-          dataDate[1] = row.cells[3].innerText;
+      /////////////////////////////////////////////////////////////////////////////////////
+      selectedTimeClassRow.cells[1].innerHTML = formData.startTime;
+      selectedTimeClassRow.cells[2].innerHTML = formData.endTime;
 
-          comCheck = deleteArrr(comCheck, dataDate);
+      selectedTimeClassRow.cells[3].innerHTML = val;
+      selectedTimeClassRow.cells[4].innerHTML = formData.slot;
+      selectedTimeClassRow.cells[5].innerHTML = formData.startTimeExpected;
 
-          document.getElementById("storeListTimeClass").deleteRow(row.rowIndex);
+      var delTempDate = comCheck[lct];
+
+      if (indexTime != "") {
+        var arrDate = indexTime[1].split(",");
+      }
+
+      tempDate = comCheckDate(tempDate, arrDate);
+      comCheck = deleteArrr(comCheck, delTempDate);
+
+      comCheck.push(hSEDate);
+    }
+    //
+    function comCheckDate(arr, check) {
+      const indices = {};
+      arr.forEach((event, index) => {
+        if (!indices[event]) {
+          indices[event] = [];
         }
-
-        resetDataFormClass();
-      }
-      function deleteArrr(comCheck, dataDate) {
-        var lct = 0;
-        for (let i = 0; i < comCheck.length; i++) {
-          if (
-            comCheck[i][0] === dataDate[0] &&
-            comCheck[i][1] === dataDate[1]
-          ) {
-            lct = i;
-          }
+        indices[event].push(index);
+      });
+      check.forEach((event) => {
+        if (indices[event]) {
+          arr[indices[event][0]] = "Trung";
         }
+      });
+      return arr.filter((event) => event !== "Trung");
+    }
+    // delete data
+    function handleDelClass(delData) {
+      if (confirm("Bạn có muốn xóa lớp học này không?")) {
+        row = delData.parentElement.parentElement;
+        var schedule = row.cells[3].innerText.split(",");
+        tempDate = comCheckDate(tempDate, schedule);
+        var dataDate = [];
+        dataDate[0] = row.cells[1].innerText + "," + row.cells[2].innerText;
 
-        return comCheck.filter((event) => event !== comCheck[lct]);
+        dataDate[1] = row.cells[3].innerText;
+
+        comCheck = deleteArrr(comCheck, dataDate);
+
+        document.getElementById("storeListTimeClass").deleteRow(row.rowIndex);
       }
-      // reset data
-      function resetDataFormClass() {
-        document.getElementById("startTime").value = "";
-        document.getElementById("endTime").value = "";
-        document.getElementById("chkT2").checked = false;
-        document.getElementById("chkT3").checked = false;
-        document.getElementById("chkT4").checked = false;
-        document.getElementById("chkT5").checked = false;
-        document.getElementById("chkT6").checked = false;
-        document.getElementById("chkT7").checked = false;
-        document.getElementById("chkCN").checked = false;
-        document.getElementById("slot").selectedIndex = 0;
-        document.getElementById("startTimeExpected").value = "";
-      }
-    </script>
-    <!-- Validator link gg meet -->
-    <script>
-      function checkMeetLink() {
-        // Get the value of the input field
-        var link = document.getElementById("meetLink").value;
-      
-        // Check if the link is a valid Google Meet link
-        if (!link.match(/^(https:\/\/)?meet\.google\.com\/[a-z0-9-]+$/)) {
-          // Display an error message
-          document.getElementById("meetLinkError").innerHTML = "Vui lòng nhập một liên kết hợp lệ của Google Meet (https://meet.google.com/... , meet.google.com/...)";
-        } else {
-          // Clear error message
-          document.getElementById("meetLinkError").innerHTML = "";
-        }
-      }
-    </script>
-    <script type="text/javascript">
-      var country_arr = new Array(
-        "An Giang",
-        "Bà Rịa - Vũng Tàu",
-        "Bắc Giang",
-        "Bắc Kạn",
-        "Bạc Liêu",
-        "Bắc Ninh",
-        "Bến Tre",
-        "Bình Định",
-        "Bình Dương",
-        "Bình Phước",
-        "Bình Thuận",
-        "Cà Mau",
-        "Cần Thơ",
-        "Cao Bằng",
-        "Đà Nẵng",
-        "Đắk Lắk",
-        "Đắk Nông",
-        "Điện Biên",
-        "Đồng Nai",
-        "Đồng Tháp",
-        "Gia Lai",
-        "Hà Giang",
-        "Hà Nam",
-        "Hà Nội",
-        "Hà Tĩnh",
-        "Hải Dương",
-        "Hải Phòng",
-        "Hậu Giang",
-        "Hòa Bình",
-        "Hưng Yên",
-        "Khánh Hòa",
-        "Kiên Giang",
-        "Kon Tum",
-        "Lai Châu",
-        "Lâm Đồng",
-        "Lạng Sơn",
-        "Lào Cai",
-        "Long An",
-        "Nam Định",
-        "Nghệ An",
-        "Ninh Bình",
-        "Ninh Thuận",
-        "Phú Thọ",
-        "Phú Yên",
-        "Quảng Bình",
-        "QuảngNam",
-        "Quảng Ngãi",
-        "Quảng Ninh",
-        "Quảng Trị",
-        "Sóc Trăng",
-        "Sơn La",
-        "TâyNinh",
-        "Thái Bình",
-        "Thái Nguyên",
-        "Thanh Hóa",
-        "Thừa Thiên Huế",
-        "Tiền Giang",
-        "Thành phố Hồ Chí Minh",
-        "Trà Vinh",
-        "Tuyên Quang",
-        "Vĩnh Long",
-        "Vĩnh Phúc",
-        "Yên Bái"
-      );
-      var s_a = new Array();
-      s_a[0] = "";
-      s_a[1] =
-        "Thành phố Long Xuyên, Thành phố Châu Đốc, Huyện An Phú, Thị xã Tân Châu, Huyện Phú Tân, Huyện Châu Phú, Huyện Tịnh Biên, Huyện Tri Tôn, Huyện Châu Thành, Huyện Chợ Mới, Huyện Thoại Sơn";
-      s_a[2] =
-        "Thành phố Vũng Tàu,Thành phố Bà Rịa,Huyện Châu Đức,Huyện Xuyên Mộc,Huyện Long Điền,Huyện Đất Đ,Huyện Tân Thành";
-      s_a[3] =
-        "Thành phố Bắc Giang ,Huyện Yên Thế ,Huyện Tân Yên ,Huyện Lạng Giang ,Huyện Lục Nam ,Huyện Lục Ngạn ,Huyện Sơn Động ,Huyện Yên Dũng ,Huyện Việt Yên ,Huyện Hiệp Hòa";
-      s_a[4] =
-        "Thành Phố Bắc Kạn ,Huyện Pác Nặm ,Huyện Ba Bể ,Huyện Ngân Sơn ,Huyện Bạch Thông,Huyện Chợ Đồn ,Huyện Chợ Mới ,Huyện Na Rì";
-      s_a[5] =
-        "Thành phố Bạc Liêu ,Huyện Hồng Dân ,Huyện Phước Long ,Huyện Vĩnh Lợi ,Thị xã Giá Rai ,Huyện Đông Hải ,Huyện Hoà Bình";
-      s_a[6] =
-        "Thành phố Bắc Ninh ,Huyện Yên Phong ,Huyện Quế Võ ,Huyện Tiên Du ,Thị xã Từ Sơn,Huyện Thuận Thành ,Huyện Gia Bình ,Huyện Lương";
-      var s_b = new Array();
-      s_b[(1, 1)] = "c11|c12|c13|c14|c15|c16|c17|c18|c19|c10";
-      s_b[(1, 2)] = "c21|c22|c23|c24|c25|c26|c27|c28|c29|c210";
-      s_b[(2, 1)] = "d11|d12|d13|d14|d15|d16|d17|d18|d19|d10";
-      s_b[(2, 2)] = "d21|d22|d23|d24|d25|d26|d27|d28|d29|d210";
-      function print_country(country_id) {
-        // given the id of the <select> tag as function argument, it inserts <option> tags
-        var option_str = document.getElementById(country_id);
-        option_str.length = 0;
-        option_str.options[0] = new Option("Chọn thành phố hoặc tỉnh", "");
-        option_str.selectedIndex = 0;
-        for (var i = 0; i < country_arr.length; i++) {
-          option_str.options[option_str.length] = new Option(
-            country_arr[i],
-            country_arr[i]
-          );
+
+      resetDataFormClass();
+    }
+    function deleteArrr(comCheck, dataDate) {
+      var lct = 0;
+      for (let i = 0; i < comCheck.length; i++) {
+        if (
+          comCheck[i][0] === dataDate[0] &&
+          comCheck[i][1] === dataDate[1]
+        ) {
+          lct = i;
         }
       }
 
-      function print_state(state_id, state_index) {
-        var option_str = document.getElementById(state_id);
-        option_str.length = 0;
-        option_str.options[0] = new Option("Chọn quận huyện", "");
-        option_str.selectedIndex = 0;
-        var state_arr = s_a[state_index].split(",");
-        for (var i = 0; i < state_arr.length; i++) {
-          option_str.options[option_str.length] = new Option(
-            state_arr[i],
-            state_arr[i]
-          );
-        }
-      }
-      //This function is incorrect, just to demonstrate, please help to correct this
+      return comCheck.filter((event) => event !== comCheck[lct]);
+    }
+    // reset data
+    function resetDataFormClass() {
+      document.getElementById("startTime").value = "";
+      document.getElementById("endTime").value = "";
+      document.getElementById("chkT2").checked = false;
+      document.getElementById("chkT3").checked = false;
+      document.getElementById("chkT4").checked = false;
+      document.getElementById("chkT5").checked = false;
+      document.getElementById("chkT6").checked = false;
+      document.getElementById("chkT7").checked = false;
+      document.getElementById("chkCN").checked = false;
+      document.getElementById("slot").selectedIndex = 0;
+      document.getElementById("startTimeExpected").value = "";
+    }
+  </script>
+  <!-- Validator link gg meet -->
+  <script>
+    function checkMeetLink() {
+      // Get the value of the input field
+      var link = document.getElementById("meetLink").value;
 
-      function print_district(district_id, district_index) {
-        var option_str = document.getElementById(district_id);
-        option_str.length = 0;
-        option_str.options[0] = new Option("Chọn đường", "");
-        option_str.selectedIndex = 0;
-        var district_arr = s_b[district_index].split("|");
-        for (var i = 0; i < district_arr.length; i++) {
-          option_str.options[option_str.length] = new Option(
-            district_arr[i],
-            district_arr[i]
-          );
-        }
+      // Check if the link is a valid Google Meet link
+      if (!link.match(/^(https:\/\/)?meet\.google\.com\/[a-z0-9-]+$/)) {
+        // Display an error message
+        document.getElementById("meetLinkError").innerHTML = "Vui lòng nhập một liên kết hợp lệ của Google Meet (https://meet.google.com/... , meet.google.com/...)";
+      } else {
+        // Clear error message
+        document.getElementById("meetLinkError").innerHTML = "";
       }
+    }
+  </script>
+  <script type="text/javascript">
+    var country_arr = new Array(
+      "An Giang",
+      "Bà Rịa - Vũng Tàu",
+      "Bắc Giang",
+      "Bắc Kạn",
+      "Bạc Liêu",
+      "Bắc Ninh",
+      "Bến Tre",
+      "Bình Định",
+      "Bình Dương",
+      "Bình Phước",
+      "Bình Thuận",
+      "Cà Mau",
+      "Cần Thơ",
+      "Cao Bằng",
+      "Đà Nẵng",
+      "Đắk Lắk",
+      "Đắk Nông",
+      "Điện Biên",
+      "Đồng Nai",
+      "Đồng Tháp",
+      "Gia Lai",
+      "Hà Giang",
+      "Hà Nam",
+      "Hà Nội",
+      "Hà Tĩnh",
+      "Hải Dương",
+      "Hải Phòng",
+      "Hậu Giang",
+      "Hòa Bình",
+      "Hưng Yên",
+      "Khánh Hòa",
+      "Kiên Giang",
+      "Kon Tum",
+      "Lai Châu",
+      "Lâm Đồng",
+      "Lạng Sơn",
+      "Lào Cai",
+      "Long An",
+      "Nam Định",
+      "Nghệ An",
+      "Ninh Bình",
+      "Ninh Thuận",
+      "Phú Thọ",
+      "Phú Yên",
+      "Quảng Bình",
+      "QuảngNam",
+      "Quảng Ngãi",
+      "Quảng Ninh",
+      "Quảng Trị",
+      "Sóc Trăng",
+      "Sơn La",
+      "TâyNinh",
+      "Thái Bình",
+      "Thái Nguyên",
+      "Thanh Hóa",
+      "Thừa Thiên Huế",
+      "Tiền Giang",
+      "Thành phố Hồ Chí Minh",
+      "Trà Vinh",
+      "Tuyên Quang",
+      "Vĩnh Long",
+      "Vĩnh Phúc",
+      "Yên Bái"
+    );
+    var s_a = new Array();
+    s_a[0] = "";
+    s_a[1] =
+      "Thành phố Long Xuyên, Thành phố Châu Đốc, Huyện An Phú, Thị xã Tân Châu, Huyện Phú Tân, Huyện Châu Phú, Huyện Tịnh Biên, Huyện Tri Tôn, Huyện Châu Thành, Huyện Chợ Mới, Huyện Thoại Sơn";
+    s_a[2] =
+      "Thành phố Vũng Tàu,Thành phố Bà Rịa,Huyện Châu Đức,Huyện Xuyên Mộc,Huyện Long Điền,Huyện Đất Đ,Huyện Tân Thành";
+    s_a[3] =
+      "Thành phố Bắc Giang ,Huyện Yên Thế ,Huyện Tân Yên ,Huyện Lạng Giang ,Huyện Lục Nam ,Huyện Lục Ngạn ,Huyện Sơn Động ,Huyện Yên Dũng ,Huyện Việt Yên ,Huyện Hiệp Hòa";
+    s_a[4] =
+      "Thành Phố Bắc Kạn ,Huyện Pác Nặm ,Huyện Ba Bể ,Huyện Ngân Sơn ,Huyện Bạch Thông,Huyện Chợ Đồn ,Huyện Chợ Mới ,Huyện Na Rì";
+    s_a[5] =
+      "Thành phố Bạc Liêu ,Huyện Hồng Dân ,Huyện Phước Long ,Huyện Vĩnh Lợi ,Thị xã Giá Rai ,Huyện Đông Hải ,Huyện Hoà Bình";
+    s_a[6] =
+      "Thành phố Bắc Ninh ,Huyện Yên Phong ,Huyện Quế Võ ,Huyện Tiên Du ,Thị xã Từ Sơn,Huyện Thuận Thành ,Huyện Gia Bình ,Huyện Lương";
+    var s_b = new Array();
+    s_b[(1, 1)] = "c11|c12|c13|c14|c15|c16|c17|c18|c19|c10";
+    s_b[(1, 2)] = "c21|c22|c23|c24|c25|c26|c27|c28|c29|c210";
+    s_b[(2, 1)] = "d11|d12|d13|d14|d15|d16|d17|d18|d19|d10";
+    s_b[(2, 2)] = "d21|d22|d23|d24|d25|d26|d27|d28|d29|d210";
+    function print_country(country_id) {
+      // given the id of the <select> tag as function argument, it inserts <option> tags
+      var option_str = document.getElementById(country_id);
+      option_str.length = 0;
+      option_str.options[0] = new Option("Chọn thành phố hoặc tỉnh", "");
+      option_str.selectedIndex = 0;
+      for (var i = 0; i < country_arr.length; i++) {
+        option_str.options[option_str.length] = new Option(
+          country_arr[i],
+          country_arr[i]
+        );
+      }
+    }
 
-      document
-        .getElementById("startTime")
-        .addEventListener("click", function () {
-          console.log("change time");
-          this.value = "07:15";
-        });
-    </script>
-    <script language="javascript">
-      print_country("country");
-    </script>
-    <script type="text/javaScript" src="./assets/js/select2.js"></script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
-    <script type="text/javascript" src="assets\js\textboxgiatien.js"></script>
-  </body>
+    function print_state(state_id, state_index) {
+      var option_str = document.getElementById(state_id);
+      option_str.length = 0;
+      option_str.options[0] = new Option("Chọn quận huyện", "");
+      option_str.selectedIndex = 0;
+      var state_arr = s_a[state_index].split(",");
+      for (var i = 0; i < state_arr.length; i++) {
+        option_str.options[option_str.length] = new Option(
+          state_arr[i],
+          state_arr[i]
+        );
+      }
+    }
+    //This function is incorrect, just to demonstrate, please help to correct this
+
+    function print_district(district_id, district_index) {
+      var option_str = document.getElementById(district_id);
+      option_str.length = 0;
+      option_str.options[0] = new Option("Chọn đường", "");
+      option_str.selectedIndex = 0;
+      var district_arr = s_b[district_index].split("|");
+      for (var i = 0; i < district_arr.length; i++) {
+        option_str.options[option_str.length] = new Option(
+          district_arr[i],
+          district_arr[i]
+        );
+      }
+    }
+
+    document
+      .getElementById("startTime")
+      .addEventListener("click", function () {
+        console.log("change time");
+        this.value = "07:15";
+      });
+  </script>
+  <script language="javascript">
+    print_country("country");
+  </script>
+  <script type="text/javaScript" src="./assets/js/select2.js"></script>
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+  <script type="text/javascript" src="assets\js\textboxgiatien.js"></script>
+</body>
+
 </html>
