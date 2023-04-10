@@ -1,8 +1,13 @@
 function showMore(id) {
-    var element = document.getElementById(id);
-    var arrowDown = element.previousElementSibling.querySelector('.fa-arrow-down');
-    var arrowUp = element.previousElementSibling.querySelector('.fa-arrow-up');
-    
+  var element = document.getElementById(id);
+  var arrowDown = element.previousElementSibling.querySelector('.fa-arrow-down');
+  var arrowUp = element.previousElementSibling.querySelector('.fa-arrow-up');
+
+  if (window.innerWidth >= 767) {
+    element.style.display = 'block';
+    arrowDown.style.display = 'none';
+    arrowUp.style.display = 'block';
+  } else {
     if (element.style.display === 'none') {
       element.style.display = 'block';
       arrowDown.style.display = 'none';
@@ -13,4 +18,4 @@ function showMore(id) {
       arrowUp.style.display = 'none';
     }
   }
-  
+}
