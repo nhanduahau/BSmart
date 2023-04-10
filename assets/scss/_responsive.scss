@@ -1777,6 +1777,12 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .icon-title-course {
+    width: 62px !important;
+    height: 62px !important;
+    object-fit: cover;
+  }
+
   .display-options-container {
     /* Show the display resolution and orientation sections */
     display: block;
