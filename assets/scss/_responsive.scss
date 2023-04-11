@@ -956,6 +956,15 @@
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
 
+  //member-list
+
+  .content-member-list{
+    width: 79%;
+    flex-direction: column;
+    display: flex;
+    /* margin-left: 50px; */
+  }
+
     // member-profile
     .span-title-1{
       width: 169px !important;
