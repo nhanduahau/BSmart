@@ -1,93 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BSmart</title>
-    <!-- Import css bootstrap v5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
 
-    <!-- Import font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BSmart</title>
+  <!-- Import css bootstrap v5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-    <!-- Imoprt owl carousel -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Import css reset -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
-    <!-- Import css styles -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
-    <!-- Import css responsive -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
-  </head>
-  <body>
-    <!-- Preloader start -->
-    <div class="preloader">
-      <div class="lds-roller">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+  <!-- Import font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Imoprt owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Import css reset -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+  <!-- Import css styles -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+  <!-- Import css responsive -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+  <!-- Preloader start -->
+  <div class="preloader">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    <!-- Preloader end -->
-    <!-- Start Sidebar mobile -->
-    <div class="sidebar-wrap" id="sidebar-mobile">
-      <div class="container-fluid">
-        <div class="sidebar-content">
-          <div class="sidebar-top">
-            <a href="./index.html" class="sidebar-logo">
-              <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
-            </a>
-            <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
-          </div>
-          <div class="sidebar-center">
-            <ul class="sidebar-mean-nav">
-              <li><a href="./index.html">Trang chủ</a></li>
-              <li><a href="./aboutus.html">Về chúng tôi</a></li>
-              <li>
-                <a href="./courses.html">Khoá học</a>
-                <div class="d-flex align-items-center justify-content-end">
-                  <ul class="sub-menu">
-                    <li><a href="courses.html">Front End</a></li>
-                    <li><a href="courses.html">Back End</a></li>
-                    <li><a href="courses.html">Devops</a></li>
-                  </ul>
-                </div>
-                <a class="mean-expand" href="#">+</a>
-                <a class="mean-non-expand" href="#">-</a>
-              </li>
-              <li>
-                <a href="mentor-list.html">Mentor</a>
-                <!-- <div class="d-flex align-items-center justify-content-end">
+  </div>
+  <!-- Preloader end -->
+  <!-- Start Sidebar mobile -->
+  <div class="sidebar-wrap" id="sidebar-mobile">
+    <div class="container-fluid">
+      <div class="sidebar-content">
+        <div class="sidebar-top">
+          <a href="./index.html" class="sidebar-logo">
+            <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
+          </a>
+          <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
+        </div>
+        <div class="sidebar-center">
+          <ul class="sidebar-mean-nav">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./aboutus.html">Về chúng tôi</a></li>
+            <li>
+              <a href="./courses.html">Khoá học</a>
+              <div class="d-flex align-items-center justify-content-end">
+                <ul class="sub-menu">
+                  <li><a href="courses.html">Front End</a></li>
+                  <li><a href="courses.html">Back End</a></li>
+                  <li><a href="courses.html">Devops</a></li>
+                </ul>
+              </div>
+              <a class="mean-expand" href="#">+</a>
+              <a class="mean-non-expand" href="#">-</a>
+            </li>
+            <li>
+              <a href="mentor-list.html">Mentor</a>
+              <!-- <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
                     <li><a href="view-mentor-profile.html">Mentor Long</a></li>
                     <li><a href="view-mentor-profile.html">Mentor Cuong</a></li>
@@ -96,243 +83,223 @@
 
                 <a class="mean-expand" href="#">+</a>
                 <a class="mean-non-expand" href="#">-</a> -->
-              </li>
-              <li><a href="./lms.html">Nền tảng LMS</a></li>
-              <li><a href="./blog.html">Blog</a></li>
-            </ul>
+            </li>
+            <li><a href="./lms.html">Nền tảng LMS</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="search-course">
+            <input type="text" name="NameCourseMobile" placeholder="Tìm kiếm khoá học" class="form-control"
+              form="findCourse">
+
+
+            <!-- <span><i class="fa fa-search"></i></span> -->
+            <button type="submit" class="btn-search-mobile"><i class="fa fa-search btn-search-mobile-icon"></i></button>
+
+            <style>
+              .btn-search-mobile-icon {
+                margin-right: 80px;
+              }
+            </style>
+
           </div>
-          <div class="sidebar-bottom">
-            <div class="search-course">
-              <input type="text" name="NameCourseMobile" placeholder="Tìm kiếm khoá học" class="form-control" form="findCourse">
-
-
-                  <!-- <span><i class="fa fa-search"></i></span> -->
-              <button type="submit" class="btn-search-mobile"><i class="fa fa-search btn-search-mobile-icon"></i></button>
-
-              <style>
-                  .btn-search-mobile-icon {
-                      margin-right: 80px;
-                  }
-              </style>
-
-          </div>
-            <ul class="contact-info">
-              <li class="mb-3">
-                <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> admin@bsmart.edu.vn
-              </li>
-              <li><img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 028 9999 79 39</li>
-            </ul>
-            <ul class="social-list">
-              <li>
-                <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-              </li>
-              <!-- <li>
+          <ul class="contact-info">
+            <li class="mb-3">
+              <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> admin@bsmart.edu.vn
+            </li>
+            <li><img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 028 9999 79 39</li>
+          </ul>
+          <ul class="social-list">
+            <li>
+              <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+            </li>
+            <!-- <li>
                 <a href="#"><i class="fa fa-twitter"></i></a>
               </li> -->
-              <li>
-                <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
-              </li>
-             
-              <li>
-                <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
-              </li>
-              <!-- <li>
+            <li>
+              <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
+                  class="fa fa-linkedin"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
+                  class="fa fa-youtube-play"></i></a>
+            </li>
+            <!-- <li>
                 <a href="index.html"><i class="fa fa-dribbble"></i></a>
               </li> -->
-            </ul>
-            <ul class="sidebar-controls">
-              <li><a href="./login.html">Login</a></li>
-              <li><small>|</small></li>
-              <li><a href="./register.html">Register</a></li>
-            </ul>
+          </ul>
+          <ul class="sidebar-controls">
+            <li><a href="./login.html">Login</a></li>
+            <li><small>|</small></li>
+            <li><a href="./register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Sidebar mobile -->
+  <!-- Login form modal -->
+  <div id="loginFormModal" class="login-form-container">
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100%">
+      <div class="login-form-content">
+        <div class="close-login-form" id="loginFormClose">&times;</div>
+        <h3 class="mb-3 text-center">Đăng nhập</h3>
+        <form action="#">
+          <div class="form-group mb-3">
+            <input type="text" placeholder="Email" class="form-control" />
           </div>
-        </div>
+          <div class="form-group mb-3">
+            <input type="text" placeholder="Password" class="form-control" />
+          </div>
+          <div class="form-check d-flex justify-content-between align-items-center mb-3">
+            <div class="checkbox d-flex align-items-center">
+              <input type="checkbox" class="form-check-input mt-0" id="signed" />
+              <label for="signed" class="ms-1">Remember me</label>
+            </div>
+            <div class="forgot-pass">
+              <a href="#" class="link-custom">Forgot Password?</a>
+            </div>
+          </div>
+          <div class="login-btn text-center mb-4">
+            <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
+          </div>
+          <div class="new-registration text-center">
+            <span>Bạn chưa có tài khoản?</span>
+            <a href="#" class="link-custom">Đăng ký ngay</a>
+          </div>
+        </form>
       </div>
     </div>
-    <!-- End Sidebar mobile -->
-    <!-- Login form modal -->
-    <div id="loginFormModal" class="login-form-container">
-      <div
-        class="container-fluid d-flex justify-content-center align-items-center"
-        style="height: 100%"
-      >
-        <div class="login-form-content">
-          <div class="close-login-form" id="loginFormClose">&times;</div>
-          <h3 class="mb-3 text-center">Đăng nhập</h3>
-          <form action="#">
-            <div class="form-group mb-3">
-              <input type="text" placeholder="Email" class="form-control" />
-            </div>
-            <div class="form-group mb-3">
-              <input type="text" placeholder="Password" class="form-control" />
-            </div>
-            <div
-              class="form-check d-flex justify-content-between align-items-center mb-3"
-            >
-              <div class="checkbox d-flex align-items-center">
-                <input
-                  type="checkbox"
-                  class="form-check-input mt-0"
-                  id="signed"
-                />
-                <label for="signed" class="ms-1">Remember me</label>
-              </div>
-              <div class="forgot-pass">
-                <a href="#" class="link-custom">Forgot Password?</a>
-              </div>
-            </div>
-            <div class="login-btn text-center mb-4">
-              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
-            </div>
-            <div class="new-registration text-center">
-              <span>Bạn chưa có tài khoản?</span>
-              <a href="#" class="link-custom">Đăng ký ngay</a>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- End login form modal -->
-    <div class="wrapper mentor-detail-wrapper">
-      <!-- Start header -->
-      <header class="header-main">
-        <div class="header-top">
-          <div class="container">
-            <div class="header-top-wrapper">
-              <!-- Start header social -->
-              <div class="header-top-social text-left">
-                <ul class="list-icons-header">
-                  <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                  </li>
-                  
-                  <!-- <li>
+  </div>
+  <!-- End login form modal -->
+  <div class="wrapper mentor-detail-wrapper">
+    <!-- Start header -->
+    <header class="header-main">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-wrapper">
+            <!-- Start header social -->
+            <div class="header-top-social text-left">
+              <ul class="list-icons-header">
+                <li>
+                  <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
+                      class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
+                      class="fa fa-youtube-play"></i></a>
+                </li>
+
+                <!-- <li>
                     <a href="index.html"><i class="fa fa-dribbble"></i></a>
                   </li> -->
-                </ul>
-              </div>
-              <!-- End header social -->
-              <!-- Start header contact info -->
-              <div class="header-contact-info">
-                <ul>
-                  <li class="me-4">
-                    <img src="/assets/images/icon-gmail.png" class="icon-gmail-header" alt="icon-gmail"> admin@bsmart.edu.vn
-                  </li>
-                  <li><img src="/assets/images/icon-phone.png" class="icon-gmail-header" alt="icon-gmail"></i> 028 9999 79 39</li>
-                </ul>
-              </div>
-              <!-- End header contact info -->
-              <!-- Start header search -->
-              <div class="header-course-search w-75 d-flex justify-content-center">
-                <!--Form này bao tới cả search index - nơi đóng form sau RenderBody-->
-                <form action="/search/index" method="get" class="w-75" id="findCourse" style="display: flex">
-                    <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course" id="search-course-inp" name="NameCourse">
-                    <button type="submit" form="findCourse" style="display: contents">
-                        <span><i class="fa fa-search"></i></span>
-                    </button>
-                </form>
+              </ul>
+            </div>
+            <!-- End header social -->
+            <!-- Start header contact info -->
+            <div class="header-contact-info">
+              <ul>
+                <li class="me-4">
+                  <img src="/assets/images/icon-gmail.png" class="icon-gmail-header" alt="icon-gmail">
+                  admin@bsmart.edu.vn
+                </li>
+                <li><img src="/assets/images/icon-phone.png" class="icon-gmail-header" alt="icon-gmail"></i> 028 9999 79
+                  39</li>
+              </ul>
+            </div>
+            <!-- End header contact info -->
+            <!-- Start header search -->
+            <div class="header-course-search w-75 d-flex justify-content-center">
+              <!--Form này bao tới cả search index - nơi đóng form sau RenderBody-->
+              <form action="/search/index" method="get" class="w-75" id="findCourse" style="display: flex">
+                <input type="text" placeholder="Tìm kiếm khoá học" class="form-control w-100 search-course"
+                  id="search-course-inp" name="NameCourse">
+                <button type="submit" form="findCourse" style="display: contents">
+                  <span><i class="fa fa-search"></i></span>
+                </button>
+              </form>
 
             </div>
-              <!-- End header search -->
-              <div class="header-log-reg d-flex justify-content-end">
-                <ul>
-                  <li>
-                    <a href="./login.html" id="loginFormOpen">Đăng nhập</a>
-                  </li>
-                  <li><small>|</small></li>
-                  <li><a href="./register.html">Đăng ký</a></li>
-                </ul>
-              </div>
+            <!-- End header search -->
+            <div class="header-log-reg d-flex justify-content-end">
+              <ul>
+                <li>
+                  <a href="./login.html" id="loginFormOpen">Đăng nhập</a>
+                </li>
+                <li><small>|</small></li>
+                <li><a href="./register.html">Đăng ký</a></li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="header-bottom">
-          <div class="container">
-            <div class="header-bottom-wrapper">
-              <a href="./index.html"
-                ><span class="site-logo"
-                  ><img
-                    src="/assets/images/icon-logo.png"
-                    class="icon-logo"
-                    alt="icon-logo" /></span
-              ></a>
-              <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <div class="collapse navbar-collapse">
-                    <!-- Menu -->
-                    <!-- Menu cấp parent -->
-                    <ul class="navbar-nav">
-                      <li>
-                        <a href="./index.html" class="nav-link nav-link-custom"
-                          >Trang Chủ</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./aboutus.html"
-                          class="nav-link nav-link-custom"
-                          >Về Chúng Tôi</a
-                        >
-                      </li>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="header-bottom-wrapper">
+            <a href="./index.html"><span class="site-logo"><img src="/assets/images/icon-logo.png" class="icon-logo"
+                  alt="icon-logo" /></span></a>
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                  <!-- Menu -->
+                  <!-- Menu cấp parent -->
+                  <ul class="navbar-nav">
+                    <li>
+                      <a href="./index.html" class="nav-link nav-link-custom">Trang Chủ</a>
+                    </li>
+                    <li>
+                      <a href="./aboutus.html" class="nav-link nav-link-custom">Về Chúng Tôi</a>
+                    </li>
 
-                      <li>
-                        <a
-                          href="./courses.html"
-                          class="nav-link nav-link-custom"
-                          >Khoá Học</a
-                        >
-                        <div class="sub-nav">
-                          <div
-                            class="content-sub-nav d-flex justify-content-between"
-                          >
-                            <div>
-                              <a href="courses.html">Front End</a>
-                              <ul>
-                                <li>
-                                  <a href="#"><span>+</span> Front End Basic</a>
-                                </li>
-                                <li>
-                                  <a href="#"><span>+</span> ReactJS</a>
-                                </li>
-                                <li>
-                                  <a href="#"><span>+</span> VueJS</a>
-                                </li>
-                                <li>
-                                  <a href="#"><span>+</span> Angular</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <div>
-                              <a href="courses.html">Back End</a>
-                              <ul>
-                                <li>
-                                  <a href="#"><span>+</span> NodeJS </a>
-                                </li>
-                                <li>
-                                  <a href="#"><span>+</span> .NET Core MVC</a>
-                                </li>
-                                <li>
-                                  <a href="#"><span>+</span> .NET Core API</a>
-                                </li>
-                              </ul>
-                            </div>
-                            <div>
-                              <a href="courses.html">Devops</a>
-                            </div>
+                    <li>
+                      <a href="./courses.html" class="nav-link nav-link-custom">Khoá Học</a>
+                      <div class="sub-nav">
+                        <div class="content-sub-nav d-flex justify-content-between">
+                          <div>
+                            <a href="courses.html">Front End</a>
+                            <ul>
+                              <li>
+                                <a href="#"><span>+</span> Front End Basic</a>
+                              </li>
+                              <li>
+                                <a href="#"><span>+</span> ReactJS</a>
+                              </li>
+                              <li>
+                                <a href="#"><span>+</span> VueJS</a>
+                              </li>
+                              <li>
+                                <a href="#"><span>+</span> Angular</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <a href="courses.html">Back End</a>
+                            <ul>
+                              <li>
+                                <a href="#"><span>+</span> NodeJS </a>
+                              </li>
+                              <li>
+                                <a href="#"><span>+</span> .NET Core MVC</a>
+                              </li>
+                              <li>
+                                <a href="#"><span>+</span> .NET Core API</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <a href="courses.html">Devops</a>
                           </div>
                         </div>
-                      </li>
-                      <li>
-                        <a href="mentor-list.html" class="nav-link nav-link-custom"
-                          >Mentor</a
-                        >
-                        <!-- <ul class="sub-menu">
+                      </div>
+                    </li>
+                    <li>
+                      <a href="mentor-list.html" class="nav-link nav-link-custom">Mentor</a>
+                      <!-- <ul class="sub-menu">
                           <li>
                             <a href="./view-mentor-profile.html">Mentor Cường</a>
                           </li>
@@ -340,147 +307,134 @@
                             <a href="./view-mentor-profile.html">Mentor Long</a>
                           </li>
                         </ul> -->
-                      </li>
+                    </li>
 
-                      <li>
-                        <a href="./lms.html" class="nav-link nav-link-custom"
-                          >Nền tảng LMS</a
-                        >
-                      </li>
+                    <li>
+                      <a href="./lms.html" class="nav-link nav-link-custom">Nền tảng LMS</a>
+                    </li>
 
-                      <li>
-                        <a
-                          href="./blog.html"
-                          class="nav-link nav-link-custom"
-                          >Blog</a
-                        >
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="./blog.html">Sự kiện</a>
-                          </li>
-                          <li>
-                            <a href="./blog.html">Khuyến mãi</a>
-                          </li>
-                          <!-- <li>
+                    <li>
+                      <a href="./blog.html" class="nav-link nav-link-custom">Blog</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="./blog.html">Sự kiện</a>
+                        </li>
+                        <li>
+                          <a href="./blog.html">Khuyến mãi</a>
+                        </li>
+                        <!-- <li>
                             <a href="./blog.html">Tuyển dụng</a>
                           </li> -->
-                          <li>
-                            <a href="./blog.html">Hoạt động</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <!-- <li>
+                        <li>
+                          <a href="./blog.html">Hoạt động</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- <li>
                         <a href="#" class="nav-link nav-link-custom"
                           >Tuyển dụng</a
                         >
                       </li> -->
-                    </ul>
-                  </div>
+                  </ul>
                 </div>
-              </nav>
-              <div class="header-cart">
-                <a href="#"
-                  ><img
-                    src="/assets/images/icon-shopping-cart.jpg"
-                    class="icon-shopping-cart"
-                    alt="icon-shopping-cart"
-                  />
-                  <span class="cart-total-number">0</span>
-                </a>
               </div>
+            </nav>
+            <div class="header-cart">
+              <a href="#"><img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart"
+                  alt="icon-shopping-cart" />
+                <span class="cart-total-number">0</span>
+              </a>
             </div>
           </div>
         </div>
-        <div class="header-mobile">
-          <div class="container">
-            <div class="header-mobile-content">
-              <div class="header-mobile-logo">
-                <a href="./index.html"><span class="site-logo">
+      </div>
+      <div class="header-mobile">
+        <div class="container">
+          <div class="header-mobile-content">
+            <div class="header-mobile-logo">
+              <a href="./index.html"><span class="site-logo">
                   <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
                 </span></a>
-              </div>
-              <!-- Cart -->
-              <div class="header-cart">
-                <a href="payment.html">
-                  <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
-                  <span class="cart-total-number">0</span>
-                </a>
-              </div>
-              <!-- Cart -->
-              <div class="header-mobile-menu-hambuger" id="activeMenu">
-                <i class="fa fa-bars"></i>
-              </div>
+            </div>
+            <!-- Cart -->
+            <div class="header-cart">
+              <a href="payment.html">
+                <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
+                <span class="cart-total-number">0</span>
+              </a>
+            </div>
+            <!-- Cart -->
+            <div class="header-mobile-menu-hambuger" id="activeMenu">
+              <i class="fa fa-bars"></i>
             </div>
           </div>
         </div>
-      </header>
-      <!-- End header -->
-      <section class="banner-mentor-detail">
-        <div class="banner-content">
-          <h1>Thông tin mentor</h1>
-          <p>
-            <a href="index.html">Trang chủ</a><span> > </span> Thông tin mentor
-          </p>
-        </div>
-      </section>
-      <section class="content-info-mentor">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-5">
-              <div class="mentor-info">
-                <div class="mentor-img">
-                  <img
-                    src="/assets/images/avatar-mentor-1.jpg"
-                    alt="hinh anh mentor"
-                  />
+      </div>
+    </header>
+    <!-- End header -->
+    <section class="banner-mentor-detail">
+      <div class="banner-content">
+        <h1>Thông tin mentor</h1>
+        <p>
+          <a href="index.html">Trang chủ</a><span> > </span> Thông tin mentor
+        </p>
+      </div>
+    </section>
+    <section class="content-info-mentor">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-5">
+            <div class="mentor-info">
+              <div class="mentor-img">
+                <img src="/assets/images/avatar-mentor-1.jpg" alt="hinh anh mentor" />
+              </div>
+              <div class="mentor-details">
+                <h4>Mentor Cường</h4>
+                <p>Mentor</p>
+                <ul class="social-list">
+                  <li>
+                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+                <ul class="contact-info">
+                  <li>
+                    <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
+                    <span>mrcuong@gmail.com</span>
+                  </li>
+                  <li style="margin-right: 92px;">
+                    <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
+                    <span>0946005077</span>
+                  </li>
+                </ul>
+                <div class="contact-btn">
+                  <a href="#" class="btn btn-primary-custom">Chỉnh sửa thông tin</a>
                 </div>
-                <div class="mentor-details">
-                  <h4>Mentor Cường</h4>
-                  <p>Mentor</p>
-                  <ul class="social-list">
-                    <li>
-                      <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                  <ul class="contact-info">
-                    <li>
-                      <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
-                      <span>mrcuong@gmail.com</span>
-                    </li>
-                    <li style="margin-right: 92px;">
-                      <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
-                      <span>0946005077</span>
-                    </li>
-                  </ul>
-                  <div class="contact-btn">
-                    <a href="#" class="btn btn-primary-custom">Chỉnh sửa thông tin</a>
-                  </div>
-                  <div class="contact-btn">
-                    <a href="#" class="btn btn-primary-custom">Quản lý khóa học</a>
-                  </div>
+                <div class="contact-btn">
+                  <a href="#" class="btn btn-primary-custom">Quản lý khóa học</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-9 col-md-7">
-              <div class="about-mentor">
-                <h3>Giới thiệu</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
-                  nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
-                  pretium, ligula sollicitudin laoreet viverra, tortor libero
-                  sodales leo, eget blandit nunc tortor eu nibh.
-                </p>
-              </div>
+          </div>
+          <div class="col-lg-9 col-md-7">
+            <div class="about-mentor">
+              <h3>Giới thiệu</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
+                nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
+                pretium, ligula sollicitudin laoreet viverra, tortor libero
+                sodales leo, eget blandit nunc tortor eu nibh.
+              </p>
+            </div>
 
-              <!-- Hide -->
-              <!-- <div class="skill-rate">
+            <!-- Hide -->
+            <!-- <div class="skill-rate">
                 <h3>Skill</h3>
                 <div class="row">
                   <div class="col-lg-6 skill-single">
@@ -521,202 +475,166 @@
                   </div>
                 </div>
               </div> -->
-              <!-- Hide -->
+            <!-- Hide -->
 
-              <!-- Render course representative -->
-              <div class="courses">
-                <h3 class="mb-1">Khoá học tiêu biểu</h3>
-                <div class="row">
+            <!-- Render course representative -->
+            <div class="courses">
+              <h3 class="mb-1">Khoá học tiêu biểu</h3>
+              <div class="row">
 
-                  <!-- Render courses item -->
-                  <div class="col-lg-4">
-                    <div class="card card-course-custom position-relative">
-                      <img
-                        src="/assets/images/reactjs-banner.png"
-                        class="card-img-top"
-                        alt="hinh-anh-front-end-banner"
-                      />
-                      <div class="card-body position-relative">
-                        <img src="/assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
-                        <h5 class="card-title d-flex align-items-center">
-                          <p id="name-course" class="title-name-course">ReactJS Basic</p>
-                          <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
-                        </h5>
-                        <p class="sub-title">Mentor Cường</p>
-                        <p class="description">Lớp học dự kiến bắt đầu vào 25/01/2023</p>
-                        <div class="d-flex flex-column mt-2">
-                          <div class="d-flex align-items-center mt-1">
-                            <i class="fa fa-clock-o me-2" style="font-size:18px"></i> <span>8h-11h in Monday, Wednesday, Friday</span>
-                          </div>
-                          <div class="d-flex align-items-center mt-2">
-                            <i class="fa fa-user-o me-2" style="font-size:18px"></i> <span>10-12 học viên</span>
-                          </div>
-                          <div class="d-flex align-items-center mt-2">
-                            <i class="fa fa-calendar-times-o me-2" style="font-size:18px"></i> <span>2 buổi</span>
-                          </div>
+                <!-- Render courses item -->
+                <div class="col-lg-4">
+                  <div class="card card-course-custom position-relative">
+                    <img src="/assets/images/reactjs-banner.png" class="card-img-top" alt="hinh-anh-front-end-banner" />
+                    <div class="card-body position-relative">
+                      <img src="/assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
+                      <h5 class="card-title d-flex align-items-center">
+                        <p id="name-course" class="title-name-course">ReactJS Basic</p>
+                        <img src="/assets/images/icon-title-course.png" class="icon-title-course"
+                          alt="icon-title-course">
+                      </h5>
+                      <p class="sub-title">Mentor Cường</p>
+                      <p class="description">Lớp học dự kiến bắt đầu vào 25/01/2023</p>
+                      <div class="d-flex flex-column mt-2">
+                        <div class="d-flex align-items-center mt-1">
+                          <i class="fa fa-clock-o me-2" style="font-size:18px"></i> <span>8h-11h in Monday, Wednesday,
+                            Friday</span>
                         </div>
-                        <hr />
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
+                        <div class="d-flex align-items-center mt-2">
+                          <i class="fa fa-user-o me-2" style="font-size:18px"></i> <span>10-12 học viên</span>
                         </div>
-                        <div id="btnShow">
-                          <a
-                          id="linkSign"
-                          href="#"
-                          class="btn btn-primary-custom p-3"
-                          >Thông tin lớp học</a
-                          >
+                        <div class="d-flex align-items-center mt-2">
+                          <i class="fa fa-calendar-times-o me-2" style="font-size:18px"></i> <span>2 buổi</span>
                         </div>
+                      </div>
+                      <hr />
+                      <div class="d-flex justify-content-between align-items-center">
+                      </div>
+                      <div id="btnShow">
+                        <a id="linkSign" href="#" class="btn btn-primary-custom p-3">Thông tin lớp học</a>
                       </div>
                     </div>
                   </div>
-                  
-                  <div class="col-lg-4">
-                    <div class="card card-course-custom position-relative">
-                      <img
-                        src="/assets/images/reactjs-banner.png"
-                        class="card-img-top"
-                        alt="hinh-anh-front-end-banner"
-                      />
-                      <div class="card-body position-relative">
-                        <img src="/assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
-                        <h5 class="card-title d-flex align-items-center">
-                          <p id="name-course" class="title-name-course">ReactJS Basic</p>
-                          <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
-                        </h5>
-                        <p class="sub-title">Mentor Cường</p>
-                        <p class="description">Lớp học dự kiến bắt đầu vào 25/01/2023</p>
-                        <div class="d-flex flex-column mt-2">
-                          <div class="d-flex align-items-center mt-1">
-                            <i class="fa fa-clock-o me-2" style="font-size:18px"></i> <span>8h-11h in Monday, Wednesday, Friday</span>
-                          </div>
-                          <div class="d-flex align-items-center mt-2">
-                            <i class="fa fa-user-o me-2" style="font-size:18px"></i> <span>10-12 học viên</span>
-                          </div>
-                          <div class="d-flex align-items-center mt-2">
-                            <i class="fa fa-calendar-times-o me-2" style="font-size:18px"></i> <span>2 buổi</span>
-                          </div>
-                        </div>
-                        <hr />
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                        </div>
-                        <div id="btnShow">
-                          <a
-                          id="linkSign"
-                          href="#"
-                          class="btn btn-primary-custom p-3"
-                          >Thông tin lớp học</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="card card-course-custom position-relative">
-                      <img
-                        src="/assets/images/reactjs-banner.png"
-                        class="card-img-top"
-                        alt="hinh-anh-front-end-banner"
-                      />
-                      <div class="card-body position-relative">
-                        <img src="/assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
-                        <h5 class="card-title d-flex align-items-center">
-                          <p id="name-course" class="title-name-course">ReactJS Basic</p>
-                          <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
-                        </h5>
-                        <p class="sub-title">Mentor Cường</p>
-                        <p class="description">Lớp học dự kiến bắt đầu vào 25/01/2023</p>
-                        <div class="d-flex flex-column mt-2">
-                          <div class="d-flex align-items-center mt-1">
-                            <i class="fa fa-clock-o me-2" style="font-size:18px"></i> <span>8h-11h in Monday, Wednesday, Friday</span>
-                          </div>
-                          <div class="d-flex align-items-center mt-2">
-                            <i class="fa fa-user-o me-2" style="font-size:18px"></i> <span>10-12 học viên</span>
-                          </div>
-                          <div class="d-flex align-items-center mt-2">
-                            <i class="fa fa-calendar-times-o me-2" style="font-size:18px"></i> <span>2 buổi</span>
-                          </div>
-                        </div>
-                        <hr />
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                        </div>
-                        <div id="btnShow">
-                          <a
-                          id="linkSign"
-                          href="#"
-                          class="btn btn-primary-custom p-3"
-                          >Thông tin lớp học</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-lg-4">
-                    <div class="card card-course-custom position-relative">
-                      <img
-                        src="/assets/images/reactjs-banner.png"
-                        class="card-img-top"
-                        alt="hinh-anh-front-end-banner"
-                      />
-                      <div class="card-body position-relative">
-                        <img src="/assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
-                        <h5 class="card-title d-flex align-items-center">
-                          <p id="name-course" class="title-name-course">ReactJS Basic</p>
-                          <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
-                        </h5>
-                        <p class="sub-title">Mentor Cường</p>
-                        <p class="description">Lớp học dự kiến bắt đầu vào 25/01/2023</p>
-                        <div class="d-flex flex-column mt-2">
-                          <div class="d-flex align-items-center mt-1">
-                            <i class="fa fa-clock-o me-2" style="font-size:18px"></i> <span>8h-11h in Monday, Wednesday, Friday</span>
-                          </div>
-                          <div class="d-flex align-items-center mt-2">
-                            <i class="fa fa-user-o me-2" style="font-size:18px"></i> <span>10-12 học viên</span>
-                          </div>
-                          <div class="d-flex align-items-center mt-2">
-                            <i class="fa fa-calendar-times-o me-2" style="font-size:18px"></i> <span>2 buổi</span>
-                          </div>
-                        </div>
-                        <hr />
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                        </div>
-                        <div id="btnShow">
-                          <a
-                          id="linkSign"
-                          href="#"
-                          class="btn btn-primary-custom p-3"
-                          >Thông tin lớp học</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                   <!-- Render courses item -->
-
                 </div>
-              </div>
-              <!-- Render course representative -->
 
-              <!-- Experience -->
-              <div class="experience mt-3">
-                <h3>Kinh nghiệm thực tế</h3>
-                <p>
-                  Tôi có kinh nghiệm 10 năm với vai trò là một seniot web
-                  developer (2010 - Hiện tại) tại CodeMex. Ngoài ra, tôi còn là
-                  mentor của trung tâm lập trình WebCode trong hơn 5 năm (2005
-                  -2010).
-                </p>
+                <div class="col-lg-4">
+                  <div class="card card-course-custom position-relative">
+                    <img src="/assets/images/reactjs-banner.png" class="card-img-top" alt="hinh-anh-front-end-banner" />
+                    <div class="card-body position-relative">
+                      <img src="/assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
+                      <h5 class="card-title d-flex align-items-center">
+                        <p id="name-course" class="title-name-course">ReactJS Basic</p>
+                        <img src="/assets/images/icon-title-course.png" class="icon-title-course"
+                          alt="icon-title-course">
+                      </h5>
+                      <p class="sub-title">Mentor Cường</p>
+                      <p class="description">Lớp học dự kiến bắt đầu vào 25/01/2023</p>
+                      <div class="d-flex flex-column mt-2">
+                        <div class="d-flex align-items-center mt-1">
+                          <i class="fa fa-clock-o me-2" style="font-size:18px"></i> <span>8h-11h in Monday, Wednesday,
+                            Friday</span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                          <i class="fa fa-user-o me-2" style="font-size:18px"></i> <span>10-12 học viên</span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                          <i class="fa fa-calendar-times-o me-2" style="font-size:18px"></i> <span>2 buổi</span>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="d-flex justify-content-between align-items-center">
+                      </div>
+                      <div id="btnShow">
+                        <a id="linkSign" href="#" class="btn btn-primary-custom p-3">Thông tin lớp học</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="card card-course-custom position-relative">
+                    <img src="/assets/images/reactjs-banner.png" class="card-img-top" alt="hinh-anh-front-end-banner" />
+                    <div class="card-body position-relative">
+                      <img src="/assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
+                      <h5 class="card-title d-flex align-items-center">
+                        <p id="name-course" class="title-name-course">ReactJS Basic</p>
+                        <img src="/assets/images/icon-title-course.png" class="icon-title-course"
+                          alt="icon-title-course">
+                      </h5>
+                      <p class="sub-title">Mentor Cường</p>
+                      <p class="description">Lớp học dự kiến bắt đầu vào 25/01/2023</p>
+                      <div class="d-flex flex-column mt-2">
+                        <div class="d-flex align-items-center mt-1">
+                          <i class="fa fa-clock-o me-2" style="font-size:18px"></i> <span>8h-11h in Monday, Wednesday,
+                            Friday</span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                          <i class="fa fa-user-o me-2" style="font-size:18px"></i> <span>10-12 học viên</span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                          <i class="fa fa-calendar-times-o me-2" style="font-size:18px"></i> <span>2 buổi</span>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="d-flex justify-content-between align-items-center">
+                      </div>
+                      <div id="btnShow">
+                        <a id="linkSign" href="#" class="btn btn-primary-custom p-3">Thông tin lớp học</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="card card-course-custom position-relative">
+                    <img src="/assets/images/reactjs-banner.png" class="card-img-top" alt="hinh-anh-front-end-banner" />
+                    <div class="card-body position-relative">
+                      <img src="/assets/images/avatar-mentor-2.jpg" class="avatar-mentor" alt="avatar-mentor">
+                      <h5 class="card-title d-flex align-items-center">
+                        <p id="name-course" class="title-name-course">ReactJS Basic</p>
+                        <img src="/assets/images/icon-title-course.png" class="icon-title-course"
+                          alt="icon-title-course">
+                      </h5>
+                      <p class="sub-title">Mentor Cường</p>
+                      <p class="description">Lớp học dự kiến bắt đầu vào 25/01/2023</p>
+                      <div class="d-flex flex-column mt-2">
+                        <div class="d-flex align-items-center mt-1">
+                          <i class="fa fa-clock-o me-2" style="font-size:18px"></i> <span>8h-11h in Monday, Wednesday,
+                            Friday</span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                          <i class="fa fa-user-o me-2" style="font-size:18px"></i> <span>10-12 học viên</span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                          <i class="fa fa-calendar-times-o me-2" style="font-size:18px"></i> <span>2 buổi</span>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="d-flex justify-content-between align-items-center">
+                      </div>
+                      <div id="btnShow">
+                        <a id="linkSign" href="#" class="btn btn-primary-custom p-3">Thông tin lớp học</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Render courses item -->
+
               </div>
-              <!-- <div class="row mentor-profile-counter">
+            </div>
+            <!-- Render course representative -->
+
+            <!-- Experience -->
+            <div class="experience mt-3">
+              <h3>Kinh nghiệm thực tế</h3>
+              <p>
+                Tôi có kinh nghiệm 10 năm với vai trò là một seniot web
+                developer (2010 - Hiện tại) tại CodeMex. Ngoài ra, tôi còn là
+                mentor của trung tâm lập trình WebCode trong hơn 5 năm (2005
+                -2010).
+              </p>
+            </div>
+            <!-- <div class="row mentor-profile-counter">
                 <div class="col-lg-6">
                   <div class="counter-single text-center mb-3">
                     <div class="counter-number">
@@ -738,250 +656,255 @@
                   </div>
                 </div>
               </div> -->
-              <!-- Experience -->
+            <!-- Experience -->
 
-              <!-- History -->
-              <div class="history-payment-container mt-4">
-                <h3 class="mb-3">LỊCH SỬ GIAO DỊCH</h3>
-                <hr />
+            <!-- History -->
+            <div class="history-payment-container mt-4">
+              <h3 class="mb-3">LỊCH SỬ GIAO DỊCH</h3>
+              <hr />
 
-                <!-- List table history payment -->
-                <table id="historyMentorProfile" class="table table-hover table-striped" style="width:100%">
-                  <thead style="background-color: #ccc; font-weight: bold;">
-                      <tr>
-                          <th style="cursor: pointer;">
-                            Cộng 
-                            <i class="fa fa-sort ms-2" style="font-size:14px; cursor: pointer;"></i>
-                          </th>
-                          <th style="cursor: pointer;">
-                            Trừ 
-                            <i class="fa fa-sort ms-2" style="font-size:14px; cursor: pointer;"></i>
-                          </th>
-                          <th style="cursor: pointer;">
-                            Nội dung 
-                            <i class="fa fa-sort ms-2" style="font-size:14px; cursor: pointer;"></i>
-                          </th>
-                          <th style="cursor: pointer;">
-                            Thời gian 
-                            <i class="fa fa-sort ms-2" style="font-size:14px; cursor: pointer;"></i>
-                          </th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td>200 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2011-04-25</td>
-                      </tr>
-                      <tr>
-                          <td>500 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2011-07-25</td>
-                      </tr>
-                      <tr>
-                          <td>50 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2009-01-12</td>
-                      </tr>
-                      <tr>
-                          <td>100 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2012-03-29</td>
-                      </tr>
-                      <tr>
-                          <td>500 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2008-11-28</td>
-                      </tr>
-                      <tr>
-                          <td>1000 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2012-03-29</td>
-                      </tr>
-                      <tr>
-                          <td>40 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2008-11-28</td>
-                      </tr>
-                      <tr>
-                          <td>70 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2012-03-29</td>
-                      </tr>
-                      <tr>
-                          <td>30 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2008-11-28</td>
-                      </tr>
-                      <tr>
-                          <td>40 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2012-03-29</td>
-                      </tr>
-                      <tr>
-                          <td>10 BST</td>
-                          <td>0 BST</td>
-                          <td>Học phí khóa học X</td>
-                          <td>2008-11-28</td>
-                      </tr>
-                  </tbody>
-                </table>
+              <!-- List table history payment -->
+              <table id="historyMentorProfile" class="table table-hover table-striped" style="width:100%">
+                <thead style="background-color: #ccc; font-weight: bold;">
+                  <tr>
+                    <th style="cursor: pointer;">
+                      Cộng
+                      <i class="fa fa-sort ms-2" style="font-size:14px; cursor: pointer;"></i>
+                    </th>
+                    <th style="cursor: pointer;">
+                      Trừ
+                      <i class="fa fa-sort ms-2" style="font-size:14px; cursor: pointer;"></i>
+                    </th>
+                    <th style="cursor: pointer;">
+                      Nội dung
+                      <i class="fa fa-sort ms-2" style="font-size:14px; cursor: pointer;"></i>
+                    </th>
+                    <th style="cursor: pointer;">
+                      Thời gian
+                      <i class="fa fa-sort ms-2" style="font-size:14px; cursor: pointer;"></i>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>200 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2011-04-25</td>
+                  </tr>
+                  <tr>
+                    <td>500 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2011-07-25</td>
+                  </tr>
+                  <tr>
+                    <td>50 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2009-01-12</td>
+                  </tr>
+                  <tr>
+                    <td>100 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2012-03-29</td>
+                  </tr>
+                  <tr>
+                    <td>500 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2008-11-28</td>
+                  </tr>
+                  <tr>
+                    <td>1000 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2012-03-29</td>
+                  </tr>
+                  <tr>
+                    <td>40 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2008-11-28</td>
+                  </tr>
+                  <tr>
+                    <td>70 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2012-03-29</td>
+                  </tr>
+                  <tr>
+                    <td>30 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2008-11-28</td>
+                  </tr>
+                  <tr>
+                    <td>40 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2012-03-29</td>
+                  </tr>
+                  <tr>
+                    <td>10 BST</td>
+                    <td>0 BST</td>
+                    <td>Học phí khóa học X</td>
+                    <td>2008-11-28</td>
+                  </tr>
+                </tbody>
+              </table>
 
-              </div>
-              <!-- History -->
-              
             </div>
+            <!-- History -->
+
           </div>
         </div>
-      </section>
-      <!-- Start footer -->
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <h3 class="title-address">TP.Hồ Chí Minh</h3>
-            </div>
+      </div>
+    </section>
+    <!-- Start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <h3 class="title-address">TP.Hồ Chí Minh</h3>
           </div>
-          <div class="row mb-5">
-            <div class="col-lg-4 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
           </div>
-          <hr class="text-success mt-5 mb-5" />
-          <div class="row">
-            <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-logo">
-                <a href="index.html"
-                  ><span class="site-logo site-logo-footer"
-                    ><img
-                      src="/assets/images/icon-logo-footer.png"
-                      class="icon-logo"
-                      alt="icon-logo" /></span
-                ></a>
-                <p class="footer-about-description">
-                  Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
-                  các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
-                  tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
-                </p>
-                <h6>Theo dõi chúng tôi tại:</h6>
-                <ul class="footer-social-icons">
-                  <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <!-- <li>
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+          </div>
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+          </div>
+        </div>
+        <hr class="text-success mt-5 mb-5" />
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-logo">
+              <a href="index.html"><span class="site-logo site-logo-footer" style="margin-left: 20px;">
+                  <img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo">
+                </span></a>
+              <p class="footer-about-description">
+                Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
+                các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
+                tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
+              </p>
+              <h6>Theo dõi chúng tôi tại:</h6>
+              <ul class="footer-social-icons">
+                <li>
+                  <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <!-- <li>
                     <a href="#"><i class="fa fa-twitter"></i></a>
                   </li> -->
-                  <li>
-                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                 
-                  <li>
-                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                  </li>
-                  <!-- <li>
+                <li>
+                  <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
+                      class="fa fa-linkedin"></i></a>
+                </li>
+
+                <li>
+                  <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
+                      class="fa fa-youtube-play"></i></a>
+                </li>
+                <!-- <li>
                     <a href="index.html"><i class="fa fa-dribbble"></i></a>
                   </li> -->
-                </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-menu">
+              <h4>Menu</h4>
+              <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./aboutus.html">Về chúng tôi</a></li>
+                <li><a href="./courses.html">Khoá học</a></li>
+                <li><a href="./mentor-list.html">Mentor</a></li>
+                <li><a href="./lms.html">Nền tảng LMS</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
 
-              </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-menu">
+              <h4>Điều khoản</h4>
+              <ul>
+                <li><a href="./terms-of-service.html">Điều khoản dịch vụ</a></li>
+                <li><a href="./privacy-policy.html">Chính sách bảo mật</a></li>
+              </ul>
             </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-menu">
-                <h4>Menu</h4>
-                <ul>
-                  <li><a href="./index.html">Trang chủ</a></li>
-                  <li><a href="./aboutus.html">Về chúng tôi</a></li>
-                  <li><a href="./courses.html">Khoá học</a></li>
-                  <li><a href="./mentor-list.html">Mentor</a></li>
-                  <li><a href="./lms.html">Nền tảng LMS</a></li>
-                  <li><a href="./blog.html">Blog</a></li>
-                  <li><a href="./terms-of-service.html">Điều khoản dịch vụ</a></li>
-                  <li><a href="./privacy-policy.html">Chính sách bảo mật</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-control">
-                <button class="btn btn-primary-custom p-2 mb-2">
-                  Đăng ký khoá học
-                </button>
-              </div>
-            </div> -->
-            <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-contact">
-                <h4>Liên hệ với chúng tôi</h4>
-                <li>
-                  <img src="/assets/images/icon-location.png" class="icon-location" alt="icon-location">
-                  <p class="m-0">Tòa S9.02A, Vinhomes Grand Park, Quận 9</p>
-                </li>
-                <li>
-                  <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
-                  <p class="m-0">admin@bsmart.edu.vn</p>
-                </li>
-                <li>
-                  <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
-                  <p class="m-0">028 9999 79 39</p>
-                </li>
-              </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 mb-3">
+                  <div class="footer-control d-flex align-items-center mt-5">
+                    <a
+                      href="./courses.html"
+                      class="btn btn-primary-custom p-2 mb-2"
+                    >
+                      Đăng ký khoá học
+                    </a>
+                  </div>
+                </div> -->
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-contact">
+              <h4>Liên hệ với chúng tôi</h4>
+              <li>
+                <img src="/assets/images/icon-location.png" class="icon-location" alt="icon-location">
+                <p class="m-0">Tòa S9.02A, Vinhomes Grand Park, Quận 9</p>
+              </li>
+              <li>
+                <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
+                <p class="m-0">admin@bsmart.edu.vn</p>
+              </li>
+              <li>
+                <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
+                <p class="m-0">028 9999 79 39</p>
+              </li>
             </div>
           </div>
         </div>
-        <hr class="text-success mt-5" />
-        <div class="container">
-          <p class="m-0 text-light">
-            © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
-          </p>
-        </div>
-      </footer>
-      <!-- End footer -->
-    </div>
-    <!-- Import script bootstrap V5 -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Import script Jquery -->
-    <!-- <script
+      </div>
+      <hr class="text-success mt-5" />
+      <div class="container">
+        <p class="m-0 text-light text-center">
+          © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
+        </p>
+      </div>
+    </footer>
+    <!-- End footer -->
+  </div>
+  <!-- Import script bootstrap V5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- Import script Jquery -->
+  <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script> -->
-     <!-- Support table -->
-     <script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
-     <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script> 
-    <!-- Import script owl carousel  -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- Script -->
-    <script type="text/javascript" src="./assets/js/main.js"></script>
-    <script type="text/javascript" src="./assets/js/historyMentorProfile.js"></script>
-  </body>
+  <!-- Support table -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+  <!-- Import script owl carousel  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Script -->
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+  <script type="text/javascript" src="./assets/js/historyMentorProfile.js"></script>
+</body>
+
 </html>
