@@ -23,7 +23,7 @@
 // Import scss register component
 @import "./private/register/_index.scss";
 // Import scss courses component
-@import "./private/courses/_index.scss";
+@import "./private/course-list/_index.scss";
 // Import payment component
 @import "./private/payment/_index.scss";
 // Import scss course detail component
@@ -70,3 +70,5 @@
 @import "./private/terms-of-service/_index.scss";
 //Import scss privacy policy
 @import "./private/privacy-policy/_index.scss";
+//Import scss privacy policy
+@import "./private/mentor-list/_index.scss";
