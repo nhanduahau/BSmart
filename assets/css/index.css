@@ -1,6 +1,6 @@
-.title-reset-1 h3 {
-  font-size: 24px;
-  line-height: 34px;
-  color: #0e0a38;
-  font-weight: 700;
+.member-img {
+  background-image: url(/assets/images/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 50px 73px 30px;
 }/*# sourceMappingURL=index.css.map */
