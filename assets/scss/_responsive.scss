@@ -32,13 +32,13 @@
         // Slide 
         .owl-next span {
           top: 0 !important;
-          right: 26px !important;
+          right: 35px !important;
           font-size: 4rem !important;
         }
       
         .owl-prev span {
           top: 0 !important;
-          left: 26px !important;
+          left: 5px !important;
           font-size: 4rem !important;
         }
         // slide 
@@ -270,8 +270,9 @@
   .img-banner-1{
     margin-right: 50px !important;
   }
+    //fix-icon-responsive
     .icon-gmail{
-      margin-left:31px !important ;
+      margin-left:10px !important ;
     }
     .fa-location-arrow{
       margin-left: 41px !important;
@@ -3383,10 +3384,12 @@
     justify-content: flex-start;
   }
 
+  //fix-responsive-feedback
   .feedback-left-info {
     h2 {
       font-size: 0.9rem !important;
       font-weight: bold;
+      margin-top: -10px;
     }
   }
 
@@ -4035,8 +4038,14 @@
     align-items: center;
   }
 
+  //fix-responsive-feedback
   .feedback-right {
-    margin-top: 10px;
+    margin-top: -20px;
+    margin-left: 105px;
+  }
+  
+  .feedback-left-img{
+    margin-top: 30px;
   }
 
   .feedback-container {
