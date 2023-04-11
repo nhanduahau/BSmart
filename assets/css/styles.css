@@ -10269,6 +10269,7 @@ input {
   .feedback-left-info h2 {
     font-size: 0.9rem !important;
     font-weight: bold;
+    margin-top: -10px;
   }
   .select-feedback-container {
     margin-top: 24px !important;
@@ -10761,7 +10762,11 @@ input {
     align-items: center;
   }
   .feedback-right {
-    margin-top: 10px;
+    margin-top: -20px;
+    margin-left: 105px;
+  }
+  .feedback-left-img {
+    margin-top: 30px;
   }
   .feedback-container {
     margin-top: 24px !important;
