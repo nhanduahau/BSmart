@@ -1496,6 +1496,7 @@ div.swiper-button-prev:after {
   height: 42px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-left: 10px;
 }
 
 .header-contact-info li {
@@ -7854,7 +7855,7 @@ input {
     margin-right: 50px !important;
   }
   .icon-gmail {
-    margin-left: 31px !important;
+    margin-left: 10px !important;
   }
   .fa-location-arrow {
     margin-left: 41px !important;
