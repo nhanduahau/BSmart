@@ -3368,10 +3368,12 @@
     justify-content: flex-start;
   }
 
+  //fix-responsive-feedback
   .feedback-left-info {
     h2 {
       font-size: 0.9rem !important;
       font-weight: bold;
+      margin-top: -10px;
     }
   }
 
@@ -4020,8 +4022,14 @@
     align-items: center;
   }
 
+  //fix-responsive-feedback
   .feedback-right {
-    margin-top: 10px;
+    margin-top: -20px;
+    margin-left: 105px;
+  }
+  
+  .feedback-left-img{
+    margin-top: 30px;
   }
 
   .feedback-container {
