@@ -1787,6 +1787,16 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+
+  
+  //member-list
+
+  .content-member-list{
+    width: 79%;
+    flex-direction: column;
+    display: flex;
+    /* margin-left: 50px; */
+  }
   .icon-title-course {
     width: 62px !important;
     height: 62px !important;
