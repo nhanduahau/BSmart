@@ -8417,10 +8417,6 @@ input {
     object-fit: cover;
     margin-left: -22px;
   }
-  .container-revert-list-class-on-top {
-    display: flex;
-    flex-direction: column-reverse;
-  }
   .list-class-info {
     margin-bottom: -12px !important;
   }
@@ -9127,10 +9123,6 @@ input {
     height: 75px;
     object-fit: cover;
     margin-left: -22px;
-  }
-  .container-revert-list-class-on-top {
-    display: flex;
-    flex-direction: column-reverse;
   }
   .list-class-info {
     margin-bottom: -12px !important;
