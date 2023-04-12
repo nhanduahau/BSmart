@@ -9034,6 +9034,9 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .course-review {
+    margin-top: 20px !important;
+  }
   .content-member-list {
     width: 79%;
     flex-direction: column;
