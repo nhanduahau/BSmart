@@ -24,7 +24,8 @@
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- Import css reset -->
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
   <!-- Import css styles -->
@@ -549,6 +550,71 @@
                   </li> -->
               </ul>
             </div>
+            <div class="border-logo swiper mySwiper">
+              <div class="logo-frame swiper-wrapper">
+                <img class="swiper-slide" src="/assets/images/new-ocean-logo.jpg" alt="Logo 1">
+                <img class="swiper-slide" src="/assets/images/Titan-logo.jpg" alt="Logo 2">
+                <img class="swiper-slide" src="/assets/images/Hitachi-logo.jpg" alt="Logo 3">
+                <img class="swiper-slide" src="/assets/images/Fois-logo.jpg" alt="Logo 4">
+                <img class="swiper-slide" src="/assets/images/ITEEBEE-logo.jpg" alt="Logo 5">
+              </div>
+            </div>
+            <style>
+              .border-logo {
+                max-width: 600px;
+                margin: 0 auto;
+                overflow: hidden;
+              }
+
+              .logo-container {
+                width: 100%;
+                height: 100px;
+                overflow: hidden;
+              }
+
+              .logo-frame {
+                justify-content: space-between;
+                align-items: center;
+                width: calc(30% * 3);
+                height: 100px;
+                display: flex;
+                animation: marquee 25s linear infinite;
+              }
+
+              @keyframes marquee {
+                0% {
+                  transform: translateX(0);
+                }
+
+                100% {
+                  transform: translateX(calc(-100% * 3));
+                }
+              }
+
+              .logo-frame img {
+                width: 100px ;
+                height: 30px;
+                margin-right: 20px;
+              }
+            </style>
+            
+            <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>    
+
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="footer-menu">
@@ -624,7 +690,8 @@
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/initialSwiper.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>

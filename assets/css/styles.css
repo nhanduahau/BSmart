@@ -1744,6 +1744,10 @@ div.swiper-button-prev:after {
   cursor: pointer;
 }
 
+.logo-frame {
+  padding-top: 30px;
+}
+
 .header-mobile-logo a {
   color: #0e0a38;
 }
