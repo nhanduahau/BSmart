@@ -548,8 +548,55 @@
                     <a href="index.html"><i class="fa fa-dribbble"></i></a>
                   </li> -->
               </ul>
+              <div class="border-logo" >
+                <div class="logo-frame">
+                  <img src="/assets/images/newocean-logo.jpg" alt="Logo 1">
+                  <img src="/assets/images/Titan.jpg" alt="Logo 2">
+                  <img src="/assets/images/Hitachi.jpg" alt="Logo 3">
+                  <img src="/assets/images/ITEEBEE.jpg" alt="Logo 4">
+                  <img src="/assets/images/Fois.jpg" alt="Logo 5">
+                </div>
+              </div>
+
+              <style>
+                .border-logo {
+                  max-width: 600px;
+                  margin: 0 auto;
+                  overflow: hidden;
+                }
+
+                .logo-frame {
+                  justify-content: space-between;
+                  align-items: center;
+                  width: 200px;
+                  /* thay đổi giá trị width từ 33% thành 200px */
+                  height: 100px;
+                  display: flex;
+                  animation: marquee 20s linear infinite;
+                }
+
+                @keyframes marquee {
+                  0% {
+                    transform: translateX(0);
+                  }
+
+                  100% {
+                    transform: translateX(calc(-100% * 3));
+                  }
+                }
+
+                .logo-frame img {
+                  width: 100px;
+                  height: 30px;
+                  margin-right: 20px;
+                }
+              </style>
+
+
             </div>
+
           </div>
+
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="footer-menu">
               <h4>Menu</h4>
@@ -566,7 +613,7 @@
 
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="footer-menu">
-              
+
               <h4>Điều khoản</h4>
               <ul>
                 <li><a href="./terms-of-service.html">Điều khoản dịch vụ</a></li>
