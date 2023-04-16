@@ -1788,6 +1788,10 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
+}
    // course-list
    .course-review{
     margin-top: 20px !important;
@@ -3087,7 +3091,7 @@
     margin-bottom: 40px;
   }
   // course
-}
+
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
