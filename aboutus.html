@@ -6,6 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BSmart</title>
+
+  <!-- import bootstrap4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <!-- Import css bootstrap v5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
@@ -472,6 +485,7 @@
       </div>
     </section>
 
+
     <br>
 
     <section class="information">
@@ -491,6 +505,55 @@
     </div>
     <br>
 
+    <br>
+    <section class="logo-slide-1" style="background-color: #f5f7fc;">
+    <section class="information">
+      <div class="container">
+        <div class="row">
+          <div class="introduction">
+            <h5 style="font-size: 35px !important; line-height: 41px !important; font-weight: 700; color: #0e0a38;">Được tin tưởng bởi các công ty tốt nhất trên thế giới</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="logo-section">
+      <div class="logo-grid">
+        <img src="/assets/images/newocean-logo.jpg">
+        <img src="/assets/images/Titan.jpg">
+        <img src="/assets/images/Hitachi.jpg">
+        <img src="/assets/images/ITEEBEE.jpg">
+        <img src="/assets/images/Fois.jpg">
+        <img src="/assets/images/Hitachi.jpg">
+        <img src="/assets/images/newocean-logo.jpg">
+        <img src="/assets/images/Titan.jpg">
+      </div>
+    </section>
+  </section>
+    <style>
+
+      .logo-section {
+        margin-left: 20px;
+    width: 100%;
+    height: 200px; /* reduced from 300px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+      .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px;
+      }
+
+      .logo-grid img {
+        width: 87%;
+        height: 100px;
+        object-fit: contain;
+      }
+    </style>
+
+    <br>
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -516,14 +579,12 @@
           </div>
         </div>
         <hr class="text-success mt-5 mb-5" />
-       
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-3">
-            <a href="index.html"><span class="site-logo site-logo-footer" style="margin-left: 20px;">
-              <img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo">
-            </span></a>
             <div class="footer-logo">
-              
+              <a href="index.html"><span class="site-logo site-logo-footer" style="margin-left: 20px;">
+                  <img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo">
+                </span></a>
               <p class="footer-about-description">
                 Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
                 các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
@@ -535,24 +596,23 @@
                   <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
                 </li>
                 <!-- <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li> -->
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li> -->
                 <li>
                   <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
                       class="fa fa-linkedin"></i></a>
                 </li>
-
+  
                 <li>
                   <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
                       class="fa fa-youtube-play"></i></a>
                 </li>
                 <!-- <li>
-                    <a href="index.html"><i class="fa fa-dribbble"></i></a>
-                  </li> -->
+                  <a href="index.html"><i class="fa fa-dribbble"></i></a>
+                </li> -->
               </ul>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="footer-menu">
               <h4>Menu</h4>
@@ -566,10 +626,9 @@
               </ul>
             </div>
           </div>
-
+  
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="footer-menu">
-
               <h4>Điều khoản</h4>
               <ul>
                 <li><a href="./terms-of-service.html">Điều khoản dịch vụ</a></li>
@@ -577,17 +636,17 @@
               </ul>
             </div>
           </div>
-
+  
           <!-- <div class="col-lg-4 col-md-6 mb-3">
-                  <div class="footer-control d-flex align-items-center mt-5">
-                    <a
-                      href="./courses.html"
-                      class="btn btn-primary-custom p-2 mb-2"
-                    >
-                      Đăng ký khoá học
-                    </a>
-                  </div>
-                </div> -->
+                <div class="footer-control d-flex align-items-center mt-5">
+                  <a
+                    href="./courses.html"
+                    class="btn btn-primary-custom p-2 mb-2"
+                  >
+                    Đăng ký khoá học
+                  </a>
+                </div>
+              </div> -->
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="footer-contact">
               <h4>Liên hệ với chúng tôi</h4>

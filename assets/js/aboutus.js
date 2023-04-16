@@ -1,33 +1,26 @@
-// type="text/javascript">
-//   $(document).ready(function(){
-//     $('.logo-frame').slick({
-//       infinite: true,
-//       slidesToShow: 5,
-//       slidesToScroll: 1,
-//       autoplay: true,
-//       autoplaySpeed: 0,
-//       speed: 5000,
-//       cssEase: 'linear',
-//       pauseOnHover: false,
-//       responsive: [
-//         {
-//           breakpoint: 992,
-//           settings: {
-//             slidesToShow: 4
-//           }
-//         },
-//         {
-//           breakpoint: 768,
-//           settings: {
-//             slidesToShow: 3
-//           }
-//         },
-//         {
-//           breakpoint: 576,
-//           settings: {
-//             slidesToShow: 2
-//           }
-//         }
-//       ]
-//     });
-//   });
+const logos = document.querySelectorAll('.logo-grid img');
+let currentLogoIndex = 0;
+
+function showNextLogos() {
+  // Ẩn 4 logo hiện tại
+  for (let i = currentLogoIndex; i < currentLogoIndex + 4; i++) {
+    logos[i].style.display = 'none';
+  }
+
+  // Tính toán chỉ số của 4 logo tiếp theo
+  currentLogoIndex += 4;
+  if (currentLogoIndex >= logos.length) {
+    currentLogoIndex = 0;
+  }
+
+  // Hiển thị 4 logo mới
+  for (let i = currentLogoIndex; i < currentLogoIndex + 4; i++) {
+    logos[i].style.display = 'block';
+  }
+}
+
+// Hiển thị 4 logo đầu tiên
+showNextLogos();
+
+// Thực hiện hành động chuyển đổi 4 logo sau mỗi 5 giây
+setInterval(showNextLogos, 5000);
