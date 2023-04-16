@@ -43,7 +43,7 @@ setInterval(function() {
   if (window.innerWidth >= 767) {
     showNextLogos();
   }
-}, 5000);
+}, 3000);
 
 // Thay đổi số lượng logo tùy thuộc vào kích thước màn hình
 window.addEventListener('resize', function() {
