@@ -7644,6 +7644,9 @@ input {
 }
 
 @media only screen and (min-width: 1200px) {
+  .logo-section {
+    width: 95% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -7829,6 +7832,9 @@ input {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .logo-section {
+    width: 95% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -7849,6 +7855,9 @@ input {
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .logo-section {
+    width: 95% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -8144,6 +8153,9 @@ input {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .logo-section {
+    width: 95% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -8393,6 +8405,9 @@ input {
 }
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .logo-section {
+    width: 95% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -9065,6 +9080,9 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .logo-section {
+    width: 100% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: 1fr;
   }

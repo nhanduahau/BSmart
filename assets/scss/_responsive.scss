@@ -1,4 +1,8 @@
 @media only screen and (min-width: 1200px) {
+  //logo-khách hàng
+  .logo-section{
+    width: 95% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -248,6 +252,10 @@
 }
 
 @media only screen and (max-width: 1200px) {
+   //logo-khách hàng
+  .logo-section{
+    width: 95% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -272,6 +280,10 @@
 
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+   //logo-khách hàng
+  .logo-section{
+    width: 95% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -636,6 +648,10 @@
 
 // Laptop medium
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+   //logo-khách hàng
+  .logo-section{
+    width: 95% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -979,6 +995,10 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+   //logo-khách hàng
+  .logo-section{
+    width: 95% !important;
+  }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -1818,6 +1838,10 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+   //logo-khách hàng
+   .logo-section{
+    width: 100% !important;
+   }
   .logo-section .logo-grid {
     grid-template-columns: 1fr;
   }
