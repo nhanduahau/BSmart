@@ -4336,7 +4336,7 @@
 @media screen and (max-width: 362px){
   //fix title forgot password responsive
   .forgot-password-title{
-    font-size: 45px !important;
+    font-size: 43px !important;
   }
 
 }
@@ -4455,5 +4455,12 @@
     margin-top: 4px;
     margin-left: 22px;
     margin-right: 0px;
+  }
+}
+
+//fix responsive forgot password on mobile
+@media screen and (max-width: 400px) {
+  .invalid-feedback-email{
+    margin-left: 10px;
   }
 }
