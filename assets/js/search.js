@@ -109,7 +109,7 @@ if (window.innerWidth >= 767) {
 }
 
 // Thực hiện hành động chuyển đổi số lượng logo sau mỗi 5 giây
-setInterval(showNextLogos, 5000);
+setInterval(showNextLogos, 3000);
 
 // Thay đổi số lượng logo tùy thuộc vào kích thước màn hình
 window.addEventListener('resize', function() {
