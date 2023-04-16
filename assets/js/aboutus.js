@@ -1,26 +1,44 @@
 const logos = document.querySelectorAll('.logo-grid img');
 let currentLogoIndex = 0;
+let numLogosToShow = 4;
 
 function showNextLogos() {
-  // Ẩn 4 logo hiện tại
-  for (let i = currentLogoIndex; i < currentLogoIndex + 4; i++) {
+  // Ẩn số lượng logo hiện tại
+  for (let i = currentLogoIndex; i < currentLogoIndex + numLogosToShow; i++) {
     logos[i].style.display = 'none';
   }
 
-  // Tính toán chỉ số của 4 logo tiếp theo
-  currentLogoIndex += 4;
+  // Tính toán chỉ số của số lượng logo tiếp theo
+  currentLogoIndex += numLogosToShow;
   if (currentLogoIndex >= logos.length) {
     currentLogoIndex = 0;
   }
 
-  // Hiển thị 4 logo mới
-  for (let i = currentLogoIndex; i < currentLogoIndex + 4; i++) {
+  // Hiển thị số lượng logo mới
+  for (let i = currentLogoIndex; i < currentLogoIndex + numLogosToShow; i++) {
     logos[i].style.display = 'block';
   }
 }
 
-// Hiển thị 4 logo đầu tiên
-showNextLogos();
+// Hiển thị số lượng logo đầu tiên tùy thuộc vào màn hình
+if (window.innerWidth >= 767) {
+  numLogosToShow = 4;
+  showNextLogos();
+} else {
+  numLogosToShow = 1;
+  showNextLogos();
+}
 
-// Thực hiện hành động chuyển đổi 4 logo sau mỗi 5 giây
+// Thực hiện hành động chuyển đổi số lượng logo sau mỗi 5 giây
 setInterval(showNextLogos, 5000);
+
+// Thay đổi số lượng logo tùy thuộc vào kích thước màn hình
+window.addEventListener('resize', function() {
+  if (window.innerWidth >= 767) {
+    numLogosToShow = 4;
+    showNextLogos();
+  } else {
+    numLogosToShow = 1;
+    showNextLogos();
+  }
+});

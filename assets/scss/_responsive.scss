@@ -1,4 +1,14 @@
 @media only screen and (min-width: 1200px) {
+  //logo-khách hàng
+  .logo-section{
+    width: 95% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-section .logo-grid img:nth-child(-n+4) {
+    display: block;
+  }
   .section-heading-course-title-mobile {
     margin-top: 20px;
   }
@@ -242,6 +252,16 @@
 }
 
 @media only screen and (max-width: 1200px) {
+   //logo-khách hàng
+  .logo-section{
+    width: 95% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-section .logo-grid img:nth-child(-n+4) {
+    display: block;
+  }
     //fix responsive
     #content-privacy{
       padding-top: 0px !important;
@@ -260,6 +280,16 @@
 
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+   //logo-khách hàng
+  .logo-section{
+    width: 95% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-section .logo-grid img:nth-child(-n+4) {
+    display: block;
+  }
   // member-profile
   .member-detail-wrapper .content-info-mentor .member-info .member-img {
     background-image: url(/assets/images/overlay-bg.jpg);
@@ -618,6 +648,16 @@
 
 // Laptop medium
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+   //logo-khách hàng
+  .logo-section{
+    width: 95% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-section .logo-grid img:nth-child(-n+4) {
+    display: block;
+  }
   .autocom-box-search {
     display: none !important;
   }
@@ -955,6 +995,16 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+   //logo-khách hàng
+  .logo-section{
+    width: 95% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-section .logo-grid img:nth-child(-n+4) {
+    display: block;
+  }
   // course-list
   .course-review{
     margin-top: 20px !important;
@@ -1788,6 +1838,16 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+   //logo-khách hàng
+   .logo-section{
+    width: 100% !important;
+   }
+  .logo-section .logo-grid {
+    grid-template-columns: 1fr;
+  }
+  .logo-section .logo-grid img:first-child {
+    display: block;
+  }
    // course-list
    .course-review{
     margin-top: 20px !important;
