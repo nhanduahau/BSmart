@@ -30,14 +30,10 @@ if (window.innerWidth >= 767) {
   showNextLogos();
 } else {
   numLogosToShow = 1;
-  setTimeout(showNextLogos, 3000);
+  showNextLogos();
 }
 // Thực hiện hành động chuyển đổi số lượng logo sau mỗi 5 giây
-setInterval(function() {
-  if (window.innerWidth >= 767) {
-    showNextLogos();
-  }
-}, 5000);
+setInterval(showNextLogos, 3000);
 
 // Thay đổi số lượng logo tùy thuộc vào kích thước màn hình
 window.addEventListener("resize", function () {
@@ -46,6 +42,6 @@ window.addEventListener("resize", function () {
     showNextLogos();
   } else {
     numLogosToShow = 1;
-    setTimeout(showNextLogos, 3000);
+    showNextLogos();
   }
 });
