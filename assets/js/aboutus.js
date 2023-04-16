@@ -1,11 +1,11 @@
-const logos = document.querySelectorAll('.logo-grid img');
+const logos = document.querySelectorAll(".logo-grid img");
 let currentLogoIndex = 0;
 let numLogosToShow = 4;
 
 function showNextLogos() {
   // Ẩn số lượng logo hiện tại
   for (let i = currentLogoIndex; i < currentLogoIndex + numLogosToShow; i++) {
-    logos[i].style.display = 'none';
+    logos[i].style.display = "none";
   }
 
   // Tính toán chỉ số của số lượng logo tiếp theo
@@ -16,16 +16,11 @@ function showNextLogos() {
 
   // Hiển thị số lượng logo mới
   for (let i = currentLogoIndex; i < currentLogoIndex + numLogosToShow; i++) {
-    if (i < logos.length) {
-      logos[i].style.display = 'block';
+    if (window.innerWidth >= 767) {
+      logos[i].style.display = "block";
+    } else {
+      logos[i].style.display = i === currentLogoIndex ? "block" : "none";
     }
-  }
-}
-
-// Ẩn tất cả logo trừ logo đầu tiên khi đang ở dạng responsive
-if (window.innerWidth < 767) {
-  for (let i = 1; i < logos.length; i++) {
-    logos[i].style.display = 'none';
   }
 }
 
@@ -37,7 +32,6 @@ if (window.innerWidth >= 767) {
   numLogosToShow = 1;
   setTimeout(showNextLogos, 3000);
 }
-
 // Thực hiện hành động chuyển đổi số lượng logo sau mỗi 5 giây
 setInterval(function() {
   if (window.innerWidth >= 767) {
@@ -46,7 +40,7 @@ setInterval(function() {
 }, 5000);
 
 // Thay đổi số lượng logo tùy thuộc vào kích thước màn hình
-window.addEventListener('resize', function() {
+window.addEventListener("resize", function () {
   if (window.innerWidth >= 767) {
     numLogosToShow = 4;
     showNextLogos();
