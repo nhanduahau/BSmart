@@ -550,9 +550,8 @@ div.swiper-button-prev:after {
 .navbar-nav li .sub-nav {
   position: absolute;
   top: 35px;
-  width: 100%;
+  width: auto;
   z-index: 1;
-  min-width: 450px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
@@ -564,6 +563,8 @@ div.swiper-button-prev:after {
   opacity: 0;
 }
 .navbar-nav li .sub-nav a {
+  line-height: 20px;
+  width: 100px;
   color: #0e0a38;
   font-weight: 500 !important;
   display: block;
