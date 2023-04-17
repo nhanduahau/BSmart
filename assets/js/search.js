@@ -1,6 +1,6 @@
 const logos = document.querySelectorAll(".logo-grid img");
 let currentLogoIndex = 0;
-let numLogosToShow = 4;
+let numLogosToShow = 1;
 
 function showNextLogos() {
   // Ẩn số lượng logo hiện tại
@@ -30,10 +30,27 @@ if (window.innerWidth >= 767) {
   showNextLogos();
 } else {
   numLogosToShow = 1;
+  setTimeout(showNextLogos, 3000);
+}
+
+if (window.innerWidth <= 767) {
+  numLogosToShow = 1;
   showNextLogos();
+} else {
+  numLogosToShow = 4;
+  setTimeout(showNextLogos, 3000);
 }
 // Thực hiện hành động chuyển đổi số lượng logo sau mỗi 5 giây
-setInterval(showNextLogos, 3000);
+setInterval(function() {
+  if (window.innerWidth >= 767) {
+    showNextLogos();
+  }
+}, 3000);
+setInterval(function() {
+  if (window.innerWidth <= 767) {
+    showNextLogos();
+  }
+}, 5000);
 
 // Thay đổi số lượng logo tùy thuộc vào kích thước màn hình
 window.addEventListener("resize", function () {
@@ -42,6 +59,15 @@ window.addEventListener("resize", function () {
     showNextLogos();
   } else {
     numLogosToShow = 1;
+    setTimeout(showNextLogos, 3000);
+  }
+});
+window.addEventListener('resize', function() {
+  if (window.innerWidth <= 767) {
+    numLogosToShow = 1;
     showNextLogos();
+  } else {
+    numLogosToShow = 4;
+    setTimeout(showNextLogos, 3000);
   }
 });

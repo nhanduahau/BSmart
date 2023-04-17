@@ -1,6 +1,6 @@
 const logos = document.querySelectorAll(".logo-grid img");
 let currentLogoIndex = 0;
-let numLogosToShow = 4;
+let numLogosToShow = 1;
 
 function showNextLogos() {
   // Ẩn số lượng logo hiện tại
@@ -32,6 +32,7 @@ if (window.innerWidth >= 767) {
   numLogosToShow = 1;
   showNextLogos();
 }
+
 // Thực hiện hành động chuyển đổi số lượng logo sau mỗi 5 giây
 setInterval(showNextLogos, 3000);
 

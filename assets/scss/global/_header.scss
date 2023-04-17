@@ -201,9 +201,9 @@
     .sub-nav {
       position: absolute;
       top: 35px;
-      width: 100%;
+      width: auto;
       z-index: 1;
-      min-width: 450px;
+      // max-width: auto !important;
       background-color: $white-color;
       -webkit-box-shadow: 0 0 30px rgb(0 0 0 / 10%);
       box-shadow: 0 0 30px rgb(0 0 0 / 10%);
@@ -214,6 +214,8 @@
       visibility: hidden;
       opacity: 0;
       a {
+        line-height: 20px;
+        width: 100px;
         color: $primary-color;
         font-weight: 500 !important;
         display: block;
