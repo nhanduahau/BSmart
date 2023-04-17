@@ -1,4 +1,14 @@
 @media only screen and (min-width: 1200px) {
+  //logo-khách hàng
+  .logo-section {
+    width: 95% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-section .logo-grid img:nth-child(-n + 4) {
+    display: block;
+  }
   .section-heading-course-title-mobile {
     margin-top: 20px;
   }
@@ -7,14 +17,14 @@
   //   width: 32%;
   //   z-index: 9999 !important;
   // }
-  
+
   .employ__box .img-aboutus-2 {
     display: none;
   }
-  .img_aboutus_4{
+  .img_aboutus_4 {
     display: none;
   }
-  .img-aboutus-end-1{
+  .img-aboutus-end-1 {
     display: none;
   }
   // Slide Danh sách lớp học
@@ -29,67 +39,66 @@
     font-size: 4rem !important;
   }
   // Slide Danh sách lớp học
-        // Slide 
-        .owl-next span {
-          top: 0 !important;
-          right: 35px !important;
-          font-size: 4rem !important;
-        }
-      
-        .owl-prev span {
-          top: 0 !important;
-          left: 5px !important;
-          font-size: 4rem !important;
-        }
-        // slide 
+  // Slide
+  .owl-next span {
+    top: 0 !important;
+    right: 35px !important;
+    font-size: 4rem !important;
+  }
 
-// payment 
-.card1-total-price-code {
-  display: flex;
-  flex: 1;
-}
-.card1-total-price-code-mobile-container {
-  display: flex;
-  flex: 1;
-}
+  .owl-prev span {
+    top: 0 !important;
+    left: 5px !important;
+    font-size: 4rem !important;
+  }
+  // slide
 
-//fix question-icon
-.icon-question-referral-code {
-  margin-top: 4px;
-  margin-left: 18px;
-  margin-right: 1px;
-}
+  // payment
+  .card1-total-price-code {
+    display: flex;
+    flex: 1;
+  }
+  .card1-total-price-code-mobile-container {
+    display: flex;
+    flex: 1;
+  }
 
-.icon-question-payment {
-  margin-top: 4px;
-  margin-left: 18px;
-  margin-right: 20px;
-}
-#form-voucher1 {
-  display: flex;
-  flex:  1;
-}
+  //fix question-icon
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 18px;
+    margin-right: 1px;
+  }
 
-.fa-check-circle {
-  margin-top: 6px;
-}
-.card1-total-price-code-input-refer {
-  padding: 0;
-  width: 100% !important;
-  margin-left: 4px !important;
-}
-// payment 
+  .icon-question-payment {
+    margin-top: 4px;
+    margin-left: 18px;
+    margin-right: 20px;
+  }
+  #form-voucher1 {
+    display: flex;
+    flex: 1;
+  }
+
+  .fa-check-circle {
+    margin-top: 6px;
+  }
+  .card1-total-price-code-input-refer {
+    padding: 0;
+    width: 100% !important;
+    margin-left: 4px !important;
+  }
+  // payment
 
   //aboutus
-  .my-element{
+  .my-element {
     // margin-right: 70px;
   }
-  .banner-aboutus1{
-    
+  .banner-aboutus1 {
     display: flex;
   }
 
-  // create course 
+  // create course
   .content-info-mentor-create-course {
     padding: 0 !important;
     margin-top: 20px;
@@ -110,7 +119,7 @@
   .data-create-course-title-tbl {
     font-size: 0.6rem !important;
   }
-  // create course 
+  // create course
 
   .container {
     max-width: 1320px !important;
@@ -135,8 +144,8 @@
 
   .btn-primary-custom-select-mobile {
     padding: 14px;
-  font-size: 14px;
-  margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 
   .advantages .service-card {
@@ -230,7 +239,7 @@
     margin-bottom: 20px;
   }
 
-  // courses 
+  // courses
   .course-content-container-page-course {
     padding: 0 !important;
     margin-top: 40px;
@@ -242,53 +251,73 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    //fix responsive
-    #content-privacy{
-      padding-top: 0px !important;
-      margin-right: 5px !important;
-    }
+  //logo-khách hàng
+  .logo-section {
+    width: 95% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-section .logo-grid img:nth-child(-n + 4) {
+    display: block;
+  }
+  //fix responsive
+  #content-privacy {
+    padding-top: 0px !important;
+    margin-right: 5px !important;
+  }
 
-    #content-terms-of-service{
-      padding-top: 0px !important;
-      margin-right: 5px !important;
-    }
+  #content-terms-of-service {
+    padding-top: 0px !important;
+    margin-right: 5px !important;
+  }
 
-    .content-row{
-      background-color: white !important;
-    }
+  .content-row {
+    background-color: white !important;
+  }
 }
 
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  //logo-khách hàng
+  .logo-section {
+    width: 95% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-section .logo-grid img:nth-child(-n + 4) {
+    display: block;
+  }
   // member-profile
   .member-detail-wrapper .content-info-mentor .member-info .member-img {
     background-image: url(/assets/images/overlay-bg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 50px 68px 30px;
-}
-  .img-banner-1{
+  }
+  .img-banner-1 {
     margin-right: 50px !important;
   }
-    //fix-icon-responsive
-    .icon-gmail{
-      margin-left:10px !important ;
-    }
-    .fa-location-arrow{
-      margin-left: 41px !important;
-    }
-    .span-title-1{
-      width: 157px !important;
-      margin-left: 25px !important;
-    }
-    .wrapper .contact-info .li-title-2{
-      margin-left: 39px !important;
-      // justify-content: center !important;
-    }
+  //fix-icon-responsive
+  .icon-gmail {
+    margin-left: 10px !important ;
+  }
+  .fa-location-arrow {
+    margin-left: 41px !important;
+  }
+  .span-title-1 {
+    width: 157px !important;
+    margin-left: 25px !important;
+  }
+  .wrapper .contact-info .li-title-2 {
+    margin-left: 39px !important;
+    // justify-content: center !important;
+  }
   .autocom-box-search {
     display: none !important;
   }
- 
+
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
     top: 60px !important;
@@ -301,21 +330,21 @@
     font-size: 4rem !important;
   }
   // Slide Danh sách lớp học
-      // Slide 
-      .owl-next span {
-        top: 0 !important;
-        right: 26px !important;
-        font-size: 4rem !important;
-      }
-    
-      .owl-prev span {
-        top: 0 !important;
-        left: 0px !important;
-        font-size: 4rem !important;
-      }
-      // slide 
+  // Slide
+  .owl-next span {
+    top: 0 !important;
+    right: 26px !important;
+    font-size: 4rem !important;
+  }
 
-  // payment 
+  .owl-prev span {
+    top: 0 !important;
+    left: 0px !important;
+    font-size: 4rem !important;
+  }
+  // slide
+
+  // payment
   .card1-total-price-code {
     display: flex;
     flex: 1;
@@ -342,16 +371,16 @@
   }
   #form-voucher1 {
     display: flex;
-    flex:  1;
+    flex: 1;
   }
 
   .fa-check-circle {
     margin-top: 6px;
   }
-  // payment 
+  // payment
 
   //aboutus
-  .img-aboutus-2{
+  .img-aboutus-2 {
     display: none !important;
   }
 
@@ -383,17 +412,17 @@
     align-content: center;
     width: 20%;
     text-align: justify;
-}
+  }
 
-  .title_img_aboutus-text{
+  .title_img_aboutus-text {
     font-size: 10px;
     font-weight: 500;
     line-height: 20px;
   }
-  .font-title{
+  .font-title {
     font-size: 20px !important;
   }
-  // create course 
+  // create course
   .content-info-mentor-create-course {
     padding: 0 !important;
     margin-top: 20px;
@@ -414,13 +443,13 @@
   .data-create-course-title-tbl {
     font-size: 0.6rem !important;
   }
-  // create course 
+  // create course
 
   .sidebar-wrap {
     display: none;
   }
 
-  // feedback 
+  // feedback
   .feedback-container {
     margin-top: 24px !important;
     width: 800px;
@@ -431,7 +460,7 @@
   .header-course-search {
     display: none !important;
   }
-  
+
   .feedback-left-info {
     h2 {
       font-size: 1.1rem !important;
@@ -453,10 +482,10 @@
       font-weight: bold;
     }
   }
-  // feedback 
+  // feedback
 
-   // index (home page)
-   .learning-path {
+  // index (home page)
+  .learning-path {
     transition: all 0.2s;
   }
 
@@ -474,8 +503,8 @@
 
   .btn-primary-custom-select-mobile {
     padding: 14px;
-  font-size: 14px;
-  margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 
   .advantages .service-card {
@@ -569,20 +598,20 @@
     margin-bottom: 20px;
   }
 
-  // payment 
+  // payment
   .checkout {
     padding: 0 var(--px) !important;
   }
-   .content-payment{
+  .content-payment {
     display: flex;
     flex-direction: column;
   }
-  .course-of-member-container{
+  .course-of-member-container {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .course-of-member-inner{
+  .course-of-member-inner {
     width: 87%;
   }
   .cart {
@@ -597,13 +626,13 @@
   .title-payment-card {
     font-size: 1.2rem !important;
   }
-  .cart-item-box{
+  .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
   }
-  .section-card-contact{
+  .section-card-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -611,13 +640,23 @@
     margin-top: 22px;
     margin-bottom: 22px;
   }
-  .img-avatar{
+  .img-avatar {
     width: 140px;
   }
 }
 
 // Laptop medium
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  //logo-khách hàng
+  .logo-section {
+    width: 95% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-section .logo-grid img:nth-child(-n + 4) {
+    display: block;
+  }
   .autocom-box-search {
     display: none !important;
   }
@@ -633,7 +672,7 @@
     font-size: 4rem !important;
   }
   // Slide Danh sách lớp học
-  // Slide 
+  // Slide
   .owl-next span {
     top: 0 !important;
     right: 8px !important;
@@ -645,9 +684,9 @@
     left: -36px !important;
     font-size: 4rem !important;
   }
-  // slide 
+  // slide
 
-  // payment 
+  // payment
   .card1-total-price-code {
     display: flex;
     flex: 1;
@@ -664,23 +703,23 @@
   }
   #form-voucher1 {
     display: flex;
-    flex:  1;
+    flex: 1;
   }
 
   .fa-check-circle {
     margin-top: 6px;
   }
-  // payment 
-  
+  // payment
+
   //course-detail
-  .course-descriptions-inner{
+  .course-descriptions-inner {
     display: flex;
     flex-direction: column;
   }
   // .all-class{
   //   width: 50%;
   // }
-  // member profile edit 
+  // member profile edit
   .content-info-mentor-member-profile-edit {
     padding: 0 !important;
     margin-top: 20px;
@@ -689,9 +728,9 @@
   .mentor-profile-edit-content {
     margin-top: 20px !important;
   }
-  // member profile edit 
+  // member profile edit
 
-  .my-element{
+  .my-element {
     margin-right: 50px;
   }
   .courses-wrapper {
@@ -757,20 +796,20 @@
       }
     }
   }
-   // payment 
-   .checkout {
+  // payment
+  .checkout {
     padding: 0 var(--px) !important;
   }
-   .content-payment{
+  .content-payment {
     display: flex;
     flex-direction: column;
   }
-  .course-of-member-container{
+  .course-of-member-container {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .course-of-member-inner{
+  .course-of-member-inner {
     width: 87%;
   }
   .cart {
@@ -785,13 +824,13 @@
   .title-payment-card {
     font-size: 1.2rem !important;
   }
-  .cart-item-box{
+  .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
   }
-  .section-card-contact{
+  .section-card-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -799,11 +838,11 @@
     margin-top: 22px;
     margin-bottom: 22px;
   }
-  .img-avatar{
+  .img-avatar {
     width: 140px;
   }
 
-  // feedback 
+  // feedback
   .feedback-container {
     margin-top: 24px !important;
     width: 800px;
@@ -814,7 +853,7 @@
   .header-course-search {
     display: none !important;
   }
-  
+
   .feedback-left-info {
     h2 {
       font-size: 1.1rem !important;
@@ -836,7 +875,7 @@
       font-weight: bold;
     }
   }
-  // feedback 
+  // feedback
 
   // index (home page)
   .learning-path {
@@ -857,8 +896,8 @@
 
   .btn-primary-custom-select-mobile {
     padding: 14px;
-  font-size: 14px;
-  margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 
   .advantages .service-card {
@@ -955,70 +994,80 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  //logo-khách hàng
+  .logo-section {
+    width: 95% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-section .logo-grid img:nth-child(-n + 4) {
+    display: block;
+  }
   // course-list
-  .course-review{
+  .course-review {
     margin-top: 20px !important;
   }
 
   //member-list
 
-  .content-member-list{
+  .content-member-list {
     width: 79%;
     flex-direction: column;
     display: flex;
     /* margin-left: 50px; */
   }
 
-    // member-profile
-    .span-title-1{
-      width: 169px !important;
-    }
-    .wrapper .contact-info .li-title-2{
-      margin-left: 33px !important;
-      // justify-content: center !important;
-    }
-    // lms 
-    .lms-wrapper .section3 h3 {
-      margin-bottom: 0 !important;
-    }
-  
-    .title-heading-lms {
-      margin-top: -30px !important;
-    }
-  
-    .lms-wrapper .section4 .box-bStudent h3{
-      margin-top: 12px;
-    }
-  
-    .lms-wrapper .section4 .func h3 {
-      margin-bottom: 10px !important;
-    }
-  
-    .lms-wrapper .section5 .func {
-      margin-top: -20px;
-      margin-bottom: 20px;
-    }
-  
-    .lms-wrapper .section5 .box-bStudent h3 {
-      margin-top: 10px;
-    }
-  
-    .courses-section-desk {
-      margin-top: 30px;
-    }
-  
-    .section-heading-course-title {
-      margin-bottom: 0px !important;
-    }
-  
-    .courses-section {
-      padding: 0px;
-    }
-  
-    .lms-wrapper .section5 .box-bStudent {
-      margin-bottom: 0px;
-    }
-    // lms
+  // member-profile
+  .span-title-1 {
+    width: 169px !important;
+  }
+  .wrapper .contact-info .li-title-2 {
+    margin-left: 33px !important;
+    // justify-content: center !important;
+  }
+  // lms
+  .lms-wrapper .section3 h3 {
+    margin-bottom: 0 !important;
+  }
+
+  .title-heading-lms {
+    margin-top: -30px !important;
+  }
+
+  .lms-wrapper .section4 .box-bStudent h3 {
+    margin-top: 12px;
+  }
+
+  .lms-wrapper .section4 .func h3 {
+    margin-bottom: 10px !important;
+  }
+
+  .lms-wrapper .section5 .func {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .lms-wrapper .section5 .box-bStudent h3 {
+    margin-top: 10px;
+  }
+
+  .courses-section-desk {
+    margin-top: 30px;
+  }
+
+  .section-heading-course-title {
+    margin-bottom: 0px !important;
+  }
+
+  .courses-section {
+    padding: 0px;
+  }
+
+  .lms-wrapper .section5 .box-bStudent {
+    margin-bottom: 0px;
+  }
+  // lms
   // icon logo mobile
   .icon-logo-mobile {
     width: 100px;
@@ -1028,7 +1077,6 @@
   }
   // icon logo mobile
   // revert col list class to top
-
 
   .list-class-info {
     margin-bottom: -12px !important;
@@ -1066,7 +1114,7 @@
   }
   // Slide Danh sách lớp học
 
-  // Slide 
+  // Slide
   .owl-next span {
     top: 0 !important;
     right: 16px !important;
@@ -1078,9 +1126,9 @@
     left: 16px !important;
     font-size: 4rem !important;
   }
-  // slide 
+  // slide
 
-  // payment 
+  // payment
   .card1-total-price-code {
     display: flex;
     flex: 1;
@@ -1097,14 +1145,14 @@
   }
   #form-voucher1 {
     display: flex;
-    flex:  1;
+    flex: 1;
   }
 
   .fa-check-circle {
     margin-top: 6px;
   }
-  // payment 
- 
+  // payment
+
   // fix question-icon
   .card1-total-price-code-input-refer {
     width: 100% !important;
@@ -1128,52 +1176,51 @@
     margin-left: -50px;
   }
 
-
-    //aboutus
-    .aboutus1{
-      padding: 30px 0 55px !important;
-    }
-
-    .bt-aboutus_1 {
-      border: 0px;
-      line-height: 25px;
-      display: block;
-      background-color: rgb(255, 99, 14);
-      color: rgb(255, 255, 255);
-      padding: 2px 15px;
-      border-radius: 30px;
-      font-size: 8px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin: 0px auto 10px;
-      width: 100%;
-    }
-  
-    .img_aboutus_3 {
-      position: absolute;
-      top: 160px;
-      bottom: 0;
-      right: 30px;
-      text-align: center;
-      margin: 0 auto;
-      display: grid;
-      justify-content: center;
-      align-content: center;
-      width: 20%;
-      text-align: justify;
+  //aboutus
+  .aboutus1 {
+    padding: 30px 0 55px !important;
   }
 
-    .title_img_aboutus-text{
-      font-size: 10px;
-      font-weight: 500;
-      line-height: 15px;
-    }
-    .font-title{
-      font-size: 20px !important;
-    }
+  .bt-aboutus_1 {
+    border: 0px;
+    line-height: 25px;
+    display: block;
+    background-color: rgb(255, 99, 14);
+    color: rgb(255, 255, 255);
+    padding: 2px 15px;
+    border-radius: 30px;
+    font-size: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px auto 10px;
+    width: 100%;
+  }
 
-  // member profile edit 
+  .img_aboutus_3 {
+    position: absolute;
+    top: 160px;
+    bottom: 0;
+    right: 30px;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    text-align: justify;
+  }
+
+  .title_img_aboutus-text {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+  }
+  .font-title {
+    font-size: 20px !important;
+  }
+
+  // member profile edit
   .content-info-mentor-member-profile-edit {
     padding: 0 !important;
     margin-top: 20px;
@@ -1182,9 +1229,9 @@
   .mentor-profile-edit-content {
     margin-top: 20px !important;
   }
-  // member profile edit 
+  // member profile edit
 
-  // create course 
+  // create course
   .content-info-mentor-create-course {
     padding: 0 !important;
     margin-top: 20px;
@@ -1205,9 +1252,9 @@
   .data-create-course-title-tbl {
     font-size: 0.6rem !important;
   }
-  // create course 
+  // create course
 
-  // Lms 
+  // Lms
   .advantages-lms {
     padding: 0 !important;
     margin-top: 40px;
@@ -1229,7 +1276,6 @@
   .section-lms {
     margin-top: 40px;
   }
-
 
   .box-bStudent-lms {
     padding-top: 0 !important;
@@ -1275,24 +1321,24 @@
       justify-content: center;
       align-items: center;
     }
-    .img-avatar{
-    width: 140px;
+    .img-avatar {
+      width: 140px;
     }
   }
-  // payment 
+  // payment
   .checkout {
     padding: 0 var(--px) !important;
   }
-  .content-payment{
+  .content-payment {
     display: flex;
     flex-direction: column;
   }
-  .course-of-member-container{
+  .course-of-member-container {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .course-of-member-inner{
+  .course-of-member-inner {
     width: 87%;
   }
   .cart {
@@ -1308,13 +1354,13 @@
   .title-payment-card {
     font-size: 1.2rem !important;
   }
-  .cart-item-box{
+  .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
   }
-  .section-card-contact{
+  .section-card-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1322,7 +1368,7 @@
     margin-top: 22px;
     margin-bottom: 22px;
   }
- 
+
   /* ------------------------ */
   // Sidebar header
   .sidebar-wrap {
@@ -1629,7 +1675,7 @@
     }
   }
 
-  // feedback 
+  // feedback
   .feedback-container {
     margin-top: 24px !important;
     width: 700px;
@@ -1640,7 +1686,7 @@
   .header-course-search {
     display: none !important;
   }
-  
+
   .feedback-left-info {
     h2 {
       font-size: 1rem !important;
@@ -1669,7 +1715,7 @@
     padding: 7px !important;
   }
   // feedback
-  
+
   // index (home page)
   .learning-path {
     transition: all 0.2s;
@@ -1689,8 +1735,8 @@
 
   .btn-primary-custom-select-mobile {
     padding: 14px;
-  font-size: 14px;
-  margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 
   .advantages .service-card {
@@ -1775,7 +1821,7 @@
     margin-top: 10px;
   }
 
-  // courses 
+  // courses
   .course-content-container-page-course {
     padding: 0 !important;
     margin-top: 40px;
@@ -1788,16 +1834,27 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-   // course-list
-   .course-review{
+  //logo-khách hàng
+  .logo-section {
+    width: 100% !important;
+  }
+  .logo-section .logo-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .logo-section .logo-grid img:first-child {
+    display: block;
+  }
+  .logo-section .logo-grid img:nth-child(-n + 4) {
+    display: none;
+  }
+  // course-list
+  .course-review {
     margin-top: 20px !important;
   }
 
-
-  
   //member-list
 
-  .content-member-list{
+  .content-member-list {
     width: 79%;
     flex-direction: column;
     display: flex;
@@ -1814,10 +1871,10 @@
     display: block;
   }
   // member-profile
-  .span-title-1{
+  .span-title-1 {
     width: 336px !important;
   }
-  .wrapper .contact-info .li-title-2{
+  .wrapper .contact-info .li-title-2 {
     margin-left: 110px !important;
     // justify-content: center !important;
   }
@@ -1833,8 +1890,8 @@
   }
   // link giới thiệu (course-detail)
 
-  // lms 
-  .lms-wrapper .section3 h3{
+  // lms
+  .lms-wrapper .section3 h3 {
     font-size: 32px;
     font-weight: 600;
   }
@@ -1865,7 +1922,7 @@
     margin-top: -30px !important;
   }
 
-  .lms-wrapper .section4 .box-bStudent h3{
+  .lms-wrapper .section4 .box-bStudent h3 {
     margin-top: 12px;
   }
 
@@ -1946,7 +2003,7 @@
     height: 260px;
     border-radius: 30px;
     object-fit: cover;
-}
+  }
   // cate
   .course-detail-cate-fe p {
     font-size: 0.9rem !important;
@@ -1989,16 +2046,16 @@
   }
   // Slide Danh sách lớp học
 
-  // payment 
-   .img-avatar {
+  // payment
+  .img-avatar {
     width: 400px !important;
     object-fit: cover;
   }
 
   .card1-inner .avatar {
-    margin-right: 240px ;
+    margin-right: 240px;
   }
-  
+
   .card1-info {
     margin-left: -50px;
   }
@@ -2023,18 +2080,18 @@
     flex: 1;
   }
 
-  // Cart header 
+  // Cart header
   .header-cart {
     margin-right: 42px;
   }
-  
+
   .icon-shopping-cart {
     margin-top: 27px;
     width: 52px !important;
     height: 52px !important;
     object-fit: cover;
   }
-  
+
   .cart-total-number {
     margin-top: 6px;
     font-size: 1rem;
@@ -2043,11 +2100,11 @@
   .cart-total-number-mobile {
     margin-top: 56px;
   }
-// Cart header 
+  // Cart header
 
-.blog-wrapper .blog-area .all-posts-wrap{
-  padding-right: 20px !important;
-}
+  .blog-wrapper .blog-area .all-posts-wrap {
+    padding-right: 20px !important;
+  }
 
   .icon-logo {
     margin-left: -30px;
@@ -2055,7 +2112,7 @@
   }
 
   //aboutus
-  .aboutus1{
+  .aboutus1 {
     padding: 30px 0 55px !important;
   }
 
@@ -2088,32 +2145,32 @@
     align-content: center;
     width: 20%;
     text-align: justify;
-}
+  }
 
-  .banner1 .caption-content p{
+  .banner1 .caption-content p {
     margin-top: 20px;
   }
-  .img-2{
+  .img-2 {
     height: 200px;
   }
-  .information h3{
+  .information h3 {
     line-height: 50px;
     font-size: 35px;
   }
   .information {
     padding-top: 30px;
     text-align: center;
-}
-  .content-aboutus-1{
+  }
+  .content-aboutus-1 {
     display: flex;
     flex-direction: column;
   }
-  .title_img_aboutus-text{
+  .title_img_aboutus-text {
     font-size: 6px;
     font-weight: 500;
     line-height: 7px;
   }
-  .font-title{
+  .font-title {
     font-size: 10px !important;
   }
   // .img-aboutus-2{
@@ -2121,41 +2178,40 @@
   //   height: auto;
   // }
 
-
   //course
-  .icon-arrow-1{
+  .icon-arrow-1 {
     display: block !important;
   }
   // .icon-arrow-2{
   //   display: block !important;
   // }
   //course-detail
-  .course-single-categories{
+  .course-single-categories {
     margin: 0 !important;
     display: flex;
     justify-content: space-between;
   }
-  .ms-4-1{
+  .ms-4-1 {
     margin-bottom: 29px !important;
     // margin-left: 30px;
   }
-  .fe-title-1{
+  .fe-title-1 {
     font-size: 12px !important;
     // margin-top:6px !important;
   }
-  .onl-1{
+  .onl-1 {
     font-size: 12px !important;
     // margin-top: 6px !important;
   }
-  .size-font{
+  .size-font {
     margin-left: 5px !important;
     font-size: 13px;
   }
-  .size-font-1{
+  .size-font-1 {
     margin-left: 6px !important;
     font-size: 13px;
   }
-  .title-lv{
+  .title-lv {
     font-size: 13px;
   }
   // .course-single-categories {
@@ -2188,7 +2244,7 @@
     text-align: left;
     font-size: 1.3rem !important;
     margin-bottom: 0 !important;
-    line-height: 12px !important; 
+    line-height: 12px !important;
   }
 
   .history-payment-container h3 {
@@ -2207,7 +2263,7 @@
   }
   // member profile
 
-  // member profile edit 
+  // member profile edit
   .content-info-mentor-member-profile-edit {
     padding: 0 !important;
     margin-top: 20px;
@@ -2216,9 +2272,9 @@
   .mentor-profile-edit-content {
     margin-top: 20px !important;
   }
-  // member profile edit 
+  // member profile edit
 
-  // create course 
+  // create course
   .content-info-mentor-create-course {
     padding: 0 !important;
     margin-top: 20px;
@@ -2239,7 +2295,7 @@
   .data-create-course-title-tbl {
     font-size: 0.6rem !important;
   }
-  // create course 
+  // create course
 
   // course detail
   .course-single-area-course-detail {
@@ -2265,7 +2321,7 @@
   }
   // course detail
 
-  // Lms 
+  // Lms
   .advantages-lms {
     padding: 0 !important;
     margin-top: 40px;
@@ -2308,7 +2364,7 @@
   // Lms
 
   //announcement
-  .col-md-6{
+  .col-md-6 {
     display: flex;
     width: 100vh;
   }
@@ -2332,7 +2388,7 @@
     display: none;
   }
 
-  // payment 
+  // payment
   .checkout {
     padding: 0 var(--px) !important;
   }
@@ -2357,7 +2413,7 @@
     font-size: 1.2rem !important;
   }
 
-  .cart-item-box{
+  .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2365,7 +2421,7 @@
     border-right: none !important;
   }
 
-  .section-card-contact{
+  .section-card-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2390,7 +2446,7 @@
     width: 65% !important;
   }
 
-  .course-of-member-inner{
+  .course-of-member-inner {
     width: 100%;
   }
 
@@ -2402,12 +2458,12 @@
     margin-top: 0px !important;
   }
 
-  .content-payment{
+  .content-payment {
     display: flex;
     flex-direction: column;
   }
 
-  .course-of-member-container{
+  .course-of-member-container {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -2834,7 +2890,7 @@
     line-height: 65px;
     font-weight: 500;
     margin-bottom: 20px;
-}
+  }
   .aboutus-wrapper {
     .banner__aboutus {
       .caption-content {
@@ -3036,7 +3092,7 @@
   /* Footer */
   /* ------------------------ */
 
-  // feedback 
+  // feedback
   .feedback-container {
     margin-top: 24px !important;
     width: 700px;
@@ -3047,13 +3103,13 @@
   .header-course-search {
     display: none !important;
   }
-  
+
   .feedback-left-info {
     h2 {
       font-size: 1rem;
       font-weight: bold;
     }
-  } 
+  }
 
   .select-feedback-container {
     margin-top: 24px !important;
@@ -3075,9 +3131,9 @@
     font-weight: 500;
     padding: 6px !important;
   }
-  // feedback 
+  // feedback
 
-  // courses 
+  // courses
   .course-content-container-page-course {
     padding: 0 !important;
     margin-top: 40px;
@@ -3091,10 +3147,10 @@
 /* ---------------- */
 
 @media only screen and (max-width: 480px) {
-    // member-profile
-    .span-title-1{
-      width: 270px !important;
-    }
+  // member-profile
+  .span-title-1 {
+    width: 270px !important;
+  }
   .btn-search-course {
     display: block;
     background-color: #ff630e;
@@ -3108,107 +3164,107 @@
     margin: 0 auto 10px;
     width: 100%;
   }
-  
+
   .sidebar-logo {
     line-height: 0 !important;
   }
-    // lms 
-    .lms-wrapper .banner__lms h2 {
-      line-height: 44px;
-    }
+  // lms
+  .lms-wrapper .banner__lms h2 {
+    line-height: 44px;
+  }
 
-    .lms-wrapper .section3 h3{
-      font-size: 32px;
-    }
+  .lms-wrapper .section3 h3 {
+    font-size: 32px;
+  }
 
-    .section-heading {
-      font-size: 32px !important;
-    }
-    // lms 
-    
-    // home 
-    .left-section-mobile {
-      padding: 100px 0 !important;
-    }
+  .section-heading {
+    font-size: 32px !important;
+  }
+  // lms
 
-    .left-section-mobile h2 {
-      font-size: 26px !important;
-    }
+  // home
+  .left-section-mobile {
+    padding: 100px 0 !important;
+  }
 
-    .left-section-mobile p {
-      margin-top: -12px;
-      font-size: 16px !important;
-    }
+  .left-section-mobile h2 {
+    font-size: 26px !important;
+  }
 
-    .right-section-mobile {
-      padding: 100px 0 !important;
-    }
+  .left-section-mobile p {
+    margin-top: -12px;
+    font-size: 16px !important;
+  }
 
-    .right-section-mobile h2 {
-      font-size: 26px !important;
-    }
+  .right-section-mobile {
+    padding: 100px 0 !important;
+  }
 
-    .right-section-mobile p {
-      margin-top: -12px;
-      font-size: 16px !important;
-    }
-    // cate
-    .course-detail-cate-online .course-detail-cate-fe-link {
-      margin-left: -50px !important;
-    }
+  .right-section-mobile h2 {
+    font-size: 26px !important;
+  }
 
-    .course-detail-cate-fe {
-      display: flex;
-      flex-direction: column;
-    }
+  .right-section-mobile p {
+    margin-top: -12px;
+    font-size: 16px !important;
+  }
+  // cate
+  .course-detail-cate-online .course-detail-cate-fe-link {
+    margin-left: -50px !important;
+  }
 
-    .course-detail-cate-online {
-      display: flex;
-      flex-direction: column;
-    }
+  .course-detail-cate-fe {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .course-detail-mobile-cate {
-      display: flex !important;
-      align-items: center;
-    }
+  .course-detail-cate-online {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .course-detail-mobile-cate {
-      margin-top: 0.7rem !important;
-      margin-bottom: 1.4rem !important;
-    }
+  .course-detail-mobile-cate {
+    display: flex !important;
+    align-items: center;
+  }
 
-    .course-detail-cate-fe p {
-      font-size: 0.9rem !important;
-    }
-    
-    .course-detail-cate-online {
-      margin-left: 22px;
-    }
+  .course-detail-mobile-cate {
+    margin-top: 0.7rem !important;
+    margin-bottom: 1.4rem !important;
+  }
 
-    .course-detail-cate-online p {
-      font-size: 0.9rem !important;
-    }
-  
-    .course-detail-cate-rate p {
-      font-size: 0.9rem !important;
-    }
-  
-    .course-detail-cate-fe-link {
-      font-size: 0.9rem !important;
-    }
-  
-    .course-detail-cate-rate {
-      margin-left: 12px !important;
-      margin-bottom: 24px;
-    }
-  
-    .icon-level-cate {
-      width: 42px !important;
-      height: 42px !important;
-      left: 116px;
-    }
-    // cate
-  
+  .course-detail-cate-fe p {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-online {
+    margin-left: 22px;
+  }
+
+  .course-detail-cate-online p {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-rate p {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-fe-link {
+    font-size: 0.9rem !important;
+  }
+
+  .course-detail-cate-rate {
+    margin-left: 12px !important;
+    margin-bottom: 24px;
+  }
+
+  .icon-level-cate {
+    width: 42px !important;
+    height: 42px !important;
+    left: 116px;
+  }
+  // cate
+
   .icon-level {
     width: 32px !important;
     height: 42px !important;
@@ -3245,26 +3301,26 @@
     font-size: 4rem !important;
   }
   // Slide Danh sách lớp học
-  // Slide 
-.owl-next span {
-  display: none;
-  top: 0 !important;
-  right: 8px !important;
-  font-size: 4rem !important;
-}
+  // Slide
+  .owl-next span {
+    display: none;
+    top: 0 !important;
+    right: 8px !important;
+    font-size: 4rem !important;
+  }
 
-.owl-prev span {
-  display: none;
-  top: 0 !important;
-  right: -48px !important;
-  font-size: 4rem !important;
-}
+  .owl-prev span {
+    display: none;
+    top: 0 !important;
+    right: -48px !important;
+    font-size: 4rem !important;
+  }
 
-.out__sigle-member {
-  width: 100%;
-  margin-left: 18px;
-}
-// slide 
+  .out__sigle-member {
+    width: 100%;
+    margin-left: 18px;
+  }
+  // slide
 
   .card1-total-price-code-lbl {
     font-size: 0.9rem;
@@ -3284,7 +3340,7 @@
     width: 78% !important;
   }
 
-  // payment 
+  // payment
   .feedback-body {
     display: flex;
     flex-direction: column;
@@ -3299,29 +3355,29 @@
     margin-top: 10px;
   }
 
-  .content-payment{
+  .content-payment {
     display: flex;
     flex-direction: column;
   }
-  .course-of-member-container{
+  .course-of-member-container {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .course-of-member-inner{
+  .course-of-member-inner {
     width: 87%;
   }
   .cart {
     display: flex;
     justify-content: center;
   }
-  .cart-item-box{
+  .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
   }
-  .section-card-contact{
+  .section-card-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3329,57 +3385,57 @@
     margin-top: 22px;
     margin-bottom: 22px;
   }
-  .img-avatar{
+  .img-avatar {
     width: 82px;
     object-fit: cover;
   }
 
-    .card1 {
-      transition: all 0.2s;
-    }
-  
-    .card1-info {
-      margin-left: 0 !important;
-      font-size: 0.9rem;
-      font-weight: 400;
-    }
+  .card1 {
+    transition: all 0.2s;
+  }
 
-    .payment-card-desc {
-      font-size: 0.7rem !important;
-      font-weight: 400;
-    }
-  
-    .title-payment-card {
-      font-size: 0.9rem !important;
-      font-weight: 400;
-    }
+  .card1-info {
+    margin-left: 0 !important;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
 
-    .card1-inner {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .img-avatar {
-      height: 140px !important;
-      border-radius: 4px;
-      object-fit: cover;
-      width: 200px !important;
-    }
-    
-    .checkout-container .card1-total-price-cost {
-      margin-top: 4px;
-    }
-  
-    .card1-inner .avatar {
-      margin-right: 60px !important ;
-    }
-    
-    .card1-info {
-      margin-left: -50px;
-    }
-    // payment 
+  .payment-card-desc {
+    font-size: 0.7rem !important;
+    font-weight: 400;
+  }
 
-  // feedback 
+  .title-payment-card {
+    font-size: 0.9rem !important;
+    font-weight: 400;
+  }
+
+  .card1-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-avatar {
+    height: 140px !important;
+    border-radius: 4px;
+    object-fit: cover;
+    width: 200px !important;
+  }
+
+  .checkout-container .card1-total-price-cost {
+    margin-top: 4px;
+  }
+
+  .card1-inner .avatar {
+    margin-right: 60px !important ;
+  }
+
+  .card1-info {
+    margin-left: -50px;
+  }
+  // payment
+
+  // feedback
   .feedback-container {
     margin-top: 24px !important;
     width: 400px !important;
@@ -3390,7 +3446,7 @@
   .header-course-search {
     display: none !important;
   }
-  
+
   .feedback-header {
     display: flex;
     justify-content: flex-start;
@@ -3432,7 +3488,7 @@
     font-size: 0.8rem !important;
     font-weight: bold;
   }
-  // feedback 
+  // feedback
 }
 @media only screen and (min-width: 481px) and (max-width: 590px) {
   // payment
@@ -3445,7 +3501,7 @@
     font-size: 1rem !important;
   }
 
-  .section-card-contact{
+  .section-card-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3453,19 +3509,19 @@
     margin-top: 22px;
     margin-bottom: 22px;
   }
-  .cart-item-box{
+  .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0;
     margin-top: 10px;
   }
-  .img-avatar{
+  .img-avatar {
     width: 92px;
   }
 
-   // feedback 
-   .feedback-body {
+  // feedback
+  .feedback-body {
     display: flex;
     flex-direction: column;
   }
@@ -3479,7 +3535,7 @@
     margin-top: 10px;
   }
 
-   .feedback-container {
+  .feedback-container {
     margin-top: 24px !important;
     width: 400px !important;
     margin: 0 auto;
@@ -3489,8 +3545,9 @@
   .header-course-search {
     display: none !important;
   }
-  
-  .feedback-header, .feedback-header1 {
+
+  .feedback-header,
+  .feedback-header1 {
     display: flex;
     justify-content: flex-start;
   }
@@ -3528,72 +3585,72 @@
     font-size: 0.2rem !important;
     font-weight: bold;
   }
-  // feedback 
+  // feedback
 
-    // payment 
-    .checkout {
-      padding: 0 var(--px) !important;
-    }
-  
-    .checkout-container {
-      padding: 0 !important;
-      margin-top: 20px;
-    }
-  
-    .cart {
-      display: flex;
-      justify-content: center;
-      border-bottom: none !important;
-    }
-  
-    .cart-item-box{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      // padding: 0 var(--px);
-      margin-top: 10px;
-      border-right: none !important;
-    }
-  
-    .section-card-contact{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 auto;
-      margin-top: 22px;
-      margin-bottom: 22px;
-    }
-  
-    .card1-total-price-code-input-refer {
-      width: 79% !important;
-    }
-  
-    .card1-total-price-code-input {
-      width: 70% !important;
-    }
-  
-    .course-of-member-inner{
-      width: 100%;
-    }
-  
-    .bill-member {
-      margin-top: 10px;
-    }
-  
-    .total-course-icons {
-      margin-top: 0px !important;
-    }
-  
-    .content-payment{
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .course-of-member-container{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
+  // payment
+  .checkout {
+    padding: 0 var(--px) !important;
+  }
+
+  .checkout-container {
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+
+  .cart {
+    display: flex;
+    justify-content: center;
+    border-bottom: none !important;
+  }
+
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // padding: 0 var(--px);
+    margin-top: 10px;
+    border-right: none !important;
+  }
+
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .card1-total-price-code-input-refer {
+    width: 79% !important;
+  }
+
+  .card1-total-price-code-input {
+    width: 70% !important;
+  }
+
+  .course-of-member-inner {
+    width: 100%;
+  }
+
+  .bill-member {
+    margin-top: 10px;
+  }
+
+  .total-course-icons {
+    margin-top: 0px !important;
+  }
+
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
   .card1 {
     transition: all 0.2s;
@@ -3627,89 +3684,30 @@
   // payment
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    //payment
-    .content-payment{
-      display: flex;
-      flex-direction: column;
-    }
-    .course-of-member-container{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-    .course-of-member-inner{
-      width: 87%;
-    }
-    .cart {
-      display: flex;
-      justify-content: center;
-    }
-    .cart-item-box{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .section-card-contact{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 auto;
-      margin-top: 22px;
-      margin-bottom: 22px;
-    }
-    .img-avatar{
-
-    }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  //aboutus
-  .my-element{
-    // margin-right: 50px;
-  }
-  .img-avatar{
-    width: 140px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  //trang  index
-
-  .advantages-2 .advantages-2-content h4{
-    font-size: 16px !important;
-    margin-bottom: 0 !important;
-  }
-
-  .advantages-2 .advantages-2-content h2{
-    font-size: 22px !important;
-    margin-bottom: 0 !important;
-  }
-  .title-index1{
-    font-size: 12px !important;
-  }
   //payment
-  .content-payment{
+  .content-payment {
     display: flex;
     flex-direction: column;
   }
-  .course-of-member-container{
+  .course-of-member-container {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .course-of-member-inner{
+  .course-of-member-inner {
     width: 87%;
   }
   .cart {
     display: flex;
     justify-content: center;
   }
-  .cart-item-box{
+  .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
   }
-  .section-card-contact{
+  .section-card-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3717,37 +3715,94 @@
     margin-top: 22px;
     margin-bottom: 22px;
   }
-  .img-avatar{
+  .img-avatar {
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  //aboutus
+  .my-element {
+    // margin-right: 50px;
+  }
+  .img-avatar {
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  //trang  index
+
+  .advantages-2 .advantages-2-content h4 {
+    font-size: 16px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .advantages-2 .advantages-2-content h2 {
+    font-size: 22px !important;
+    margin-bottom: 0 !important;
+  }
+  .title-index1 {
+    font-size: 12px !important;
+  }
+  //payment
+  .content-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-of-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-of-member-inner {
+    width: 87%;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+  }
+  .cart-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .section-card-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .img-avatar {
     width: 140px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
   //trang  index
 
-  .advantages-2 .advantages-2-content h4{
+  .advantages-2 .advantages-2-content h4 {
     font-size: 15px !important;
     margin-bottom: 0 !important;
   }
 
-  .advantages-2 .advantages-2-content h2{
+  .advantages-2 .advantages-2-content h2 {
     font-size: 21px !important;
     margin-bottom: 0 !important;
   }
-  .title-index1{
+  .title-index1 {
     font-size: 11px !important;
   }
 
   //buy.course
   // .row{
   //   display: flex;
-    // margin-left: 15vh;
+  // margin-left: 15vh;
   // }
-  .img-avatar{
+  .img-avatar {
     width: 140px;
   }
 
-  // feedback 
+  // feedback
   .feedback-container {
     margin-top: 24px !important;
     width: 600px;
@@ -3758,7 +3813,7 @@
   .header-course-search {
     display: none !important;
   }
-  
+
   .feedback-left-info {
     h2 {
       font-size: 0.9rem !important;
@@ -3786,10 +3841,9 @@
     font-weight: 400;
     padding: 5px !important;
   }
-  // feedback 
+  // feedback
 
-  // payment 
-
+  // payment
 
   // fix question-icon
   .card1-total-price-code-input-refer {
@@ -3827,7 +3881,7 @@
   //   object-fit: cover;
   //   width: 138px !important;
   // }
-  
+
   .checkout-container .card1-total-price-cost {
     margin-top: 4px;
   }
@@ -3840,11 +3894,10 @@
   .title-payment-card {
     font-size: 1rem !important;
   }
-  // payment 
+  // payment
 }
 @media only screen and (min-width: 480px) and (max-width: 685px) {
-
-  .img-avatar{
+  .img-avatar {
     width: 120px;
   }
 
@@ -3857,48 +3910,48 @@
     font-size: 1rem !important;
   }
 
-    // feedback 
-    .feedback-container {
-      margin-top: 24px !important;
-      width: 500px;
-      margin: 0 auto;
-      transition: all 0.3s;
-    }
-  
-    .header-course-search {
-      display: none !important;
-    }
-    
-    .feedback-left-info {
-      h2 {
-        font-size: 0.8rem;
-        font-weight: bold;
-      }
-    }
-  
-    .select-feedback-container {
-      margin-top: 24px !important;
-      margin-bottom: 24px !important;
-      width: 500px;
-      margin: 0 auto;
-      transition: all 0.3s;
-    }
-  
-    .feedback-left-info {
-      h2 {
-        font-size: 0.9rem;
-        font-weight: bold;
-      }
-    }
-  
-    .feedback-right-btn {
-      font-size: 0.8rem !important;
-      font-weight: 400;
-      padding: 5px !important;
-    }
-    // feedback 
+  // feedback
+  .feedback-container {
+    margin-top: 24px !important;
+    width: 500px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
 
-    // payment 
+  .header-course-search {
+    display: none !important;
+  }
+
+  .feedback-left-info {
+    h2 {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+
+  .select-feedback-container {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    width: 500px;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+
+  .feedback-left-info {
+    h2 {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+  }
+
+  .feedback-right-btn {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+    padding: 5px !important;
+  }
+  // feedback
+
+  // payment
   .card1 {
     transition: all 0.2s;
   }
@@ -3931,26 +3984,26 @@
   }
 
   .card1-inner .avatar {
-    margin-right: 240px ;
+    margin-right: 240px;
   }
-  
+
   .card1-info {
     margin-left: -50px;
   }
-  
+
   .checkout-container .card1-total-price-cost {
     margin-top: 4px;
   }
-  // payment 
+  // payment
 }
 @media only screen and (min-width: 767px) and (max-width: 991px) {
-  .cart-item-box{
+  .cart-item-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
   }
-  .section-card-contact{
+  .section-card-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3989,7 +4042,7 @@
   .course-detail-cate-fe p {
     font-size: 0.9rem !important;
   }
-  
+
   .course-detail-cate-online {
     margin-left: 22px;
   }
@@ -4030,7 +4083,7 @@
     font-size: 4rem !important;
   }
   // Slide Danh sách lớp học
-  .card1-total-price-code{
+  .card1-total-price-code {
     align-items: start;
     display: flex;
     flex-direction: column;
@@ -4039,7 +4092,7 @@
     width: 68% !important;
     margin-left: 0 !important;
   }
-  // feedback 
+  // feedback
   .feedback-body {
     display: flex;
     flex-direction: column;
@@ -4055,8 +4108,8 @@
     margin-top: -20px;
     margin-left: 105px;
   }
-  
-  .feedback-left-img{
+
+  .feedback-left-img {
     margin-top: 30px;
   }
 
@@ -4070,7 +4123,7 @@
   .header-course-search {
     display: none !important;
   }
-  
+
   .feedback-left-info {
     h2 {
       font-size: 0.4rem;
@@ -4098,9 +4151,9 @@
     font-weight: 400;
     padding: 6px !important;
   }
-  // feedback 
+  // feedback
 
-  // payment 
+  // payment
   .card1-inner {
     display: flex;
     flex-direction: column;
@@ -4130,11 +4183,11 @@
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
   //create course
-  .row{
+  .row {
     // margin-right: 60px;
   }
 
-  // courses 
+  // courses
   .course-content-container-page-course {
     padding: 0 !important;
     margin-top: 40px;
@@ -4146,48 +4199,44 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1470px) {
-
-    .title_img_aboutus-text{
+  .title_img_aboutus-text {
     font-size: 16px;
     // line-height: 20px;
   }
-  .font-title{
+  .font-title {
     font-size: 30px !important;
   }
-
 }
 @media only screen and (min-width: 1201px) and (max-width: 1670px) {
-
-//aboutus
-.img_aboutus_3 {
-  position: absolute;
-  top: 260px;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-  margin: 0 auto;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  width: 20%;
-  text-align: justify;
-}
-.bt-aboutus_1 {
-  border: 0;
-  line-height: 25px;
-  display: block;
-  background-color: #ff630e;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 30px;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0 auto 10px;
-  width: 100%;
-}
-
+  //aboutus
+  .img_aboutus_3 {
+    position: absolute;
+    top: 260px;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    text-align: justify;
+  }
+  .bt-aboutus_1 {
+    border: 0;
+    line-height: 25px;
+    display: block;
+    background-color: #ff630e;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 auto 10px;
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 390px) and (max-width: 499px) {
   // Slide Danh sách lớp học
@@ -4203,12 +4252,12 @@
   }
   // Slide Danh sách lớp học
   // payment
-  .card1-total-price-code{
+  .card1-total-price-code {
     // align-items: start;
     display: flex;
     flex-direction: column;
   }
-  
+
   .card1-total-price-code-input {
     width: 68% !important;
     margin-left: 0 !important;
@@ -4244,10 +4293,8 @@
     align-content: center;
     width: 20%;
     text-align: justify;
-}
-
-  
   }
+}
 @media only screen and (min-width: 390px) and (max-width: 480px) {
   //aboutus
   .bt-aboutus_1 {
@@ -4268,16 +4315,16 @@
   }
   //trang  index
 
-  .advantages-2 .advantages-2-content h4{
+  .advantages-2 .advantages-2-content h4 {
     font-size: 14px !important;
     margin-bottom: 0 !important;
   }
 
-  .advantages-2 .advantages-2-content h2{
+  .advantages-2 .advantages-2-content h2 {
     font-size: 20px !important;
     margin-bottom: 0 !important;
   }
-  .title-index1{
+  .title-index1 {
     font-size: 11px !important;
   }
 
@@ -4287,8 +4334,6 @@
     object-fit: cover;
   }
   // payment
-
-  
 
   // Slide Danh sách lớp học
   .list-class-owl-theme .owl-next span {
@@ -4302,7 +4347,7 @@
     font-size: 4rem !important;
   }
   // Slide Danh sách lớp học
-  .card1-total-price-code{
+  .card1-total-price-code {
     align-items: start;
     display: flex;
     flex-direction: column;
@@ -4317,33 +4362,32 @@
     margin-left: 0 !important;
   }
 
-    // fix question-icon
-  
-    .icon-question-referral-code {
-      margin-top: 4px;
-      margin-left: 21px;
-      margin-right: 0px;
-    }
+  // fix question-icon
+
+  .icon-question-referral-code {
+    margin-top: 4px;
+    margin-left: 21px;
+    margin-right: 0px;
+  }
 }
 
 @media screen and (max-width: 430px) {
   //fix title forgot password responsive
-  .forgot-password-title{
+  .forgot-password-title {
     font-size: 50px !important;
   }
 }
 
-@media screen and (max-width: 362px){
+@media screen and (max-width: 362px) {
   //fix title forgot password responsive
-  .forgot-password-title{
+  .forgot-password-title {
     font-size: 43px !important;
   }
-
 }
 
 @media screen and (max-width: 360px) {
   //member-profile
-  .wrapper .contact-info .li-title-2{
+  .wrapper .contact-info .li-title-2 {
     margin-left: 30px !important;
     // justify-content: center !important;
   }
@@ -4375,7 +4419,7 @@
   .course-detail-cate-fe p {
     font-size: 0.8rem !important;
   }
-  
+
   .course-detail-cate-online {
     margin-left: 22px;
   }
@@ -4425,12 +4469,12 @@
 }
 @media only screen and (min-width: 480px) and (max-width: 766px) {
   //aboutus
-  .img-1{
+  .img-1 {
     width: 100% !important;
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 470px) {
-  .wrapper .contact-info .li-title-2{
+  .wrapper .contact-info .li-title-2 {
     margin-left: 70px !important;
     // justify-content: center !important;
   }
@@ -4446,12 +4490,12 @@
     margin-left: 104px !important;
   }
 }
-@media only screen and (max-width: 360px){
-  .card1-total-price-code-input-refer{
+@media only screen and (max-width: 360px) {
+  .card1-total-price-code-input-refer {
     width: 70% !important;
     margin-left: 0px !important;
   }
-  .icon-question-referral-code{
+  .icon-question-referral-code {
     margin-top: 4px;
     margin-left: 22px;
     margin-right: 0px;
@@ -4460,7 +4504,7 @@
 
 //fix responsive forgot password on mobile
 @media screen and (max-width: 400px) {
-  .invalid-feedback-email{
+  .invalid-feedback-email {
     margin-left: 10px;
   }
 }
