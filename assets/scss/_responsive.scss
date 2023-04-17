@@ -1837,16 +1837,24 @@
   //logo-khách hàng
   .logo-section {
     width: 100% !important;
+    margin-left: 0 !important;
+    .logo-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(1, 1fr) !important;
+      img {
+        width: 100% !important;
+      }
+      img:first-child {
+        display: block;
+      }
+      img:nth-child(-n + 4) {
+        display: none;
+      }
+    }
   }
-  .logo-section .logo-grid {
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
-  .logo-section .logo-grid img:first-child {
-    display: block;
-  }
-  .logo-section .logo-grid img:nth-child(-n + 4) {
-    display: none;
-  }
+
   // course-list
   .course-review {
     margin-top: 20px !important;

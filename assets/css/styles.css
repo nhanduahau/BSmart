@@ -9686,8 +9686,12 @@ input {
 @media only screen and (max-width: 767px) {
   .logo-section {
     width: 100% !important;
+    margin-left: 0 !important;
   }
   .logo-section .logo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(1, 1fr) !important;
   }
   .logo-section .logo-grid img:first-child {
