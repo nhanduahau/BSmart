@@ -8,7 +8,7 @@ function showMore(id) {
     arrowDown.style.display = 'none';
     arrowUp.style.display = 'block';
   } else {
-    if (element.style.display === 'none') {
+    if (element.style.display === '' || element.style.display === 'none') { // Fix here
       element.style.display = 'block';
       arrowDown.style.display = 'none';
       arrowUp.style.display = 'block';
