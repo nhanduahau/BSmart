@@ -1,26 +1,31 @@
 const logos = document.querySelectorAll(".logo-grid img");
 let currentLogoIndex = 0;
 let numLogosToShow = 1;
+let changeLogo = false;
 
 function showNextLogos() {
-  // Ẩn số lượng logo hiện tại
-  for (let i = currentLogoIndex; i < currentLogoIndex + numLogosToShow; i++) {
-    logos[i].style.display = "none";
-  }
-
-  // Tính toán chỉ số của số lượng logo tiếp theo
-  currentLogoIndex += numLogosToShow;
-  if (currentLogoIndex >= logos.length) {
-    currentLogoIndex = 0;
-  }
-
-  // Hiển thị số lượng logo mới
-  for (let i = currentLogoIndex; i < currentLogoIndex + numLogosToShow; i++) {
-    if (window.innerWidth >= 767) {
-      logos[i].style.display = "block";
-    } else {
-      logos[i].style.display = i === currentLogoIndex ? "block" : "none";
+  if (!changeLogo) {
+    changeLogo = true;
+    // Ẩn số lượng logo hiện tại
+    for (let i = currentLogoIndex; i < currentLogoIndex + numLogosToShow; i++) {
+      logos[i].style.display = "none";
     }
+    // Tính toán chỉ số của số lượng logo tiếp theo
+    currentLogoIndex += numLogosToShow;
+    if (currentLogoIndex >= logos.length) {
+      currentLogoIndex = 0;
+    }
+    // Hiển thị số lượng logo mới
+    for (let i = currentLogoIndex; i < currentLogoIndex + numLogosToShow; i++) {
+      if (window.innerWidth >= 767) {
+        logos[i].style.display = "block";
+      } else {
+        logos[i].style.display = i === currentLogoIndex ? "block" : "none";
+      }
+    }
+    setTimeout(() => {
+      changeLogo = false;
+    }, 3000);
   }
 }
 
@@ -33,7 +38,7 @@ if (window.innerWidth >= 767) {
   showNextLogos();
 }
 
-// Thực hiện hành động chuyển đổi số lượng logo sau mỗi 5 giây
+// Thực hiện hành động chuyển đổi số lượng logo sau mỗi 3 giây
 setInterval(showNextLogos, 3000);
 
 // Thay đổi số lượng logo tùy thuộc vào kích thước màn hình
