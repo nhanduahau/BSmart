@@ -7804,7 +7804,7 @@ input {
   }
   .testimonial-content-mobile-home-page {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 25px;
   }
   .section-heading-of-member-title {
     margin-bottom: 10px;
@@ -8089,7 +8089,7 @@ input {
   }
   .testimonial-content-mobile-home-page {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 25px;
   }
   .section-heading-of-member-title {
     margin-bottom: 10px;
@@ -8383,7 +8383,7 @@ input {
   }
   .testimonial-content-mobile-home-page {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 25px;
   }
   .section-heading-of-member-title {
     margin-bottom: 10px;
@@ -9059,7 +9059,7 @@ input {
   }
   .testimonial-content-mobile-home-page {
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   .section-heading-of-member-title {
     margin-bottom: 10px;
@@ -9426,9 +9426,6 @@ input {
   }
   .history-payment-container {
     margin-top: 40px !important;
-  }
-  .footer {
-    margin-top: 20px;
   }
   .content-info-mentor-member-profile-edit {
     padding: 0 !important;
@@ -9841,7 +9838,7 @@ input {
   }
   .home-wrapper .testimonial-content-mobile-home-page {
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
   }
   .home-wrapper .section-heading-course-title {
     margin-bottom: 8px !important;
@@ -9876,7 +9873,6 @@ input {
   }
   .home-wrapper .advantages-2 {
     padding: 20px 0 20px;
-    margin-bottom: 60px;
   }
   .home-wrapper .courses-section {
     padding-top: 20px;
