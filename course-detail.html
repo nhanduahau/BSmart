@@ -352,17 +352,17 @@
                           >Tuyển dụng</a
                         >
                       </li> -->
-                      <li>
-                        <a href="#" class="nav-link nav-link-custom">Tuyển dụng</a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="register-collaborator.html">Đăng ký cộng tác viên</a>
-                          </li>
-                          <li>
-                            <a href="register.html">Đăng ký mentor</a>
-                          </li>
-                        </ul>
-                      </li>
+                    <li>
+                      <a href="#" class="nav-link nav-link-custom">Tuyển dụng</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="register-collaborator.html">Đăng ký cộng tác viên</a>
+                        </li>
+                        <li>
+                          <a href="register.html">Đăng ký mentor</a>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -405,7 +405,8 @@
         <div class="banner-content">
           <h1>Front End Basic</h1>
           <p>
-            <a href="./index.html">Trang Chủ</a><span> > </span><a href="./course-list.html">Khoá học</a><span> > </span>
+            <a href="./index.html">Trang Chủ</a><span> > </span><a href="./course-list.html">Khoá học</a><span> >
+            </span>
             Front End Basic
           </p>
         </div>
@@ -1149,10 +1150,31 @@
 
                   <div class="copy-link">
                     <input type="text" class="copy-link-input" value="@ViewBag.ReferLink" readonly>
-                    <button type="button" class="copy-link-button">
+                    <button type="button" class="copy-link-button" id="copy-btn">
                       <span class="material-icons btn-copy-link">Copy</span>
                     </button>
+
                   </div>
+                  <style>
+                    .tooltiptext {
+                      margin-top: 75px;
+                      visibility: hidden;
+                      opacity: 0;
+                      position: absolute;
+                      background-color: #000;
+                      color: #fff;
+                      text-align: center;
+                      border-radius: 6px;
+                      padding: 5px;
+                      font-size: 12px;
+                      transition: opacity 0.3s;
+                    }
+
+                    .copy-link-button:hover .tooltiptext {
+                      visibility: visible;
+                      opacity: 1;
+                    }
+                  </style>
                 </div>
 
 
@@ -1220,12 +1242,14 @@
                     <span class="time">
                       <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
                     </span>
-                   
+
                     <span class="mark">
-                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26 Slot/cour
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
                     </span>
                   </div>
-                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>
@@ -1254,7 +1278,7 @@
                   <p class="sub-title">Mentor Long</p>
                   <span class="time">
                     <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
-                  </span> 
+                  </span>
                   <p class="description">
                     Khóa học Frontend là quy trình sử dụng các ngôn ngữ HTML,
                     CSS, JavaScript để thiết kế, xây dựng giao diện cho trang
@@ -1273,12 +1297,14 @@
                     <span class="time">
                       <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
                     </span>
-                   
+
                     <span class="mark">
-                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26 Slot/cour
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
                     </span>
                   </div>
-                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>
@@ -1325,12 +1351,14 @@
                     <span class="time">
                       <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
                     </span>
-                   
+
                     <span class="mark">
-                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26 Slot/cour
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
                     </span>
                   </div>
-                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>
@@ -1377,12 +1405,14 @@
                     <span class="time">
                       <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
                     </span>
-                   
+
                     <span class="mark">
-                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26 Slot/cour
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
                     </span>
                   </div>
-                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>
@@ -1428,12 +1458,14 @@
                     <span class="time">
                       <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
                     </span>
-                   
+
                     <span class="mark">
-                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26 Slot/cour
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
                     </span>
                   </div>
-                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>

@@ -1,3 +1,5 @@
+
+
 // Lấy thông tin đăng nhập của người dùng
 const isLoggedIn = true; // Thay bằng true hoặc false tùy thuộc vào cách xác thực đăng nhập của bạn
 
@@ -122,18 +124,26 @@ btnShowMore.addEventListener("click", function () {
 });
 
 // Link giới thiệu
-document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
-  const inputField = copyLinkParent.querySelector(".copy-link-input");
-  const copyButton = copyLinkParent.querySelector(".copy-link-button");
-  const text = inputField.value;
+const copyBtn = document.querySelector('.copy-link-button');
+const tooltip = document.createElement('span');
+tooltip.classList.add('tooltiptext');
+tooltip.textContent = 'Sao chép';
+copyBtn.appendChild(tooltip);
 
-  inputField.addEventListener("focus", () => inputField.select());
+copyBtn.addEventListener('click', function(event) {
+  const input = event.target.closest('.copy-link').querySelector('.copy-link-input');
+  input.select();
+  document.execCommand('copy');
+  tooltip.textContent = 'Đã sao chép';
 
-  copyButton.addEventListener("click", () => {
-    inputField.select();
-    navigator.clipboard.writeText(text);
+  const hideTooltip = function() {
+    tooltip.style.opacity = '0';
+  };
 
-    inputField.value = "Copied!";
-    setTimeout(() => (inputField.value = text), 2000);
-  });
+  tooltip.style.opacity = '1';
+  setTimeout(hideTooltip, 1000);
 });
+
+
+
+
