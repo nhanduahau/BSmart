@@ -102,7 +102,22 @@ $(document).ready(function () {
     parent.querySelector(".mean-expand").style.display = "block";
     event.currentTarget.style.display = "none";
   });
+  // second-sub-menu
+  $(".extend").click(function (event) {
+    var parent = event.currentTarget.offsetParent;
+    parent.querySelector(".compact").style.display = "block";
+    var secondSubMenu = parent.querySelector(".second-sub-menu");
+    secondSubMenu.style.display = "block";
+    event.currentTarget.style.display = "none";
+  });
 
+  $(".compact").click(function (event) {
+    var parent = event.currentTarget.offsetParent;
+    var secondSubMenu = parent.querySelector(".second-sub-menu");
+    secondSubMenu.style.display = "none";
+    parent.querySelector(".extend").style.display = "block";
+    event.currentTarget.style.display = "none";
+  });
   // Fixed header
   window.onscroll = () => {
     let headerMobile = document.querySelector(".header-mobile");
