@@ -70,7 +70,8 @@ inputName.addEventListener("keyup", function () {
   const getName = inputName.value
     .trim()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, ""); // lấy text nhập vào và bỏ dấu
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[đĐ]/g, "D");
   if (getName.length > 0) {
     if (patternName.test(getName)) {
       messageErrorName.style.display = "none";
@@ -148,7 +149,6 @@ const dataSchoolName = [
 ];
 const inputSchoolName = document.getElementById("schoolName");
 const suggestSchoolName = document.getElementById("suggestSchoolName");
-
 inputSchoolName.addEventListener("input", function () {
   const inputValue = this.value;
   suggestSchoolName.innerHTML = "";
@@ -159,24 +159,24 @@ inputSchoolName.addEventListener("input", function () {
     console.log(matchingData);
     if (matchingData.length > 0) {
       const maxSuggestions = 5; // 5 gợi ý tối đa
-      const suggestionsToShow = matchingData.slice(0, maxSuggestions);
+      const suggestionsToShow = matchingData.slice(0, maxSuggestions); // lấy ra tối đa 5 gợi ý đầu tiên
       suggestionsToShow.forEach(function (item) {
         const divSuggestElement = document.createElement("div");
-        divSuggestElement.className = "item-suggestion";
         divSuggestElement.textContent = item;
+        divSuggestElement.className = "item-suggestion";
         divSuggestElement.addEventListener("click", function () {
           inputSchoolName.value = item;
           suggestSchoolName.style.display = "none";
         });
         suggestSchoolName.appendChild(divSuggestElement);
       });
-
       // Xử lý nếu có nhiều gợi ý hơn maxSuggestions
       if (matchingData.length > maxSuggestions) {
         const divShowMore = document.createElement("div");
         divShowMore.classList.add("show-more");
         divShowMore.textContent = "Xem thêm...";
         divShowMore.addEventListener("click", function () {
+          suggestSchoolName.innerHTML = "";
           matchingData.forEach(function (item) {
             const divSuggestElement = document.createElement("div");
             divSuggestElement.className = "item-suggestion";
@@ -186,12 +186,12 @@ inputSchoolName.addEventListener("input", function () {
               suggestSchoolName.style.display = "none";
             });
             suggestSchoolName.appendChild(divSuggestElement);
-            divShowMore.style.display = "none";
           });
-          const divHideItem = document.createElement("div"); // tạo nút "Thu gọn"
-          divHideItem.classList.add("show-more");
-          divHideItem.textContent = "Thu gọn";
-          divHideItem.addEventListener("click", function () {
+
+          const divHide = document.createElement("div"); // tạo nút "Thu gọn"
+          divHide.classList.add("show-more");
+          divHide.textContent = "Thu gọn";
+          divHide.addEventListener("click", function () {
             suggestSchoolName.innerHTML = "";
             suggestionsToShow.forEach(function (item) {
               const divSuggestElement = document.createElement("div");
@@ -205,7 +205,7 @@ inputSchoolName.addEventListener("input", function () {
             });
             suggestSchoolName.appendChild(divShowMore);
           });
-          suggestSchoolName.appendChild(divHideItem);
+          suggestSchoolName.appendChild(divHide);
         });
         suggestSchoolName.appendChild(divShowMore);
       }
@@ -217,9 +217,11 @@ inputSchoolName.addEventListener("input", function () {
     suggestSchoolName.style.display = "none";
   }
 });
-
-document.addEventListener("click", function (event) {
-  if (!suggestSchoolName.contains(event.target)) {
-    suggestSchoolName.style.display = "none";
-  }
-});
+// document.addEventListener("click", function (event) {
+//   if (
+//     !suggestSchoolName.contains(event.target) &&
+//     !divShowMore.contains(event.target)
+//   ) {
+//     suggestSchoolName.style.display = "none";
+//   }
+// });
