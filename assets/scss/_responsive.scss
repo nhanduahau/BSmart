@@ -1418,6 +1418,26 @@
           .sub-menu {
             display: none;
             width: 90%;
+            li {
+              position: relative;
+              .extend {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 12px;
+                font-size: 16px;
+                color: $primary-color;
+              }
+              .compact {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 12px;
+                font-size: 16px;
+                color: $primary-color;
+              }
+            }
           }
           .mean-expand {
             position: absolute;
@@ -2600,6 +2620,29 @@
           .sub-menu {
             display: none;
             width: 90%;
+            li {
+              position: relative;
+              .second-sub-menu {
+                display: none;
+              }
+              .extend {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 12px;
+                font-size: 16px;
+                color: $primary-color;
+              }
+              .compact {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 12px;
+                font-size: 16px;
+                color: $primary-color;
+              }
+            }
           }
           .mean-expand {
             position: absolute;

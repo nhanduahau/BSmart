@@ -445,100 +445,113 @@
       </section>
       <section class="regis-collab-area">
         <div class="container">
-          <div class="title-register">
-              Cộng tác viên
-          </div>
-          <div class="regis-collab-area-content">
-            <div
-              id="registerCollab"
-              class="registration-form-wrap"
-            >
-              <div class="form-group mb-3">
-                <label for="name" class="mb-2">Họ và tên</label>
-                <input
-                  type="text"
-                  value=""
-                  placeholder="Họ và tên"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="birth" class="mb-2">Ngày tháng năm sinh</label>
-                <input
-                  type="date"
-                  required
-                  value=""
-                  placeholder="dd-mm-yyyy"
-                  pattern="\d{2}-\d{2}-\d{4}"
-                  class="form-control"
-                  name="birth"
-                  id="birth"
-                />
-              </div>
-              <div class="form-group mb-3 select-status" >
-                <label for="job" class="mb-2">Nghề nghiệp</label>
-                <select name="job" id="job" onchange="toggleSchool()">
-                  <option value="">--Chọn--</option>
-                  <option value="job">Đang đi làm</option>
-                  <option value="student">Đang đi học</option>
-                </select>
-              </div>
-              <div class="form-group mb-3" id="schoolName">
-                <label for="nameSchool" class="mb-2">Tên trường</label>
-                <input
-                  type="text"
-                  value=""
-                  placeholder="Tên trường đang theo học"
-                  class="form-control"
-                  id="nameSchool"
-                  name="nameSchool"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="phoneNumber" class="mb-2">Số điện thoại</label>
-                <input
-                  type="text"
-                  id="phoneNumber"
-                  value=""
-                  placeholder="Số điện thoại"
-                  class="form-control"
-                  name="phoneNumber"
-                  onchange="changeValueNumberPhone()"
-                  oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10"
-                />
-                <span class="message-error" id="message-error-number-phone">Số điện thoại không hợp lệ. (Phải gồm 10 số và bắt đầu bằng 03 | 05 | 07 | 08 | 09)</span>
-              </div>
-              <div class="form-group mb-3">
-                <label for="mail" class="mb-2">Email</label>
-                <input
-                  type="text"
-                  id="mail"
-                  value=""
-                  placeholder="Email"
-                  class="form-control"
-                  name="mail"
-                  onchange="changeValueMail()"
-                />
-                <span class="message-error" id="message-error-mail">Địa chỉ email không hợp lệ</span>
-              </div>
-              <div class="registration-btn mb-3">
-                <a href="./login-success.html" class="btn btn-primary-custom">Đăng ký</a>
-              </div>
-              <!-- <div id="gSignInWrapper" class="mb-4 w-100">
-                <div
-                  id="customBtn"
-                  class="customGPlusSignIn w-100 p-2 d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon"></span>
-                  <span class="buttonText" style="font-size: 16px"
-                    >Đăng nhập bằng tài khoản google</span
-                  >
-                </div>
-              </div> -->
+         <div class="content">
+            <div class="title-register">
+                Cộng tác viên
             </div>
-          </div>
+            <div class="regis-collab-area-content">
+              <div
+                id="registerCollab"
+                class="registration-form-wrap"
+              >
+                <div class="form-group mb-3">
+                  <label for="name" class="mb-2">Họ và tên</label>
+                  <input
+                    type="text"
+                    value=""
+                    placeholder="Họ và tên"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                  />
+                  <span class="message-error" id="message-error-name">Tên nhập vào không hợp lệ. (Phải viết hoa ký tự đầu của chữ, và phải tối thiểu 2 chữ cái)</span>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="birth" class="mb-2">Ngày tháng năm sinh</label>
+                  <input
+                    type="date"
+                    required
+                    value=""
+                    placeholder="dd-mm-yyyy"
+                    pattern="\d{2}-\d{2}-\d{4}"
+                    class="form-control"
+                    name="birth"
+                    id="birth"
+                  />
+                </div>
+                <div class="form-group mb-3 select-status" >
+                  <label for="job" class="mb-2">Nghề nghiệp</label>
+                  <select name="job" id="job" onchange="toggleSchool()">
+                    <option value="">--Chọn--</option>
+                    <option value="job">Đang đi làm</option>
+                    <option value="student">Đang đi học</option>
+                  </select>
+                </div>
+                <div class="form-group mb-3" id="companyNameWrap">
+                  <label for="companyName" class="mb-2">Tên công ty</label>
+                  <input
+                    type="text"
+                    value=""
+                    placeholder="Tên công ty đang làm"
+                    class="form-control"
+                    id="companyName"
+                    name="companyName"
+                  />
+                </div>
+                <div class="form-group mb-3" id="schoolNameWrap">
+                  <label for="schoolName" class="mb-2">Tên trường</label>
+                  <input
+                    type="text"
+                    value=""
+                    placeholder="Tên trường đang theo học"
+                    class="form-control"
+                    id="schoolName"
+                    name="schoolName"
+                  />
+                  <div id="suggestSchoolName" class="suggest-school-name"></div>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="phoneNumber" class="mb-2">Số điện thoại</label>
+                  <input
+                    type="text"
+                    value=""
+                    placeholder="Số điện thoại"
+                    class="form-control"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    oninput="this.value=this.value.replace(/[^0-9]/g,''); this.maxLength=10"
+                  />
+                  <span class="message-error" id="message-error-number-phone">Số điện thoại không hợp lệ. (Phải gồm 10 số và bắt đầu bằng 03 | 05 | 07 | 08 | 09)</span>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="mail" class="mb-2">Email</label>
+                  <input
+                    type="text"
+                    id="mail"
+                    value=""
+                    placeholder="Email"
+                    class="form-control"
+                    name="mail"
+                  />
+                  <span class="message-error" id="message-error-mail">Địa chỉ email không hợp lệ</span>
+                </div>
+                <div class="registration-btn mb-3">
+                  <a href="./login-success.html" class="btn btn-primary-custom">Đăng ký</a>
+                </div>
+                <!-- <div id="gSignInWrapper" class="mb-4 w-100">
+                  <div
+                    id="customBtn"
+                    class="customGPlusSignIn w-100 p-2 d-flex justify-content-center align-items-center"
+                  >
+                    <span class="icon"></span>
+                    <span class="buttonText" style="font-size: 16px"
+                      >Đăng nhập bằng tài khoản google</span
+                    >
+                  </div>
+                </div> -->
+              </div>
+            </div>
+         </div>
         </div>
       </section>
       <!-- Start footer -->
@@ -691,31 +704,5 @@
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
     <script type="text/javascript" src="./assets/js/regesterCollab.js"></script>
-    <script>
-      function openTabRegister(name) {
-        var i;
-        var x = document.getElementsByClassName("tab-item-register");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        document.getElementById(name).style.display = "block";
-        if (name === "studentRegisterForm") {
-          document
-            .getElementById("openFormStudentRegisterBtn")
-            .classList.add("active");
-          document
-            .getElementById("openFormMentorRegisterBtn")
-            .classList.remove("active");
-        }
-        if (name === "mentorRegisterForm") {
-          document
-            .getElementById("openFormMentorRegisterBtn")
-            .classList.add("active");
-          document
-            .getElementById("openFormStudentRegisterBtn")
-            .classList.remove("active");
-        }
-      }
-    </script>
   </body>
 </html>

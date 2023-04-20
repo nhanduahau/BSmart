@@ -48,6 +48,15 @@
 .register-wrapper .regis-collab-area {
   padding: 0 0 110px;
 }
+.regis-collab-area .container {
+  max-width: 1320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.regis-collab-area .container .content {
+  width: 50%;
+}
 
 .register-wrapper .regis-collab-area .title-register {
   height: 39px;
@@ -63,12 +72,36 @@
   background-color: #ff630e;
 }
 
-.regis-collab-area .container {
-  width: 50%;
+#schoolNameWrap,
+#companyNameWrap {
+  display: none;
 }
 
-#schoolName {
+#schoolNameWrap {
+  position: relative;
+}
+
+.suggest-school-name {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  max-height: 200px;
+  overflow-y: auto;
   display: none;
+}
+
+.suggest-school-name .item-suggestion,
+.show-more {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.suggest-school-name .item-suggestion:hover,
+.show-more:hover {
+  background-color: #f2f2f2;
 }
 
 .register-wrapper .regis-collab-area .regis-collab-area-content {
@@ -99,8 +132,8 @@
   color: red;
 }
 
-#message-error {
-  margin-top: 16px;
+.message-error {
+  margin-top: 10px;
   font-size: 0.9rem;
 }
 
