@@ -352,17 +352,17 @@
                           >Tuyển dụng</a
                         >
                       </li> -->
-                      <li>
-                        <a href="#" class="nav-link nav-link-custom">Tuyển dụng</a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="register-collaborator.html">Đăng ký cộng tác viên</a>
-                          </li>
-                          <li>
-                            <a href="register.html">Đăng ký mentor</a>
-                          </li>
-                        </ul>
-                      </li>
+                    <li>
+                      <a href="#" class="nav-link nav-link-custom">Tuyển dụng</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="register-collaborator.html">Đăng ký cộng tác viên</a>
+                        </li>
+                        <li>
+                          <a href="register.html">Đăng ký mentor</a>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -405,7 +405,8 @@
         <div class="banner-content">
           <h1>Front End Basic</h1>
           <p>
-            <a href="./index.html">Trang Chủ</a><span> > </span><a href="./course-list.html">Khoá học</a><span> > </span>
+            <a href="./index.html">Trang Chủ</a><span> > </span><a href="./course-list.html">Khoá học</a><span> >
+            </span>
             Front End Basic
           </p>
         </div>
@@ -1149,10 +1150,31 @@
 
                   <div class="copy-link">
                     <input type="text" class="copy-link-input" value="@ViewBag.ReferLink" readonly>
-                    <button type="button" class="copy-link-button">
+                    <button type="button" class="copy-link-button" id="copy-btn">
                       <span class="material-icons btn-copy-link">Copy</span>
                     </button>
+
                   </div>
+                  <style>
+                    .tooltiptext {
+                      margin-top: 75px;
+                      visibility: hidden;
+                      opacity: 0;
+                      position: absolute;
+                      background-color: #000;
+                      color: #fff;
+                      text-align: center;
+                      border-radius: 6px;
+                      padding: 5px;
+                      font-size: 12px;
+                      transition: opacity 0.3s;
+                    }
+
+                    .copy-link-button:hover .tooltiptext {
+                      visibility: visible;
+                      opacity: 1;
+                    }
+                  </style>
                 </div>
 
 
@@ -1194,6 +1216,9 @@
                     <h5 class="card-title">Khoá học Devops</h5>
                   </div>
                   <p class="sub-title">Mentor Cường</p>
+                  <span class="time">
+                    <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                  </span>
                   <p class="description">
                     Với 15 buổi học, kết hợp giữa lý thuyết và những bài thực
                     hành thực tiễn, học viên học tại BSmart sẽ có cơ hội tiếp
@@ -1214,22 +1239,17 @@
                     <i class="fa fa-star"></i>
                   </div>
                   <div class="feedback-time">
-                    <div class="time">
-                      <img src="assets\images\clock-time.png" class="icon-time" alt="hinh-anh-front-end-icontime">
-                      <p>20hr</p>
-                    </div>
+                    <span class="time">
+                      <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
+                    </span>
 
-                    <div class="time">
-                      <img src="assets\images\user.png" class="icon-user" alt="hinh-anh-front-end-iconuser">
-                      <p>106 học viên</p>
-                    </div>
-
-                    <div class="mark">
-                      <img src="assets\images\check-mark.png" class="icon-V" alt="hinh-anh-front-end-iconV">
-                      <p>26 Buổi học</p>
-                    </div>
+                    <span class="mark">
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
+                    </span>
                   </div>
-                  <button class="btn-invite-course mt-2">Xem chi tiết</button>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>
@@ -1256,6 +1276,9 @@
                     <h5 class="card-title">Khoá học Front End</h5>
                   </div>
                   <p class="sub-title">Mentor Long</p>
+                  <span class="time">
+                    <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                  </span>
                   <p class="description">
                     Khóa học Frontend là quy trình sử dụng các ngôn ngữ HTML,
                     CSS, JavaScript để thiết kế, xây dựng giao diện cho trang
@@ -1271,22 +1294,17 @@
                     <i class="fa fa-star"></i>
                   </div>
                   <div class="feedback-time">
-                    <div class="time">
-                      <img src="assets\images\clock-time.png" class="icon-time" alt="hinh-anh-front-end-icontime">
-                      <p>20hr</p>
-                    </div>
+                    <span class="time">
+                      <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
+                    </span>
 
-                    <div class="time">
-                      <img src="assets\images\user.png" class="icon-user" alt="hinh-anh-front-end-iconuser">
-                      <p>106 học viên</p>
-                    </div>
-
-                    <div class="mark">
-                      <img src="assets\images\check-mark.png" class="icon-V" alt="hinh-anh-front-end-iconV">
-                      <p>26 Buổi học</p>
-                    </div>
+                    <span class="mark">
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
+                    </span>
                   </div>
-                  <button class="btn-invite-course mt-2">Xem chi tiết</button>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>
@@ -1313,6 +1331,9 @@
                     <h5 class="card-title">Khoá học .NET Basic</h5>
                   </div>
                   <p class="sub-title">Mentor Phúc</p>
+                  <span class="time">
+                    <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                  </span>
                   <p class="description">
                     Khóa học lập trình asp.net dành cho các bạn sinh viên khoa
                     CNTT các trường Trung cấp - Cao đẳng - Đại học . Và tất cả
@@ -1327,22 +1348,17 @@
                     <i class="fa fa-star"></i>
                   </div>
                   <div class="feedback-time">
-                    <div class="time">
-                      <img src="assets\images\clock-time.png" class="icon-time" alt="hinh-anh-front-end-icontime">
-                      <p>20hr</p>
-                    </div>
+                    <span class="time">
+                      <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
+                    </span>
 
-                    <div class="time">
-                      <img src="assets\images\user.png" class="icon-user" alt="hinh-anh-front-end-iconuser">
-                      <p>106 học viên</p>
-                    </div>
-
-                    <div class="mark">
-                      <img src="assets\images\check-mark.png" class="icon-V" alt="hinh-anh-front-end-iconV">
-                      <p>26 Buổi học</p>
-                    </div>
+                    <span class="mark">
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
+                    </span>
                   </div>
-                  <button class="btn-invite-course mt-2">Xem chi tiết</button>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>
@@ -1369,6 +1385,9 @@
                     <h5 class="card-title">Khoá học .NET MVC</h5>
                   </div>
                   <p class="sub-title">Mentor Cường</p>
+                  <span class="time">
+                    <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                  </span>
                   <p class="description">
                     Khóa học này là khóa học thứ 3 của các bạn giúp các bạn có
                     cái nhìn tổng quan và các bước để xây dựng một dự án thực
@@ -1383,22 +1402,17 @@
                     <i class="fa fa-star"></i>
                   </div>
                   <div class="feedback-time">
-                    <div class="time">
-                      <img src="assets\images\clock-time.png" class="icon-time" alt="hinh-anh-front-end-icontime">
-                      <p>20hr</p>
-                    </div>
+                    <span class="time">
+                      <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
+                    </span>
 
-                    <div class="time">
-                      <img src="assets\images\user.png" class="icon-user" alt="hinh-anh-front-end-iconuser">
-                      <p>106 học viên</p>
-                    </div>
-
-                    <div class="mark">
-                      <img src="assets\images\check-mark.png" class="icon-V" alt="hinh-anh-front-end-iconV">
-                      <p>26 Buổi học</p>
-                    </div>
+                    <span class="mark">
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
+                    </span>
                   </div>
-                  <button class="btn-invite-course mt-2">Xem chi tiết</button>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>
@@ -1425,6 +1439,9 @@
                     <h5 class="card-title">Khoá học .NET API</h5>
                   </div>
                   <p class="sub-title">Mentor Long</p>
+                  <span class="time">
+                    <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                  </span>
                   <p class="description">
                     Khoá học này thiết kế theo phương pháp mới xây dựng một
                     REST API chuẩn REST từng bước sau đó refactoring code theo
@@ -1438,22 +1455,17 @@
                     <i class="fa fa-star"></i>
                   </div>
                   <div class="feedback-time">
-                    <div class="time">
-                      <img src="assets\images\clock-time.png" class="icon-time" alt="hinh-anh-front-end-icontime">
-                      <p>20hr</p>
-                    </div>
+                    <span class="time">
+                      <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
+                    </span>
 
-                    <div class="time">
-                      <img src="assets\images\user.png" class="icon-user" alt="hinh-anh-front-end-iconuser">
-                      <p>106 học viên</p>
-                    </div>
-
-                    <div class="mark">
-                      <img src="assets\images\check-mark.png" class="icon-V" alt="hinh-anh-front-end-iconV">
-                      <p>26 Buổi học</p>
-                    </div>
+                    <span class="mark">
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
+                    </span>
                   </div>
-                  <button class="btn-invite-course mt-2">Xem chi tiết</button>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>

@@ -94,6 +94,14 @@ inputName.addEventListener("keyup", function () {
 //     date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 //   input.value = formattedDate;
 // });
+// var input = document.getElementById("birth");
+// console.log("hehe");
+// input.addEventListener("change", function () {
+//   var date = input.valueAsDate;
+//   var formattedDate =
+//     date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+//   input.value = formattedDate;
+// });
 
 // suggest input school name
 const dataSchoolName = [
