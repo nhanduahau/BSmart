@@ -27,7 +27,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
   <!-- Imoprt owl carousel -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -537,7 +540,8 @@
       <div class="content-2">
         <div class="row">
           <div class="caption_img">
-            <div class="title_img_aboutus">
+            <div class="content_img_aboutus">
+                <span class="content_img_aboutus-text"> là công cụ tích hợp các tính năng kiểm tra, thi cử giúp mentee có thể ôn tập lại kiến thức ngay sau mỗi học phần, giúp củng cố, đánh giá được năng lực tiếp thu của bản thân đồng thời khả năng ghi nhớ lâu dài.</span>
             </div>
             <img class="img-aboutus-3" src="assets\images\WEB_No Text-01.png" alt="img-aboutus"
               style="max-width: 100%; height: auto;">
@@ -562,6 +566,10 @@
       <div class="content-1">
         <div class="row">
           <div class="caption_img1">
+             <div class="content_img_aboutus">
+              <span class="content_img_aboutus-title">Cách vận hành</span>
+              <span class="content_img_aboutus-text">BSmart không ngừng tiếp nhận, nâng cấp, sửa chữa, và thay đổi hệ thống giao diện để nâng cấp trải nghiệm cho người dùng. Chỉ với 15% được trích ra sau mỗi lần giao dịch thành công, BSmart luôn lắng nghe, học hỏi, đổi mới theo mọi hướng tích cực nhất nhằm mang đến nhiều lợi ích cho khách hàng nhất có thể.</span>
+            </div>
             <div class="img_aboutus_3">
               <a href="courses.html"><button class="bt-aboutus_1">ĐĂNG KÝ NGAY!</button></a>
             </div>
@@ -605,42 +613,46 @@
           </div>
         </div>
       </section>
+      <!-- slider logo -->
       <section class="logo-section">
-        <div class="logo-grid">
-          <img src="assets\images\logo ĐẠI HỌC-01.jpg">
-          <img src="assets\images\logo ĐẠI HỌC-02.jpg">
-          <img src="assets\images\logo ĐẠI HỌC-03.jpg">
-          <img src="assets\images\logo ĐẠI HỌC-04.jpg">
-          <img src="assets\images\logo ĐẠI HỌC-05.jpg">
-          <img src="assets\images\logo ĐẠI HỌC-06.jpg">
-          <img src="assets\images\logo ĐẠI HỌC-07.jpg">
-          <img src="assets\images\logo ĐẠI HỌC-01.jpg">
-        </div>
+       <div class="slide-logo">
+         <div class="logo-grid">
+            <div class="prev-btn">
+              <i class="fas fa-chevron-left icon"></i>
+            </div>
+            <div class="logo-grid-item"> 
+              <img src="assets\images\logo ĐẠI HỌC-01.jpg" alt="logo">
+            </div>
+            <div class="logo-grid-item">
+              <img src="assets\images\logo ĐẠI HỌC-02.jpg" alt="logo">
+            </div>
+            <div class="logo-grid-item"> 
+              <img src="assets\images\logo ĐẠI HỌC-03.jpg" alt="logo">
+            </div>
+            <div class="logo-grid-item"> 
+              <img src="assets\images\logo ĐẠI HỌC-04.jpg" alt="logo">
+            </div>
+            <div class="logo-grid-item"> 
+              <img src="assets\images\logo ĐẠI HỌC-05.jpg" alt="logo">
+            </div>
+            <div class="logo-grid-item"> 
+              <img src="assets\images\logo ĐẠI HỌC-06.jpg" alt="logo">
+            </div>
+            <div class="logo-grid-item"> 
+              <img src="assets\images\logo ĐẠI HỌC-07.jpg" alt="logo">
+            </div>
+            <div class="logo-grid-item"> 
+              <img src="assets\images\logo ĐẠI HỌC-01.jpg" alt="logo">
+            </div>
+            <div class="next-btn">
+              <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="navigation-dots"></div>
+          </div>
+       </div>
       </section>
     </section>
-    <style>
-      .logo-section {
-        margin-left: 57px;
-        width: 100%;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .logo-grid {
-        display: grid;
-        gap: 0px;
-      }
-
-      .logo-grid img {
-        width: 87%;
-        height: 100px;
-        object-fit: contain;
-        display: none;
-      }
-    </style>
-
+    
     <br>
     <footer class="footer">
       <div class="container">
