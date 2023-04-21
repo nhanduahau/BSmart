@@ -1749,6 +1749,107 @@ div.swiper-button-prev:after {
   cursor: pointer;
 }
 
+.aboutus2 {
+  background-color: #f5f7fc;
+}
+
+.author-1 {
+  display: flex;
+  align-items: center;
+}
+
+.author-1 img {
+  max-width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-1 .founder {
+  font-weight: 700;
+  display: block;
+  color: #999;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.author-1 strong {
+  font-weight: 700;
+  color: #0e0a38;
+}
+
+.author-1 span {
+  color: #999;
+  margin-right: 5px;
+}
+
+.author-2 {
+  display: flex;
+  align-items: center;
+}
+
+.author-2 img {
+  margin-left: 8px;
+  max-width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-2 .founder {
+  font-weight: 700;
+  display: block;
+  color: #999;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.author-2 strong {
+  font-weight: 700;
+  color: #0e0a38;
+}
+
+.author-2 span {
+  color: #999;
+  /* margin-right: 5px; */
+}
+
+.title-banner-11 {
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.write-11 {
+  font-style: italic;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: gray;
+}
+
+.write-22 {
+  font-style: italic;
+  text-align: right;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: gray;
+}
+
+.title-banner2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  line-height: 40px;
+}
+
 .header-mobile-logo a {
   color: #0e0a38;
 }
@@ -8419,6 +8520,15 @@ input {
 }
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .one-title {
+    margin-top: 20px !important;
+  }
+  .two-title {
+    margin-top: 15px !important;
+  }
+  .write-22 {
+    text-align: right !important;
+  }
   .logo-section {
     width: 95% !important;
   }
@@ -9136,6 +9246,14 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .one-title {
+    margin-top: 20px !important;
+    display: block !important;
+  }
+  .two-title {
+    display: block !important;
+    margin-top: 15px !important;
+  }
   .logo-section {
     width: 100% !important;
     margin-left: 0 !important;
