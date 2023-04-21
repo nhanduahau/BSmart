@@ -1759,39 +1759,6 @@ div.swiper-button-prev:after {
   position: relative;
 }
 
-.author-info {
-  transition: transform 0.5s ease;
-}
-
-.author-img {
-  transition: transform 0.5s ease;
-}
-
-.author-1:hover .author-info {
-  transform: translateY(-10px);
-}
-
-.author-1:hover .author-img {
-  transform: scale(1.1);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.author-img::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.author-1:hover .author-img::after {
-  opacity: 1;
-}
-
 .author-1 img {
   max-width: 60px;
   border-radius: 50%;
@@ -1821,39 +1788,6 @@ div.swiper-button-prev:after {
   align-items: center;
   justify-content: right;
   position: relative;
-}
-
-.author-info {
-  transition: transform 0.5s ease;
-}
-
-.author-img {
-  transition: transform 0.5s ease;
-}
-
-.author-2:hover .author-info {
-  transform: translateY(-10px);
-}
-
-.author-2:hover .author-img {
-  transform: scale(1.1);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.author-img::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.author-2:hover .author-img::after {
-  opacity: 1;
 }
 
 .author-2 img {
@@ -7828,6 +7762,16 @@ input {
 }
 
 @media only screen and (min-width: 1200px) {
+  .two-title:hover .title-aboutus-1,
+  .two-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  .one-title:hover .title-aboutus-1,
+  .one-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
   .logo-section {
     width: 95% !important;
   }
@@ -8016,6 +7960,16 @@ input {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .two-title:hover .title-aboutus-1,
+  .two-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  .one-title:hover .title-aboutus-1,
+  .one-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
   .logo-section {
     width: 95% !important;
   }
@@ -8039,6 +7993,16 @@ input {
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .two-title:hover .title-aboutus-1,
+  .two-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  .one-title:hover .title-aboutus-1,
+  .one-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
   .logo-section {
     width: 95% !important;
   }
@@ -8337,6 +8301,16 @@ input {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .two-title:hover .title-aboutus-1,
+  .two-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  .one-title:hover .title-aboutus-1,
+  .one-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
   .logo-section {
     width: 95% !important;
   }
