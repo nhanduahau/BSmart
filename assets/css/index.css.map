@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 {"version":3,"sources":["../scss/private/reset-password/index.scss","index.css"],"names":[],"mappings":"AAAA;EACI,eAAA;EACA,iBAAA;EACA,cAAA;EACA,gBAAA;ACCJ","file":"index.css"}
-=======
-{"version":3,"sourceRoot":"","sources":["../scss/private/reset-password/index.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA","file":"index.css"}
->>>>>>> 27aeac15bd6c50940a1fbacf3a427488784837e8
