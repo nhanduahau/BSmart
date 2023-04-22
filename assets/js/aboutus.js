@@ -14,11 +14,13 @@ let changeLogo = false;
 for (let i = 0; i < Math.ceil(logos.length / numLogosToShow); i++) {
   const dot = document.createElement("span");
   dot.classList.add("dot");
-  dot.addEventListener("click", () => {
-    showLogo(i * numLogosToShow);
-    const activeDotIndex = Math.floor(currentLogoIndex / numLogosToShow);
-    updateActiveDot(activeDotIndex);
-  });
+  setTimeout(() => {
+    dot.addEventListener("click", () => {
+      showLogo(i * numLogosToShow);
+      const activeDotIndex = Math.floor(currentLogoIndex / numLogosToShow);
+      updateActiveDot(activeDotIndex);
+    });
+  }, 1000);
   dotsContainer.appendChild(dot);
   dots.push(dot);
 }
@@ -29,14 +31,6 @@ logos
 dots[0].classList.add("active");
 
 function showLogo(logoIndex) {
-  // for (let i = 0; i < logos.length; i++) {
-  //   logos[i].style.display = "none";
-  // }
-  // for (let i = logoIndex; i < logoIndex + numLogosToShow; i++) {
-  //   if (logos[i]) {
-  //     logos[i].style.display = "block";
-  //   }
-  // }
   currentLogoIndex = logoIndex;
   for (let i = 0; i < logos.length; i++) {
     logos[i].style.display = "none";
@@ -113,7 +107,9 @@ function getImagesPerSlide() {
 }
 
 // Thực hiện hành động chuyển đổi số lượng logo sau mỗi 5 giây
-setInterval(showNextLogos, 5000);
+if (!changeLogo) {
+  setInterval(showNextLogos, 5000);
+}
 
 // Thay đổi số lượng logo tùy thuộc vào kích thước màn hình
 window.addEventListener("resize", function () {
@@ -148,5 +144,5 @@ window.addEventListener("resize", function () {
 });
 
 // Xử lí arrow navigate
-prevBtn.addEventListener("click", showPrevLogos);
-nextBtn.addEventListener("click", showNextLogos);
+// prevBtn.addEventListener("click", showPrevLogos);
+// nextBtn.addEventListener("click", showNextLogos);

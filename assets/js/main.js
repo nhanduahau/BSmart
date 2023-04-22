@@ -122,19 +122,24 @@ $(document).ready(function () {
   window.onscroll = () => {
     let headerMobile = document.querySelector(".header-mobile");
     let headerBottom = document.querySelector(".header-bottom");
-    let sticky = headerMobile.offsetTop;
-    let stickyHeaderBottom = headerBottom.offsetTop;
+    let headerTop = document.querySelector(".header-top");
+    let stickyHeaderBottom = headerBottom ? headerBottom.offsetTop : "";
+    let sticky = headerMobile ? headerMobile.offsetTop : "";
     if (window.pageYOffset >= sticky) {
-      headerMobile.classList.add("sticky");
+      headerTop.classList.add("hidden");
+      // headerMobile.classList.add("sticky");
     }
     if (window.pageYOffset === 0) {
-      headerMobile.classList.remove("sticky");
+      headerTop.classList.remove("hidden");
+      // headerMobile.classList.remove("sticky");
     }
     if (window.pageYOffset >= stickyHeaderBottom) {
-      headerBottom.classList.add("sticky");
+      headerTop.classList.add("hidden");
+      // headerBottom.classList.add("sticky");
     }
     if (window.pageYOffset === 0) {
-      headerBottom.classList.remove("sticky");
+      headerTop.classList.remove("hidden");
+      // headerBottom.classList.remove("sticky");
     }
   };
 
