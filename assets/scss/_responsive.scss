@@ -6291,3 +6291,12 @@
     margin-left: 10px;
   }
 }
+
+
+@media screen and (min-width: 1465px) {
+ //  text in aboutus
+ .caption_img .content_img_aboutus {
+  width: 24% !important;
+  left: 23% !important;
+}
+}
