@@ -56,12 +56,36 @@
     <div class="container-fluid">
       <div class="sidebar-content">
         <div class="sidebar-top">
-          <a href="./index.html" class="sidebar-logo">
-            <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
-          </a>
+          <div class="header-log-reg d-flex justify-content-end"
+            style="margin-left: 8px !important; margin-top: 10px !important;">
+            <a href="#">
+              <img src="/assets/images/avatar-mentor-3.jpg" alt="hinh anh" class="avatar" />
+              <span class="name">Đỗ Minh Quân</span>
+            </a>
+            <style>
+              .avatar {
+                float: left;
+                margin-right: 10px;
+              }
+
+              .name {
+                font-size: 14px;
+                color: gray;
+                float: left;
+                line-height: 45px;
+              }
+            </style>
+          </div>
+
           <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
         </div>
-        <div class="sidebar-center">
+        <div class="header-cart">
+          <a href="payment.html">
+            <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
+            <span class="cart-total-number">0</span>
+          </a>
+        </div>
+        <div class="sidebar-center" style="padding-top: 0 !important;">
           <ul class="sidebar-mean-nav">
             <li><a href="./index.html">Trang chủ</a></li>
             <li><a href="./aboutus.html">Về chúng tôi</a></li>
@@ -80,17 +104,32 @@
             <li>
               <a href="mentor-list.html">Mentor</a>
               <!-- <div class="d-flex align-items-center justify-content-end">
-                  <ul class="sub-menu">
-                    <li><a href="view-mentor-profile.html">Mentor Long</a></li>
-                    <li><a href="view-mentor-profile.html">Mentor Cuong</a></li>
-                  </ul>
-                </div>
+                <ul class="sub-menu">
+                  <li><a href="view-mentor-profile.html">Mentor Long</a></li>
+                  <li><a href="view-mentor-profile.html">Mentor Cuong</a></li>
+                </ul>
+              </div>
 
-                <a class="mean-expand" href="#">+</a>
-                <a class="mean-non-expand" href="#">-</a> -->
+              <a class="mean-expand" href="#">+</a>
+              <a class="mean-non-expand" href="#">-</a> -->
             </li>
             <li><a href="./lms.html">Nền tảng LMS</a></li>
             <li><a href="./blog.html">Blog</a></li>
+            <li>
+              <a href="#">Tuyển dụng</a>
+              <div class="d-flex align-items-center justify-content-end">
+                <ul class="sub-menu">
+                  <li>
+                    <a class="first-subclass" href="register-collaborator.html">Đăng ký cộng tác viên</a>
+                  </li>
+                  <li><a class="first-subclass" href="register.html">Đăng ký mentor</a>
+                  </li>
+                 
+                </ul>
+              </div>
+              <a class="mean-expand" href="#">+</a>
+              <a class="mean-non-expand" href="#">-</a>
+            </li>
           </ul>
         </div>
         <div class="sidebar-bottom">
@@ -113,15 +152,15 @@
             <li class="mb-3">
               <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail"> admin@bsmart.edu.vn
             </li>
-            <li><img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"> 028 9999 79 39</li>
+            <li><img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 028 9999 79 39</li>
           </ul>
           <ul class="social-list">
             <li>
               <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
             </li>
             <!-- <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li> -->
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li> -->
             <li>
               <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
                   class="fa fa-linkedin"></i></a>
@@ -132,14 +171,14 @@
                   class="fa fa-youtube-play"></i></a>
             </li>
             <!-- <li>
-                <a href="index.html"><i class="fa fa-dribbble"></i></a>
-              </li> -->
+              <a href="index.html"><i class="fa fa-dribbble"></i></a>
+            </li> -->
           </ul>
-          <ul class="sidebar-controls">
-            <li><a href="./login.html">Login</a></li>
-            <li><small>|</small></li>
-            <li><a href="./register.html">Register</a></li>
-          </ul>
+          <!-- <ul class="sidebar-controls">
+              <li><a href="./login.html">Login</a></li>
+              <li><small>|</small></li>
+              <li><a href="./register.html">Register</a></li>
+            </ul> -->
         </div>
       </div>
     </div>
@@ -404,12 +443,12 @@
                   </span></a>
               </span></div>
             <!-- Cart -->
-            <div class="header-cart">
+            <!-- <div class="header-cart">
               <a href="payment.html">
                 <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
                 <span class="cart-total-number">0</span>
               </a>
-            </div>
+            </div> -->
             <!-- Cart -->
             <div class="header-mobile-menu-hambuger" id="activeMenu">
               <i class="fa fa-bars"></i>
