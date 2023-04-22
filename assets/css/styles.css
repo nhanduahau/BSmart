@@ -1892,6 +1892,110 @@ div.swiper-button-prev:after {
   display: block;
 }
 
+.aboutus2 {
+  background-color: #f5f7fc;
+}
+
+.author-1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.author-1 img {
+  max-width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-1 .founder {
+  font-weight: 700;
+  display: block;
+  color: #999;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.author-1 strong {
+  font-weight: 700;
+  color: #0e0a38;
+}
+
+.author-1 span {
+  color: #999;
+  margin-right: 5px;
+}
+
+.author-2 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+}
+
+.author-2 img {
+  margin-left: 8px;
+  max-width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-2 .founder {
+  font-weight: 700;
+  display: block;
+  color: #999;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.author-2 strong {
+  font-weight: 700;
+  color: #0e0a38;
+}
+
+.author-2 span {
+  color: #999;
+  /* margin-right: 5px; */
+}
+
+.title-banner-11 {
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.write-11 {
+  font-style: italic;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: gray;
+}
+
+.write-22 {
+  font-style: italic;
+  text-align: right;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: gray;
+}
+
+.title-banner2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  line-height: 40px;
+}
+
 .header-mobile-logo a {
   color: #0e0a38;
 }
@@ -7814,6 +7918,16 @@ input {
     top: 86% !important;
     right: 3% !important;
   }
+  .two-title:hover .title-aboutus-1,
+  .two-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  .one-title:hover .title-aboutus-1,
+  .one-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
   .logo-section {
     width: 85% !important;
   }
@@ -8011,6 +8125,16 @@ input {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .two-title:hover .title-aboutus-1,
+  .two-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  .one-title:hover .title-aboutus-1,
+  .one-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
   .logo-section {
     width: 95%;
   }
@@ -9190,6 +9314,16 @@ input {
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .two-title:hover .title-aboutus-1,
+  .two-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  .one-title:hover .title-aboutus-1,
+  .one-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
   .logo-section {
     width: 95%;
   }
@@ -9488,6 +9622,16 @@ input {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .two-title:hover .title-aboutus-1,
+  .two-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  .one-title:hover .title-aboutus-1,
+  .one-title:hover .avata-founder {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
   .logo-section {
     width: 89%;
   }
@@ -9775,6 +9919,15 @@ input {
   .img_aboutus_3 button {
     padding: 5px 18px;
     font-size: 12px;
+  }
+  .one-title {
+    margin-top: 20px !important;
+  }
+  .two-title {
+    margin-top: 15px !important;
+  }
+  .write-22 {
+    text-align: right !important;
   }
   .logo-section {
     width: 89%;
@@ -10499,6 +10652,14 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) and (min-width: 390px) {
+  .one-title {
+    margin-top: 20px !important;
+    display: block !important;
+  }
+  .two-title {
+    display: block !important;
+    margin-top: 15px !important;
+  }
   .regis-collab-area .container {
     max-width: 100%;
   }
