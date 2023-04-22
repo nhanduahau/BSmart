@@ -8,7 +8,6 @@
   z-index: -2;
 }
 
-
 .aboutus-wrapper .banner__aboutus h2 {
   color: #ff630e;
   line-height: 30px;
@@ -372,7 +371,6 @@
   right: 80px !important;
   top: 1px !important;
 }
-
 .title-banner1 {
   display: flex;
   font-weight: 700;
@@ -381,14 +379,13 @@
   line-height: 40px;
 }
 
-.write-1 {
+.write-1  {
   text-align: right;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing:  1px;
   line-height: 25px;
   color: gray;
 }
-
 .aboutus1 {
   padding: 30px 0 150px;
   background-repeat: no-repeat;
@@ -397,7 +394,6 @@
   background-attachment: fixed;
   position: relative;
 }
-
 .img-1 {
   // margin-left: 70px;
   margin-top: 50px;
@@ -407,7 +403,7 @@
   object-fit: cover;
 }
 
-.img-2 {
+.img-2  {
   height: 300px;
 }
 
@@ -464,8 +460,9 @@
 .my-element {
   // margin-right: 120px;
   // display: flex;
-  // justify-content: center; 
+  // justify-content: center;
   height: 100%;
+
 
   // align-items: center;
   // box-sizing: border-box;
@@ -498,7 +495,6 @@
   width: 100%;
   object-fit: cover;
 }
-
 .img_title_1 {
   display: flex;
   margin-bottom: 100vh;
@@ -527,28 +523,59 @@
 
 .title_img_aboutus {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top:0;
+  bottom: 0 ;
   left: 20%;
   right: 0;
-  text-align: center;
   margin: 0 auto;
   display: grid;
   justify-content: center;
   align-content: center;
-  width: 20%;
-  text-align: justify;
+  text-align: inherit;
+}
+.caption_img .content_img_aboutus {
+  width: 17%;
+  left: 10%;
+}
+.caption_img {
+  position: relative;
 }
 
-.title_img_aboutus-text {
+.caption_img .content_img_aboutus-text::before {
+  content: "LMS";
+  font-size: 28px;
+  color: #ff630e;
+  font-weight: 600;
+}
+
+.caption_img .content_img_aboutus-text {
   line-height: 25px;
   color: #ff630e;
-  font-size: 25px;
+  font-size: 22px;
+  cursor: context-menu;
   // margin-right: -100px;
 }
 
-.caption_img1 {
+.caption_img1  {
   position: relative;
+}
+
+.caption_img1 .content_img_aboutus {
+  width: 31%;
+  right: 12%;
+  cursor: context-menu;
+}
+
+.caption_img1 .content_img_aboutus-title {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.caption_img1 .content_img_aboutus-text {
+  font-size: 25px;
+  margin-top: 22px;
+  line-height: 30px;
 }
 
 .img_aboutus_3 {
@@ -564,6 +591,10 @@
   align-content: center;
   width: 20%;
   text-align: justify;
+}
+
+.img_aboutus_3 a:hover {
+  text-decoration: none;
 }
 
 .bt-aboutus_1 {
@@ -804,4 +835,104 @@
   font-size: 35px;
   text-align: center;
   line-height: 40px;
+}
+
+
+// slider logo
+.logo-slide-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo-section {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-section .slide-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-grid {
+  position: relative;
+  display: grid;
+  gap: 0px;
+}
+.logo-grid .logo-grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-grid-item img {
+  width: 87%;
+  height: 100px;
+  object-fit: contain;
+  display: none;
+}
+
+.logo-grid .prev-btn,
+.logo-grid .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #999b9d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.logo-grid .prev-btn:hover,
+.logo-grid .next-btn:hover {
+  color: #ff630e;
+}
+
+.logo-grid .prev-btn {
+  left: -30px;
+}
+.logo-grid .next-btn {
+  right: -30px;
+}
+
+.prev-btn .icon {
+  margin-right: 4px;
+}
+
+.logo-grid .navigation-dots {
+  display: flex;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navigation-dots .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.navigation-dots .active {
+  background-color: black;
+}
+
+.logo-grid-item .active-slide {
+  display: block;
 }
