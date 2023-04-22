@@ -1958,7 +1958,7 @@ div.swiper-button-prev:after {
      object-fit: contain;
   display: none;
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
