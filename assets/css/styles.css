@@ -7933,12 +7933,6 @@ input {
   .logo-section .logo-grid .logo-grid-item .active-slide {
     display: flex;
   }
-  .logo-section {
-    width: 95%;
-  }
-  .logo-section .logo-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
   .section-heading-course-title-mobile {
     margin-top: 20px;
   }
@@ -8125,7 +8119,7 @@ input {
     grid-template-columns: repeat(4, 1fr);
   }
   .logo-section .logo-grid img:nth-child(-n+4) {
-    display: block;
+    display: none;
   }
   #content-privacy {
     padding-top: 0px !important;
@@ -8206,10 +8200,10 @@ input {
     width: 88%;
   }
   .logo-section .logo-grid img:nth-child(-n+4) {
-    display: none !important;
+    display: none;
   }
   .logo-section .logo-grid .logo-grid-item .active-slide {
-    display: flex !important;
+    display: flex;
   }
 }
 @media only screen and (max-width: 390px) {
@@ -9304,13 +9298,13 @@ input {
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .logo-section {
-    width: 95%;
+    width: 88%;
   }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
   .logo-section .logo-grid img:nth-child(-n+4) {
-    display: block;
+    display: none;
   }
   .member-detail-wrapper .content-info-mentor .member-info .member-img {
     background-image: url(/assets/images/overlay-bg.jpg);
@@ -9608,7 +9602,7 @@ input {
     grid-template-columns: repeat(4, 1fr);
   }
   .logo-section .logo-grid img:nth-child(-n+4) {
-    display: block;
+    display: none;
   }
   .autocom-box-search {
     display: none !important;

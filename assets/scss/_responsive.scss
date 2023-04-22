@@ -34,13 +34,6 @@
   .logo-section .logo-grid .logo-grid-item .active-slide {
     display: flex;
   }
-  //logo-khách hàng
-  .logo-section {
-    width: 95%;
-  }
-  .logo-section .logo-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
 
   .section-heading-course-title-mobile {
     margin-top: 20px;
@@ -291,8 +284,9 @@
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+
   .logo-section .logo-grid img:nth-child(-n + 4) {
-    display: block;
+    display: none;
   }
   //fix responsive
   #content-privacy {
@@ -403,10 +397,10 @@
     width: 88%;
   }
   .logo-section .logo-grid img:nth-child(-n + 4) {
-    display: none !important;
+    display: none;
   }
   .logo-section .logo-grid .logo-grid-item .active-slide {
-    display: flex !important;
+    display: flex;
   }
 }
 // @media only screen and (min-width: 768px) {
@@ -1854,13 +1848,13 @@
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   //logo-khách hàng
   .logo-section {
-    width: 95%;
+    width: 88%;
   }
   .logo-section .logo-grid {
     grid-template-columns: repeat(4, 1fr);
   }
   .logo-section .logo-grid img:nth-child(-n + 4) {
-    display: block;
+    display: none;
   }
   // member-profile
   .member-detail-wrapper .content-info-mentor .member-info .member-img {
@@ -2228,7 +2222,7 @@
     grid-template-columns: repeat(4, 1fr);
   }
   .logo-section .logo-grid img:nth-child(-n + 4) {
-    display: block;
+    display: none;
   }
   .autocom-box-search {
     display: none !important;
