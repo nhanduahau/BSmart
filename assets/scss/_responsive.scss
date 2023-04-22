@@ -1,10 +1,5 @@
 @media only screen and (min-width: 1200px) {
   //  text in aboutus
-  .caption_img .content_img_aboutus {
-    width: 26%;
-    left: 24%;
-  }
-
   .caption_img1 .content_img_aboutus {
     width: 40%;
     right: 5%;
@@ -303,6 +298,12 @@
   }
 }
 
+@media only screen and (min-width: 1466px) {
+  .caption_img .content_img_aboutus {
+    width: 26% !important;
+    left: 24% !important;
+  }
+}
 // @media only screen and (min-width: 992px) {
 //   //  text in aboutus
 //   .caption_img .content_img_aboutus {
@@ -324,8 +325,8 @@
 @media only screen and (min-width: 1216px) and (max-width: 1465px) {
   //  text in aboutus
   .caption_img .content_img_aboutus {
-    width: 24%;
-    left: 23%;
+    width: 24% !important;
+    left: 23% !important;
   }
 
   .caption_img .content_img_aboutus-text::before {
@@ -354,8 +355,8 @@
 @media only screen and (min-width: 981px) and (max-width: 1215px) {
   //  text in aboutus
   .caption_img .content_img_aboutus {
-    width: 26%;
-    left: 24%;
+    width: 26% !important;
+    left: 24% !important;
   }
 
   .caption_img .content_img_aboutus-text::before {
@@ -451,17 +452,16 @@
     width: 100% !important;
   }
   //  text in aboutus
-  //  text in aboutus
   .caption_img .content_img_aboutus {
-    width: 38%;
-    left: 42%;
+    width: 38% !important;
+    left: 42% !important;
   }
   .caption_img .content_img_aboutus-text::before {
-    font-size: 14px;
+    font-size: 12px;
   }
   .caption_img .content_img_aboutus-text {
-    font-size: 10px;
-    line-height: 17px;
+    font-size: 8px;
+    line-height: 15px;
   }
   .caption_img1 .content_img_aboutus {
     width: 50%;
@@ -2565,8 +2565,8 @@
   }
   //  text in aboutus
   .caption_img .content_img_aboutus {
-    width: 26%;
-    left: 24%;
+    width: 26% !important;
+    left: 24% !important;
   }
 
   .caption_img .content_img_aboutus-text::before {
@@ -3494,8 +3494,8 @@
   }
   //  text in aboutus
   .caption_img .content_img_aboutus {
-    width: 38%;
-    left: 42%;
+    width: 38% !important;
+    left: 42% !important;
   }
 
   .caption_img .content_img_aboutus-text::before {

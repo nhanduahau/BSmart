@@ -1707,8 +1707,8 @@ div.swiper-button-prev:after {
 }
 
 .caption_img .content_img_aboutus {
-  width: 17%;
-  left: 10%;
+  width: 17% !important;
+  left: 10% !important;
 }
 
 .caption_img {
@@ -7801,10 +7801,6 @@ input {
 }
 
 @media only screen and (min-width: 1200px) {
-  .caption_img .content_img_aboutus {
-    width: 26%;
-    left: 24%;
-  }
   .caption_img1 .content_img_aboutus {
     width: 40%;
     right: 5%;
@@ -8032,10 +8028,16 @@ input {
     background-color: white !important;
   }
 }
+@media only screen and (min-width: 1466px) {
+  .caption_img .content_img_aboutus {
+    width: 26% !important;
+    left: 24% !important;
+  }
+}
 @media only screen and (min-width: 1216px) and (max-width: 1465px) {
   .caption_img .content_img_aboutus {
-    width: 24%;
-    left: 23%;
+    width: 24% !important;
+    left: 23% !important;
   }
   .caption_img .content_img_aboutus-text::before {
     font-size: 26px;
@@ -8060,8 +8062,8 @@ input {
 }
 @media only screen and (min-width: 981px) and (max-width: 1215px) {
   .caption_img .content_img_aboutus {
-    width: 26%;
-    left: 24%;
+    width: 26% !important;
+    left: 24% !important;
   }
   .caption_img .content_img_aboutus-text::before {
     font-size: 24px;
@@ -8107,15 +8109,15 @@ input {
     width: 100% !important;
   }
   .caption_img .content_img_aboutus {
-    width: 38%;
-    left: 42%;
+    width: 38% !important;
+    left: 42% !important;
   }
   .caption_img .content_img_aboutus-text::before {
-    font-size: 14px;
+    font-size: 12px;
   }
   .caption_img .content_img_aboutus-text {
-    font-size: 10px;
-    line-height: 17px;
+    font-size: 8px;
+    line-height: 15px;
   }
   .caption_img1 .content_img_aboutus {
     width: 50%;
@@ -9747,8 +9749,8 @@ input {
     width: 70%;
   }
   .caption_img .content_img_aboutus {
-    width: 26%;
-    left: 24%;
+    width: 26% !important;
+    left: 24% !important;
   }
   .caption_img .content_img_aboutus-text::before {
     font-size: 18px;
@@ -10506,8 +10508,8 @@ input {
     width: 100% !important;
   }
   .caption_img .content_img_aboutus {
-    width: 38%;
-    left: 42%;
+    width: 38% !important;
+    left: 42% !important;
   }
   .caption_img .content_img_aboutus-text::before {
     font-size: 14px;
