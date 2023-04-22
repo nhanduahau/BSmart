@@ -1,6 +1,7 @@
 const logos = Array.from(
   document.querySelectorAll(".slide-logo .logo-grid .logo-grid-item img")
 );
+const logoContainer = document.querySelector(".slide-logo .logo-grid");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const dotsContainer = document.querySelector(".navigation-dots");
@@ -32,6 +33,10 @@ dots[0].classList.add("active");
 
 function showLogo(logoIndex) {
   currentLogoIndex = logoIndex;
+  logoContainer.style.transition = "transform 1.5s ease-in-out";
+  // logoContainer.style.transform = `translateX(-${
+  //   logoIndex * numLogosToShow
+  // }px)`;
   for (let i = 0; i < logos.length; i++) {
     logos[i].style.display = "none";
   }
@@ -40,14 +45,10 @@ function showLogo(logoIndex) {
       logos[i].style.display = "block";
     }
   }
-  // ẩn các hình
+  // ẩn các hình trong 1 trang slide
   logos.forEach((image) => image.classList.remove("active-slide"));
-  // hiển thị hình cho trang được chỉ định
-  const startLogoIndex = logoIndex * numLogosToShow;
-  const endLogoIndex = startLogoIndex + numLogosToShow;
-  logos
-    .slice(startLogoIndex, endLogoIndex)
-    .forEach((image) => image.classList.add("active-slide"));
+  // hiển thị hình trong 1 trang slide
+  logos.forEach((image) => image.classList.add("active-slide"));
   updateActiveDot(logoIndex);
 }
 //cập nhật active dot
@@ -92,25 +93,18 @@ function showPrevLogos() {
     }, 1000); //sau 1s cho phép click lại để set false -> true
   }
 }
-
 // Hiển thị số lượng logo đầu tiên tùy thuộc vào màn hình
 function getImagesPerSlide() {
   if (window.innerWidth >= 767) {
     return 4;
-    // numLogosToShow = 4;
-    // showNextLogos();
   } else {
     return 1;
-    // numLogosToShow = 1;
-    // showNextLogos();
   }
 }
-
 // Thực hiện hành động chuyển đổi số lượng logo sau mỗi 5 giây
 if (!changeLogo) {
   setInterval(showNextLogos, 5000);
 }
-
 // Thay đổi số lượng logo tùy thuộc vào kích thước màn hình
 window.addEventListener("resize", function () {
   if (window.innerWidth >= 767) {
