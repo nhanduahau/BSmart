@@ -213,6 +213,7 @@
         display: block;
       }
       .sub-menu {
+        padding: 3px 0px !important;
         visibility: visible;
         opacity: 1;
       }
@@ -267,6 +268,7 @@
       border-top: 2px solid $secondary-color;
       transition: 0.3s;
       visibility: hidden;
+      padding: 3px 0px !important;
       opacity: 0;
       li {
         border-bottom: 1px solid $grey-white-color;
@@ -300,6 +302,7 @@
   right: 0;
   left: 90%;
   max-width: 225px;
+  padding: 3px 0px !important;
 }
 
 .navbar {
