@@ -1591,7 +1591,7 @@ div.swiper-button-prev:after {
 }
 
 .aboutus1 {
-  padding: 30px 0 150px;
+  padding: 30px 0 50px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7931,6 +7931,9 @@ input {
 }
 
 @media only screen and (min-width: 1200px) {
+  .aboutus2 {
+    height: 340px !important;
+  }
   .img_aboutus_3 {
     top: 86% !important;
     right: 3% !important;
@@ -9313,6 +9316,9 @@ input {
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .aboutus2 {
+    height: 355px !important;
+  }
   .logo-section {
     width: 88%;
   }
@@ -9863,6 +9869,9 @@ input {
 }
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  .caption_img .content_img_aboutus-text {
+    font-weight: 420 !important;
+  }
   .regis-collab-area .container {
     max-width: 720px;
   }
@@ -10892,7 +10901,7 @@ input {
     margin-top: 10px !important;
   }
   .aboutus1 {
-    padding: 30px 0 55px !important;
+    padding: 30px 0 20px !important;
   }
   .bt-aboutus_1 {
     margin-top: 170px !important;
