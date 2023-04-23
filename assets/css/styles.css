@@ -1102,7 +1102,7 @@ div.swiper-button-prev:after {
 }
 
 .advantages-2 {
-  padding: 95px 0 80px;
+  padding: 95px 0 150px;
   background-image: url(https://cybersoft.edu.vn/wp-content/uploads/2020/04/funfact_bg.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1928,7 +1928,6 @@ div.swiper-button-prev:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transition 2.5s ease-in-out;
 }
 
 .logo-section .slide-logo {
@@ -1937,7 +1936,6 @@ div.swiper-button-prev:after {
   justify-content: center;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .logo-grid {
@@ -1950,6 +1948,7 @@ div.swiper-button-prev:after {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .logo-grid-item img {
@@ -1958,6 +1957,9 @@ div.swiper-button-prev:after {
   -o-object-fit: contain;
      object-fit: contain;
   display: none;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .logo-grid .prev-btn,
@@ -2017,11 +2019,12 @@ div.swiper-button-prev:after {
 
 .logo-grid-item .active-slide {
   display: block;
+  transition: transition 0.5s ease-in-out;
 }
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.6;
   }
   to {
     opacity: 1;
