@@ -1675,7 +1675,6 @@ div.swiper-button-prev:after {
 }
 
 .information {
-  padding-top: 50px;
   text-align: center;
 }
 
@@ -1923,9 +1922,10 @@ div.swiper-button-prev:after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 50px 0px;
 }
 
-.logo-section {
+.logo-slide-1 .logo-section {
   width: 100%;
   height: 200px;
   display: flex;
@@ -1933,80 +1933,43 @@ div.swiper-button-prev:after {
   align-items: center;
 }
 
-.logo-section .slide-logo {
+.logo-slide-1 .logo-section .logo-slide {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
-.logo-grid {
-  position: relative;
-  display: grid;
-  gap: 0px;
-}
-
-.logo-grid .logo-grid-item {
+.swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
-.logo-grid-item img {
-  width: 87%;
+.swiper-slide img {
+  width: 75%;
   height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
-  display: none;
-  animation-name: fade;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  border: none;
+  margin-top: 0px;
+  border-radius: 0px;
 }
 
-.logo-grid .prev-btn,
-.logo-grid .next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  color: #999b9d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.logo-grid .prev-btn:hover,
-.logo-grid .next-btn:hover {
-  color: #ff630e;
-}
-
-.logo-grid .prev-btn {
-  left: -30px;
-}
-
-.logo-grid .next-btn {
-  right: -30px;
-}
-
-.prev-btn .icon {
-  margin-right: 4px;
-}
-
-.logo-grid .navigation-dots {
+.swiper-pagination.navigation-dots {
   display: flex;
   position: absolute;
-  bottom: -30px;
   right: 0;
+  bottom: 0;
   left: 0;
   justify-content: center;
   margin-top: 20px;
 }
 
-.navigation-dots .dot {
+.navigation-dots .swiper-pagination-bullet {
   display: inline-block;
   width: 8px;
   height: 8px;
@@ -2016,23 +1979,10 @@ div.swiper-button-prev:after {
   cursor: pointer;
 }
 
-.navigation-dots .active {
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: black;
 }
 
-.logo-grid-item .active-slide {
-  display: block;
-  transition: transition 0.5s ease-in-out;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.6;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .header-mobile-logo a {
   color: #0e0a38;
 }
@@ -7960,10 +7910,7 @@ input {
     transition: transform 0.3s ease;
   }
   .logo-section {
-    width: 85% !important;
-  }
-  .logo-section .logo-grid {
-    grid-template-columns: repeat(4, 1fr);
+    width: 65% !important;
   }
   .logo-section .logo-grid img:nth-child(-n+4) {
     display: none;

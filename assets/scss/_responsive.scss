@@ -1,6 +1,5 @@
 @media only screen and (min-width: 1200px) {
-
-  .aboutus2{
+  .aboutus2 {
     height: 340px !important;
   }
   //  text in aboutus
@@ -27,10 +26,10 @@
 
   //logo-khách hàng
   .logo-section {
-    width: 85% !important;
+    width: 65% !important;
   }
   .logo-section .logo-grid {
-    grid-template-columns: repeat(4, 1fr);
+    // grid-template-columns: repeat(4, 1fr);
   }
   .logo-section .logo-grid img:nth-child(-n + 4) {
     display: none;
@@ -1850,9 +1849,8 @@
 
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-
   //aboutus
-  .aboutus2{
+  .aboutus2 {
     height: 355px !important;
   }
   //logo-khách hàng
@@ -2570,7 +2568,7 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
-  .caption_img .content_img_aboutus-text{
+  .caption_img .content_img_aboutus-text {
     font-weight: 420 !important;
   }
   // đăng ký CTV
@@ -6304,18 +6302,17 @@
   }
 }
 
-
 @media screen and (min-width: 1465px) {
- //  text in aboutus
- .caption_img .content_img_aboutus {
-  width: 24% !important;
-  left: 23% !important;
-}
+  //  text in aboutus
+  .caption_img .content_img_aboutus {
+    width: 24% !important;
+    left: 23% !important;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   //  text in aboutus
-  .author-2{
+  .author-2 {
     top: 24px !important;
   }
- }
+}
