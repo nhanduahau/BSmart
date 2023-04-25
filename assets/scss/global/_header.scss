@@ -1,19 +1,14 @@
-.aboutus-wrapper {
-  position: relative;
-  // transition: opacity 0.3s ease-in-out;
-  // opacity: 1;
-}
 .header-top {
+  height: 70px;
   background-color: $primary-color;
   overflow: hidden;
   padding: 15px 0;
   opacity: 1;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 .header-top.hidden {
-  // display: none;
   opacity: 0;
-  // transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 .header-top-wrapper {
   display: -webkit-box;
