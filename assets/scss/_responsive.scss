@@ -454,6 +454,22 @@
 //   }
 // }
 @media only screen and (max-width: 390px) {
+  //blog-detail
+
+
+  //aboutus
+  .one-title{
+    display: block !important;
+  }
+  .two-title{
+    display: block !important;
+  }
+  .blog-detail-wrapper .omexo-post-btn {
+    margin: 30px 0 30px;
+    overflow: hidden;
+}
+
+
   // đăng ký CTV
   .regis-collab-area .container {
     max-width: 100%;
@@ -2570,6 +2586,11 @@
 
 /* Tablet */
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+  //blog
+  .blog-wrapper .blog-area .all-posts-wrap {
+   padding-right: 0 !important;
+}
+
   .caption_img .content_img_aboutus-text{
     font-weight: 420 !important;
   }
@@ -2599,7 +2620,7 @@
   }
 
   .caption_img1 .content_img_aboutus-text {
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 6px;
     line-height: 25px;
   }
@@ -3514,6 +3535,21 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) and (min-width: 390px) {
+  .blog-detail-wrapper .all-posts-wrap {
+    padding-right: 0 !important;
+}
+.blog-sidebar{
+  margin-top: 23px !important;
+}
+.blog-detail-wrapper .blog-post-thumb.two {
+  margin: 0 5px 0 0;
+}
+.img-fluid {
+  max-width: 97%;
+  height: auto;
+}
+
+
   // đăng ký CTV
   .regis-collab-area .container {
     max-width: 100%;
@@ -6319,3 +6355,122 @@
     top: 24px !important;
   }
  }
+
+ @media screen and (min-width: 767px) and (max-width: 900px) {
+  //  text in aboutus
+  .caption_img .content_img_aboutus-text {
+    font-size: 10px;
+    line-height: 20px;
+}
+.caption_img1 .content_img_aboutus-text {
+  font-size: 10px;
+  margin-top: 6px;
+  line-height: 20px;
+}
+.caption_img1 .content_img_aboutus-title {
+  font-size: 28px;
+}
+ }
+
+ @media screen and (max-width: 367px) {
+  //  text in aboutus
+  .caption_img .content_img_aboutus-text {
+    font-size: 7px;
+    line-height: 14px;
+    font-weight: 400;
+}
+.caption_img1 .content_img_aboutus-text {
+  font-size: 7px;
+  line-height: 15px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+.img_aboutus_3 button {
+  padding: 0px 3px;
+  font-size: 6px;
+}
+.img_aboutus_3{
+  top: 5px !important;
+}
+ }
+
+ @media screen and (max-width: 280px) {
+  //blog-detail
+  .blog-detail-wrapper .omexo-post-btn {
+    display: flex;
+    margin: 30px 26px 0;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+  .search-form{
+    top: 20px;
+  }
+  .blog-detail-wrapper .blog-post-thumb.two {
+    margin: 0 5px 0 0;
+}
+.blog-detail-wrapper .omexo-post-btn a {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 26px;
+  letter-spacing: 1px;
+  background-color: #ff630e;
+  border-radius: 4px;
+  padding: 14px 30px;
+  margin-left: 0;
+  color: #fff;
+  display: inline-block;
+}
+  //  text in aboutus
+  .caption_img .content_img_aboutus-text {
+    font-size: 7px;
+    line-height: 14px;
+    font-weight: 400;
+}
+.caption_img1 .content_img_aboutus-text {
+  font-size: 6px;
+  line-height: 13px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+.img_aboutus_3 button {
+  padding: 0px 2px;
+  font-size: 5px;
+}
+.img_aboutus_3{
+  top: -7px !important;
+}
+.caption_img1 .content_img_aboutus-title {
+  font-size: 17px;
+  font-weight: 700;
+}
+ }
+
+ @media only screen and (max-width: 767px){
+    .cmm-1{
+      max-width: 98% !important;
+    }
+    .blog-detail-wrapper .all-posts-wrap {
+      padding-right: 0 !important;
+  }
+  .blog-detail-wrapper .blog-area.two {
+    padding: 45px 0;
+}
+ }
+
+ @media only screen and (min-width: 280px) and (max-width: 390px){
+  .blog-detail-wrapper .omexo-post-btn a {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 26px;
+    letter-spacing: 1px;
+    background-color: #ff630e;
+    border-radius: 4px;
+    padding: 14px 30px;
+    margin-left: 4rem;
+    color: #fff;
+    display: inline-block;
+}
+}
