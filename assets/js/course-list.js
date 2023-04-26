@@ -25,8 +25,9 @@ var slider = document.querySelector(".slider-range");
 var value = document.querySelector("#slider-value");
 
 slider.oninput = function() {
-  var formattedValue = numberWithCommas(this.value) + " VND";
-  value.textContent = "Tối đa: " + formattedValue;
+  var maxFormattedValue = numberWithCommas(this.max) + " VND";
+  var formattedValue = "Từ " + numberWithCommas(this.min) + " VND đến " + numberWithCommas(this.value) + " VND";
+  value.textContent = formattedValue;
 }
 
 function numberWithCommas(x) {
