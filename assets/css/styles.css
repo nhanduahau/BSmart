@@ -541,6 +541,9 @@ div.swiper-button-prev:after {
   padding: 10px 20px 10px 10px;
   border-bottom: 1px solid #f5f5f5;
 }
+.navbar-nav li > ul > li:last-child {
+  border-bottom: none;
+}
 .navbar-nav li:hover .first-subclass {
   color: #ff630e;
 }
@@ -588,6 +591,9 @@ div.swiper-button-prev:after {
 .navbar-nav li .sub-nav li a {
   font-weight: 400 !important;
 }
+.navbar-nav li .sub-nav li:last-child {
+  border-bottom: none;
+}
 .navbar-nav li .sub-menu {
   position: absolute;
   top: 35px;
@@ -616,6 +622,9 @@ div.swiper-button-prev:after {
 }
 .navbar-nav li .sub-menu li:hover .first-subclass {
   color: #ff630e;
+}
+.navbar-nav li .sub-menu li:last-child {
+  border-bottom: none;
 }
 .navbar-nav li .second-menu li:hover .second-subclass {
   color: #ff630e;

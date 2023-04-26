@@ -199,6 +199,9 @@
         padding: 10px 20px 10px 10px;
         border-bottom: 1px solid $grey-white-color;
       }
+      & > li:last-child {
+        border-bottom: none;
+      }
     }
     &:hover {
       .first-subclass {
@@ -250,6 +253,9 @@
           font-weight: 400 !important;
         }
       }
+      li:last-child {
+        border-bottom: none;
+      }
     }
     .sub-menu {
       position: absolute;
@@ -281,6 +287,9 @@
             color: $secondary-color;
           }
         }
+      }
+      li:last-child {
+        border-bottom: none;
       }
     }
     .second-menu {
