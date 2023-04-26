@@ -155,7 +155,7 @@
                     <li>
                       <a class="first-subclass" href="register-collaborator.html">Đăng ký cộng tác viên</a>
                     </li>
-                    <li><a class="first-subclass" href="register.html" onclick="openTabRegister('mentorRegisterForm', event)" data-tab="mentor">Đăng ký mentor</a>
+                    <li><a class="first-subclass" href="register.html" >Đăng ký mentor</a>
                     </li>
                    
                   </ul>
@@ -454,7 +454,7 @@
                             <a class="first-subclass" href="register-collaborator.html">Đăng ký cộng tác viên</a>
                           </li>
                           <li>
-                            <a id="register-mentor" class="first-subclass" href="register.html" onclick="openTabRegister('mentorRegisterForm', event)" data-tab="mentor">Đăng ký mentor</a>
+                            <a id="register-mentor" class="first-subclass" href="register.html" >Đăng ký mentor</a>
                           </li>
                         </ul>
                       </li>
@@ -504,7 +504,7 @@
                   <div
                     class="tab-item active"
                     onclick="openTabRegister('studentRegisterForm')"
-                    id="openFormStudentRegisterBtn" data-tab="student"
+                    id="openFormStudentRegisterBtn" 
                   >
                     Học viên
                   </div>
@@ -513,7 +513,7 @@
                   <div
                     class="tab-item"
                     onclick="openTabRegister('mentorRegisterForm')"
-                    id="openFormMentorRegisterBtn" data-tab="mentor"
+                    id="openFormMentorRegisterBtn" 
                   >
                     Mentor
                   </div>
@@ -906,8 +906,7 @@
     <script type="text/javascript" src="./assets/js/main.js"></script>
     <script type="text/javascript" src="./assets/js/regester.js"></script>
     <script>
-      function openTabRegister(name, event) {
-        event.preventDefault();
+      function openTabRegister(name) {
         var i;
         var x = document.getElementsByClassName("tab-item-register");
         for (i = 0; i < x.length; i++) {
@@ -923,29 +922,14 @@
             .classList.remove("active");
         }
         if (name === "mentorRegisterForm") {
-          console.log("aaa")
           document
             .getElementById("openFormMentorRegisterBtn")
             .classList.add("active");
           document
             .getElementById("openFormStudentRegisterBtn")
-            .classList.remove("active");
+            .classList.remove("active"); 
         }
       }
-
-    //   const menuItems = document.querySelectorAll(".sub-menu a")
-    //   const  tabs = document.querySelectorAll(".tab-item-register")
-    //   menuItems.forEach(function(item) {
-    //   item.addEventListener('click', function() {
-    //   var tabId = this.dataset.tab;
-    //   var tab = document.getElementById(tabId);
-      
-    //   tabs.forEach(function(tab) {
-    //     tab.classList.remove('active');
-    //   });
-    //   tab.classList.add('active');
-    // });
-// });
     </script>
   </body>
 </html>
