@@ -25,9 +25,20 @@ var slider = document.querySelector(".slider-range");
 var value = document.querySelector("#slider-value");
 
 slider.oninput = function() {
-  var maxFormattedValue = numberWithCommas(this.max) + " VND";
-  var formattedValue = "Từ " + numberWithCommas(this.min) + " VND đến " + numberWithCommas(this.value) + " VND";
-  value.textContent = formattedValue;
+  var formattedValue = numberWithCommas(this.value) + " VND";
+  value.textContent = "Tối thiểu: " + formattedValue;
+}
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+var slider2 = document.querySelector(".slider-range-2");
+var value2 = document.querySelector("#slider-value-2");
+
+slider2.oninput = function() {
+  var formattedValue2 = numberWithCommas(this.value) + " VND";
+  value2.textContent = "Tối đa: " + formattedValue2;
 }
 
 function numberWithCommas(x) {
