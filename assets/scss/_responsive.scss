@@ -6467,4 +6467,19 @@
     color: #fff;
     display: inline-block;
   }
+  .section-heading {
+    font-size: 17px !important;
+}
+.justify-content-end{
+  display: block !important;
+}
+}
+
+@media only screen and (max-width: 386px) {
+  .section-heading {
+    font-size: 17px !important;
+}
+.justify-content-end{
+  display: block !important;
+}
 }
