@@ -13035,6 +13035,9 @@ input {
   .section-heading {
     font-size: 17px !important;
   }
+  .justify-content-end {
+    display: block !important;
+  }
 }
 * {
   box-sizing: border-box;
