@@ -84,3 +84,28 @@ let swiperTypicalTestimonial = new Swiper(".swiper-testimonial", {
     },
   },
 });
+
+// let swiperTypicalLogoSlide = new Swiper(".swiper-typical-logo-slide", {
+//   slidesPerView: 1,
+//   spaceBetween: 10,
+//   slidesPerGroup: 1,
+//   loop: true,
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//       spaceBetween: 10,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//       spaceBetween: 10,
+//     },
+//     1024: {
+//       slidesPerView: 3,
+//       spaceBetween: 10,
+//     },
+//     1440: {
+//       slidesPerView: 4,
+//       spaceBetween: 10,
+//     },
+//   },
+// });
