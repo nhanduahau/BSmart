@@ -346,12 +346,12 @@ div.swiper-button-prev:after {
   overflow: hidden;
   padding: 15px 0;
   opacity: 1;
-  transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.01s ease-in-out;
 }
 
 .header-top.hidden {
   opacity: 0;
-  transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.01s ease-in-out;
 }
 
 .header-top-wrapper {
@@ -2578,6 +2578,49 @@ div.swiper-button-prev:after {
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.price-range .price-from,
+.price-to {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-to {
+  margin-top: 10px;
+}
+
+.price-text {
+  margin-bottom: 5px;
+  color: gray;
+  font-size: 1rem;
+}
+
+.price-input {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+
+.price-input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.message-error-price {
+  display: none;
+  color: red;
+  margin-top: 8px;
+  font-size: 0.9rem;
 }
 
 * {

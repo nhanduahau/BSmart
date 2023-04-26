@@ -4,11 +4,11 @@
   overflow: hidden;
   padding: 15px 0;
   opacity: 1;
-  transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.01s ease-in-out;
 }
 .header-top.hidden {
   opacity: 0;
-  transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.01s ease-in-out;
 }
 .header-top-wrapper {
   display: -webkit-box;
