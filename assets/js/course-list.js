@@ -19,3 +19,19 @@ function showMore(id) {
     }
   }
 }
+
+
+var slider = document.querySelector(".slider-range");
+var value = document.querySelector("#slider-value");
+
+slider.oninput = function() {
+  var formattedValue = numberWithCommas(this.value) + " VND";
+  value.textContent = "Tối đa: " + formattedValue;
+}
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+
+
