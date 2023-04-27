@@ -35,7 +35,7 @@ function showMore(id) {
 // }
 
 // price course
-const formatterPrice = new Intl.NumberFormat("it-IT", {
+const formatterPrice = new Intl.NumberFormat("vn-VN", {
   style: "currency",
   currency: "VND",
 }); //vi-VN
@@ -47,26 +47,32 @@ const priceToError = document.getElementById("message-error-price-to");
 const messageErrorPriceRange = document.getElementById(
   "message-error-price-range"
 );
-let priceFrom;
-let priceTo;
 priceFromInput.addEventListener("input", function () {
   let priceFromValue = priceFromInput.value;
-  priceFrom = parseFloat(
+  let priceFrom = parseFloat(
     priceFromValue.replace(/[^\d]/g, "").replace(/\D/g, "")
   );
-  let formattedPriceFrom = formatterPrice.format(priceFrom);
-  const showPriceFrom = formattedPriceFrom.replace(/[^\d.-]/g, "") + " VNĐ";
-  console.log(priceFrom);
+  let formattedPriceFrom = formatterPrice
+    .format(priceFrom)
+    .replace(/[^\d.,]/g, "");
+  const showPriceFrom = formattedPriceFrom + " VNĐ";
+  const getPriceTo = parseFloat(
+    priceToInput.value.replace(/[^\d]/g, "").replace(/\D/g, "")
+  );
+
   if (priceFromValue.length > 0 && !isNaN(priceFrom)) {
     if (priceFrom < 1000000) {
       priceFromError.style.display = "block";
       priceFromInput.value = showPriceFrom;
-      if (priceFrom > priceTo) {
-        messageErrorPriceRange.style.display = "block";
-      }
     } else {
       priceFromError.style.display = "none";
       priceFromInput.value = showPriceFrom;
+    }
+    if (getPriceTo && getPriceTo < priceFrom) {
+      messageErrorPriceRange.style.display = "block";
+      console.log(getPriceTo);
+    } else {
+      messageErrorPriceRange.style.display = "none";
     }
   } else {
     if (isNaN(priceFrom)) {
@@ -75,13 +81,28 @@ priceFromInput.addEventListener("input", function () {
     priceFromError.style.display = "none";
   }
 });
-
+priceFromInput.addEventListener("keydown", function (event) {
+  if (event.code === "Backspace" || event.code === "Delete") {
+    let priceFromValue = priceFromInput.value;
+    priceFrom = parseFloat(
+      priceFromValue.replace(/[^\d]/g, "").replace(/\D/g, "")
+    );
+    let formattedPriceFrom = formatterPrice
+      .format(priceFrom)
+      .replace(/[^\d.,]/g, "");
+    priceFromInput.value = formattedPriceFrom;
+  }
+});
 priceToInput.addEventListener("input", function () {
   let priceToValue = priceToInput.value;
-  priceTo = parseFloat(priceToValue.replace(/[^\d]/g, "").replace(/\D/g, ""));
-  let formattedPriceTo = formatterPrice.format(priceTo);
-  const showPriceTo = formattedPriceTo.replace(/[^\d.-]/g, "") + " VNĐ";
-
+  let priceTo = parseFloat(
+    priceToValue.replace(/[^\d]/g, "").replace(/\D/g, "")
+  );
+  let formattedPriceTo = formatterPrice.format(priceTo).replace(/[^\d.,]/g, "");
+  const showPriceTo = formattedPriceTo + " VNĐ";
+  const getPriceFrom = parseFloat(
+    priceFromInput.value.replace(/[^\d]/g, "").replace(/\D/g, "")
+  );
   if (priceToInput.value.length > 0 && !isNaN(priceTo)) {
     if (priceTo > 10000000) {
       priceToError.style.display = "block";
@@ -89,7 +110,12 @@ priceToInput.addEventListener("input", function () {
     } else {
       priceToError.style.display = "none";
       priceToInput.value = showPriceTo;
-      console.log(priceTo);
+    }
+    if (getPriceFrom && priceTo < getPriceFrom) {
+      messageErrorPriceRange.style.display = "block";
+      console.log(getPriceFrom);
+    } else {
+      messageErrorPriceRange.style.display = "none";
     }
   } else {
     if (isNaN(priceTo)) {
@@ -98,18 +124,21 @@ priceToInput.addEventListener("input", function () {
     priceToError.style.display = "none";
   }
 });
-function convertPrice() {
-  console.log(priceToInput.value.length);
-
-  // if (priceFromInput.value !== "" && priceToInput.value !== "") {
-  //   const numericPriceFrom = parseInt(priceFromInput.value.replace(/\D/g, ""));
-  //   const numericPriceTo = parseInt(priceToInput.value.replace(/\D/g, ""));
-
-  //   if (numericPriceFrom > numericPriceTo) {
-  //     priceFromInput.value = "";
-  //     priceToInput.value = "";
-  //     priceFromError.style.display = "block";
-  //     priceToError.style.display = "block";
-  //   }
+priceToInput.addEventListener("keydown", function (event) {
+  if (event.code === "Backspace" || event.code === "Delete") {
+    let priceToValue = priceToInput.value;
+    priceTo = parseFloat(priceToValue.replace(/[^\d]/g, "").replace(/\D/g, ""));
+    let formattedPriceTo = formatterPrice
+      .format(priceTo)
+      .replace(/[^\d.,]/g, "");
+    priceToInput.value = formattedPriceTo;
+  }
+  // if (
+  //   (event.code === "Backspace" || event.code === "Delete") &&
+  //   priceToInput.selectionStart !== 0 &&
+  //   priceToInput.selectionEnd === priceToInput.value.length
+  // ) {
+  //   event.preventDefault();
+  //   priceToInput.value = "";
   // }
-}
+});
