@@ -613,3 +613,22 @@
   margin-top: 8px;
   font-size: 0.9rem;
 }
+#btnScrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ff630e;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+#btnScrollToTop:hover {
+  background-color: #555;
+}
