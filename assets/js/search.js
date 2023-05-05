@@ -1,37 +1,35 @@
-
-
 // autocomplete course name
 let liContainer = document.querySelector(".autocom-box-search");
 let courseNameInput = document.getElementById("search-course-inp");
 let searchInput = document.querySelector(".sup-autocom-search");
 
-let fetchApiCourses = fetch("https://645489c5f803f345762b1056.mockapi.io/courses", {
-  method:  'GET'
-})
-.then(res => res.json())
-.then(data => {
-  console.log('data', data)
+courseNameInput.addEventListener("keyup", function () {
+  fetch("https://645489c5f803f345762b1056.mockapi.io/courses", {
+    method: "GET",
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      // console.log("data", data);
 
-  courseNameInput.addEventListener("keyup", function () {
-    let inpValue = courseNameInput.value;
-  
-    liContainer.style.display = "block";
-  
-    if (inpValue) {
-      // add searchInp
-      searchInput.classList.add("active");
-      let filterKeyWord = data.filter(function (keyWord) {
-        return keyWord.name.toLowerCase().includes(inpValue.toLowerCase());
-      });
-      console.log('filterKeyWord', filterKeyWord)
-  
-      dataSuggestionWordsGenerator(filterKeyWord);
-    } else {
-      // remove searchInp
-      searchInput.classList.remove("active");
-    }
-  });
-})
+      let inpValue = courseNameInput.value;
+
+      liContainer.style.display = "block";
+
+      if (inpValue) {
+        // add searchInp
+        searchInput.classList.add("active");
+        let filterKeyWord = data.filter(function (keyWord) {
+          return keyWord.name.toLowerCase().includes(inpValue.toLowerCase());
+        });
+        // console.log("filterKeyWord", filterKeyWord);
+
+        dataSuggestionWordsGenerator(filterKeyWord);
+      } else {
+        // remove searchInp
+        searchInput.classList.remove("active");
+      }
+    });
+});
 
 // data
 // let datas = [
@@ -58,7 +56,6 @@ let fetchApiCourses = fetch("https://645489c5f803f345762b1056.mockapi.io/courses
 //   "How to learn HTML & CSS",
 //   "How to learn JavaScript",
 // ];
-
 
 // courseNameInput.addEventListener("keyup", function () {
 //   let inpValue = courseNameInput.value;
@@ -108,7 +105,6 @@ function Select() {
     });
   });
 }
-
 
 // const logos = document.querySelectorAll(".logo-grid img");
 // let currentLogoIndex = 0;
