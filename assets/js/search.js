@@ -2,6 +2,7 @@
 let liContainer = document.querySelector(".autocom-box-search");
 let courseNameInput = document.getElementById("search-course-inp");
 let searchInput = document.querySelector(".sup-autocom-search");
+var hideModal = document.getElementById("autocom-box-search");
 
 courseNameInput.addEventListener("keyup", function () {
   fetch("https://645489c5f803f345762b1056.mockapi.io/courses", {
@@ -77,7 +78,6 @@ courseNameInput.addEventListener("keyup", function () {
 // });
 
 // generate key word
-
 let customListItem;
 function dataSuggestionWordsGenerator(arrsKeyWord) {
   let keyWord = arrsKeyWord
@@ -87,15 +87,18 @@ function dataSuggestionWordsGenerator(arrsKeyWord) {
     .join("");
 
   if (keyWord) {
+    // console.log("keyWord", keyWord);
     liContainer.innerHTML = keyWord;
   } else {
     liContainer.innerHTML = "<li>" + courseNameInput.value + "</li>";
   }
   Select();
 }
+
 // select
 function Select() {
   let allListItems = liContainer.querySelectorAll("li");
+
   allListItems.forEach(function (word) {
     word.addEventListener("click", function (e) {
       courseNameInput.value = e.target.textContent;
@@ -105,6 +108,16 @@ function Select() {
     });
   });
 }
+
+document.onclick = function (e) {
+  if (e.target.classList !== "autocom-box-search") {
+    hideModal.style.display = "none";
+  }
+};
+
+// courseNameInput.addEventListener("", function () {
+//   liContainer.style.display = "none";
+// });
 
 // const logos = document.querySelectorAll(".logo-grid img");
 // let currentLogoIndex = 0;

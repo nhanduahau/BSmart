@@ -453,6 +453,13 @@
 //   }
 // }
 @media only screen and (max-width: 390px) {
+    // Counter Stem
+    .custom-mobile-counter {
+      display: flex !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+
   //blog-detail
 
   //aboutus
@@ -6450,6 +6457,19 @@
   }
   .blog-detail-wrapper .blog-area.two {
     padding: 45px 0;
+  }
+
+  // Counter Stem
+  .custom-mobile-counter {
+    display: flex !important;
+  }
+
+  .our-title-item {
+    font-size: 1.3rem;
+  }
+
+  .counter-title p {
+    font-size: 1rem;
   }
 }
 

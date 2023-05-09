@@ -1,0 +1,101 @@
+/*-----------------------LongT5-----------------------*/
+.mo-ta-khoa-hoc {
+    //  padding-top: 20px;
+    font-size: 20px;
+    color: #0e0a38 !important;
+    text-align: justify;
+    line-height: 30px !important;
+    font-weight: 400;
+}
+
+.mo-ta-khoa-hoc strong {
+    font-weight: bold;
+}
+
+.banner-stem {
+    background-image: url(../images/stem-background.jpg);
+
+}
+
+.ky-nguyen {
+    padding: 40 0 50px;
+    background: url(../images/ky-nguyen-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.left-image-stem {
+    background-image: url(../images/left-robotics.jpg) !important;
+}
+
+.right-scratch {
+    background-image: url(../images/right-scratch.jpg) !important;
+}
+
+.diem-uu-viet {
+    padding: 95px 0 0px;
+}
+
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+.dau-ra .col-md-6 .service-card-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    vertical-align: middle;
+    text-align: left;
+    color: black;
+}
+
+.dau-ra .col-md-6 .service-card-icon i {
+    line-height: 70px;
+    font-size: 30px;
+    display: inline-block;
+    color: black;
+}
+
+.none-box-shadow img {
+    box-shadow: 0 0 0 white !important;
+}
+
+.out-courses {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 22px;
+    color: #ff630e;
+}
+
+.fa.fa-chevron-up {
+    font-size: 14px !important;
+    margin-bottom: 4px;
+}
+
+.fa.fa-chevron-up:hover {
+    color: white !important;
+}
+
+.our-title-item {
+    color: #FF630E;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.counter-title p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #696969;
+}
+
+.custom-mobile-counter {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+}
