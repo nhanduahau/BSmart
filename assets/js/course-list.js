@@ -2,7 +2,7 @@
 var btnScrollToTop = document.querySelector("#btnScrollToTop");
 
 // Thêm sự kiện "scroll" vào trang web
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   // Kiểm tra khi nào người dùng scroll xuống đủ để hiển thị nút "lên đầu trang"
   if (window.pageYOffset > 100) {
     btnScrollToTop.style.display = "block";
@@ -12,11 +12,10 @@ window.addEventListener("scroll", function() {
 });
 
 // Thêm sự kiện "click" vào nút "lên đầu trang"
-btnScrollToTop.addEventListener("click", function() {
+btnScrollToTop.addEventListener("click", function () {
   // Cuộn trang lên đầu
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
 
 function showMore(id) {
   var element = document.getElementById(id);
@@ -55,7 +54,7 @@ function showMore(id) {
 // }
 
 // price course
-const formatterPrice = new Intl.NumberFormat("vn-VN", {
+const formatterPrice = new Intl.NumberFormat("vi-VN", {
   style: "currency",
   currency: "VND",
 }); //vi-VN
@@ -67,8 +66,9 @@ const priceToError = document.getElementById("message-error-price-to");
 const messageErrorPriceRange = document.getElementById(
   "message-error-price-range"
 );
-priceFromInput.addEventListener("input", function () {
+priceFromInput.addEventListener("input", function (event) {
   let priceFromValue = priceFromInput.value;
+  console.log("abc " + priceFromValue);
   let priceFrom = parseFloat(
     priceFromValue.replace(/[^\d]/g, "").replace(/\D/g, "")
   );
@@ -102,15 +102,52 @@ priceFromInput.addEventListener("input", function () {
   }
 });
 priceFromInput.addEventListener("keydown", function (event) {
+  // if (event.code === "Backspace" || event.code === "Delete") {
+  //   let selectionStart = priceFromInput.selectionStart;
+  //   let selectionEnd = priceFromInput.selectionEnd;
+  //   console.log(selectionStart);
+  //   console.log("end " + selectionEnd);
+  //   let priceFromValue = priceFromInput.value;
+  //   priceFrom = parseFloat(
+  //     priceFromValue.replace(/[^\d]/g, "").replace(/\D/g, "")
+  //   );
+  //   let formattedPriceFrom = formatterPrice
+  //     .format(priceFrom)
+  //     .replace(/[^\d.,]/g, "");
+  //   priceFromInput.value = formattedPriceFrom;
+  //   priceFromInput.setSelectionRange(selectionStart, selectionEnd);
+  //   // event.preventDefault();
+  // }
   if (event.code === "Backspace" || event.code === "Delete") {
+    event.preventDefault();
+    let selectionStart = priceFromInput.selectionStart;
+    let selectionEnd = priceFromInput.selectionEnd;
     let priceFromValue = priceFromInput.value;
+    let formattedPriceFrom = "";
+    if (selectionStart === selectionEnd) {
+      if (event.code === "Backspace" && selectionStart > 0) {
+        selectionStart--;
+      } else if (
+        event.code === "Delete" &&
+        selectionStart < priceFromValue.length
+      ) {
+        selectionEnd++;
+      }
+    }
+    priceFromValue =
+      priceFromValue.substring(0, selectionStart) +
+      priceFromValue.substring(selectionEnd);
     priceFrom = parseFloat(
       priceFromValue.replace(/[^\d]/g, "").replace(/\D/g, "")
     );
-    let formattedPriceFrom = formatterPrice
-      .format(priceFrom)
-      .replace(/[^\d.,]/g, "");
+    if (!isNaN(priceFrom)) {
+      formattedPriceFrom = formatterPrice
+        .format(priceFrom)
+        .replace(/[^\d.,]/g, "");
+      priceFromError.style.display = "none";
+    }
     priceFromInput.value = formattedPriceFrom;
+    priceFromInput.setSelectionRange(selectionStart, selectionStart);
   }
 });
 priceToInput.addEventListener("input", function () {
@@ -145,20 +182,43 @@ priceToInput.addEventListener("input", function () {
   }
 });
 priceToInput.addEventListener("keydown", function (event) {
-  if (event.code === "Backspace" || event.code === "Delete") {
-    let priceToValue = priceToInput.value;
-    priceTo = parseFloat(priceToValue.replace(/[^\d]/g, "").replace(/\D/g, ""));
-    let formattedPriceTo = formatterPrice
-      .format(priceTo)
-      .replace(/[^\d.,]/g, "");
-    priceToInput.value = formattedPriceTo;
-  }
-  // if (
-  //   (event.code === "Backspace" || event.code === "Delete") &&
-  //   priceToInput.selectionStart !== 0 &&
-  //   priceToInput.selectionEnd === priceToInput.value.length
-  // ) {
-  //   event.preventDefault();
-  //   priceToInput.value = "";
+  // if (event.code === "Backspace" || event.code === "Delete") {
+  //   let priceToValue = priceToInput.value;
+  //   priceTo = parseFloat(priceToValue.replace(/[^\d]/g, "").replace(/\D/g, ""));
+  //   let formattedPriceTo = formatterPrice
+  //     .format(priceTo)
+  //     .replace(/[^\d.,]/g, "");
+  //   priceToInput.value = formattedPriceTo;
   // }
+  if (event.code === "Backspace" || event.code === "Delete") {
+    event.preventDefault();
+    let selectionStart = priceToInput.selectionStart;
+    let selectionEnd = priceToInput.selectionEnd;
+    let priceFromValue = priceToInput.value;
+    let formattedPriceFrom = "";
+    if (selectionStart === selectionEnd) {
+      if (event.code === "Backspace" && selectionStart > 0) {
+        selectionStart--;
+      } else if (
+        event.code === "Delete" &&
+        selectionStart < priceFromValue.length
+      ) {
+        selectionEnd++;
+      }
+    }
+    priceFromValue =
+      priceFromValue.substring(0, selectionStart) +
+      priceFromValue.substring(selectionEnd);
+    priceFrom = parseFloat(
+      priceFromValue.replace(/[^\d]/g, "").replace(/\D/g, "")
+    );
+    if (!isNaN(priceFrom)) {
+      formattedPriceFrom = formatterPrice
+        .format(priceFrom)
+        .replace(/[^\d.,]/g, "");
+      priceToError.style.display = "none";
+    }
+    priceToInput.value = formattedPriceFrom;
+    priceToInput.setSelectionRange(selectionStart, selectionStart);
+  }
 });
