@@ -146,7 +146,7 @@ priceFromInput.addEventListener("keydown", function (event) {
         .replace(/[^\d.,]/g, "");
       priceFromError.style.display = "none";
     }
-    priceFromInput.value = formattedPriceFrom;
+    priceFromInput.value = formattedPriceFrom + " VNĐ";
     priceFromInput.setSelectionRange(selectionStart, selectionStart);
   }
 });
@@ -218,7 +218,7 @@ priceToInput.addEventListener("keydown", function (event) {
         .replace(/[^\d.,]/g, "");
       priceToError.style.display = "none";
     }
-    priceToInput.value = formattedPriceFrom;
+    priceToInput.value = formattedPriceFrom + " VNĐ";
     priceToInput.setSelectionRange(selectionStart, selectionStart);
   }
 });
