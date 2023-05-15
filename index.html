@@ -46,6 +46,7 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
   <!-- Import css reset -->
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
   <!-- Import css styles -->
@@ -69,22 +70,20 @@
     </div>
   </div>
   <!-- Preloader end -->
+  
   <!-- Start Sidebar mobile -->
   <div class="sidebar-wrap" id="sidebar-mobile">
     <div class="container-fluid">
       <div class="sidebar-content">
         <div class="sidebar-top">
-          <a href="./index.html">
-            <img src="/assets/images/icon-logo-mobile.png" class="icon-logo-mobile" alt="icon-logo">
+          <a href="./index.html" class="sidebar-logo">
+            <img
+              src="/assets/images/icon-logo-mobile.png"
+              class="icon-logo-mobile"
+              alt="icon-logo"
+            />
           </a>
           <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
-        </div>
-        <!-- Cart -->
-        <div class="header-cart">
-          <a href="payment.html">
-            <img src="/assets/images/icon-shopping-cart.jpg" class="icon-shopping-cart" alt="icon-shopping-cart">
-            <span class="cart-total-number">0</span>
-          </a>
         </div>
         <div class="sidebar-center">
           <ul class="sidebar-mean-nav">
@@ -186,11 +185,14 @@
         <div class="sidebar-bottom">
           <div class="search-course">
             <form action="#" method="post">
-              <input type="text" placeholder="Tìm kiếm khoá học" class="form-control" />
+              <input
+                type="text"
+                placeholder="Tìm kiếm khoá học"
+                class="form-control"
+              />
             </form>
 
-            <!-- <span><i class="fa fa-search"></i></span> -->
-            <button class="btn-search-mobile"><i class="fa fa-search btn-search-mobile-icon"></i></button>
+            <span><i class="fa fa-search"></i></span>
           </div>
           <ul class="contact-info">
             <li class="mb-3">
@@ -198,26 +200,16 @@
             </li>
             <li><img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail"></i> 028 9999 79 39</li>
           </ul>
-          <br>
           <ul class="social-list">
             <li>
-              <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
             </li>
-            <!-- <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li> -->
             <li>
-              <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
-                  class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
             </li>
-
             <li>
-              <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
-                  class="fa fa-youtube-play"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
             </li>
-            <!-- <li>
-                <a href="index.html"><i class="fa fa-dribbble"></i></a>
-              </li> -->
           </ul>
           <ul class="sidebar-controls">
             <li><a href="./login.html">Đăng nhập</a></li>
@@ -226,9 +218,13 @@
           </ul>
         </div>
       </div>
+
+      <!-- Clicked outside hide sidebar-content -->
+      <div class="out-side-mobile"></div>
     </div>
   </div>
   <!-- End Sidebar mobile -->
+
   <!-- Login form modal -->
   <div id="loginFormModal" class="login-form-container">
     <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100%">
