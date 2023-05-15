@@ -9230,6 +9230,9 @@ input {
   }
   .header-mobile {
     background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   .header-mobile-content {
     display: flex;
@@ -13395,6 +13398,11 @@ input {
   }
   .counter-title p {
     font-size: 1rem;
+  }
+  .header-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }
 @media only screen and (min-width: 280px) and (max-width: 390px) {

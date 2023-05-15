@@ -1193,6 +1193,10 @@
   }
   .header-mobile {
     background: $white-color;
+    // add new
+    position: fixed;
+    top: 0 ;
+    left: 0;
   }
   .header-mobile-content {
     display: flex;
@@ -6470,6 +6474,13 @@
 
   .counter-title p {
     font-size: 1rem;
+  }
+
+  // add new
+  .header-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }
 
