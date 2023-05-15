@@ -83,6 +83,14 @@ $(document).ready(function () {
 
   $("#activeMenu").click(function (event) {
     var $sidebar = $("#sidebar-mobile").css("right", "0");
+
+    var hideSidebar = document.querySelector(".out-side-mobile");
+
+    hideSidebar.addEventListener("click", function (e) {
+      if (e.target.classList !== "sidebar-content") {
+        var $sidebar = $("#sidebar-mobile").css("right", "-200%");
+      }
+    });
   });
   // ----------------------------------------------------------------
 
