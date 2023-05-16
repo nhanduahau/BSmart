@@ -833,7 +833,6 @@ div.swiper-button-prev:after {
 }
 
 .advantages .service-card div:first-child {
-  height: 70px;
   align-items: center !important;
 }
 
@@ -8124,7 +8123,7 @@ input {
 }
 
 .banner-stem {
-  background-image: url(../images/stem-background.jpg);
+  background-image: url(../images/stem-background.png);
 }
 
 .ky-nguyen {
@@ -8137,12 +8136,55 @@ input {
   position: relative;
 }
 
+.content-desc-course-banner {
+  padding: 240px;
+  background-image: url(../images/content-desc-course-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  background-position: center;
+  position: relative;
+}
+
+.diem-uu-viet-banner {
+  padding: 120px !important;
+  background: url(../images/section-diem-uu-viet.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
 .left-image-stem {
-  background-image: url(../images/left-robotics.jpg) !important;
+  background-image: url(../images/left-robotics.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.left-section-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -120px;
 }
 
 .right-scratch {
-  background-image: url(../images/right-scratch.jpg) !important;
+  background-image: url(../images/right-scratch.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.right-section-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -120px;
 }
 
 .diem-uu-viet {
@@ -8177,7 +8219,8 @@ input {
   text-align: center;
   font-size: 1.4rem;
   font-weight: 600;
-  margin-top: 22px;
+  margin-top: 24px;
+  margin-bottom: 12px;
   color: #ff630e;
 }
 
@@ -8201,12 +8244,73 @@ input {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 26px;
-  color: #696969;
+  color: black;
+  font-weight: bold;
 }
 
 .custom-mobile-counter {
   display: flex;
   justify-content: space-between;
+}
+
+.content-desc-course {
+  list-style-type: disc;
+}
+
+.content-desc-course li {
+  margin: 12px 0;
+  font-size: 20px;
+}
+
+.dau-ra {
+  width: 84%;
+  margin: 0 auto;
+}
+
+.dau-ra .col-md-12 .service-card-title {
+  font-size: 20px;
+  font-weight: 400;
+  vertical-align: middle;
+  text-align: left;
+  color: black;
+}
+
+.dau-ra .col-md-12 .service-card-icon i {
+  font-size: 30px;
+  display: inline-block;
+  color: black;
+}
+
+.tabler-icon-checks-image {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+}
+
+.counter-single-bg {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content-desc-course-banner-container {
+  margin-top: -100px;
+}
+
+.tabler-icon-brand-apple-arcade-img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.custom-left-section {
+  clip-path: none !important;
+  border-radius: 0px !important;
+}
+
+.custom-left-section::before {
+  border-radius: 0px !important;
 }
 
 .footer {
