@@ -1608,6 +1608,15 @@ div.swiper-button-prev:after {
   cursor: pointer;
   transition: all 0.2s;
 }
+.btn-primary-custom-select:hover .icon-tabler-arrow-narrow-right {
+  color: #FF630E !important;
+}
+.btn-primary-custom-select:hover .icon-tabler .icon-tabler-book-right {
+  color: #FF630E !important;
+}
+.btn-primary-custom-select:hover .icon-tabler-headset {
+  color: #FF630E !important;
+}
 
 .fa-search {
   right: 80px !important;
@@ -8136,6 +8145,10 @@ input {
   position: relative;
 }
 
+.ky-nguyen::before {
+  background-color: transparent !important;
+}
+
 .content-desc-course-banner {
   padding: 240px;
   background-image: url(../images/content-desc-course-banner.png);
@@ -8195,16 +8208,15 @@ input {
   scroll-behavior: smooth;
 }
 
-.dau-ra .col-md-6 .service-card-title {
+.dau-ra .service-card-title {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.3;
   vertical-align: middle;
-  text-align: left;
   color: black;
 }
 
-.dau-ra .col-md-6 .service-card-icon i {
+.dau-ra .service-card-icon i {
   line-height: 70px;
   font-size: 30px;
   display: inline-block;
@@ -8255,6 +8267,7 @@ input {
 
 .content-desc-course {
   list-style-type: disc;
+  text-align: justify;
 }
 
 .content-desc-course li {
@@ -8264,6 +8277,7 @@ input {
 
 .dau-ra {
   width: 84%;
+  text-align: justify;
   margin: 0 auto;
 }
 
@@ -8271,7 +8285,7 @@ input {
   font-size: 20px;
   font-weight: 400;
   vertical-align: middle;
-  text-align: left;
+  text-align: justify;
   color: black;
 }
 
@@ -8289,7 +8303,7 @@ input {
 
 .counter-single-bg {
   background-color: #fff;
-  padding: 10px;
+  padding: 6px;
   border-radius: 6px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -8311,6 +8325,22 @@ input {
 
 .custom-left-section::before {
   border-radius: 0px !important;
+}
+
+.arrow-narrow-right {
+  color: #fff !important;
+}
+
+.icon-tabler-arrow-narrow-right:hover {
+  color: #FF630E !important;
+}
+
+.icon-tabler-book:hover {
+  color: #FF630E !important;
+}
+
+.icon-tabler-headset:hover {
+  color: #FF630E !important;
 }
 
 .footer {
@@ -8777,7 +8807,6 @@ input {
 @media only screen and (max-width: 390px) {
   .custom-mobile-counter {
     display: flex !important;
-    align-items: center !important;
     text-align: center !important;
   }
   .one-title {
@@ -9875,6 +9904,22 @@ input {
 }
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .custom-cap-stem {
+    margin-top: 40px !important;
+  }
+  .content-desc-course-banner {
+    padding: 110px;
+  }
+  .diem-uu-viet-banner {
+    padding: 40px !important;
+  }
+  .dau-ra {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .learning-path .left-section {
+    margin-bottom: 0 !important;
+  }
   .aboutus2 {
     height: 355px !important;
   }
@@ -11199,6 +11244,30 @@ input {
 }
 /* Mobile */
 @media only screen and (max-width: 767px) and (min-width: 390px) {
+  .custom-cap-stem {
+    margin-top: 40px !important;
+  }
+  .content-desc-course-banner-container {
+    margin-top: -22px;
+  }
+  .content-desc-course-banner {
+    padding: 40px !important;
+    width: 100% !important;
+    background-position: center center !important;
+  }
+  .diem-uu-viet-banner {
+    padding: 40px !important;
+  }
+  .dau-ra {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .learning-path .left-section {
+    margin-bottom: 0 !important;
+  }
+  .counter-title p {
+    font-size: 0.9rem !important;
+  }
   .blog-detail-wrapper .all-posts-wrap {
     padding-right: 0 !important;
   }
@@ -12320,6 +12389,36 @@ input {
   }
 }
 @media only screen and (max-width: 480px) {
+  .custom-cap-stem {
+    margin-top: 40px !important;
+  }
+  .content-desc-course-banner-container {
+    margin-top: -22px;
+  }
+  .content-desc-course-banner {
+    padding: 40px !important;
+    width: 100% !important;
+    background-position: center center !important;
+  }
+  .diem-uu-viet-banner {
+    padding: 40px !important;
+  }
+  .dau-ra {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .learning-path .left-section {
+    margin-bottom: 0 !important;
+  }
+  .counter-title p {
+    font-size: 0.9rem !important;
+  }
+  .left-section-content {
+    bottom: -80px !important;
+  }
+  .right-section-content {
+    bottom: -80px !important;
+  }
   .span-title-1 {
     width: 270px !important;
   }
@@ -12786,6 +12885,22 @@ input {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .custom-cap-stem {
+    margin-top: 40px !important;
+  }
+  .content-desc-course-banner {
+    padding: 110px;
+  }
+  .diem-uu-viet-banner {
+    padding: 40px !important;
+  }
+  .dau-ra {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .learning-path .left-section {
+    margin-bottom: 0 !important;
+  }
   .advantages-2 .advantages-2-content h4 {
     font-size: 16px !important;
     margin-bottom: 0 !important;
@@ -12978,6 +13093,22 @@ input {
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 991px) {
+  .custom-cap-stem {
+    margin-top: 40px !important;
+  }
+  .content-desc-course-banner {
+    padding: 110px;
+  }
+  .diem-uu-viet-banner {
+    padding: 40px !important;
+  }
+  .dau-ra {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .learning-path .left-section {
+    margin-bottom: 0 !important;
+  }
   .cart-item-box {
     display: flex;
     flex-direction: column;
@@ -13122,6 +13253,22 @@ input {
   }
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .custom-cap-stem {
+    margin-top: 40px !important;
+  }
+  .content-desc-course-banner {
+    padding: 110px;
+  }
+  .diem-uu-viet-banner {
+    padding: 40px !important;
+  }
+  .dau-ra {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .learning-path .left-section {
+    margin-bottom: 0 !important;
+  }
   .course-content-container-page-course {
     padding: 0 !important;
     margin-top: 40px;
@@ -13401,6 +13548,22 @@ input {
   }
 }
 @media screen and (min-width: 767px) and (max-width: 900px) {
+  .custom-cap-stem {
+    margin-top: 40px !important;
+  }
+  .content-desc-course-banner {
+    padding: 110px;
+  }
+  .diem-uu-viet-banner {
+    padding: 40px !important;
+  }
+  .dau-ra {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .learning-path .left-section {
+    margin-bottom: 0 !important;
+  }
   .caption_img .content_img_aboutus-text {
     font-size: 10px;
     line-height: 20px;
@@ -13485,6 +13648,25 @@ input {
   }
 }
 @media only screen and (max-width: 767px) {
+  .custom-cap-stem {
+    margin-top: 40px !important;
+  }
+  .content-desc-course-banner {
+    padding: 110px;
+  }
+  .diem-uu-viet-banner {
+    padding: 40px !important;
+  }
+  .dau-ra {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .service-card-title {
+    text-align: justify;
+  }
+  .learning-path .left-section {
+    margin-bottom: 0 !important;
+  }
   .cmm-1 {
     max-width: 98% !important;
   }

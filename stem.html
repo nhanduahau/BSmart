@@ -223,6 +223,9 @@
           </ul>
         </div>
       </div>
+
+      <!-- Clicked outside hide sidebar-content -->
+      <div class="out-side-mobile"></div>
     </div>
   </div>
   <!-- End Sidebar mobile -->
@@ -518,7 +521,7 @@
 
       <section class="banner banner-stem">
         <div class="container">
-          <div class="caption-content text-center">
+          <div class="caption-content text-center custom-cap-stem">
             <h4>Khởi đầu sự nghiệp của bạn</h4>
             <h2>Trở thành những Kỹ Sư tương lai tại BSmart</h2>
             <p>
@@ -527,8 +530,15 @@
               học hè cũng như ngoại khóa cho các em học sinh từ lớp 1 đến lớp 12
             </p>
             <div class="mt-5 banner-control">
-              <a href="./course-list.html" class="btn btn-primary-custom-select">Xem khoá học</a>
-              <!-- <a href="./course-list.html" class="btn btn-outline-secondary-custom ms-3">Xem khoá học</a> -->
+              <a href="./course-list.html" class="btn btn-primary-custom-select">
+                Xem khoá học
+                <svg style="color: #fff; margin-bottom: 2px;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M5 12l14 0"></path>
+                  <path d="M15 16l4 -4"></path>
+                  <path d="M15 8l4 4"></path>
+               </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -539,7 +549,7 @@
       <section class="aboutus ky-nguyen" id="aboutus">
         <div class="container">
           <div class="aboutus-content">
-            <h2 class="text-center section-heading section-heading-home">Ngành Robotics Kỷ nguyên 5.0</h2>
+            <h2 class="text-center section-heading section-heading-home">Ngành Robotics Kỷ Nguyên 5.0</h2>
             <div class="row btn-aboutus-home-page d-flex align-items-center">
               <div class="col-md-6 col-sm-12 container-select-course-mobile">
                 <p class="about-description">
@@ -552,9 +562,25 @@
                 </p>
                 <div class="d-flex mt-3 justify-content-center">
                   <a href="./course-list.html"
-                    class="btn btn-primary-custom-select btn-primary-custom-select-mobile">Xem khoá
-                    học</a>
+                    class="btn btn-primary-custom-select btn-primary-custom-select-mobile">
+                    <svg style="width: 18px; height: 18px; margin-bottom: 4px;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+                      <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+                      <path d="M3 6l0 13"></path>
+                      <path d="M12 6l0 13"></path>
+                      <path d="M21 6l0 13"></path>
+                   </svg>
+                    Xem khoá học
+                  </a>
                   <button class="btn btn-outline-secondary-custom btn-outline-secondary-custom-laptop ms-3">
+                    <svg style="width: 18px; height: 18px; margin-bottom: 4px;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headset" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M4 14v-3a8 8 0 1 1 16 0v3"></path>
+                      <path d="M18 19c0 1.657 -2.686 3 -6 3"></path>
+                      <path d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z"></path>
+                      <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z"></path>
+                   </svg>
                     Hỗ trợ tư vấn
                   </button>
                 </div>
@@ -571,7 +597,7 @@
 
       <section class="sec-heading__about content-desc-course-banner">
         <div class="container content-desc-course-banner-container">
-          <h2 class="text-center section-heading section-heading-home mb-3">Mô tả Khóa học</h2>
+          <h2 class="text-center section-heading section-heading-home mb-3">Mô Tả Khóa Học</h2>
           <ul class="content-desc-course">
             <li>
                 Với cách tiếp cận ‘Hand-on, mind-on’ (thực hành, động não)
@@ -593,66 +619,66 @@
           </ul>
 
           <h5 class="out-courses">Đầu ra khóa học</h3>
-            <div class="container">
-              <div class="row dau-ra mb-4">
-                <div class="col-lg-12 col-md-12 d-flex align-items-center  m-auto pt-2 mb-2">
+            <!-- <div class="container"> -->
+              <div class="dau-ra mb-4">
+                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
                   <div class="service-card-icon me-2">
                     <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
                   </div>
-                  <h4 class="service-card-title">
+                  <h4 class="service-card-title" style="color: black;">
                     Tiếp cận với máy vi tính, sử dụng thành thạo về máy tính thông qua các dự án trong bài học.
                   </h4>
                 </div>
-                <div class="col-lg-12 col-md-12 d-flex align-items-center  m-auto pt-2 mb-2">
+                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
                   <div class="service-card-icon me-2">
                     <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
                   </div>
-                  <h4 class="service-card-title">
+                  <h4 class="service-card-title" style="color: black;">
                     Học theo hình thức Dự án, thiết kế, chế tạo ra những Robot mô phỏng vạn vật xung quanh.
                   </h4>
                 </div>
-                <div class="col-lg-12 col-md-12 d-flex align-items-center  m-auto pt-2 mb-2">
+                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
                   <div class="service-card-icon me-2">
                     <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
                   </div>
-                  <h4 class="service-card-title">
+                  <h4 class="service-card-title" style="color: black;">
                     Tạo ra các mẫu ảnh của sản phẩm và các file về các bước lắp ráp để lắp ráp trên thực tế.
                   </h4>
                 </div>
-                <div class="col-lg-12 col-md-12 d-flex align-items-center  m-auto pt-2 mb-2">
+                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
                   <div class="service-card-icon me-2">
                     <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
                   </div>
-                  <h4 class="service-card-title">
+                  <h4 class="service-card-title" style="color: black;">
                     Xây dựng khả năng tư duy về hình học không gian, tạo nên sự sáng tạo xung quanh mình.
                   </h4>
                 </div>
-                <div class="col-lg-12 col-md-12 d-flex align-items-center  m-auto pt-2 mb-2">
+                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
                   <div class="service-card-icon me-2">
                     <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
                   </div>
-                  <h4 class="service-card-title">
+                  <h4 class="service-card-title" style="color: black;">
                     Xây dựng và khơi dậy sự đam mê của học sinh về thế giới Robot.
                   </h4>
                 </div>
-                <div class="col-lg-12 col-md-12 d-flex align-items-center  m-auto pt-2 mb-2">
+                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
                   <div class="service-card-icon me-2">
                     <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
                   </div>
-                  <h4 class="service-card-title">
+                  <h4 class="service-card-title" style="color: black;">
                     Giáo trình được nghiên cứu, thiết kế chia làm nhiều level từ cơ bản đến nâng cao.
                   </h4>
                 </div>
-                <div class="col-lg-12 col-md-12 d-flex align-items-center  m-auto pt-2 mb-2">
+                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
                   <div class="service-card-icon me-2">
                     <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
                   </div>
-                  <h4 class="service-card-title">
+                  <h4 class="service-card-title" style="color: black;">
                     Học theo hình thức Dự án, thiết kế, chế tạo ra những Robot mô phỏng vạn vật xung quanh.
                   </h4>
                 </div>
               </div>
-            </div>
+            <!-- </div> -->
         </div>
 
         <div class="custom-mobile-counter">
@@ -665,7 +691,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-4 col-sm-4" style="width: 220px; margin: 0 auto;">
-            <div class="counter-single text-center counter-single-bg ">
+            <div class="counter-single text-center counter-single-bg custom-mobile-couter">
               <h2 class="our-title-item">10+</h2>
               <div class="counter-title">
                 <p>Giảng viên</p>
@@ -685,7 +711,7 @@
 
       <section class="advantages diem-uu-viet diem-uu-viet-banner mb-1">
         <div class="container">
-          <h2 class="section-heading text-center mb-1">Điểm ưu việt tại BSmart</h2>
+          <h2 class="section-heading text-center mb-1">Điểm Ưu Việt Tại BSmart</h2>
           <div class="row">
             <div class="col-md-4 col-xs-12 col-sm-12">
               <div class="service-card">
@@ -739,7 +765,7 @@
       <section class="learning-path">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 col-sm-12 p-0 image-mobile-home-page">
+            <div class="col-lg-6 col-md-12 col-sm-12 p-0 image-mobile-home-page m-0">
               <div class="left-section custom-left-section left-section-mobile left-image-stem">
                 <div class="left-section-content">
                   <h2 class="text-center">Robotics</h2>
@@ -747,7 +773,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-12 p-0 image-mobile-home-page">
+            <div class="col-lg-6 col-md-12 col-sm-12 p-0 image-mobile-home-page">
               <div class="right-section custom-left-section right-section-mobile right-scratch">
                 <div class="right-section-content">
                   <h2 class="text-center">Lập trình scratch</h2>
@@ -765,7 +791,7 @@
       <section class="courses-section courses-section-mobile-home-page">
         <div class="container">
           <div class="courses-content">
-            <h2 class="section-heading section-heading-course-title text-center">Khoá học tiêu biểu</h2>
+            <h2 class="section-heading section-heading-course-title text-center">Khoá Học Tiêu Biểu</h2>
             <div class="owl-carousel owl-theme">
 
               <div class="item ">
