@@ -532,12 +532,14 @@
             <div class="mt-5 banner-control">
               <a href="./course-list.html" class="btn btn-primary-custom-select">
                 Xem khoá học
-                <svg style="color: #fff; margin-bottom: 2px;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg style="color: #fff; margin-bottom: 2px;" xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M5 12l14 0"></path>
                   <path d="M15 16l4 -4"></path>
                   <path d="M15 8l4 4"></path>
-               </svg>
+                </svg>
               </a>
             </div>
           </div>
@@ -561,34 +563,104 @@
                   giúp trẻ thông thạo hơn và sẽ làm chủ được các thiết bị công nghệ sau này.
                 </p>
                 <div class="d-flex mt-3 justify-content-center">
-                  <a href="./course-list.html"
-                    class="btn btn-primary-custom-select btn-primary-custom-select-mobile">
-                    <svg style="width: 18px; height: 18px; margin-bottom: 4px;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <a href="./course-list.html" class="btn btn-primary-custom-select btn-primary-custom-select-mobile">
+                    <svg style="width: 18px; height: 18px; margin-bottom: 4px;" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-book" width="24" height="24" viewBox="0 0 24 24"
+                      stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
                       <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
                       <path d="M3 6l0 13"></path>
                       <path d="M12 6l0 13"></path>
                       <path d="M21 6l0 13"></path>
-                   </svg>
+                    </svg>
                     Xem khoá học
                   </a>
                   <button class="btn btn-outline-secondary-custom btn-outline-secondary-custom-laptop ms-3">
-                    <svg style="width: 18px; height: 18px; margin-bottom: 4px;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headset" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg style="width: 18px; height: 18px; margin-bottom: 4px;" xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-headset" width="24" height="24" viewBox="0 0 24 24"
+                      stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M4 14v-3a8 8 0 1 1 16 0v3"></path>
                       <path d="M18 19c0 1.657 -2.686 3 -6 3"></path>
                       <path d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z"></path>
                       <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z"></path>
-                   </svg>
+                    </svg>
                     Hỗ trợ tư vấn
                   </button>
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
                 <div class="banner-aboutus none-box-shadow">
-                  <img src="./assets/images/ky-nguyen.png" alt="Hinh anh" />
+                  <img src="assets\images\Task.gif" alt="Hình ảnh" />
+
+                  <!-- <div class="overlay  rotate">
+                    <img src="assets\images\Group 2.png" alt="Hình ảnh" />
+                  </div>
+                  <div class="overlay1 rotate1">
+                    <img src="assets\images\right_hand.png" alt="Hình ảnh" />
+                  </div> -->
                 </div>
+                <style>
+                  .overlay1 img {
+                    position: relative;
+                    animation: moveArc 4s linear infinite;
+                    transform-origin: left center;
+                  }
+
+                  @keyframes moveArc {
+                    0% {
+                      transform: translateX(0) rotate(0deg);
+                    }
+
+                    50% {
+                      transform: translateX(20px) rotate(90deg);
+                    }
+                  }
+
+                  @keyframes spin {
+                    0% {
+                      transform: rotate(0deg);
+                    }
+
+                    100% {
+                      transform: rotate(360deg);
+                    }
+                  }
+
+                  .rotate {
+                    animation: spin 2s linear infinite;
+                  }
+
+                  .banner-aboutus {
+                    position: relative;
+                  }
+
+                  .banner-aboutus .overlay {
+                    position: absolute;
+                    top: 106px;
+                    left: 222px;
+                    width: 8%;
+                  }
+
+                  .banner-aboutus .overlay img {
+                    position: relative;
+                    z-index: 1;
+                  }
+
+                  .banner-aboutus .overlay1 {
+                    position: absolute;
+                    top: 170px;
+                    left: 310px;
+                    width: 13%;
+                  }
+
+                  .banner-aboutus .overlay1 img {
+                    position: relative;
+                    z-index: 1;
+                  }
+                </style>
+
               </div>
             </div>
           </div>
@@ -600,7 +672,7 @@
           <h2 class="text-center section-heading section-heading-home mb-3">Mô Tả Khóa Học</h2>
           <ul class="content-desc-course">
             <li>
-                Với cách tiếp cận ‘Hand-on, mind-on’ (thực hành, động não)
+              Với cách tiếp cận ‘Hand-on, mind-on’ (thực hành, động não)
               các hoạt động học STEM sẽ khuấy động trí tưởng tượng cũng
               như khả năng sáng tạo của học sinh khi được tham gia vào các bài học.
             </li>
@@ -610,7 +682,8 @@
               tối đa khả năng sáng tạo và khả năng làm việc nhóm.
             </li>
             <li>
-              Khóa học dành cho các đối tượng từ lớp 1 đến lớp 12, chia theo nhiều cấp độ từ <strong style="font-weight: bold;">Cơ bản</strong> đến
+              Khóa học dành cho các đối tượng từ lớp 1 đến lớp 12, chia theo nhiều cấp độ từ <strong
+                style="font-weight: bold;">Cơ bản</strong> đến
               <strong style="font-weight: bold;">Nâng Cao</strong>.
             </li>
             <li>
@@ -620,64 +693,71 @@
 
           <h5 class="out-courses">Đầu ra khóa học</h3>
             <!-- <div class="container"> -->
-              <div class="dau-ra mb-4">
-                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
-                  <div class="service-card-icon me-2">
-                    <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
-                  </div>
-                  <h4 class="service-card-title" style="color: black;">
-                    Tiếp cận với máy vi tính, sử dụng thành thạo về máy tính thông qua các dự án trong bài học.
-                  </h4>
+            <div class="dau-ra mb-4">
+              <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
+                <div class="service-card-icon me-2">
+                  <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image"
+                    alt="tabler-icon-checks">
                 </div>
-                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
-                  <div class="service-card-icon me-2">
-                    <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
-                  </div>
-                  <h4 class="service-card-title" style="color: black;">
-                    Học theo hình thức Dự án, thiết kế, chế tạo ra những Robot mô phỏng vạn vật xung quanh.
-                  </h4>
-                </div>
-                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
-                  <div class="service-card-icon me-2">
-                    <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
-                  </div>
-                  <h4 class="service-card-title" style="color: black;">
-                    Tạo ra các mẫu ảnh của sản phẩm và các file về các bước lắp ráp để lắp ráp trên thực tế.
-                  </h4>
-                </div>
-                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
-                  <div class="service-card-icon me-2">
-                    <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
-                  </div>
-                  <h4 class="service-card-title" style="color: black;">
-                    Xây dựng khả năng tư duy về hình học không gian, tạo nên sự sáng tạo xung quanh mình.
-                  </h4>
-                </div>
-                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
-                  <div class="service-card-icon me-2">
-                    <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
-                  </div>
-                  <h4 class="service-card-title" style="color: black;">
-                    Xây dựng và khơi dậy sự đam mê của học sinh về thế giới Robot.
-                  </h4>
-                </div>
-                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
-                  <div class="service-card-icon me-2">
-                    <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
-                  </div>
-                  <h4 class="service-card-title" style="color: black;">
-                    Giáo trình được nghiên cứu, thiết kế chia làm nhiều level từ cơ bản đến nâng cao.
-                  </h4>
-                </div>
-                <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
-                  <div class="service-card-icon me-2">
-                    <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image" alt="tabler-icon-checks">
-                  </div>
-                  <h4 class="service-card-title" style="color: black;">
-                    Học theo hình thức Dự án, thiết kế, chế tạo ra những Robot mô phỏng vạn vật xung quanh.
-                  </h4>
-                </div>
+                <h4 class="service-card-title" style="color: black;">
+                  Tiếp cận với máy vi tính, sử dụng thành thạo về máy tính thông qua các dự án trong bài học.
+                </h4>
               </div>
+              <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
+                <div class="service-card-icon me-2">
+                  <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image"
+                    alt="tabler-icon-checks">
+                </div>
+                <h4 class="service-card-title" style="color: black;">
+                  Học theo hình thức Dự án, thiết kế, chế tạo ra những Robot mô phỏng vạn vật xung quanh.
+                </h4>
+              </div>
+              <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
+                <div class="service-card-icon me-2">
+                  <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image"
+                    alt="tabler-icon-checks">
+                </div>
+                <h4 class="service-card-title" style="color: black;">
+                  Tạo ra các mẫu ảnh của sản phẩm và các file về các bước lắp ráp để lắp ráp trên thực tế.
+                </h4>
+              </div>
+              <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
+                <div class="service-card-icon me-2">
+                  <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image"
+                    alt="tabler-icon-checks">
+                </div>
+                <h4 class="service-card-title" style="color: black;">
+                  Xây dựng khả năng tư duy về hình học không gian, tạo nên sự sáng tạo xung quanh mình.
+                </h4>
+              </div>
+              <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
+                <div class="service-card-icon me-2">
+                  <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image"
+                    alt="tabler-icon-checks">
+                </div>
+                <h4 class="service-card-title" style="color: black;">
+                  Xây dựng và khơi dậy sự đam mê của học sinh về thế giới Robot.
+                </h4>
+              </div>
+              <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
+                <div class="service-card-icon me-2">
+                  <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image"
+                    alt="tabler-icon-checks">
+                </div>
+                <h4 class="service-card-title" style="color: black;">
+                  Giáo trình được nghiên cứu, thiết kế chia làm nhiều level từ cơ bản đến nâng cao.
+                </h4>
+              </div>
+              <div style="color: black;" class=" d-flex align-items-center  m-auto pt-2 mb-2">
+                <div class="service-card-icon me-2">
+                  <img src="/assets/images/tabler-icon-checks.png" class="tabler-icon-checks-image"
+                    alt="tabler-icon-checks">
+                </div>
+                <h4 class="service-card-title" style="color: black;">
+                  Học theo hình thức Dự án, thiết kế, chế tạo ra những Robot mô phỏng vạn vật xung quanh.
+                </h4>
+              </div>
+            </div>
             <!-- </div> -->
         </div>
 
@@ -706,7 +786,7 @@
               </div>
             </div>
           </div>
-      </div>
+        </div>
       </section>
 
       <section class="advantages diem-uu-viet diem-uu-viet-banner mb-1">
@@ -717,7 +797,8 @@
               <div class="service-card">
                 <div class="d-flex align-items-center pt-2 pb-2 mb-3">
                   <div class="service-card-icon me-2">
-                    <img src="/assets/images/tabler-icon-brand-apple-arcade.png" class="tabler-icon-brand-apple-arcade-img" alt="tabler-icon-brand-apple-arcade" />
+                    <img src="/assets/images/tabler-icon-brand-apple-arcade.png"
+                      class="tabler-icon-brand-apple-arcade-img" alt="tabler-icon-brand-apple-arcade" />
                   </div>
                   <h4 class="service-card-title">
                     100% thực hành trong phòng Lab
@@ -732,10 +813,11 @@
               <div class="service-card">
                 <div class="d-flex align-items-center pt-2 pb-2 mb-3">
                   <div class="service-card-icon me-2">
-                    <img src="/assets/images/tabler-icon-school.png" class="tabler-icon-brand-apple-arcade-img" alt="tabler-icon-brand-apple-arcade" />
+                    <img src="/assets/images/tabler-icon-school.png" class="tabler-icon-brand-apple-arcade-img"
+                      alt="tabler-icon-brand-apple-arcade" />
                   </div>
                   <h4 class="service-card-title">
-                    Giảng viên là các chuyên gia 
+                    Giảng viên là các chuyên gia
                   </h4>
                 </div>
                 <div class="service-card-content">
@@ -747,7 +829,8 @@
               <div class="service-card">
                 <div class="d-flex align-items-center pt-2 pb-2 mb-3">
                   <div class="service-card-icon me-2">
-                    <img src="/assets/images/tabler-icon-headset.png" class="tabler-icon-brand-apple-arcade-img" alt="tabler-icon-brand-apple-arcade" />
+                    <img src="/assets/images/tabler-icon-headset.png" class="tabler-icon-brand-apple-arcade-img"
+                      alt="tabler-icon-brand-apple-arcade" />
                   </div>
                   <h4 class="service-card-title">Chuyên gia tư vấn </h4>
                 </div>
@@ -757,422 +840,417 @@
               </div>
             </div>
           </div>
-          
-          </div>
-        </div>
-      </section>
 
-      <section class="learning-path">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 p-0 image-mobile-home-page m-0">
-              <div class="left-section custom-left-section left-section-mobile left-image-stem">
-                <div class="left-section-content">
-                  <h2 class="text-center">Robotics</h2>
-                  <p class="text-center">Từ cơ bản đến nâng cao</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 p-0 image-mobile-home-page">
-              <div class="right-section custom-left-section right-section-mobile right-scratch">
-                <div class="right-section-content">
-                  <h2 class="text-center">Lập trình scratch</h2>
-                  <p class="text-center">
-                    Phát triển tư duy logic
-                  </p>
-                </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="learning-path">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 p-0 image-mobile-home-page m-0">
+            <div class="left-section custom-left-section left-section-mobile left-image-stem">
+              <div class="left-section-content">
+                <h2 class="text-center">Robotics</h2>
+                <p class="text-center">Từ cơ bản đến nâng cao</p>
               </div>
             </div>
           </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 p-0 image-mobile-home-page">
+            <div class="right-section custom-left-section right-section-mobile right-scratch">
+              <div class="right-section-content">
+                <h2 class="text-center">Lập trình scratch</h2>
+                <p class="text-center">
+                  Phát triển tư duy logic
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Khóa học tiêu biểu -->
-      <section class="courses-section courses-section-mobile-home-page">
-        <div class="container">
-          <div class="courses-content">
-            <h2 class="section-heading section-heading-course-title text-center">Khoá Học Tiêu Biểu</h2>
-            <div class="owl-carousel owl-theme">
+    <!-- Khóa học tiêu biểu -->
+    <section class="courses-section courses-section-mobile-home-page">
+      <div class="container">
+        <div class="courses-content">
+          <h2 class="section-heading section-heading-course-title text-center">Khoá Học Tiêu Biểu</h2>
+          <div class="owl-carousel owl-theme">
 
-              <div class="item ">
-                <div class="card course-card">
-                  <!-- Price -->
-                  <div class="price-cost-detail">1.200.000 đ</div>
-                  <div class="banner-course" style="
+            <div class="item ">
+              <div class="card course-card">
+                <!-- Price -->
+                <div class="price-cost-detail">1.200.000 đ</div>
+                <div class="banner-course" style="
                         background-image: url(/assets/images/devops-course-banner.png);
                       ">
-                    <div class="logo-course">
-                      <img src="/assets/images/avatar-mentor-1.jpg" alt="Logo devops" />
-                    </div>
-                  </div>
-                  <div class="card-body pt-5">
-                    <!-- Icon lv -->
-                    <div class="d-flex flex-column position-relative">
-                      <div class="icon-lv-title-right">
-                        <img src="/assets/images/icon-title-course.png" class="icon-title-course"
-                          alt="icon-title-course">
-                      </div>
-
-                      <!-- Title course -->
-                      <h5 class="card-title">Khoá học Devops</h5>
-                    </div>
-
-                    <p class="sub-title">Mentor Cường</p>
-                    <span class="time">
-                      <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
-                    </span>
-                    <p class="description">
-                      Với 15 buổi học, kết hợp giữa lý thuyết và những bài thực
-                      hành thực tiễn, học viên học tại BSmart sẽ có cơ hội tiếp
-                      cận xu hướng làm việc mới, hiện đại hơn, có khả năng sử
-                      dụng các công cụ hỗ trợ cho những teams đã, đang và sẽ
-                      triển khai theo mô hình DevOps. Khóa học DevOps on AWS của
-                      BSmart được thiết kế dựa trên việc tổng hợp những kinh
-                      nghiệm và kỹ năng thực tiễn trong quá trình làm dự án thực
-                      tế, đồng thời cập nhật và tổng hợp từ nhiều nguồn khác
-                      nhau, từ đó giúp học viên có cái nhìn bao quát và rõ nhất
-                      về DevOps.
-                    </p>
-                    <div class="testi-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                    <div class="feedback-time">
-                      <span class="time">
-                        <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
-                      </span>
-
-                      <span class="mark">
-                        <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
-                        Slot/cour
-                      </span>
-                    </div>
-                    <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
-                        class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                  <div class="logo-course">
+                    <img src="/assets/images/avatar-mentor-1.jpg" alt="Logo devops" />
                   </div>
                 </div>
-              </div>
+                <div class="card-body pt-5">
+                  <!-- Icon lv -->
+                  <div class="d-flex flex-column position-relative">
+                    <div class="icon-lv-title-right">
+                      <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
+                    </div>
 
-              <div class="item d-flex">
-                <div class="card course-card">
-                  <!-- Price -->
-                  <div class="price-cost-detail">1.200.000 đ</div>
-                  <div class="banner-course" style="
+                    <!-- Title course -->
+                    <h5 class="card-title">Khoá học Devops</h5>
+                  </div>
+
+                  <p class="sub-title">Mentor Cường</p>
+                  <span class="time">
+                    <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                  </span>
+                  <p class="description">
+                    Với 15 buổi học, kết hợp giữa lý thuyết và những bài thực
+                    hành thực tiễn, học viên học tại BSmart sẽ có cơ hội tiếp
+                    cận xu hướng làm việc mới, hiện đại hơn, có khả năng sử
+                    dụng các công cụ hỗ trợ cho những teams đã, đang và sẽ
+                    triển khai theo mô hình DevOps. Khóa học DevOps on AWS của
+                    BSmart được thiết kế dựa trên việc tổng hợp những kinh
+                    nghiệm và kỹ năng thực tiễn trong quá trình làm dự án thực
+                    tế, đồng thời cập nhật và tổng hợp từ nhiều nguồn khác
+                    nhau, từ đó giúp học viên có cái nhìn bao quát và rõ nhất
+                    về DevOps.
+                  </p>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="feedback-time">
+                    <span class="time">
+                      <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
+                    </span>
+
+                    <span class="mark">
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
+                    </span>
+                  </div>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item d-flex">
+              <div class="card course-card">
+                <!-- Price -->
+                <div class="price-cost-detail">1.200.000 đ</div>
+                <div class="banner-course" style="
                         background-image: url(/assets/images/front-end-course.png);
                       ">
-                    <div class="logo-course">
-                      <img src="/assets/images/avatar-mentor-2.jpg" alt="Logo devops" />
-                    </div>
-                  </div>
-                  <div class="card-body pt-5">
-                    <!-- Icon lv -->
-                    <div class="d-flex flex-column position-relative">
-                      <div class="icon-lv-title-right">
-                        <img src="/assets/images/icon-title-course.png" class="icon-title-course"
-                          alt="icon-title-course">
-                      </div>
-
-                      <!-- Title course -->
-                      <h5 class="card-title">Khoá học Front End</h5>
-                    </div>
-                    <p class="sub-title">Mentor Long</p>
-                    <span class="time">
-                      <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
-                    </span>
-                    <p class="description">
-                      Khóa học Frontend là quy trình sử dụng các ngôn ngữ HTML,
-                      CSS, JavaScript để thiết kế, xây dựng giao diện cho trang
-                      web hoặc ứng dụng web, giúp người dùng có thể xem và tương
-                      tác trực tiếp trên đó. Mục tiêu của việc thiết kế trang
-                      web là giúp người dùng dễ dàng sử dụng khi mở trang web.
-                    </p>
-                    <div class="testi-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                    <div class="feedback-time">
-                      <span class="time">
-                        <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
-                      </span>
-
-                      <span class="mark">
-                        <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
-                        Slot/cour
-                      </span>
-                    </div>
-                    <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
-                        class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                  <div class="logo-course">
+                    <img src="/assets/images/avatar-mentor-2.jpg" alt="Logo devops" />
                   </div>
                 </div>
-              </div>
+                <div class="card-body pt-5">
+                  <!-- Icon lv -->
+                  <div class="d-flex flex-column position-relative">
+                    <div class="icon-lv-title-right">
+                      <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
+                    </div>
 
-              <div class="item d-flex">
-                <div class="card course-card">
-                  <!-- Price -->
-                  <div class="price-cost-detail">1.200.000 đ</div>
-                  <div class="banner-course" style="
+                    <!-- Title course -->
+                    <h5 class="card-title">Khoá học Front End</h5>
+                  </div>
+                  <p class="sub-title">Mentor Long</p>
+                  <span class="time">
+                    <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                  </span>
+                  <p class="description">
+                    Khóa học Frontend là quy trình sử dụng các ngôn ngữ HTML,
+                    CSS, JavaScript để thiết kế, xây dựng giao diện cho trang
+                    web hoặc ứng dụng web, giúp người dùng có thể xem và tương
+                    tác trực tiếp trên đó. Mục tiêu của việc thiết kế trang
+                    web là giúp người dùng dễ dàng sử dụng khi mở trang web.
+                  </p>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="feedback-time">
+                    <span class="time">
+                      <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
+                    </span>
+
+                    <span class="mark">
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
+                    </span>
+                  </div>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item d-flex">
+              <div class="card course-card">
+                <!-- Price -->
+                <div class="price-cost-detail">1.200.000 đ</div>
+                <div class="banner-course" style="
                         background-image: url(/assets/images/net-course-banner.jpg);
                       ">
-                    <div class="logo-course">
-                      <img src="/assets/images/avatar-mentor-3.jpg" alt="Logo devops" />
-                    </div>
-                  </div>
-                  <div class="card-body pt-5">
-                    <!-- Icon lv -->
-                    <div class="d-flex flex-column position-relative">
-                      <div class="icon-lv-title-right">
-                        <img src="/assets/images/icon-title-course.png" class="icon-title-course"
-                          alt="icon-title-course">
-                      </div>
-
-                      <!-- Title course -->
-                      <h5 class="card-title">Khoá học .NET Basic</h5>
-                    </div>
-                    <p class="sub-title">Mentor Phúc</p>
-                    <span class="time">
-                      <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
-                    </span>
-                    <p class="description">
-                      Khóa học lập trình asp.net dành cho các bạn sinh viên khoa
-                      CNTT các trường Trung cấp - Cao đẳng - Đại học . Và tất cả
-                      các đối tượng yêu thích, đam mê và mong muốn trở thành lập
-                      trình viên công nghệ .NET
-                    </p>
-                    <div class="testi-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                    <div class="feedback-time">
-                      <span class="time">
-                        <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
-                      </span>
-
-                      <span class="mark">
-                        <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
-                        Slot/cour
-                      </span>
-                    </div>
-                    <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
-                        class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                  <div class="logo-course">
+                    <img src="/assets/images/avatar-mentor-3.jpg" alt="Logo devops" />
                   </div>
                 </div>
-              </div>
+                <div class="card-body pt-5">
+                  <!-- Icon lv -->
+                  <div class="d-flex flex-column position-relative">
+                    <div class="icon-lv-title-right">
+                      <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
+                    </div>
 
-              <div class="item d-flex">
-                <div class="card course-card">
-                  <!-- Price -->
-                  <div class="price-cost-detail">1.200.000 đ</div>
-                  <div class="banner-course" style="
+                    <!-- Title course -->
+                    <h5 class="card-title">Khoá học .NET Basic</h5>
+                  </div>
+                  <p class="sub-title">Mentor Phúc</p>
+                  <span class="time">
+                    <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                  </span>
+                  <p class="description">
+                    Khóa học lập trình asp.net dành cho các bạn sinh viên khoa
+                    CNTT các trường Trung cấp - Cao đẳng - Đại học . Và tất cả
+                    các đối tượng yêu thích, đam mê và mong muốn trở thành lập
+                    trình viên công nghệ .NET
+                  </p>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="feedback-time">
+                    <span class="time">
+                      <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
+                    </span>
+
+                    <span class="mark">
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
+                    </span>
+                  </div>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item d-flex">
+              <div class="card course-card">
+                <!-- Price -->
+                <div class="price-cost-detail">1.200.000 đ</div>
+                <div class="banner-course" style="
                         background-image: url(/assets/images/net-mvc-course.png);
                       ">
-                    <div class="logo-course">
-                      <img src="/assets/images/avatar-mentor-1.jpg" alt="Logo devops" />
-                    </div>
-                  </div>
-                  <div class="card-body pt-5">
-                    <!-- Icon lv -->
-                    <div class="d-flex flex-column position-relative">
-                      <div class="icon-lv-title-right">
-                        <img src="/assets/images/icon-title-course.png" class="icon-title-course"
-                          alt="icon-title-course">
-                      </div>
-
-                      <!-- Title course -->
-                      <h5 class="card-title">Khoá học .NET MVC</h5>
-                    </div>
-                    <p class="sub-title">Mentor Cường</p>
-                    <span class="time">
-                      <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
-                    </span>
-                    <p class="description">
-                      Khóa học này là khóa học thứ 3 của các bạn giúp các bạn có
-                      cái nhìn tổng quan và các bước để xây dựng một dự án thực
-                      tế sử dụng ASP.NET MVC. Khóa học này mình xây dựng không
-                      theo một giáo trình nào mà đi thẳng vào thực tế dự án.
-                    </p>
-                    <div class="testi-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                    <div class="feedback-time">
-                      <span class="time">
-                        <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
-                      </span>
-
-                      <span class="mark">
-                        <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
-                        Slot/cour
-                      </span>
-                    </div>
-                    <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
-                        class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                  <div class="logo-course">
+                    <img src="/assets/images/avatar-mentor-1.jpg" alt="Logo devops" />
                   </div>
                 </div>
-              </div>
+                <div class="card-body pt-5">
+                  <!-- Icon lv -->
+                  <div class="d-flex flex-column position-relative">
+                    <div class="icon-lv-title-right">
+                      <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
+                    </div>
 
-              <div class="item d-flex">
-                <div class="card course-card">
-                  <!-- Price -->
-                  <div class="price-cost-detail">1.200.000 đ</div>
-                  <div class="banner-course" style="
+                    <!-- Title course -->
+                    <h5 class="card-title">Khoá học .NET MVC</h5>
+                  </div>
+                  <p class="sub-title">Mentor Cường</p>
+                  <span class="time">
+                    <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                  </span>
+                  <p class="description">
+                    Khóa học này là khóa học thứ 3 của các bạn giúp các bạn có
+                    cái nhìn tổng quan và các bước để xây dựng một dự án thực
+                    tế sử dụng ASP.NET MVC. Khóa học này mình xây dựng không
+                    theo một giáo trình nào mà đi thẳng vào thực tế dự án.
+                  </p>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="feedback-time">
+                    <span class="time">
+                      <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
+                    </span>
+
+                    <span class="mark">
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
+                    </span>
+                  </div>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item d-flex">
+              <div class="card course-card">
+                <!-- Price -->
+                <div class="price-cost-detail">1.200.000 đ</div>
+                <div class="banner-course" style="
                         background-image: url(/assets/images/net-api-course.jpg);
                       ">
-                    <div class="logo-course">
-                      <img src="/assets/images/avatar-mentor-2.jpg" alt="Logo devops" />
-                    </div>
+                  <div class="logo-course">
+                    <img src="/assets/images/avatar-mentor-2.jpg" alt="Logo devops" />
                   </div>
-                  <div class="card-body pt-5">
-                    <!-- Icon lv -->
-                    <div class="d-flex flex-column position-relative">
-                      <div class="icon-lv-title-right">
-                        <img src="/assets/images/icon-title-course.png" class="icon-title-course"
-                          alt="icon-title-course">
-                      </div>
-
-                      <!-- Title course -->
-                      <h5 class="card-title">Khoá học .NET API</h5>
+                </div>
+                <div class="card-body pt-5">
+                  <!-- Icon lv -->
+                  <div class="d-flex flex-column position-relative">
+                    <div class="icon-lv-title-right">
+                      <img src="/assets/images/icon-title-course.png" class="icon-title-course" alt="icon-title-course">
                     </div>
-                    <p class="sub-title">Mentor Long</p>
+
+                    <!-- Title course -->
+                    <h5 class="card-title">Khoá học .NET API</h5>
+                  </div>
+                  <p class="sub-title">Mentor Long</p>
+                  <span class="time">
+                    <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                  </span>
+                  <p class="description">
+                    Khoá học này thiết kế theo phương pháp mới xây dựng một
+                    REST API chuẩn REST từng bước sau đó refactoring code theo
+                    Design Pattern.
+                  </p>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="feedback-time">
                     <span class="time">
-                      <i class="fa fa-user" style="margin-right: 5px;"></i> 106 học viên
+                      <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
                     </span>
-                    <p class="description">
-                      Khoá học này thiết kế theo phương pháp mới xây dựng một
-                      REST API chuẩn REST từng bước sau đó refactoring code theo
-                      Design Pattern.
-                    </p>
-                    <div class="testi-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                    <div class="feedback-time">
-                      <span class="time">
-                        <i class="fa fa-clock-o" style="width: 17px;"></i>20hr
-                      </span>
 
-                      <span class="mark">
-                        <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
-                        Slot/cour
-                      </span>
-                    </div>
-                    <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
-                        class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
+                    <span class="mark">
+                      <i class="fa fa-calendar" style="width: 17px; margin-bottom: 2px;margin-right: 2px;"></i>26
+                      Slot/cour
+                    </span>
                   </div>
+                  <a href="/course/CourseDetail/javascript-basic-230419090229" style="color: white"><button
+                      class="btn-invite-course mt-2" style="display: block; width: 100%">XEM CHI TIẾT</button></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Khóa học tiêu biểu -->
+      </div>
+    </section>
+    <!-- Khóa học tiêu biểu -->
 
-      <!-- Start footer -->
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <h3 class="title-address">TP.Hồ Chí Minh</h3>
-            </div>
+    <!-- Start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <h3 class="title-address">TP.Hồ Chí Minh</h3>
           </div>
-          <div class="row mb-5">
-            <div class="col-lg-4 col-md-4 mb-3">
-              <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
-            <div class="col-lg-4 col-md-4 mb-3">
-              <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
-            <div class="col-lg-4 col-md-4 mb-3">
-              <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
           </div>
-          <hr class="text-success mt-5 mb-5" />
-          <div class="row">
-            <div class="col-lg-3 col-md-6 mb-3">
-              <div class="footer-logo">
-                <a href="index.html"><span class="site-logo site-logo-footer" style="margin-left: 20px;">
-                    <img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo">
-                  </span></a>
-                <p class="footer-about-description">
-                  Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
-                  các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
-                  tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
-                </p>
-                <h6>Theo dõi chúng tôi tại:</h6>
-                <ul class="footer-social-icons">
-                  <li>
-                    <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <!-- <li>
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+          </div>
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+          </div>
+        </div>
+        <hr class="text-success mt-5 mb-5" />
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-logo">
+              <a href="index.html"><span class="site-logo site-logo-footer" style="margin-left: 20px;">
+                  <img src="/assets/images/icon-logo-footer.png" class="icon-logo" alt="icon-logo">
+                </span></a>
+              <p class="footer-about-description">
+                Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
+                các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
+                tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
+              </p>
+              <h6>Theo dõi chúng tôi tại:</h6>
+              <ul class="footer-social-icons">
+                <li>
+                  <a href="https://www.facebook.com/amazingtech74" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <!-- <li>
                       <a href="#"><i class="fa fa-twitter"></i></a>
                     </li> -->
-                  <li>
-                    <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
-                        class="fa fa-linkedin"></i></a>
-                  </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/amazingtech74/" target="_blank"><i
+                      class="fa fa-linkedin"></i></a>
+                </li>
 
-                  <li>
-                    <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
-                        class="fa fa-youtube-play"></i></a>
-                  </li>
-                  <!-- <li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCxuIkuRJkam2Ii3xPehiirw" target="_blank"><i
+                      class="fa fa-youtube-play"></i></a>
+                </li>
+                <!-- <li>
                       <a href="index.html"><i class="fa fa-dribbble"></i></a>
                     </li> -->
-                </ul>
-              </div>
+              </ul>
             </div>
-            <div class="col-lg-3 col-md-6 mb-3">
-              <div class="footer-menu">
-                <h4>Menu</h4>
-                <ul>
-                  <li><a href="./index.html">Trang chủ</a></li>
-                  <li><a href="./aboutus.html">Về chúng tôi</a></li>
-                  <li><a href="./course-list.html">Khoá học</a></li>
-                  <li><a href="./mentor-list.html">Mentor</a></li>
-                  <li><a href="./lms.html">Nền tảng LMS</a></li>
-                  <li><a href="./blog.html">Blog</a></li>
-                </ul>
-              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-menu">
+              <h4>Menu</h4>
+              <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./aboutus.html">Về chúng tôi</a></li>
+                <li><a href="./course-list.html">Khoá học</a></li>
+                <li><a href="./mentor-list.html">Mentor</a></li>
+                <li><a href="./lms.html">Nền tảng LMS</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+              </ul>
             </div>
+          </div>
 
-            <div class="col-lg-3 col-md-6 mb-3">
-              <div class="footer-menu">
-                <h4>Điều khoản</h4>
-                <ul>
-                  <li><a href="./terms-of-service.html">Điều khoản dịch vụ</a></li>
-                  <li><a href="./privacy-policy.html">Chính sách bảo mật</a></li>
-                </ul>
-                <!-- add cong tac vien -->
-                <h4 style="margin-top: 55px">Cộng tác viên</h4>
-                <ul>
-                  <li>
-                    <a href="#">Chính sách cộng tác viên</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-menu">
+              <h4>Điều khoản</h4>
+              <ul>
+                <li><a href="./terms-of-service.html">Điều khoản dịch vụ</a></li>
+                <li><a href="./privacy-policy.html">Chính sách bảo mật</a></li>
+              </ul>
+              <!-- add cong tac vien -->
+              <h4 style="margin-top: 55px">Cộng tác viên</h4>
+              <ul>
+                <li>
+                  <a href="#">Chính sách cộng tác viên</a>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <!-- <div class="col-lg-4 col-md-6 mb-3">
+          <!-- <div class="col-lg-4 col-md-6 mb-3">
                     <div class="footer-control d-flex align-items-center mt-5">
                       <a
                         href="./course-list.html"
@@ -1182,34 +1260,34 @@
                       </a>
                     </div>
                   </div> -->
-            <div class="col-lg-3 col-md-6 mb-3">
-              <div class="footer-contact">
-                <h4>Liên hệ với chúng tôi</h4>
-                <li>
-                  <img src="/assets/images/icon-location.png" class="icon-location" alt="icon-location">
-                  <p class="m-0">Tòa S9.02A, Vinhomes Grand Park, Quận 9</p>
-                </li>
-                <li>
-                  <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
-                  <p class="m-0">admin@bsmart.edu.vn</p>
-                </li>
-                <li>
-                  <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
-                  <p class="m-0">028 9999 79 39</p>
-                </li>
-              </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-contact">
+              <h4>Liên hệ với chúng tôi</h4>
+              <li>
+                <img src="/assets/images/icon-location.png" class="icon-location" alt="icon-location">
+                <p class="m-0">Tòa S9.02A, Vinhomes Grand Park, Quận 9</p>
+              </li>
+              <li>
+                <img src="/assets/images/icon-gmail.png" class="icon-gmail" alt="icon-gmail">
+                <p class="m-0">admin@bsmart.edu.vn</p>
+              </li>
+              <li>
+                <img src="/assets/images/icon-phone.png" class="icon-gmail" alt="icon-gmail">
+                <p class="m-0">028 9999 79 39</p>
+              </li>
             </div>
           </div>
         </div>
-        <hr class="text-success mt-5" />
-        <div class="container">
-          <p class="m-0 text-light text-center">
-            © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
-          </p>
-        </div>
-      </footer>
-      <!-- End footer -->
-    </div>
+      </div>
+      <hr class="text-success mt-5" />
+      <div class="container">
+        <p class="m-0 text-light text-center">
+          © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
+        </p>
+      </div>
+    </footer>
+    <!-- End footer -->
+  </div>
   </div>
   <!-- Import script bootstrap V5 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -1233,6 +1311,7 @@
   <script type="text/javascript" src="./assets/js/initialSwiper.js"></script>
   <script type="text/javascript" src="./assets/js/main.js"></script>
   <script type="text/javascript" src="./assets/js/aboutus.js"></script>
+  <script type="text/javascript" src="./assets/js/stem.js"></script>
 </body>
 
 </html>
