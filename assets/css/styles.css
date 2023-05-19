@@ -8266,7 +8266,6 @@ input {
 }
 
 .content-desc-course {
-  list-style-type: disc;
   text-align: justify;
 }
 
@@ -8299,6 +8298,13 @@ input {
   width: 18px;
   height: 18px;
   object-fit: cover;
+}
+
+.list-icon-player-record {
+  width: 12px;
+  height: 12px;
+  object-fit: cover;
+  margin-right: 4px;
 }
 
 .counter-single-bg {
@@ -12413,6 +12419,9 @@ input {
   .counter-title p {
     font-size: 0.9rem !important;
   }
+  .custom-mobile-couter {
+    height: 120px !important;
+  }
   .left-section-content {
     bottom: -80px !important;
   }
@@ -12696,6 +12705,9 @@ input {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 590px) {
+  .custom-mobile-couter {
+    height: 95px !important;
+  }
   .card1-info {
     margin-top: 6px;
     font-size: 0.8rem !important;

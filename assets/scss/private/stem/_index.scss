@@ -152,7 +152,7 @@
 }
 
 .content-desc-course {
-    list-style-type: disc;
+    // list-style-type: disc;
     text-align: justify;
 }
 
@@ -185,6 +185,13 @@
     width: 18px;
     height: 18px;
     object-fit: cover;
+}
+
+.list-icon-player-record {
+    width: 12px;
+    height: 12px;
+    object-fit: cover;
+    margin-right: 4px;
 }
 
 .counter-single-bg {
