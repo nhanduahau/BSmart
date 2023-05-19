@@ -5072,7 +5072,7 @@
   }
 
   .custom-mobile-couter {
-    // height: 102px !important;
+    height: 120px !important;
   }
 
   .left-section-content {
@@ -5427,6 +5427,10 @@
   // feedback
 }
 @media only screen and (min-width: 481px) and (max-width: 590px) {
+  .custom-mobile-couter {
+    height: 95px !important;
+  }
+  
   // payment
   .card1-info {
     margin-top: 6px;
